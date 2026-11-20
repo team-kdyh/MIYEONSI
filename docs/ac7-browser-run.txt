@@ -1,0 +1,24 @@
+[WebServer] (node:31064) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:36316) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 13 tests using 1 worker
+
+(node:16832) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\ac7.spec.ts:5:1 › AC7 public routes, paired input semantics, bounded chapters and enduring facts (3.2s)
+  ok  2 tests\ac7.spec.ts:37:1 › AC7 browser error and cancellation controls preserve input and retry identity (901ms)
+  ok  3 tests\ac7.spec.ts:56:1 › AC7 representative complete UI plays have no console errors at both specified sizes (6.3s)
+  ok  4 tests\office.spec.ts:6:1 › 24 mission outcomes through public API, with semantic repetition and new persuasion (6.5s)
+  ok  5 tests\office.spec.ts:37:1 › mission picker, free-text agreements, ending feedback and retry on mobile (766ms)
+  ok  6 tests\persistence.spec.ts:3:1 › AC6 delivered but not displayed turn survives reload and retries once (571ms)
+  ok  7 tests\persistence.spec.ts:31:1 › AC6 conflicting stale tab recovers server state without advancing (418ms)
+  ok  8 tests\play.spec.ts:2:1 › both stories, saves, settings, collection and mobile layout (2.6s)
+  ok  9 tests\play.spec.ts:42:1 › server rejects forged state, oversized text and duplicate turns (37ms)
+  ok 10 tests\play.spec.ts:50:1 › free dialogue terminates, memory persists, retry and version conflicts (388ms)
+  ok 11 tests\play.spec.ts:68:1 › free text UI and provider switch are explicit (862ms)
+  ok 12 tests\presentation.spec.ts:5:1 › AC5: assets, cues, accessible parity, keyboard and audio at both sizes (17.6s)
+  ok 13 tests\romance.spec.ts:2:1 › romance free input completes a couple story and truth ending on mobile (817ms)
+
+  13 passed (43.3s)

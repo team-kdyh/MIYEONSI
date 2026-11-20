@@ -13,3 +13,5 @@ build/
 playwright-report/
 test-results/
 .DS_Store
+.local-data/
+.ouroboros/

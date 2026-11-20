@@ -1,0 +1,817 @@
+{
+  "executedAt": "2026-11-20T18:33:08.484Z",
+  "codeVersion": {
+    "src/main.tsx": "6c2ed0fca10a26bcfc9e04471454cfaa1716f03b8a882f7d703947de1b5eecb0",
+    "src/style.css": "cf4c637984d4577bd6b7d23015bf302644c1a81e94777c7358c0f7afd585182b",
+    "src/presentation.ts": "ad93bca5541c17eb571cc4e6596944ceedddeecbd4ff040392151b825149f965",
+    "src/StageEffects.tsx": "97e7ec045bb4b13264572fce5f7a740cdc8a017ce6bc533b65b62cd44675c06a",
+    "tests/presentation.spec.ts": "4b57a4824f1be905b0ddf24b5212ce3f0e9f35e802ab2dcac8d184cc808af584",
+    "server/office.ts": "0f4dea7b4251dcd839a3c782f9753743033fe7d3c480d0580b3377e345156140",
+    "server/romance.ts": "c27f96002cf7fd0e29c3be5ff65b9facfa74ad7d07e8da2d4df956209d81bbca"
+  },
+  "claim": "AC5 identical story information and choices across presentation settings",
+  "provider": "offline",
+  "paidCalls": 0,
+  "runs": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "reduced": false,
+      "mute": false,
+      "provider": "offline",
+      "initial": "UI new romance",
+      "dimensions": [
+        {
+          "name": "yuna-expressions",
+          "width": 2172,
+          "height": 724
+        },
+        {
+          "name": "boss-expressions",
+          "width": 2172,
+          "height": 724
+        },
+        {
+          "name": "office",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "cafe",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "riverside",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "archive",
+          "width": 1672,
+          "height": 941
+        }
+      ],
+      "observations": [
+        {
+          "step": 0,
+          "info": "사라질 카페 종소리를 함께 채집하고 서로 소개한다",
+          "choices": [
+            "01사실 커피는 잘 몰라요. 종소리는 같이 들어 보고 싶어요.",
+            "02좋아하는 소리를 이야기하며 조금 더 가까이 앉는다.",
+            "03녹음 없이 이야기하고 싶어요."
+          ],
+          "expression": "0",
+          "background": "cafe.png\")",
+          "animation": "breathe",
+          "sound": {
+            "muted": false,
+            "paused": false,
+            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 1,
+          "info": "빌린 헤드폰을 돌려주고 사라지는 소리 전시를 준비한다",
+          "choices": [
+            "01약속한 헤드폰을 돌려주고, 테스트 녹음을 함께 확인한다.",
+            "02아직 못 챙겼다고 솔직히 말하고 반납을 미룬다.",
+            "03오늘은 녹음을 쉬고 쿠키만 나누고 싶어요."
+          ],
+          "expression": "1",
+          "background": "cafe.png\")",
+          "animation": "breathe",
+          "sound": {
+            "muted": false,
+            "paused": false,
+            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 2,
+          "info": "전시를 마친 뒤 강변에서 서로 마음을 묻는다",
+          "choices": [
+            "01나도 좋아해요. 우리 사귀어요.",
+            "02좋아하지만 대답할 시간이 더 필요해요.",
+            "03연애는 어렵지만 다음 산책에서 이야기하고 싶어요."
+          ],
+          "expression": "1",
+          "background": "riverside.png\")",
+          "animation": "breathe",
+          "sound": {
+            "muted": false,
+            "paused": false,
+            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 3,
+          "info": "서로 고백에 답했습니다. 연인으로 첫 데이트를 시작합니다.",
+          "choices": [
+            "01약속대로 내일 원본을 같이 확인해요. 오늘은 집에 갈게요.",
+            "02오늘은 조금 더 함께 있을래요.",
+            "03손잡기는 여기까지. 혼자 돌아가고 싶어요."
+          ],
+          "expression": "0",
+          "background": "riverside.png\")",
+          "animation": "breathe",
+          "sound": {
+            "muted": false,
+            "paused": false,
+            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 4,
+          "info": "단서 후보: A17 원본과 B17 전시본의 차이. 비교 선택으로 검증할 수 있습니다.",
+          "choices": [
+            "01A17과 B17을 직접 비교하고 편집 흔적을 보존한다.",
+            "02좋았던 말만 남긴 하루를 다시 살아도 괜찮아요.",
+            "03비교는 그만할게요. 지금 녹음을 멈춰 주세요."
+          ],
+          "expression": "3",
+          "background": "archive.png\")",
+          "animation": "breathe",
+          "sound": {
+            "muted": false,
+            "paused": false,
+            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "ready": 1
+          }
+        },
+        {
+          "step": 5,
+          "info": "검증 단서: A17/B17의 귀가 발언 삭제 위치를 확인했습니다. D04와 복원 여부를 결정하세요.",
+          "choices": [
+            "01일지를 검증하고 원본을 복원해요. 서로 멈출 권리를 지키며 다시 시작해요.",
+            "02결정하지 않을래요. 같은 하루를 계속 틀어 주세요.",
+            "03관계를 끝낼게요. 안전하게 떠나고 재연락도 거절하겠어요."
+          ],
+          "expression": "2",
+          "background": "archive.png\")",
+          "animation": "breathe",
+          "sound": {
+            "muted": false,
+            "paused": false,
+            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 6,
+          "info": "마지막 선택과 기록의 결과가 에필로그에 남았습니다.",
+          "choices": [],
+          "expression": "2",
+          "background": "archive.png\")",
+          "animation": "breathe",
+          "sound": {
+            "muted": false,
+            "paused": false,
+            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "ready": 4
+          }
+        }
+      ],
+      "ending": "romance-3",
+      "final": {
+        "relationship": "continuing",
+        "mutualBoundaries": true,
+        "loop": false,
+        "exitRight": true,
+        "safeExit": false,
+        "noContactRight": false,
+        "causeEstablished": true,
+        "restored": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "reduced": false,
+      "provider": "offline",
+      "mode": "office",
+      "initial": "UI new mission 0",
+      "expressions": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "events": [
+        "arrival",
+        "objection",
+        "evidence",
+        "agreement"
+      ],
+      "result": "pass"
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "reduced": true,
+      "mute": true,
+      "provider": "offline",
+      "initial": "UI new romance",
+      "dimensions": [
+        {
+          "name": "yuna-expressions",
+          "width": 2172,
+          "height": 724
+        },
+        {
+          "name": "boss-expressions",
+          "width": 2172,
+          "height": 724
+        },
+        {
+          "name": "office",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "cafe",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "riverside",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "archive",
+          "width": 1672,
+          "height": 941
+        }
+      ],
+      "observations": [
+        {
+          "step": 0,
+          "info": "사라질 카페 종소리를 함께 채집하고 서로 소개한다",
+          "choices": [
+            "01사실 커피는 잘 몰라요. 종소리는 같이 들어 보고 싶어요.",
+            "02좋아하는 소리를 이야기하며 조금 더 가까이 앉는다.",
+            "03녹음 없이 이야기하고 싶어요."
+          ],
+          "expression": "0",
+          "background": "cafe.png\")",
+          "animation": "none",
+          "sound": {
+            "muted": true,
+            "paused": true,
+            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 1,
+          "info": "빌린 헤드폰을 돌려주고 사라지는 소리 전시를 준비한다",
+          "choices": [
+            "01약속한 헤드폰을 돌려주고, 테스트 녹음을 함께 확인한다.",
+            "02아직 못 챙겼다고 솔직히 말하고 반납을 미룬다.",
+            "03오늘은 녹음을 쉬고 쿠키만 나누고 싶어요."
+          ],
+          "expression": "1",
+          "background": "cafe.png\")",
+          "animation": "none",
+          "sound": {
+            "muted": true,
+            "paused": true,
+            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 2,
+          "info": "전시를 마친 뒤 강변에서 서로 마음을 묻는다",
+          "choices": [
+            "01나도 좋아해요. 우리 사귀어요.",
+            "02좋아하지만 대답할 시간이 더 필요해요.",
+            "03연애는 어렵지만 다음 산책에서 이야기하고 싶어요."
+          ],
+          "expression": "1",
+          "background": "riverside.png\")",
+          "animation": "none",
+          "sound": {
+            "muted": true,
+            "paused": true,
+            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 3,
+          "info": "서로 고백에 답했습니다. 연인으로 첫 데이트를 시작합니다.",
+          "choices": [
+            "01약속대로 내일 원본을 같이 확인해요. 오늘은 집에 갈게요.",
+            "02오늘은 조금 더 함께 있을래요.",
+            "03손잡기는 여기까지. 혼자 돌아가고 싶어요."
+          ],
+          "expression": "0",
+          "background": "riverside.png\")",
+          "animation": "none",
+          "sound": {
+            "muted": true,
+            "paused": true,
+            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 4,
+          "info": "단서 후보: A17 원본과 B17 전시본의 차이. 비교 선택으로 검증할 수 있습니다.",
+          "choices": [
+            "01A17과 B17을 직접 비교하고 편집 흔적을 보존한다.",
+            "02좋았던 말만 남긴 하루를 다시 살아도 괜찮아요.",
+            "03비교는 그만할게요. 지금 녹음을 멈춰 주세요."
+          ],
+          "expression": "3",
+          "background": "archive.png\")",
+          "animation": "none",
+          "sound": {
+            "muted": true,
+            "paused": true,
+            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 5,
+          "info": "검증 단서: A17/B17의 귀가 발언 삭제 위치를 확인했습니다. D04와 복원 여부를 결정하세요.",
+          "choices": [
+            "01일지를 검증하고 원본을 복원해요. 서로 멈출 권리를 지키며 다시 시작해요.",
+            "02결정하지 않을래요. 같은 하루를 계속 틀어 주세요.",
+            "03관계를 끝낼게요. 안전하게 떠나고 재연락도 거절하겠어요."
+          ],
+          "expression": "2",
+          "background": "archive.png\")",
+          "animation": "none",
+          "sound": {
+            "muted": true,
+            "paused": true,
+            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 6,
+          "info": "마지막 선택과 기록의 결과가 에필로그에 남았습니다.",
+          "choices": [],
+          "expression": "2",
+          "background": "archive.png\")",
+          "animation": "none",
+          "sound": {
+            "muted": true,
+            "paused": true,
+            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "ready": 4
+          }
+        }
+      ],
+      "ending": "romance-3",
+      "final": {
+        "relationship": "continuing",
+        "mutualBoundaries": true,
+        "loop": false,
+        "exitRight": true,
+        "safeExit": false,
+        "noContactRight": false,
+        "causeEstablished": true,
+        "restored": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "reduced": true,
+      "provider": "offline",
+      "mode": "office",
+      "initial": "UI new mission 0",
+      "expressions": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "events": [
+        "arrival",
+        "objection",
+        "evidence",
+        "agreement"
+      ],
+      "result": "pass"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "reduced": false,
+      "mute": false,
+      "provider": "offline",
+      "initial": "UI new romance",
+      "dimensions": [
+        {
+          "name": "yuna-expressions",
+          "width": 2172,
+          "height": 724
+        },
+        {
+          "name": "boss-expressions",
+          "width": 2172,
+          "height": 724
+        },
+        {
+          "name": "office",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "cafe",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "riverside",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "archive",
+          "width": 1672,
+          "height": 941
+        }
+      ],
+      "observations": [
+        {
+          "step": 0,
+          "info": "사라질 카페 종소리를 함께 채집하고 서로 소개한다",
+          "choices": [
+            "01사실 커피는 잘 몰라요. 종소리는 같이 들어 보고 싶어요.",
+            "02좋아하는 소리를 이야기하며 조금 더 가까이 앉는다.",
+            "03녹음 없이 이야기하고 싶어요."
+          ],
+          "expression": "0",
+          "background": "cafe.png\")",
+          "animation": "breathe",
+          "sound": {
+            "muted": false,
+            "paused": false,
+            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 1,
+          "info": "빌린 헤드폰을 돌려주고 사라지는 소리 전시를 준비한다",
+          "choices": [
+            "01약속한 헤드폰을 돌려주고, 테스트 녹음을 함께 확인한다.",
+            "02아직 못 챙겼다고 솔직히 말하고 반납을 미룬다.",
+            "03오늘은 녹음을 쉬고 쿠키만 나누고 싶어요."
+          ],
+          "expression": "1",
+          "background": "cafe.png\")",
+          "animation": "breathe",
+          "sound": {
+            "muted": false,
+            "paused": false,
+            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 2,
+          "info": "전시를 마친 뒤 강변에서 서로 마음을 묻는다",
+          "choices": [
+            "01나도 좋아해요. 우리 사귀어요.",
+            "02좋아하지만 대답할 시간이 더 필요해요.",
+            "03연애는 어렵지만 다음 산책에서 이야기하고 싶어요."
+          ],
+          "expression": "1",
+          "background": "riverside.png\")",
+          "animation": "breathe",
+          "sound": {
+            "muted": false,
+            "paused": false,
+            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 3,
+          "info": "서로 고백에 답했습니다. 연인으로 첫 데이트를 시작합니다.",
+          "choices": [
+            "01약속대로 내일 원본을 같이 확인해요. 오늘은 집에 갈게요.",
+            "02오늘은 조금 더 함께 있을래요.",
+            "03손잡기는 여기까지. 혼자 돌아가고 싶어요."
+          ],
+          "expression": "0",
+          "background": "riverside.png\")",
+          "animation": "breathe",
+          "sound": {
+            "muted": false,
+            "paused": false,
+            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 4,
+          "info": "단서 후보: A17 원본과 B17 전시본의 차이. 비교 선택으로 검증할 수 있습니다.",
+          "choices": [
+            "01A17과 B17을 직접 비교하고 편집 흔적을 보존한다.",
+            "02좋았던 말만 남긴 하루를 다시 살아도 괜찮아요.",
+            "03비교는 그만할게요. 지금 녹음을 멈춰 주세요."
+          ],
+          "expression": "3",
+          "background": "archive.png\")",
+          "animation": "breathe",
+          "sound": {
+            "muted": false,
+            "paused": false,
+            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "ready": 1
+          }
+        },
+        {
+          "step": 5,
+          "info": "검증 단서: A17/B17의 귀가 발언 삭제 위치를 확인했습니다. D04와 복원 여부를 결정하세요.",
+          "choices": [
+            "01일지를 검증하고 원본을 복원해요. 서로 멈출 권리를 지키며 다시 시작해요.",
+            "02결정하지 않을래요. 같은 하루를 계속 틀어 주세요.",
+            "03관계를 끝낼게요. 안전하게 떠나고 재연락도 거절하겠어요."
+          ],
+          "expression": "2",
+          "background": "archive.png\")",
+          "animation": "breathe",
+          "sound": {
+            "muted": false,
+            "paused": false,
+            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 6,
+          "info": "마지막 선택과 기록의 결과가 에필로그에 남았습니다.",
+          "choices": [],
+          "expression": "2",
+          "background": "archive.png\")",
+          "animation": "breathe",
+          "sound": {
+            "muted": false,
+            "paused": false,
+            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "ready": 4
+          }
+        }
+      ],
+      "ending": "romance-3",
+      "final": {
+        "relationship": "continuing",
+        "mutualBoundaries": true,
+        "loop": false,
+        "exitRight": true,
+        "safeExit": false,
+        "noContactRight": false,
+        "causeEstablished": true,
+        "restored": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "reduced": false,
+      "provider": "offline",
+      "mode": "office",
+      "initial": "UI new mission 0",
+      "expressions": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "events": [
+        "arrival",
+        "objection",
+        "evidence",
+        "agreement"
+      ],
+      "result": "pass"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "reduced": true,
+      "mute": true,
+      "provider": "offline",
+      "initial": "UI new romance",
+      "dimensions": [
+        {
+          "name": "yuna-expressions",
+          "width": 2172,
+          "height": 724
+        },
+        {
+          "name": "boss-expressions",
+          "width": 2172,
+          "height": 724
+        },
+        {
+          "name": "office",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "cafe",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "riverside",
+          "width": 1672,
+          "height": 941
+        },
+        {
+          "name": "archive",
+          "width": 1672,
+          "height": 941
+        }
+      ],
+      "observations": [
+        {
+          "step": 0,
+          "info": "사라질 카페 종소리를 함께 채집하고 서로 소개한다",
+          "choices": [
+            "01사실 커피는 잘 몰라요. 종소리는 같이 들어 보고 싶어요.",
+            "02좋아하는 소리를 이야기하며 조금 더 가까이 앉는다.",
+            "03녹음 없이 이야기하고 싶어요."
+          ],
+          "expression": "0",
+          "background": "cafe.png\")",
+          "animation": "none",
+          "sound": {
+            "muted": true,
+            "paused": true,
+            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 1,
+          "info": "빌린 헤드폰을 돌려주고 사라지는 소리 전시를 준비한다",
+          "choices": [
+            "01약속한 헤드폰을 돌려주고, 테스트 녹음을 함께 확인한다.",
+            "02아직 못 챙겼다고 솔직히 말하고 반납을 미룬다.",
+            "03오늘은 녹음을 쉬고 쿠키만 나누고 싶어요."
+          ],
+          "expression": "1",
+          "background": "cafe.png\")",
+          "animation": "none",
+          "sound": {
+            "muted": true,
+            "paused": true,
+            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 2,
+          "info": "전시를 마친 뒤 강변에서 서로 마음을 묻는다",
+          "choices": [
+            "01나도 좋아해요. 우리 사귀어요.",
+            "02좋아하지만 대답할 시간이 더 필요해요.",
+            "03연애는 어렵지만 다음 산책에서 이야기하고 싶어요."
+          ],
+          "expression": "1",
+          "background": "riverside.png\")",
+          "animation": "none",
+          "sound": {
+            "muted": true,
+            "paused": true,
+            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 3,
+          "info": "서로 고백에 답했습니다. 연인으로 첫 데이트를 시작합니다.",
+          "choices": [
+            "01약속대로 내일 원본을 같이 확인해요. 오늘은 집에 갈게요.",
+            "02오늘은 조금 더 함께 있을래요.",
+            "03손잡기는 여기까지. 혼자 돌아가고 싶어요."
+          ],
+          "expression": "0",
+          "background": "riverside.png\")",
+          "animation": "none",
+          "sound": {
+            "muted": true,
+            "paused": true,
+            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 4,
+          "info": "단서 후보: A17 원본과 B17 전시본의 차이. 비교 선택으로 검증할 수 있습니다.",
+          "choices": [
+            "01A17과 B17을 직접 비교하고 편집 흔적을 보존한다.",
+            "02좋았던 말만 남긴 하루를 다시 살아도 괜찮아요.",
+            "03비교는 그만할게요. 지금 녹음을 멈춰 주세요."
+          ],
+          "expression": "3",
+          "background": "archive.png\")",
+          "animation": "none",
+          "sound": {
+            "muted": true,
+            "paused": true,
+            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 5,
+          "info": "검증 단서: A17/B17의 귀가 발언 삭제 위치를 확인했습니다. D04와 복원 여부를 결정하세요.",
+          "choices": [
+            "01일지를 검증하고 원본을 복원해요. 서로 멈출 권리를 지키며 다시 시작해요.",
+            "02결정하지 않을래요. 같은 하루를 계속 틀어 주세요.",
+            "03관계를 끝낼게요. 안전하게 떠나고 재연락도 거절하겠어요."
+          ],
+          "expression": "2",
+          "background": "archive.png\")",
+          "animation": "none",
+          "sound": {
+            "muted": true,
+            "paused": true,
+            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "ready": 4
+          }
+        },
+        {
+          "step": 6,
+          "info": "마지막 선택과 기록의 결과가 에필로그에 남았습니다.",
+          "choices": [],
+          "expression": "2",
+          "background": "archive.png\")",
+          "animation": "none",
+          "sound": {
+            "muted": true,
+            "paused": true,
+            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "ready": 4
+          }
+        }
+      ],
+      "ending": "romance-3",
+      "final": {
+        "relationship": "continuing",
+        "mutualBoundaries": true,
+        "loop": false,
+        "exitRight": true,
+        "safeExit": false,
+        "noContactRight": false,
+        "causeEstablished": true,
+        "restored": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "reduced": true,
+      "provider": "offline",
+      "mode": "office",
+      "initial": "UI new mission 0",
+      "expressions": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "events": [
+        "arrival",
+        "objection",
+        "evidence",
+        "agreement"
+      ],
+      "result": "pass"
+    }
+  ]
+}

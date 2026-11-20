@@ -1,0 +1,83 @@
+{
+  "scope": "Development smoke checks for this game task only; not a gameplay request quota",
+  "maximum_paid_response_attempts": 8,
+  "paid_response_attempts": 6,
+  "attempts": [
+    {
+      "id": 1,
+      "mode": "office",
+      "purpose": "office contextual Korean speech + validated agreement",
+      "provider": "openai",
+      "reservedAt": "2026-11-20T18:29:55.079Z",
+      "max_output_tokens": 700,
+      "result": "connection-and-schema-pass",
+      "latencyMs": 4528
+    },
+    {
+      "id": 2,
+      "mode": "romance",
+      "purpose": "romance original speech responding to personal detail",
+      "provider": "openai",
+      "reservedAt": "2026-11-20T18:29:59.623Z",
+      "max_output_tokens": 700,
+      "result": "connection-and-schema-pass",
+      "latencyMs": 1812
+    },
+    {
+      "id": 3,
+      "mode": "romance",
+      "purpose": "romance history detail and canonical recall",
+      "provider": "openai",
+      "reservedAt": "2026-11-20T18:30:01.439Z",
+      "max_output_tokens": 700,
+      "result": "connection-and-schema-pass",
+      "latencyMs": 2035
+    },
+    {
+      "id": 4,
+      "mode": "office",
+      "purpose": "office contextual Korean speech + validated agreement",
+      "provider": "openai",
+      "reservedAt": "2026-11-20T18:30:29.068Z",
+      "max_output_tokens": 700,
+      "result": "connection-and-schema-pass",
+      "latencyMs": 2482
+    },
+    {
+      "id": 5,
+      "mode": "romance",
+      "purpose": "romance original speech responding to personal detail",
+      "provider": "openai",
+      "reservedAt": "2026-11-20T18:30:31.567Z",
+      "max_output_tokens": 700,
+      "result": "connection-and-schema-pass",
+      "latencyMs": 1703
+    },
+    {
+      "id": 6,
+      "mode": "romance",
+      "purpose": "romance history detail and canonical recall",
+      "provider": "openai",
+      "reservedAt": "2026-11-20T18:30:33.275Z",
+      "max_output_tokens": 700,
+      "result": "connection-and-schema-pass",
+      "latencyMs": 2353
+    }
+  ],
+  "authentication_check": {
+    "endpoint": "GET /v1/models",
+    "result": "accepted",
+    "model_available": "gpt-4.1-mini",
+    "performed_by": "parent",
+    "date_kst": "2026-11-21"
+  },
+  "evidence": [
+    "Parent has made zero POST /v1/responses calls.",
+    "docs/ac2-validation.md reports zero external calls.",
+    "docs/ac3-validation.md reports zero paid calls.",
+    "docs/ac4-validation.md reports zero real API calls.",
+    "docs/ac6-validation.md reports zero real API calls."
+  ],
+  "procedure": "Before each real response attempt increment the counter and append an attempt record without secrets. Count failed/timed-out requests as attempts. Record mode, input purpose, result, latency and output token limit, never the API key. Do not exceed eight attempts across all workers and parent. Mock tests do not increment this ledger.",
+  "quality_review": "HTTP/schema success is not dialogue quality approval; see docs/QA.md and both live evidence files. Role confusion and misattributed memory remain."
+}

@@ -1,0 +1,69 @@
+{
+  "criterion": 3,
+  "provider": "offline / mocked Responses API",
+  "initial": "start(romance), no state injection",
+  "paid_calls_this_task": 0,
+  "commands": {
+    "npm test": "76 passed",
+    "npm run build": "passed (includes typecheck)",
+    "npx playwright test tests/romance.spec.ts tests/play.spec.ts": "5 passed"
+  },
+  "routes": {
+    "romance-0": [
+      0,
+      0,
+      0,
+      0,
+      2,
+      0
+    ],
+    "romance-1": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "romance-2": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2
+    ],
+    "romance-3": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "coverage": [
+    "729 choice routes terminate",
+    "unresolved free dialogue terminates within 18 turns",
+    "free text only truth route",
+    "verified facts survive bounded history",
+    "non-enum romance speech validated separately from events",
+    "mobile cafe/riverside/archive and truth ending"
+  ],
+  "not_verified": [
+    "live OpenAI response quality",
+    "commercial readiness of whole game"
+  ],
+  "screenshot": "test-results/romance-truth-mobile.png",
+  "sha256": {
+    "server/romance.ts": "b43b545f1e53a93c0a78b4e1f175c5c5e25d60d7f3852a5a3822123a53392c2e",
+    "server/game.ts": "13f171bdee0600d46c903429265a72304fa287b520c2dc7b5e523afb3a0ffc6b",
+    "server/dialogue.ts": "941d03204d702fdc9d1c149f161b9340cdbf1b82498622dfa68ec8c4a0656289",
+    "server/provider.ts": "f33968f8fdbec158d8082650822737df8f823618cd7066ce89a4abb7242ffe33",
+    "src/main.tsx": "320119024dd93b9af542273533fc7b1ad20026a5e1cd559d86c3ff42234a5d03",
+    "server/romance.test.ts": "89c94aed425b7744e748f2b53fac4147db47125336da57b4715f696f0e7f60fd",
+    "server/dialogue.test.ts": "a679bec6c930efe18c4c4fe10639a8a4a2e2c7456c2a764e8395050565d393fd",
+    "tests/romance.spec.ts": "18f28530af1fc5b98a4e507c29c121bd6b73ccff031c5dc6e7c429726148020e",
+    "tests/play.spec.ts": "d3904393d5d68f5f67426d44a867dabf5fc9903c4cdeefddb13d0af8a3f0fc1f"
+  }
+}

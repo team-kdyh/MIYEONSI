@@ -1,0 +1,52 @@
+{
+  "source": "Original procedural composition for AFTER HOURS; no samples or external music",
+  "method": "Sine fundamental with quiet second harmonic and attack/release envelope, mono PCM 22050Hz",
+  "usage": "Project-original audio; may be used and distributed with this project",
+  "tracks": {
+    "evening": {
+      "file": "evening.wav",
+      "notes_hz": [
+        261.63,
+        329.63,
+        392,
+        329.63,
+        293.66,
+        349.23,
+        440,
+        392
+      ],
+      "note_seconds": 0.6
+    },
+    "archive-theme": {
+      "file": "archive-theme.wav",
+      "notes_hz": [
+        220,
+        261.63,
+        246.94,
+        196,
+        220,
+        293.66,
+        261.63,
+        196
+      ],
+      "note_seconds": 0.8
+    },
+    "chime": {
+      "file": "chime.wav",
+      "notes_hz": [
+        659.25,
+        783.99
+      ],
+      "note_seconds": 0.12
+    },
+    "tape": {
+      "file": "tape.wav",
+      "notes_hz": [
+        220,
+        207.65,
+        196
+      ],
+      "note_seconds": 0.14
+    }
+  }
+}

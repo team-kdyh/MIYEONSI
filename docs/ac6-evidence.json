@@ -1,0 +1,50 @@
+{
+  "criterion": 6,
+  "date": "2026-11-21",
+  "provider": "offline",
+  "paidCalls": 0,
+  "sourceSha256": {
+    "server/storage.ts": "c0ceca9dffbe5de36d8b22414c034891508f9dc36dbe849deeee9b388bd75ac6",
+    "server/index.ts": "063af9e670080964014b2f527582b84e55678f31c8f44db24897291b6b06e34c",
+    "src/main.tsx": "0b7672d620e2d4c1e4de99a4d0f46b39d20fc0f8788870b2b751e8d7a1f003fe",
+    "server/persistence.test.ts": "018f7afd541a2179677279037bc4e35e5dd0babcc41be4febee7b04815f2a58a",
+    "tests/persistence.spec.ts": "fcf0ffc2326d0005a910cb54f814cf86b09662c58eea3f9f979a5c35e903d2df",
+    "tests/play.spec.ts": "11a075c77d04fcb4a36d1799e61e6f7657a97452d72fe7c05189774a510f898b"
+  },
+  "results": {
+    "npm test": {
+      "passed": 77,
+      "failed": 0
+    },
+    "npx playwright test": {
+      "passed": 9,
+      "failed": 0
+    },
+    "npm run typecheck": "passed",
+    "npm run build": "passed"
+  },
+  "initialConditions": "Fresh temporary profile and real child server for each test run; normal new-game API for office and romance; no seeded endings or forged game state.",
+  "allowedInputPaths": [
+    "POST /api/new",
+    "POST /api/turn",
+    "POST /api/save",
+    "POST /api/load",
+    "browser suggestions and text input"
+  ],
+  "observed": [
+    "Precommit failure leaves game and collection unchanged across process restart",
+    "After commit connection drop and process restart return exactly stored result on same request ID",
+    "Delivered response discarded before rendering can be retried after browser reload",
+    "Conflicting input or stale version returns 409 and current state without advancing",
+    "Concurrent duplicate requests commit only once",
+    "All three slots restore all story fields; transport concurrency version advances deliberately",
+    "Endings and dialogue logs survive process restart",
+    "Corrupt primary restores valid backup with notice; invalid format and corrupt backup expose explicit reset"
+  ],
+  "limitations": [
+    "Offline provider only; no paid OpenAI requests",
+    "Single local Node server process; multi-process shared directory not supported",
+    "Process restart and transport failures verified; physical disk/power failure not simulated",
+    "Existing bounded dialogue display retains latest 12 entries; committed turn records retain their logs and canonical facts persist separately"
+  ]
+}

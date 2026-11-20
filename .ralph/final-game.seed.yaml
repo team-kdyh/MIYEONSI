@@ -1,0 +1,99 @@
+goal: 공식 자료로 대화 중심 비주얼 노벨을 조사하고, 직장 미션 코미디와 성인 로맨스 심리 스릴러의 두 모드를 갖춘 한국어 챗봇 스토리 게임을
+  설계·구현한다. 원본 스토리·시각 에셋·안전한 OpenAI 서버 연동·저장·분기·연출·검증을 포함하고, Ralph 반복 실행을 통해 상용 출시
+  후보 수준의 로컬 플레이 가능한 결과물과 검증 근거를 만든다.
+task_type: code
+brownfield_context:
+  project_type: brownfield
+  context_references: []
+  existing_patterns: []
+  existing_dependencies: []
+constraints:
+- 사용자는 모든 스토리/에셋/기술적 구현 결정을 위임했다. Windows 작업 디렉터리 C:/Users/gjtjw/Desktop/대화형 스토리진행에서
+  로컬 실행 가능한 게임을 만든다. 권장 구현은 TypeScript React/Vite 프런트엔드와 Node 서버다. 실제 외부 서비스 공개 배포나
+  유료 구매는 범위가 아니다.
+- '기존 DDLC 캐릭터, 대사, 스토리, 아트, 로고, 음원을 복제하지 않는다. 연구 출처: https://ddlc.plus/ (일상에서 심리공포로
+  바뀌는 톤, 표정/음악/갤러리), https://sukeban.moe/press/sheet.php?p=Cyberpunk_Bartender_Action+VA-11+HALL-A
+  (행동이 분기를 형성하는 대화 중심 서사), https://www.inklestudios.com/ink/ (서사 상태/분기의 명시적 관리). 공식
+  출처 링크와 적용/차별화점을 docs/research.md에 보존한다.'
+- 실제 키는 명세/프롬프트/소스/로그/브라우저에 넣지 않는다. 사용자는 제공한 OpenAI 키 사용을 명시적으로 승인했다. 키는 루트 .env 또는
+  서버 프로세스 환경변수 OPENAI_API_KEY로만 로드하고 .gitignore로 제외한다. API 모델은 OPENAI_MODEL 환경변수로
+  변경 가능하게 한다. OpenAI 공식 Responses API와 엄격한 JSON schema를 사용하고 서버에서 재검증한다. 공식 참고 https://developers.openai.com/api/docs/quickstart
+  및 https://developers.openai.com/api/docs/guides/structured-outputs .
+- 상태와 엔딩 판정은 서버의 검증된 게임 로직이 소유한다. LLM이 지시문 무시, 즉시 승리, 캐릭터 이탈, 수치 조작을 하도록 유도하는 입력으로
+  게임을 끝내거나 저장 데이터를 변조할 수 없어야 한다. 원문 텍스트는 React로 안전하게 렌더링한다. 최대 입력 길이, 세션당 요청 제한, 동시
+  요청 방지, 타임아웃/취소/재시도, bounded history를 구현한다.
+- 자동 검증은 mock/offline provider를 기본으로 하며 실제 API smoke는 전체 작업 최대 12회, 요청별 출력 토큰 상한을
+  둔다. 사용자가 금액 예산을 지정하지 않았으므로 무제한 호출하지 않는다. offline/demo 상태를 UI에 명확히 구분하고 실제 API 실패를
+  성공으로 위장하지 않는다. 이전 단계에서 8회를 이미 사용했으며 docs/api-smoke-ledger.json의 누적 수를 보존한다. 추가 검증은
+  최대 4회다. 8회는 사용자가 지정한 예산이 아니라 부모가 정한 초기 운영상한이었고, 사용자의 키 사용 및 완성까지 계속 진행하라는 위임 범위에서
+  부모가 추가 검증 범위를 사용자에게 명시했다. 원래의 기능/품질/보안 완료 기준은 낮추지 않는다.
+- 로맨스 인물은 모두 성인이다. 위임된 창작 방향은 비노골적인 심리 스릴러로 정한다. 집착의 불편함과 선택의 결과를 그리며 잔혹 장면이나 노골적
+  성행위가 핵심이 아니다. 공포 예고, 효과 감소, 음소거, 재시작이 가능하다. 캐릭터가 바탕화면/실제 개인정보를 읽는 척하지 않고 메타 연출은
+  게임 내부에서만 이루어진다.
+- 부모 에이전트가 image_gen으로 생성한 원본 PNG가 public/assets에 제공된다. yuna-expressions.png는 성인 서유나(27)의
+  동일 인물 4표정 1행 스프라이트다. 이후 boss-expressions.png, office.png, cafe.png가 제공될 수 있다. 파일
+  존재와 크기를 확인하여 사용하고 캐릭터를 단순 도형/이모지로 대체하지 않는다. 모든 최종 에셋을 프로젝트 안에 넣고 출처/생성 프롬프트/사용 조건을
+  manifest에 남긴다. 부모와의 파일 충돌을 피하려면 public/assets 원본 PNG는 수정하지 않는다.
+- '가제: AFTER HOURS / 퇴근 후에. 큰 일러스트가 있는 비주얼 노벨 무대, 절제된 크림/먹색/라벤더/라임 악센트, 읽기 좋은 한국어,
+  모바일에서도 온전한 대화 입력. 채팅앱 목록이나 관리자 대시보드 같은 화면이 아니라 매력적인 게임 타이틀과 캐릭터 중심 플레이 화면을 만든다.
+  설정/로그/수집/세이브는 실제 동작해야 한다.'
+- 기존 게임과 원본 에셋, 세이브, 검증 증거를 보존해 후속 수정한다. docs/parent-review.md와 최신 docs/QA.md의 재현된
+  결함을 해결하고, 현재 소스의 실제 역할·취향 귀속과 자유 입력 진행을 집중 검증한다. 과거 실호출과 최종 변경 후의 실호출을 구분하며 테스트하지
+  않은 성공을 주장하지 않는다.
+acceptance_criteria:
+- description: 사용자는 Windows에서 README의 명령으로 설치·빌드·실행하고 타이틀에서 직장 미션과 로맨스 스릴러를 선택해 엔딩까지
+    플레이할 수 있다. 두 모드는 같은 완성도 있는 비주얼 노벨 셸을 공유하며 튜토리얼, 이어하기, 설정, 엔딩 컬렉션이 동작한다. typecheck와
+    production build가 통과한다.
+  semantic_ac_key: ac_7c536e76c615db52
+- description: '직장 모드는 최소 8개의 독창적 미션을 제공한다: 17:50 추가 업무에서 칼퇴, 금요일 회식 탈출, 주말 업무 거절,
+    휴가 승인, 공로 되찾기, 회의 단축, 업무 떠넘기기 방어, 원격근무 협상. 각 미션은 도입/핵심 반론/고유 변수·턴 제한/성공·부분성공·실패
+    결말이 있고 자유 입력의 논리·대안·경계 설정에 따라 실제 결과가 달라진다. 같은 문장을 반복해 무조건 승리할 수 없다. 결말에 설득 과정
+    피드백과 다시 도전이 표시된다.'
+  semantic_ac_key: ac_3d7fd12bdf3d4bc2
+- description: 로맨스 모드는 최소 6개 장으로 첫 만남·호감·고백·연애와 데이트·집착 전환·진실 대면까지 이어지는 원본 완결 스토리를
+    가진다. 주인공과 서유나는 성인이며 설정상 27세 유나는 사라지는 소리를 보존하는 아카이브 작업자다. 그녀가 둘의 대화를 편집해 완벽한 하루를
+    반복하려는 집착과 삭제된 녹음의 단서를 중심으로, 신뢰/자율성/증거에 따라 최소 4개 고유 엔딩(관계 재설정, 안전한 결별, 끝없는 하루,
+    아카이브의 진실)이 도달 가능하다. 장마다 고유 사건·배경·대사·복선·선택 결과가 있고 챗봇이 이야기를 무한 연장하지 않는다.
+  semantic_ac_key: ac_bf5d85c75d6ccae3
+- description: 사용자는 제안 답변과 자유 입력 모두로 캐릭터와 대화할 수 있고, API 연결 시 한국어 인물 말투·앞선 대화 기억·현재
+    장면 제약을 유지하는 실제 OpenAI 응답을 받는다. 서버만 API 키를 보유하며 schema 검증, 요청 한도, 오류 표시, 재시도와 명시적
+    오프라인 모드가 작동한다. mock 검증과 실제 API 검증 여부를 결과 문서에 구분한다.
+  semantic_ac_key: ac_39d2136b375ddcda
+- description: 게임은 원본 일러스트 배경과 일관된 캐릭터 표정 최소 4종씩을 사용하며 대화에 따라 표정·포즈 전환, 부드러운 입장/호흡,
+    타이핑, 배경 전환, 오리지널 배경음/효과음이 동작한다. 1440x900과 390x844 화면에서 겹침/잘림/가로 스크롤 없이 대화와 입력을
+    이용할 수 있다. 키보드 조작, 음량 조절, 효과 감소, 읽기 속도 조절이 동작한다. 실제 스크린샷으로 확인한다.
+  semantic_ac_key: ac_1d442615c332837b
+- description: 자동 저장과 최소 3개 수동 슬롯, 이어하기, 대화 기록, 엔딩 해금이 새로고침/서버 재시작 후 복구된다. 버전 불일치·손상
+    데이터·중복 요청·네트워크 실패로 진행이 잘못 전진하지 않고 사용자에게 복구 방법이 표시된다. 저장 직후와 복원 직후의 장/턴/관계/엔딩 상태가
+    일치한다.
+  semantic_ac_key: ac_a13e36ce21434fa8
+- description: 자동 테스트와 브라우저 플레이 테스트에서 모든 직장 미션의 성공/실패, 4개 로맨스 엔딩 도달 가능성, 의미 있는 다른
+    자유 입력의 결과 차이, 저장 복원, 입력 공격/스키마 불일치/타임아웃/429 복구를 검증한다. 콘솔 오류 없는 대표 두 모드 완주와 화면
+    캡처, 실행 명령/결과/남은 한계가 docs/QA.md에 기록된다. 에셋·음원·스토리 출처 목록과 배포 전 남은 실제 항목을 포함하며 테스트
+    통과만으로 상업 출시가 보장된다고 주장하지 않는다.
+  semantic_ac_key: ac_d6f106dee25120bf
+ontology_schema:
+  name: SessionSettledContract
+  description: Requirements the session already settled, crystallized without an interview.
+    Every entry is verbatim host-supplied material — no LLM composed any part of this
+    Seed.
+  fields: []
+evaluation_principles:
+- name: settled_requirements
+  description: Evaluate only the session-settled requirements.
+  weight: 1.0
+exit_conditions:
+- name: settled_requirements_met
+  description: All session-settled requirements are satisfied.
+  criteria: Every listed acceptance criterion passes.
+metadata:
+  seed_id: seed_99abb5a7f12c
+  version: 1.0.0
+  created_at: '2026-11-20T18:59:01.901438Z'
+  ambiguity_score: 0.2
+  interview_id: session-context
+  parent_seed_id: null
+  generation_mode: normal
+  degraded: false
+  unresolved_slots: []
+  recovery_reason: null

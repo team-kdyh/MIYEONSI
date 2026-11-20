@@ -9,6 +9,7 @@ build/
 .ralph/tool-schemas.json
 .ralph/*args*.json
 .ralph/*start.json
+.ralph/*.json
 playwright-report/
 test-results/
 .DS_Store

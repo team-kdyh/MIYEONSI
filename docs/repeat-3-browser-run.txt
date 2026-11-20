@@ -1,0 +1,21 @@
+[WebServer] (node:35468) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:2860) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 10 tests using 1 worker
+
+(node:16280) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\ac7.spec.ts:5:1 › AC7 public routes, paired input semantics, bounded chapters and enduring facts (3.3s)
+  ok  2 tests\ac7.spec.ts:37:1 › AC7 browser error and cancellation controls preserve input and retry identity (897ms)
+  ok  3 tests\ac7.spec.ts:56:1 › AC7 representative complete UI plays have no console errors at both specified sizes (6.4s)
+  ok  4 tests\persistence.spec.ts:3:1 › AC6 failed save delivery offers state recovery without replaying a mutation (539ms)
+  ok  5 tests\persistence.spec.ts:19:1 › AC6 unrecoverable storage displays an explicit confirmed reset path (252ms)
+  ok  6 tests\persistence.spec.ts:29:1 › AC6 reload restores all three manual slots, relationship, log and unlocked ending (1.6s)
+  ok  7 tests\persistence.spec.ts:62:1 › AC6 pending response from another timeline recovers current state (319ms)
+  ok  8 tests\persistence.spec.ts:78:1 › AC6 delivered but not displayed turn survives reload and retries once (560ms)
+  ok  9 tests\persistence.spec.ts:106:1 › AC6 conflicting stale tab recovers server state without advancing (413ms)
+  ok 10 tests\presentation.spec.ts:5:1 › AC5: assets, cues, accessible parity, keyboard and audio at both sizes (21.9s)
+
+  10 passed (38.2s)

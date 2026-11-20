@@ -1,0 +1,10 @@
+✔ HTTP malformed inputs and exact character/body boundaries preserve rejected state (471.7846ms)
+✔ repeated precommit and postcommit interruptions survive restart with exactly-once turns (1454.6911ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2162.3056

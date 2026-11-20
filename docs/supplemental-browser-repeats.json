@@ -1,0 +1,29 @@
+[
+  {
+    "run": 1,
+    "exitCode": 0,
+    "seconds": 42.49,
+    "summary": "10 passed (40.5s)",
+    "log": "docs/repeat-1-browser-run.txt",
+    "isolatedDataDirectory": true,
+    "paidCalls": 0
+  },
+  {
+    "run": 2,
+    "exitCode": 0,
+    "seconds": 39.52,
+    "summary": "10 passed (38.5s)",
+    "log": "docs/repeat-2-browser-run.txt",
+    "isolatedDataDirectory": true,
+    "paidCalls": 0
+  },
+  {
+    "run": 3,
+    "exitCode": 0,
+    "seconds": 39.22,
+    "summary": "10 passed (38.2s)",
+    "log": "docs/repeat-3-browser-run.txt",
+    "isolatedDataDirectory": true,
+    "paidCalls": 0
+  }
+]

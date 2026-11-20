@@ -1,0 +1,17 @@
+{
+  "formalRalphJob": "job_25b9c70f5a98",
+  "formalFinalState": "cancelled",
+  "generation1FormalVerdict": "6/7; AC1–6 PASS; AC7 overridden to FAIL by spec_verifier",
+  "evaluationEventId": "90cded7b-ce35-41a9-b2ed-13ce273f0a36",
+  "qaFileExists": true,
+  "relativePath": "docs/QA.md",
+  "pattern": "(?:^|[/\\\\])docs[/\\\\]QA\\.md$",
+  "basenameMatch": false,
+  "relativePathMatch": true,
+  "inspectedVerifierSource": "C:\\Users\\gjtjw\\AppData\\Local\\uv\\cache\\archive-v0\\XwaWIaz_NKRdsD-A\\Lib\\site-packages\\ouroboros\\verification\\verifier.py",
+  "inspectedVerifierSHA256": "cdc66a5c8503dbe64fd62c8cb662077c9d02e615c62bc24d1662e22ec8edb0bb",
+  "finding": "_verify_structural first compares the path-shaped pattern only against os.path.basename(file_path); it then searches content. The intended file exists but this structural check falsely reports DISCREPANCY. Source-only execution-scope checks were SKIPPED, not actual failed runs.",
+  "graderModified": false,
+  "originalFormalVerdictOverwritten": false,
+  "followup": "Independent Ouroboros QA against all original seven functional criteria, observed execution evidence and pass threshold 0.90; pending at creation."
+}

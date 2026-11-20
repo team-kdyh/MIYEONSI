@@ -1,0 +1,96 @@
+{
+  "executedAt": "2026-11-20T19:34:24.120Z",
+  "provider": "offline",
+  "paidCalls": 0,
+  "serverRestarts": 4,
+  "injectedInterruptions": 4,
+  "duplicateRetries": 6,
+  "finalStateHash": "dfa29015b652fcb4668f9dda5e3fb6433fccd4590b35b3eadff3192e561fe3f0",
+  "ending": "office-clockout-success",
+  "sequence": [
+    {
+      "turn": 1,
+      "stage": "before-commit -> restart",
+      "status": 400,
+      "before": "a9a4ddb0bd14bca8482426209eede7c29ea89f123532f81f53ee661c38393e43",
+      "after": "a9a4ddb0bd14bca8482426209eede7c29ea89f123532f81f53ee661c38393e43",
+      "unchanged": true
+    },
+    {
+      "turn": 1,
+      "stage": "after-commit -> restart -> duplicate retry",
+      "retry": 1,
+      "status": 200,
+      "stateHash": "d8483e3dd2456f74abb1f7137cdcba1c13ac2f005043ad4d5eacc4a5ed5a9839",
+      "officeTurn": 1,
+      "version": 1
+    },
+    {
+      "turn": 1,
+      "stage": "after-commit -> restart -> duplicate retry",
+      "retry": 2,
+      "status": 200,
+      "stateHash": "d8483e3dd2456f74abb1f7137cdcba1c13ac2f005043ad4d5eacc4a5ed5a9839",
+      "officeTurn": 1,
+      "version": 1
+    },
+    {
+      "turn": 1,
+      "stage": "after-commit -> restart -> duplicate retry",
+      "retry": 3,
+      "status": 200,
+      "stateHash": "d8483e3dd2456f74abb1f7137cdcba1c13ac2f005043ad4d5eacc4a5ed5a9839",
+      "officeTurn": 1,
+      "version": 1
+    },
+    {
+      "turn": 1,
+      "stage": "read-only persisted journal audit",
+      "uniqueRequestId": "interrupt-sequence-1",
+      "matchingCommits": 1,
+      "totalCommits": 1
+    },
+    {
+      "turn": 2,
+      "stage": "before-commit -> restart",
+      "status": 400,
+      "before": "d8483e3dd2456f74abb1f7137cdcba1c13ac2f005043ad4d5eacc4a5ed5a9839",
+      "after": "d8483e3dd2456f74abb1f7137cdcba1c13ac2f005043ad4d5eacc4a5ed5a9839",
+      "unchanged": true
+    },
+    {
+      "turn": 2,
+      "stage": "after-commit -> restart -> duplicate retry",
+      "retry": 1,
+      "status": 200,
+      "stateHash": "dfa29015b652fcb4668f9dda5e3fb6433fccd4590b35b3eadff3192e561fe3f0",
+      "officeTurn": 2,
+      "version": 2
+    },
+    {
+      "turn": 2,
+      "stage": "after-commit -> restart -> duplicate retry",
+      "retry": 2,
+      "status": 200,
+      "stateHash": "dfa29015b652fcb4668f9dda5e3fb6433fccd4590b35b3eadff3192e561fe3f0",
+      "officeTurn": 2,
+      "version": 2
+    },
+    {
+      "turn": 2,
+      "stage": "after-commit -> restart -> duplicate retry",
+      "retry": 3,
+      "status": 200,
+      "stateHash": "dfa29015b652fcb4668f9dda5e3fb6433fccd4590b35b3eadff3192e561fe3f0",
+      "officeTurn": 2,
+      "version": 2
+    },
+    {
+      "turn": 2,
+      "stage": "read-only persisted journal audit",
+      "uniqueRequestId": "interrupt-sequence-2",
+      "matchingCommits": 1,
+      "totalCommits": 2
+    }
+  ]
+}

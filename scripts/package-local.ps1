@@ -7,6 +7,7 @@ if (-not (Test-Path -LiteralPath (Join-Path $taskRoot 'dist\index.html'))) {
 }
 $taskNames = @('README.md','THIRD_PARTY_NOTICES.txt','.env.example','play.cmd','stop.cmd','package.json','package-lock.json','tsconfig.json','vite.config.ts','playwright.config.ts','index.html','src','server','public','dist','scripts','tests','docs')
 $taskNames += @(Get-ChildItem -LiteralPath $taskRoot -Filter 'playwright.*.config.ts' -File | ForEach-Object { $_.Name })
+if (Test-Path -LiteralPath (Join-Path $taskRoot 'verification')) { $taskNames += 'verification' }
 $taskPaths = @($taskNames | ForEach-Object {
     $taskPath = (Resolve-Path -LiteralPath (Join-Path $taskRoot $_)).Path
     if (-not $taskPath.StartsWith($taskRoot + [IO.Path]::DirectorySeparatorChar, [StringComparison]::OrdinalIgnoreCase)) {

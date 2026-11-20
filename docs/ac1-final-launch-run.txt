@@ -1,0 +1,7 @@
+Port 3001 is in use by another process. Close that service before starting this game.
+At C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-final-fc186c770c2c\scripts\start-local.ps1:20 char:5
++     throw 'Port 3001 is in use by another process. Close that service ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Port 3001 is in...ting this game.:String) [], RuntimeException
+    + FullyQualifiedErrorId : Port 3001 is in use by another process. Close that service before starting this game.
+ 

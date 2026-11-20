@@ -64,3 +64,16 @@ Earlier checks on 2026-11-21 (historical whole-project results, not rerun for th
 - Added center-point hit testing for every visible choice, bounds checks for the complete send button, and browser exception checks. All passed. Keyboard input, modal focus, settings persistence, all four expressions per character, all four backgrounds, typing and reduced-effect parity remain covered.
 - Inspected current desktop archive, mobile static archive and exact 390×844 input screenshots directly. The complete input and send button are visible together; full-page captures retain the illustrated stage and dialogue. Original PNGs and runtime story logic were not changed for this criterion.
 - No paid API requests. This verifies Chromium desktop/mobile viewport emulation, not a physical handset's software keyboard or other browser engines. Sibling dialogue/API acceptance criteria remain separately governed.
+
+## Final successor Seed verification — 2026-11-21
+
+Read `final-verification.md` and the final live evidence before judging this continuation. The previous live regressions are historical findings; AC5 does not alter the provider or make new claims about generated dialogue. All twelve paid calls remain consumed; this run made zero paid calls.
+
+- Rebuilt the current workspace with `npm run build`: TypeScript and production build passed.
+- Reran `tests/presentation.spec.ts`: **1 passed (26.0 seconds)**, covering four fresh contexts (1440×900 and 390×844, normal playback and reduced effects/mute). A temporary Playwright configuration used port 3025 and `.local-data/ac5-final-verification` to isolate this run from sibling checks and existing saves; its other settings matched the checked-in configuration. The ordinary reproduction command remains `npx playwright test tests/presentation.spec.ts` after building.
+- Refreshed `ac5-evidence.json` with current source hashes, decoded asset dimensions, chapter observations, actual audio `playing` events and both modes' expression results; regenerated all 28 AC5 screenshots.
+- Directly inspected the new desktop archive scene, mobile static archive scene and exact 390×844 input capture. Korean text, character, choices, input and send button are legible without overlapping controls or horizontal clipping. Long scenes use vertical scrolling at both sizes; full-page screenshots are consequently taller than the viewport.
+- Existing assertions passed for input/choice hit testing, send-button viewport bounds, no horizontal overflow, typing/reveal, breathing and reduced-motion parity, audio playback/gain/mute, keyboard focus/Enter/Escape, settings persistence and absence of browser exceptions.
+- README already documents `play.cmd`, `stop.cmd`, accessibility controls and `THIRD_PARTY_NOTICES.txt`; no documentation repair or dependency change was required. Original art, live provider behavior, launch scripts and license notices were preserved.
+
+Verdict: AC5 passes for the specified Chromium viewport checks. Physical mobile keyboards/IME, other browser engines and subjective speaker listening remain outside these measured results; this is not a whole-game commercial-readiness verdict.

@@ -1,12 +1,12 @@
 {
-  "executedAt": "2026-11-20T19:03:53.344Z",
+  "executedAt": "2026-11-20T19:22:33.371Z",
   "codeVersion": {
     "src/main.tsx": "5899c332b86bd44e11698d842af61be7275e6914e742b47f7fc1beaee9f5d00e",
     "src/style.css": "cf4c637984d4577bd6b7d23015bf302644c1a81e94777c7358c0f7afd585182b",
     "src/presentation.ts": "a86661dfdaf6f80e43429936c821397a6d57afbf483cdabe5e4c7a46663dc6fe",
     "src/StageEffects.tsx": "e2c21f30bec1d6216deab365d0c721343f94c3e69b3bcd9f5ffa1a9e91b06ef9",
     "tests/presentation.spec.ts": "73056c33f19be36c3d9e33d0442e551bedd9811eb4f21fe2c914d561f3e2dcb0",
-    "server/office.ts": "bf08549e790bb645015ad7b2badfae55f1f7978062f3a4d58c6a1bcbd6232ce1",
+    "server/office.ts": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
     "server/romance.ts": "dfe6a00a02f735a685d7ed6dbb98e6e0f6d216badce3dbbc9278947a2b5bb755"
   },
   "claim": "AC5 identical story information and choices across presentation settings",
@@ -69,7 +69,7 @@
           "sound": {
             "muted": false,
             "paused": false,
-            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "src": "http://127.0.0.1:3037/assets/evening.wav",
             "ready": 4
           }
         },
@@ -87,7 +87,7 @@
           "sound": {
             "muted": false,
             "paused": false,
-            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "src": "http://127.0.0.1:3037/assets/evening.wav",
             "ready": 4
           }
         },
@@ -105,7 +105,7 @@
           "sound": {
             "muted": false,
             "paused": false,
-            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "src": "http://127.0.0.1:3037/assets/evening.wav",
             "ready": 4
           }
         },
@@ -123,7 +123,7 @@
           "sound": {
             "muted": false,
             "paused": false,
-            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "src": "http://127.0.0.1:3037/assets/evening.wav",
             "ready": 4
           }
         },
@@ -141,7 +141,7 @@
           "sound": {
             "muted": false,
             "paused": false,
-            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "src": "http://127.0.0.1:3037/assets/archive-theme.wav",
             "ready": 1
           }
         },
@@ -159,7 +159,7 @@
           "sound": {
             "muted": false,
             "paused": false,
-            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "src": "http://127.0.0.1:3037/assets/archive-theme.wav",
             "ready": 4
           }
         },
@@ -173,44 +173,44 @@
           "sound": {
             "muted": false,
             "paused": false,
-            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "src": "http://127.0.0.1:3037/assets/archive-theme.wav",
             "ready": 4
           }
         }
       ],
       "effectPlays": [
         {
-          "src": "http://127.0.0.1:3017/assets/chime.wav",
+          "src": "http://127.0.0.1:3037/assets/chime.wav",
           "volume": 0.01,
           "muted": false
         },
         {
-          "src": "http://127.0.0.1:3017/assets/chime.wav",
+          "src": "http://127.0.0.1:3037/assets/chime.wav",
           "volume": 0.01,
           "muted": false
         },
         {
-          "src": "http://127.0.0.1:3017/assets/chime.wav",
+          "src": "http://127.0.0.1:3037/assets/chime.wav",
           "volume": 0.01,
           "muted": false
         },
         {
-          "src": "http://127.0.0.1:3017/assets/chime.wav",
+          "src": "http://127.0.0.1:3037/assets/chime.wav",
           "volume": 0.01,
           "muted": false
         },
         {
-          "src": "http://127.0.0.1:3017/assets/tape.wav",
+          "src": "http://127.0.0.1:3037/assets/tape.wav",
           "volume": 0.01,
           "muted": false
         },
         {
-          "src": "http://127.0.0.1:3017/assets/tape.wav",
+          "src": "http://127.0.0.1:3037/assets/tape.wav",
           "volume": 0.01,
           "muted": false
         },
         {
-          "src": "http://127.0.0.1:3017/assets/tape.wav",
+          "src": "http://127.0.0.1:3037/assets/tape.wav",
           "volume": 0.01,
           "muted": false
         }
@@ -306,7 +306,7 @@
           "sound": {
             "muted": true,
             "paused": true,
-            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "src": "http://127.0.0.1:3037/assets/evening.wav",
             "ready": 4
           }
         },
@@ -324,7 +324,7 @@
           "sound": {
             "muted": true,
             "paused": true,
-            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "src": "http://127.0.0.1:3037/assets/evening.wav",
             "ready": 4
           }
         },
@@ -342,7 +342,7 @@
           "sound": {
             "muted": true,
             "paused": true,
-            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "src": "http://127.0.0.1:3037/assets/evening.wav",
             "ready": 4
           }
         },
@@ -360,7 +360,7 @@
           "sound": {
             "muted": true,
             "paused": true,
-            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "src": "http://127.0.0.1:3037/assets/evening.wav",
             "ready": 4
           }
         },
@@ -378,7 +378,7 @@
           "sound": {
             "muted": true,
             "paused": true,
-            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "src": "http://127.0.0.1:3037/assets/archive-theme.wav",
             "ready": 4
           }
         },
@@ -396,7 +396,7 @@
           "sound": {
             "muted": true,
             "paused": true,
-            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "src": "http://127.0.0.1:3037/assets/archive-theme.wav",
             "ready": 4
           }
         },
@@ -410,7 +410,7 @@
           "sound": {
             "muted": true,
             "paused": true,
-            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "src": "http://127.0.0.1:3037/assets/archive-theme.wav",
             "ready": 4
           }
         }
@@ -507,7 +507,7 @@
           "sound": {
             "muted": false,
             "paused": false,
-            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "src": "http://127.0.0.1:3037/assets/evening.wav",
             "ready": 4
           }
         },
@@ -525,7 +525,7 @@
           "sound": {
             "muted": false,
             "paused": false,
-            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "src": "http://127.0.0.1:3037/assets/evening.wav",
             "ready": 4
           }
         },
@@ -543,7 +543,7 @@
           "sound": {
             "muted": false,
             "paused": false,
-            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "src": "http://127.0.0.1:3037/assets/evening.wav",
             "ready": 4
           }
         },
@@ -561,7 +561,7 @@
           "sound": {
             "muted": false,
             "paused": false,
-            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "src": "http://127.0.0.1:3037/assets/evening.wav",
             "ready": 4
           }
         },
@@ -579,7 +579,7 @@
           "sound": {
             "muted": false,
             "paused": false,
-            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "src": "http://127.0.0.1:3037/assets/archive-theme.wav",
             "ready": 1
           }
         },
@@ -597,7 +597,7 @@
           "sound": {
             "muted": false,
             "paused": false,
-            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "src": "http://127.0.0.1:3037/assets/archive-theme.wav",
             "ready": 4
           }
         },
@@ -611,44 +611,44 @@
           "sound": {
             "muted": false,
             "paused": false,
-            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "src": "http://127.0.0.1:3037/assets/archive-theme.wav",
             "ready": 4
           }
         }
       ],
       "effectPlays": [
         {
-          "src": "http://127.0.0.1:3017/assets/chime.wav",
+          "src": "http://127.0.0.1:3037/assets/chime.wav",
           "volume": 0.01,
           "muted": false
         },
         {
-          "src": "http://127.0.0.1:3017/assets/chime.wav",
+          "src": "http://127.0.0.1:3037/assets/chime.wav",
           "volume": 0.01,
           "muted": false
         },
         {
-          "src": "http://127.0.0.1:3017/assets/chime.wav",
+          "src": "http://127.0.0.1:3037/assets/chime.wav",
           "volume": 0.01,
           "muted": false
         },
         {
-          "src": "http://127.0.0.1:3017/assets/chime.wav",
+          "src": "http://127.0.0.1:3037/assets/chime.wav",
           "volume": 0.01,
           "muted": false
         },
         {
-          "src": "http://127.0.0.1:3017/assets/tape.wav",
+          "src": "http://127.0.0.1:3037/assets/tape.wav",
           "volume": 0.01,
           "muted": false
         },
         {
-          "src": "http://127.0.0.1:3017/assets/tape.wav",
+          "src": "http://127.0.0.1:3037/assets/tape.wav",
           "volume": 0.01,
           "muted": false
         },
         {
-          "src": "http://127.0.0.1:3017/assets/tape.wav",
+          "src": "http://127.0.0.1:3037/assets/tape.wav",
           "volume": 0.01,
           "muted": false
         }
@@ -744,7 +744,7 @@
           "sound": {
             "muted": true,
             "paused": true,
-            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "src": "http://127.0.0.1:3037/assets/evening.wav",
             "ready": 4
           }
         },
@@ -762,7 +762,7 @@
           "sound": {
             "muted": true,
             "paused": true,
-            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "src": "http://127.0.0.1:3037/assets/evening.wav",
             "ready": 4
           }
         },
@@ -780,7 +780,7 @@
           "sound": {
             "muted": true,
             "paused": true,
-            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "src": "http://127.0.0.1:3037/assets/evening.wav",
             "ready": 4
           }
         },
@@ -798,7 +798,7 @@
           "sound": {
             "muted": true,
             "paused": true,
-            "src": "http://127.0.0.1:3017/assets/evening.wav",
+            "src": "http://127.0.0.1:3037/assets/evening.wav",
             "ready": 4
           }
         },
@@ -816,7 +816,7 @@
           "sound": {
             "muted": true,
             "paused": true,
-            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "src": "http://127.0.0.1:3037/assets/archive-theme.wav",
             "ready": 4
           }
         },
@@ -834,7 +834,7 @@
           "sound": {
             "muted": true,
             "paused": true,
-            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "src": "http://127.0.0.1:3037/assets/archive-theme.wav",
             "ready": 4
           }
         },
@@ -848,7 +848,7 @@
           "sound": {
             "muted": true,
             "paused": true,
-            "src": "http://127.0.0.1:3017/assets/archive-theme.wav",
+            "src": "http://127.0.0.1:3037/assets/archive-theme.wav",
             "ready": 4
           }
         }

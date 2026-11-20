@@ -1,6 +1,6 @@
 {
   "criterion": 7,
-  "executedAt": "2026-11-20T19:03:16.591Z",
+  "executedAt": "2026-11-20T19:21:56.532Z",
   "testHash": "c492c766ec4e0c0e4bdce9b45f06cb2f2fc9e3ec5936c38866fbd3394c8e250f",
   "runs": [
     {
@@ -36,7 +36,7 @@
                 "id": "scene-0",
                 "eventId": "start",
                 "version": 0,
-                "confirmedAt": "2026-11-20T19:03:10.441Z",
+                "confirmedAt": "2026-11-20T19:21:50.365Z",
                 "kind": "scene",
                 "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
               }
@@ -218,7 +218,7 @@
             "text": "고객 마감 메일은 내일 오전 10시입니다. 오늘 18시에 퇴근하겠습니다.",
             "step": 0,
             "version": 0,
-            "requestId": "cdd51886-80c5-4ead-bc15-d755dcf62227"
+            "requestId": "f8070142-170f-4e04-9ae6-9bc15eff752a"
           },
           "state": {
             "game": {
@@ -278,15 +278,15 @@
                     "id": "scene-0",
                     "eventId": "start",
                     "version": 0,
-                    "confirmedAt": "2026-11-20T19:03:10.441Z",
+                    "confirmedAt": "2026-11-20T19:21:50.365Z",
                     "kind": "scene",
                     "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
                   },
                   {
                     "id": "agreement-1",
-                    "eventId": "637c8789-a727-4d8d-ae22-4165ee7f99f9",
+                    "eventId": "fc2208d8-f132-4395-bce7-a864b939f597",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:10.546Z",
+                    "confirmedAt": "2026-11-20T19:21:50.506Z",
                     "kind": "agreement",
                     "text": "실제 퇴근 시각: 확보 오늘 18:00 / 목표 오늘 18:00\n잔여 보고서 담당·기한: 확보 없음 / 목표 박도현 부장 / 내일 10:00 (목표 미확보)"
                   }
@@ -305,7 +305,7 @@
                   },
                   {
                     "kind": "verified_event",
-                    "eventId": "637c8789-a727-4d8d-ae22-4165ee7f99f9",
+                    "eventId": "fc2208d8-f132-4395-bce7-a864b939f597",
                     "text": "실제 퇴근 시각: 확보 오늘 18:00 / 목표 오늘 18:00\n잔여 보고서 담당·기한: 확보 없음 / 목표 박도현 부장 / 내일 10:00 (목표 미확보)",
                     "version": 1
                   }
@@ -486,7 +486,7 @@
             "text": "남은 표는 부장님이 내일 10시까지 맡아 주세요.",
             "step": 0,
             "version": 1,
-            "requestId": "aef43040-1e7d-4faf-a9ab-77e38d68686b"
+            "requestId": "141e95f7-4443-4ebc-b524-db27ad9ef485"
           },
           "state": {
             "game": {
@@ -575,23 +575,23 @@
                     "id": "scene-0",
                     "eventId": "start",
                     "version": 0,
-                    "confirmedAt": "2026-11-20T19:03:10.441Z",
+                    "confirmedAt": "2026-11-20T19:21:50.365Z",
                     "kind": "scene",
                     "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
                   },
                   {
                     "id": "agreement-1",
-                    "eventId": "637c8789-a727-4d8d-ae22-4165ee7f99f9",
+                    "eventId": "fc2208d8-f132-4395-bce7-a864b939f597",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:10.546Z",
+                    "confirmedAt": "2026-11-20T19:21:50.506Z",
                     "kind": "agreement",
                     "text": "실제 퇴근 시각: 확보 오늘 18:00 / 목표 오늘 18:00\n잔여 보고서 담당·기한: 확보 없음 / 목표 박도현 부장 / 내일 10:00 (목표 미확보)"
                   },
                   {
                     "id": "agreement-2",
-                    "eventId": "3bfc90df-5b1a-4c59-adbd-1235e0c56834",
+                    "eventId": "a5213ade-ab49-4cec-bc49-ddb722b43a31",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:10.616Z",
+                    "confirmedAt": "2026-11-20T19:21:50.572Z",
                     "kind": "ending",
                     "text": "실제 퇴근 시각: 확보 오늘 18:00 / 목표 오늘 18:00\n잔여 보고서 담당·기한: 확보 박도현 부장 / 내일 10:00 / 목표 박도현 부장 / 내일 10:00 / office-clockout-success"
                   }
@@ -610,7 +610,7 @@
                   },
                   {
                     "kind": "verified_event",
-                    "eventId": "637c8789-a727-4d8d-ae22-4165ee7f99f9",
+                    "eventId": "fc2208d8-f132-4395-bce7-a864b939f597",
                     "text": "실제 퇴근 시각: 확보 오늘 18:00 / 목표 오늘 18:00\n잔여 보고서 담당·기한: 확보 없음 / 목표 박도현 부장 / 내일 10:00 (목표 미확보)",
                     "version": 1
                   },
@@ -627,7 +627,7 @@
                   },
                   {
                     "kind": "verified_event",
-                    "eventId": "3bfc90df-5b1a-4c59-adbd-1235e0c56834",
+                    "eventId": "a5213ade-ab49-4cec-bc49-ddb722b43a31",
                     "text": "실제 퇴근 시각: 확보 오늘 18:00 / 목표 오늘 18:00\n잔여 보고서 담당·기한: 확보 박도현 부장 / 내일 10:00 / 목표 박도현 부장 / 내일 10:00 / office-clockout-success",
                     "version": 2
                   }
@@ -835,7 +835,7 @@
                 "id": "scene-0",
                 "eventId": "start",
                 "version": 0,
-                "confirmedAt": "2026-11-20T19:03:11.955Z",
+                "confirmedAt": "2026-11-20T19:21:51.949Z",
                 "kind": "scene",
                 "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 당신이 풀어 주자 귀끝이 붉어진다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
               }
@@ -1024,7 +1024,7 @@
             "text": "종소리를 같이 듣고 싶어요",
             "step": 0,
             "version": 0,
-            "requestId": "5b2fbf55-7dd4-42aa-a984-ed88aaecebf0"
+            "requestId": "b3e05cf2-96ab-438c-8001-c449dcc396d2"
           },
           "state": {
             "game": {
@@ -1080,7 +1080,7 @@
                     "id": "scene-0",
                     "eventId": "start",
                     "version": 0,
-                    "confirmedAt": "2026-11-20T19:03:11.955Z",
+                    "confirmedAt": "2026-11-20T19:21:51.949Z",
                     "kind": "scene",
                     "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 당신이 풀어 주자 귀끝이 붉어진다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
                   },
@@ -1088,7 +1088,7 @@
                     "id": "shared-listening",
                     "eventId": "romance-1-shared-listening",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:12.033Z",
+                    "confirmedAt": "2026-11-20T19:21:52.054Z",
                     "kind": "relationship",
                     "text": "함께 종소리를 들었다. 개인 취향과 자기소개는 플레이어 발화 기록에 별도로 남겼다."
                   },
@@ -1096,7 +1096,7 @@
                     "id": "chapter-0",
                     "eventId": "romance-1-chapter-0",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:12.033Z",
+                    "confirmedAt": "2026-11-20T19:21:52.054Z",
                     "kind": "relationship",
                     "text": "서로 이름을 알고 다음 만남을 제안한다"
                   }
@@ -1309,7 +1309,7 @@
             "text": "헤드폰을 돌려줄게요",
             "step": 1,
             "version": 1,
-            "requestId": "01deb372-044b-40f1-85c0-1aafc80c394c"
+            "requestId": "9d71d157-7115-41cf-a4be-4e9e98368708"
           },
           "state": {
             "game": {
@@ -1398,7 +1398,7 @@
                     "id": "scene-0",
                     "eventId": "start",
                     "version": 0,
-                    "confirmedAt": "2026-11-20T19:03:11.955Z",
+                    "confirmedAt": "2026-11-20T19:21:51.949Z",
                     "kind": "scene",
                     "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 당신이 풀어 주자 귀끝이 붉어진다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
                   },
@@ -1406,7 +1406,7 @@
                     "id": "shared-listening",
                     "eventId": "romance-1-shared-listening",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:12.033Z",
+                    "confirmedAt": "2026-11-20T19:21:52.054Z",
                     "kind": "relationship",
                     "text": "함께 종소리를 들었다. 개인 취향과 자기소개는 플레이어 발화 기록에 별도로 남겼다."
                   },
@@ -1414,7 +1414,7 @@
                     "id": "chapter-0",
                     "eventId": "romance-1-chapter-0",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:12.033Z",
+                    "confirmedAt": "2026-11-20T19:21:52.054Z",
                     "kind": "relationship",
                     "text": "서로 이름을 알고 다음 만남을 제안한다"
                   },
@@ -1422,7 +1422,7 @@
                     "id": "headphone-return",
                     "eventId": "romance-2-headphone-return",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:12.100Z",
+                    "confirmedAt": "2026-11-20T19:21:52.124Z",
                     "kind": "relationship",
                     "text": "빌린 헤드폰을 돌려주고 함께 작동을 확인했다."
                   },
@@ -1430,7 +1430,7 @@
                     "id": "shared-test",
                     "eventId": "romance-2-shared-test",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:12.100Z",
+                    "confirmedAt": "2026-11-20T19:21:52.124Z",
                     "kind": "relationship",
                     "text": "테스트 녹음과 설명이 일치함을 함께 확인했다."
                   },
@@ -1438,7 +1438,7 @@
                     "id": "chapter-1",
                     "eventId": "romance-2-chapter-1",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:12.100Z",
+                    "confirmedAt": "2026-11-20T19:21:52.124Z",
                     "kind": "relationship",
                     "text": "정직과 약속 이행 또는 보류를 확인하고 호감을 표현한다"
                   }
@@ -1680,7 +1680,7 @@
             "text": "나도 좋아해요. 사귀어요",
             "step": 2,
             "version": 2,
-            "requestId": "95207b0b-3a56-4865-9b43-b25024b36c2f"
+            "requestId": "d590a78e-fe11-4635-929b-a5435ec4fe0f"
           },
           "state": {
             "game": {
@@ -1795,7 +1795,7 @@
                     "id": "scene-0",
                     "eventId": "start",
                     "version": 0,
-                    "confirmedAt": "2026-11-20T19:03:11.955Z",
+                    "confirmedAt": "2026-11-20T19:21:51.949Z",
                     "kind": "scene",
                     "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 당신이 풀어 주자 귀끝이 붉어진다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
                   },
@@ -1803,7 +1803,7 @@
                     "id": "shared-listening",
                     "eventId": "romance-1-shared-listening",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:12.033Z",
+                    "confirmedAt": "2026-11-20T19:21:52.054Z",
                     "kind": "relationship",
                     "text": "함께 종소리를 들었다. 개인 취향과 자기소개는 플레이어 발화 기록에 별도로 남겼다."
                   },
@@ -1811,7 +1811,7 @@
                     "id": "chapter-0",
                     "eventId": "romance-1-chapter-0",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:12.033Z",
+                    "confirmedAt": "2026-11-20T19:21:52.054Z",
                     "kind": "relationship",
                     "text": "서로 이름을 알고 다음 만남을 제안한다"
                   },
@@ -1819,7 +1819,7 @@
                     "id": "headphone-return",
                     "eventId": "romance-2-headphone-return",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:12.100Z",
+                    "confirmedAt": "2026-11-20T19:21:52.124Z",
                     "kind": "relationship",
                     "text": "빌린 헤드폰을 돌려주고 함께 작동을 확인했다."
                   },
@@ -1827,7 +1827,7 @@
                     "id": "shared-test",
                     "eventId": "romance-2-shared-test",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:12.100Z",
+                    "confirmedAt": "2026-11-20T19:21:52.124Z",
                     "kind": "relationship",
                     "text": "테스트 녹음과 설명이 일치함을 함께 확인했다."
                   },
@@ -1835,7 +1835,7 @@
                     "id": "chapter-1",
                     "eventId": "romance-2-chapter-1",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:12.100Z",
+                    "confirmedAt": "2026-11-20T19:21:52.124Z",
                     "kind": "relationship",
                     "text": "정직과 약속 이행 또는 보류를 확인하고 호감을 표현한다"
                   },
@@ -1843,7 +1843,7 @@
                     "id": "couple",
                     "eventId": "romance-3-couple",
                     "version": 3,
-                    "confirmedAt": "2026-11-20T19:03:12.184Z",
+                    "confirmedAt": "2026-11-20T19:21:52.209Z",
                     "kind": "relationship",
                     "text": "서로 고백에 답하고 연인이 되었다."
                   },
@@ -1851,7 +1851,7 @@
                     "id": "chapter-2",
                     "eventId": "romance-3-chapter-2",
                     "version": 3,
-                    "confirmedAt": "2026-11-20T19:03:12.184Z",
+                    "confirmedAt": "2026-11-20T19:21:52.209Z",
                     "kind": "relationship",
                     "text": "서로 고백에 답하고 연인이 되었다."
                   }
@@ -2116,7 +2116,7 @@
             "text": "내일 원본을 확인해요",
             "step": 3,
             "version": 3,
-            "requestId": "b71fbe27-738f-4093-bd44-a5d186be47ab"
+            "requestId": "0b442c3d-6c09-48de-b554-53471d273f15"
           },
           "state": {
             "game": {
@@ -2260,7 +2260,7 @@
                     "id": "scene-0",
                     "eventId": "start",
                     "version": 0,
-                    "confirmedAt": "2026-11-20T19:03:11.955Z",
+                    "confirmedAt": "2026-11-20T19:21:51.949Z",
                     "kind": "scene",
                     "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 당신이 풀어 주자 귀끝이 붉어진다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
                   },
@@ -2268,7 +2268,7 @@
                     "id": "shared-listening",
                     "eventId": "romance-1-shared-listening",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:12.033Z",
+                    "confirmedAt": "2026-11-20T19:21:52.054Z",
                     "kind": "relationship",
                     "text": "함께 종소리를 들었다. 개인 취향과 자기소개는 플레이어 발화 기록에 별도로 남겼다."
                   },
@@ -2276,7 +2276,7 @@
                     "id": "chapter-0",
                     "eventId": "romance-1-chapter-0",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:12.033Z",
+                    "confirmedAt": "2026-11-20T19:21:52.054Z",
                     "kind": "relationship",
                     "text": "서로 이름을 알고 다음 만남을 제안한다"
                   },
@@ -2284,7 +2284,7 @@
                     "id": "headphone-return",
                     "eventId": "romance-2-headphone-return",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:12.100Z",
+                    "confirmedAt": "2026-11-20T19:21:52.124Z",
                     "kind": "relationship",
                     "text": "빌린 헤드폰을 돌려주고 함께 작동을 확인했다."
                   },
@@ -2292,7 +2292,7 @@
                     "id": "shared-test",
                     "eventId": "romance-2-shared-test",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:12.100Z",
+                    "confirmedAt": "2026-11-20T19:21:52.124Z",
                     "kind": "relationship",
                     "text": "테스트 녹음과 설명이 일치함을 함께 확인했다."
                   },
@@ -2300,7 +2300,7 @@
                     "id": "chapter-1",
                     "eventId": "romance-2-chapter-1",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:12.100Z",
+                    "confirmedAt": "2026-11-20T19:21:52.124Z",
                     "kind": "relationship",
                     "text": "정직과 약속 이행 또는 보류를 확인하고 호감을 표현한다"
                   },
@@ -2308,7 +2308,7 @@
                     "id": "couple",
                     "eventId": "romance-3-couple",
                     "version": 3,
-                    "confirmedAt": "2026-11-20T19:03:12.184Z",
+                    "confirmedAt": "2026-11-20T19:21:52.209Z",
                     "kind": "relationship",
                     "text": "서로 고백에 답하고 연인이 되었다."
                   },
@@ -2316,7 +2316,7 @@
                     "id": "chapter-2",
                     "eventId": "romance-3-chapter-2",
                     "version": 3,
-                    "confirmedAt": "2026-11-20T19:03:12.184Z",
+                    "confirmedAt": "2026-11-20T19:21:52.209Z",
                     "kind": "relationship",
                     "text": "서로 고백에 답하고 연인이 되었다."
                   },
@@ -2324,7 +2324,7 @@
                     "id": "date-complete",
                     "eventId": "romance-4-date-complete",
                     "version": 4,
-                    "confirmedAt": "2026-11-20T19:03:12.269Z",
+                    "confirmedAt": "2026-11-20T19:21:52.293Z",
                     "kind": "relationship",
                     "text": "연인으로 도시락 데이트를 마쳤다."
                   },
@@ -2332,7 +2332,7 @@
                     "id": "archive-appointment",
                     "eventId": "romance-4-archive-appointment",
                     "version": 4,
-                    "confirmedAt": "2026-11-20T19:03:12.269Z",
+                    "confirmedAt": "2026-11-20T19:21:52.293Z",
                     "kind": "relationship",
                     "text": "다음 원본 청취 약속을 정했다."
                   },
@@ -2340,7 +2340,7 @@
                     "id": "chapter-3",
                     "eventId": "romance-4-chapter-3",
                     "version": 4,
-                    "confirmedAt": "2026-11-20T19:03:12.269Z",
+                    "confirmedAt": "2026-11-20T19:21:52.293Z",
                     "kind": "relationship",
                     "text": "데이트 또는 친구 산책을 마치고 원본 청취를 약속한다"
                   }
@@ -2634,7 +2634,7 @@
             "text": "편집 흔적을 비교해요",
             "step": 4,
             "version": 4,
-            "requestId": "024490ef-658b-4009-8d68-e592f24146a4"
+            "requestId": "e3b1da4e-ae8d-4b9d-b953-ef89676bb0d3"
           },
           "state": {
             "game": {
@@ -2799,7 +2799,7 @@
                     "id": "scene-0",
                     "eventId": "start",
                     "version": 0,
-                    "confirmedAt": "2026-11-20T19:03:11.955Z",
+                    "confirmedAt": "2026-11-20T19:21:51.949Z",
                     "kind": "scene",
                     "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 당신이 풀어 주자 귀끝이 붉어진다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
                   },
@@ -2807,7 +2807,7 @@
                     "id": "shared-listening",
                     "eventId": "romance-1-shared-listening",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:12.033Z",
+                    "confirmedAt": "2026-11-20T19:21:52.054Z",
                     "kind": "relationship",
                     "text": "함께 종소리를 들었다. 개인 취향과 자기소개는 플레이어 발화 기록에 별도로 남겼다."
                   },
@@ -2815,7 +2815,7 @@
                     "id": "chapter-0",
                     "eventId": "romance-1-chapter-0",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:12.033Z",
+                    "confirmedAt": "2026-11-20T19:21:52.054Z",
                     "kind": "relationship",
                     "text": "서로 이름을 알고 다음 만남을 제안한다"
                   },
@@ -2823,7 +2823,7 @@
                     "id": "headphone-return",
                     "eventId": "romance-2-headphone-return",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:12.100Z",
+                    "confirmedAt": "2026-11-20T19:21:52.124Z",
                     "kind": "relationship",
                     "text": "빌린 헤드폰을 돌려주고 함께 작동을 확인했다."
                   },
@@ -2831,7 +2831,7 @@
                     "id": "shared-test",
                     "eventId": "romance-2-shared-test",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:12.100Z",
+                    "confirmedAt": "2026-11-20T19:21:52.124Z",
                     "kind": "relationship",
                     "text": "테스트 녹음과 설명이 일치함을 함께 확인했다."
                   },
@@ -2839,7 +2839,7 @@
                     "id": "chapter-1",
                     "eventId": "romance-2-chapter-1",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:12.100Z",
+                    "confirmedAt": "2026-11-20T19:21:52.124Z",
                     "kind": "relationship",
                     "text": "정직과 약속 이행 또는 보류를 확인하고 호감을 표현한다"
                   },
@@ -2847,7 +2847,7 @@
                     "id": "couple",
                     "eventId": "romance-3-couple",
                     "version": 3,
-                    "confirmedAt": "2026-11-20T19:03:12.184Z",
+                    "confirmedAt": "2026-11-20T19:21:52.209Z",
                     "kind": "relationship",
                     "text": "서로 고백에 답하고 연인이 되었다."
                   },
@@ -2855,7 +2855,7 @@
                     "id": "chapter-2",
                     "eventId": "romance-3-chapter-2",
                     "version": 3,
-                    "confirmedAt": "2026-11-20T19:03:12.184Z",
+                    "confirmedAt": "2026-11-20T19:21:52.209Z",
                     "kind": "relationship",
                     "text": "서로 고백에 답하고 연인이 되었다."
                   },
@@ -2863,7 +2863,7 @@
                     "id": "date-complete",
                     "eventId": "romance-4-date-complete",
                     "version": 4,
-                    "confirmedAt": "2026-11-20T19:03:12.269Z",
+                    "confirmedAt": "2026-11-20T19:21:52.293Z",
                     "kind": "relationship",
                     "text": "연인으로 도시락 데이트를 마쳤다."
                   },
@@ -2871,7 +2871,7 @@
                     "id": "archive-appointment",
                     "eventId": "romance-4-archive-appointment",
                     "version": 4,
-                    "confirmedAt": "2026-11-20T19:03:12.269Z",
+                    "confirmedAt": "2026-11-20T19:21:52.293Z",
                     "kind": "relationship",
                     "text": "다음 원본 청취 약속을 정했다."
                   },
@@ -2879,7 +2879,7 @@
                     "id": "chapter-3",
                     "eventId": "romance-4-chapter-3",
                     "version": 4,
-                    "confirmedAt": "2026-11-20T19:03:12.269Z",
+                    "confirmedAt": "2026-11-20T19:21:52.293Z",
                     "kind": "relationship",
                     "text": "데이트 또는 친구 산책을 마치고 원본 청취를 약속한다"
                   },
@@ -2887,7 +2887,7 @@
                     "id": "A17-B17",
                     "eventId": "romance-5-A17-B17",
                     "version": 5,
-                    "confirmedAt": "2026-11-20T19:03:12.351Z",
+                    "confirmedAt": "2026-11-20T19:21:52.379Z",
                     "kind": "clue",
                     "text": "A17 원본과 B17 전시본을 재생 비교하여 귀가 발언 삭제 위치를 검증했다."
                   },
@@ -2895,7 +2895,7 @@
                     "id": "appointment-kept",
                     "eventId": "romance-5-appointment-kept",
                     "version": 5,
-                    "confirmedAt": "2026-11-20T19:03:12.351Z",
+                    "confirmedAt": "2026-11-20T19:21:52.379Z",
                     "kind": "relationship",
                     "text": "약속한 원본 청취에 함께 참석하여 비교를 마쳤다."
                   },
@@ -2903,7 +2903,7 @@
                     "id": "chapter-4",
                     "eventId": "romance-5-chapter-4",
                     "version": 5,
-                    "confirmedAt": "2026-11-20T19:03:12.351Z",
+                    "confirmedAt": "2026-11-20T19:21:52.379Z",
                     "kind": "relationship",
                     "text": "편집 증거 확보 또는 청취 거부 후 마지막 대면"
                   }
@@ -3226,7 +3226,7 @@
             "text": "원본을 복원해요",
             "step": 5,
             "version": 5,
-            "requestId": "7ef79e72-2fe0-4c70-807c-b4effb1033b8"
+            "requestId": "3a4cd15a-53cb-4539-9650-0940fd771478"
           },
           "state": {
             "game": {
@@ -3422,7 +3422,7 @@
                     "id": "scene-0",
                     "eventId": "start",
                     "version": 0,
-                    "confirmedAt": "2026-11-20T19:03:11.955Z",
+                    "confirmedAt": "2026-11-20T19:21:51.949Z",
                     "kind": "scene",
                     "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 당신이 풀어 주자 귀끝이 붉어진다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
                   },
@@ -3430,7 +3430,7 @@
                     "id": "shared-listening",
                     "eventId": "romance-1-shared-listening",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:12.033Z",
+                    "confirmedAt": "2026-11-20T19:21:52.054Z",
                     "kind": "relationship",
                     "text": "함께 종소리를 들었다. 개인 취향과 자기소개는 플레이어 발화 기록에 별도로 남겼다."
                   },
@@ -3438,7 +3438,7 @@
                     "id": "chapter-0",
                     "eventId": "romance-1-chapter-0",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:12.033Z",
+                    "confirmedAt": "2026-11-20T19:21:52.054Z",
                     "kind": "relationship",
                     "text": "서로 이름을 알고 다음 만남을 제안한다"
                   },
@@ -3446,7 +3446,7 @@
                     "id": "headphone-return",
                     "eventId": "romance-2-headphone-return",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:12.100Z",
+                    "confirmedAt": "2026-11-20T19:21:52.124Z",
                     "kind": "relationship",
                     "text": "빌린 헤드폰을 돌려주고 함께 작동을 확인했다."
                   },
@@ -3454,7 +3454,7 @@
                     "id": "shared-test",
                     "eventId": "romance-2-shared-test",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:12.100Z",
+                    "confirmedAt": "2026-11-20T19:21:52.124Z",
                     "kind": "relationship",
                     "text": "테스트 녹음과 설명이 일치함을 함께 확인했다."
                   },
@@ -3462,7 +3462,7 @@
                     "id": "chapter-1",
                     "eventId": "romance-2-chapter-1",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:12.100Z",
+                    "confirmedAt": "2026-11-20T19:21:52.124Z",
                     "kind": "relationship",
                     "text": "정직과 약속 이행 또는 보류를 확인하고 호감을 표현한다"
                   },
@@ -3470,7 +3470,7 @@
                     "id": "couple",
                     "eventId": "romance-3-couple",
                     "version": 3,
-                    "confirmedAt": "2026-11-20T19:03:12.184Z",
+                    "confirmedAt": "2026-11-20T19:21:52.209Z",
                     "kind": "relationship",
                     "text": "서로 고백에 답하고 연인이 되었다."
                   },
@@ -3478,7 +3478,7 @@
                     "id": "chapter-2",
                     "eventId": "romance-3-chapter-2",
                     "version": 3,
-                    "confirmedAt": "2026-11-20T19:03:12.184Z",
+                    "confirmedAt": "2026-11-20T19:21:52.209Z",
                     "kind": "relationship",
                     "text": "서로 고백에 답하고 연인이 되었다."
                   },
@@ -3486,7 +3486,7 @@
                     "id": "date-complete",
                     "eventId": "romance-4-date-complete",
                     "version": 4,
-                    "confirmedAt": "2026-11-20T19:03:12.269Z",
+                    "confirmedAt": "2026-11-20T19:21:52.293Z",
                     "kind": "relationship",
                     "text": "연인으로 도시락 데이트를 마쳤다."
                   },
@@ -3494,7 +3494,7 @@
                     "id": "archive-appointment",
                     "eventId": "romance-4-archive-appointment",
                     "version": 4,
-                    "confirmedAt": "2026-11-20T19:03:12.269Z",
+                    "confirmedAt": "2026-11-20T19:21:52.293Z",
                     "kind": "relationship",
                     "text": "다음 원본 청취 약속을 정했다."
                   },
@@ -3502,7 +3502,7 @@
                     "id": "chapter-3",
                     "eventId": "romance-4-chapter-3",
                     "version": 4,
-                    "confirmedAt": "2026-11-20T19:03:12.269Z",
+                    "confirmedAt": "2026-11-20T19:21:52.293Z",
                     "kind": "relationship",
                     "text": "데이트 또는 친구 산책을 마치고 원본 청취를 약속한다"
                   },
@@ -3510,7 +3510,7 @@
                     "id": "A17-B17",
                     "eventId": "romance-5-A17-B17",
                     "version": 5,
-                    "confirmedAt": "2026-11-20T19:03:12.351Z",
+                    "confirmedAt": "2026-11-20T19:21:52.379Z",
                     "kind": "clue",
                     "text": "A17 원본과 B17 전시본을 재생 비교하여 귀가 발언 삭제 위치를 검증했다."
                   },
@@ -3518,7 +3518,7 @@
                     "id": "appointment-kept",
                     "eventId": "romance-5-appointment-kept",
                     "version": 5,
-                    "confirmedAt": "2026-11-20T19:03:12.351Z",
+                    "confirmedAt": "2026-11-20T19:21:52.379Z",
                     "kind": "relationship",
                     "text": "약속한 원본 청취에 함께 참석하여 비교를 마쳤다."
                   },
@@ -3526,7 +3526,7 @@
                     "id": "chapter-4",
                     "eventId": "romance-5-chapter-4",
                     "version": 5,
-                    "confirmedAt": "2026-11-20T19:03:12.351Z",
+                    "confirmedAt": "2026-11-20T19:21:52.379Z",
                     "kind": "relationship",
                     "text": "편집 증거 확보 또는 청취 거부 후 마지막 대면"
                   },
@@ -3534,7 +3534,7 @@
                     "id": "chapter-5",
                     "eventId": "romance-6-chapter-5",
                     "version": 6,
-                    "confirmedAt": "2026-11-20T19:03:12.427Z",
+                    "confirmedAt": "2026-11-20T19:21:52.461Z",
                     "kind": "relationship",
                     "text": "엔딩 계약의 최종 사실 확정"
                   },
@@ -3542,7 +3542,7 @@
                     "id": "D04-restored",
                     "eventId": "romance-6-D04-restored",
                     "version": 6,
-                    "confirmedAt": "2026-11-20T19:03:12.427Z",
+                    "confirmedAt": "2026-11-20T19:21:52.461Z",
                     "kind": "clue",
                     "text": "D04의 유나 작업 서명·시간을 A17/B17 편집점과 대조하고 원본 복원본의 전체 재생을 확인했다."
                   },
@@ -3550,7 +3550,7 @@
                     "id": "final-contract",
                     "eventId": "romance-6-final-contract",
                     "version": 6,
-                    "confirmedAt": "2026-11-20T19:03:12.427Z",
+                    "confirmedAt": "2026-11-20T19:21:52.461Z",
                     "kind": "relationship",
                     "text": "{\"relationship\":\"continuing\",\"mutualBoundaries\":true,\"loop\":false,\"exitRight\":true,\"safeExit\":false,\"noContactRight\":false,\"causeEstablished\":true,\"restored\":true}"
                   }
@@ -3902,7 +3902,7 @@
                 "id": "scene-0",
                 "eventId": "start",
                 "version": 0,
-                "confirmedAt": "2026-11-20T19:03:13.759Z",
+                "confirmedAt": "2026-11-20T19:21:53.766Z",
                 "kind": "scene",
                 "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
               }
@@ -4084,7 +4084,7 @@
             "text": "고객 마감 메일은 내일 오전 10시입니다. 오늘 18시에 퇴근하겠습니다.",
             "step": 0,
             "version": 0,
-            "requestId": "b1c427ec-520c-4eda-9b38-b0f342727352"
+            "requestId": "40fd4c57-f946-469d-a084-b3b56b647e54"
           },
           "state": {
             "game": {
@@ -4144,15 +4144,15 @@
                     "id": "scene-0",
                     "eventId": "start",
                     "version": 0,
-                    "confirmedAt": "2026-11-20T19:03:13.759Z",
+                    "confirmedAt": "2026-11-20T19:21:53.766Z",
                     "kind": "scene",
                     "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
                   },
                   {
                     "id": "agreement-1",
-                    "eventId": "2ab31133-b42f-4c56-bf10-03432dcb0cc0",
+                    "eventId": "9bd893ce-9b98-4045-98a0-e18a878e604a",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:13.865Z",
+                    "confirmedAt": "2026-11-20T19:21:53.873Z",
                     "kind": "agreement",
                     "text": "실제 퇴근 시각: 확보 오늘 18:00 / 목표 오늘 18:00\n잔여 보고서 담당·기한: 확보 없음 / 목표 박도현 부장 / 내일 10:00 (목표 미확보)"
                   }
@@ -4171,7 +4171,7 @@
                   },
                   {
                     "kind": "verified_event",
-                    "eventId": "2ab31133-b42f-4c56-bf10-03432dcb0cc0",
+                    "eventId": "9bd893ce-9b98-4045-98a0-e18a878e604a",
                     "text": "실제 퇴근 시각: 확보 오늘 18:00 / 목표 오늘 18:00\n잔여 보고서 담당·기한: 확보 없음 / 목표 박도현 부장 / 내일 10:00 (목표 미확보)",
                     "version": 1
                   }
@@ -4352,7 +4352,7 @@
             "text": "남은 표는 부장님이 내일 10시까지 맡아 주세요.",
             "step": 0,
             "version": 1,
-            "requestId": "f7704f61-91d5-47fc-88fe-6eef41cf02a5"
+            "requestId": "79ce1db2-e551-44ed-9a89-d486f17a2388"
           },
           "state": {
             "game": {
@@ -4441,23 +4441,23 @@
                     "id": "scene-0",
                     "eventId": "start",
                     "version": 0,
-                    "confirmedAt": "2026-11-20T19:03:13.759Z",
+                    "confirmedAt": "2026-11-20T19:21:53.766Z",
                     "kind": "scene",
                     "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
                   },
                   {
                     "id": "agreement-1",
-                    "eventId": "2ab31133-b42f-4c56-bf10-03432dcb0cc0",
+                    "eventId": "9bd893ce-9b98-4045-98a0-e18a878e604a",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:13.865Z",
+                    "confirmedAt": "2026-11-20T19:21:53.873Z",
                     "kind": "agreement",
                     "text": "실제 퇴근 시각: 확보 오늘 18:00 / 목표 오늘 18:00\n잔여 보고서 담당·기한: 확보 없음 / 목표 박도현 부장 / 내일 10:00 (목표 미확보)"
                   },
                   {
                     "id": "agreement-2",
-                    "eventId": "362dce5b-14a5-425c-8c99-a3e3cd73170c",
+                    "eventId": "6d90cdbe-32de-4076-bcac-480b50a50e59",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:13.933Z",
+                    "confirmedAt": "2026-11-20T19:21:53.939Z",
                     "kind": "ending",
                     "text": "실제 퇴근 시각: 확보 오늘 18:00 / 목표 오늘 18:00\n잔여 보고서 담당·기한: 확보 박도현 부장 / 내일 10:00 / 목표 박도현 부장 / 내일 10:00 / office-clockout-success"
                   }
@@ -4476,7 +4476,7 @@
                   },
                   {
                     "kind": "verified_event",
-                    "eventId": "2ab31133-b42f-4c56-bf10-03432dcb0cc0",
+                    "eventId": "9bd893ce-9b98-4045-98a0-e18a878e604a",
                     "text": "실제 퇴근 시각: 확보 오늘 18:00 / 목표 오늘 18:00\n잔여 보고서 담당·기한: 확보 없음 / 목표 박도현 부장 / 내일 10:00 (목표 미확보)",
                     "version": 1
                   },
@@ -4493,7 +4493,7 @@
                   },
                   {
                     "kind": "verified_event",
-                    "eventId": "362dce5b-14a5-425c-8c99-a3e3cd73170c",
+                    "eventId": "6d90cdbe-32de-4076-bcac-480b50a50e59",
                     "text": "실제 퇴근 시각: 확보 오늘 18:00 / 목표 오늘 18:00\n잔여 보고서 담당·기한: 확보 박도현 부장 / 내일 10:00 / 목표 박도현 부장 / 내일 10:00 / office-clockout-success",
                     "version": 2
                   }
@@ -4701,7 +4701,7 @@
                 "id": "scene-0",
                 "eventId": "start",
                 "version": 0,
-                "confirmedAt": "2026-11-20T19:03:15.158Z",
+                "confirmedAt": "2026-11-20T19:21:55.149Z",
                 "kind": "scene",
                 "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 당신이 풀어 주자 귀끝이 붉어진다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
               }
@@ -4890,7 +4890,7 @@
             "text": "종소리를 같이 듣고 싶어요",
             "step": 0,
             "version": 0,
-            "requestId": "cf7f4bc1-1066-4ba6-afb7-61c4dd16ae11"
+            "requestId": "1c881f80-fb55-4b8f-bc36-73f3c88e8717"
           },
           "state": {
             "game": {
@@ -4946,7 +4946,7 @@
                     "id": "scene-0",
                     "eventId": "start",
                     "version": 0,
-                    "confirmedAt": "2026-11-20T19:03:15.158Z",
+                    "confirmedAt": "2026-11-20T19:21:55.149Z",
                     "kind": "scene",
                     "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 당신이 풀어 주자 귀끝이 붉어진다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
                   },
@@ -4954,7 +4954,7 @@
                     "id": "shared-listening",
                     "eventId": "romance-1-shared-listening",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:15.247Z",
+                    "confirmedAt": "2026-11-20T19:21:55.237Z",
                     "kind": "relationship",
                     "text": "함께 종소리를 들었다. 개인 취향과 자기소개는 플레이어 발화 기록에 별도로 남겼다."
                   },
@@ -4962,7 +4962,7 @@
                     "id": "chapter-0",
                     "eventId": "romance-1-chapter-0",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:15.247Z",
+                    "confirmedAt": "2026-11-20T19:21:55.237Z",
                     "kind": "relationship",
                     "text": "서로 이름을 알고 다음 만남을 제안한다"
                   }
@@ -5175,7 +5175,7 @@
             "text": "헤드폰을 돌려줄게요",
             "step": 1,
             "version": 1,
-            "requestId": "8455d743-5b48-4e85-82c7-832fa2491401"
+            "requestId": "be7fdb69-4f3d-4b46-9833-ac5f15976952"
           },
           "state": {
             "game": {
@@ -5264,7 +5264,7 @@
                     "id": "scene-0",
                     "eventId": "start",
                     "version": 0,
-                    "confirmedAt": "2026-11-20T19:03:15.158Z",
+                    "confirmedAt": "2026-11-20T19:21:55.149Z",
                     "kind": "scene",
                     "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 당신이 풀어 주자 귀끝이 붉어진다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
                   },
@@ -5272,7 +5272,7 @@
                     "id": "shared-listening",
                     "eventId": "romance-1-shared-listening",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:15.247Z",
+                    "confirmedAt": "2026-11-20T19:21:55.237Z",
                     "kind": "relationship",
                     "text": "함께 종소리를 들었다. 개인 취향과 자기소개는 플레이어 발화 기록에 별도로 남겼다."
                   },
@@ -5280,7 +5280,7 @@
                     "id": "chapter-0",
                     "eventId": "romance-1-chapter-0",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:15.247Z",
+                    "confirmedAt": "2026-11-20T19:21:55.237Z",
                     "kind": "relationship",
                     "text": "서로 이름을 알고 다음 만남을 제안한다"
                   },
@@ -5288,7 +5288,7 @@
                     "id": "headphone-return",
                     "eventId": "romance-2-headphone-return",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:15.316Z",
+                    "confirmedAt": "2026-11-20T19:21:55.306Z",
                     "kind": "relationship",
                     "text": "빌린 헤드폰을 돌려주고 함께 작동을 확인했다."
                   },
@@ -5296,7 +5296,7 @@
                     "id": "shared-test",
                     "eventId": "romance-2-shared-test",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:15.316Z",
+                    "confirmedAt": "2026-11-20T19:21:55.306Z",
                     "kind": "relationship",
                     "text": "테스트 녹음과 설명이 일치함을 함께 확인했다."
                   },
@@ -5304,7 +5304,7 @@
                     "id": "chapter-1",
                     "eventId": "romance-2-chapter-1",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:15.316Z",
+                    "confirmedAt": "2026-11-20T19:21:55.306Z",
                     "kind": "relationship",
                     "text": "정직과 약속 이행 또는 보류를 확인하고 호감을 표현한다"
                   }
@@ -5546,7 +5546,7 @@
             "text": "나도 좋아해요. 사귀어요",
             "step": 2,
             "version": 2,
-            "requestId": "07adde6c-6e50-4211-9db8-a38bcb18fd9b"
+            "requestId": "43dbafb7-a8a1-48f2-b394-51b6051ee102"
           },
           "state": {
             "game": {
@@ -5661,7 +5661,7 @@
                     "id": "scene-0",
                     "eventId": "start",
                     "version": 0,
-                    "confirmedAt": "2026-11-20T19:03:15.158Z",
+                    "confirmedAt": "2026-11-20T19:21:55.149Z",
                     "kind": "scene",
                     "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 당신이 풀어 주자 귀끝이 붉어진다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
                   },
@@ -5669,7 +5669,7 @@
                     "id": "shared-listening",
                     "eventId": "romance-1-shared-listening",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:15.247Z",
+                    "confirmedAt": "2026-11-20T19:21:55.237Z",
                     "kind": "relationship",
                     "text": "함께 종소리를 들었다. 개인 취향과 자기소개는 플레이어 발화 기록에 별도로 남겼다."
                   },
@@ -5677,7 +5677,7 @@
                     "id": "chapter-0",
                     "eventId": "romance-1-chapter-0",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:15.247Z",
+                    "confirmedAt": "2026-11-20T19:21:55.237Z",
                     "kind": "relationship",
                     "text": "서로 이름을 알고 다음 만남을 제안한다"
                   },
@@ -5685,7 +5685,7 @@
                     "id": "headphone-return",
                     "eventId": "romance-2-headphone-return",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:15.316Z",
+                    "confirmedAt": "2026-11-20T19:21:55.306Z",
                     "kind": "relationship",
                     "text": "빌린 헤드폰을 돌려주고 함께 작동을 확인했다."
                   },
@@ -5693,7 +5693,7 @@
                     "id": "shared-test",
                     "eventId": "romance-2-shared-test",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:15.316Z",
+                    "confirmedAt": "2026-11-20T19:21:55.306Z",
                     "kind": "relationship",
                     "text": "테스트 녹음과 설명이 일치함을 함께 확인했다."
                   },
@@ -5701,7 +5701,7 @@
                     "id": "chapter-1",
                     "eventId": "romance-2-chapter-1",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:15.316Z",
+                    "confirmedAt": "2026-11-20T19:21:55.306Z",
                     "kind": "relationship",
                     "text": "정직과 약속 이행 또는 보류를 확인하고 호감을 표현한다"
                   },
@@ -5709,7 +5709,7 @@
                     "id": "couple",
                     "eventId": "romance-3-couple",
                     "version": 3,
-                    "confirmedAt": "2026-11-20T19:03:15.383Z",
+                    "confirmedAt": "2026-11-20T19:21:55.372Z",
                     "kind": "relationship",
                     "text": "서로 고백에 답하고 연인이 되었다."
                   },
@@ -5717,7 +5717,7 @@
                     "id": "chapter-2",
                     "eventId": "romance-3-chapter-2",
                     "version": 3,
-                    "confirmedAt": "2026-11-20T19:03:15.383Z",
+                    "confirmedAt": "2026-11-20T19:21:55.372Z",
                     "kind": "relationship",
                     "text": "서로 고백에 답하고 연인이 되었다."
                   }
@@ -5982,7 +5982,7 @@
             "text": "내일 원본을 확인해요",
             "step": 3,
             "version": 3,
-            "requestId": "d9100acc-99f8-4190-b379-645cccfc1b03"
+            "requestId": "c65cfaa6-441f-464b-90a2-f84c508f2fde"
           },
           "state": {
             "game": {
@@ -6126,7 +6126,7 @@
                     "id": "scene-0",
                     "eventId": "start",
                     "version": 0,
-                    "confirmedAt": "2026-11-20T19:03:15.158Z",
+                    "confirmedAt": "2026-11-20T19:21:55.149Z",
                     "kind": "scene",
                     "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 당신이 풀어 주자 귀끝이 붉어진다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
                   },
@@ -6134,7 +6134,7 @@
                     "id": "shared-listening",
                     "eventId": "romance-1-shared-listening",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:15.247Z",
+                    "confirmedAt": "2026-11-20T19:21:55.237Z",
                     "kind": "relationship",
                     "text": "함께 종소리를 들었다. 개인 취향과 자기소개는 플레이어 발화 기록에 별도로 남겼다."
                   },
@@ -6142,7 +6142,7 @@
                     "id": "chapter-0",
                     "eventId": "romance-1-chapter-0",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:15.247Z",
+                    "confirmedAt": "2026-11-20T19:21:55.237Z",
                     "kind": "relationship",
                     "text": "서로 이름을 알고 다음 만남을 제안한다"
                   },
@@ -6150,7 +6150,7 @@
                     "id": "headphone-return",
                     "eventId": "romance-2-headphone-return",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:15.316Z",
+                    "confirmedAt": "2026-11-20T19:21:55.306Z",
                     "kind": "relationship",
                     "text": "빌린 헤드폰을 돌려주고 함께 작동을 확인했다."
                   },
@@ -6158,7 +6158,7 @@
                     "id": "shared-test",
                     "eventId": "romance-2-shared-test",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:15.316Z",
+                    "confirmedAt": "2026-11-20T19:21:55.306Z",
                     "kind": "relationship",
                     "text": "테스트 녹음과 설명이 일치함을 함께 확인했다."
                   },
@@ -6166,7 +6166,7 @@
                     "id": "chapter-1",
                     "eventId": "romance-2-chapter-1",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:15.316Z",
+                    "confirmedAt": "2026-11-20T19:21:55.306Z",
                     "kind": "relationship",
                     "text": "정직과 약속 이행 또는 보류를 확인하고 호감을 표현한다"
                   },
@@ -6174,7 +6174,7 @@
                     "id": "couple",
                     "eventId": "romance-3-couple",
                     "version": 3,
-                    "confirmedAt": "2026-11-20T19:03:15.383Z",
+                    "confirmedAt": "2026-11-20T19:21:55.372Z",
                     "kind": "relationship",
                     "text": "서로 고백에 답하고 연인이 되었다."
                   },
@@ -6182,7 +6182,7 @@
                     "id": "chapter-2",
                     "eventId": "romance-3-chapter-2",
                     "version": 3,
-                    "confirmedAt": "2026-11-20T19:03:15.383Z",
+                    "confirmedAt": "2026-11-20T19:21:55.372Z",
                     "kind": "relationship",
                     "text": "서로 고백에 답하고 연인이 되었다."
                   },
@@ -6190,7 +6190,7 @@
                     "id": "date-complete",
                     "eventId": "romance-4-date-complete",
                     "version": 4,
-                    "confirmedAt": "2026-11-20T19:03:15.451Z",
+                    "confirmedAt": "2026-11-20T19:21:55.439Z",
                     "kind": "relationship",
                     "text": "연인으로 도시락 데이트를 마쳤다."
                   },
@@ -6198,7 +6198,7 @@
                     "id": "archive-appointment",
                     "eventId": "romance-4-archive-appointment",
                     "version": 4,
-                    "confirmedAt": "2026-11-20T19:03:15.451Z",
+                    "confirmedAt": "2026-11-20T19:21:55.439Z",
                     "kind": "relationship",
                     "text": "다음 원본 청취 약속을 정했다."
                   },
@@ -6206,7 +6206,7 @@
                     "id": "chapter-3",
                     "eventId": "romance-4-chapter-3",
                     "version": 4,
-                    "confirmedAt": "2026-11-20T19:03:15.451Z",
+                    "confirmedAt": "2026-11-20T19:21:55.439Z",
                     "kind": "relationship",
                     "text": "데이트 또는 친구 산책을 마치고 원본 청취를 약속한다"
                   }
@@ -6500,7 +6500,7 @@
             "text": "편집 흔적을 비교해요",
             "step": 4,
             "version": 4,
-            "requestId": "eab2f772-0607-4e92-9fa6-08000d3c13e1"
+            "requestId": "b3b9e09a-9439-4574-9bd4-786167aabafd"
           },
           "state": {
             "game": {
@@ -6665,7 +6665,7 @@
                     "id": "scene-0",
                     "eventId": "start",
                     "version": 0,
-                    "confirmedAt": "2026-11-20T19:03:15.158Z",
+                    "confirmedAt": "2026-11-20T19:21:55.149Z",
                     "kind": "scene",
                     "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 당신이 풀어 주자 귀끝이 붉어진다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
                   },
@@ -6673,7 +6673,7 @@
                     "id": "shared-listening",
                     "eventId": "romance-1-shared-listening",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:15.247Z",
+                    "confirmedAt": "2026-11-20T19:21:55.237Z",
                     "kind": "relationship",
                     "text": "함께 종소리를 들었다. 개인 취향과 자기소개는 플레이어 발화 기록에 별도로 남겼다."
                   },
@@ -6681,7 +6681,7 @@
                     "id": "chapter-0",
                     "eventId": "romance-1-chapter-0",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:15.247Z",
+                    "confirmedAt": "2026-11-20T19:21:55.237Z",
                     "kind": "relationship",
                     "text": "서로 이름을 알고 다음 만남을 제안한다"
                   },
@@ -6689,7 +6689,7 @@
                     "id": "headphone-return",
                     "eventId": "romance-2-headphone-return",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:15.316Z",
+                    "confirmedAt": "2026-11-20T19:21:55.306Z",
                     "kind": "relationship",
                     "text": "빌린 헤드폰을 돌려주고 함께 작동을 확인했다."
                   },
@@ -6697,7 +6697,7 @@
                     "id": "shared-test",
                     "eventId": "romance-2-shared-test",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:15.316Z",
+                    "confirmedAt": "2026-11-20T19:21:55.306Z",
                     "kind": "relationship",
                     "text": "테스트 녹음과 설명이 일치함을 함께 확인했다."
                   },
@@ -6705,7 +6705,7 @@
                     "id": "chapter-1",
                     "eventId": "romance-2-chapter-1",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:15.316Z",
+                    "confirmedAt": "2026-11-20T19:21:55.306Z",
                     "kind": "relationship",
                     "text": "정직과 약속 이행 또는 보류를 확인하고 호감을 표현한다"
                   },
@@ -6713,7 +6713,7 @@
                     "id": "couple",
                     "eventId": "romance-3-couple",
                     "version": 3,
-                    "confirmedAt": "2026-11-20T19:03:15.383Z",
+                    "confirmedAt": "2026-11-20T19:21:55.372Z",
                     "kind": "relationship",
                     "text": "서로 고백에 답하고 연인이 되었다."
                   },
@@ -6721,7 +6721,7 @@
                     "id": "chapter-2",
                     "eventId": "romance-3-chapter-2",
                     "version": 3,
-                    "confirmedAt": "2026-11-20T19:03:15.383Z",
+                    "confirmedAt": "2026-11-20T19:21:55.372Z",
                     "kind": "relationship",
                     "text": "서로 고백에 답하고 연인이 되었다."
                   },
@@ -6729,7 +6729,7 @@
                     "id": "date-complete",
                     "eventId": "romance-4-date-complete",
                     "version": 4,
-                    "confirmedAt": "2026-11-20T19:03:15.451Z",
+                    "confirmedAt": "2026-11-20T19:21:55.439Z",
                     "kind": "relationship",
                     "text": "연인으로 도시락 데이트를 마쳤다."
                   },
@@ -6737,7 +6737,7 @@
                     "id": "archive-appointment",
                     "eventId": "romance-4-archive-appointment",
                     "version": 4,
-                    "confirmedAt": "2026-11-20T19:03:15.451Z",
+                    "confirmedAt": "2026-11-20T19:21:55.439Z",
                     "kind": "relationship",
                     "text": "다음 원본 청취 약속을 정했다."
                   },
@@ -6745,7 +6745,7 @@
                     "id": "chapter-3",
                     "eventId": "romance-4-chapter-3",
                     "version": 4,
-                    "confirmedAt": "2026-11-20T19:03:15.451Z",
+                    "confirmedAt": "2026-11-20T19:21:55.439Z",
                     "kind": "relationship",
                     "text": "데이트 또는 친구 산책을 마치고 원본 청취를 약속한다"
                   },
@@ -6753,7 +6753,7 @@
                     "id": "A17-B17",
                     "eventId": "romance-5-A17-B17",
                     "version": 5,
-                    "confirmedAt": "2026-11-20T19:03:15.537Z",
+                    "confirmedAt": "2026-11-20T19:21:55.510Z",
                     "kind": "clue",
                     "text": "A17 원본과 B17 전시본을 재생 비교하여 귀가 발언 삭제 위치를 검증했다."
                   },
@@ -6761,7 +6761,7 @@
                     "id": "appointment-kept",
                     "eventId": "romance-5-appointment-kept",
                     "version": 5,
-                    "confirmedAt": "2026-11-20T19:03:15.537Z",
+                    "confirmedAt": "2026-11-20T19:21:55.510Z",
                     "kind": "relationship",
                     "text": "약속한 원본 청취에 함께 참석하여 비교를 마쳤다."
                   },
@@ -6769,7 +6769,7 @@
                     "id": "chapter-4",
                     "eventId": "romance-5-chapter-4",
                     "version": 5,
-                    "confirmedAt": "2026-11-20T19:03:15.537Z",
+                    "confirmedAt": "2026-11-20T19:21:55.510Z",
                     "kind": "relationship",
                     "text": "편집 증거 확보 또는 청취 거부 후 마지막 대면"
                   }
@@ -7092,7 +7092,7 @@
             "text": "원본을 복원해요",
             "step": 5,
             "version": 5,
-            "requestId": "f4a7f818-1f17-4f18-b58b-5be58ad63c25"
+            "requestId": "45f18536-e2c4-41b4-83c3-58a43089a50a"
           },
           "state": {
             "game": {
@@ -7288,7 +7288,7 @@
                     "id": "scene-0",
                     "eventId": "start",
                     "version": 0,
-                    "confirmedAt": "2026-11-20T19:03:15.158Z",
+                    "confirmedAt": "2026-11-20T19:21:55.149Z",
                     "kind": "scene",
                     "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 당신이 풀어 주자 귀끝이 붉어진다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
                   },
@@ -7296,7 +7296,7 @@
                     "id": "shared-listening",
                     "eventId": "romance-1-shared-listening",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:15.247Z",
+                    "confirmedAt": "2026-11-20T19:21:55.237Z",
                     "kind": "relationship",
                     "text": "함께 종소리를 들었다. 개인 취향과 자기소개는 플레이어 발화 기록에 별도로 남겼다."
                   },
@@ -7304,7 +7304,7 @@
                     "id": "chapter-0",
                     "eventId": "romance-1-chapter-0",
                     "version": 1,
-                    "confirmedAt": "2026-11-20T19:03:15.247Z",
+                    "confirmedAt": "2026-11-20T19:21:55.237Z",
                     "kind": "relationship",
                     "text": "서로 이름을 알고 다음 만남을 제안한다"
                   },
@@ -7312,7 +7312,7 @@
                     "id": "headphone-return",
                     "eventId": "romance-2-headphone-return",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:15.316Z",
+                    "confirmedAt": "2026-11-20T19:21:55.306Z",
                     "kind": "relationship",
                     "text": "빌린 헤드폰을 돌려주고 함께 작동을 확인했다."
                   },
@@ -7320,7 +7320,7 @@
                     "id": "shared-test",
                     "eventId": "romance-2-shared-test",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:15.316Z",
+                    "confirmedAt": "2026-11-20T19:21:55.306Z",
                     "kind": "relationship",
                     "text": "테스트 녹음과 설명이 일치함을 함께 확인했다."
                   },
@@ -7328,7 +7328,7 @@
                     "id": "chapter-1",
                     "eventId": "romance-2-chapter-1",
                     "version": 2,
-                    "confirmedAt": "2026-11-20T19:03:15.316Z",
+                    "confirmedAt": "2026-11-20T19:21:55.306Z",
                     "kind": "relationship",
                     "text": "정직과 약속 이행 또는 보류를 확인하고 호감을 표현한다"
                   },
@@ -7336,7 +7336,7 @@
                     "id": "couple",
                     "eventId": "romance-3-couple",
                     "version": 3,
-                    "confirmedAt": "2026-11-20T19:03:15.383Z",
+                    "confirmedAt": "2026-11-20T19:21:55.372Z",
                     "kind": "relationship",
                     "text": "서로 고백에 답하고 연인이 되었다."
                   },
@@ -7344,7 +7344,7 @@
                     "id": "chapter-2",
                     "eventId": "romance-3-chapter-2",
                     "version": 3,
-                    "confirmedAt": "2026-11-20T19:03:15.383Z",
+                    "confirmedAt": "2026-11-20T19:21:55.372Z",
                     "kind": "relationship",
                     "text": "서로 고백에 답하고 연인이 되었다."
                   },
@@ -7352,7 +7352,7 @@
                     "id": "date-complete",
                     "eventId": "romance-4-date-complete",
                     "version": 4,
-                    "confirmedAt": "2026-11-20T19:03:15.451Z",
+                    "confirmedAt": "2026-11-20T19:21:55.439Z",
                     "kind": "relationship",
                     "text": "연인으로 도시락 데이트를 마쳤다."
                   },
@@ -7360,7 +7360,7 @@
                     "id": "archive-appointment",
                     "eventId": "romance-4-archive-appointment",
                     "version": 4,
-                    "confirmedAt": "2026-11-20T19:03:15.451Z",
+                    "confirmedAt": "2026-11-20T19:21:55.439Z",
                     "kind": "relationship",
                     "text": "다음 원본 청취 약속을 정했다."
                   },
@@ -7368,7 +7368,7 @@
                     "id": "chapter-3",
                     "eventId": "romance-4-chapter-3",
                     "version": 4,
-                    "confirmedAt": "2026-11-20T19:03:15.451Z",
+                    "confirmedAt": "2026-11-20T19:21:55.439Z",
                     "kind": "relationship",
                     "text": "데이트 또는 친구 산책을 마치고 원본 청취를 약속한다"
                   },
@@ -7376,7 +7376,7 @@
                     "id": "A17-B17",
                     "eventId": "romance-5-A17-B17",
                     "version": 5,
-                    "confirmedAt": "2026-11-20T19:03:15.537Z",
+                    "confirmedAt": "2026-11-20T19:21:55.510Z",
                     "kind": "clue",
                     "text": "A17 원본과 B17 전시본을 재생 비교하여 귀가 발언 삭제 위치를 검증했다."
                   },
@@ -7384,7 +7384,7 @@
                     "id": "appointment-kept",
                     "eventId": "romance-5-appointment-kept",
                     "version": 5,
-                    "confirmedAt": "2026-11-20T19:03:15.537Z",
+                    "confirmedAt": "2026-11-20T19:21:55.510Z",
                     "kind": "relationship",
                     "text": "약속한 원본 청취에 함께 참석하여 비교를 마쳤다."
                   },
@@ -7392,7 +7392,7 @@
                     "id": "chapter-4",
                     "eventId": "romance-5-chapter-4",
                     "version": 5,
-                    "confirmedAt": "2026-11-20T19:03:15.537Z",
+                    "confirmedAt": "2026-11-20T19:21:55.510Z",
                     "kind": "relationship",
                     "text": "편집 증거 확보 또는 청취 거부 후 마지막 대면"
                   },
@@ -7400,7 +7400,7 @@
                     "id": "chapter-5",
                     "eventId": "romance-6-chapter-5",
                     "version": 6,
-                    "confirmedAt": "2026-11-20T19:03:15.624Z",
+                    "confirmedAt": "2026-11-20T19:21:55.575Z",
                     "kind": "relationship",
                     "text": "엔딩 계약의 최종 사실 확정"
                   },
@@ -7408,7 +7408,7 @@
                     "id": "D04-restored",
                     "eventId": "romance-6-D04-restored",
                     "version": 6,
-                    "confirmedAt": "2026-11-20T19:03:15.624Z",
+                    "confirmedAt": "2026-11-20T19:21:55.575Z",
                     "kind": "clue",
                     "text": "D04의 유나 작업 서명·시간을 A17/B17 편집점과 대조하고 원본 복원본의 전체 재생을 확인했다."
                   },
@@ -7416,7 +7416,7 @@
                     "id": "final-contract",
                     "eventId": "romance-6-final-contract",
                     "version": 6,
-                    "confirmedAt": "2026-11-20T19:03:15.624Z",
+                    "confirmedAt": "2026-11-20T19:21:55.575Z",
                     "kind": "relationship",
                     "text": "{\"relationship\":\"continuing\",\"mutualBoundaries\":true,\"loop\":false,\"exitRight\":true,\"safeExit\":false,\"noContactRight\":false,\"causeEstablished\":true,\"restored\":true}"
                   }

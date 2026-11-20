@@ -1,0 +1,99 @@
+{
+  "executedAt": "2026-11-20T19:22:24.019Z",
+  "liveSourceChecks": [
+    {
+      "file": "server/provider.ts",
+      "expected": "14a2bfb4cc1d0af5a52f139c8055754079ec498b4c7c87c75d30198e7ef8f156",
+      "actual": "14a2bfb4cc1d0af5a52f139c8055754079ec498b4c7c87c75d30198e7ef8f156"
+    },
+    {
+      "file": "server/dialogue.ts",
+      "expected": "e5564210bf8fd0d04353070d1910f2c1798aabd400e519fb6a001d420d21de2b",
+      "actual": "e5564210bf8fd0d04353070d1910f2c1798aabd400e519fb6a001d420d21de2b"
+    },
+    {
+      "file": "server/index.ts",
+      "expected": "a1ca06e59e557f3a5acf34f76a0607d24d27f7536f0c754730346e4659f255e4",
+      "actual": "a1ca06e59e557f3a5acf34f76a0607d24d27f7536f0c754730346e4659f255e4"
+    },
+    {
+      "file": "server/interpretation.ts",
+      "expected": "16f550a65050561f369841788ac3dc6f6934bd1b8b3d77fc315625efbba8d5e6",
+      "actual": "16f550a65050561f369841788ac3dc6f6934bd1b8b3d77fc315625efbba8d5e6"
+    },
+    {
+      "file": "server/office.ts",
+      "expected": "fb992f42759c71a0a1f9714f65ba229a5ddf64e73b22826c8d73fd6fb3990bf0",
+      "actual": "fb992f42759c71a0a1f9714f65ba229a5ddf64e73b22826c8d73fd6fb3990bf0"
+    },
+    {
+      "file": "server/romance.ts",
+      "expected": "4cd9484fd9abd70387c5f9ed5f7211c42579c7156caafa257fc92da38eeec5eb",
+      "actual": "4cd9484fd9abd70387c5f9ed5f7211c42579c7156caafa257fc92da38eeec5eb"
+    },
+    {
+      "file": "tests/final-live-smoke.ts",
+      "expected": "117ee421af353cb85828ba2bc9a9da3f252eb675f8597080c1d010f7806c1b51",
+      "actual": "117ee421af353cb85828ba2bc9a9da3f252eb675f8597080c1d010f7806c1b51"
+    }
+  ],
+  "additionalPaidCalls": 0,
+  "paidCalls": 12,
+  "maximumPaidCalls": 12,
+  "ledgerSha256": "b16bb43e15346a076706a2b3c40421fe04b78c2265d314c42f5bd110f19dcda4",
+  "liveEvidenceSha256": "bbaba7d0f3e375106d4086945b108e33e7ed62ba65815d343c643396f8a14a25",
+  "assets": [
+    {
+      "file": "archive-theme.wav",
+      "bytes": 282284,
+      "sha256": "3e9e63f5adcaa8a13125a072466ee914d90e6f8d97aca8d6c6db95ddf8d0e72e"
+    },
+    {
+      "file": "archive.png",
+      "bytes": 2471495,
+      "sha256": "52d1a0e2ec3731f8934ff75e2fd25fcace71528ea082946a87c46ef40d4ba711"
+    },
+    {
+      "file": "boss-expressions.png",
+      "bytes": 1814370,
+      "sha256": "e072f4d0c56c11349093c379303cacd2509b3a8610612a343b7f7fae96bda51a"
+    },
+    {
+      "file": "cafe.png",
+      "bytes": 2868610,
+      "sha256": "9d546aca64cdbe9bb57aae91df908b59b36d747397175fe2004cddffdd6666c4"
+    },
+    {
+      "file": "chime.wav",
+      "bytes": 10628,
+      "sha256": "8c54330c0df2b0fe06668597dc2e1245516a12a98856a2536046f32bf3cd4b1a"
+    },
+    {
+      "file": "evening.wav",
+      "bytes": 211724,
+      "sha256": "9fdf672d7feeeb062cae389da92372be163bb4cc27224c8cec74a2b8bde06125"
+    },
+    {
+      "file": "office.png",
+      "bytes": 2315072,
+      "sha256": "bf3a39649b5920bc286a82b9db93c3d6d9a2490708b445c5607ea95d016d7751"
+    },
+    {
+      "file": "riverside.png",
+      "bytes": 2794411,
+      "sha256": "393bda947f29056c417ab302924c8a4fb107a21d7d8f9053187bb3950f45aa9a"
+    },
+    {
+      "file": "tape.wav",
+      "bytes": 18566,
+      "sha256": "2c009c381d505f6e71115f54fd816197cfe00312a890e67a9bf7c7688cc17318"
+    },
+    {
+      "file": "yuna-expressions.png",
+      "bytes": 1741479,
+      "sha256": "09109a8eba18c5e8cd8e591583770e8da26658c5541c7e913dbc79846037ec80"
+    }
+  ],
+  "noticesSha256": "8f051b98565a3d3620514156aa99cbc3b0ef4d2e6dac41dbc4b6cc14db35c4c7",
+  "lockSha256": "13618ff61e20739bebffa0244c68c503311685344fb1f4bb7dfb7327baada331"
+}

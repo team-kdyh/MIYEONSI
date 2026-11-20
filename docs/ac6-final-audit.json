@@ -1,0 +1,75 @@
+{
+  "criterion": 6,
+  "executedAt": "2026-11-20T19:19:12.303Z",
+  "result": "pass",
+  "build": "pass",
+  "unit": {
+    "passed": 110,
+    "failed": 0
+  },
+  "browser": {
+    "passed": 6,
+    "failed": 0
+  },
+  "additionalPaidCalls": 0,
+  "paidCalls": 12,
+  "maximumPaidCalls": 12,
+  "liveSourceChecks": [
+    {
+      "file": "server/provider.ts",
+      "expected": "14a2bfb4cc1d0af5a52f139c8055754079ec498b4c7c87c75d30198e7ef8f156",
+      "actual": "14a2bfb4cc1d0af5a52f139c8055754079ec498b4c7c87c75d30198e7ef8f156",
+      "match": true
+    },
+    {
+      "file": "server/dialogue.ts",
+      "expected": "e5564210bf8fd0d04353070d1910f2c1798aabd400e519fb6a001d420d21de2b",
+      "actual": "e5564210bf8fd0d04353070d1910f2c1798aabd400e519fb6a001d420d21de2b",
+      "match": true
+    },
+    {
+      "file": "server/index.ts",
+      "expected": "a1ca06e59e557f3a5acf34f76a0607d24d27f7536f0c754730346e4659f255e4",
+      "actual": "a1ca06e59e557f3a5acf34f76a0607d24d27f7536f0c754730346e4659f255e4",
+      "match": true
+    },
+    {
+      "file": "server/interpretation.ts",
+      "expected": "16f550a65050561f369841788ac3dc6f6934bd1b8b3d77fc315625efbba8d5e6",
+      "actual": "16f550a65050561f369841788ac3dc6f6934bd1b8b3d77fc315625efbba8d5e6",
+      "match": true
+    },
+    {
+      "file": "server/office.ts",
+      "expected": "fb992f42759c71a0a1f9714f65ba229a5ddf64e73b22826c8d73fd6fb3990bf0",
+      "actual": "fb992f42759c71a0a1f9714f65ba229a5ddf64e73b22826c8d73fd6fb3990bf0",
+      "match": true
+    },
+    {
+      "file": "server/romance.ts",
+      "expected": "4cd9484fd9abd70387c5f9ed5f7211c42579c7156caafa257fc92da38eeec5eb",
+      "actual": "4cd9484fd9abd70387c5f9ed5f7211c42579c7156caafa257fc92da38eeec5eb",
+      "match": true
+    },
+    {
+      "file": "tests/final-live-smoke.ts",
+      "expected": "117ee421af353cb85828ba2bc9a9da3f252eb675f8597080c1d010f7806c1b51",
+      "actual": "117ee421af353cb85828ba2bc9a9da3f252eb675f8597080c1d010f7806c1b51",
+      "match": true
+    }
+  ],
+  "sourceHashes": {
+    "server/storage.ts": "a4d1afcdc8f2248a40ee8e7bf513ada98d81e2ff578edee3b143efff6889d28f",
+    "server/index.ts": "97e3ef0353e45654daf92688a543af21dd7e7e6b66c4e063ca88cb0f1a610b09",
+    "src/main.tsx": "5899c332b86bd44e11698d842af61be7275e6914e742b47f7fc1beaee9f5d00e",
+    "server/persistence.test.ts": "97c4176757f99b7c3541952a72ac94c56ac470c3123875089e336ab5592726ef",
+    "server/recovery.test.ts": "351a34a74df9dc2009db1cfbf5b1ebcaf8c9aa543f306e45e316c3e1b7e7c23f",
+    "tests/persistence.spec.ts": "9a5a4038b68ced0463d937a7f650e80fefe8535502e5759b11b9a1a40030f991",
+    "playwright.ac6-final.config.ts": "b38211e6403e9ebced5e144286eece293b640cc613d4f373f772fa803faebf5c",
+    "docs/api-smoke-ledger.json": "b16bb43e15346a076706a2b3c40421fe04b78c2265d314c42f5bd110f19dcda4",
+    "docs/ac6-final-build-run.txt": "4b0d904e39362265bd55359985df9536173a0ac9fe296d62d4d0c49c5aa4204b",
+    "docs/ac6-final-unit-run.txt": "20f23436798c9c9bfcd776df0c04124aa921244ffc0fb9e28c773d19f8bbd792",
+    "docs/ac6-final-browser-run.txt": "708ebb000f9d53bc252d93550a4376a8650f6c6c6b138c2e6f42b588768bbe14"
+  },
+  "scope": "single local server; offline and mock transport; Chromium; no physical power-loss or multi-process write tests"
+}

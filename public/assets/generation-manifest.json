@@ -1,0 +1,28 @@
+{
+  "generated_on": "2026-11-21 Asia/Seoul",
+  "method": "Built-in image_gen tool; original designs, no reference assets",
+  "assets": [
+    {
+      "file": "yuna-expressions.png",
+      "notes": "Original adult Korean woman Seo Yuna age 27; plum hair, cream cardigan and lavender dress. Transparent four-column sheet, neutral/happy/worried/unsettling.",
+      "source": "image_gen original",
+      "prompt": "Use case: illustration-story. Asset type: ORIGINAL Korean visual novel character expression sprite sheet, genuinely transparent PNG background. One consistent original adult Korean woman named Seo Yuna, age 27, freelance sound archivist. Editorial high-end anime / Korean webtoon painted visual novel art, restrained sophisticated linework, beautiful soft cel shading, high quality hands and face. Shoulder-length dark plum hair with one silver crescent hairclip on the left, muted rose eyes, cream cardigan over dusty lavender dress, fine silver necklace, clearly adult proportions, elegant and quietly charming. Four equal precisely aligned vertical panels arranged ONE horizontal row across a wide 3:1 canvas. Each panel is the SAME character from top of head to hips, the entire silhouette centered inside her own equal panel with generous empty transparent margins. Consistent clothing, scale, height, camera angle and face. Panel 1: gentle neutral smile arms relaxed. Panel 2: delighted blush and clasped hands. Panel 3: worried vulnerable expression holding one wrist. Panel 4: unsettling calm intense direct eye contact and slightly tilted head, restrained psychological thriller, no violence. All four bodies separated, never overlap. NO text, labels, panel borders, backgrounds, shadow floor, watermarks. Render finished game assets, not a mockup. Original design unrelated to any existing franchise."
+    },
+    {
+      "file": "boss-expressions.png",
+      "source": "image_gen original",
+      "prompt": "Use case: illustration-story. Asset type: ORIGINAL Korean visual novel expression sprite sheet, genuinely transparent PNG background. One consistent original Korean man Park Dohyeon age 46, a subtly comedic middle-management department chief. Editorial high-end anime / Korean webtoon painted visual novel art, restrained sophisticated linework and beautiful soft cel shading. Adult man, neat short charcoal hair with slight grey at temples swept back, thin rectangular glasses, expressive arched eyebrows, sharp but tired face, navy waistcoat over white rolled-sleeve shirt, loose muted burgundy tie, ID card on pocket. Four equal precisely aligned vertical panels arranged ONE horizontal row across a wide 3:1 canvas. Each panel is the SAME character from top of head to hips, entire silhouette centered inside equal panel with generous transparent margins. Consistent clothing, scale, height and face. Panel 1: neutral, holding a cream file folder, one eyebrow raised. Panel 2: skeptical, arms folded, a dry unimpressed expression. Panel 3: surprised, adjusting glasses with a hand, subtle comedic sweat. Panel 4: approving small resigned smile, one palm raised in concession. All four bodies separate and never overlap. No text, labels, borders, backgrounds, shadow floor, watermarks. Hands anatomically clean. Finished polished game art, not a mockup. Original design."
+    },
+    {
+      "file": "office.png",
+      "source": "image_gen original",
+      "prompt": "Use case: illustration-story. Asset type: original widescreen 16:9 high-quality painted Korean visual novel background, NO characters. Modern Seoul creative agency office at 5:50pm, sun low through wall of windows, apricot gold light crossing pale desks, charcoal monitors and a little leafy plant, glass meeting-room partition on left, subtle blue cityscape in the distance. Eye-level medium-wide perspective looking across one foreground desk toward windows. Leave center and center-right uncluttered for compositing a standing character. Refined hand-painted anime background, beautifully precise architecture with soft brush texture, cinematic depth, sophisticated amber/lavender/cream colors. Lived-in quietly comic office atmosphere with a stack of folders and coffee mug at lower left. No readable text, no logos, no watermarks, no UI, no humans. Finished game environmental art."
+    },
+    {
+      "file": "cafe.png",
+      "source": "image_gen original",
+      "prompt": "Use case: illustration-story. Asset type: original widescreen 16:9 high-quality painted Korean visual novel background, NO characters. Intimate Seoul listening cafe at blue hour after rain, warm cream and walnut interior, huge window at back with wet pavement and softly glowing city lights outside, vintage reel-to-reel tape recorder and vinyl records on a shelf on the left, two coffee cups on small round table in foreground lower left, a subtle bouquet of white cosmos flowers, muted lavender dusk and amber pendant lights. Eye-level perspective with center and center-right uncluttered for a waist-up character composited over scene. Refined hand-painted anime environment with soft brush texture, cinematic detail, romantic but quietly mysterious. No readable text, no logos, no watermark, no UI, no people. Finished game art."
+    }
+  ],
+  "rights_note": "Created specifically for this project using OpenAI image generation. No third-party game art was used. Review applicable service terms and release requirements before commercial distribution."
+}

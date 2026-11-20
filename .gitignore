@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+.env
+.env.*
+!.env.example
+*.log
+.ralph/*response*.json
+.ralph/tool-schemas.json
+.ralph/*args*.json
+.ralph/*start.json
+playwright-report/
+test-results/
+.DS_Store

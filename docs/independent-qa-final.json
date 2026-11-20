@@ -1,0 +1,29 @@
+{
+  "qa_session_id": "qa-739825f8b3d84b9082d491794a7e419e",
+  "iteration": 2,
+  "score": 0.94,
+  "verdict": "pass",
+  "passed": true,
+  "pass_threshold": 0.9,
+  "loop_action": "done",
+  "dimensions": {
+    "correctness": 0.96,
+    "completeness": 0.94,
+    "quality": 0.92,
+    "intent_alignment": 0.94,
+    "domain_specific": 0.94
+  },
+  "differences": [
+    "The primary docs/QA.md summary still reports 110 tests and does not link the supplemental 112-test result, input-boundary observations, repeated interruptions, or three browser reruns."
+  ],
+  "suggestions": [
+    "Add a dated supplemental-results section to docs/QA.md linking the 112-test run and supplementary evidence, while preserving the original results as historical records."
+  ],
+  "reasoning": "The supplied evidence supports all seven acceptance criteria for a local release candidate. AC1: Windows installation, launcher lifecycle, shared game controls, typecheck and production build are substantiated. AC2: all eight office missions and 24 outcomes have public-API coverage, including distinct free-text consequences and repetition resistance. AC3: six bounded romance chapters, relationship progression and four endings are supported by route and UI results, including 729 terminating choice combinations. AC4: actual calls 9–12 demonstrate generated Korean dialogue, consecutive office success and correct player/Yuna preference attribution; matching source hashes connect these observations to the assessed implementation. These latest observations resolve the reproduced regressions within their tested scope. AC5: supplied screenshot-inspection records and repeated presentation checks support illustrated scenes, audio, keyboard controls and reduced effects at both specified sizes. AC6: reload, slots, corruption, stale-state recovery and repeated process restarts substantiate durable, exactly-once progression. AC7: build output, 112 passing tests, 18 browser checks and three additional ten-test runs support the documented QA claims. Applicable adversarial coverage includes malformed boundaries, injection, cancellation, stale state, real timeout behavior and repeated interruption; observable state hashes and journal records strengthen the success claims. No unresolved functional failure is demonstrated. Physical-device keyboards/IME, other browsers, screen readers, listening quality and long human playtests remain explicitly unverified. This pass neither guarantees universal natural-language correctness or public-store readiness nor changes the historical Ralph 6/7 result. No tools or additional paid calls were used for this assessment.",
+  "iteration_entry": {
+    "iteration": 2,
+    "score": 0.94,
+    "verdict": "pass",
+    "loop_action": "done"
+  }
+}

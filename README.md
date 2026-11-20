@@ -47,6 +47,10 @@ OpenAI 모드에서는 두 인물이 입력에 응답하는 한국어 대사를 
 
 ## 에셋과 검증
 
+2026-11-21 로컬 출시 후보 검증: 빌드·타입 검사, 자동 테스트 **112/112**, 전체 브라우저 검사 **18/18** 및 추가 10개 검사 3회 통과. 같은 7개 기능 기준의 독립 Ouroboros QA는 **0.94 / 1.00 PASS**(기준 0.90)다. 마지막 Ralph의 문서 경로 검사 오류와 원래 6/7 기록은 덮어쓰지 않았으며, 상세 결과·출시 전 남은 항목은 [검증 보고서](docs/QA.md)에 있다.
+
+배포 ZIP은 `artifacts/AFTER-HOURS-local.zip`이다. Node.js 22 이상이 필요한 Windows 로컬 실행 패키지이며, 개인 API 키·저장 데이터·설치 의존성 폴더는 포함하지 않는다. 새 폴더에서 OpenAI 모드를 사용하려면 `.env.example`을 `.env`로 복사하고 자신의 키를 설정한다.
+
 `THIRD_PARTY_NOTICES.txt`에 설치된 실행 의존성 68개의 라이선스 원문을 보관합니다. 의존성을 바꾼 뒤 `node scripts/generate-notices.mjs`로 갱신할 수 있습니다.
 
 `public/assets/generation-manifest.json`에 부모 실행에서 생성한 원본 PNG의 출처·프롬프트·권리 참고가 있습니다. PNG 원본은 수정하지 않습니다. CSS로 4표정 스프라이트를 잘라 사용합니다. 글꼴은 시스템 한국어 sans-serif를 사용하므로 실행 시 외부 폰트 연결이 필요하지 않습니다.

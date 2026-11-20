@@ -13,5 +13,5 @@
   "finding": "_verify_structural first compares the path-shaped pattern only against os.path.basename(file_path); it then searches content. The intended file exists but this structural check falsely reports DISCREPANCY. Source-only execution-scope checks were SKIPPED, not actual failed runs.",
   "graderModified": false,
   "originalFormalVerdictOverwritten": false,
-  "followup": "Independent Ouroboros QA against all original seven functional criteria, observed execution evidence and pass threshold 0.90; pending at creation."
+  "followup": "Independent Ouroboros QA against the same seven functional criteria: iteration 1 REVISE 0.89, iteration 2 PASS 0.94 at unchanged threshold 0.90. See independent-qa-final.json and QA.md for actual observations and remaining limits. Original formal Ralph result and grader unchanged."
 }

@@ -69,7 +69,7 @@ test('AC7 representative complete UI plays have no console errors at both specif
   const reveal=page.getByRole('button',{name:'대사 바로 표시'});if(await reveal.count())await reveal.click();
   await expect(page.locator('.sprite-entry')).toHaveCSS('opacity','1');
   await expect(page.locator('.background-arrival')).toHaveCSS('opacity','0');
-  const screenshot=`test-results/ac7-${mode}-${viewport.width}.png`;await page.screenshot({path:screenshot,fullPage:true});
+  const screenshot=`docs/qa-screenshots/ac7-${mode}-${viewport.width}.png`;await page.screenshot({path:screenshot,fullPage:true});
   expect(turns.at(-1).state.game.ending).toBe(mode==='office'?'office-clockout-success':'romance-3');
   runs.push({mode,viewport,initial,turns,consoleErrors:errors,screenshot,result:'pass',provider:'offline'});await context.close();
  }

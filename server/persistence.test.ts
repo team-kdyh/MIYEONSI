@@ -54,7 +54,11 @@ test('AC6: atomic boundaries, process restarts, slots, endings, conflicts and co
     assert.deepEqual(actual,expected,'every story field restored; only concurrency version changes');
     await stop();await boot();assert.deepEqual((await call()).data,restored);
    }
-   assert.deepEqual((await call('turn',first)).data,firstResult,'request identity survives loads and new games');
+   const beforeOldReplay=(await call()).data;
+   const oldReplay=await call('turn',first);
+   assert.equal(oldReplay.status,409,'historical replay must not display an abandoned timeline');
+   assert.deepEqual(oldReplay.data.state,beforeOldReplay);
+   assert.deepEqual((await call()).data,beforeOldReplay);
   }
   const fresh=(await call('new',{mode:'romance'})).data;
   const simultaneous=input(fresh);

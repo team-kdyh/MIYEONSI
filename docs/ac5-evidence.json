@@ -1,13 +1,13 @@
 {
-  "executedAt": "2026-11-20T18:33:08.484Z",
+  "executedAt": "2026-11-20T19:03:53.344Z",
   "codeVersion": {
-    "src/main.tsx": "6c2ed0fca10a26bcfc9e04471454cfaa1716f03b8a882f7d703947de1b5eecb0",
+    "src/main.tsx": "5899c332b86bd44e11698d842af61be7275e6914e742b47f7fc1beaee9f5d00e",
     "src/style.css": "cf4c637984d4577bd6b7d23015bf302644c1a81e94777c7358c0f7afd585182b",
-    "src/presentation.ts": "ad93bca5541c17eb571cc4e6596944ceedddeecbd4ff040392151b825149f965",
-    "src/StageEffects.tsx": "97e7ec045bb4b13264572fce5f7a740cdc8a017ce6bc533b65b62cd44675c06a",
-    "tests/presentation.spec.ts": "4b57a4824f1be905b0ddf24b5212ce3f0e9f35e802ab2dcac8d184cc808af584",
-    "server/office.ts": "0f4dea7b4251dcd839a3c782f9753743033fe7d3c480d0580b3377e345156140",
-    "server/romance.ts": "c27f96002cf7fd0e29c3be5ff65b9facfa74ad7d07e8da2d4df956209d81bbca"
+    "src/presentation.ts": "a86661dfdaf6f80e43429936c821397a6d57afbf483cdabe5e4c7a46663dc6fe",
+    "src/StageEffects.tsx": "e2c21f30bec1d6216deab365d0c721343f94c3e69b3bcd9f5ffa1a9e91b06ef9",
+    "tests/presentation.spec.ts": "73056c33f19be36c3d9e33d0442e551bedd9811eb4f21fe2c914d561f3e2dcb0",
+    "server/office.ts": "bf08549e790bb645015ad7b2badfae55f1f7978062f3a4d58c6a1bcbd6232ce1",
+    "server/romance.ts": "dfe6a00a02f735a685d7ed6dbb98e6e0f6d216badce3dbbc9278947a2b5bb755"
   },
   "claim": "AC5 identical story information and choices across presentation settings",
   "provider": "offline",
@@ -178,6 +178,43 @@
           }
         }
       ],
+      "effectPlays": [
+        {
+          "src": "http://127.0.0.1:3017/assets/chime.wav",
+          "volume": 0.01,
+          "muted": false
+        },
+        {
+          "src": "http://127.0.0.1:3017/assets/chime.wav",
+          "volume": 0.01,
+          "muted": false
+        },
+        {
+          "src": "http://127.0.0.1:3017/assets/chime.wav",
+          "volume": 0.01,
+          "muted": false
+        },
+        {
+          "src": "http://127.0.0.1:3017/assets/chime.wav",
+          "volume": 0.01,
+          "muted": false
+        },
+        {
+          "src": "http://127.0.0.1:3017/assets/tape.wav",
+          "volume": 0.01,
+          "muted": false
+        },
+        {
+          "src": "http://127.0.0.1:3017/assets/tape.wav",
+          "volume": 0.01,
+          "muted": false
+        },
+        {
+          "src": "http://127.0.0.1:3017/assets/tape.wav",
+          "volume": 0.01,
+          "muted": false
+        }
+      ],
       "ending": "romance-3",
       "final": {
         "relationship": "continuing",
@@ -378,6 +415,7 @@
           }
         }
       ],
+      "effectPlays": [],
       "ending": "romance-3",
       "final": {
         "relationship": "continuing",
@@ -578,6 +616,43 @@
           }
         }
       ],
+      "effectPlays": [
+        {
+          "src": "http://127.0.0.1:3017/assets/chime.wav",
+          "volume": 0.01,
+          "muted": false
+        },
+        {
+          "src": "http://127.0.0.1:3017/assets/chime.wav",
+          "volume": 0.01,
+          "muted": false
+        },
+        {
+          "src": "http://127.0.0.1:3017/assets/chime.wav",
+          "volume": 0.01,
+          "muted": false
+        },
+        {
+          "src": "http://127.0.0.1:3017/assets/chime.wav",
+          "volume": 0.01,
+          "muted": false
+        },
+        {
+          "src": "http://127.0.0.1:3017/assets/tape.wav",
+          "volume": 0.01,
+          "muted": false
+        },
+        {
+          "src": "http://127.0.0.1:3017/assets/tape.wav",
+          "volume": 0.01,
+          "muted": false
+        },
+        {
+          "src": "http://127.0.0.1:3017/assets/tape.wav",
+          "volume": 0.01,
+          "muted": false
+        }
+      ],
       "ending": "romance-3",
       "final": {
         "relationship": "continuing",
@@ -778,6 +853,7 @@
           }
         }
       ],
+      "effectPlays": [],
       "ending": "romance-3",
       "final": {
         "relationship": "continuing",

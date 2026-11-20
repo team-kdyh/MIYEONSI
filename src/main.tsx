@@ -21,7 +21,7 @@ function App(){
  function clearRetry(){retry.current=null;sessionStorage.removeItem('afterhours-pending');}
  async function api(action='state',body?:object){
   if(active.current)return false;setBusy(true);setError('');
-  if(body){retry.current={action,body};if(action==='turn')sessionStorage.setItem('afterhours-pending',JSON.stringify(retry.current));}
+  if(body){clearRetry();if(action==='turn'){retry.current={action,body};sessionStorage.setItem('afterhours-pending',JSON.stringify(retry.current));}}
   const controller=new AbortController();active.current=controller;const timer=setTimeout(()=>controller.abort(),12000);
   try{
    const r=await fetch('/api/'+action,{method:body?'POST':'GET',headers:body?{'Content-Type':'application/json'}:undefined,body:body?JSON.stringify(body):undefined,signal:controller.signal});const data=await r.json();
@@ -29,7 +29,7 @@ function App(){
    setState(data);setCanReset(false);
    if(body){clearRetry();if(action==='turn'){setDraft('');setChoice(null);}}
    setError(data.recovery||(retry.current?'표시가 확인되지 않은 선택이 있습니다. 같은 요청을 다시 시도하면 저장된 결과를 복구합니다.':''));return true;
-  }catch(e){setError(e instanceof Error&&e.name==='AbortError'?'응답을 확인하지 못했습니다. 같은 요청 다시 시도로 확정 여부를 확인하세요.':e instanceof Error?e.message:'서버 연결을 확인해 주세요.');return false;}
+  }catch(e){const message=e instanceof Error&&e.name==='AbortError'?'응답을 확인하지 못했습니다.':e instanceof Error?e.message:'서버 연결을 확인해 주세요.';setError(message+(retry.current?' 같은 요청 다시 시도로 확정 여부를 확인하세요.':' 상태 다시 확인으로 저장된 진행을 확인하세요.'));return false;}
   finally{clearTimeout(timer);active.current=null;setBusy(false);}
  }
  useEffect(()=>{void api();},[]);

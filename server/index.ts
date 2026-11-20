@@ -38,7 +38,7 @@ app.all('/api/:action',async(req,res)=>{
  if(choice!=null&&(!Number.isInteger(choice)||choice<0||choice>2))throw Error('유효하지 않은 선택입니다.');
  if(typeof requestId!=='string'||!/^[a-zA-Z0-9-]{8,80}$/.test(requestId))throw Error('요청 식별자가 필요합니다.');
  const hash=createHash('sha256').update(JSON.stringify({text,choice,version,step:req.body.step})).digest('hex');
- const old=p.committed?.find(t=>t.id===requestId);if(old){if(old.hash!==hash){res.status(409).json({error:'동일 요청의 내용이 다릅니다. 현재 상태를 복구했습니다.',state:payload(p)});return;}res.json(old.result);return;}
+ const old=p.committed?.find(t=>t.id===requestId);if(old){if(old.hash!==hash){res.status(409).json({error:'동일 요청의 내용이 다릅니다. 현재 상태를 복구했습니다.',state:payload(p)});return;}if(old.afterVersion!==canonical(p.game).version){res.status(409).json({error:'이미 처리한 선택 이후 진행이 변경되었습니다. 현재 상태를 복구했습니다. 새 선택을 제출하세요.',state:payload(p)});return;}res.json(payload(p));return;}
  if(++rate.count>300){res.status(429).json({error:'시간당 요청 한도입니다. 잠시 후 다시 시도하세요.'});return;}
  if(p.game.ending)throw Error('이미 끝난 이야기입니다.');
  if(version!==canonical(p.game).version||req.body.step!==p.game.step){res.status(409).json({error:'진행 버전이 변경되었습니다. 현재 상태를 복구했습니다. 새 선택을 제출하세요.',state:payload(p)});return;}

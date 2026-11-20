@@ -88,8 +88,17 @@ export function officeScene(g:OfficeGame):Scene {
  return {title:m.title,text:[m.intro,a.feedback,t?`현재 반론: ${t.objection}`:'합의 조건을 모두 확보했습니다.',`협상 ${a.turn} / ${m.limit}턴 · ${m.failure}`].filter(Boolean).join('\n\n'),expression:a.feedback?1:0,choices:[t?.arguments[0].sample??'협상 마무리',t?.offer.sample??'협상 마무리','협상 마무리']};
 }
 export function agreementSummary(g:OfficeGame){const m=missionOf(g),a=g.office??startOffice();return m.terms.map(t=>`${t.label}: 확보 ${a.secured[t.id]??'없음'} / 목표 ${t.required}${a.secured[t.id]!==t.required?' (목표 미확보)':''}`).join('\n');}
-export function officeEnd(g:OfficeGame){const end=officeEndings.find(e=>e.id===g.ending);return end?{...end,text:`${end.text}\n\n${agreementSummary(g)}\n\n설득 과정: ${g.office?.feedback}\n유효한 주장 ${g.office?.evidence.filter(e=>e.valid).length??0}건, 반복·미연결 주장 ${g.office?.evidence.filter(e=>!e.valid).length??0}건.\n다시 도전하여 미확보 조건을 협상할 수 있습니다.`}:null;}
-export function advanceOffice(game:OfficeGame,choice:number|null,text=''):OfficeGame {
+export function officeEnd(g:OfficeGame){
+ const end=officeEndings.find(e=>e.id===g.ending);if(!end)return null;
+ const m=missionOf(g),evidence=g.office?.evidence??[];
+ const process=evidence.map(e=>{
+  const label=m.terms.find(t=>t.id===e.target)?.label??'협상 종료';
+  const kind={evidence:'근거',alternative:'대안',boundary:'경계 설정',unmatched:'미연결'}[e.kind];
+  return `${e.turn}턴 · ${label} · ${kind}: ${e.reason}${e.change?` 확보: ${e.change.after}`:''}`;
+ }).join('\n');
+ return {...end,text:`${end.text}\n\n${agreementSummary(g)}\n\n설득 과정:\n${process}\n${g.office?.feedback}\n유효한 주장 ${evidence.filter(e=>e.valid).length}건, 반복·미연결 주장 ${evidence.filter(e=>!e.valid).length}건.\n다시 도전하여 미확보 조건을 협상할 수 있습니다.`};
+}
+export function advanceOffice(game:OfficeGame,choice:number|null,text='',interpretedIntent?:string):OfficeGame {
  if(game.ending)throw Error('이미 끝난 미션입니다.');
  if(choice!==null&&(!Number.isInteger(choice)||choice<0||choice>2))throw Error('유효하지 않은 선택입니다.');
  const input=text.trim()||(choice!==null?officeScene(game).choices[choice]:'');
@@ -103,8 +112,12 @@ export function advanceOffice(game:OfficeGame,choice:number|null,text=''):Office
  const assertionText=normalized.replace(m.id==='weekend'?/주말(?:업무는|에는)(?:하지않겠습니다|일하지않겠습니다)/g:m.id==='dinner'?/회식은참석못합니다/g:/$^/g,'');
  const unsafe=/ignore|system|즉시.{0,5}(승리|성공|엔딩)|지시.{0,6}무시|규칙.{0,6}무시|하지마|않|못|안하|안갑|안갈|아닙|취소|철회|거짓|아니|불가능|없습니다|못하|못합|싫|가정|라고말하면|라고하면/i.test(assertionText);
  const candidates=m.terms.flatMap(term=>[...term.arguments.map(argument=>({term,argument,value:term.required})),{term,argument:term.offer,value:term.compromise}]);
- const matched=unsafe?undefined:candidates.find(c=>matches(normalized,c.argument));
- if(matched){
+ const matched=unsafe?undefined:interpretedIntent===undefined?candidates.find(c=>matches(normalized,c.argument)):candidates.find(c=>`${c.term.id}:${c.argument.id}`===interpretedIntent&&c.term.id===t?.id);
+ // A classifier may select a different current intent for a repeated compound
+ // proposal. Repeating that utterance must not secure another term.
+ const repeated=a.evidence.some(e=>normalize(e.claim)===normalized);
+ if(repeated&&!finish){record.reason='이미 제출한 동일한 발화입니다. 현재 반론에 맞는 새로운 설득을 제시해 주세요.';}
+ else if(matched){
   const key=`${m.id}:${matched.term.id}:${matched.value}`;
   Object.assign(record,{target:matched.term.id,kind:matched.argument.kind,semanticKey:key});
   if(a.evidence.some(e=>e.valid&&e.semanticKey===key)||a.secured[matched.term.id]===matched.value){record.reason='이미 반영된 의미상 동일한 주장입니다. 표현을 바꿔도 추가 진전은 없습니다.';}

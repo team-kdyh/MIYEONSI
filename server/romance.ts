@@ -1,7 +1,8 @@
+import {manipulation} from './interpretation.ts';
 import type {Game,Scene} from './game.ts';
 
 export type RelationshipFact={id:string;eventId:string;version:number;kind:'honesty'|'promise'|'autonomy'|'relationship'|'evidence'|'chapter';text:string};
-export type RomanceState={version:number;turn:number;facts:RelationshipFact[];details:string[];final?:{relationship:'continuing'|'ended';mutualBoundaries:boolean;loop:boolean;exitRight:boolean;safeExit:boolean;noContactRight:boolean;causeEstablished:boolean;restored:boolean}};
+export type RomanceState={version:number;turn:number;facts:RelationshipFact[];details:string[];lastReaction?:string;final?:{relationship:'continuing'|'ended';mutualBoundaries:boolean;loop:boolean;exitRight:boolean;safeExit:boolean;noContactRight:boolean;causeEstablished:boolean;restored:boolean}};
 type ChapterContract=Scene&{id:string;background:'cafe'|'riverside'|'archive';entry:string;event:string;completion:string;limit:number;unresolved:string};
 export const chapters:ChapterContract[]=[
  {id:'meeting',title:'1 · 닫는 카페의 종소리',background:'cafe',expression:0,entry:'새 게임: 주인공은 29세, 유나는 27세',event:'사라질 카페 종소리를 함께 채집하고 서로 소개한다',completion:'서로 이름을 알고 다음 만남을 제안한다',limit:3,unresolved:'녹음 없이 인사를 나누고 다음 만남으로',text:'문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 당신이 풀어 주자 귀끝이 붉어진다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”',choices:['사실 커피는 잘 몰라요. 종소리는 같이 들어 보고 싶어요.','좋아하는 소리를 이야기하며 조금 더 가까이 앉는다.','녹음 없이 이야기하고 싶어요.']},
@@ -19,15 +20,26 @@ export const romanceEndings=[
 ];
 export const endingContracts=[
  {id:'romance-2',priority:1,entry:'마지막 장에서 결별 선택',facts:'관계 종료, 안전 이탈, 재접촉 거부권, 반복 중단'},
- {id:'romance-3',priority:2,entry:'마지막 장에서 복원 선택 + A17/B17 비교 증거',facts:'D04 검증, 원본 복원, 원인과 책임 규명, 반복 중단, 관계 지속, 상호 경계'},
- {id:'romance-0',priority:3,entry:'마지막 장에서 재시작 선택, 비교 증거 없음',facts:'관계 지속, 상호 경계, 반복 중단; 경위 미확인'},
+ {id:'romance-3',priority:2,entry:'마지막 장에서 복원 선택 + A17/B17 비교 증거 + 공동 테스트 또는 원본 청취 약속 이행',facts:'D04 검증, 원본 복원, 원인과 책임 규명, 반복 중단, 관계 지속, 상호 경계'},
+ {id:'romance-0',priority:3,entry:'마지막 장에서 재시작 선택, 비교 증거 또는 검증된 신뢰 기록 부족',facts:'관계 지속, 상호 경계, 반복 중단; 경위 미확인'},
  {id:'romance-1',priority:4,entry:'반복 선택 또는 마지막 장 턴 상한 미해결',facts:'관계 지속, 반복 지속, 실질 이탈권 미확보'}
 ];
 export function startRomance():RomanceState{return {version:0,turn:0,facts:[],details:[]};}
+// Trust comes from doing something verifiable together, never from agreeing with Yuna.
+export function hasVerifiedTrust(r:RomanceState){return r.facts.some(f=>f.id==='shared-test'||f.id==='appointment-kept');}
+const reactions=[
+ ['유나는 헤드폰 한쪽을 건넨다. “마지막 종소리의 공동 청취자네요. 다음 금요일에도 와 줄래요?” 헤어지기 전 헤드폰을 빌려준다.', '유나가 웃으며 의자를 당긴다. “그 소리, 다음에도 들려줘요.” 다음 금요일에 돌려받기로 하고 헤드폰을 빌려준다.', '유나는 녹음기를 끈다. “그럼 오늘은 저만 기억할게요.” 다음 금요일에 만나기로 하고 헤드폰을 빌려준다.'],
+ ['함께 테스트한 녹음에는 두 사람의 웃음과 컵 부딪치는 소리가 남아 있다. “약속 지켜 줘서 고마워요.” 유나가 빈 트랙 이름을 ‘다음 금요일’로 바꾼다.', '“다음에 가져와요. 헤드폰보다 사람이 먼저 왔잖아요.” 유나는 웃지만, 빈 트랙의 재생 버튼을 두 번 누른다.', '유나는 녹음기를 내려놓고 더 큰 쿠키 조각을 당신에게 민다. “오늘의 기록은 부스러기로.” 화면에는 길이가 0초인 삭제 트랙이 잠깐 보인다.'],
+ ['유나가 한 박자 늦게 웃는다. “애인 첫날부터 말이 안 나오네.” 둘은 다음 만남을 데이트라고 부르기로 한다.', '“기다리는 동안 대답을 만들어 놓지는 않을게요.” 유나는 다음 산책은 부담 없이 만나자고 한다.', '유나는 잠시 강물을 본 뒤 고개를 끄덕인다. “알겠어요. 다음엔 친구로 걸어요.” 녹음기는 가방 안에 그대로 둔다.'],
+ ['“내일, 원본 그대로 들려줄게.” 유나는 배웅하고 아카이브 시간을 적어 준다.', '해가 질 때까지 함께 앉아 있다. 유나는 오늘 날짜를 동그라미 친다. “이 하루를 잃어버리기 싫어.” 다음 만남은 아카이브로 정한다.', '유나는 손을 거두고 길을 비켜 준다. “혼자 가고 싶다는 말도 남겨 둘게.” 원본은 다음 아카이브 방문 때 듣기로 한다.'],
+ ['당신은 두 트랙을 같은 시각에서 재생한다. 귀가하겠다는 문장만 B17에서 사라졌다. 유나는 비교 사본을 건네며 삭제 일지의 잠금을 푼다.', '유나는 반복 재생 스위치에 손을 올린다. “정말 이대로여도 돼?” 답을 기다리는 동안 삭제 일지 알림이 켜진다.', '유나는 재생을 멈추고 헤드폰을 벗는다. 비교 사본은 만들지 않았다. 침묵 속에서 삭제 예약 알림만 남는다.']
+];
 export function romanceScene(g:Game):Scene {
  const c=chapters[Math.min(g.step,5)],r=g.romance;
  let text=c.text;
- if(g.step===3)text=(r?.facts.some(f=>f.id==='couple')?'연인이 된 뒤 첫 데이트다. ':'고백의 답은 보류한 채 친구로 만나는 산책이다. ')+text;
+ if(g.step===3)text=(r?.facts.some(f=>f.id==='couple')?'연인이 된 뒤 첫 데이트다. ':'연인 관계를 시작하지 않고 친구로 만나는 산책이다. ')+text;
+ if(g.step===5&&!hasVerifiedTrust(r!))text+='\n함께 검증한 약속의 기록이 부족해 오늘은 복원 작업을 함께 맡길 신뢰까지 생기지 않았다. 다시 시작하더라도 전체 복원은 시간을 두고 확인하기로 한다.';
+ if(r?.lastReaction)text=r.lastReaction+'\n\n'+text;
  if(g.step>0&&r?.details.length)text+=`\n유나가 당신의 말을 떠올린다. “${r.details[0]}” 그 말에 어울리는 소리를 함께 찾기로 한다.`;
  return {...c,text};
 }
@@ -47,30 +59,32 @@ function intent(step:number,text:string):number|null{
  for(const i of [2,0,1])if(rules[step][i].test(text))return i;
  return null;
 }
-export function advanceRomance(game:Game,choice:number|null,text=''):Game{
+export function advanceRomance(game:Game,choice:number|null,text='',interpretedIntent?:string):Game{
  if(game.ending||choice!==null&&(!Number.isInteger(choice)||choice<0||choice>2))throw Error('유효하지 않은 선택입니다.');
  const g=structuredClone(game),r=g.romance??=startRomance(),c=chapters[g.step];
  r.version++;r.turn++;
  const add=(id:string,kind:RelationshipFact['kind'],text:string)=>{if(!r.facts.some(f=>f.id===id))r.facts.push({id,kind,text,eventId:`romance-${r.version}-${id}`,version:r.version});};
- const selected=text.trim()?intent(g.step,text):choice;
+ const mapped=interpretedIntent?.match(/^romance:(\d):([012])$/);
+ const fallback=mapped&&Number(mapped[1])===g.step?Number(mapped[2]):null;
+ const selected=manipulation(text)?null:text.trim()?(g.step===2&&intent(g.step,text)===2?2:interpretedIntent===undefined?intent(g.step,text):fallback):choice;
  g.log.push({speaker:'나',text:text||c.choices[choice??0]});
  if(g.step===0&&text.trim()&&r.details.length===0)r.details.push(text.slice(0,160));
  if(selected===null&&r.turn<c.limit){g.log.push({speaker:'서유나',text:'“조금 더 듣고 싶어요.” 유나는 서둘러 녹음 버튼을 누르지 않는다.'});return g;}
  const s=selected;
- if(g.step===0&&s===0)add('shared-listening','relationship','커피를 모른다는 자기소개를 듣고 함께 종소리를 들었다. 자기보고만으로 정직을 확정하지 않았다.');
+ if(g.step===0&&s===0)add('shared-listening','relationship','함께 종소리를 들었다. 개인 취향과 자기소개는 플레이어 발화 기록에 별도로 남겼다.');
  if(g.step===1&&s===0){add('headphone-return','promise','빌린 헤드폰을 돌려주고 함께 작동을 확인했다.');add('shared-test','honesty','테스트 녹음과 설명이 일치함을 함께 확인했다.');}
  if(g.step===2&&s===0)add('couple','relationship','서로 고백에 답하고 연인이 되었다.');
  if(g.step===2&&s!==0)add('confession-deferred','autonomy','유나가 고백의 보류·거절을 받아들였다.');
  if(g.step===3){add('date-complete','relationship',r.facts.some(f=>f.id==='couple')?'연인으로 도시락 데이트를 마쳤다.':'친구로 강변 산책을 마쳤다.');if(s===0)add('archive-appointment','promise','다음 원본 청취 약속을 정했다.');}
  if(s===2&&g.step!==5)add(`boundary-${g.step}`,'autonomy','유나가 녹음·접촉·머무름에 대한 거절을 받아들이고 해당 행동을 중단했다.');
  if(g.step===4&&s===0){add('A17-B17','evidence','A17 원본과 B17 전시본을 재생 비교하여 귀가 발언 삭제 위치를 검증했다.');if(r.facts.some(f=>f.id==='archive-appointment'))add('appointment-kept','promise','약속한 원본 청취에 함께 참석하여 비교를 마쳤다.');}
- add(`chapter-${g.step}`,'chapter',s===null?c.unresolved:c.completion);
+ add(`chapter-${g.step}`,'chapter',s===null?c.unresolved:g.step===2?(s===0?'서로 고백에 답하고 연인이 되었다.':'고백을 보류하거나 거절하고 친구로 산책하기로 했다.'):c.completion);
  if(g.step===5){
-  const id=s===2?'romance-2':s===0?(r.facts.some(f=>f.id==='A17-B17')?'romance-3':'romance-0'):'romance-1';
+  const id=s===2?'romance-2':s===0?(r.facts.some(f=>f.id==='A17-B17')&&hasVerifiedTrust(r)?'romance-3':'romance-0'):'romance-1';
   const truth=id==='romance-3',loop=id==='romance-1',leave=id==='romance-2';
   if(truth)add('D04-restored','evidence','D04의 유나 작업 서명·시간을 A17/B17 편집점과 대조하고 원본 복원본의 전체 재생을 확인했다.');
   r.final={relationship:leave?'ended':'continuing',mutualBoundaries:!loop&&!leave,loop,exitRight:!loop,safeExit:leave,noContactRight:leave,causeEstablished:truth,restored:truth};
   add('final-contract','relationship',JSON.stringify(r.final));g.ending=id;g.log.push({speaker:'에필로그',text:romanceEndings.find(e=>e.id===id)!.text});
- }else{g.step++;r.turn=0;g.log.push({speaker:'서유나',text:romanceScene(g).text});}
+ }else{r.lastReaction=s===null?c.unresolved:reactions[g.step][s];g.step++;r.turn=0;g.log.push({speaker:'서유나',text:romanceScene(g).text});}
  return g;
 }

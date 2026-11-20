@@ -27,7 +27,7 @@ test('24 mission outcomes through public API, with semantic repetition and new p
   expect(state.game.ending).toBe(`office-${m.id}-${outcome}`);
   expect(state.game.end.text).toContain('설득 과정');expect(state.game.end.text).toContain('다시 도전');
   for(const t of m.terms)expect(state.game.office.secured[t.id]).toBe(outcome==='success'?t.required:outcome==='partial'?t.compromise:undefined);
-  evidence.push({criterion:7,mission:m.id,claim:`${outcome} through validated public HTTP input`,provider:'offline',initial,allowedInputPath:'POST /api/new then POST /api/turn, choice=null',turns,final:state.game.office,result:'pass'});
+  evidence.push({criterion:2,mission:m.id,claim:`${outcome} through validated public HTTP input`,provider:'offline',initial,allowedInputPath:'POST /api/new then POST /api/turn, choice=null',turns,final:state.game.office,result:'pass'});
  }
  const files=['server/office.ts','server/game.ts','server/dialogue.ts','server/index.ts','src/main.tsx','src/OfficeAgreement.tsx','tests/office.spec.ts'];
  const codeVersion=Object.fromEntries(await Promise.all(files.map(async file=>[file,createHash('sha256').update(await readFile(file)).digest('hex')])));
@@ -44,6 +44,10 @@ test('mission picker, free-text agreements, ending feedback and retry on mobile'
  await expect(page.locator('.scene-label h2')).toHaveText('휴가 승인');
  for(const t of missions[3].terms){await page.locator('#reply').fill(t.arguments[0].paraphrase);await page.getByRole('button',{name:'대답하기'}).click();await expect(page.locator('.office-contract')).toContainText(t.required);}
  await expect(page.locator('.ending-actions')).toBeVisible();await expect(page.locator('.dialogue')).toContainText('김대리 / 8월 11일 인수인계');
+ const skip=page.getByRole('button',{name:'대사 바로 표시'});
+ if(await skip.isVisible())await skip.click();
+ await expect(page.locator('.dialogue')).toContainText('1턴 · 승인된 휴가 날짜');
+ await expect(page.locator('.dialogue')).toContainText('2턴 · 인수인계 책임·시점');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
  await page.screenshot({path:'test-results/office-vacation-success-mobile.png',fullPage:true});
  await page.getByRole('button',{name:'이 미션 다시 도전'}).click();await expect(page.locator('.scene-top')).toContainText('0 / 6턴');await expect(page.locator('#reply')).toHaveValue('');

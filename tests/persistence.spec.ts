@@ -1,5 +1,80 @@
 import {test,expect} from '@playwright/test';
 
+test('AC6 failed save delivery offers state recovery without replaying a mutation',async({page})=>{
+ await page.goto('/');await page.getByRole('button',{name:/칼퇴의 기술/}).click();await page.getByRole('button',{name:'이야기 시작'}).click();
+ await expect(page.locator('#reply')).toBeVisible();
+ const initial=await (await page.request.get('/api/state')).json();
+ await page.route('**/api/save',async route=>{await route.fetch();await route.abort('connectionreset');},{times:1});
+ await page.getByRole('button',{name:'세이브',exact:true}).click();
+ await page.locator('.save-slot').first().getByRole('button',{name:'저장',exact:true}).click();
+ await expect(page.getByRole('alert')).toContainText('상태 다시 확인');
+ await expect(page.getByRole('button',{name:'같은 요청 다시 시도'})).toHaveCount(0);
+ await page.getByRole('button',{name:'닫기',exact:true}).click();
+ await page.getByRole('button',{name:'상태 다시 확인'}).click();
+ await expect(page.getByRole('alert')).toHaveCount(0);
+ const saved=await (await page.request.get('/api/state')).json();
+ expect(saved.game).toEqual(initial.game);expect(saved.slots[0]).toBeTruthy();
+});
+
+test('AC6 unrecoverable storage displays an explicit confirmed reset path',async({page})=>{
+ await page.route('**/api/state',route=>route.fulfill({status:503,json:{error:'저장 형식이 다르거나 손상되었고 유효한 이전 저장도 없습니다.',canReset:true}}),{times:1});
+ await page.goto('/');
+ await expect(page.getByRole('alert')).toContainText('손상');
+ page.once('dialog',dialog=>dialog.accept());
+ await page.getByRole('button',{name:'저장 초기화 후 새로 시작'}).click();
+ await expect(page.getByRole('alert')).toHaveCount(0);
+ await expect(page.getByRole('button',{name:/칼퇴의 기술/})).toBeEnabled();
+});
+
+test('AC6 reload restores all three manual slots, relationship, log and unlocked ending',async({page})=>{
+ await page.goto('/');
+ await expect(page.getByRole('button',{name:/칼퇴의 기술/})).toBeEnabled();
+ let s=await (await page.request.post('/api/new',{data:{mode:'romance'}})).json();
+ const snapshots:any[]=[];
+ for(let slot=0;slot<3;slot++){
+  const target=[1,4,6][slot];
+  while(!s.game.ending&&s.game.step<target){
+   s=await (await page.request.post('/api/turn',{data:{text:'',choice:0,step:s.game.step,version:s.game.dialogue.version,requestId:crypto.randomUUID()}})).json();
+  }
+  snapshots.push(structuredClone(s.game));
+  expect((await page.request.post('/api/save',{data:{slot}})).ok()).toBeTruthy();
+ }
+ expect(s.game.ending).toBeTruthy();
+ const ending=s.endings.romance.find((e:any)=>e.id===s.game.ending);
+ for(let slot=0;slot<3;slot++){
+  await page.reload();
+  await page.getByRole('button',{name:'세이브',exact:true}).click();
+  await expect(page.locator('.save-slot')).toHaveCount(3);
+  await page.locator('.save-slot').nth(slot).getByRole('button',{name:'불러오기'}).click();
+  await expect(page.getByRole('dialog')).toHaveCount(0);
+  const restored=await (await page.request.get('/api/state')).json();
+  expect({...restored.game,dialogue:{...restored.game.dialogue,version:0}}).toEqual({...snapshots[slot],dialogue:{...snapshots[slot].dialogue,version:0}});
+  expect(restored.collection).toContain(s.game.ending);
+  await page.reload();await page.getByRole('button',{name:/이어하기/}).click();
+  await page.getByRole('button',{name:'대화 로그'}).click();
+  await expect(page.locator('.log')).toHaveCount(snapshots[slot].log.length);
+  await page.getByRole('button',{name:'닫기',exact:true}).click();
+  await page.getByRole('button',{name:'컬렉션',exact:true}).click();
+  await expect(page.locator('.end-card strong').filter({hasText:ending.title})).toBeVisible();
+ }
+});
+
+test('AC6 pending response from another timeline recovers current state',async({page})=>{
+ await page.goto('/');
+ await expect(page.getByRole('button',{name:/칼퇴의 기술/})).toBeEnabled();
+ const initial=await (await page.request.post('/api/new',{data:{mode:'romance'}})).json();
+ const body={text:'',choice:0,step:initial.game.step,version:initial.game.dialogue.version,requestId:crypto.randomUUID()};
+ expect((await page.request.post('/api/turn',{data:body})).ok()).toBeTruthy();
+ const current=await (await page.request.post('/api/new',{data:{mode:'office',mission:4}})).json();
+ await page.evaluate(body=>sessionStorage.setItem('afterhours-pending',JSON.stringify({action:'turn',body})),body);
+ await page.reload();
+ await page.getByRole('button',{name:'같은 요청 다시 시도'}).click();
+ await expect(page.getByRole('alert')).toContainText('현재 상태를 복구했습니다');
+ await expect(page.getByRole('button',{name:/이어하기/})).toContainText('직장 미션');
+ expect((await (await page.request.get('/api/state')).json())).toEqual(current);
+ expect(await page.evaluate(()=>sessionStorage.getItem('afterhours-pending'))).toBeNull();
+});
+
 test('AC6 delivered but not displayed turn survives reload and retries once',async({page})=>{
  await page.goto('/');
  await page.getByRole('button',{name:/너의 목소리를 빌려줘/}).click();

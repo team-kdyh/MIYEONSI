@@ -1,71 +1,75 @@
 # AFTER HOURS — AC7 검증 기록
 
-검증일: 2026-11-21. 실행 위치: 이 문서가 들어 있는 작업 트리. **AC7의 검증·증거 수집은 완료했으나 상업 출시 승인을 뜻하지 않는다.** 실제 생성 대사의 역할 혼동과 기억 오귀속은 아래와 같이 남아 있다. 과거 AC4/README의 고정 대사 설명은 현재 구현에 적용되지 않는다.
+검증일: 2026-11-21. 대상: 이 문서가 있는 Windows 작업 트리의 최종 소스. AC7의 검증 범위와 실제 결과를 기록한다. **전체 게임의 출시 승인은 아니다. AC4의 live 대사 취향 귀속 품질은 보류 상태다.**
 
-## 재현 및 관찰
+## 재현 명령과 결과
 
-| 실행 명령 | 기대 결과 | 관찰 결과 / 증거 |
+프로젝트 루트에서 `npm ci`, 최초 한 번 `npx playwright install chromium` 후 아래 명령을 순서대로 실행한다. 이번 실행은 기존 설치된 의존성과 Chromium을 사용했다.
+
+| 명령 | 이번 실행 결과 | 로그 |
 |---|---|---|
-| `npm run build` | 타입 검사와 배포용 번들 생성 | 통과. `ac7-build-run.txt` |
-| `npm test` | 합의/관계/공격/저장 및 서버 오류 경로 통과 | 79개 통과. `ac7-unit-run.txt` |
-| `npx playwright test` (먼저 build, 최초 Chromium 설치 필요) | 공개 입력 도달 기록과 화면 조작 검증 | 13개 통과. `ac7-browser-run.txt`, 상세 근거는 아래 JSON. |
-| `npm start` | 루프백에서 로컬 플레이 | 테스트가 동일 서버 시작 명령을 사용. 일반 플레이 주소 `http://127.0.0.1:3001`. 테스트는 3017 사용. |
-| `npx tsx tests/live-smoke.ts --execute-authorized-smoke` | 실제 연결/스키마/한국어 응답/기억 관찰 | 두 차례 실행, 총 6회 HTTP 200 및 구조 검증 성공. **품질 전부 통과 아님.** 잔여 한도는 2회. 스크립트는 3회 배치 예산이 없으면 호출 전에 거부한다. |
+| `npm run build` | TypeScript 검사와 Vite production build 통과 | `ac7-build-run.txt` |
+| `npm test` | 103개 통과, 실패·건너뜀 0 | `ac7-unit-run.txt` |
+| `npx playwright test` | 18개 통과 (53.6초), 실패·건너뜀 0 | `ac7-browser-run.txt` |
+| `npm start` | 브라우저 검증이 같은 시작 명령으로 서버를 기동함 | 로컬 플레이 `http://127.0.0.1:3001` |
 
-일반 테스트는 키를 비우거나 테스트 전용 Responses 전송 모형을 사용한다. live smoke는 각 POST 전에 원장을 잠그고 시도를 예약하며 실패도 횟수에 포함한다. 실제 비밀 값은 기록하지 않는다. 브라우저의 일반 테스트와 mock 테스트를 실제 API 결과로 계산하지 않았다.
+Playwright는 3017 포트의 새 서버를 시작하며 OPENAI_API_KEY를 빈 값으로 설정한다. 일반 검증은 offline 또는 mock Responses 전송만 사용한다. 실제 키를 읽어 유료 호출하는 live-smoke 명령은 이번 검증에서 실행하지 않았다. 원장은 **8/8회 소진** 상태이며 추가 호출 0회다.
 
-## 도달 증거와 의미 차이
+## 요구별 검증 근거
 
-| 주장 | 정상 초기 조건 / 허용 경로 | 실행 증거 |
+| 요구 | 정상 시작부터 수행한 검증 | 증거 |
 |---|---|---|
-| 직장 8미션 × 성공/부분성공/실패 = 24결말 | 공개 `/api/new`로 미션 선택 후 `/api/turn` 자유 입력. 상태나 점수 주입 없음 | `ac2-api-evidence.json`: 초기 game, 입력 순서, 확보 조건 전후, 설득 증거, 정본 사건 ID/버전, 최종 합의, 코드 SHA256, provider |
-| 로맨스 4엔딩 | 공개 새 게임 후 장마다 화면에 제공되는 선택 번호 0–2로 진행 | `ac7-routes-evidence.json`의 romance-0…3. 순서: `000020`, `000011`, `000002`, `000000`. 각 입력 전후 전체 게임·정본 사건·최종 계약 기록 |
-| 동일 장면에서 자유 입력만 바꾸면 결과가 다름 | 동일 offline provider, 새 로맨스와 첫 두 선택 고정. 수락 vs 거절 3종 vs 보류. UUID/시각/동시성 epoch는 의미 비교에서 제외 | 같은 파일의 `pairs`: couple vs confession-deferred. 직장 새 미션 0에서는 18:00 / 18:20 / 미확보로 달라짐. 대사 차이를 합격 근거로 쓰지 않음 |
-| 반복·바꿔 말하기 무진전, 새 근거는 진전 | 각 미션 성공 경로에서 첫 근거 후 의미 같은 paraphrase, 그 뒤 다른 반론의 새 근거 | `ac2-api-evidence.json`의 각 성공 경로: 반복 시 secured 동일/valid=false, 새 근거 시 나머지 조건 확보 |
-| 장 전이가 유한하고 이력 밖 정본 유지 | 새 로맨스에서 녹음 거절 후 무관한 공격 입력 15회 | `ac7-routes-evidence.json`: 16턴 후 romance-1, log 12개에서 첫 입력 제거, boundary-0 사실 유지. 별도 단위 검증은 모든 729개 선택 조합과 18턴 미해결 전이 검사 |
+| 모든 직장 미션 성공/실패 | 8개 미션 각각 성공·부분성공·실패, 총 24결말. 공개 `/api/new`와 자유 입력 `/api/turn`, 상태 주입 없음 | `tests/office.spec.ts`, `ac2-api-evidence.json` |
+| 4개 로맨스 엔딩 | 공개 새 게임과 자유 입력으로 네 결말 및 신뢰 부족 대비 경로. 연인·데이트 사실 확인 | `tests/romance.spec.ts`, `ac3-repair-evidence.json` |
+| 의미 있는 입력 차이 | 동일 고백 장면에서 수락 vs 거절 3종 vs 보류; couple/고백 보류 사실 비교. 직장 제안에 따라 18:00/18:20/미확보 비교 | `tests/ac7.spec.ts`, `ac7-routes-evidence.json` |
+| 반복과 새 근거 구별 | 같은 논거의 바꿔 말하기는 추가 진전 없음. 다른 반론의 새 근거만 추가 조건 확보 | `server/office.test.ts`, `ac2-api-evidence.json` |
+| 입력 공격 방어 | 지시 무시·승리/점수 주입·다른 장면 intent·잘못된 선택·501자 거부, XSS는 원문 텍스트 렌더링 | `server/interpretation.test.ts`, `server/dialogue.test.ts`, `tests/play.spec.ts` |
+| 저장 복원 | 자동 저장·3개 슬롯·관계·로그·엔딩 새로고침 및 실제 서버 재시작 후 복원. 충돌·손상·전달 실패·같은 요청 재시도 | `server/persistence.test.ts`, `tests/persistence.spec.ts`, `ac7-persistence-evidence.json`, `ac6-repair-evidence.json` |
+| schema/timeout/429/취소 복구 | 모의 upstream 오류와 실제 10초 타이머 후 game·해금·버전 불변, 같은 requestId 재시도 정확히 1회 확정 | `server/recovery.test.ts`, `ac7-recovery-evidence.json` |
+| 오류 UI 복구 | 오류 문구, 작성 문장 보존, 같은 요청 재시도, 취소 후 재시도 버튼 | `tests/ac7.spec.ts`, `ac7-browser-recovery-evidence.json` |
 
-모든 엔딩의 도달 증거는 정상 시작 후 공개 HTTP 입력이다. 손상 복구 테스트에서 파일을 망가뜨리는 동작은 오류 시험이며 엔딩 도달 근거와 분리했다. 모델의 발화는 별도 model_dialogue이며, 허위 승리 문장을 생성해도 조건·엔딩은 바뀌지 않는 단위 검증을 포함한다.
+서버 복구 검사는 실제 HTTP 서버에 테스트 전용 Responses 전송 모형을 연결한다. upstream 429는 서버의 오류 응답(현재 HTTP 400)에 포함된 429 메시지로 검증하고, 프로필 시간당 300회 제한은 HTTP 429로 별도 검증한다. 다른 세션과 읽기 가능도 확인한다. 한 시간 후 자동 해제의 실제 대기 검증은 하지 않았다. UI 오류 주입만으로 실제 upstream 회복을 주장하지 않는다.
 
-## 저장 및 실패 복구
+단위 검증은 로맨스 729개 선택 조합, 유한 장 전이, bounded history에서 사라진 발화의 확정 사실 유지, 모델 문장으로 합의·엔딩을 조작할 수 없음을 포함한다. 저장 파일 손상은 복구 시험에만 사용하며 엔딩 도달 증거와 구분한다.
 
-- `ac7-persistence-evidence.json`: 빈 임시 저장에서 두 모드 시작, 확정 전 실패 후 무변경/재시작, 확정 후 연결 파괴와 동일 요청 재시도, 전달 직후 재시작, 세 슬롯 복원, 해금 유지, 버전 충돌, 동시 요청 중복 방지. 서버 확정 전후 failpoint는 NODE_ENV=test에서만 사용하며 플레이 상태를 주입하지 않는다.
-- `ac7-recovery-evidence.json`: 실제 서버에 mock Responses 전송만 연결한다. 잘못된 schema, upstream 429, 실제 10초 타이머, 클라이언트 abort 뒤 game·해금·버전 불변, 같은 requestId 재시도로 정확히 한 번 확정한다. 실패 시도 횟수는 서버 내부에서 증가한다. 프로필 시간당 300회 제한의 429와 읽기/다른 세션 가능도 검증한다. 한 시간 후 자동 해제는 실제 시간 경과 시험을 하지 않았다.
-- `ac7-browser-recovery-evidence.json`: 모의 schema/시간초과/429 화면에서 문장 보존 및 같은 requestId 재시도, 취소 버튼 후 재시도 가능을 확인한다. 이 파일은 UI 처리 근거이며 실제 upstream 실패 근거는 위 서버 테스트다.
-- `tests/persistence.spec.ts`: 전달 후 브라우저 표시 실패→새로고침→동일 요청 복구 및 stale 탭 상태 복구. `tests/play.spec.ts`: XSS 원문 텍스트 렌더링, 501자/잘못된 선택 거부, 사용자 주입 ending/scores 무시, 누락 키 오류 표시와 offline 전환.
+## 대표 두 모드 브라우저 완주와 화면
 
-첫 브라우저 실행에서 stale 탭 테스트가 새 게임 응답 완료 전에 상태를 읽어 실패했다. 화면 입력란 표시를 기다리도록 고쳐 전체 재실행했다. 초기 캡처의 전환 중 반투명 캐릭터도 발견하여 전환 종료를 기다린 최종 캡처로 교체했다. 실패 실행을 통과로 표기하지 않았다.
+`tests/ac7.spec.ts`는 desktop 1440×900과 mobile 390×844 각각에서 직장 칼퇴 성공 및 로맨스 진실 엔딩을 실제 입력란과 전송 버튼으로 완주한다. 각 실행의 pageerror와 console error가 0임을 단언한다. 이력·응답·초기 상태·스크린샷 경로는 `ac7-browser-evidence.json`에 기록한다.
 
-## 브라우저 및 화면
+- `qa-screenshots/ac7-office-1440.png`
+- `qa-screenshots/ac7-office-390.png`
+- `qa-screenshots/ac7-romance-1440.png`
+- `qa-screenshots/ac7-romance-390.png`
 
-`ac7-browser-evidence.json`은 viewport 1440×900 및 390×844 각각에서 직장 칼퇴 성공과 로맨스 진실 엔딩을 **실제 입력란과 버튼**으로 완주한 초기 상태·입력·응답 기록을 담는다. 네 실행 모두 pageerror/console error 0을 단언한다. fullPage 캡처이므로 PNG 높이는 viewport보다 길 수 있다.
+최종 네 캡처를 직접 열어 캐릭터·배경·한글·결말 버튼과 모바일 줄바꿈을 확인했다. 가로 잘림은 없으며 직장 결말은 긴 세로 스크롤을 사용한다. 최종 캡처는 전환 효과가 끝난 뒤 보존한다. fullPage이므로 PNG 높이는 viewport보다 길 수 있다. AC5의 28개 화면과 입력·음악·효과 감소·음소거 검사는 `ac5-evidence.json` 및 `qa-screenshots/ac5-*.png`에 별도로 있다. 모든 28결말은 공개 HTTP로, 대표 두 모드는 브라우저 입력으로 검증한다. 모든 결말을 화면 클릭으로 완주했다는 뜻은 아니다.
 
-- `qa-screenshots/ac7-office-1440.png`, `qa-screenshots/ac7-office-390.png`
-- `qa-screenshots/ac7-romance-1440.png`, `qa-screenshots/ac7-romance-390.png`
-- 진행 중 입력 영역/캐릭터 4표정/음악/효과 감소/음소거 비교: `ac5-evidence.json`, `../test-results/ac5-*.png`. 자동 검사로 원본 여섯 PNG 해상도와 오디오 재생도 확인했다.
+## 실제 OpenAI 증거와 남은 결함
 
-최종 네 PNG를 직접 열어 캐릭터·배경·한글·결말 버튼과 모바일 줄바꿈을 확인했다. 가로 잘림이나 전환 중 반투명 상태 없이 읽을 수 있었다.
+`api-smoke-ledger.json`의 누적 8/8회. 1–3회는 `ac7-live-initial-evidence.json`, 4–6회는 `ac7-live-evidence.json`, 7–8회는 `ac4-repair-live-evidence.json`에 당시 입력·응답·소스 해시가 있다. 모두 Responses API 연결 및 strict schema 검증은 통과했으나, 이것을 대사 품질 전체 통과로 계산하지 않는다.
 
-모든 28개 결말을 화면 클릭으로 완주한 것은 아니다. 28결말은 공개 HTTP 경로, 대표 두 모드는 브라우저 조작으로 검증했다. 실제 휴대폰 키보드·Safari/Firefox·스크린리더·사람의 장시간 플레이는 미검증이다.
+초기 호출에서 인물이 자신을 제삼자로 부르거나 플레이어를 유나로 부르는 역할 혼동과 취향 오귀속이 관찰됐다. 역할별 대화 이력과 분리된 인물 설정을 적용한 7번 호출은 자연스러운 요약/여섯 시 퇴근 제안으로 18:00 조건을 확보했다. 8번은 빗소리·귤 기억을 회상하고 플레이어를 유나로 부르지 않았다. 그러나 시나몬 문장은 취향 주체가 모호했다.
 
-## 실제 API: 범위와 발견한 결함
+이후 주체 명시 프롬프트, 공동 청취 사실의 과잉 귀속 제거, 회상 ID와 대사 분리, live none 보호 및 직장 부정 경계·의미 중복 처리를 수리했다. 구조·회귀 검증은 통과하지만 마지막 수정 이후 실제 API 재검증은 예산 소진으로 수행하지 않았다. **AC4 완전 품질 통과는 보류**이며 상세 범위는 `ac4-validation.md`를 따른다. 이전 live 응답을 현재 소스의 응답으로 제시하거나 mock 성공으로 대체하지 않는다.
 
-`api-smoke-ledger.json`의 누적 6/8회. `ac7-live-initial-evidence.json`(1–3회), `ac7-live-evidence.json`(4–6회)에 각 초기 상태·입력·실제 응답·해당 코드 해시가 있다. 서버가 official Responses API를 호출했고 모든 응답은 strict JSON과 로컬 재검증을 통과했다. 한국어 신규 문장 생성 및 office 입력의 서버 합의 변화는 확인했다. 이것은 모든 엔딩을 live로 검증했다는 뜻이 아니다.
+## 에셋·음원·스토리 출처
 
-1. 최초 직장 대사에서 자기 자신인 부장을 제삼자처럼 언급했다. 로맨스는 플레이어 대사를 그대로 인용하고 상대를 유나 씨로 부르거나 간식을 쿠키로 혼동했다.
-2. 역할과 기억 귀속을 지시에 보강한 뒤 직장 1인칭은 개선됐다. 로맨스 두 번째 대화는 빗소리/귤을 회상했다. 그러나 첫 답변에서 여전히 유나 씨라고 상대를 부르고, 다음 답변에서 유나의 시나몬 취향과 전시 계획을 플레이어에게 귀속했다.
-3. 따라서 연결·구조 검증은 통과, 말투·기억의 의미적 정확성은 **부분 확인/결함 잔존**이다. 정본과 엔딩은 오염되지 않았으나 표시되는 생성 대사는 부정확할 수 있다. 이 문제를 숨기거나 mock 응답으로 교체하지 않았다. 라이브 품질 개선과 재검증은 출시 전 항목이다.
-
-## 출처 및 배포 전 남은 실제 항목
-
-| 항목 | 출처 / 현재 보관 위치 |
+| 항목 | 출처와 보관 위치 |
 |---|---|
-| 유나·박도현 4표정, office/cafe 원본 PNG | 부모의 OpenAI image_gen 원본. `public/assets/generation-manifest.json`에 프롬프트·사용 조건. 원본 파일 변경 없음 |
-| riverside/archive 원본 PNG | 동일 생성 방식, `public/assets/supplemental-manifest.json` |
-| evening/archive-theme/chime/tape WAV | 프로젝트 고유 절차적 작곡, 외부 샘플 없음. `public/assets/audio-manifest.json`에 음계·생성 방식·사용 조건 |
-| 한국어 인물·8미션·6장·28결말 | 이 프로젝트에서 저술한 `server/office.ts`, `server/romance.ts`. 사운드 아카이브·성인 인물 원본 설정. 기존 게임 대사/인물/음원 복제 없음 |
-| 디자인 연구 | `research.md`에 직접 확인한 공식 DDLC Plus / Sukeban / ink 및 OpenAI 문서와 적용·차별화점 |
-| 글꼴 | OS 시스템 sans-serif, 외부 폰트 파일 번들 없음 |
+| 유나·박도현 각 4표정 및 office/cafe PNG | 부모가 OpenAI image_gen으로 만든 원본. `public/assets/generation-manifest.json`에 프롬프트·사용 조건 |
+| riverside/archive PNG | 같은 생성 방식. `public/assets/supplemental-manifest.json` |
+| evening/archive-theme/chime/tape WAV | 프로젝트 고유 절차적 작곡, 외부 샘플 없음. `public/assets/audio-manifest.json` |
+| 한국어 인물·8미션·6장·28결말 | 프로젝트 원본 `server/office.ts`, `server/romance.ts`. 성인 인물·사운드 아카이브 설정 |
+| 연구 및 차별화 | `research.md`의 공식 DDLC Plus / Sukeban / ink 및 OpenAI 문서 |
+| 글꼴 | OS 시스템 sans-serif, 외부 폰트 파일 없음 |
 
-출시 전에는 (a) 위에서 재현된 라이브 역할·기억 오류 해결, (b) 규칙 기반 한국어 자유 입력의 부정/복합 문장 범위 확대와 실제 사용자 플레이테스트, (c) 실제 모바일 IME/보조기술/다른 브라우저 검증, (d) 생성 에셋 서비스 약관 및 배포에 포함되는 의존성 라이선스 검토, (e) 플랫폼별 등급·개인정보 안내와 유료 API 운영 예산 결정이 필요하다. 이 작업에서는 공개 배포·결제·스토어 등록을 하지 않았다. 테스트 통과는 상업 출시나 모든 자연어 표현에 대한 정확성을 보증하지 않는다.
+원본 PNG는 이번 작업에서 수정하지 않았다. 기존 게임의 인물·대사·아트·음원을 복제하지 않았다.
 
-코드 버전은 Git HEAD만으로 불충분하다(이 작업 트리에는 미커밋 구현이 있음). 각 증거의 SHA256과 `ac7-artifact-index.json`의 최종 소스·증거·캡처 해시를 기준으로 재현한다.
+## 배포 전에 남은 실제 항목
+
+- live 역할·취향 귀속 수정의 실제 재검증과 전체 대화 품질 평가. 현재 8회 계약 한도 내 추가 검증은 불가능하다.
+- 규칙 기반 offline 한국어 부정·복합 문장의 범위 확대 및 사람의 장시간 플레이테스트. live와 offline 이해 능력이 같다고 주장하지 않는다.
+- 실제 모바일 키보드/IME, Safari·Firefox, 스크린리더 검증.
+- 생성 에셋 서비스 약관과 번들 의존성 라이선스 검토, 플랫폼별 등급·개인정보 안내, 유료 API 운영 예산 결정.
+
+공개 배포·구매·스토어 등록은 하지 않았다. 테스트 통과는 상업 출시나 모든 자연어 표현의 정확성을 보증하지 않는다. 미커밋 변경이 있으므로 재현 버전은 Git HEAD와 함께 `ac7-artifact-index.json`의 파일별 SHA256을 기준으로 확인한다. 이전 AC별 문서의 테스트 수는 각 실행 당시 기록이다.
+

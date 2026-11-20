@@ -50,6 +50,32 @@ for(const [index,m] of missions.entries()){
  test(`${m.id}: suggestions use identical agreement rules`,()=>{
   let g=start('office',index);for(const _ of m.terms)g=advance(g,0);assert.equal(g.office!.outcome,'success');
  });
+ test(`${m.id}: repeated compound proposal cannot win via changing model classifications`,()=>{
+  let g:DialogueGame=start('office',index);
+  const text=m.terms.map(t=>t.arguments[0].sample).join(' ');
+  const response=(term:typeof m.terms[number])=>({line:'조건을 하나씩 확인하죠.',recall:[],conjecture:'',intent:`${term.id}:${term.arguments[0].id}`});
+  g=commitDialogue(g,null,text,response(m.terms[0]));
+  assert.equal(g.office!.secured[m.terms[0].id],m.terms[0].required);
+  const secured=structuredClone(g.office!.secured);
+  while(!g.ending){
+   g=commitDialogue(g,null,text.replaceAll(' ','  '),response(m.terms[1]));
+   assert.deepEqual(g.office!.secured,secured);
+   assert.equal(g.office!.evidence.at(-1)!.valid,false);
+  }
+  assert.equal(g.office!.outcome,'failure');
+  assert.match(view(g)!.end!.text,/동일한 발화/);
+ });
+ test(`${m.id}: ending explains every turn and a fresh retry clears negotiation`,()=>{
+  let g=start('office',index);
+  g=advanceOffice(g,null,'부장님 좋은 하루입니다.');
+  for(const t of m.terms)g=advanceOffice(g,null,t.arguments[0].sample);
+  const ending=view(g)!.end!.text;
+  for(const e of g.office!.evidence){assert.ok(ending.includes(`${e.turn}턴 ·`));assert.ok(ending.includes(e.reason));}
+  for(const t of m.terms)assert.ok(ending.includes(`확보: ${t.required}`));
+  const retry=start('office',index);
+  assert.equal(retry.office!.missionId,m.id);assert.equal(retry.office!.turn,0);
+  assert.deepEqual(retry.office!.secured,{});assert.deepEqual(retry.office!.evidence,[]);
+ });
 }
 test('eight independent missions expose 24 unique endings and checked selection',()=>{
  assert.equal(missions.length,8);assert.equal(new Set(officeEndings.map(e=>e.id)).size,24);

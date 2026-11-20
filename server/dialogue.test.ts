@@ -20,8 +20,8 @@ test('schema mismatches and generated contradictions cannot commit',()=>{
 test('Responses API format, canonical memory, output bound and rejection',async()=>{
  const old=process.env.OPENAI_API_KEY;process.env.OPENAI_API_KEY='unit-test-placeholder';
  try{
- const g=start('office');const reply={line:repertoire(g)[0],recall:['scene-0'],conjecture:''};
- const mock:typeof fetch=async(url,init)=>{assert.equal(url,'https://api.openai.com/v1/responses');const b=JSON.parse(init!.body as string);assert.equal(b.text.format.strict,true);assert.equal(b.text.format.schema.additionalProperties,false);assert.equal(b.max_output_tokens,OUTPUT_LIMIT);assert.ok(JSON.parse(b.input).canonical.length);assert.equal(b.store,false);return Response.json({status:'completed',output:[{content:[{type:'output_text',text:JSON.stringify(reply)}]}]});};
+ const g=start('office');const reply={line:repertoire(g)[0],recall:['scene-0'],conjecture:'',intent:'none'};
+ const mock:typeof fetch=async(url,init)=>{assert.equal(url,'https://api.openai.com/v1/responses');const b=JSON.parse(init!.body as string);assert.equal(b.text.format.strict,true);assert.equal(b.text.format.schema.additionalProperties,false);assert.equal(b.max_output_tokens,OUTPUT_LIMIT);assert.ok(JSON.parse(b.input[0].content).confirmedEvents.length);assert.equal(b.store,false);return Response.json({status:'completed',output:[{content:[{type:'output_text',text:JSON.stringify(reply)}]}]});};
  assert.deepEqual(await respond(g,'기억해?', 'openai',new AbortController().signal,mock),reply);
  for(const body of [{status:'incomplete',output:[]},{status:'completed',output:[{content:[{type:'refusal'}]}]},{status:'completed',output:[{content:[{type:'output_text',text:'{"line":"승리"}'}]}]}])await assert.rejects(respond(g,'hello','openai',new AbortController().signal,async()=>Response.json(body)));
  await assert.rejects(respond(g,'hello','openai',new AbortController().signal,async()=>new Response('',{status:429})),/429/);

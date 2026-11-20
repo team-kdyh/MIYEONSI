@@ -5,10 +5,21 @@ test('both stories, saves, settings, collection and mobile layout',async({page})
  await page.getByRole('button',{name:'설정',exact:true}).click();
  await page.getByRole('checkbox',{name:'효과 감소'}).check();
  await page.getByRole('checkbox',{name:'큰 글씨'}).check();
+ await page.getByRole('checkbox',{name:'음소거'}).check();
+ await page.getByLabel('읽기 속도').selectOption('0');
+ await page.getByLabel('음량').fill('17');
  await page.getByRole('button',{name:'닫기',exact:true}).click();
  await page.reload();await expect(page.locator('.app')).toHaveClass(/reduced/);await expect(page.locator('.app')).toHaveClass(/large/);
+ await page.getByRole('button',{name:'설정',exact:true}).click();
+ await expect(page.getByRole('checkbox',{name:'음소거'})).toBeChecked();
+ await expect(page.getByLabel('읽기 속도')).toHaveValue('0');
+ await expect(page.getByLabel('음량')).toHaveValue('17');
+ await page.getByRole('button',{name:'닫기',exact:true}).click();
  for(const mode of ['office','romance']){
   await page.getByRole('button',{name:mode==='office'?/칼퇴의 기술/:/너의 목소리를 빌려줘/}).click();
+  await expect(page.getByRole('dialog',{name:'플레이 안내'})).toContainText('진행은 자동 저장됩니다');
+  if(mode==='office')await expect(page.locator('#office-mission option')).toHaveCount(8);
+  else await expect(page.getByRole('dialog')).toContainText('공포 예고');
   await page.getByRole('button',{name:'이야기 시작'}).click();
   await expect(page.locator('.choices button')).toHaveCount(3);
   await page.getByRole('button',{name:'세이브',exact:true}).click();
@@ -38,6 +49,14 @@ test('both stories, saves, settings, collection and mobile layout',async({page})
  await page.getByRole('button',{name:'세이브',exact:true}).click();await page.locator('.save-slot').first().getByRole('button',{name:'불러오기'}).click();
  await expect(page.locator('.scene-top')).toContainText('0 / 6턴');
  await page.reload();await page.getByRole('button',{name:/이어하기/}).click();await expect(page.locator('.scene-top')).toContainText('0 / 6턴');
+ await page.getByRole('button',{name:'설정',exact:true}).click();
+ await page.getByRole('button',{name:'현재 모드 처음부터 시작'}).click();
+ await expect(page.getByRole('dialog',{name:'플레이 안내'})).toBeVisible();
+ await page.getByRole('button',{name:'이야기 시작'}).click();
+ await expect(page.locator('.scene-top')).toContainText('0 / 6턴');
+ await page.getByRole('button',{name:'컬렉션',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'엔딩 컬렉션 2 / 28'})).toBeVisible();
+ await expect(page.locator('.end-card').filter({hasText:'아직 쓰이지 않은 이야기'})).toHaveCount(26);
 });
 test('server rejects forged state, oversized text and duplicate turns',async({request})=>{
  await request.get('/api/state');await request.post('/api/new',{data:{mode:'office'}});

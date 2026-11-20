@@ -1,3 +1,4 @@
+import {allowedIntents,manipulation} from './interpretation.ts';
 import {advanceRomance} from './romance.ts';
 import {advanceOffice, agreementSummary, missionOf} from './office.ts';
 import {randomUUID} from 'node:crypto';
@@ -5,7 +6,7 @@ import {advance, stories, sceneFor, type Game} from './game.ts';
 
 export const HISTORY_LIMIT=12;
 export type Fact={id:string;eventId:string;version:number;confirmedAt:string;kind:'scene'|'agreement'|'relationship'|'clue'|'boundary'|'ending';text:string};
-export type LedgerEntry={kind:'user_claim'|'character_conjecture'|'model_dialogue'|'verified_event';text:string;version:number;eventId?:string};
+export type LedgerEntry={kind:'user_claim'|'character_conjecture'|'model_dialogue'|'verified_event';text:string;version:number;eventId?:string;recallIds?:string[]};
 export type DialogueState={version:number;facts:Fact[];ledger:LedgerEntry[];reply:string};
 export type DialogueGame=Game&{dialogue?:DialogueState};
 export function canonical(g:DialogueGame):DialogueState {
@@ -22,19 +23,19 @@ export function repertoire(g:Game){const scene=sceneFor(g);return g.mode==='offi
  '조금 불안하지만, 네 선택을 대신 정할 수는 없겠죠. 어떤 경계가 필요해요?',
  `지금은 「${scene.title}」에 머물러 있어요. 조금 더 이야기해 줄래요?`
  ];}
-export type Reply={line:string;recall:string[];conjecture:string};
-export function schema(g:DialogueGame){return {type:'object',additionalProperties:false,required:['line','recall','conjecture'],properties:{line:{type:'string',minLength:1,maxLength:600},recall:{type:'array',items:{type:'string',enum:canonical(g).facts.map(f=>f.id)},maxItems:2},conjecture:{type:'string',enum:['','아직 당신의 뜻을 다 이해하지 못한 것 같습니다.']}}};}
+export type Reply={line:string;recall:string[];conjecture:string;intent?:string};
+export function schema(g:DialogueGame){return {type:'object',additionalProperties:false,required:['line','recall','conjecture','intent'],properties:{intent:{type:'string',enum:['none',...allowedIntents(g).map(i=>i.id)]},line:{type:'string',minLength:1,maxLength:600},recall:{type:'array',items:{type:'string',enum:canonical(g).facts.map(f=>f.id)},maxItems:2},conjecture:{type:'string',enum:['','아직 당신의 뜻을 다 이해하지 못한 것 같습니다.']}}};}
 export function validateReply(value:unknown,g:DialogueGame):Reply {
  const r=value as Reply;
- if(!r||typeof r!=='object'||Object.keys(r).sort().join(',')!=='conjecture,line,recall'||!(typeof r.line==='string'&&r.line.trim().length>0&&r.line.length<=600)||!Array.isArray(r.recall)||r.recall.length>2||r.recall.some(id=>!canonical(g).facts.some(f=>f.id===id))||!['','아직 당신의 뜻을 다 이해하지 못한 것 같습니다.'].includes(r.conjecture))throw Error('AI 응답이 장면 또는 정본 검증을 통과하지 못했습니다. 다시 시도하거나 오프라인으로 전환하세요.');
+ if(!r||typeof r!=='object'||!['conjecture,line,recall','conjecture,intent,line,recall'].includes(Object.keys(r).sort().join(','))||r.intent!==undefined&&!['none',...allowedIntents(g).map(i=>i.id)].includes(r.intent)||!(typeof r.line==='string'&&r.line.trim().length>0&&r.line.length<=600)||!Array.isArray(r.recall)||r.recall.length>2||r.recall.some(id=>!canonical(g).facts.some(f=>f.id===id))||!['','아직 당신의 뜻을 다 이해하지 못한 것 같습니다.'].includes(r.conjecture))throw Error('AI 응답이 장면 또는 정본 검증을 통과하지 못했습니다. 다시 시도하거나 오프라인으로 전환하세요.');
  return r;
 }
 export function commitDialogue(game:DialogueGame,choice:number|null,text:string,response:Reply):DialogueGame {
  validateReply(response,game);
  const before=canonical(game),version=before.version+1,eventId=randomUUID(),now=new Date().toISOString();
- const g:DialogueGame=game.mode==='office'?advanceOffice(game,choice,text):advanceRomance(game,choice,text);
+ const g:DialogueGame=game.mode==='office'?advanceOffice(game,choice,text,manipulation(text)?'none':text.trim()?response.intent:undefined):advanceRomance(game,choice,text,manipulation(text)?'none':text.trim()?response.intent:undefined);
  const d=structuredClone(before);d.version=version;
- d.ledger.push({kind:'user_claim',text,version},{kind:'model_dialogue',text:response.line,version});
+ d.ledger.push({kind:'user_claim',text:text.trim()||(choice!==null?sceneFor(game).choices[choice]:''),version},{kind:'model_dialogue',text:response.line,version,recallIds:[...response.recall]});
  if(response.conjecture)d.ledger.push({kind:'character_conjecture',text:response.conjecture,version});
  if(game.mode==='office'&&g.office){
   const applied=g.office.evidence.at(-1);
@@ -49,7 +50,7 @@ export function commitDialogue(game:DialogueGame,choice:number|null,text:string,
   }
  }
 
- d.reply=[response.line,response.conjecture,...response.recall.map(id=>`기억하는 기록: ${before.facts.find(f=>f.id===id)!.text}`)].filter(Boolean).join('\n');
+ d.reply=[response.line,response.conjecture].filter(Boolean).join('\n');
  g.log.push({speaker:game.mode==='office'?'박도현':'서유나',text:d.reply});
  // Canonical facts survive the bounded conversational and untrusted ledgers.
  g.log=g.log.slice(-HISTORY_LIMIT);d.ledger=d.ledger.slice(-HISTORY_LIMIT*2);g.dialogue=d;return g;

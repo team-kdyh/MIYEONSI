@@ -5,10 +5,21 @@ import {createHash} from 'node:crypto';
 test('AC5: assets, cues, accessible parity, keyboard and audio at both sizes',async({browser})=>{
  test.setTimeout(120000);
  const evidence:any[]=[];
+ await mkdir('docs/qa-screenshots',{recursive:true});
  for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
   const runs:any[][]=[];
   for(const reduced of [false,true]){
    const context=await browser.newContext({viewport});const page=await context.newPage();
+   const errors:string[]=[];
+   page.on('pageerror',error=>errors.push(error.message));
+   await page.addInitScript(()=>{
+    (window as any).__effectPlays=[];
+    document.addEventListener('playing',event=>{
+     const node=event.target;
+     if(node instanceof HTMLAudioElement&&node.dataset.testid==='effect')
+      (window as any).__effectPlays.push({src:node.currentSrc,volume:node.volume,muted:node.muted});
+    },true);
+   });
    await page.goto('/');
    await page.getByRole('button',{name:'설정',exact:true}).click();
    await page.getByRole('checkbox',{name:'효과 감소'}).setChecked(reduced);
@@ -44,21 +55,30 @@ test('AC5: assets, cues, accessible parity, keyboard and audio at both sizes',as
      const reveal=page.getByRole('button',{name:'대사 바로 표시'});if(await reveal.count())await reveal.click();
      await expect(page.locator('.sprite-entry')).toHaveCSS('opacity','1');
      if(!reduced)await expect(page.locator('.background-arrival')).toHaveCSS('opacity','0');
-     await page.screenshot({path:`test-results/ac5-${viewport.width}-${reduced?'quiet':'default'}-${step}.png`,fullPage:true});
+     await page.screenshot({path:`docs/qa-screenshots/ac5-${viewport.width}-${reduced?'quiet':'default'}-${step}.png`,fullPage:true});
     }
     if(step===5){await page.getByRole('button',{name:'대화 로그'}).click();await expect(page.getByRole('dialog')).toContainText(info);await page.keyboard.press('Escape');}
     if(step<6){
-     const input=page.locator('#reply');await input.fill(lines[step]);await input.scrollIntoViewIfNeeded();
+     for(const button of await page.locator('.choices button').all()){
+      await button.scrollIntoViewIfNeeded();
+      expect(await button.evaluate(e=>{const r=e.getBoundingClientRect();return e.contains(document.elementFromPoint(r.x+r.width/2,r.y+r.height/2));})).toBe(true);
+     }
+     const input=page.locator('#reply');await input.fill(lines[step]);await page.locator('.dialogue form').scrollIntoViewIfNeeded();
      const box=await input.boundingBox();expect(box!.x).toBeGreaterThanOrEqual(0);expect(box!.x+box!.width).toBeLessThanOrEqual(viewport.width);
      expect(await input.evaluate(e=>{const r=e.getBoundingClientRect();return document.elementFromPoint(r.x+r.width/2,r.y+r.height/2)===e;})).toBe(true);
-     if(step===4)await page.screenshot({path:`test-results/ac5-input-${viewport.width}-${reduced?'quiet':'default'}.png`});
+     const sendBox=await page.locator('.input-row .primary').boundingBox();
+     expect(sendBox!.y).toBeGreaterThanOrEqual(0);expect(sendBox!.y+sendBox!.height).toBeLessThanOrEqual(viewport.height);
+     if(step===4)await page.screenshot({path:`docs/qa-screenshots/ac5-input-${viewport.width}-${reduced?'quiet':'default'}.png`});
      await input.press('Enter');
     }
    }
    const game=(await (await context.request.get('/api/state')).json()).game;
    runs.push(observations.map(({step,info,choices,expression,background})=>({step,info,choices,expression,background})));
    expect(game.ending).toBe('romance-3');
-   evidence.push({viewport,reduced,mute:reduced,provider:'offline',initial:'UI new romance',dimensions,observations,ending:game.ending,final:game.romance.final});
+   const effectPlays=await page.evaluate(()=>(window as any).__effectPlays);
+   if(reduced)expect(effectPlays).toEqual([]);
+   else for(const name of ['chime','tape'])expect(effectPlays.some((e:any)=>e.src.endsWith(`/${name}.wav`)&&e.volume===.01&&!e.muted)).toBe(true);
+   evidence.push({viewport,reduced,mute:reduced,provider:'offline',initial:'UI new romance',dimensions,observations,effectPlays,ending:game.ending,final:game.romance.final});
    await page.getByRole('button',{name:'타이틀로 돌아가기'}).click();await expect(page.getByTestId('music')).toHaveJSProperty('paused',true);
    await page.getByRole('button',{name:/칼퇴의 기술/}).click();await page.getByRole('button',{name:'이야기 시작'}).click();
    for(const [index,line] of ['음 안녕하세요','고객 마감 메일은 내일 오전 10시입니다. 오늘 18시에 퇴근하겠습니다.','남은 표는 부장님이 내일 10시까지 맡아 주세요.'].entries()){
@@ -67,12 +87,14 @@ test('AC5: assets, cues, accessible parity, keyboard and audio at both sizes',as
    }
    await expect(page.locator('.sprite')).toHaveAttribute('data-expression','3');
    evidence.push({viewport,reduced,provider:'offline',mode:'office',initial:'UI new mission 0',expressions:[0,1,2,3],events:['arrival','objection','evidence','agreement'],result:'pass'});
-   await page.screenshot({path:`test-results/ac5-office-${viewport.width}-${reduced?'quiet':'default'}.png`,fullPage:true});
+   await expect(page.locator('.sprite-entry')).toHaveCSS('opacity','1');
+   await page.screenshot({path:`docs/qa-screenshots/ac5-office-${viewport.width}-${reduced?'quiet':'default'}.png`,fullPage:true});
    await page.getByRole('button',{name:'설정',exact:true}).click();await page.getByLabel('읽기 속도').selectOption('0');
    await page.getByRole('checkbox',{name:'음소거'}).check();await expect(page.getByTestId('music')).toHaveJSProperty('paused',true);
    await page.keyboard.press('Escape');await page.reload();
    await page.getByRole('button',{name:/이어하기/}).click();await expect(page.getByRole('button',{name:'대사 바로 표시'})).toHaveCount(0);
    await page.getByRole('button',{name:'설정',exact:true}).click();await expect(page.getByLabel('읽기 속도')).toHaveValue('0');await expect(page.getByRole('slider',{name:'음량'})).toHaveValue('1');
+   expect(errors).toEqual([]);
    await context.close();
   }
   expect(runs[1]).toEqual(runs[0]);

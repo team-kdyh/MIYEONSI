@@ -1,0 +1,29 @@
+{
+  "criterion": 6,
+  "executedAt": "2026-11-20T19:00:41.405625+00:00",
+  "result": "pass",
+  "paidCallsThisExecution": 0,
+  "checks": {
+    "build": "pass",
+    "unitAndServer": "103 passed",
+    "persistenceBrowser": "6 passed",
+    "relatedBrowser": "7 passed"
+  },
+  "limitations": [
+    "single local server",
+    "no power loss test",
+    "upstream failure tests use mock transport",
+    "AC4 live quality remains separately pending"
+  ],
+  "sha256": {
+    "server/index.ts": "97e3ef0353e45654daf92688a543af21dd7e7e6b66c4e063ca88cb0f1a610b09",
+    "server/storage.ts": "a4d1afcdc8f2248a40ee8e7bf513ada98d81e2ff578edee3b143efff6889d28f",
+    "src/main.tsx": "5899c332b86bd44e11698d842af61be7275e6914e742b47f7fc1beaee9f5d00e",
+    "server/persistence.test.ts": "97c4176757f99b7c3541952a72ac94c56ac470c3123875089e336ab5592726ef",
+    "server/recovery.test.ts": "351a34a74df9dc2009db1cfbf5b1ebcaf8c9aa543f306e45e316c3e1b7e7c23f",
+    "tests/persistence.spec.ts": "9a5a4038b68ced0463d937a7f650e80fefe8535502e5759b11b9a1a40030f991",
+    "docs/ac7-persistence-evidence.json": "0520f5208b3da3203acc47d28af29efe1aa751ec468f0963c35370379f7a8787",
+    "docs/ac7-recovery-evidence.json": "41dbb42532ab29f01a12cefb169daa3444a2f8038faf19c42adb968f46bde673",
+    "docs/ac6-validation.md": "c4df9502d2b1b03441031ff51edda20b0b78a513d84f43d9b0dd2b6223ad0640"
+  }
+}

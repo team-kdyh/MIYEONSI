@@ -1,11 +1,13 @@
 {
-  "server/index.ts": "a8374e6fadb3ef74bced385d9f2c57a3f7b53d004217dccf226e74b5c91a4a3b",
-  "server/dialogue.ts": "ec81ae94a56e12753debe305b609e75934172465a11192510fe9f3d040a36d22",
-  "server/provider.ts": "af821fd89396221559cac6ebf6f6c9eb3af9b8dbda05f2053ddd8b9a26e970dc",
-  "server/dialogue.test.ts": "ba0881134f81213a09066316259d59042c1d1ab88e0d0525d1a97e4c13659ea7",
-  "server/game.ts": "6568df50b9f514fb53fe64c2dff940bf8166a904d58ee249008cb8ff3fc7fad7",
-  "src/main.tsx": "6cc996e95d18215b2cd85372c1774fd7f2711e05a2e4c8e3dcb906d8fca2daaa",
-  "tests/play.spec.ts": "2556a6444ca5439f773259007a0417355390045e9ce3f8116f77fe2ad0153836",
-  "playwright.config.ts": "6250a134765b9ffee1bc3698343658c82752fa3616ec8f29e876a9f96e76785d",
-  "package.json": "248b48e0521529ad5756d4f0cb4c649db268a1be96e5171ad223840d73d78b67"
+  "server/provider.ts": "42510419e74f65bb9ca8ca341d9ca6b46d7a0e6a220ef1ac23ddba6818921309",
+  "server/dialogue.ts": "0e6205c18ade035bcda7aeb98011dda8e65335dc1a85877030c2d4644c04fee6",
+  "server/interpretation.ts": "16f550a65050561f369841788ac3dc6f6934bd1b8b3d77fc315625efbba8d5e6",
+  "server/office.ts": "247ac3bf697df263e52f53dd804bc782afe67861c4a1fdb95d56340f84c8c617",
+  "server/romance.ts": "59648385dde6e15a75ec5facc0a07601da9e6c68172ecc30ae0516c0802dbdbb",
+  "server/interpretation.test.ts": "da5b33602c2bcc842ca156f38eb1b53c0d2dcf269c1cabed5fecfd8db86d9b63",
+  "server/dialogue.test.ts": "1a380a6b9f28bf077a63eb46218b531afa2871a9d301febee8086b3df2979741",
+  "tests/provider-fixture.mjs": "f28c38c2929b619965815685d171e79f20289f77dfee6654bd8ece3a65b2c284",
+  "tests/live-smoke.ts": "b81f9af6d95046f26ec4f9fcfd1227812e2bc2b144f4eef4e7c00100ebad2b92",
+  "docs/ac4-validation.md": "14d6d02e144343f4d0385a0ecc6d2e653d7045e042f6c94995528829ea972c4c",
+  "docs/ac4-repair-live-evidence.json": "64b1fbec74e6ea34efb30c2d889c242062daef65bee81ea354366e2b46b090b5"
 }

@@ -37,21 +37,30 @@ Reading speed offers 40/20/8 ms per character or immediate display. “대사 �
 
 `docs/ac5-evidence.json` contains execution timestamp, source SHA-256 hashes, initial conditions, observations and final relationship contract. The normal-motion run deliberately sets slow reading and 1% volume by keyboard to verify both controls; defaults are 20 ms and 35%. Quiet runs retain the same story information and all choices.
 
-Screenshots under `test-results/`:
+Screenshots preserved under `docs/qa-screenshots/`:
 
 - `ac5-{1440,390}-{default,quiet}-{0,3,4,5,6}.png`: full pages at meeting, date, clue candidate, verified clue and ending; captures wait for entrance/crossfade completion and reveal dialogue.
-- `ac5-input-{1440,390}-{default,quiet}.png`: exact requested viewport dimensions, scrolled to usable free-text input.
+- `ac5-input-{1440,390}-{default,quiet}.png`: exact requested viewport dimensions, scrolled to show both free-text input and the complete send button.
 - `ac5-office-{1440,390}-{default,quiet}.png`: agreement and approving boss expression.
 
-Mobile uses normal vertical scrolling to preserve readable prose; no horizontal scrolling or overlapping fixed controls. Screenshot files are local verification artifacts, ignored by Git and reproducible with Playwright.
+Mobile uses normal vertical scrolling to preserve readable prose; no horizontal scrolling or overlapping fixed controls. All 28 screenshots are preserved with the documentation and reproducible with Playwright.
 
 Scope: Chromium/offline UI and server behavior. No paid API calls were made for AC 5. Playback timing verifies the browser audio pipeline, not subjective listening quality or physical speaker output. This criterion does not establish commercial readiness of the whole game.
 
 
-Final checks on 2026-11-21:
+Earlier checks on 2026-11-21 (historical whole-project results, not rerun for the current AC5-only verification):
 
 - `npm run build`: TypeScript and Vite build passed.
 - `npm test`: 77/77 passed.
 - `npx playwright test`: final full run 10/10 passed, including AC5's four-context replay.
 - An earlier full browser run returned HTTP 400 in the pre-existing 24-office-outcome test. Its original assertion omitted the response body. Added contextual response reporting; the standalone office run (2/2) and subsequent complete run (10/10) passed. The original transient cause was not established; this is recorded rather than claimed fixed.
 - Visually inspected final desktop clue scene, mobile static clue scene and exact mobile input viewport. Prose, static clue caption, choices and input remain readable; long mobile scenes scroll vertically.
+
+## Current repair-context verification — 2026-11-21
+
+- `npm run build`: passed, including TypeScript and Vite production compilation.
+- `npx playwright test tests/presentation.spec.ts`: passed (one test, four viewport/settings contexts; final run 24.0 seconds).
+- Strengthened the existing test to observe actual `playing` events for both original effect tracks, in addition to background-music playback. `ac5-evidence.json` records the effect source, gain and mute state. Quiet contexts emit no effect playback events.
+- Added center-point hit testing for every visible choice, bounds checks for the complete send button, and browser exception checks. All passed. Keyboard input, modal focus, settings persistence, all four expressions per character, all four backgrounds, typing and reduced-effect parity remain covered.
+- Inspected current desktop archive, mobile static archive and exact 390×844 input screenshots directly. The complete input and send button are visible together; full-page captures retain the illustrated stage and dialogue. Original PNGs and runtime story logic were not changed for this criterion.
+- No paid API requests. This verifies Chromium desktop/mobile viewport emulation, not a physical handset's software keyboard or other browser engines. Sibling dialogue/API acceptance criteria remain separately governed.

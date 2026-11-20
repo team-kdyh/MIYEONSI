@@ -1,0 +1,50 @@
+{
+  "executedAt": "2026-11-20T19:17:08.974Z",
+  "checks": [
+    {
+      "file": "server/provider.ts",
+      "expected": "14a2bfb4cc1d0af5a52f139c8055754079ec498b4c7c87c75d30198e7ef8f156",
+      "actual": "14a2bfb4cc1d0af5a52f139c8055754079ec498b4c7c87c75d30198e7ef8f156",
+      "match": true
+    },
+    {
+      "file": "server/dialogue.ts",
+      "expected": "e5564210bf8fd0d04353070d1910f2c1798aabd400e519fb6a001d420d21de2b",
+      "actual": "e5564210bf8fd0d04353070d1910f2c1798aabd400e519fb6a001d420d21de2b",
+      "match": true
+    },
+    {
+      "file": "server/index.ts",
+      "expected": "a1ca06e59e557f3a5acf34f76a0607d24d27f7536f0c754730346e4659f255e4",
+      "actual": "a1ca06e59e557f3a5acf34f76a0607d24d27f7536f0c754730346e4659f255e4",
+      "match": true
+    },
+    {
+      "file": "server/interpretation.ts",
+      "expected": "16f550a65050561f369841788ac3dc6f6934bd1b8b3d77fc315625efbba8d5e6",
+      "actual": "16f550a65050561f369841788ac3dc6f6934bd1b8b3d77fc315625efbba8d5e6",
+      "match": true
+    },
+    {
+      "file": "server/office.ts",
+      "expected": "fb992f42759c71a0a1f9714f65ba229a5ddf64e73b22826c8d73fd6fb3990bf0",
+      "actual": "fb992f42759c71a0a1f9714f65ba229a5ddf64e73b22826c8d73fd6fb3990bf0",
+      "match": true
+    },
+    {
+      "file": "server/romance.ts",
+      "expected": "4cd9484fd9abd70387c5f9ed5f7211c42579c7156caafa257fc92da38eeec5eb",
+      "actual": "4cd9484fd9abd70387c5f9ed5f7211c42579c7156caafa257fc92da38eeec5eb",
+      "match": true
+    },
+    {
+      "file": "tests/final-live-smoke.ts",
+      "expected": "117ee421af353cb85828ba2bc9a9da3f252eb675f8597080c1d010f7806c1b51",
+      "actual": "117ee421af353cb85828ba2bc9a9da3f252eb675f8597080c1d010f7806c1b51",
+      "match": true
+    }
+  ],
+  "paidAttempts": 12,
+  "maximum": 12,
+  "newPaidCalls": 0
+}

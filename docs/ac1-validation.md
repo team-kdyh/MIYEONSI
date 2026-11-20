@@ -1,40 +1,35 @@
-# AC 1 검증 기록
+# AC1 최종 검증 기록
 
-검증일: 2026-11-21. Windows PowerShell, Node v24.14.0, npm 11.9.0. 이 문서는 초기 셸의 이전 AC1 기록을 대체한다. 검증 위치는 현재 README가 있는 작업 트리이며 Desktop 폴더로 별도 복사한 실행은 하지 않았다.
+2026-11-21 · Windows PowerShell · Node v24.14.0 · npm 11.9.0.
+현재 작업 트리의 AC1 판정은 **통과**다. 이전 기록은 `ac1-initial-validation.md`에 보존했다. 실행 코드와 원본 에셋은 변경하지 않았다.
 
-## 실행 결과
+## 실행 및 빌드
 
-- `npm install`: 성공, 174 패키지 감사, 취약점 0개.
-- `npm run build`: 성공. 내부 `npm run typecheck` (`tsc --noEmit`) 및 Vite production build 모두 통과.
-- `npm test`: 103개 통과, 실패·건너뜀 0개.
-- `npx playwright test tests/play.spec.ts tests/office.spec.ts tests/romance.spec.ts`: 8개 통과 (18.1초). 테스트는 `npm start`로 실제 production 서버를 127.0.0.1:3017에서 시작하여 빌드된 화면에 접속한다. 일반 README 실행 주소는 127.0.0.1:3001이다.
+- README의 `npm install`을 `--no-fund` 옵션으로 실행: 설치 성공, 174개 패키지 감사, 취약점 0개. lockfile 내용 변경 없음.
+- `npm run build`: 내부 `npm run typecheck` (`tsc --noEmit`) 및 Vite production build 모두 통과. `ac1-final-build-run.txt` 참조.
+- `npx playwright test --config playwright.ac1-final.config.ts`: 4개 통과, 실패 0 (6.7초). `ac1-final-browser-run.txt` 참조.
+- 위 구성은 README의 `npm start`로 production 서버를 실제 시작하고 빌드된 화면을 제공한다. 3031 포트와 별도 저장 디렉터리를 사용하고 API 키 환경변수를 빈 값으로 고정했다.
+- `scripts/start-local.ps1 -NoBrowser`도 실행했다. 기본 포트 3001은 Desktop 원본 프로젝트의 기존 서버가 사용 중이므로 작업 트리 런처가 다른 프로젝트의 프로세스로 정확히 판별하고 실행을 거부했다. 기존 게임은 종료하지 않았다. `ac1-final-launch-run.txt` 참조. 이번 실행에서 런처의 신규 서버 기동/종료까지 재현했다는 뜻은 아니다. 해당 선행 검증은 `final-verification.md`에 있다.
+- README는 `play.cmd` / `stop.cmd`, 설치·빌드·실행 명령, 기본 주소와 포트 충돌 처리, 라이선스 원문 68개와 재생성 명령을 이미 설명한다.
 
-## AC1 관찰
+## 화면에서 확인한 동작
 
-- 타이틀의 두 모드 선택 → 플레이 안내 → 공통 캐릭터 무대·대화 입력 → 엔딩을 브라우저 조작으로 완주했다. 직장 안내의 미션 8개와 로맨스의 공포 예고, 자동 저장 안내를 단언했다.
-- 제안 답변 경로와 자유 입력 경로 모두 검증했다. 직장 휴가 협상과 로맨스 6장/커플/데이트/진실 엔딩은 모바일 크기의 실제 입력란으로 진행했다. 공개 HTTP 입력에서는 직장 24결말과 로맨스 4엔딩을 확인했다. 모든 결말을 화면 클릭으로 완주했다고 주장하지 않는다.
-- 효과 감소·큰 글씨·음소거·음량 17%·즉시 표시 설정이 새로고침 뒤 유지됐다.
-- 수동 저장과 불러오기, 새로고침 뒤 이어하기, 엔딩에서 타이틀로 돌아온 뒤 이어하기가 동작했다. 설정의 재시작은 플레이 안내를 다시 열고 새 게임을 시작했다.
-- 두 모드 엔딩의 컬렉션 2/28 및 미해금 카드 26개를 확인했다. 저장 불러오기와 새 게임 이후에도 해금이 유지됐다.
-- 대화 로그가 표시되고 HTML 입력은 실행되지 않고 텍스트로 렌더링됐다. 키가 없는 OpenAI 모드 오류와 OFFLINE DEMO 전환을 확인했다.
-- 390×844에서 가로 넘침 없이 대화 입력과 엔딩 버튼에 접근했다. 최신 타이틀 데스크톱 및 로맨스 진실 엔딩 모바일 캡처를 직접 열어 원본 일러스트·한글·레이아웃을 확인했다.
+`tests/play.spec.ts`의 실제 Chromium 화면 조작으로 다음을 확인했다.
 
-## 재현과 근거
+- 타이틀에서 직장/로맨스 선택 → 플레이 안내 → 대화 → 엔딩까지 두 모드 완주.
+- 직장 8미션 선택, 로맨스 공포 예고, 자동 저장 안내 표시.
+- 두 모드가 같은 캐릭터 무대·대화 입력·메뉴·엔딩 동작을 공유함.
+- 효과 감소, 큰 글씨, 음소거, 음량 17%, 즉시 읽기 설정이 새로고침 후 유지됨.
+- 수동 저장/불러오기, 새로고침 뒤 이어하기, 엔딩에서 타이틀 복귀 후 이어하기, 설정을 통한 재시작.
+- 두 엔딩 해금 후 컬렉션 2/28, 미해금 26개. 불러오기와 새 게임 후에도 해금 유지.
+- 대화 로그, 자유 입력, HTML 문자열의 안전한 텍스트 표시, 키 없는 OpenAI 오류와 offline 복귀.
+- 390×844 화면에서 가로 넘침 없이 입력과 엔딩 버튼 접근 가능.
 
-```powershell
-npm install
-npm run typecheck
-npm run build
-npm test
-npx playwright install chromium
-npx playwright test tests/play.spec.ts tests/office.spec.ts tests/romance.spec.ts
-npm start
-```
+타이틀 1280×720 viewport(full-page 캡처)와 두 모드 390×844 full-page 캡처를 직접 열어 원본 일러스트, 한국어, 공통 셸과 입력 배치를 확인했다:
+`qa-screenshots/ac1-final-title-desktop.png`, `qa-screenshots/ac1-final-office-mobile.png`, `qa-screenshots/ac1-final-romance-mobile.png`.
 
-- 테스트: `tests/play.spec.ts`, `tests/office.spec.ts`, `tests/romance.spec.ts`.
-- 캡처: `docs/qa-screenshots/ac1-title-desktop.png`, `docs/qa-screenshots/ac1-romance-truth-mobile.png`.
-- 현재 공개 입력 경로의 상세 기록: `docs/ac2-api-evidence.json`, `docs/ac3-repair-evidence.json`.
+## 근거의 범위
 
-## 범위와 남은 한계
+이번 AC1 실행은 공통 셸 4개 브라우저 검사와 설치/빌드 검증이다. 선행 수락된 AC2·AC3의 24개 직장 결말/4개 로맨스 엔딩, AC5의 연출, AC6의 재시작 복원 및 110개 테스트 결과는 각 최신 검증 문서를 참조한다. 이들을 이번에 다시 실행한 것으로 계산하지 않는다.
 
-디스패치된 AC1은 통과했다. 이번 검증은 offline 및 mock 기반이며 유료 API 호출을 추가하지 않았다. 누적 8/8 한도는 그대로다. AC4의 live 취향 주체 표현 품질 보류는 해결됐다고 주장하지 않는다(`docs/ac4-validation.md`). 실제 휴대폰 키보드, 다른 브라우저, 상업 출시 품질 전체는 이번 AC1 판정 범위가 아니다.
+최종 live 증거의 현재 소스 정규화 SHA256 7/7 일치를 확인했다(`ac1-final-audit.json`). 유료 호출은 추가 0회, 누적 **12/12** 유지. 실제 OpenAI 대화 품질은 `final-live-evidence.json`의 집중 관찰 범위로 한정한다. 실제 휴대폰 키보드, 다른 브라우저, 장시간 사람 플레이 및 전체 상업 출시 적합성은 이번 판정 범위가 아니다.

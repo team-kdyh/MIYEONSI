@@ -1,0 +1,15 @@
+[WebServer] (node:22848) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:25236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:16152) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\play.spec.ts:2:1 › both stories, saves, settings, collection and mobile layout (3.6s)
+  ok 2 tests\play.spec.ts:61:1 › server rejects forged state, oversized text and duplicate turns (44ms)
+  ok 3 tests\play.spec.ts:69:1 › free dialogue terminates, memory persists, retry and version conflicts (384ms)
+  ok 4 tests\play.spec.ts:87:1 › free text UI and provider switch are explicit (943ms)
+
+  4 passed (7.5s)

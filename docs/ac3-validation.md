@@ -1,3 +1,39 @@
+# Final AC3 continuation — 2026-11-21
+
+**Verdict: AC3 passes for the implemented story and server-owned branching.** This final review supersedes the historical 8/8 budget and unresolved live-attribution statements below. Runtime source was preserved; no provider behavior, original artwork, saves, dependency lock, or paid-call ledger was changed. Final live source hashes match 7/7 after CRLF normalization (`ac3-final-source-audit.json`). The cumulative paid count is 12/12, with zero new calls.
+
+## Story review against the criterion
+
+The pre-play briefing identifies the protagonist as 29 and Seo Yuna as 27; Yuna is a sound archivist preserving disappearing sounds. Her cinnamon-scent preference, cookie jokes, tangled headphone cord and awkward confession establish a person and mutual attraction before the thriller. This is original authored content in `server/romance.ts`.
+
+| Chapter | Background | Distinct event, consequence and foreshadowing |
+|---|---|---|
+| 1 — 닫는 카페의 종소리 | Cafe | Save a closing cafe's bell, introduce preferences, share or decline recording; headphone loan establishes the next meeting. |
+| 2 — 금요일의 빈 트랙 | Cafe | Return/test headphones or postpone honestly; shared testing establishes verified trust, while repeated playback or a zero-second deleted track foreshadows editing. |
+| 3 — 고백은 녹음 밖에서 | Riverside | Yuna puts the recorder away and confesses; acceptance establishes a couple, refusal/deferment explicitly produces a friendship walk. |
+| 4 — 서툰 둘의 산책 | Riverside | Couple picnic/date with triangular omelets and negotiated closeness; a fabricated player line interrupts it. An archive appointment can be recorded. |
+| 5 — 삭제된 숨 | Archive | Repeated-date calendar exposes fixation. Comparing A17/B17 verifies deletion of the player's departure; refusal or replay leaves different consequences. Keeping the prior appointment establishes trust. |
+| 6 — 내일을 남기는 법 | Archive | D04 identifies Yuna's editing and scheduled replay; restoration/resumption, departure or repetition establishes a terminal outcome. |
+
+Chapters 1–5 each have three distinct visible authored reactions. Background locations are intentionally reused across related scenes; the six chapters have distinct events and dialogue. Earlier player detail is recalled as a quoted player statement. The trust test verifies actions, not obedience to Yuna. Final autonomy and evidence distinguish the endings:
+
+- Relationship reset (`romance-0`): restart with mutual boundaries, stop replay, but insufficient comparison evidence or verified trust leaves full restoration unresolved.
+- Endless day (`romance-1`): choose repetition or leave the final chapter unresolved; replay continues and practical exit rights are not secured.
+- Safe separation (`romance-2`): explicit final departure takes priority regardless of earlier trust/evidence; relationship ends, replay stops, safe exit and no-contact rights are recorded.
+- Archive truth (`romance-3`): A17/B17 comparison plus shared testing or the fulfilled archive appointment plus final restoration establishes D04 responsibility, restores the original and stops replay while mutually continuing the relationship.
+
+## Fresh validation
+
+- `npx tsx --test server/romance.test.ts`: **7 passed**, including all 729 six-choice routes terminating, four unique final contracts, confession refusals, distinct chapter consequences, trust/evidence contrasts, free-text truth and an 18-turn unresolved-dialogue limit. Log: `ac3-final-unit-run.txt`.
+- `npx playwright test --config playwright.ac3-final.config.ts`: **2 passed**. Five complete normal public-API games use `choice:null`: all four endings plus the evidence-present/trust-absent contrast. No state injection. The second test completes the couple/date/truth path in the 390×844 Chromium UI and verifies chapter progress, backgrounds and horizontal fit. Log: `ac3-final-browser-run.txt`; full inputs/state and source hashes: `ac3-final-evidence.json`.
+- Visually inspected `qa-screenshots/ac3-final-truth-mobile.png`: character, archive backdrop, complete ending text, collection action and explicit OFFLINE DEMO label are visible and readable.
+- Browser verification uses isolated port 3033 and `.ralph/ac3-final/data`, with an empty OpenAI key. `verification/ac3/romance.spec.ts` preserves the original test logic while writing separate final artifacts, leaving historical evidence intact.
+- README already documents Windows play/stop launchers and third-party notices; those files and the dependency lock were preserved.
+
+These fresh runs establish story/state behavior offline. Existing final live calls 11–12 establish only two consecutive natural romance turns and correct player/Yuna preference attribution; they do not establish live completion of every chapter or ending. No claim of universal Korean interpretation, physical-device keyboard testing, or full commercial release approval is made. No runtime change required a new build; the accepted AC4 build/110-test evidence remains applicable to unchanged runtime sources.
+
+---
+
 # AC 3 — romance story verification
 
 ## Current repair verification — 2026-11-21

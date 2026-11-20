@@ -1,7 +1,7 @@
 {
   "scope": "Development smoke checks for this game task only; not a gameplay request quota",
-  "maximum_paid_response_attempts": 8,
-  "paid_response_attempts": 8,
+  "maximum_paid_response_attempts": 12,
+  "paid_response_attempts": 12,
   "attempts": [
     {
       "id": 1,
@@ -68,7 +68,7 @@
       "mode": "office",
       "purpose": "repair: natural summary proposal and first-person boss response",
       "provider": "openai",
-      "reservedAt": "2026-11-20T18:49:56.280Z",
+      "reservedAt": "2026-11-20T18:49:56.28Z",
       "max_output_tokens": 700,
       "result": "connection-and-schema-pass",
       "latencyMs": 2634
@@ -82,6 +82,46 @@
       "max_output_tokens": 700,
       "result": "connection-and-schema-pass",
       "latencyMs": 2413
+    },
+    {
+      "id": 9,
+      "mode": "office",
+      "purpose": "final: negative overtime boundary with positive summary and 18:00 proposal",
+      "provider": "openai",
+      "reservedAt": "2026-11-20T19:08:43.442Z",
+      "max_output_tokens": 700,
+      "result": "connection-and-schema-pass",
+      "latencyMs": 3211
+    },
+    {
+      "id": 10,
+      "mode": "office",
+      "purpose": "final: natural handoff owner and deadline, consecutive office continuation",
+      "provider": "openai",
+      "reservedAt": "2026-11-20T19:08:46.658Z",
+      "max_output_tokens": 700,
+      "result": "connection-and-schema-pass",
+      "latencyMs": 1919
+    },
+    {
+      "id": 11,
+      "mode": "romance",
+      "purpose": "final: natural first romance reply and player-specific preferences",
+      "provider": "openai",
+      "reservedAt": "2026-11-20T19:08:48.591Z",
+      "max_output_tokens": 700,
+      "result": "connection-and-schema-pass",
+      "latencyMs": 1973
+    },
+    {
+      "id": 12,
+      "mode": "romance",
+      "purpose": "final: uncoached role and preference recall with headphone return",
+      "provider": "openai",
+      "reservedAt": "2026-11-20T19:08:50.569Z",
+      "max_output_tokens": 700,
+      "result": "connection-and-schema-pass",
+      "latencyMs": 1427
     }
   ],
   "authentication_check": {
@@ -92,12 +132,19 @@
     "date_kst": "2026-11-21"
   },
   "evidence": [
-    "Parent has made zero POST /v1/responses calls.",
+    "Before final verification the parent made zero POST /v1/responses calls; the parent subsequently performed attempts 9–12 under seed_99abb5a7f12c.",
     "docs/ac2-validation.md reports zero external calls.",
     "docs/ac3-validation.md reports zero paid calls.",
     "docs/ac4-validation.md reports zero real API calls.",
     "docs/ac6-validation.md reports zero real API calls."
   ],
-  "procedure": "Before each real response attempt increment the counter and append an attempt record without secrets. Count failed/timed-out requests as attempts. Record mode, input purpose, result, latency and output token limit, never the API key. Do not exceed eight attempts across all workers and parent. Mock tests do not increment this ledger.",
-  "quality_review": "8/8 consumed. Repair calls confirm office natural-language progression and romance rain/tangerine recall. Cinnamon preference ownership remains ambiguous; subsequent prompt clarification is mock-tested only. See docs/ac4-validation.md."
+  "procedure": "Before each real response attempt increment the counter and append an attempt record without secrets. Count failed/timed-out requests as attempts. Record mode, input purpose, result, latency and output token limit, never the API key. Do not exceed twelve attempts across all workers and parent. Mock tests do not increment this ledger.",
+  "quality_review": "Final calls 9–12 passed the focused free-text office success flow and explicit player/character preference attribution. Latest evidence: docs/final-live-evidence.json. 12/12 consumed. This is not universal natural-language or every-ending live verification.",
+  "successor_budget": {
+    "seed_id": "seed_99abb5a7f12c",
+    "prior_cap": 8,
+    "prior_consumed": 8,
+    "additional_maximum": 4,
+    "authority": "User explicitly authorized this API key and delegated continued work to completion; parent disclosed the bounded operational cap change."
+  }
 }

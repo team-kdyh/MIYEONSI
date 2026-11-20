@@ -109,7 +109,13 @@ export function advanceOffice(game:OfficeGame,choice:number|null,text='',interpr
  const finish=/^(협상\s*마무리|여기까지|협상을\s*끝내겠습니다)[.!]?$/u.test(input);
  // Explicit negation and meta-instructions cannot become an agreement, even when
  // they quote all the keywords of a valid proposal. Only authored semantic rules grant terms.
- const assertionText=normalized.replace(m.id==='weekend'?/주말(?:업무는|에는)(?:하지않겠습니다|일하지않겠습니다)/g:m.id==='dinner'?/회식은참석못합니다/g:/$^/g,'');
+ let assertionText=normalized.replace(m.id==='weekend'?/주말(?:업무는|에는)(?:하지않겠습니다|일하지않겠습니다)/g:m.id==='dinner'?/회식은참석못합니다/g:/$^/g,'');
+ // Refusing overtime is compatible with a classified on-time departure proposal.
+ // Remove only that separate boundary; refusal of the summary itself, withdrawal,
+ // meta-instructions and contradictory offers still face the ordinary guards.
+ if(m.id==='clockout'&&['leave:summary','leave:deadline'].includes(interpretedIntent??'')){
+  assertionText=assertionText.replace(/(?:야근|초과근무|추가근무)(?:은|을|는)?(?:할수(?:가)?없(?:습니다|어요|지만)|못(?:하(?:겠습니다|겠어요|지만|고)|해(?:요|서))|안할(?:게요|겁니다)|하지않(?:겠습니다|아요)|하기싫어요)/gu,'');
+ }
  const unsafe=/ignore|system|즉시.{0,5}(승리|성공|엔딩)|지시.{0,6}무시|규칙.{0,6}무시|하지마|않|못|안하|안갑|안갈|아닙|취소|철회|거짓|아니|불가능|없습니다|못하|못합|싫|가정|라고말하면|라고하면/i.test(assertionText);
  const candidates=m.terms.flatMap(term=>[...term.arguments.map(argument=>({term,argument,value:term.required})),{term,argument:term.offer,value:term.compromise}]);
  const matched=unsafe?undefined:interpretedIntent===undefined?candidates.find(c=>matches(normalized,c.argument)):candidates.find(c=>`${c.term.id}:${c.argument.id}`===interpretedIntent&&c.term.id===t?.id);

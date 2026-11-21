@@ -1,0 +1,34 @@
+[
+  {
+    "path": "docs/v2-state-storage-review/baseline-results.json",
+    "sha256": "fa37b84469e2ec86e2393c8c6fad505191da50819315f0e3f6f018ad3ad3f1cb"
+  },
+  {
+    "path": "docs/v2-state-storage-review/commitments-storage-review.test.ts",
+    "sha256": "f5397afe765d855b572645551c1b3a7980a666180519fade91bf25d87e296cfe"
+  },
+  {
+    "path": "docs/v2-state-storage-review/patched-results.json",
+    "sha256": "dc15e34bbeeda1b53e865eac0b626f1457cabfcd93538aad2b97a46a7cee6378"
+  },
+  {
+    "path": "docs/v2-state-storage-review/recipient-amendment.patch",
+    "sha256": "a6df2e91ffb57436b8ab6f47987f62c2b82ca0a07974286e8bbdc6d0ecd4eb26"
+  },
+  {
+    "path": "docs/v2-state-storage-review/report.md",
+    "sha256": "c8d8385e48ff59fe82122496fa5d6f3d5176eb15d6c951918837e53f559f020a"
+  },
+  {
+    "path": "docs/v2-state-storage-review/snapshot-manifest.json",
+    "sha256": "23918e1f779cb1e9864fde6858845b50508ca6ea7ba7006346164a68b6acf944"
+  },
+  {
+    "path": "docs/v2-state-storage-review/source-stability.json",
+    "sha256": "1aaac56a0d509708107f8f5593dcd4621296e230672cbf8f661b02ea8b34af7a"
+  },
+  {
+    "path": "docs/v2-state-storage-review/verification.json",
+    "sha256": "9fccf932f50888e412dabe099c94761576e3120e8c9e66008f3f85a25fa856b5"
+  }
+]

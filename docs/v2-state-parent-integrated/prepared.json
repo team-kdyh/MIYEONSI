@@ -1,0 +1,21 @@
+{
+  "createdAt": "2026-11-21T05:37:02.854947+00:00",
+  "scope": "Prepared isolated integrated candidate, not yet copied to original runtime; tests/build passed; browser still running",
+  "source": "C:\\Users\\gjtjw\\Desktop\\\ub300\ud654\ud615 \uc2a4\ud1a0\ub9ac\uc9c4\ud589\\.ralph\\v2-state-parent-probe",
+  "paidCalls": 0,
+  "files": {
+    "server/commitments.ts": "e0a5b51e5dacf02cef1fde39a2bf182215647ba332f7b46eab9d090a3f21bcd6",
+    "server/narrative.ts": "80dc19e6b3aec1db26fc69a344fbce48c38a026ae03ceaa30e41f674833f7764",
+    "server/provider.ts": "1019c72de478e48ad5a26d47e43fecb9be296b99e5923160893f49a29259b020",
+    "server/storage.ts": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b",
+    "server/commitments.test.ts": "d6a9dfa4d3de052082331b7bc8d4164c3cca985f270bf4d70e6d89f61057b184",
+    "server/commitments-http.test.ts": "85ad89d60f56e0c8b3cf7ce87dd2a08321a0947b93e8e8e225bfcf95b22d55ef",
+    "server/commitments-atomic.test.ts": "c2139cd0ab7c912b52b656d65d94588c2200a070a0ccdff866bdf385fc63b83f",
+    "server/commitments-coverage.test.ts": "9b00c297aadd3def164d04e0cc325354ca94c9c2b81f2be03504d9e18570e4d9",
+    "server/commitments-storage-review.test.ts": "f5397afe765d855b572645551c1b3a7980a666180519fade91bf25d87e296cfe",
+    "play.cmd": "a73f7ecdee9f98e6d43325779811cc21b6589a47978d90ed785f6411503e793e",
+    "stop.cmd": "a1c2e93da917825eb80b318a1b28f1e7334d99eac43a2247b254d4555ca47c91",
+    "scripts/start-local.ps1": "766b81d392afd7edada47a61141fb23b48d7d7423306c8c11f42d78094393cfd"
+  },
+  "rootBaselineNarrative": "5aa03219df2bcf3bb2794f604f66d3ebfde55bee13b8cee671face35de42b0f1"
+}

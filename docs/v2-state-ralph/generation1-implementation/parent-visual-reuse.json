@@ -1,0 +1,157 @@
+{
+  "reviewedAt": "2026-11-21T05:17:49.713517+00:00",
+  "source": "../v2-parent-observations/direct-visual/report.md",
+  "scope": "Limited reuse of unchanged rendering/art dependencies only; never worker narrative acceptance or live-model behavior",
+  "dependencies": [
+    {
+      "path": "public/assets/archive.png",
+      "parentObserved": "52d1a0e2ec3731f8934ff75e2fd25fcace71528ea082946a87c46ef40d4ba711",
+      "workerCurrent": "52d1a0e2ec3731f8934ff75e2fd25fcace71528ea082946a87c46ef40d4ba711",
+      "match": true
+    },
+    {
+      "path": "public/assets/boss-expressions.png",
+      "parentObserved": "e072f4d0c56c11349093c379303cacd2509b3a8610612a343b7f7fae96bda51a",
+      "workerCurrent": "e072f4d0c56c11349093c379303cacd2509b3a8610612a343b7f7fae96bda51a",
+      "match": true
+    },
+    {
+      "path": "public/assets/cafe.png",
+      "parentObserved": "9d546aca64cdbe9bb57aae91df908b59b36d747397175fe2004cddffdd6666c4",
+      "workerCurrent": "9d546aca64cdbe9bb57aae91df908b59b36d747397175fe2004cddffdd6666c4",
+      "match": true
+    },
+    {
+      "path": "public/assets/office.png",
+      "parentObserved": "bf3a39649b5920bc286a82b9db93c3d6d9a2490708b445c5607ea95d016d7751",
+      "workerCurrent": "bf3a39649b5920bc286a82b9db93c3d6d9a2490708b445c5607ea95d016d7751",
+      "match": true
+    },
+    {
+      "path": "public/assets/riverside.png",
+      "parentObserved": "393bda947f29056c417ab302924c8a4fb107a21d7d8f9053187bb3950f45aa9a",
+      "workerCurrent": "393bda947f29056c417ab302924c8a4fb107a21d7d8f9053187bb3950f45aa9a",
+      "match": true
+    },
+    {
+      "path": "public/assets/v2/boss-actions-a.png",
+      "parentObserved": "18176790fe162b6b65519c50a89dc9fc4cf5ab571a8f819204b6074bb9d12f40",
+      "workerCurrent": "18176790fe162b6b65519c50a89dc9fc4cf5ab571a8f819204b6074bb9d12f40",
+      "match": true
+    },
+    {
+      "path": "public/assets/v2/boss-actions-b.png",
+      "parentObserved": "debd7febc1fd485aae4c4734cb18076a90fc735ec705e545296016daf615b7dd",
+      "workerCurrent": "debd7febc1fd485aae4c4734cb18076a90fc735ec705e545296016daf615b7dd",
+      "match": true
+    },
+    {
+      "path": "public/assets/v2/rainstreet.png",
+      "parentObserved": "44eda0f37410a72ab8939fab268e41c0ca65de2cc212696d34815d407fac60d4",
+      "workerCurrent": "44eda0f37410a72ab8939fab268e41c0ca65de2cc212696d34815d407fac60d4",
+      "match": true
+    },
+    {
+      "path": "public/assets/v2/rooftop.png",
+      "parentObserved": "6061e8b6712faa827cdf6c29e504c274a3997fb211aba44dd36bbdb983fa8cc4",
+      "workerCurrent": "6061e8b6712faa827cdf6c29e504c274a3997fb211aba44dd36bbdb983fa8cc4",
+      "match": true
+    },
+    {
+      "path": "public/assets/v2/yuna-actions-a.png",
+      "parentObserved": "ad4a35ffb0070f3ba704f389c7d7ee84a03e7563247972ca773053b7ac6d5c6c",
+      "workerCurrent": "ad4a35ffb0070f3ba704f389c7d7ee84a03e7563247972ca773053b7ac6d5c6c",
+      "match": true
+    },
+    {
+      "path": "public/assets/v2/yuna-actions-b.png",
+      "parentObserved": "b14c4daa745797c3995eb961f446c0d9b45751744430248d95580b6755e4f049",
+      "workerCurrent": "b14c4daa745797c3995eb961f446c0d9b45751744430248d95580b6755e4f049",
+      "match": true
+    },
+    {
+      "path": "public/assets/yuna-expressions.png",
+      "parentObserved": "09109a8eba18c5e8cd8e591583770e8da26658c5541c7e913dbc79846037ec80",
+      "workerCurrent": "09109a8eba18c5e8cd8e591583770e8da26658c5541c7e913dbc79846037ec80",
+      "match": true
+    },
+    {
+      "path": "server/dialogue.ts",
+      "parentObserved": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+      "workerCurrent": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+      "match": true
+    },
+    {
+      "path": "server/game.ts",
+      "parentObserved": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "workerCurrent": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "match": true
+    },
+    {
+      "path": "server/narrative.ts",
+      "parentObserved": "5aa03219df2bcf3bb2794f604f66d3ebfde55bee13b8cee671face35de42b0f1",
+      "workerCurrent": "9f9c696431d134a0a9db50f6c6c2c7872f0f1970fd87ce6f2da575ec74a13ca3",
+      "match": false
+    },
+    {
+      "path": "src/CharacterSprite.tsx",
+      "parentObserved": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+      "workerCurrent": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+      "match": true
+    },
+    {
+      "path": "src/ConversationViewport.tsx",
+      "parentObserved": "77b6b56d5e255fcec0773604e738b5ace2867adc220067a1a33c6120120f3171",
+      "workerCurrent": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+      "match": false
+    },
+    {
+      "path": "src/StageEffects.tsx",
+      "parentObserved": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+      "workerCurrent": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+      "match": true
+    },
+    {
+      "path": "src/main.tsx",
+      "parentObserved": "7fe72805c7fdc5ac1341beea45cc99d2c27e09eac5912f93467a339a663eadae",
+      "workerCurrent": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+      "match": false
+    },
+    {
+      "path": "src/presentation.ts",
+      "parentObserved": "ad53276bd1d890422d865915fa5896271e39c59678355ac09af2a9bc85f6faa9",
+      "workerCurrent": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+      "match": false
+    },
+    {
+      "path": "src/style.css",
+      "parentObserved": "aacea413940c9eefd6893e4999da024b3b085c3a28bcf5487c73315196056dcf",
+      "workerCurrent": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+      "match": false
+    },
+    {
+      "path": "src/visualAssets.ts",
+      "parentObserved": "74bf10d9ed51214c21576d540c1d62e249f599f3e163260e76d384e3c1c46a45",
+      "workerCurrent": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179",
+      "match": false
+    },
+    {
+      "path": "tests/v2-ac4-boundaries.spec.ts",
+      "parentObserved": "accd495815245f7fe6e8f5781ba0a68160b5dd1949b0306add2acc82517101af",
+      "workerCurrent": "ad8f9367a9af617bb04794aa96e65dc80277e9c3d82c364d75d9e6dcb65dfaf1",
+      "match": false
+    },
+    {
+      "path": "tests/v2-art.spec.ts",
+      "parentObserved": "c7878e7cad5542f8d879fc067dd76cb90b89caf5d2905759e7c22bee4973042d",
+      "workerCurrent": "c7878e7cad5542f8d879fc067dd76cb90b89caf5d2905759e7c22bee4973042d",
+      "match": true
+    },
+    {
+      "path": "tests/v2-ui.spec.ts",
+      "parentObserved": "c2092085aeaf3accb1dbe2dbf3016276bff6265ab3c7866385e5133e52230a05",
+      "workerCurrent": "c2092085aeaf3accb1dbe2dbf3016276bff6265ab3c7866385e5133e52230a05",
+      "match": true
+    }
+  ]
+}

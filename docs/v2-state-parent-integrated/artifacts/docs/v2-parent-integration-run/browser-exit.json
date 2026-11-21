@@ -1,0 +1,6 @@
+{
+  "source": "controlled mock API responses; paid calls zero",
+  "command": "npx playwright test",
+  "exitCode": 0,
+  "port": 3091
+}

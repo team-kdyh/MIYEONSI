@@ -1,0 +1,57 @@
+{
+  "scope": "No API/network/env/private saves. Controlled proposals through frozen source; production untouched.",
+  "commands": [
+    {
+      "cwd": "root",
+      "command": "node --import tsx .ralph/v2-state-independent-storage-review/probe.ts",
+      "exit": 0,
+      "scenarioRows": 16,
+      "defectRows": 4,
+      "families": 2,
+      "freshProcessReopens": true
+    },
+    {
+      "cwd": "root",
+      "command": "node --import tsx .ralph/v2-state-independent-storage-review/patched-probe.ts",
+      "exit": 0,
+      "scenarioRows": 16,
+      "defectRows": 0,
+      "freshProcessReopens": true
+    },
+    {
+      "cwd": "root",
+      "command": "node --import tsx --test .ralph/v2-state-independent-storage-review/baseline-regression.test.ts",
+      "exit": 1,
+      "passed": 2,
+      "failed": 2
+    },
+    {
+      "cwd": "root",
+      "command": "node --import tsx --test .ralph/v2-state-independent-storage-review/patched/server/commitments-storage-review.test.ts",
+      "exit": 0,
+      "passed": 4,
+      "failed": 0
+    },
+    {
+      "cwd": ".ralph/v2-state-independent-storage-review/patched",
+      "command": "node --import tsx --test server/commitments.test.ts",
+      "exit": 0,
+      "passed": 7,
+      "failed": 0
+    }
+  ],
+  "caveat": "Read/reopen evidence only for described synthetic paths. Existing HTTP timeout/cancellation suite was inspected, not executed here. Same-turn acceptance/performance remains parent-owned.",
+  "focusedTypecheck": {
+    "exit": 0,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "target": "ES2022",
+    "strict": true,
+    "scope": "Portable regression and its imported isolated production dependencies",
+    "initialAttempt": "NodeNext attempt had import-extension errors in unchanged visualAssets.ts; rerun with project Bundler module resolution passed."
+  },
+  "patchCheck": {
+    "command": "git apply --check --directory=.ralph/v2-state-independent-storage-review/snapshot docs/v2-state-storage-review/recipient-amendment.patch",
+    "exit": 0
+  }
+}

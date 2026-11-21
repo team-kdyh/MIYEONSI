@@ -1,0 +1,946 @@
+{
+  "scope": "Deterministic attribution/recall plumbing, not live model memory ability",
+  "original": {
+    "mode": "romance",
+    "step": 0,
+    "scores": [
+      0,
+      0,
+      0
+    ],
+    "log": [
+      {
+        "speaker": "서유나 · 27",
+        "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+      },
+      {
+        "speaker": "당신",
+        "text": "저는 민입니다. 배를 좋아해요. 제 동료 이름은 지현이에요."
+      },
+      {
+        "speaker": "서유나",
+        "text": "그 이야기를 이어가 볼까요."
+      }
+    ],
+    "ending": null,
+    "romance": {
+      "version": 0,
+      "turn": 0,
+      "facts": [],
+      "details": []
+    },
+    "narrative": {
+      "format": 2,
+      "turn": 1,
+      "location": "cafe",
+      "relationship": "strangers",
+      "dates": 0,
+      "events": [
+        {
+          "kind": "detail",
+          "value": "player-preference",
+          "text": "플레이어 민은 배를 좋아함",
+          "subject": "player",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "저는 민입니다. 배를 좋아해요. 제 동료 이름은 지현이에요.",
+          "id": "e5f007ce-fbe7-4479-ba8b-da1dbf052e3a",
+          "turn": 1
+        },
+        {
+          "kind": "detail",
+          "value": "colleague",
+          "text": "플레이어의 동료 이름은 지현",
+          "subject": "player",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "저는 민입니다. 배를 좋아해요. 제 동료 이름은 지현이에요.",
+          "id": "a61ef9d6-b757-42d6-99bf-111abed65216",
+          "turn": 1
+        },
+        {
+          "kind": "detail",
+          "value": "npc-preference",
+          "text": "유나는 시나몬 향을 좋아함",
+          "subject": "npc",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "",
+          "id": "5db3678f-9f63-44f8-be6d-93ffbeffbeb6",
+          "turn": 1
+        },
+        {
+          "kind": "promise",
+          "value": "pear",
+          "text": "유나가 배를 가져오겠다고 제안",
+          "subject": "npc",
+          "status": "offered",
+          "reference": "",
+          "evidence": "",
+          "id": "8a888f83-5de3-407f-ad4e-f21cc3839d1a",
+          "turn": 1
+        },
+        {
+          "kind": "invitation",
+          "value": "record",
+          "text": "유나가 목소리 녹음을 제안",
+          "subject": "npc",
+          "status": "offered",
+          "reference": "",
+          "evidence": "",
+          "id": "3a31492b-038f-4b0f-bf53-fcb982aa49ca",
+          "turn": 1
+        }
+      ],
+      "pose": "listen",
+      "emotion": "차분",
+      "musicMood": "cafe-warmth"
+    },
+    "dialogue": {
+      "version": 1,
+      "facts": [
+        {
+          "id": "scene-0",
+          "eventId": "start",
+          "version": 0,
+          "confirmedAt": "2026-11-21T05:34:46.226Z",
+          "kind": "scene",
+          "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+        },
+        {
+          "id": "e5f007ce-fbe7-4479-ba8b-da1dbf052e3a",
+          "eventId": "e5f007ce-fbe7-4479-ba8b-da1dbf052e3a",
+          "version": 1,
+          "confirmedAt": "2026-11-21T05:34:46.228Z",
+          "kind": "scene",
+          "text": "플레이어 민은 배를 좋아함"
+        },
+        {
+          "id": "a61ef9d6-b757-42d6-99bf-111abed65216",
+          "eventId": "a61ef9d6-b757-42d6-99bf-111abed65216",
+          "version": 1,
+          "confirmedAt": "2026-11-21T05:34:46.235Z",
+          "kind": "scene",
+          "text": "플레이어의 동료 이름은 지현"
+        },
+        {
+          "id": "5db3678f-9f63-44f8-be6d-93ffbeffbeb6",
+          "eventId": "5db3678f-9f63-44f8-be6d-93ffbeffbeb6",
+          "version": 1,
+          "confirmedAt": "2026-11-21T05:34:46.235Z",
+          "kind": "scene",
+          "text": "유나는 시나몬 향을 좋아함"
+        },
+        {
+          "id": "8a888f83-5de3-407f-ad4e-f21cc3839d1a",
+          "eventId": "8a888f83-5de3-407f-ad4e-f21cc3839d1a",
+          "version": 1,
+          "confirmedAt": "2026-11-21T05:34:46.235Z",
+          "kind": "scene",
+          "text": "유나가 배를 가져오겠다고 제안"
+        },
+        {
+          "id": "3a31492b-038f-4b0f-bf53-fcb982aa49ca",
+          "eventId": "3a31492b-038f-4b0f-bf53-fcb982aa49ca",
+          "version": 1,
+          "confirmedAt": "2026-11-21T05:34:46.235Z",
+          "kind": "scene",
+          "text": "유나가 목소리 녹음을 제안"
+        }
+      ],
+      "ledger": [
+        {
+          "kind": "user_claim",
+          "text": "저는 민입니다. 배를 좋아해요. 제 동료 이름은 지현이에요.",
+          "version": 1
+        },
+        {
+          "kind": "model_dialogue",
+          "text": "그 이야기를 이어가 볼까요.",
+          "version": 1,
+          "recallIds": []
+        },
+        {
+          "kind": "verified_event",
+          "text": "플레이어 민은 배를 좋아함",
+          "version": 1,
+          "eventId": "e5f007ce-fbe7-4479-ba8b-da1dbf052e3a"
+        },
+        {
+          "kind": "verified_event",
+          "text": "플레이어의 동료 이름은 지현",
+          "version": 1,
+          "eventId": "a61ef9d6-b757-42d6-99bf-111abed65216"
+        },
+        {
+          "kind": "verified_event",
+          "text": "유나는 시나몬 향을 좋아함",
+          "version": 1,
+          "eventId": "5db3678f-9f63-44f8-be6d-93ffbeffbeb6"
+        },
+        {
+          "kind": "verified_event",
+          "text": "유나가 배를 가져오겠다고 제안",
+          "version": 1,
+          "eventId": "8a888f83-5de3-407f-ad4e-f21cc3839d1a"
+        },
+        {
+          "kind": "verified_event",
+          "text": "유나가 목소리 녹음을 제안",
+          "version": 1,
+          "eventId": "3a31492b-038f-4b0f-bf53-fcb982aa49ca"
+        }
+      ],
+      "reply": "그 이야기를 이어가 볼까요.",
+      "playerStatements": [
+        {
+          "turn": 1,
+          "text": "저는 민입니다. 배를 좋아해요. 제 동료 이름은 지현이에요."
+        }
+      ],
+      "actionBeats": []
+    }
+  },
+  "context": {
+    "character": {
+      "name": "서유나",
+      "age": 27,
+      "role": "소리 수집가",
+      "voice": "따뜻하고 조금 서툰 농담, 조심스러운 존댓말. 호기심, 자기 취향과 작은 실수를 드러낸다.",
+      "preferences": "시나몬 맛은 싫지만 향은 좋아한다. 사라지는 소리를 모은다."
+    },
+    "poseCatalogue": {
+      "neutral": "편안히 바라본다",
+      "smile": "두 손을 모으고 미소 짓는다",
+      "thinking": "손목을 감싸며 망설인다",
+      "surprised": "놀라 손목을 감싼다",
+      "intense": "고개를 기울여 강하게 응시한다",
+      "watch": "주의 깊게 귀를 기울인다",
+      "listen": "귀 가까이 손을 대고 듣는다",
+      "laugh": "입가에 손을 대고 웃는다",
+      "shy": "수줍게 두 손을 모은다",
+      "offer": "헤드폰 한쪽을 내민다",
+      "turn": "장난스럽게 손가락을 세운다",
+      "concern": "녹음기를 가슴에 안는다",
+      "firm": "카디건 자락을 쥐고 응시한다",
+      "farewell": "손바닥 위의 테이프를 내민다"
+    },
+    "player": {
+      "identity": "별개의 성인. user 발화만 플레이어의 말이다."
+    },
+    "premise": {
+      "theme": "소리 아카이브: 만남과 끌림, 고백, 연인이 된 뒤의 데이트, 나중에 변조된 녹음의 불안과 대면. 지금의 일상을 충분히 즐긴다."
+    },
+    "story": {
+      "format": 2,
+      "turn": 14,
+      "location": "cafe",
+      "relationship": "strangers",
+      "dates": 0,
+      "events": [
+        {
+          "kind": "detail",
+          "value": "player-preference",
+          "text": "플레이어 민은 배를 좋아함",
+          "subject": "player",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "저는 민입니다. 배를 좋아해요. 제 동료 이름은 지현이에요.",
+          "id": "e5f007ce-fbe7-4479-ba8b-da1dbf052e3a",
+          "turn": 1
+        },
+        {
+          "kind": "detail",
+          "value": "colleague",
+          "text": "플레이어의 동료 이름은 지현",
+          "subject": "player",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "저는 민입니다. 배를 좋아해요. 제 동료 이름은 지현이에요.",
+          "id": "a61ef9d6-b757-42d6-99bf-111abed65216",
+          "turn": 1
+        },
+        {
+          "kind": "detail",
+          "value": "npc-preference",
+          "text": "유나는 시나몬 향을 좋아함",
+          "subject": "npc",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "",
+          "id": "5db3678f-9f63-44f8-be6d-93ffbeffbeb6",
+          "turn": 1
+        },
+        {
+          "kind": "promise",
+          "value": "pear",
+          "text": "유나가 배를 가져오겠다고 제안",
+          "subject": "npc",
+          "status": "offered",
+          "reference": "",
+          "evidence": "",
+          "id": "8a888f83-5de3-407f-ad4e-f21cc3839d1a",
+          "turn": 1
+        },
+        {
+          "kind": "invitation",
+          "value": "record",
+          "text": "유나가 목소리 녹음을 제안",
+          "subject": "npc",
+          "status": "offered",
+          "reference": "",
+          "evidence": "",
+          "id": "3a31492b-038f-4b0f-bf53-fcb982aa49ca",
+          "turn": 1
+        },
+        {
+          "kind": "promise",
+          "value": "pear",
+          "text": "배 약속 수락",
+          "subject": "player",
+          "status": "accepted",
+          "reference": "8a888f83-5de3-407f-ad4e-f21cc3839d1a",
+          "evidence": "배를 가져와 주세요.",
+          "id": "b9f1ebbc-4481-47b3-82cf-d18a2061889c",
+          "turn": 2
+        },
+        {
+          "kind": "invitation",
+          "value": "record",
+          "text": "녹음 제안 거절",
+          "subject": "player",
+          "status": "refused",
+          "reference": "3a31492b-038f-4b0f-bf53-fcb982aa49ca",
+          "evidence": "목소리 녹음은 거절합니다.",
+          "id": "d880b0af-3e56-4765-9697-dd69c1de8221",
+          "turn": 3
+        }
+      ],
+      "pose": "listen",
+      "emotion": "차분",
+      "musicMood": "cafe-warmth",
+      "legacyCommitmentAssessments": [],
+      "commitments": []
+    },
+    "continuityRule": "현재 relationship의 다음 단계만 기록 가능하다. 이미 편안해졌거나 호감을 말했어도 strangers 기록이면 이번에는 familiar부터 사실에 맞게 확정한다. 정본 단계의 누락을 건너뛰지 않는다.",
+    "playerStatements": [
+      {
+        "turn": 1,
+        "text": "저는 민입니다. 배를 좋아해요. 제 동료 이름은 지현이에요."
+      },
+      {
+        "turn": 2,
+        "text": "좋아요. 배를 가져와 주세요."
+      },
+      {
+        "turn": 3,
+        "text": "목소리 녹음은 거절합니다."
+      },
+      {
+        "turn": 4,
+        "text": "오늘의 다른 소리 이야기 0"
+      },
+      {
+        "turn": 5,
+        "text": "오늘의 다른 소리 이야기 1"
+      },
+      {
+        "turn": 6,
+        "text": "오늘의 다른 소리 이야기 2"
+      },
+      {
+        "turn": 7,
+        "text": "오늘의 다른 소리 이야기 3"
+      },
+      {
+        "turn": 8,
+        "text": "오늘의 다른 소리 이야기 4"
+      },
+      {
+        "turn": 9,
+        "text": "오늘의 다른 소리 이야기 5"
+      },
+      {
+        "turn": 10,
+        "text": "오늘의 다른 소리 이야기 6"
+      },
+      {
+        "turn": 11,
+        "text": "오늘의 다른 소리 이야기 7"
+      },
+      {
+        "turn": 12,
+        "text": "오늘의 다른 소리 이야기 8"
+      },
+      {
+        "turn": 13,
+        "text": "오늘의 다른 소리 이야기 9"
+      },
+      {
+        "turn": 14,
+        "text": "오늘의 다른 소리 이야기 10"
+      }
+    ],
+    "confirmedEvents": [
+      {
+        "id": "scene-0",
+        "eventId": "start",
+        "version": 0,
+        "confirmedAt": "2026-11-21T05:34:46.226Z",
+        "kind": "scene",
+        "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+      },
+      {
+        "id": "e5f007ce-fbe7-4479-ba8b-da1dbf052e3a",
+        "eventId": "e5f007ce-fbe7-4479-ba8b-da1dbf052e3a",
+        "version": 1,
+        "confirmedAt": "2026-11-21T05:34:46.228Z",
+        "kind": "scene",
+        "text": "플레이어 민은 배를 좋아함"
+      },
+      {
+        "id": "a61ef9d6-b757-42d6-99bf-111abed65216",
+        "eventId": "a61ef9d6-b757-42d6-99bf-111abed65216",
+        "version": 1,
+        "confirmedAt": "2026-11-21T05:34:46.235Z",
+        "kind": "scene",
+        "text": "플레이어의 동료 이름은 지현"
+      },
+      {
+        "id": "5db3678f-9f63-44f8-be6d-93ffbeffbeb6",
+        "eventId": "5db3678f-9f63-44f8-be6d-93ffbeffbeb6",
+        "version": 1,
+        "confirmedAt": "2026-11-21T05:34:46.235Z",
+        "kind": "scene",
+        "text": "유나는 시나몬 향을 좋아함"
+      },
+      {
+        "id": "8a888f83-5de3-407f-ad4e-f21cc3839d1a",
+        "eventId": "8a888f83-5de3-407f-ad4e-f21cc3839d1a",
+        "version": 1,
+        "confirmedAt": "2026-11-21T05:34:46.235Z",
+        "kind": "scene",
+        "text": "유나가 배를 가져오겠다고 제안"
+      },
+      {
+        "id": "3a31492b-038f-4b0f-bf53-fcb982aa49ca",
+        "eventId": "3a31492b-038f-4b0f-bf53-fcb982aa49ca",
+        "version": 1,
+        "confirmedAt": "2026-11-21T05:34:46.235Z",
+        "kind": "scene",
+        "text": "유나가 목소리 녹음을 제안"
+      },
+      {
+        "id": "b9f1ebbc-4481-47b3-82cf-d18a2061889c",
+        "eventId": "b9f1ebbc-4481-47b3-82cf-d18a2061889c",
+        "version": 2,
+        "confirmedAt": "2026-11-21T05:34:46.237Z",
+        "kind": "scene",
+        "text": "배 약속 수락"
+      },
+      {
+        "id": "d880b0af-3e56-4765-9697-dd69c1de8221",
+        "eventId": "d880b0af-3e56-4765-9697-dd69c1de8221",
+        "version": 3,
+        "confirmedAt": "2026-11-21T05:34:46.237Z",
+        "kind": "scene",
+        "text": "녹음 제안 거절"
+      }
+    ]
+  },
+  "response": {
+    "line": "민 씨는 배, 저는 시나몬 향이죠. 동료 지현 씨 이름도 기억해요. 녹음은 하지 않을게요.",
+    "actionBeats": [
+      "유나가 배를 테이블에 놓는다."
+    ],
+    "emotion": "차분",
+    "pose": "listen",
+    "musicMood": "cafe-warmth",
+    "events": [
+      {
+        "kind": "promise",
+        "value": "pear",
+        "text": "유나가 민을 위해 배를 꺼냄",
+        "subject": "npc",
+        "status": "fulfilled",
+        "reference": "8a888f83-5de3-407f-ad4e-f21cc3839d1a",
+        "evidence": ""
+      }
+    ],
+    "recall": [
+      "e5f007ce-fbe7-4479-ba8b-da1dbf052e3a",
+      "a61ef9d6-b757-42d6-99bf-111abed65216",
+      "5db3678f-9f63-44f8-be6d-93ffbeffbeb6"
+    ],
+    "conjecture": ""
+  },
+  "restoredAfterUse": {
+    "mode": "romance",
+    "step": 0,
+    "scores": [
+      0,
+      0,
+      0
+    ],
+    "log": [
+      {
+        "speaker": "당신",
+        "text": "오늘의 다른 소리 이야기 6"
+      },
+      {
+        "speaker": "서유나",
+        "text": "그 이야기를 이어가 볼까요."
+      },
+      {
+        "speaker": "당신",
+        "text": "오늘의 다른 소리 이야기 7"
+      },
+      {
+        "speaker": "서유나",
+        "text": "그 이야기를 이어가 볼까요."
+      },
+      {
+        "speaker": "당신",
+        "text": "오늘의 다른 소리 이야기 8"
+      },
+      {
+        "speaker": "서유나",
+        "text": "그 이야기를 이어가 볼까요."
+      },
+      {
+        "speaker": "당신",
+        "text": "오늘의 다른 소리 이야기 9"
+      },
+      {
+        "speaker": "서유나",
+        "text": "그 이야기를 이어가 볼까요."
+      },
+      {
+        "speaker": "당신",
+        "text": "오늘의 다른 소리 이야기 10"
+      },
+      {
+        "speaker": "서유나",
+        "text": "그 이야기를 이어가 볼까요."
+      },
+      {
+        "speaker": "당신",
+        "text": "약속한 배를 가져왔어요?"
+      },
+      {
+        "speaker": "서유나",
+        "text": "민 씨는 배, 저는 시나몬 향이죠. 동료 지현 씨 이름도 기억해요. 녹음은 하지 않을게요."
+      }
+    ],
+    "ending": null,
+    "romance": {
+      "version": 0,
+      "turn": 0,
+      "facts": [],
+      "details": []
+    },
+    "narrative": {
+      "format": 2,
+      "turn": 15,
+      "location": "cafe",
+      "relationship": "strangers",
+      "dates": 0,
+      "events": [
+        {
+          "kind": "detail",
+          "value": "player-preference",
+          "text": "플레이어 민은 배를 좋아함",
+          "subject": "player",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "저는 민입니다. 배를 좋아해요. 제 동료 이름은 지현이에요.",
+          "id": "e5f007ce-fbe7-4479-ba8b-da1dbf052e3a",
+          "turn": 1
+        },
+        {
+          "kind": "detail",
+          "value": "colleague",
+          "text": "플레이어의 동료 이름은 지현",
+          "subject": "player",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "저는 민입니다. 배를 좋아해요. 제 동료 이름은 지현이에요.",
+          "id": "a61ef9d6-b757-42d6-99bf-111abed65216",
+          "turn": 1
+        },
+        {
+          "kind": "detail",
+          "value": "npc-preference",
+          "text": "유나는 시나몬 향을 좋아함",
+          "subject": "npc",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "",
+          "id": "5db3678f-9f63-44f8-be6d-93ffbeffbeb6",
+          "turn": 1
+        },
+        {
+          "kind": "promise",
+          "value": "pear",
+          "text": "유나가 배를 가져오겠다고 제안",
+          "subject": "npc",
+          "status": "offered",
+          "reference": "",
+          "evidence": "",
+          "id": "8a888f83-5de3-407f-ad4e-f21cc3839d1a",
+          "turn": 1
+        },
+        {
+          "kind": "invitation",
+          "value": "record",
+          "text": "유나가 목소리 녹음을 제안",
+          "subject": "npc",
+          "status": "offered",
+          "reference": "",
+          "evidence": "",
+          "id": "3a31492b-038f-4b0f-bf53-fcb982aa49ca",
+          "turn": 1
+        },
+        {
+          "kind": "promise",
+          "value": "pear",
+          "text": "배 약속 수락",
+          "subject": "player",
+          "status": "accepted",
+          "reference": "8a888f83-5de3-407f-ad4e-f21cc3839d1a",
+          "evidence": "배를 가져와 주세요.",
+          "id": "b9f1ebbc-4481-47b3-82cf-d18a2061889c",
+          "turn": 2
+        },
+        {
+          "kind": "invitation",
+          "value": "record",
+          "text": "녹음 제안 거절",
+          "subject": "player",
+          "status": "refused",
+          "reference": "3a31492b-038f-4b0f-bf53-fcb982aa49ca",
+          "evidence": "목소리 녹음은 거절합니다.",
+          "id": "d880b0af-3e56-4765-9697-dd69c1de8221",
+          "turn": 3
+        },
+        {
+          "kind": "promise",
+          "value": "pear",
+          "text": "유나가 민을 위해 배를 꺼냄",
+          "subject": "npc",
+          "status": "fulfilled",
+          "reference": "8a888f83-5de3-407f-ad4e-f21cc3839d1a",
+          "evidence": "",
+          "id": "d7c4d0df-b5ba-4407-a404-4354cc0ca376",
+          "turn": 15
+        },
+        {
+          "id": "4b8d0419-69c5-4829-bf57-69877bfead89",
+          "turn": 15,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "유나가 배를 테이블에 놓는다.",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "pose": "listen",
+      "emotion": "차분",
+      "musicMood": "cafe-warmth",
+      "legacyCommitmentAssessments": [],
+      "commitments": []
+    },
+    "dialogue": {
+      "version": 15,
+      "facts": [
+        {
+          "id": "scene-0",
+          "eventId": "start",
+          "version": 0,
+          "confirmedAt": "2026-11-21T05:34:46.226Z",
+          "kind": "scene",
+          "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+        },
+        {
+          "id": "e5f007ce-fbe7-4479-ba8b-da1dbf052e3a",
+          "eventId": "e5f007ce-fbe7-4479-ba8b-da1dbf052e3a",
+          "version": 1,
+          "confirmedAt": "2026-11-21T05:34:46.228Z",
+          "kind": "scene",
+          "text": "플레이어 민은 배를 좋아함"
+        },
+        {
+          "id": "a61ef9d6-b757-42d6-99bf-111abed65216",
+          "eventId": "a61ef9d6-b757-42d6-99bf-111abed65216",
+          "version": 1,
+          "confirmedAt": "2026-11-21T05:34:46.235Z",
+          "kind": "scene",
+          "text": "플레이어의 동료 이름은 지현"
+        },
+        {
+          "id": "5db3678f-9f63-44f8-be6d-93ffbeffbeb6",
+          "eventId": "5db3678f-9f63-44f8-be6d-93ffbeffbeb6",
+          "version": 1,
+          "confirmedAt": "2026-11-21T05:34:46.235Z",
+          "kind": "scene",
+          "text": "유나는 시나몬 향을 좋아함"
+        },
+        {
+          "id": "8a888f83-5de3-407f-ad4e-f21cc3839d1a",
+          "eventId": "8a888f83-5de3-407f-ad4e-f21cc3839d1a",
+          "version": 1,
+          "confirmedAt": "2026-11-21T05:34:46.235Z",
+          "kind": "scene",
+          "text": "유나가 배를 가져오겠다고 제안"
+        },
+        {
+          "id": "3a31492b-038f-4b0f-bf53-fcb982aa49ca",
+          "eventId": "3a31492b-038f-4b0f-bf53-fcb982aa49ca",
+          "version": 1,
+          "confirmedAt": "2026-11-21T05:34:46.235Z",
+          "kind": "scene",
+          "text": "유나가 목소리 녹음을 제안"
+        },
+        {
+          "id": "b9f1ebbc-4481-47b3-82cf-d18a2061889c",
+          "eventId": "b9f1ebbc-4481-47b3-82cf-d18a2061889c",
+          "version": 2,
+          "confirmedAt": "2026-11-21T05:34:46.237Z",
+          "kind": "scene",
+          "text": "배 약속 수락"
+        },
+        {
+          "id": "d880b0af-3e56-4765-9697-dd69c1de8221",
+          "eventId": "d880b0af-3e56-4765-9697-dd69c1de8221",
+          "version": 3,
+          "confirmedAt": "2026-11-21T05:34:46.237Z",
+          "kind": "scene",
+          "text": "녹음 제안 거절"
+        },
+        {
+          "id": "d7c4d0df-b5ba-4407-a404-4354cc0ca376",
+          "eventId": "d7c4d0df-b5ba-4407-a404-4354cc0ca376",
+          "version": 15,
+          "confirmedAt": "2026-11-21T05:34:46.271Z",
+          "kind": "scene",
+          "text": "유나가 민을 위해 배를 꺼냄"
+        },
+        {
+          "id": "4b8d0419-69c5-4829-bf57-69877bfead89",
+          "eventId": "4b8d0419-69c5-4829-bf57-69877bfead89",
+          "version": 15,
+          "confirmedAt": "2026-11-21T05:34:46.271Z",
+          "kind": "scene",
+          "text": "유나가 배를 테이블에 놓는다."
+        }
+      ],
+      "ledger": [
+        {
+          "kind": "user_claim",
+          "text": "오늘의 다른 소리 이야기 1",
+          "version": 5
+        },
+        {
+          "kind": "model_dialogue",
+          "text": "그 이야기를 이어가 볼까요.",
+          "version": 5,
+          "recallIds": []
+        },
+        {
+          "kind": "user_claim",
+          "text": "오늘의 다른 소리 이야기 2",
+          "version": 6
+        },
+        {
+          "kind": "model_dialogue",
+          "text": "그 이야기를 이어가 볼까요.",
+          "version": 6,
+          "recallIds": []
+        },
+        {
+          "kind": "user_claim",
+          "text": "오늘의 다른 소리 이야기 3",
+          "version": 7
+        },
+        {
+          "kind": "model_dialogue",
+          "text": "그 이야기를 이어가 볼까요.",
+          "version": 7,
+          "recallIds": []
+        },
+        {
+          "kind": "user_claim",
+          "text": "오늘의 다른 소리 이야기 4",
+          "version": 8
+        },
+        {
+          "kind": "model_dialogue",
+          "text": "그 이야기를 이어가 볼까요.",
+          "version": 8,
+          "recallIds": []
+        },
+        {
+          "kind": "user_claim",
+          "text": "오늘의 다른 소리 이야기 5",
+          "version": 9
+        },
+        {
+          "kind": "model_dialogue",
+          "text": "그 이야기를 이어가 볼까요.",
+          "version": 9,
+          "recallIds": []
+        },
+        {
+          "kind": "user_claim",
+          "text": "오늘의 다른 소리 이야기 6",
+          "version": 10
+        },
+        {
+          "kind": "model_dialogue",
+          "text": "그 이야기를 이어가 볼까요.",
+          "version": 10,
+          "recallIds": []
+        },
+        {
+          "kind": "user_claim",
+          "text": "오늘의 다른 소리 이야기 7",
+          "version": 11
+        },
+        {
+          "kind": "model_dialogue",
+          "text": "그 이야기를 이어가 볼까요.",
+          "version": 11,
+          "recallIds": []
+        },
+        {
+          "kind": "user_claim",
+          "text": "오늘의 다른 소리 이야기 8",
+          "version": 12
+        },
+        {
+          "kind": "model_dialogue",
+          "text": "그 이야기를 이어가 볼까요.",
+          "version": 12,
+          "recallIds": []
+        },
+        {
+          "kind": "user_claim",
+          "text": "오늘의 다른 소리 이야기 9",
+          "version": 13
+        },
+        {
+          "kind": "model_dialogue",
+          "text": "그 이야기를 이어가 볼까요.",
+          "version": 13,
+          "recallIds": []
+        },
+        {
+          "kind": "user_claim",
+          "text": "오늘의 다른 소리 이야기 10",
+          "version": 14
+        },
+        {
+          "kind": "model_dialogue",
+          "text": "그 이야기를 이어가 볼까요.",
+          "version": 14,
+          "recallIds": []
+        },
+        {
+          "kind": "user_claim",
+          "text": "약속한 배를 가져왔어요?",
+          "version": 15
+        },
+        {
+          "kind": "model_dialogue",
+          "text": "민 씨는 배, 저는 시나몬 향이죠. 동료 지현 씨 이름도 기억해요. 녹음은 하지 않을게요.",
+          "version": 15,
+          "recallIds": [
+            "e5f007ce-fbe7-4479-ba8b-da1dbf052e3a",
+            "a61ef9d6-b757-42d6-99bf-111abed65216",
+            "5db3678f-9f63-44f8-be6d-93ffbeffbeb6"
+          ]
+        },
+        {
+          "kind": "verified_event",
+          "text": "유나가 민을 위해 배를 꺼냄",
+          "version": 15,
+          "eventId": "d7c4d0df-b5ba-4407-a404-4354cc0ca376"
+        },
+        {
+          "kind": "verified_event",
+          "text": "유나가 배를 테이블에 놓는다.",
+          "version": 15,
+          "eventId": "4b8d0419-69c5-4829-bf57-69877bfead89"
+        }
+      ],
+      "reply": "민 씨는 배, 저는 시나몬 향이죠. 동료 지현 씨 이름도 기억해요. 녹음은 하지 않을게요.",
+      "playerStatements": [
+        {
+          "turn": 1,
+          "text": "저는 민입니다. 배를 좋아해요. 제 동료 이름은 지현이에요."
+        },
+        {
+          "turn": 2,
+          "text": "좋아요. 배를 가져와 주세요."
+        },
+        {
+          "turn": 3,
+          "text": "목소리 녹음은 거절합니다."
+        },
+        {
+          "turn": 4,
+          "text": "오늘의 다른 소리 이야기 0"
+        },
+        {
+          "turn": 5,
+          "text": "오늘의 다른 소리 이야기 1"
+        },
+        {
+          "turn": 6,
+          "text": "오늘의 다른 소리 이야기 2"
+        },
+        {
+          "turn": 7,
+          "text": "오늘의 다른 소리 이야기 3"
+        },
+        {
+          "turn": 8,
+          "text": "오늘의 다른 소리 이야기 4"
+        },
+        {
+          "turn": 9,
+          "text": "오늘의 다른 소리 이야기 5"
+        },
+        {
+          "turn": 10,
+          "text": "오늘의 다른 소리 이야기 6"
+        },
+        {
+          "turn": 11,
+          "text": "오늘의 다른 소리 이야기 7"
+        },
+        {
+          "turn": 12,
+          "text": "오늘의 다른 소리 이야기 8"
+        },
+        {
+          "turn": 13,
+          "text": "오늘의 다른 소리 이야기 9"
+        },
+        {
+          "turn": 14,
+          "text": "오늘의 다른 소리 이야기 10"
+        },
+        {
+          "turn": 15,
+          "text": "약속한 배를 가져왔어요?"
+        }
+      ],
+      "actionBeats": [
+        "유나가 배를 테이블에 놓는다."
+      ]
+    }
+  }
+}

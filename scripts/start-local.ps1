@@ -22,7 +22,10 @@ if ($taskListener) {
 New-Item -ItemType Directory -Path $taskData -Force | Out-Null
 Push-Location $taskRoot
 try {
-    $taskLockHash = (Get-FileHash -LiteralPath (Join-Path $taskRoot 'package-lock.json') -Algorithm SHA256).Hash
+    $taskHasher = [System.Security.Cryptography.SHA256]::Create()
+    $taskLockStream = [System.IO.File]::OpenRead((Join-Path $taskRoot 'package-lock.json'))
+    try { $taskLockHash = [System.BitConverter]::ToString($taskHasher.ComputeHash($taskLockStream)).Replace('-', '') }
+    finally { $taskLockStream.Dispose(); $taskHasher.Dispose() }
     $taskStampPath = Join-Path $taskData 'installed-lock.sha256'
     $taskInstalledHash = if (Test-Path -LiteralPath $taskStampPath) { (Get-Content -Raw -LiteralPath $taskStampPath).Trim() } else { '' }
     if ($taskInstalledHash -ne $taskLockHash -or -not (Test-Path -LiteralPath 'node_modules\tsx\package.json')) {

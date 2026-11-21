@@ -1,0 +1,68 @@
+[
+  {
+    "path": "server/commitments.ts",
+    "base": "0e3b7da41c214ef3cb241e5df58c2ff9628231a021be0d1708292d373743ae48",
+    "current": "0e3b7da41c214ef3cb241e5df58c2ff9628231a021be0d1708292d373743ae48",
+    "unchanged": true
+  },
+  {
+    "path": "server/narrative.ts",
+    "base": "9f9c696431d134a0a9db50f6c6c2c7872f0f1970fd87ce6f2da575ec74a13ca3",
+    "current": "9f9c696431d134a0a9db50f6c6c2c7872f0f1970fd87ce6f2da575ec74a13ca3",
+    "unchanged": true
+  },
+  {
+    "path": "server/storage.ts",
+    "base": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b",
+    "current": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b",
+    "unchanged": true
+  },
+  {
+    "path": "server/dialogue.ts",
+    "base": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+    "current": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+    "unchanged": true
+  },
+  {
+    "path": "server/game.ts",
+    "base": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+    "current": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+    "unchanged": true
+  },
+  {
+    "path": "server/office.ts",
+    "base": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+    "current": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+    "unchanged": true
+  },
+  {
+    "path": "server/romance.ts",
+    "base": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+    "current": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+    "unchanged": true
+  },
+  {
+    "path": "server/interpretation.ts",
+    "base": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+    "current": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+    "unchanged": true
+  },
+  {
+    "path": "server/provider.ts",
+    "base": "e0e19d21eac3e9f5b430162db54afedcda6cf67bdf9b9a6ebc78f553878e8393",
+    "current": "e0e19d21eac3e9f5b430162db54afedcda6cf67bdf9b9a6ebc78f553878e8393",
+    "unchanged": true
+  },
+  {
+    "path": "server/commitments.test.ts",
+    "base": "d6a9dfa4d3de052082331b7bc8d4164c3cca985f270bf4d70e6d89f61057b184",
+    "current": "d6a9dfa4d3de052082331b7bc8d4164c3cca985f270bf4d70e6d89f61057b184",
+    "unchanged": true
+  },
+  {
+    "path": "server/commitments-http.test.ts",
+    "base": "85ad89d60f56e0c8b3cf7ce87dd2a08321a0947b93e8e8e225bfcf95b22d55ef",
+    "current": "85ad89d60f56e0c8b3cf7ce87dd2a08321a0947b93e8e8e225bfcf95b22d55ef",
+    "unchanged": true
+  }
+]

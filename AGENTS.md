@@ -1,6 +1,10 @@
 # AFTER HOURS — project direction
 
-## Current continuation: persistent joint and partial commitments
+## Current integrated bounded commitment candidate
+
+Read `docs/v2-state-parent-integrated/review.md` first. Root now contains frozen state-Ralph G1 plus independent contract coverage, recipient, sentence-scoped delegation, atomic acceptance fixes and G2 bounded history/refusal/deduplication fixes. Final commitments SHA is `d29ef52d07bae1e71f2e05e24f394c201bd666be0cc91e9d489c54aef83e9b4a`, narrative `80dc19e6b3aec1db26fc69a344fbce48c38a026ae03ceaa30e41f674833f7764`.358 unit tests and build pass; current browser result is recorded in that review. Root3001 was restarted and HTTP200 confirmed. The separate Ralph worktree may lack parent fixes: compare exact sources, never overwrite root wholesale. Preserve original FAIL verdicts. New real-model generation remains unverified;12+32 consumed, proposed24 unanswered and active approval ledger absent. Do not call any paid smoke runner without actual approval. Existing bounded Korean validation does not prove general entailment.
+
+## Earlier continuation: persistent joint and partial commitments
 
 The root's current narrative SHA is `5aa03219df2bcf3bb2794f604f66d3ebfde55bee13b8cee671face35de42b0f1`; build and325 unit tests pass. Read `docs/v2-parent-compound/review.md`, then `docs/v2-mutual-state-review/README.md` and `minimal-design.md`. The exact active validated Seed is `verification/v2-sequential-generation2.seed.json` (`seed_84d0c8a7a66d`). The previous sequential Ralph ended grade_regressing after2 generations (official0/7, QA0.55); its exact terminal and per-generation results are preserved in `docs/v2-sequential-ralph/`.
 

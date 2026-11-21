@@ -1,0 +1,63 @@
+diff --git a/server/commitments.ts b/server/commitments.ts
+index 39cc2c1..3fc6763 100644
+--- a/server/commitments.ts
++++ b/server/commitments.ts
+@@ -63,12 +63,12 @@ export function validCommitments(s:NarrativeState):boolean{
+  return true;
+ }
+ type Performs=(offer:StoryEvent,sources:{text:string;action:boolean}[],names:string[],single:boolean)=>boolean;
+-export function applyProgress(s:NarrativeState,text:string,r:NarrativeReply,events:StoryEvent[],names:string[],performs:Performs,consent:(s:string)=>boolean){
++export function applyProgress(s:NarrativeState,text:string,r:NarrativeReply,events:StoryEvent[],names:string[],performs:Performs,consent:(s:string,quote:string)=>boolean){
+  const touched=new Set<Commitment>();
+  for(const a of r.commitmentAmendments??[]){
+   const c=commitments(s).find(c=>c.promiseId===a.promiseId),condition=c?.conditions.find(c=>c.id===a.conditionId);
+   if(!c||!condition||!c.acceptanceIds.length||c.status==='completed'||condition.evidenceIds.length||condition.performer===a.performer)fail();
+-  if(!text.includes(a.playerQuote)||!r.line.includes(a.npcQuote)||![text,r.line].every(q=>consent(q)&&/대신|맡/.test(q)))fail();
++  if(!text.includes(a.playerQuote)||!r.line.includes(a.npcQuote)||!consent(text,a.playerQuote)||!consent(r.line,a.npcQuote)||![a.playerQuote,a.npcQuote].every(q=>/대신|맡/.test(q)))fail();
+   const taking=a.performer==='npc'?a.npcQuote:a.playerQuote;
+   if(!/(?:제가|내가|저는|나는)/.test(taking))fail();
+   // Both parties must refer to this condition, not a simultaneous unrelated favour.
+@@ -91,7 +91,8 @@ export function applyProgress(s:NarrativeState,text:string,r:NarrativeReply,even
+   }
+   // Validate the entire source, not a convenient positive substring hiding a denial.
+   if(!source.includes(p.quote)||!performs({...origin!,subject:p.performer,text:condition!.action},[{text:source,action}],names,false))fail();
+-  const recipients=[...source.matchAll(/([가-힣A-Za-z0-9]+)(?:에게|한테)\s/g)].map(m=>m[1]);
++  // Focus/topic particles do not change the recipient: 친구에게만 is still 친구.
++  const recipients=[...source.matchAll(/([가-힣A-Za-z0-9]+?)(?:에게|한테|께)(?:만|도|는|까지|라도)?(?=\s|[,，.!?。！？;；]|$)/g)].map(m=>m[1]);
+   const targets=condition!.target==='서로'?(p.performer==='player'?['유나','서유나','부장','부장님','박도현']:['당신','플레이어',...names]):[condition!.target];
+   if(recipients.some(target=>!targets.includes(target)))fail();
+   if(condition!.evidenceIds.length){touched.add(c!);continue;}
+diff --git a/server/narrative.ts b/server/narrative.ts
+index cbe6335..83b9454 100644
+--- a/server/narrative.ts
++++ b/server/narrative.ts
+@@ -58,7 +58,7 @@ const injection=(text:string)=>/system\s*:|developer\s*:|규칙.{0,10}무시|즉
+ const refused=(text:string)=>/싫|거절|않|아니|못 하|안 할|안 갈|안 해|보류|(?:^|\s)안\s*(?:돼요|돼|됩니다)(?=$|[\s.!?。！？…])/.test(text);
+ // Inspect the whole clause around the quote, including a negation after the quote.
+ // Sentence punctuation belongs to its clause: a quoted question cannot become consent.
+-const consentClause=(text:string,evidence:string)=>{
++const consentClause=(text:string,evidence:string,sentenceOnly=false)=>{
+  const quote=evidence.trim(),start=text.indexOf(quote);
+  if(!quote||start<0)return text;
+  // An ambiguous repeated quote cannot choose only its convenient occurrence.
+@@ -69,7 +69,8 @@ const consentClause=(text:string,evidence:string)=>{
+   if(close){quoted.add(i);if(text[i]===close)close='';}
+   else if(pairs[text[i]]){close=pairs[text[i]];quoted.add(i);}
+  }
+- const end=start+quote.length,breaks=Array.from(text.matchAll(/[.!?。！？;；\n]+|[,，]|하지만|지만|대신|그러나/gu)).filter(b=>!quoted.has(b.index!));
++ const boundary=sentenceOnly?/[.!?。！？;；\n]+/gu:/[.!?。！？;；\n]+|[,，]|하지만|지만|대신|그러나/gu;
++ const end=start+quote.length,breaks=Array.from(text.matchAll(boundary)).filter(b=>!quoted.has(b.index!));
+  const left=breaks.filter(b=>b.index!+b[0].length<=start).at(-1);
+  const right=breaks.find(b=>b.index!+b[0].length>=end);
+  return text.slice(left?left.index!+left[0].length:0,right?right.index!+right[0].length:text.length);
+@@ -233,7 +234,9 @@ export function reconcile(game:Game,text:string,reply:NarrativeReply):{game:Game
+  const accepted:StoryEvent[]=[],names=playerNames([...prior.events,...reply.events.filter(e=>e.evidence.trim().length>=2&&text.includes(e.evidence))],[...statements,text]);
+  if(reply.actionBeats.some(beat=>writesPlayer(beat,names)))throw Error('플레이어 행동을 대신 작성할 수 없습니다.');
+  if(injection(text)&&((reply.commitmentProgress?.length??0)+(reply.commitmentAmendments?.length??0)+(reply.commitmentOffers?.length??0)))throw Error('약속 근거가 유효하지 않습니다.');
+- applyProgress(s,text,reply,accepted,names,performedCommitment,consent);
++ // A delegation quote keeps its entire sentence, including same-sentence denial,
++ // without treating an unrelated earlier refusal as refusal of this amendment.
++ applyProgress(s,text,reply,accepted,names,performedCommitment,(source,quote)=>consent(consentClause(source,quote,true)));
+  let handled=0;
+  if(!injection(text))for(const proposal of reply.events){
+   const e={...proposal},ref=prior.events.find(p=>p.id===e.reference);

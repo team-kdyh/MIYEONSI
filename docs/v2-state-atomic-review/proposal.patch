@@ -1,0 +1,16 @@
+--- a/server/commitments.ts
++++ b/server/commitments.ts
+@@ -78,7 +78,12 @@
+  }
+  for(const p of r.commitmentProgress??[]){
+   const c=commitments(s).find(c=>c.promiseId===p.promiseId),condition=c?.conditions.find(c=>c.id===p.conditionId),origin=s.events.find(e=>e.id===p.promiseId);
+-  if(!c||!condition||!origin||!c.acceptanceIds.length||condition.performer!==p.performer||s.events.some(e=>(e.reference===c.promiseId||c.acceptanceIds.includes(e.reference))&&e.status==='refused'))fail();
++  // A grounded acceptance and real performance may arrive in the same turn.
++  // This is provisional: reconcile validates every acceptance before committing
++  // any change, and registerCommitments attaches its server-owned event ID.
++  const referencesThis=(e:{kind:string;reference:string})=>!!c&&e.kind==='promise'&&(e.reference===c.promiseId||c.acceptanceIds.includes(e.reference));
++  const hasAcceptance=!!c&&(c.acceptanceIds.length>0||r.events.some(e=>referencesThis(e)&&e.status==='accepted'));
++  if(!c||!condition||!origin||!hasAcceptance||condition.performer!==p.performer||[...s.events,...r.events].some(e=>referencesThis(e)&&e.status==='refused'))fail();
+   let source='',action=false,existing:StoryEvent|undefined;
+   if(p.source==='player'&&p.performer==='player')source=text;
+   if(p.source==='line'&&p.performer==='npc')source=r.line;

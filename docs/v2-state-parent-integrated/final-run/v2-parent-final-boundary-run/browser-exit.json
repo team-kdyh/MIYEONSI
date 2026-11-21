@@ -1,0 +1,6 @@
+{
+  "scope": "Exact final bounded-state source with controlled responses; paid0",
+  "exitCode": 0,
+  "command": "npx playwright test",
+  "port": 3091
+}

@@ -1,0 +1,482 @@
+{
+  "transport": "deterministic mock, not live dialogue quality",
+  "observations": [
+    {
+      "input": "민지에게 그래프만 넘기겠습니다.",
+      "before": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        }
+      },
+      "after": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "민지에게 그래프만 넘기겠습니다."
+          },
+          {
+            "speaker": "박도현",
+            "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?"
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "text": "민지에게 그래프만 인계",
+              "subject": "mutual",
+              "status": "accepted",
+              "reference": "",
+              "evidence": "민지에게 그래프만 넘기겠습니다",
+              "value": "owner",
+              "id": "db66cc87-6283-4c9b-9333-e4317b3d3006",
+              "turn": 1
+            },
+            {
+              "id": "20b49c19-f53c-4206-899b-9d004a635733",
+              "turn": 1,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 종이 봉투를 접는다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "offer",
+          "emotion": "호기심",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T05:41:24.725Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            },
+            {
+              "id": "db66cc87-6283-4c9b-9333-e4317b3d3006",
+              "eventId": "db66cc87-6283-4c9b-9333-e4317b3d3006",
+              "version": 1,
+              "confirmedAt": "2026-11-21T05:41:24.726Z",
+              "kind": "scene",
+              "text": "민지에게 그래프만 인계"
+            },
+            {
+              "id": "20b49c19-f53c-4206-899b-9d004a635733",
+              "eventId": "20b49c19-f53c-4206-899b-9d004a635733",
+              "version": 1,
+              "confirmedAt": "2026-11-21T05:41:24.726Z",
+              "kind": "scene",
+              "text": "유나가 종이 봉투를 접는다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "민지에게 그래프만 넘기겠습니다.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "민지에게 그래프만 인계",
+              "version": 1,
+              "eventId": "db66cc87-6283-4c9b-9333-e4317b3d3006"
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 종이 봉투를 접는다.",
+              "version": 1,
+              "eventId": "20b49c19-f53c-4206-899b-9d004a635733"
+            }
+          ],
+          "reply": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "민지에게 그래프만 넘기겠습니다."
+            }
+          ],
+          "actionBeats": [
+            "유나가 종이 봉투를 접는다."
+          ]
+        }
+      }
+    },
+    {
+      "input": "오늘 인계는 거절합니다.",
+      "before": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        }
+      },
+      "after": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "오늘 인계는 거절합니다."
+          },
+          {
+            "speaker": "박도현",
+            "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?"
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "text": "오늘 인계 제안 거절",
+              "subject": "player",
+              "status": "offered",
+              "reference": "",
+              "evidence": "오늘 인계는 거절합니다",
+              "value": "",
+              "id": "a692c49c-50d5-4727-a741-8acf6c1ef15c",
+              "turn": 1
+            },
+            {
+              "id": "614c2464-e59d-45bc-b17c-bb7db24751a3",
+              "turn": 1,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 종이 봉투를 접는다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "offer",
+          "emotion": "호기심",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T05:41:24.726Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            },
+            {
+              "id": "a692c49c-50d5-4727-a741-8acf6c1ef15c",
+              "eventId": "a692c49c-50d5-4727-a741-8acf6c1ef15c",
+              "version": 1,
+              "confirmedAt": "2026-11-21T05:41:24.726Z",
+              "kind": "scene",
+              "text": "오늘 인계 제안 거절"
+            },
+            {
+              "id": "614c2464-e59d-45bc-b17c-bb7db24751a3",
+              "eventId": "614c2464-e59d-45bc-b17c-bb7db24751a3",
+              "version": 1,
+              "confirmedAt": "2026-11-21T05:41:24.726Z",
+              "kind": "scene",
+              "text": "유나가 종이 봉투를 접는다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "오늘 인계는 거절합니다.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "오늘 인계 제안 거절",
+              "version": 1,
+              "eventId": "a692c49c-50d5-4727-a741-8acf6c1ef15c"
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 종이 봉투를 접는다.",
+              "version": 1,
+              "eventId": "614c2464-e59d-45bc-b17c-bb7db24751a3"
+            }
+          ],
+          "reply": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "오늘 인계는 거절합니다."
+            }
+          ],
+          "actionBeats": [
+            "유나가 종이 봉투를 접는다."
+          ]
+        }
+      }
+    },
+    {
+      "input": "대신 화면 공유로 오류 두 개만 고치겠습니다.",
+      "before": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        }
+      },
+      "after": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "대신 화면 공유로 오류 두 개만 고치겠습니다."
+          },
+          {
+            "speaker": "박도현",
+            "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?"
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "text": "화면 공유로 오류 두 개 수정",
+              "subject": "mutual",
+              "status": "accepted",
+              "reference": "",
+              "evidence": "화면 공유로 오류 두 개만 고치겠습니다",
+              "value": "scope",
+              "id": "6b111ce1-905a-48ba-b248-c3718c04fa07",
+              "turn": 1
+            },
+            {
+              "id": "55e54651-375f-43c1-9f5f-aebf3eac4598",
+              "turn": 1,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 종이 봉투를 접는다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "offer",
+          "emotion": "호기심",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T05:41:24.726Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            },
+            {
+              "id": "6b111ce1-905a-48ba-b248-c3718c04fa07",
+              "eventId": "6b111ce1-905a-48ba-b248-c3718c04fa07",
+              "version": 1,
+              "confirmedAt": "2026-11-21T05:41:24.727Z",
+              "kind": "scene",
+              "text": "화면 공유로 오류 두 개 수정"
+            },
+            {
+              "id": "55e54651-375f-43c1-9f5f-aebf3eac4598",
+              "eventId": "55e54651-375f-43c1-9f5f-aebf3eac4598",
+              "version": 1,
+              "confirmedAt": "2026-11-21T05:41:24.727Z",
+              "kind": "scene",
+              "text": "유나가 종이 봉투를 접는다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "대신 화면 공유로 오류 두 개만 고치겠습니다.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "화면 공유로 오류 두 개 수정",
+              "version": 1,
+              "eventId": "6b111ce1-905a-48ba-b248-c3718c04fa07"
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 종이 봉투를 접는다.",
+              "version": 1,
+              "eventId": "55e54651-375f-43c1-9f5f-aebf3eac4598"
+            }
+          ],
+          "reply": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "대신 화면 공유로 오류 두 개만 고치겠습니다."
+            }
+          ],
+          "actionBeats": [
+            "유나가 종이 봉투를 접는다."
+          ]
+        }
+      }
+    }
+  ]
+}

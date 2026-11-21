@@ -1,0 +1,96 @@
+{
+  "observedBeforeFinalFreeze": true,
+  "files": [
+    {
+      "path": "server/boundaries.test.ts",
+      "before": "4b4696e36db607a171e555e9095e6fcc664adbd769ac9b6e7c4765f83a2aa458",
+      "testedAfter": "5c337434b8571ece449239360016d1ae71eb026b8f3f52a40933df7c0563078b",
+      "scope": "CRLF/LF bytes only; semantic text and compiled dist unchanged"
+    },
+    {
+      "path": "server/music.test.ts",
+      "before": "a96b3a75746ad0fdad049918940a24417440316c6cfc7d2595503c8ea734d0e0",
+      "testedAfter": "7d852867e9508110191ac1e73326b1f20ffaece325df4a4e4c205472f5a2574e",
+      "scope": "CRLF/LF bytes only; semantic text and compiled dist unchanged"
+    },
+    {
+      "path": "server/narrative-counterfactual.test.ts",
+      "before": "b9922bc539054fdd47d5ba0db223519cfd186650cd19787596d1de972c1433cf",
+      "testedAfter": "fdce8e99bf04a9c4b689ddf1e6a9327a1038597f8eaca060f374053139ddf3d1",
+      "scope": "CRLF/LF bytes only; semantic text and compiled dist unchanged"
+    },
+    {
+      "path": "server/narrative-natural-delivery.test.ts",
+      "before": "2a99b42f99e038791983a2a7b6a79e7e4208b5c7a965644c2b45896e6ded6b3d",
+      "testedAfter": "92b63d6b0e1bb191905ad26242c4e19a705a53d41ed23e8b504ab3b0dc9b0ce5",
+      "scope": "CRLF/LF bytes only; semantic text and compiled dist unchanged"
+    },
+    {
+      "path": "server/narrative-promise-edge.test.ts",
+      "before": "a7151e1dc0c3b1965d79412bb85ba3b57d4fc1785cde1fca3ce5a245b79fad41",
+      "testedAfter": "efd0ed9a153f20d804e9d2d969f43738f1c042605782c4a9f86285f94356616c",
+      "scope": "CRLF/LF bytes only; semantic text and compiled dist unchanged"
+    },
+    {
+      "path": "server/narrative-short-reply.test.ts",
+      "before": "a196a934f62366ce34dda8a3d8c44c94b8229dddf6abd19431c2883bdc6d5ab7",
+      "testedAfter": "c5815acecd3557b49752ab14f7c32a6e88a9efcece2e38c939a16ed75f5dc103",
+      "scope": "CRLF/LF bytes only; semantic text and compiled dist unchanged"
+    },
+    {
+      "path": "server/v2-ac3-lifecycle.test.ts",
+      "before": "8f87cdbb2cda3bcd4e03fbbabde59f58102e9fb820363f0cebc9e4615e2e2e44",
+      "testedAfter": "01b4237cad47f53b84d80ac2512813d00e96a2f3427c9d7af27fd0b4daea2a5a",
+      "scope": "CRLF/LF bytes only; semantic text and compiled dist unchanged"
+    },
+    {
+      "path": "server/visual-binding.test.ts",
+      "before": "3a224920f8ed5d3a115a80dcf939e1938e2b4b74841532acd83e41709315f816",
+      "testedAfter": "6f6ae25b4eb34b8ba257eccc18b159195c37f59755d45851ce5e1b2a203515ca",
+      "scope": "CRLF/LF bytes only; semantic text and compiled dist unchanged"
+    },
+    {
+      "path": "src/collection.ts",
+      "before": "e790a9470c2f3584c6190b647fb0ed631a46ef115482affd0de56e0255840c80",
+      "testedAfter": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+      "scope": "CRLF/LF bytes only; semantic text and compiled dist unchanged"
+    },
+    {
+      "path": "src/ConversationViewport.tsx",
+      "before": "77b6b56d5e255fcec0773604e738b5ace2867adc220067a1a33c6120120f3171",
+      "testedAfter": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+      "scope": "CRLF/LF bytes only; semantic text and compiled dist unchanged"
+    },
+    {
+      "path": "src/main.tsx",
+      "before": "7fe72805c7fdc5ac1341beea45cc99d2c27e09eac5912f93467a339a663eadae",
+      "testedAfter": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+      "scope": "CRLF/LF bytes only; semantic text and compiled dist unchanged"
+    },
+    {
+      "path": "src/music.ts",
+      "before": "f16880daffa7a8996e4040112543b61f809f6413d391c67ef510d0c7137d0045",
+      "testedAfter": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+      "scope": "CRLF/LF bytes only; semantic text and compiled dist unchanged"
+    },
+    {
+      "path": "src/presentation.ts",
+      "before": "ad53276bd1d890422d865915fa5896271e39c59678355ac09af2a9bc85f6faa9",
+      "testedAfter": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+      "scope": "CRLF/LF bytes only; semantic text and compiled dist unchanged"
+    },
+    {
+      "path": "src/style.css",
+      "before": "aacea413940c9eefd6893e4999da024b3b085c3a28bcf5487c73315196056dcf",
+      "testedAfter": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+      "scope": "CRLF/LF bytes only; semantic text and compiled dist unchanged"
+    },
+    {
+      "path": "src/visualAssets.ts",
+      "before": "74bf10d9ed51214c21576d540c1d62e249f599f3e163260e76d384e3c1c46a45",
+      "testedAfter": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179",
+      "scope": "CRLF/LF bytes only; semantic text and compiled dist unchanged"
+    }
+  ],
+  "preservedCompiledRuntime": true
+}

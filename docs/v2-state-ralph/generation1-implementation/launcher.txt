@@ -1,0 +1,20 @@
+Building AFTER HOURS...
+
+> after-hours@0.1.0 build
+> npm run typecheck && vite build
+
+
+> after-hours@0.1.0 typecheck
+> tsc --noEmit
+
+vite v6.4.6 building for production...
+transforming...
+✓ 37 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.42 kB │ gzip:  0.32 kB
+dist/assets/index-LjVWzUeO.css   13.30 kB │ gzip:  3.98 kB
+dist/assets/index-Mjy-n9FF.js   272.94 kB │ gzip: 88.34 kB
+✓ built in 798ms
+AFTER HOURS is ready: http://127.0.0.1:3188
+Use stop.cmd to stop the background server. Saves remain on disk.

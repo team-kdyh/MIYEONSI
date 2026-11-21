@@ -1,0 +1,87 @@
+{
+  "correctedAt": "2026-11-21T05:41:46.1528403Z",
+  "scope": "Focused in-memory path policy and local .NET hashing checks only; no ZIP audit/read/extract and no private file reads",
+  "parserErrors": 0,
+  "getFileHashCallsInAudit": 0,
+  "policyChecks": [
+    {
+      "path": "docs/v2-parent-compound/artifacts/docs/example.json",
+      "expectedForbidden": false,
+      "actualForbidden": false,
+      "pass": true
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/example.json",
+      "expectedForbidden": false,
+      "actualForbidden": false,
+      "pass": true
+    },
+    {
+      "path": "docs/v2-state-parent-integrated/artifacts/docs/example.json",
+      "expectedForbidden": false,
+      "actualForbidden": false,
+      "pass": true
+    },
+    {
+      "path": "docs/v2-state-ralph/generation1-implementation/artifacts/docs/example.json",
+      "expectedForbidden": false,
+      "actualForbidden": false,
+      "pass": true
+    },
+    {
+      "path": "artifacts/AFTER-HOURS-local.zip",
+      "expectedForbidden": true,
+      "actualForbidden": true,
+      "pass": true
+    },
+    {
+      "path": "private/profile.json",
+      "expectedForbidden": true,
+      "actualForbidden": true,
+      "pass": true
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/.ralph/progress.json",
+      "expectedForbidden": true,
+      "actualForbidden": true,
+      "pass": true
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/.env",
+      "expectedForbidden": true,
+      "actualForbidden": true,
+      "pass": true
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/private/profile.json",
+      "expectedForbidden": true,
+      "actualForbidden": true,
+      "pass": true
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/node_modules/index.js",
+      "expectedForbidden": true,
+      "actualForbidden": true,
+      "pass": true
+    },
+    {
+      "path": "docs/unlisted/artifacts/example.json",
+      "expectedForbidden": true,
+      "actualForbidden": true,
+      "pass": true
+    }
+  ],
+  "hashHelperMatchesIndependentCmdlet": true,
+  "files": [
+    {
+      "path": ".ralph/v2-state-package-audit.ps1",
+      "bytes": 14364,
+      "sha256": "ad5e298374cfa76d227d2dc987153f5df5133e24e5f53a44126211bec7126271"
+    },
+    {
+      "path": "docs/v2-state-package/preflight.md",
+      "bytes": 7556,
+      "sha256": "a9af166000b91e7941e50f1a5dcb71f8dbb364815806cb50fb2591b394238563"
+    }
+  ]
+}

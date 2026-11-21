@@ -1,0 +1,97 @@
+{
+  "executedAt": "2026-11-21T05:41:24.152Z",
+  "provider": "offline",
+  "realHttpServer": true,
+  "paidCalls": 0,
+  "observations": [
+    {
+      "name": "empty",
+      "status": 400,
+      "before": "d8b48f0b2bab249ba941f73a7677b980bd8571d36842ad132ac5ad29980d3f28",
+      "after": "d8b48f0b2bab249ba941f73a7677b980bd8571d36842ad132ac5ad29980d3f28",
+      "unchanged": true
+    },
+    {
+      "name": "whitespace",
+      "status": 400,
+      "before": "d8b48f0b2bab249ba941f73a7677b980bd8571d36842ad132ac5ad29980d3f28",
+      "after": "d8b48f0b2bab249ba941f73a7677b980bd8571d36842ad132ac5ad29980d3f28",
+      "unchanged": true
+    },
+    {
+      "name": "null",
+      "status": 400,
+      "before": "d8b48f0b2bab249ba941f73a7677b980bd8571d36842ad132ac5ad29980d3f28",
+      "after": "d8b48f0b2bab249ba941f73a7677b980bd8571d36842ad132ac5ad29980d3f28",
+      "unchanged": true
+    },
+    {
+      "name": "number",
+      "status": 400,
+      "before": "d8b48f0b2bab249ba941f73a7677b980bd8571d36842ad132ac5ad29980d3f28",
+      "after": "d8b48f0b2bab249ba941f73a7677b980bd8571d36842ad132ac5ad29980d3f28",
+      "unchanged": true
+    },
+    {
+      "name": "boolean",
+      "status": 400,
+      "before": "d8b48f0b2bab249ba941f73a7677b980bd8571d36842ad132ac5ad29980d3f28",
+      "after": "d8b48f0b2bab249ba941f73a7677b980bd8571d36842ad132ac5ad29980d3f28",
+      "unchanged": true
+    },
+    {
+      "name": "array",
+      "status": 400,
+      "before": "d8b48f0b2bab249ba941f73a7677b980bd8571d36842ad132ac5ad29980d3f28",
+      "after": "d8b48f0b2bab249ba941f73a7677b980bd8571d36842ad132ac5ad29980d3f28",
+      "unchanged": true
+    },
+    {
+      "name": "object",
+      "status": 400,
+      "before": "d8b48f0b2bab249ba941f73a7677b980bd8571d36842ad132ac5ad29980d3f28",
+      "after": "d8b48f0b2bab249ba941f73a7677b980bd8571d36842ad132ac5ad29980d3f28",
+      "unchanged": true
+    },
+    {
+      "name": "501 characters",
+      "status": 400,
+      "before": "d8b48f0b2bab249ba941f73a7677b980bd8571d36842ad132ac5ad29980d3f28",
+      "after": "d8b48f0b2bab249ba941f73a7677b980bd8571d36842ad132ac5ad29980d3f28",
+      "unchanged": true
+    },
+    {
+      "name": "malformed JSON",
+      "raw": "{bad json",
+      "status": 400,
+      "unchanged": true
+    },
+    {
+      "name": "malformed JSON",
+      "raw": "\"primitive\"",
+      "status": 400,
+      "unchanged": true
+    },
+    {
+      "name": "500 characters",
+      "status": 200,
+      "versionDelta": 1
+    },
+    {
+      "name": "UTF-8 HTTP body boundary",
+      "bytes": 4096,
+      "status": 200,
+      "before": "d989d6ca963664ded1dbd4499c6de5e4b5cfd1edb0309664b47076eedb7d21a6",
+      "after": "78be97917f16fce4af7709789c6f4053e3737ce56345116f31be9a99f0a83925",
+      "versionDelta": 1
+    },
+    {
+      "name": "UTF-8 HTTP body boundary",
+      "bytes": 4097,
+      "status": 400,
+      "before": "78be97917f16fce4af7709789c6f4053e3737ce56345116f31be9a99f0a83925",
+      "after": "78be97917f16fce4af7709789c6f4053e3737ce56345116f31be9a99f0a83925",
+      "versionDelta": 0
+    }
+  ]
+}

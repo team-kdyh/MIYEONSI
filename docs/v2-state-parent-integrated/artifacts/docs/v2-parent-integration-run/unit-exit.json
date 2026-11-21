@@ -1,0 +1,5 @@
+{
+  "precondition": "Added three exact historical JSON fixtures missing from the isolated copy; no runtime source change",
+  "command": "npm test",
+  "exitCode": 0
+}

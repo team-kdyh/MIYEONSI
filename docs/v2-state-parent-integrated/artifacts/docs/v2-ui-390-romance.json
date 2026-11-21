@@ -1,0 +1,24 @@
+{
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "mode": "romance",
+  "provider": "mock HTTP response, no paid calls",
+  "normal": {
+    "pageFits": true,
+    "faceAbovePanel": true,
+    "inputVisible": true,
+    "sendVisible": true,
+    "panelBg": "linear-gradient(115deg, rgba(25, 22, 34, 0.91), rgba(41, 32, 48, 0.808))"
+  },
+  "long": {
+    "pageFits": true,
+    "faceAbovePanel": true,
+    "inputVisible": true,
+    "sendVisible": true,
+    "panelBg": "linear-gradient(115deg, rgba(25, 22, 34, 0.91), rgba(41, 32, 48, 0.808))"
+  },
+  "turns": 1,
+  "errors": []
+}

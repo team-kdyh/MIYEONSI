@@ -1,0 +1,117 @@
+✔ a refused promise cannot be delegated or revived, including refusal in the same turn (5.3117ms)
+✖ delegation history has a finite limit and rejects overflow without dropping obligations (13.1084ms)
+✖ repeated performance does not grow evidence or assessment history (3.7115ms)
+✔ normal partial performance and delegation preserve evidence before and after all save boundaries (38.8886ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 2
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 285.553
+
+✖ failing tests:
+
+test at server\commitments-followup.test.ts:28:1
+✖ delegation history has a finite limit and rejects overflow without dropping obligations (13.1084ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-state-49c8729\server\commitments-followup.test.ts:35:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at server\commitments-followup.test.ts:39:1
+✖ repeated performance does not grow evidence or assessment history (3.7115ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+  
+    [
+      {
+        acceptanceIds: [
+          '5929dcec-2230-420b-bb64-df9953f8a36f'
+        ],
+  ...
+          },
+  +       {
+  +         conditions: [
+  +           {
+  +             evidenceIds: [
+  +               '26d5effe-2ffe-4ea5-b8fd-8ff46770bb91'
+  +             ],
+  +             id: 'ef6197e2-141b-4894-a479-60e8f9a8f459'
+  +           },
+  +           {
+  +             evidenceIds: [],
+  +             id: '128d5a69-59a2-4368-b480-9fc1a7275fd8'
+  +           }
+  +         ],
+  +         reason: 'Server-derived from accepted performer-specific evidence',
+  +         result: 'partial',
+  +         turn: 4
+  +       },
+  +       {
+  +         conditions: [
+  +           {
+  +             evidenceIds: [
+  +               '26d5effe-2ffe-4ea5-b8fd-8ff46770bb91'
+  +             ],
+  +             id: 'ef6197e2-141b-4894-a479-60e8f9a8f459'
+  +           },
+  +           {
+  +             evidenceIds: [],
+  +             id: '128d5a69-59a2-4368-b480-9fc1a7275fd8'
+  +           }
+  +         ],
+  +         reason: 'Server-derived from accepted performer-specific evidence',
+  +         result: 'partial',
+  +         turn: 5
+  +       },
+  +       {
+  +         conditions: [
+  +           {
+  +             evidenceIds: [
+  +               '26d5effe-2ffe-4ea5-b8fd-8ff46770bb91'
+  +             ],
+  +             id: 'ef6197e2-141b-4894-a479-60e8f9a8f459'
+  +           },
+  +           {
+  +             evidenceIds: [],
+  +             id: '128d5a69-59a2-4368-b480-9fc1a7275fd8'
+  +           }
+  +         ],
+  +         reason: 'Server-derived from accepted performer-specific evidence',
+  +         result: 'partial',
+  +         turn: 6
+  +       }
+        ],
+        conditions: [
+          {
+            action: '노란 리본을 가져오고',
+            evidenceIds: [
+  
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-state-49c8729\server\commitments-followup.test.ts:44:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ { promiseId: 'b30bc231-b5e7-470f-b474-87c378a6d4f1', originalText: '제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.', acceptanceIds: [Array], conditions: [Array], amendments: [], assessments: [Array], status: 'partial' } ],
+    expected: [ { promiseId: 'b30bc231-b5e7-470f-b474-87c378a6d4f1', originalText: '제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.', acceptanceIds: [Array], conditions: [Array], amendments: [], assessments: [Array], status: 'partial' } ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

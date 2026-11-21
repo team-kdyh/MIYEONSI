@@ -1,0 +1,186 @@
+{
+  "scope": "Independent frozen-state implementation review and isolated bounded coverage prototype. No active/root source changes, API, HTTP server, credentials or private saves.",
+  "snapshot": {
+    "capturedAt": "2026-11-21T05:23:18.804013+00:00",
+    "source": "C:\\Users\\gjtjw\\.ouroboros\\worktrees\\대화형 스토리진행\\ralph-afterhours-v2-state-49c8729",
+    "scope": "Read-only frozen source/test snapshot; no credential/network/private save/runtime access",
+    "files": [
+      {
+        "file": "server/commitments.ts",
+        "before": "0e3b7da41c214ef3cb241e5df58c2ff9628231a021be0d1708292d373743ae48",
+        "copied": "0e3b7da41c214ef3cb241e5df58c2ff9628231a021be0d1708292d373743ae48",
+        "after": "0e3b7da41c214ef3cb241e5df58c2ff9628231a021be0d1708292d373743ae48",
+        "stable": true
+      },
+      {
+        "file": "server/narrative.ts",
+        "before": "9f9c696431d134a0a9db50f6c6c2c7872f0f1970fd87ce6f2da575ec74a13ca3",
+        "copied": "9f9c696431d134a0a9db50f6c6c2c7872f0f1970fd87ce6f2da575ec74a13ca3",
+        "after": "9f9c696431d134a0a9db50f6c6c2c7872f0f1970fd87ce6f2da575ec74a13ca3",
+        "stable": true
+      },
+      {
+        "file": "server/game.ts",
+        "before": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "copied": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "after": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "stable": true
+      },
+      {
+        "file": "server/office.ts",
+        "before": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+        "copied": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+        "after": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+        "stable": true
+      },
+      {
+        "file": "server/romance.ts",
+        "before": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+        "copied": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+        "after": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+        "stable": true
+      },
+      {
+        "file": "server/interpretation.ts",
+        "before": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+        "copied": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+        "after": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+        "stable": true
+      },
+      {
+        "file": "server/dialogue.ts",
+        "before": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "copied": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "after": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "stable": true
+      },
+      {
+        "file": "server/storage.ts",
+        "before": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b",
+        "copied": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b",
+        "after": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b",
+        "stable": true
+      },
+      {
+        "file": "server/provider.ts",
+        "before": "e0e19d21eac3e9f5b430162db54afedcda6cf67bdf9b9a6ebc78f553878e8393",
+        "copied": "e0e19d21eac3e9f5b430162db54afedcda6cf67bdf9b9a6ebc78f553878e8393",
+        "after": "e0e19d21eac3e9f5b430162db54afedcda6cf67bdf9b9a6ebc78f553878e8393",
+        "stable": true
+      },
+      {
+        "file": "src/visualAssets.ts",
+        "before": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179",
+        "copied": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179",
+        "after": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179",
+        "stable": true
+      },
+      {
+        "file": "server/commitments.test.ts",
+        "before": "d6a9dfa4d3de052082331b7bc8d4164c3cca985f270bf4d70e6d89f61057b184",
+        "copied": "d6a9dfa4d3de052082331b7bc8d4164c3cca985f270bf4d70e6d89f61057b184",
+        "after": "d6a9dfa4d3de052082331b7bc8d4164c3cca985f270bf4d70e6d89f61057b184",
+        "stable": true
+      },
+      {
+        "file": "server/narrative-natural-delivery.test.ts",
+        "before": "92b63d6b0e1bb191905ad26242c4e19a705a53d41ed23e8b504ab3b0dc9b0ce5",
+        "copied": "92b63d6b0e1bb191905ad26242c4e19a705a53d41ed23e8b504ab3b0dc9b0ce5",
+        "after": "92b63d6b0e1bb191905ad26242c4e19a705a53d41ed23e8b504ab3b0dc9b0ce5",
+        "stable": true
+      },
+      {
+        "file": "server/narrative-route-agency.test.ts",
+        "before": "f3c970fbfe7a701318ae68a57b927409004a2dab0ad69a8f603141d5c731279b",
+        "copied": "f3c970fbfe7a701318ae68a57b927409004a2dab0ad69a8f603141d5c731279b",
+        "after": "f3c970fbfe7a701318ae68a57b927409004a2dab0ad69a8f603141d5c731279b",
+        "stable": true
+      },
+      {
+        "file": "server/narrative-promise-edge.test.ts",
+        "before": "efd0ed9a153f20d804e9d2d969f43738f1c042605782c4a9f86285f94356616c",
+        "copied": "efd0ed9a153f20d804e9d2d969f43738f1c042605782c4a9f86285f94356616c",
+        "after": "efd0ed9a153f20d804e9d2d969f43738f1c042605782c4a9f86285f94356616c",
+        "stable": true
+      },
+      {
+        "file": "server/narrative-compound-natural.test.ts",
+        "before": "5e2502a7219a3622ba5b8b1fc58cff3e9f41d01a981314cce66641ab20c0886f",
+        "copied": "5e2502a7219a3622ba5b8b1fc58cff3e9f41d01a981314cce66641ab20c0886f",
+        "after": "5e2502a7219a3622ba5b8b1fc58cff3e9f41d01a981314cce66641ab20c0886f",
+        "stable": true
+      },
+      {
+        "file": "server/narrative-compound-promise.test.ts",
+        "before": "8c5cd8116c45aae46e74f16b31b10f720bf19ddacb323c517d92a51345a7c876",
+        "copied": "8c5cd8116c45aae46e74f16b31b10f720bf19ddacb323c517d92a51345a7c876",
+        "after": "8c5cd8116c45aae46e74f16b31b10f720bf19ddacb323c517d92a51345a7c876",
+        "stable": true
+      },
+      {
+        "file": "server/narrative-short-reply.test.ts",
+        "before": "c5815acecd3557b49752ab14f7c32a6e88a9efcece2e38c939a16ed75f5dc103",
+        "copied": "c5815acecd3557b49752ab14f7c32a6e88a9efcece2e38c939a16ed75f5dc103",
+        "after": "c5815acecd3557b49752ab14f7c32a6e88a9efcece2e38c939a16ed75f5dc103",
+        "stable": true
+      },
+      {
+        "file": "server/narrative-lifecycle-regression.test.ts",
+        "before": "41947c5680523474b182f6ce7c60cfe4010538f70ce07888afd1200205332fdc",
+        "copied": "41947c5680523474b182f6ce7c60cfe4010538f70ce07888afd1200205332fdc",
+        "after": "41947c5680523474b182f6ce7c60cfe4010538f70ce07888afd1200205332fdc",
+        "stable": true
+      },
+      {
+        "file": "server/narrative-agency-regression.test.ts",
+        "before": "19eec66a693dc72c02b62f39d5738823be84fa6d084f900f773317f8a280964f",
+        "copied": "19eec66a693dc72c02b62f39d5738823be84fa6d084f900f773317f8a280964f",
+        "after": "19eec66a693dc72c02b62f39d5738823be84fa6d084f900f773317f8a280964f",
+        "stable": true
+      }
+    ]
+  },
+  "sourceHash": "0e3b7da41c214ef3cb241e5df58c2ff9628231a021be0d1708292d373743ae48",
+  "proposalHash": "92528c37e8bdc5b627efd5c1ff57bf8031c666ef40cac833ba1cb95f6a560811",
+  "proposalTestHash": "9b00c297aadd3def164d04e0cc325354ca94c9c2b81f2be03504d9e18570e4d9",
+  "patchHash": "9957e9a2bd7778d202e769dfb94f209205f86f0b81c200c0d0cde746c3375178",
+  "unchangedModules": {
+    "narrative.ts": true,
+    "provider.ts": true,
+    "storage.ts": true,
+    "dialogue.ts": true,
+    "game.ts": true
+  },
+  "focusedMatrix": {
+    "total": 20,
+    "baseMatched": 14,
+    "proposalMatched": 19,
+    "proposalUnmatched": [
+      "known-tradeoff-particleless-offer-action"
+    ]
+  },
+  "compatibility": [
+    {
+      "version": "snapshot",
+      "exitCode": 0,
+      "tests": "174",
+      "pass": "174",
+      "fail": "0",
+      "failedTests": []
+    },
+    {
+      "version": "proposal",
+      "exitCode": 0,
+      "tests": "174",
+      "pass": "174",
+      "fail": "0",
+      "failedTests": []
+    }
+  ],
+  "newPortableTests": {
+    "passed": 14,
+    "total": 14
+  },
+  "strictTypecheckExit": 0,
+  "newApiCalls": 0
+}

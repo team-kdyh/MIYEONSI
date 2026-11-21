@@ -1,0 +1,32 @@
+{
+  "preparedAt": "2026-11-21T05:39:34.0190949Z",
+  "scope": "Helper syntax/preflight only. Existing ZIP is historical V1; no ZIP audit or rebuild executed.",
+  "parserErrors": 0,
+  "files": [
+    {
+      "path": ".ralph/v2-state-package-audit.ps1",
+      "bytes": 13739,
+      "sha256": "d141960485806140ced4ab4d5190ceda7b0a9724916e27fbccb927ce6d149dc7"
+    },
+    {
+      "path": "docs/v2-state-package/preflight.md",
+      "bytes": 6458,
+      "sha256": "3520e97c245ad7f16a2ffcb8ad67e58bd24fd991dc8bb84077829c6202aec931"
+    },
+    {
+      "path": "scripts/package-local.ps1",
+      "bytes": 1635,
+      "sha256": "28a2f1eba0d8b9bd998ce49768de33c3a27a573b2147ebf11127b552cff627bf"
+    },
+    {
+      "path": "scripts/audit-v2-package.ps1",
+      "bytes": 1998,
+      "sha256": "3601c6ffe078e4fade96623dedceda714149884e1d63c9e5ccd4cfd11f6f0ed1"
+    },
+    {
+      "path": "artifacts/AFTER-HOURS-local.zip",
+      "bytes": 47844576,
+      "sha256": "5b7e4810f69d61a33d66943b74bbbd87f36052eaaf6b5744e9cefa40a3ee007e"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+✔ joint promise remains partial when NPC explicitly has not performed; both performers complete (7.03ms)
+✔ normal partial turn survives automatic and three manual saves and store restart; next condition completes original (28.2506ms)
+✔ invalid IDs, performer, future, unrelated action and quoted denial cannot add evidence (1.5206ms)
+✔ delegation requires both explicit grounds and preserves previous performer (0.9386ms)
+✔ storage refuses fabricated completion and dangling evidence; refusal never promotes completion (0.7277ms)
+✔ legacy completion remains original evidence-insufficient history, with no invented performance (0.4332ms)
+✔ acceptance alone, wrong recipient, and NPC denial do not fulfill a condition (1.8138ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 260.5503

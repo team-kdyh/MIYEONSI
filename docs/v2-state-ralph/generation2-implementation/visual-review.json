@@ -1,0 +1,55 @@
+{
+  "reviewer": "current executing agent",
+  "time": "2026-11-21T05:35:26.198142+00:00",
+  "images": [
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/long-focus-1440-office.png",
+      "sha256": "7df50751bfccc695bfbc4dc3be21a9a5a7fb1546e0786b309e96aa905829e249",
+      "access": "opened successfully with view_image by current agent",
+      "reviewScope": "entire image; final frozen-run long-text captures reopened after final browser completion",
+      "observation": "four fresh long-text UI captures; prior boards are separately attributed",
+      "externalEvaluatorAccess": "unknown"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/long-focus-390-office.png",
+      "sha256": "5254dc1e85144dc2c39d5b0ccdc345fd9be3bc81e075f8c72354669ce698a8e1",
+      "access": "opened successfully with view_image by current agent",
+      "reviewScope": "entire image; final frozen-run long-text captures reopened after final browser completion",
+      "observation": "four fresh long-text UI captures; prior boards are separately attributed",
+      "externalEvaluatorAccess": "unknown"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/long-focus-1440-romance.png",
+      "sha256": "a4ede10b77c8732bce8a66a0a9a54fd188a92e945f4625db5e4d3320604ae511",
+      "access": "opened successfully with view_image by current agent",
+      "reviewScope": "entire image; final frozen-run long-text captures reopened after final browser completion",
+      "observation": "four fresh long-text UI captures; prior boards are separately attributed",
+      "externalEvaluatorAccess": "unknown"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/long-focus-390-romance.png",
+      "sha256": "324f41377fbcc82c8209308ee26b8011cd34e359e51412ff936a0ed2e85fdcd8",
+      "access": "opened successfully with view_image by current agent",
+      "reviewScope": "entire image; final frozen-run long-text captures reopened after final browser completion",
+      "observation": "four fresh long-text UI captures; prior boards are separately attributed",
+      "externalEvaluatorAccess": "unknown"
+    },
+    {
+      "path": "docs/v2-commitment-state/office-current-board.png",
+      "sha256": "cb5338f987fdb6c2740ed5fbbd7d48f63668afaa0985baeb6f814aac96fe20f8",
+      "access": "opened successfully with view_image by current agent",
+      "reviewScope": "entire prior comparison board",
+      "observation": "four fresh long-text UI captures; prior boards are separately attributed",
+      "externalEvaluatorAccess": "unknown"
+    },
+    {
+      "path": "docs/v2-commitment-state/romance-current-board.png",
+      "sha256": "cd1112f30ae939273c323d6ba61d86926200dcedbee8cdec5921e633d308d023",
+      "access": "opened successfully with view_image by current agent",
+      "reviewScope": "entire prior comparison board",
+      "observation": "four fresh long-text UI captures; prior boards are separately attributed",
+      "externalEvaluatorAccess": "unknown"
+    }
+  ],
+  "detail": "See review.md Direct visual reading; keyboard/settings are automated execution, not human interaction."
+}

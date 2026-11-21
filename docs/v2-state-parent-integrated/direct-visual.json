@@ -1,0 +1,53 @@
+{
+  "observedAt": "2026-11-21T05:47:13.680034+00:00",
+  "scope": "Parent visually opened four final controlled long-focus captures; not generated dialogue or physical mobile keyboard observation",
+  "images": [
+    {
+      "path": "docs/v2-state-parent-integrated/final-run/qa-screenshots/v2-ui/long-focus-1440-office.png",
+      "sha256": "7df50751bfccc695bfbc4dc3be21a9a5a7fb1546e0786b309e96aa905829e249",
+      "actuallyOpened": true,
+      "tool": "view_image",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    {
+      "path": "docs/v2-state-parent-integrated/final-run/qa-screenshots/v2-ui/long-focus-390-office.png",
+      "sha256": "6ee7e6a2cc6cc5ec90b23749e1736423a5f06cb7032a899173624ab6d6ffaf83",
+      "actuallyOpened": true,
+      "tool": "view_image",
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "path": "docs/v2-state-parent-integrated/final-run/qa-screenshots/v2-ui/long-focus-1440-romance.png",
+      "sha256": "a4ede10b77c8732bce8a66a0a9a54fd188a92e945f4625db5e4d3320604ae511",
+      "actuallyOpened": true,
+      "tool": "view_image",
+      "viewport": [
+        1440,
+        900
+      ]
+    },
+    {
+      "path": "docs/v2-state-parent-integrated/final-run/qa-screenshots/v2-ui/long-focus-390-romance.png",
+      "sha256": "499de66d00786954514a821e54c43d0646d52a782d777d4e90454068caa1c3b0",
+      "actuallyOpened": true,
+      "tool": "view_image",
+      "viewport": [
+        390,
+        844
+      ]
+    }
+  ],
+  "observations": [
+    "Both character faces and composer/send controls remain visible above and within the dark lower panel.",
+    "No white document slab or story-answer choice buttons visible.",
+    "Long text is confined to an internal scroll viewport; top line can be clipped at the scrolled position and the bottom hint overlays the fade.",
+    "Mobile supporting labels are small; lower body is behind the dialogue panel. This is not a claim all hands are unobscured in every pose."
+  ],
+  "audioListening": "not available; no listening approval"
+}

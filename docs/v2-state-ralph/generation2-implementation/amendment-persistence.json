@@ -1,0 +1,2396 @@
+{
+  "source": "mock normal turns; no completed state injection",
+  "trace": [
+    {
+      "input": "노란 리본 가져왔어요.",
+      "response": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+            "conditionId": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+            "performer": "player",
+            "source": "player",
+            "actionIndex": -1,
+            "eventId": "",
+            "quote": "노란 리본 가져왔어요."
+          }
+        ]
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "알겠어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "알겠어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "ribbon",
+              "id": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "evidence": "좋아요.",
+              "value": "ribbon",
+              "id": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [],
+              "status": "pending"
+            }
+          ],
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T05:39:50.334Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "eventId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "version": 1,
+              "confirmedAt": "2026-11-21T05:39:50.334Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed",
+              "eventId": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed",
+              "version": 2,
+              "confirmedAt": "2026-11-21T05:39:50.334Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "알겠어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "b48d02af-290e-4f48-a008-c04f4d78e341"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "알겠어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+            }
+          ],
+          "reply": "알겠어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "알겠어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "알겠어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "노란 리본 가져왔어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "알겠어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "ribbon",
+              "id": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "evidence": "좋아요.",
+              "value": "ribbon",
+              "id": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed",
+              "turn": 2
+            },
+            {
+              "id": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f",
+              "turn": 3,
+              "kind": "complication",
+              "subject": "player",
+              "text": "노란 리본 가져왔어요.",
+              "status": "fulfilled",
+              "reference": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+              "evidence": "노란 리본 가져왔어요.",
+              "value": "condition-evidence"
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                  "originalPerformer": "player",
+                  "evidenceIds": [
+                    "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                  ]
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [
+                {
+                  "turn": 3,
+                  "result": "partial",
+                  "conditions": [
+                    {
+                      "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                      "evidenceIds": [
+                        "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                      ]
+                    },
+                    {
+                      "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                      "evidenceIds": []
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                }
+              ],
+              "status": "partial"
+            }
+          ],
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T05:39:50.334Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "eventId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "version": 1,
+              "confirmedAt": "2026-11-21T05:39:50.334Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed",
+              "eventId": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed",
+              "version": 2,
+              "confirmedAt": "2026-11-21T05:39:50.334Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f",
+              "eventId": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f",
+              "version": 3,
+              "confirmedAt": "2026-11-21T05:39:50.335Z",
+              "kind": "scene",
+              "text": "노란 리본 가져왔어요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "알겠어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "b48d02af-290e-4f48-a008-c04f4d78e341"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "알겠어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+            },
+            {
+              "kind": "user_claim",
+              "text": "노란 리본 가져왔어요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "알겠어요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "노란 리본 가져왔어요.",
+              "version": 3,
+              "eventId": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+            }
+          ],
+          "reply": "알겠어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "노란 리본 가져왔어요."
+            }
+          ],
+          "actionBeats": []
+        }
+      }
+    },
+    {
+      "phase": "before-amendment",
+      "beforeSave": [
+        {
+          "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+          "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+          "acceptanceIds": [
+            "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+          ],
+          "conditions": [
+            {
+              "performer": "player",
+              "target": "유나",
+              "action": "노란 리본을 가져오고",
+              "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+              "originalPerformer": "player",
+              "evidenceIds": [
+                "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+              ]
+            },
+            {
+              "performer": "player",
+              "target": "유나",
+              "action": "편지를 접는",
+              "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+              "originalPerformer": "player",
+              "evidenceIds": []
+            }
+          ],
+          "amendments": [],
+          "assessments": [
+            {
+              "turn": 3,
+              "result": "partial",
+              "conditions": [
+                {
+                  "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                  "evidenceIds": [
+                    "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                  ]
+                },
+                {
+                  "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                  "evidenceIds": []
+                }
+              ],
+              "reason": "Server-derived from accepted performer-specific evidence"
+            }
+          ],
+          "status": "partial"
+        }
+      ],
+      "afterRestore": [
+        {
+          "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+          "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+          "acceptanceIds": [
+            "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+          ],
+          "conditions": [
+            {
+              "performer": "player",
+              "target": "유나",
+              "action": "노란 리본을 가져오고",
+              "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+              "originalPerformer": "player",
+              "evidenceIds": [
+                "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+              ]
+            },
+            {
+              "performer": "player",
+              "target": "유나",
+              "action": "편지를 접는",
+              "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+              "originalPerformer": "player",
+              "evidenceIds": []
+            }
+          ],
+          "amendments": [],
+          "assessments": [
+            {
+              "turn": 3,
+              "result": "partial",
+              "conditions": [
+                {
+                  "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                  "evidenceIds": [
+                    "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                  ]
+                },
+                {
+                  "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                  "evidenceIds": []
+                }
+              ],
+              "reason": "Server-derived from accepted performer-specific evidence"
+            }
+          ],
+          "status": "partial"
+        }
+      ],
+      "slots": [
+        [
+          {
+            "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                ]
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [
+              {
+                "turn": 3,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                    "evidenceIds": [
+                      "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                    ]
+                  },
+                  {
+                    "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              }
+            ],
+            "status": "partial"
+          }
+        ],
+        [
+          {
+            "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                ]
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [
+              {
+                "turn": 3,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                    "evidenceIds": [
+                      "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                    ]
+                  },
+                  {
+                    "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              }
+            ],
+            "status": "partial"
+          }
+        ],
+        [
+          {
+            "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                ]
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [
+              {
+                "turn": 3,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                    "evidenceIds": [
+                      "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                    ]
+                  },
+                  {
+                    "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              }
+            ],
+            "status": "partial"
+          }
+        ]
+      ]
+    },
+    {
+      "input": "편지는 대신 맡아 주세요.",
+      "response": {
+        "line": "제가 편지를 대신 맡을게요.",
+        "actionBeats": [],
+        "events": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentAmendments": [
+          {
+            "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+            "conditionId": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+            "performer": "npc",
+            "playerQuote": "편지는 대신 맡아 주세요.",
+            "npcQuote": "제가 편지를 대신 맡을게요."
+          }
+        ]
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "알겠어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "알겠어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "노란 리본 가져왔어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "알겠어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "ribbon",
+              "id": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "evidence": "좋아요.",
+              "value": "ribbon",
+              "id": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed",
+              "turn": 2
+            },
+            {
+              "id": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f",
+              "turn": 3,
+              "kind": "complication",
+              "subject": "player",
+              "text": "노란 리본 가져왔어요.",
+              "status": "fulfilled",
+              "reference": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+              "evidence": "노란 리본 가져왔어요.",
+              "value": "condition-evidence"
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                  "originalPerformer": "player",
+                  "evidenceIds": [
+                    "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                  ]
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [
+                {
+                  "turn": 3,
+                  "result": "partial",
+                  "conditions": [
+                    {
+                      "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                      "evidenceIds": [
+                        "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                      ]
+                    },
+                    {
+                      "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                      "evidenceIds": []
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                }
+              ],
+              "status": "partial"
+            }
+          ],
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T05:39:50.334Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "eventId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "version": 1,
+              "confirmedAt": "2026-11-21T05:39:50.334Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed",
+              "eventId": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed",
+              "version": 2,
+              "confirmedAt": "2026-11-21T05:39:50.334Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f",
+              "eventId": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f",
+              "version": 3,
+              "confirmedAt": "2026-11-21T05:39:50.335Z",
+              "kind": "scene",
+              "text": "노란 리본 가져왔어요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "알겠어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "b48d02af-290e-4f48-a008-c04f4d78e341"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "알겠어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+            },
+            {
+              "kind": "user_claim",
+              "text": "노란 리본 가져왔어요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "알겠어요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "노란 리본 가져왔어요.",
+              "version": 3,
+              "eventId": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+            }
+          ],
+          "reply": "알겠어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "노란 리본 가져왔어요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "알겠어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "알겠어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "노란 리본 가져왔어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "알겠어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "편지는 대신 맡아 주세요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "제가 편지를 대신 맡을게요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 4,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "ribbon",
+              "id": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "evidence": "좋아요.",
+              "value": "ribbon",
+              "id": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed",
+              "turn": 2
+            },
+            {
+              "id": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f",
+              "turn": 3,
+              "kind": "complication",
+              "subject": "player",
+              "text": "노란 리본 가져왔어요.",
+              "status": "fulfilled",
+              "reference": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+              "evidence": "노란 리본 가져왔어요.",
+              "value": "condition-evidence"
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                  "originalPerformer": "player",
+                  "evidenceIds": [
+                    "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                  ]
+                },
+                {
+                  "performer": "npc",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [
+                {
+                  "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+                  "conditionId": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                  "performer": "npc",
+                  "playerQuote": "편지는 대신 맡아 주세요.",
+                  "npcQuote": "제가 편지를 대신 맡을게요.",
+                  "id": "32cd3d8c-9e55-4f67-accc-384c41f423dd",
+                  "previousPerformer": "player",
+                  "turn": 4
+                }
+              ],
+              "assessments": [
+                {
+                  "turn": 3,
+                  "result": "partial",
+                  "conditions": [
+                    {
+                      "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                      "evidenceIds": [
+                        "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                      ]
+                    },
+                    {
+                      "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                      "evidenceIds": []
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                },
+                {
+                  "turn": 4,
+                  "result": "partial",
+                  "conditions": [
+                    {
+                      "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                      "evidenceIds": [
+                        "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                      ]
+                    },
+                    {
+                      "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                      "evidenceIds": []
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                }
+              ],
+              "status": "partial"
+            }
+          ],
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 4,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T05:39:50.334Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "eventId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "version": 1,
+              "confirmedAt": "2026-11-21T05:39:50.334Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed",
+              "eventId": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed",
+              "version": 2,
+              "confirmedAt": "2026-11-21T05:39:50.334Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f",
+              "eventId": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f",
+              "version": 3,
+              "confirmedAt": "2026-11-21T05:39:50.335Z",
+              "kind": "scene",
+              "text": "노란 리본 가져왔어요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "알겠어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "b48d02af-290e-4f48-a008-c04f4d78e341"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "알겠어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+            },
+            {
+              "kind": "user_claim",
+              "text": "노란 리본 가져왔어요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "알겠어요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "노란 리본 가져왔어요.",
+              "version": 3,
+              "eventId": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+            },
+            {
+              "kind": "user_claim",
+              "text": "편지는 대신 맡아 주세요.",
+              "version": 4
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "제가 편지를 대신 맡을게요.",
+              "version": 4,
+              "recallIds": []
+            }
+          ],
+          "reply": "제가 편지를 대신 맡을게요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "노란 리본 가져왔어요."
+            },
+            {
+              "turn": 4,
+              "text": "편지는 대신 맡아 주세요."
+            }
+          ],
+          "actionBeats": []
+        }
+      }
+    },
+    {
+      "phase": "after-amendment",
+      "beforeSave": [
+        {
+          "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+          "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+          "acceptanceIds": [
+            "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+          ],
+          "conditions": [
+            {
+              "performer": "player",
+              "target": "유나",
+              "action": "노란 리본을 가져오고",
+              "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+              "originalPerformer": "player",
+              "evidenceIds": [
+                "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+              ]
+            },
+            {
+              "performer": "npc",
+              "target": "유나",
+              "action": "편지를 접는",
+              "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+              "originalPerformer": "player",
+              "evidenceIds": []
+            }
+          ],
+          "amendments": [
+            {
+              "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "conditionId": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+              "performer": "npc",
+              "playerQuote": "편지는 대신 맡아 주세요.",
+              "npcQuote": "제가 편지를 대신 맡을게요.",
+              "id": "32cd3d8c-9e55-4f67-accc-384c41f423dd",
+              "previousPerformer": "player",
+              "turn": 4
+            }
+          ],
+          "assessments": [
+            {
+              "turn": 3,
+              "result": "partial",
+              "conditions": [
+                {
+                  "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                  "evidenceIds": [
+                    "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                  ]
+                },
+                {
+                  "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                  "evidenceIds": []
+                }
+              ],
+              "reason": "Server-derived from accepted performer-specific evidence"
+            },
+            {
+              "turn": 4,
+              "result": "partial",
+              "conditions": [
+                {
+                  "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                  "evidenceIds": [
+                    "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                  ]
+                },
+                {
+                  "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                  "evidenceIds": []
+                }
+              ],
+              "reason": "Server-derived from accepted performer-specific evidence"
+            }
+          ],
+          "status": "partial"
+        }
+      ],
+      "afterRestore": [
+        {
+          "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+          "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+          "acceptanceIds": [
+            "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+          ],
+          "conditions": [
+            {
+              "performer": "player",
+              "target": "유나",
+              "action": "노란 리본을 가져오고",
+              "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+              "originalPerformer": "player",
+              "evidenceIds": [
+                "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+              ]
+            },
+            {
+              "performer": "npc",
+              "target": "유나",
+              "action": "편지를 접는",
+              "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+              "originalPerformer": "player",
+              "evidenceIds": []
+            }
+          ],
+          "amendments": [
+            {
+              "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "conditionId": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+              "performer": "npc",
+              "playerQuote": "편지는 대신 맡아 주세요.",
+              "npcQuote": "제가 편지를 대신 맡을게요.",
+              "id": "32cd3d8c-9e55-4f67-accc-384c41f423dd",
+              "previousPerformer": "player",
+              "turn": 4
+            }
+          ],
+          "assessments": [
+            {
+              "turn": 3,
+              "result": "partial",
+              "conditions": [
+                {
+                  "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                  "evidenceIds": [
+                    "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                  ]
+                },
+                {
+                  "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                  "evidenceIds": []
+                }
+              ],
+              "reason": "Server-derived from accepted performer-specific evidence"
+            },
+            {
+              "turn": 4,
+              "result": "partial",
+              "conditions": [
+                {
+                  "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                  "evidenceIds": [
+                    "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                  ]
+                },
+                {
+                  "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                  "evidenceIds": []
+                }
+              ],
+              "reason": "Server-derived from accepted performer-specific evidence"
+            }
+          ],
+          "status": "partial"
+        }
+      ],
+      "slots": [
+        [
+          {
+            "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                ]
+              },
+              {
+                "performer": "npc",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [
+              {
+                "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+                "conditionId": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                "performer": "npc",
+                "playerQuote": "편지는 대신 맡아 주세요.",
+                "npcQuote": "제가 편지를 대신 맡을게요.",
+                "id": "32cd3d8c-9e55-4f67-accc-384c41f423dd",
+                "previousPerformer": "player",
+                "turn": 4
+              }
+            ],
+            "assessments": [
+              {
+                "turn": 3,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                    "evidenceIds": [
+                      "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                    ]
+                  },
+                  {
+                    "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              },
+              {
+                "turn": 4,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                    "evidenceIds": [
+                      "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                    ]
+                  },
+                  {
+                    "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              }
+            ],
+            "status": "partial"
+          }
+        ],
+        [
+          {
+            "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                ]
+              },
+              {
+                "performer": "npc",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [
+              {
+                "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+                "conditionId": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                "performer": "npc",
+                "playerQuote": "편지는 대신 맡아 주세요.",
+                "npcQuote": "제가 편지를 대신 맡을게요.",
+                "id": "32cd3d8c-9e55-4f67-accc-384c41f423dd",
+                "previousPerformer": "player",
+                "turn": 4
+              }
+            ],
+            "assessments": [
+              {
+                "turn": 3,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                    "evidenceIds": [
+                      "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                    ]
+                  },
+                  {
+                    "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              },
+              {
+                "turn": 4,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                    "evidenceIds": [
+                      "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                    ]
+                  },
+                  {
+                    "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              }
+            ],
+            "status": "partial"
+          }
+        ],
+        [
+          {
+            "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                ]
+              },
+              {
+                "performer": "npc",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [
+              {
+                "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+                "conditionId": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                "performer": "npc",
+                "playerQuote": "편지는 대신 맡아 주세요.",
+                "npcQuote": "제가 편지를 대신 맡을게요.",
+                "id": "32cd3d8c-9e55-4f67-accc-384c41f423dd",
+                "previousPerformer": "player",
+                "turn": 4
+              }
+            ],
+            "assessments": [
+              {
+                "turn": 3,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                    "evidenceIds": [
+                      "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                    ]
+                  },
+                  {
+                    "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              },
+              {
+                "turn": 4,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                    "evidenceIds": [
+                      "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                    ]
+                  },
+                  {
+                    "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              }
+            ],
+            "status": "partial"
+          }
+        ]
+      ]
+    },
+    {
+      "input": "고마워요.",
+      "response": {
+        "line": "알겠어요.",
+        "actionBeats": [
+          "유나가 편지를 접는다."
+        ],
+        "events": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+            "conditionId": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+            "performer": "npc",
+            "source": "action",
+            "actionIndex": 0,
+            "eventId": "",
+            "quote": "유나가 편지를 접는다."
+          }
+        ]
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "알겠어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "알겠어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "노란 리본 가져왔어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "알겠어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "편지는 대신 맡아 주세요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "제가 편지를 대신 맡을게요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 4,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "ribbon",
+              "id": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "evidence": "좋아요.",
+              "value": "ribbon",
+              "id": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed",
+              "turn": 2
+            },
+            {
+              "id": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f",
+              "turn": 3,
+              "kind": "complication",
+              "subject": "player",
+              "text": "노란 리본 가져왔어요.",
+              "status": "fulfilled",
+              "reference": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+              "evidence": "노란 리본 가져왔어요.",
+              "value": "condition-evidence"
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                  "originalPerformer": "player",
+                  "evidenceIds": [
+                    "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                  ]
+                },
+                {
+                  "performer": "npc",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [
+                {
+                  "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+                  "conditionId": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                  "performer": "npc",
+                  "playerQuote": "편지는 대신 맡아 주세요.",
+                  "npcQuote": "제가 편지를 대신 맡을게요.",
+                  "id": "32cd3d8c-9e55-4f67-accc-384c41f423dd",
+                  "previousPerformer": "player",
+                  "turn": 4
+                }
+              ],
+              "assessments": [
+                {
+                  "turn": 3,
+                  "result": "partial",
+                  "conditions": [
+                    {
+                      "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                      "evidenceIds": [
+                        "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                      ]
+                    },
+                    {
+                      "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                      "evidenceIds": []
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                },
+                {
+                  "turn": 4,
+                  "result": "partial",
+                  "conditions": [
+                    {
+                      "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                      "evidenceIds": [
+                        "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                      ]
+                    },
+                    {
+                      "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                      "evidenceIds": []
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                }
+              ],
+              "status": "partial"
+            }
+          ],
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 4,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T05:39:50.334Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "eventId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "version": 1,
+              "confirmedAt": "2026-11-21T05:39:50.334Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed",
+              "eventId": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed",
+              "version": 2,
+              "confirmedAt": "2026-11-21T05:39:50.334Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f",
+              "eventId": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f",
+              "version": 3,
+              "confirmedAt": "2026-11-21T05:39:50.335Z",
+              "kind": "scene",
+              "text": "노란 리본 가져왔어요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "알겠어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "b48d02af-290e-4f48-a008-c04f4d78e341"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "알겠어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+            },
+            {
+              "kind": "user_claim",
+              "text": "노란 리본 가져왔어요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "알겠어요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "노란 리본 가져왔어요.",
+              "version": 3,
+              "eventId": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+            },
+            {
+              "kind": "user_claim",
+              "text": "편지는 대신 맡아 주세요.",
+              "version": 4
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "제가 편지를 대신 맡을게요.",
+              "version": 4,
+              "recallIds": []
+            }
+          ],
+          "reply": "제가 편지를 대신 맡을게요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "노란 리본 가져왔어요."
+            },
+            {
+              "turn": 4,
+              "text": "편지는 대신 맡아 주세요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "알겠어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "알겠어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "노란 리본 가져왔어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "알겠어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "편지는 대신 맡아 주세요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "제가 편지를 대신 맡을게요."
+          },
+          {
+            "speaker": "당신",
+            "text": "고마워요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "알겠어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 5,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "ribbon",
+              "id": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "evidence": "좋아요.",
+              "value": "ribbon",
+              "id": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed",
+              "turn": 2
+            },
+            {
+              "id": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f",
+              "turn": 3,
+              "kind": "complication",
+              "subject": "player",
+              "text": "노란 리본 가져왔어요.",
+              "status": "fulfilled",
+              "reference": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+              "evidence": "노란 리본 가져왔어요.",
+              "value": "condition-evidence"
+            },
+            {
+              "id": "245900a8-c86c-4067-89d7-e750c33fdbff",
+              "turn": 5,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 편지를 접는다.",
+              "status": "fulfilled",
+              "reference": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+              "evidence": "유나가 편지를 접는다.",
+              "value": "condition-evidence"
+            },
+            {
+              "id": "197dd4a6-2c9f-4e5a-9e43-c121e1844be3",
+              "turn": 5,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 편지를 접는다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                  "originalPerformer": "player",
+                  "evidenceIds": [
+                    "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                  ]
+                },
+                {
+                  "performer": "npc",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                  "originalPerformer": "player",
+                  "evidenceIds": [
+                    "245900a8-c86c-4067-89d7-e750c33fdbff"
+                  ]
+                }
+              ],
+              "amendments": [
+                {
+                  "promiseId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+                  "conditionId": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                  "performer": "npc",
+                  "playerQuote": "편지는 대신 맡아 주세요.",
+                  "npcQuote": "제가 편지를 대신 맡을게요.",
+                  "id": "32cd3d8c-9e55-4f67-accc-384c41f423dd",
+                  "previousPerformer": "player",
+                  "turn": 4
+                }
+              ],
+              "assessments": [
+                {
+                  "turn": 3,
+                  "result": "partial",
+                  "conditions": [
+                    {
+                      "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                      "evidenceIds": [
+                        "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                      ]
+                    },
+                    {
+                      "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                      "evidenceIds": []
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                },
+                {
+                  "turn": 4,
+                  "result": "partial",
+                  "conditions": [
+                    {
+                      "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                      "evidenceIds": [
+                        "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                      ]
+                    },
+                    {
+                      "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                      "evidenceIds": []
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                },
+                {
+                  "turn": 5,
+                  "result": "completed",
+                  "conditions": [
+                    {
+                      "id": "93e0ab45-07b8-40a4-be0e-d6cb9d7b9d44",
+                      "evidenceIds": [
+                        "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+                      ]
+                    },
+                    {
+                      "id": "94aca1d1-9a42-47fd-8dc3-dd0b5a7eec0f",
+                      "evidenceIds": [
+                        "245900a8-c86c-4067-89d7-e750c33fdbff"
+                      ]
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                }
+              ],
+              "status": "completed"
+            }
+          ],
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 5,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T05:39:50.334Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "eventId": "b48d02af-290e-4f48-a008-c04f4d78e341",
+              "version": 1,
+              "confirmedAt": "2026-11-21T05:39:50.334Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed",
+              "eventId": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed",
+              "version": 2,
+              "confirmedAt": "2026-11-21T05:39:50.334Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f",
+              "eventId": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f",
+              "version": 3,
+              "confirmedAt": "2026-11-21T05:39:50.335Z",
+              "kind": "scene",
+              "text": "노란 리본 가져왔어요."
+            },
+            {
+              "id": "245900a8-c86c-4067-89d7-e750c33fdbff",
+              "eventId": "245900a8-c86c-4067-89d7-e750c33fdbff",
+              "version": 5,
+              "confirmedAt": "2026-11-21T05:39:50.361Z",
+              "kind": "scene",
+              "text": "유나가 편지를 접는다."
+            },
+            {
+              "id": "197dd4a6-2c9f-4e5a-9e43-c121e1844be3",
+              "eventId": "197dd4a6-2c9f-4e5a-9e43-c121e1844be3",
+              "version": 5,
+              "confirmedAt": "2026-11-21T05:39:50.361Z",
+              "kind": "scene",
+              "text": "유나가 편지를 접는다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "알겠어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "b48d02af-290e-4f48-a008-c04f4d78e341"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "알겠어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "eb3d2e2f-a8ac-4caa-b4da-0121c436b9ed"
+            },
+            {
+              "kind": "user_claim",
+              "text": "노란 리본 가져왔어요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "알겠어요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "노란 리본 가져왔어요.",
+              "version": 3,
+              "eventId": "bc5f3ca9-55b0-4225-9ed6-efa1e3cbc88f"
+            },
+            {
+              "kind": "user_claim",
+              "text": "편지는 대신 맡아 주세요.",
+              "version": 4
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "제가 편지를 대신 맡을게요.",
+              "version": 4,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "고마워요.",
+              "version": 5
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "알겠어요.",
+              "version": 5,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 편지를 접는다.",
+              "version": 5,
+              "eventId": "245900a8-c86c-4067-89d7-e750c33fdbff"
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 편지를 접는다.",
+              "version": 5,
+              "eventId": "197dd4a6-2c9f-4e5a-9e43-c121e1844be3"
+            }
+          ],
+          "reply": "알겠어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "노란 리본 가져왔어요."
+            },
+            {
+              "turn": 4,
+              "text": "편지는 대신 맡아 주세요."
+            },
+            {
+              "turn": 5,
+              "text": "고마워요."
+            }
+          ],
+          "actionBeats": [
+            "유나가 편지를 접는다."
+          ]
+        }
+      }
+    }
+  ]
+}

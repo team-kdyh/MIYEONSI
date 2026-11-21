@@ -1,0 +1,32 @@
+{
+  "capturedAt": "2026-11-21T05:41:05.904859+00:00",
+  "snapshot": ".ralph\\v2-state-g2-snapshot",
+  "destination": ".ralph\\v2-state-parent-probe",
+  "g1": "0e3b7da41c214ef3cb241e5df58c2ff9628231a021be0d1708292d373743ae48",
+  "g2": "777f8c04abd6f1d44f0022fb9392b30f2debb825ffde73e140b0b1355f7e87e4",
+  "parentBefore": "e0a5b51e5dacf02cef1fde39a2bf182215647ba332f7b46eab9d090a3f21bcd6",
+  "merged": "d29ef52d07bae1e71f2e05e24f394c201bd666be0cc91e9d489c54aef83e9b4a",
+  "followupTest": "fbcaff89e889081faddd8cd69b8fb16513b9982d3012e3cb14796689514b37cb",
+  "protectedUnchanged": {
+    "server/narrative.ts": "80dc19e6b3aec1db26fc69a344fbce48c38a026ae03ceaa30e41f674833f7764",
+    "server/provider.ts": "1019c72de478e48ad5a26d47e43fecb9be296b99e5923160893f49a29259b020",
+    "server/storage.ts": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b",
+    "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+    "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+    "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4"
+  },
+  "changes": [
+    "Explicit state bounds",
+    "Validate promise count",
+    "Refusal and amendment capacity gate",
+    "Do not assess duplicate performance",
+    "Assessment capacity gate",
+    "Acceptance capacity gate",
+    "Validate accumulated list bounds",
+    "Validate evidence count",
+    "Shared prior/current refusal predicate",
+    "Registration capacity gate",
+    "Preserve atomic acceptance while sharing refusal check"
+  ],
+  "testsExecutedByThisMerge": false
+}

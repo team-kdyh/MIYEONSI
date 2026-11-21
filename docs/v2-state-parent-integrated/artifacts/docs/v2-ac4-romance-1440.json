@@ -1,0 +1,575 @@
+{
+  "scope": "Mock model replies through real reconcile and UI; no paid API calls",
+  "distinctCells": 12,
+  "evidence": [
+    {
+      "pose": "neutral",
+      "sheet": "/assets/yuna-expressions.png",
+      "column": 0,
+      "label": "편안히 바라본다",
+      "sourceRegion": {
+        "x": 0,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-neutral.png",
+      "location": "rooftop",
+      "committedEvents": [
+        {
+          "kind": "move",
+          "subject": "mutual",
+          "text": "함께 rooftop에서 대화를 이어간다.",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "옥상으로 함께 가요.",
+          "value": "rooftop",
+          "id": "614cbb7b-3475-4ec3-9655-c37c2d85c148",
+          "turn": 1
+        },
+        {
+          "id": "30e3190e-b8ff-4c8f-af87-9aeacedbed6d",
+          "turn": 1,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "편안히 바라본다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 537.75,
+        "y": 81,
+        "width": 364.5,
+        "height": 486
+      },
+      "panel": {
+        "x": 170,
+        "y": 561,
+        "width": 1100,
+        "height": 297
+      }
+    },
+    {
+      "pose": "smile",
+      "sheet": "/assets/yuna-expressions.png",
+      "column": 1,
+      "label": "두 손을 모으고 미소 짓는다",
+      "sourceRegion": {
+        "x": 543,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-smile.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "kind": "move",
+          "subject": "mutual",
+          "text": "함께 rainstreet에서 대화를 이어간다.",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "빗길로 함께 가요.",
+          "value": "rainstreet",
+          "id": "05a5e091-007e-4dbe-a1fb-715f04076abd",
+          "turn": 2
+        },
+        {
+          "id": "db86e481-10e2-491e-b5dc-aacf2cd959e3",
+          "turn": 2,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "두 손을 모으고 미소 짓는다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 537.75,
+        "y": 81,
+        "width": 364.5,
+        "height": 486
+      },
+      "panel": {
+        "x": 170,
+        "y": 561,
+        "width": 1100,
+        "height": 297
+      }
+    },
+    {
+      "pose": "thinking",
+      "sheet": "/assets/yuna-expressions.png",
+      "column": 2,
+      "label": "손목을 감싸며 망설인다",
+      "sourceRegion": {
+        "x": 1086,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-thinking.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "38c50fdc-dff5-40f2-b52c-9fb88ec96b3e",
+          "turn": 3,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "손목을 감싸며 망설인다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 537.75,
+        "y": 81,
+        "width": 364.5,
+        "height": 486
+      },
+      "panel": {
+        "x": 170,
+        "y": 561,
+        "width": 1100,
+        "height": 297
+      }
+    },
+    {
+      "pose": "surprised",
+      "sheet": "/assets/yuna-expressions.png",
+      "column": 2,
+      "label": "놀라 손목을 감싼다",
+      "sourceRegion": {
+        "x": 1086,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-surprised.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "35312caf-095c-4403-9291-410436ccb1aa",
+          "turn": 4,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "놀라 손목을 감싼다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 537.75,
+        "y": 81,
+        "width": 364.5,
+        "height": 486
+      },
+      "panel": {
+        "x": 170,
+        "y": 561,
+        "width": 1100,
+        "height": 297
+      }
+    },
+    {
+      "pose": "intense",
+      "sheet": "/assets/yuna-expressions.png",
+      "column": 3,
+      "label": "고개를 기울여 강하게 응시한다",
+      "sourceRegion": {
+        "x": 1629,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-intense.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "09d1fa92-8488-4e18-9703-52d0ec105b71",
+          "turn": 5,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "고개를 기울여 강하게 응시한다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 537.75,
+        "y": 81,
+        "width": 364.5,
+        "height": 486
+      },
+      "panel": {
+        "x": 170,
+        "y": 561,
+        "width": 1100,
+        "height": 297
+      }
+    },
+    {
+      "pose": "watch",
+      "sheet": "/assets/v2/yuna-actions-a.png",
+      "column": 0,
+      "label": "주의 깊게 귀를 기울인다",
+      "sourceRegion": {
+        "x": 0,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-watch.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "130f0a3a-e7c7-4b21-a628-26cd0efd2d05",
+          "turn": 6,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "주의 깊게 귀를 기울인다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 537.75,
+        "y": 81,
+        "width": 364.5,
+        "height": 486
+      },
+      "panel": {
+        "x": 170,
+        "y": 561,
+        "width": 1100,
+        "height": 297
+      }
+    },
+    {
+      "pose": "listen",
+      "sheet": "/assets/v2/yuna-actions-a.png",
+      "column": 0,
+      "label": "귀 가까이 손을 대고 듣는다",
+      "sourceRegion": {
+        "x": 0,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-listen.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "ac5d9077-4eb9-43de-839e-16f1084795f2",
+          "turn": 7,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "귀 가까이 손을 대고 듣는다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 537.75,
+        "y": 81,
+        "width": 364.5,
+        "height": 486
+      },
+      "panel": {
+        "x": 170,
+        "y": 561,
+        "width": 1100,
+        "height": 297
+      }
+    },
+    {
+      "pose": "laugh",
+      "sheet": "/assets/v2/yuna-actions-a.png",
+      "column": 1,
+      "label": "입가에 손을 대고 웃는다",
+      "sourceRegion": {
+        "x": 543,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-laugh.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "a9deed1f-8ba3-4d9d-8677-30a81d273984",
+          "turn": 8,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "입가에 손을 대고 웃는다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 537.75,
+        "y": 81,
+        "width": 364.5,
+        "height": 486
+      },
+      "panel": {
+        "x": 170,
+        "y": 561,
+        "width": 1100,
+        "height": 297
+      }
+    },
+    {
+      "pose": "shy",
+      "sheet": "/assets/v2/yuna-actions-a.png",
+      "column": 2,
+      "label": "수줍게 두 손을 모은다",
+      "sourceRegion": {
+        "x": 1086,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-shy.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "477bde60-0ff4-455d-a9a0-c05d09c070e8",
+          "turn": 9,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "수줍게 두 손을 모은다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 537.75,
+        "y": 81,
+        "width": 364.5,
+        "height": 486
+      },
+      "panel": {
+        "x": 170,
+        "y": 561,
+        "width": 1100,
+        "height": 297
+      }
+    },
+    {
+      "pose": "offer",
+      "sheet": "/assets/v2/yuna-actions-a.png",
+      "column": 3,
+      "label": "헤드폰 한쪽을 내민다",
+      "sourceRegion": {
+        "x": 1629,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-offer.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "c121927c-4666-4f69-835b-e7f25b6a1911",
+          "turn": 10,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "헤드폰 한쪽을 내민다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 537.75,
+        "y": 81,
+        "width": 364.5,
+        "height": 486
+      },
+      "panel": {
+        "x": 170,
+        "y": 561,
+        "width": 1100,
+        "height": 297
+      }
+    },
+    {
+      "pose": "turn",
+      "sheet": "/assets/v2/yuna-actions-b.png",
+      "column": 0,
+      "label": "장난스럽게 손가락을 세운다",
+      "sourceRegion": {
+        "x": 0,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-turn.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "05bb986f-aa1b-4c06-9d7e-458288de9bc0",
+          "turn": 11,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "장난스럽게 손가락을 세운다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 537.75,
+        "y": 81,
+        "width": 364.5,
+        "height": 486
+      },
+      "panel": {
+        "x": 170,
+        "y": 561,
+        "width": 1100,
+        "height": 297
+      }
+    },
+    {
+      "pose": "concern",
+      "sheet": "/assets/v2/yuna-actions-b.png",
+      "column": 1,
+      "label": "녹음기를 가슴에 안는다",
+      "sourceRegion": {
+        "x": 543,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-concern.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "de8849b6-3ec7-495b-8cbd-c65e71e38902",
+          "turn": 12,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "녹음기를 가슴에 안는다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 537.75,
+        "y": 81,
+        "width": 364.5,
+        "height": 486
+      },
+      "panel": {
+        "x": 170,
+        "y": 561,
+        "width": 1100,
+        "height": 297
+      }
+    },
+    {
+      "pose": "firm",
+      "sheet": "/assets/v2/yuna-actions-b.png",
+      "column": 2,
+      "label": "카디건 자락을 쥐고 응시한다",
+      "sourceRegion": {
+        "x": 1086,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-firm.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "f87c76c8-ed77-4e0b-9fe5-6ee44dd40ce9",
+          "turn": 13,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "카디건 자락을 쥐고 응시한다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 537.75,
+        "y": 81,
+        "width": 364.5,
+        "height": 486
+      },
+      "panel": {
+        "x": 170,
+        "y": 561,
+        "width": 1100,
+        "height": 297
+      }
+    },
+    {
+      "pose": "farewell",
+      "sheet": "/assets/v2/yuna-actions-b.png",
+      "column": 3,
+      "label": "손바닥 위의 테이프를 내민다",
+      "sourceRegion": {
+        "x": 1629,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-farewell.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "30ad676f-fe3e-4597-a0a8-501a7560d7b3",
+          "turn": 14,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "손바닥 위의 테이프를 내민다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 537.75,
+        "y": 81,
+        "width": 364.5,
+        "height": 486
+      },
+      "panel": {
+        "x": 170,
+        "y": 561,
+        "width": 1100,
+        "height": 297
+      }
+    }
+  ],
+  "errors": []
+}

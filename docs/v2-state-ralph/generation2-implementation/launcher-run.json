@@ -1,0 +1,32 @@
+{
+  "scope": "actual Windows play.cmd/stop.cmd; separate port/storage; no model requests",
+  "port": 3198,
+  "storage": ".ralph/followup-launcher-data",
+  "paidCalls": 0,
+  "runs": [
+    {
+      "log": "launcher-start.txt",
+      "exitCode": 0,
+      "logModifiedAt": "2026-11-21T05:35:12.403828+00:00"
+    },
+    {
+      "log": "launcher-stop.txt",
+      "exitCode": 0,
+      "logModifiedAt": "2026-11-21T05:35:48.404294+00:00"
+    },
+    {
+      "log": "launcher-restart.txt",
+      "exitCode": 0,
+      "logModifiedAt": "2026-11-21T05:35:58.004862+00:00"
+    },
+    {
+      "log": "launcher-restop.txt",
+      "exitCode": 0,
+      "logModifiedAt": "2026-11-21T05:36:20.464805+00:00"
+    }
+  ],
+  "httpStatus": [
+    "200",
+    "200"
+  ]
+}

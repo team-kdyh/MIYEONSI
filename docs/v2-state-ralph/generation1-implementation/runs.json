@@ -1,0 +1,101 @@
+{
+  "candidateId": "commitments-146c536e09d68f30",
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "node": "v24.14.0",
+    "npm": "11.9.0",
+    "cwd": "C:\\Users\\gjtjw\\.ouroboros\\worktrees\\대화형 스토리진행\\ralph-afterhours-v2-state-49c8729",
+    "browserPort": 3187,
+    "launcherPort": 3188,
+    "model": "mock only; no paid traffic"
+  },
+  "runs": [
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "scope": "TypeScript and Vite",
+      "log": "build.txt",
+      "logModifiedAt": "2026-11-21T05:14:57.408935+00:00",
+      "sha256": "d098bdae8a9727eff9c401bf13c8a288735e9defb4c01f4cf6672e77b8696d88"
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "scope": "333/333 mock/unit/integration including real process/HTTP recovery",
+      "log": "unit.txt",
+      "logModifiedAt": "2026-11-21T05:15:48.575941+00:00",
+      "sha256": "a6e0702e9fc5b9fbadf48a920c076bbb3ab0f5da6199e0f54e9809095949ddd4"
+    },
+    {
+      "command": "AFTERHOURS_TEST_PORT=3187 npx playwright test",
+      "exitCode": 0,
+      "scope": "25/25 isolated browser tests; controlled transport",
+      "log": "browser.txt",
+      "logModifiedAt": "2026-11-21T05:15:27.584027+00:00",
+      "sha256": "41a29d1b90cb8eb3966f6b709c9357c23e11210739ffca31d18bf777ae610fa6"
+    },
+    {
+      "command": "npx tsx --test server/commitments.test.ts",
+      "exitCode": 0,
+      "scope": "7/7 focused normal-turn semantic tests",
+      "log": "semantic.txt",
+      "logModifiedAt": "2026-11-21T05:11:16.160718+00:00",
+      "sha256": "5825f9c03066c1ac394500ab15ca4dded7abf3993858fe8a7b0a4c3ad51b78cb"
+    },
+    {
+      "command": "npx tsx --test server/commitments-http.test.ts",
+      "exitCode": 0,
+      "scope": "1/1; production timeout/cancel/retry/restart with mock model",
+      "log": "http.txt",
+      "logModifiedAt": "2026-11-21T05:15:02.163264+00:00",
+      "sha256": "47b964b4aeb7d36786799f28b3c8016135ca328156aad0e603757c2bd30f21cb"
+    },
+    {
+      "command": "npx tsx tests/v2-promise-edge-probe.ts",
+      "exitCode": 0,
+      "scope": "5/5 legacy promise controls",
+      "log": "legacy-probe.txt",
+      "logModifiedAt": "2026-11-21T05:10:12.997879+00:00",
+      "sha256": "e3e0670adef04c602d3893fb861cff6d920ec298f7883c933890b7e130ea430c"
+    },
+    {
+      "command": "play.cmd -NoBrowser -Port 3188",
+      "exitCode": 0,
+      "scope": "Actual start; isolated data; HTTP 200",
+      "log": "launcher.txt",
+      "logModifiedAt": "2026-11-21T05:11:04.356600+00:00",
+      "sha256": "1152e143765777999a51c9e255e928269d14d3fa89d1188009243ec414520261"
+    },
+    {
+      "command": "stop.cmd",
+      "exitCode": 0,
+      "scope": "Actual scoped stop",
+      "log": "launcher-stop.txt",
+      "logModifiedAt": "2026-11-21T05:11:40.978721+00:00",
+      "sha256": "59220902ff323102f560ce9b7acb7df1d39f68baeaf240d3c48fc56a0210e17e"
+    },
+    {
+      "command": "play.cmd -NoBrowser -Port 3188",
+      "exitCode": 0,
+      "scope": "Actual restart; HTTP 200",
+      "log": "launcher-restart.txt",
+      "logModifiedAt": "2026-11-21T05:12:01.025826+00:00",
+      "sha256": "de8f46e29bfbdc79b052fb9134acb1b969f2f4278cf40e91f0ce158c0312d92c"
+    },
+    {
+      "command": "stop.cmd",
+      "exitCode": 0,
+      "scope": "Actual scoped stop",
+      "log": "launcher-restop.txt",
+      "logModifiedAt": "2026-11-21T05:12:12.317347+00:00",
+      "sha256": "59220902ff323102f560ce9b7acb7df1d39f68baeaf240d3c48fc56a0210e17e"
+    }
+  ],
+  "failuresPreserved": [
+    {
+      "log": "launcher-before.txt",
+      "result": "FAIL",
+      "reason": "Get-FileHash unavailable; old batch pause masked exit code"
+    }
+  ]
+}

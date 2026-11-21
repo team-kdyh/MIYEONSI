@@ -1,3 +1,4 @@
+import {validCommitments} from './commitments.ts';
 import {locations,poses,moods,kinds} from './narrative.ts';
 import {createHash,randomUUID} from 'node:crypto';
 import {mkdir,readFile,open,rename,unlink,copyFile} from 'node:fs/promises';
@@ -18,6 +19,7 @@ function validGame(g:unknown):boolean {
  if(v.mode==='office'&&(!v.office||!Number.isInteger(v.office.turn)||!Array.isArray(v.office.evidence)||!v.office.secured))return false;
  if(v.mode==='romance'&&(!v.romance||!Number.isInteger(v.romance.turn)||!Array.isArray(v.romance.facts)||!Array.isArray(v.romance.details)))return false;
  if(v.narrative){const n=v.narrative;if(n.format!==2||!Number.isSafeInteger(n.turn)||n.turn<0||!locations.includes(n.location)||!poses.includes(n.pose)||!moods.includes(n.musicMood)||!['strangers','familiar','attracted','confessed','couple','apart'].includes(n.relationship)||!Number.isSafeInteger(n.dates)||n.dates<0||!Array.isArray(n.events)||n.events.some(e=>typeof e.id!=='string'||!kinds.includes(e.kind)||typeof e.text!=='string'||typeof e.evidence!=='string'||typeof e.reference!=='string'||!Number.isSafeInteger(e.turn)||e.turn>n.turn||!['npc','player','mutual','world'].includes(e.subject)||!['offered','accepted','refused','fulfilled'].includes(e.status)))return false;}
+ if(v.narrative&&!validCommitments(v.narrative))return false;
  const date=v.narrative?.activeDate;
  if(date&&(!locations.includes(date.location)||date.location!==v.narrative!.location||v.narrative!.relationship!=='couple'||!Number.isSafeInteger(date.turn)||date.turn>v.narrative!.turn||!v.narrative!.events.some(e=>e.id===date.eventId&&e.turn===date.turn&&e.kind==='relationship'&&e.value==='date'&&e.status==='accepted')))return false;
  try{view(v);return true;}catch{return false;}

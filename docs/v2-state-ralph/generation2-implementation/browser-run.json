@@ -1,0 +1,600 @@
+{
+  "command": "npx playwright test",
+  "startedAt": "2026-11-21T05:33:42.460Z",
+  "finishedAt": "2026-11-21T05:36:42.876Z",
+  "exitCode": 0,
+  "node": "v24.14.0",
+  "platform": "win32",
+  "paidCalls": 0,
+  "port": 3197,
+  "startHashes": {
+    "server/adversarial.test.ts": "e996bb47c24b633f4af3c3cebbef0b4a6d33558a8de05191f244a2337a77bc2b",
+    "server/boundaries.test.ts": "5c337434b8571ece449239360016d1ae71eb026b8f3f52a40933df7c0563078b",
+    "server/commitments-followup.test.ts": "fbcaff89e889081faddd8cd69b8fb16513b9982d3012e3cb14796689514b37cb",
+    "server/commitments-http.test.ts": "85ad89d60f56e0c8b3cf7ce87dd2a08321a0947b93e8e8e225bfcf95b22d55ef",
+    "server/commitments.test.ts": "d6a9dfa4d3de052082331b7bc8d4164c3cca985f270bf4d70e6d89f61057b184",
+    "server/commitments.ts": "777f8c04abd6f1d44f0022fb9392b30f2debb825ffde73e140b0b1355f7e87e4",
+    "server/dialogue.test.ts": "b1237b060052917274a489ef8fc2cea4cb2f166df725032b58185875af4c37c0",
+    "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+    "server/game.test.ts": "9fd4e4a93df045a9925f0f4b04ea453d2208476f02f8b223cca9199dcf26e9f5",
+    "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+    "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+    "server/interpretation.test.ts": "57814fca4693c08bb253a17349492460ff4bdb3c1ac319022324aead0c8d90ba",
+    "server/interpretation.ts": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+    "server/music.test.ts": "7d852867e9508110191ac1e73326b1f20ffaece325df4a4e4c205472f5a2574e",
+    "server/narrative-agency-regression.test.ts": "19eec66a693dc72c02b62f39d5738823be84fa6d084f900f773317f8a280964f",
+    "server/narrative-compound-natural.test.ts": "5e2502a7219a3622ba5b8b1fc58cff3e9f41d01a981314cce66641ab20c0886f",
+    "server/narrative-compound-promise.test.ts": "8c5cd8116c45aae46e74f16b31b10f720bf19ddacb323c517d92a51345a7c876",
+    "server/narrative-counterfactual.test.ts": "fdce8e99bf04a9c4b689ddf1e6a9327a1038597f8eaca060f374053139ddf3d1",
+    "server/narrative-lifecycle-regression.test.ts": "41947c5680523474b182f6ce7c60cfe4010538f70ce07888afd1200205332fdc",
+    "server/narrative-natural-delivery.test.ts": "92b63d6b0e1bb191905ad26242c4e19a705a53d41ed23e8b504ab3b0dc9b0ce5",
+    "server/narrative-promise-edge.test.ts": "efd0ed9a153f20d804e9d2d969f43738f1c042605782c4a9f86285f94356616c",
+    "server/narrative-route-agency.test.ts": "f3c970fbfe7a701318ae68a57b927409004a2dab0ad69a8f603141d5c731279b",
+    "server/narrative-short-reply.test.ts": "c5815acecd3557b49752ab14f7c32a6e88a9efcece2e38c939a16ed75f5dc103",
+    "server/narrative.test.ts": "1829c31f88bc676a8202baff2bebbb11974fb8aee9271baf1367ff59087a9724",
+    "server/narrative.ts": "9f9c696431d134a0a9db50f6c6c2c7872f0f1970fd87ce6f2da575ec74a13ca3",
+    "server/office.test.ts": "c70cc186f6eb79c0494e9b0732c697a4bc33e4151ffeed87e790e16b0eea418f",
+    "server/office.ts": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+    "server/persistence.test.ts": "3190e8f8d0c32758d13fbef7c5a072bdad05741b1653897195acb69d1cc973af",
+    "server/provider.ts": "e0e19d21eac3e9f5b430162db54afedcda6cf67bdf9b9a6ebc78f553878e8393",
+    "server/recovery.test.ts": "a0e865cced0e13a018cd50b4dface7367a0a2aba721759ce300b20d205d35d7e",
+    "server/romance.test.ts": "effbae28a210cb3e5da1636492ad71a317f786795e17a13af4e7ba5a65b2a577",
+    "server/romance.ts": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+    "server/storage.ts": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b",
+    "server/v2-ac3-lifecycle.test.ts": "01b4237cad47f53b84d80ac2512813d00e96a2f3427c9d7af27fd0b4daea2a5a",
+    "server/v2-security.test.ts": "9c0a05c6e7766c107d0c677cb2146bdfd49916ba2ffcd4e8b2825fa438c33711",
+    "server/v2-story.test.ts": "01dc2795d99e76b291df5e9dde548150a9f600512a9dd8993d4fbab487b897b5",
+    "server/visual-binding.test.ts": "6f6ae25b4eb34b8ba257eccc18b159195c37f59755d45851ce5e1b2a203515ca",
+    "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+    "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+    "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+    "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+    "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+    "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+    "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+    "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+    "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+    "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179",
+    "tests/ac7.spec.ts": "c492c766ec4e0c0e4bdce9b45f06cb2f2fc9e3ec5936c38866fbd3394c8e250f",
+    "tests/commitment-transport.mjs": "13e044ecbe26aaf90d80e330394f830ff3e90f1b9bf7fe7e5145aff0a1a9c121",
+    "tests/final-live-smoke.ts": "7980eacdc75cd7f565b0ac70dccca8e7b927d2c7beab75c43ec93ea237a7d674",
+    "tests/live-smoke.ts": "b81f9af6d95046f26ec4f9fcfd1227812e2bc2b144f4eef4e7c00100ebad2b92",
+    "tests/office.spec.ts": "ffb52731108187876d0dbcde95c05acd930ce2d46ffdebf20c15d372d10d210f",
+    "tests/persistence.spec.ts": "07a122da9738ef95d7c196893177f641c75cefa11100995eeb9266157c46cba6",
+    "tests/play.spec.ts": "273a41ad05b989d6d1122f15b9a2ccd045a4566c97bcf2f450b43b09663054b5",
+    "tests/presentation.spec.ts": "73056c33f19be36c3d9e33d0442e551bedd9811eb4f21fe2c914d561f3e2dcb0",
+    "tests/provider-fixture.mjs": "5801bb1cb5fb383361655a83e170d309461dbaa466323ac81fd6e7594c3ef3da",
+    "tests/romance.spec.ts": "7fc1635aa937b253c4eaaf0e1ec3e796468a7c7ca51dfb2bc25d8e0780366ca7",
+    "tests/v2-ac2-receipt-replay.ts": "459cf63dc66bba32af1652a499586981cc309fe59a24ccbadea204ae5da5a654",
+    "tests/v2-ac3-receipt-audit.ts": "831855f7ac251422a4af810cbbdbf590ec4c5d3daea185dbc47dc3068e354427",
+    "tests/v2-ac4-boundaries.spec.ts": "ad8f9367a9af617bb04794aa96e65dc80277e9c3d82c364d75d9e6dcb65dfaf1",
+    "tests/v2-ac4-gallery.ts": "d9d1d922fe1a3c03e571c8d35e601bda546b25e5225e4030ae1956e828374d76",
+    "tests/v2-art.spec.ts": "c7878e7cad5542f8d879fc067dd76cb90b89caf5d2905759e7c22bee4973042d",
+    "tests/v2-audio.spec.ts": "b7a099ee780824d6af263fbf5d593dde30bd1a6b7abd4a7c91ddecb0849c211e",
+    "tests/v2-browser-fixture.mjs": "38719f39071c19d0eff38b86f90f6f2fad749ae39f48a3cd2e3c25a18ab55dce",
+    "tests/v2-final-live/guard.mjs": "b095848b94d31091bb169595e1206df805e1f92815806417306280b3bff9fe0c",
+    "tests/v2-final-live/guard.test.mjs": "df8b4895304c5700013f8c6e458bb285f6b2003b6a3e9b17bf09e56b36930364",
+    "tests/v2-final-live/runner.mjs": "48c8ede7f4484ad6e7a9af2e70e5b1c0e7d513f2282903e8e76612313076b7db",
+    "tests/v2-final-live/server.mjs": "af47d2a0ae7ef7c8fe6df8f27b712b356520e3bc0638e4c1c556715f749d24fc",
+    "tests/v2-journey.spec.ts": "d544bb6629a6008055fe6cea08c0073b29471948c5f07c16a7ca43a9de8e8f9b",
+    "tests/v2-live-screens.mjs": "0cba909fd8c8cf4584a3bef0b70145c8fd542cad650ae811897860c05f07dfab",
+    "tests/v2-live-server.ts": "f82ef81fbf6d9bb56fa8ba2f4b84d6c426855e2c3ec3cf2e6750f8a4b4d70c3f",
+    "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21",
+    "tests/v2-persistence-fixture.mjs": "f01a8251115cbfcae79b76c60dca27e53318b6b98035708b458ec0f998327b67",
+    "tests/v2-promise-edge-probe.ts": "007a03c977fa30d62917ba7a0d4d15f5d6e90b9188b03dfdb28c85894a28eda4",
+    "tests/v2-receipt-replay.ts": "33a1eeadae8371cbca038fdf229580fa0796bf9df0f4c23a926d5d2148001b25",
+    "tests/v2-security-fixture.mjs": "3105e050717c602b00fed0c386db67e798599accdc1476c74d229a8aab177d0c",
+    "tests/v2-ui-polish.spec.ts": "81fe4c0b6a1b3fc840fa517c00f253995e9c6bff30e4c796ccd9321614726248",
+    "tests/v2-ui.spec.ts": "c2092085aeaf3accb1dbe2dbf3016276bff6265ab3c7866385e5133e52230a05",
+    "package-lock.json": "e847d4063b65d9fa1f91d85199452c1d6fc4da428f27ea929a6e3cd32898e307",
+    "playwright.config.ts": "7899a53d1fae247c3a4ab2a9d952b1112cea113f040fcb1755e32652affbe2ee"
+  },
+  "endHashes": {
+    "server/adversarial.test.ts": "e996bb47c24b633f4af3c3cebbef0b4a6d33558a8de05191f244a2337a77bc2b",
+    "server/boundaries.test.ts": "5c337434b8571ece449239360016d1ae71eb026b8f3f52a40933df7c0563078b",
+    "server/commitments-followup.test.ts": "fbcaff89e889081faddd8cd69b8fb16513b9982d3012e3cb14796689514b37cb",
+    "server/commitments-http.test.ts": "85ad89d60f56e0c8b3cf7ce87dd2a08321a0947b93e8e8e225bfcf95b22d55ef",
+    "server/commitments.test.ts": "d6a9dfa4d3de052082331b7bc8d4164c3cca985f270bf4d70e6d89f61057b184",
+    "server/commitments.ts": "777f8c04abd6f1d44f0022fb9392b30f2debb825ffde73e140b0b1355f7e87e4",
+    "server/dialogue.test.ts": "b1237b060052917274a489ef8fc2cea4cb2f166df725032b58185875af4c37c0",
+    "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+    "server/game.test.ts": "9fd4e4a93df045a9925f0f4b04ea453d2208476f02f8b223cca9199dcf26e9f5",
+    "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+    "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+    "server/interpretation.test.ts": "57814fca4693c08bb253a17349492460ff4bdb3c1ac319022324aead0c8d90ba",
+    "server/interpretation.ts": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+    "server/music.test.ts": "7d852867e9508110191ac1e73326b1f20ffaece325df4a4e4c205472f5a2574e",
+    "server/narrative-agency-regression.test.ts": "19eec66a693dc72c02b62f39d5738823be84fa6d084f900f773317f8a280964f",
+    "server/narrative-compound-natural.test.ts": "5e2502a7219a3622ba5b8b1fc58cff3e9f41d01a981314cce66641ab20c0886f",
+    "server/narrative-compound-promise.test.ts": "8c5cd8116c45aae46e74f16b31b10f720bf19ddacb323c517d92a51345a7c876",
+    "server/narrative-counterfactual.test.ts": "fdce8e99bf04a9c4b689ddf1e6a9327a1038597f8eaca060f374053139ddf3d1",
+    "server/narrative-lifecycle-regression.test.ts": "41947c5680523474b182f6ce7c60cfe4010538f70ce07888afd1200205332fdc",
+    "server/narrative-natural-delivery.test.ts": "92b63d6b0e1bb191905ad26242c4e19a705a53d41ed23e8b504ab3b0dc9b0ce5",
+    "server/narrative-promise-edge.test.ts": "efd0ed9a153f20d804e9d2d969f43738f1c042605782c4a9f86285f94356616c",
+    "server/narrative-route-agency.test.ts": "f3c970fbfe7a701318ae68a57b927409004a2dab0ad69a8f603141d5c731279b",
+    "server/narrative-short-reply.test.ts": "c5815acecd3557b49752ab14f7c32a6e88a9efcece2e38c939a16ed75f5dc103",
+    "server/narrative.test.ts": "1829c31f88bc676a8202baff2bebbb11974fb8aee9271baf1367ff59087a9724",
+    "server/narrative.ts": "9f9c696431d134a0a9db50f6c6c2c7872f0f1970fd87ce6f2da575ec74a13ca3",
+    "server/office.test.ts": "c70cc186f6eb79c0494e9b0732c697a4bc33e4151ffeed87e790e16b0eea418f",
+    "server/office.ts": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+    "server/persistence.test.ts": "3190e8f8d0c32758d13fbef7c5a072bdad05741b1653897195acb69d1cc973af",
+    "server/provider.ts": "e0e19d21eac3e9f5b430162db54afedcda6cf67bdf9b9a6ebc78f553878e8393",
+    "server/recovery.test.ts": "a0e865cced0e13a018cd50b4dface7367a0a2aba721759ce300b20d205d35d7e",
+    "server/romance.test.ts": "effbae28a210cb3e5da1636492ad71a317f786795e17a13af4e7ba5a65b2a577",
+    "server/romance.ts": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+    "server/storage.ts": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b",
+    "server/v2-ac3-lifecycle.test.ts": "01b4237cad47f53b84d80ac2512813d00e96a2f3427c9d7af27fd0b4daea2a5a",
+    "server/v2-security.test.ts": "9c0a05c6e7766c107d0c677cb2146bdfd49916ba2ffcd4e8b2825fa438c33711",
+    "server/v2-story.test.ts": "01dc2795d99e76b291df5e9dde548150a9f600512a9dd8993d4fbab487b897b5",
+    "server/visual-binding.test.ts": "6f6ae25b4eb34b8ba257eccc18b159195c37f59755d45851ce5e1b2a203515ca",
+    "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+    "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+    "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+    "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+    "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+    "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+    "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+    "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+    "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+    "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179",
+    "tests/ac7.spec.ts": "c492c766ec4e0c0e4bdce9b45f06cb2f2fc9e3ec5936c38866fbd3394c8e250f",
+    "tests/commitment-transport.mjs": "13e044ecbe26aaf90d80e330394f830ff3e90f1b9bf7fe7e5145aff0a1a9c121",
+    "tests/final-live-smoke.ts": "7980eacdc75cd7f565b0ac70dccca8e7b927d2c7beab75c43ec93ea237a7d674",
+    "tests/live-smoke.ts": "b81f9af6d95046f26ec4f9fcfd1227812e2bc2b144f4eef4e7c00100ebad2b92",
+    "tests/office.spec.ts": "ffb52731108187876d0dbcde95c05acd930ce2d46ffdebf20c15d372d10d210f",
+    "tests/persistence.spec.ts": "07a122da9738ef95d7c196893177f641c75cefa11100995eeb9266157c46cba6",
+    "tests/play.spec.ts": "273a41ad05b989d6d1122f15b9a2ccd045a4566c97bcf2f450b43b09663054b5",
+    "tests/presentation.spec.ts": "73056c33f19be36c3d9e33d0442e551bedd9811eb4f21fe2c914d561f3e2dcb0",
+    "tests/provider-fixture.mjs": "5801bb1cb5fb383361655a83e170d309461dbaa466323ac81fd6e7594c3ef3da",
+    "tests/romance.spec.ts": "7fc1635aa937b253c4eaaf0e1ec3e796468a7c7ca51dfb2bc25d8e0780366ca7",
+    "tests/v2-ac2-receipt-replay.ts": "459cf63dc66bba32af1652a499586981cc309fe59a24ccbadea204ae5da5a654",
+    "tests/v2-ac3-receipt-audit.ts": "831855f7ac251422a4af810cbbdbf590ec4c5d3daea185dbc47dc3068e354427",
+    "tests/v2-ac4-boundaries.spec.ts": "ad8f9367a9af617bb04794aa96e65dc80277e9c3d82c364d75d9e6dcb65dfaf1",
+    "tests/v2-ac4-gallery.ts": "d9d1d922fe1a3c03e571c8d35e601bda546b25e5225e4030ae1956e828374d76",
+    "tests/v2-art.spec.ts": "c7878e7cad5542f8d879fc067dd76cb90b89caf5d2905759e7c22bee4973042d",
+    "tests/v2-audio.spec.ts": "b7a099ee780824d6af263fbf5d593dde30bd1a6b7abd4a7c91ddecb0849c211e",
+    "tests/v2-browser-fixture.mjs": "38719f39071c19d0eff38b86f90f6f2fad749ae39f48a3cd2e3c25a18ab55dce",
+    "tests/v2-final-live/guard.mjs": "b095848b94d31091bb169595e1206df805e1f92815806417306280b3bff9fe0c",
+    "tests/v2-final-live/guard.test.mjs": "df8b4895304c5700013f8c6e458bb285f6b2003b6a3e9b17bf09e56b36930364",
+    "tests/v2-final-live/runner.mjs": "48c8ede7f4484ad6e7a9af2e70e5b1c0e7d513f2282903e8e76612313076b7db",
+    "tests/v2-final-live/server.mjs": "af47d2a0ae7ef7c8fe6df8f27b712b356520e3bc0638e4c1c556715f749d24fc",
+    "tests/v2-journey.spec.ts": "d544bb6629a6008055fe6cea08c0073b29471948c5f07c16a7ca43a9de8e8f9b",
+    "tests/v2-live-screens.mjs": "0cba909fd8c8cf4584a3bef0b70145c8fd542cad650ae811897860c05f07dfab",
+    "tests/v2-live-server.ts": "f82ef81fbf6d9bb56fa8ba2f4b84d6c426855e2c3ec3cf2e6750f8a4b4d70c3f",
+    "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21",
+    "tests/v2-persistence-fixture.mjs": "f01a8251115cbfcae79b76c60dca27e53318b6b98035708b458ec0f998327b67",
+    "tests/v2-promise-edge-probe.ts": "007a03c977fa30d62917ba7a0d4d15f5d6e90b9188b03dfdb28c85894a28eda4",
+    "tests/v2-receipt-replay.ts": "33a1eeadae8371cbca038fdf229580fa0796bf9df0f4c23a926d5d2148001b25",
+    "tests/v2-security-fixture.mjs": "3105e050717c602b00fed0c386db67e798599accdc1476c74d229a8aab177d0c",
+    "tests/v2-ui-polish.spec.ts": "81fe4c0b6a1b3fc840fa517c00f253995e9c6bff30e4c796ccd9321614726248",
+    "tests/v2-ui.spec.ts": "c2092085aeaf3accb1dbe2dbf3016276bff6265ab3c7866385e5133e52230a05",
+    "package-lock.json": "e847d4063b65d9fa1f91d85199452c1d6fc4da428f27ea929a6e3cd32898e307",
+    "playwright.config.ts": "7899a53d1fae247c3a4ab2a9d952b1112cea113f040fcb1755e32652affbe2ee"
+  },
+  "artifacts": [
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-1440-concern.png",
+      "sha256": "232d8f8d167fa895ffd8f40134dc6319bde7618feb57f01bbc9bc4399ee82d26"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-1440-farewell.png",
+      "sha256": "e1af9acb60f49ae11f8a4c37d283e911484e4d94fd49e5c1122668965b88d3a1"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-1440-firm.png",
+      "sha256": "679cd1bce3f46c1cc4d003f2c4a49672c10be58dea7153c8d919cef119671c0e"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-1440-intense.png",
+      "sha256": "0682522ec09b5f957137a8bf51a2605396ea0f5df50c7cd435e82e7cd9853132"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-1440-laugh.png",
+      "sha256": "4296faa9d3ddec657bda1df7538a78b33f3a90f1d81e0c425dbd1891ec8c4e75"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-1440-listen.png",
+      "sha256": "94798f01a523557defba9847cd54f57076e66e4b718893fb82290c3dc34c4198"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-1440-neutral.png",
+      "sha256": "dddb9f435d0dc1967a2c578bf97141e6f062b71a9cd1ac5b41f375d320f1ca30"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-1440-offer.png",
+      "sha256": "09d56e46209ab99aa52b0ee5f517ea9c96e739a0bc1ce6ce8caa14f07ac0d87f"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-1440-reduced.png",
+      "sha256": "770aabcfb618f56e723bee09ae7d9ce6e57cb78e52c903979cce550152fa1948"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-1440-shy.png",
+      "sha256": "73161140e493d933dad13d7e479261e62e2b3f28bbce3e9b67a15a1773f82534"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-1440-smile.png",
+      "sha256": "dc4829521264ff5aa89b65a99d767cc8d73dbcf2ca8ac65e24488fc22dd80da4"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-1440-surprised.png",
+      "sha256": "081a85eff930b19e24a78a7cdb568730a4176be9751f05de6c9c8222a4ea0d11"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-1440-thinking.png",
+      "sha256": "82ff11f1dc6f4a167d0d62870b68a6b6a699b11c6a10cb383e26de3a9b3fa6d3"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-1440-turn.png",
+      "sha256": "f975cb6a9da3e532edf3791856cfca639478d683f7dd1a0374663b9cf56ca26a"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-1440-watch.png",
+      "sha256": "c80d8bd0f34ae5e82f15371a262d3dcfadcf0d656b49fda4f822aac5b08b74eb"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-390-concern.png",
+      "sha256": "31b4f4fb5dcc027f392974039fbd76ad18296b5c142067518069086d85b42880"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-390-farewell.png",
+      "sha256": "4efb07247b11f7cb385da4a92bbc6819f377d5ad6c740857e37154d9a9c70b03"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-390-firm.png",
+      "sha256": "67ea73113075f28105dd0c499e67c46b6bbd272a30722768debcd988ea002b6d"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-390-intense.png",
+      "sha256": "355a919cd71f4d05e8bc2b1d56d043c58a711485f3a33ddf361c0ea69674a0d3"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-390-laugh.png",
+      "sha256": "7e9d011665b0cf0383ddb2e7ae20c22d32b7d22066c19ebf28e806114ed55147"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-390-listen.png",
+      "sha256": "9f5d83907723ede25fb93b5c2f50457e11b8ed92efc9397eb6c3f10dbf89ef5c"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-390-neutral.png",
+      "sha256": "7bbab48b5ab99d4214ef6ccf110f6c4452d2a85923a98613435fcbbb05769a66"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-390-offer.png",
+      "sha256": "138b4054a1f2fdde8a2d25da8cb7de3b85d6848aeec3b5e9bc515c9b7865f315"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-390-reduced.png",
+      "sha256": "81c83096af77ff7b7e8dc81cdb5544aa98799679719beed716696c7d4ffc7fb2"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-390-shy.png",
+      "sha256": "ae3e22ee668f94b1584c8f227d237a3a99c5d8ef87a6829a9d626f42359be37f"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-390-smile.png",
+      "sha256": "60f535e9b86b65bf6c0436c5d5d012bbfc664fa551f4d69d83dca9ee719aca9b"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-390-surprised.png",
+      "sha256": "a7f853d4780df263186012a160897ed39630ec461b939499d040ad0dfaf62a8d"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-390-thinking.png",
+      "sha256": "1a6208e65ccbd5f3a8a77baf9341b3538810cd44e9c45bf7f587c160376fb497"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-390-turn.png",
+      "sha256": "6d68fcfea9e0cfc1be4feceb621b74fc231e6d624c241f9f0e7148288a609417"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-390-watch.png",
+      "sha256": "b8ba8b3241aab3c586b7f514c6859a018c7298d3d8e1a2137f3a200e4511d075"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\office-comparison.png",
+      "sha256": "bf0c60db36b2109a4a2cc9982853f8d74832ceb8dcf4943662af0d27ac862600"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-1440-concern.png",
+      "sha256": "8ef64c75dd27b0f34f9cda6ed5641f8b9f91f12df28bfda796eebdfec51e94c4"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-1440-farewell.png",
+      "sha256": "a937c2aef6c81e2051627d70083cf131d69d52414ba5e4ba136f04ca61bc2c99"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-1440-firm.png",
+      "sha256": "aa135c4cbbe722212e3d9322f316abd68363e0960fb9481882d2d95ac9ca0590"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-1440-intense.png",
+      "sha256": "41a0455ce8c01bb1373ff3025efaa4761d9ac641a04f86bc1e0596d7513c7e78"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-1440-laugh.png",
+      "sha256": "bb616a6584734d4092225d72f4f57fbe0e46317a100f1d905afa04dc8eb5863a"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-1440-listen.png",
+      "sha256": "91fecf8b15d25f8af163c29d1a8fad479c330b4e95529b4e6a6d93cdcb94517b"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-1440-neutral.png",
+      "sha256": "4d022993662a8e2bef8be894677870461cb3c4e75e97ea9dc376b42a8dba7f58"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-1440-offer.png",
+      "sha256": "dcf7b26a7121e9fe30e38c630e2b5e80c91abec2dd12d1f0c72079d3fc4aba7a"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-1440-reduced.png",
+      "sha256": "7928f99ed675b50f69124900b7a5399706925750a8b41d368b788ef4ddd9b712"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-1440-shy.png",
+      "sha256": "177f6a0bf1dd42b82a4798548c472db70fa5696e88bae237abb67683d13ac446"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-1440-smile.png",
+      "sha256": "930f2cbab11d1fc9816057019db4d953ada11fa4ae56533d458e3cca413a8878"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-1440-surprised.png",
+      "sha256": "d44a10438e9593990889aabdd93f266bcbf2b4c460c2ad23b770943a2b3deb25"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-1440-thinking.png",
+      "sha256": "06ee161ea927aecb8b54253d55de559953f2d091b800397d8d3a14ebeb211e75"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-1440-turn.png",
+      "sha256": "56eefe4b2bc51fdbf6e84c1631735d38e1ee3ce741c7c6f761c7472a61f8904e"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-1440-watch.png",
+      "sha256": "c8b4c88f8485bd734ef3df3260be97fa598b1f4998f2f27177aac1eb43351644"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-390-concern.png",
+      "sha256": "8310330e237d34a102011580d910ed41c2b855f4393718bbfbbf203bdbb56d77"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-390-farewell.png",
+      "sha256": "4e2067a1e7ebfa2fd5797cefe8fa6fa0ee80c41003a43636aed10d44d4aa9d45"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-390-firm.png",
+      "sha256": "16f4fa409daffe90059bcad957cf33785514d08a954508de17df1e013e1872c9"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-390-intense.png",
+      "sha256": "7f30760eaea2850bb0d157398272365bf26b24b0a394a8c710de62d677453ab2"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-390-laugh.png",
+      "sha256": "8a64379e3758e3a9319dc4b1ca097ccb251707b9481bf5092b031b90738ef2a6"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-390-listen.png",
+      "sha256": "38ff1ecaa4c194ce1f3b4e1f36a786500f6e0345175d7941d5a967b8f6eac446"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-390-neutral.png",
+      "sha256": "43c835789c5b4eee04515b9b5c857f5c6c111c25b3c95f7dcc7bc9157562344e"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-390-offer.png",
+      "sha256": "bb98c9f84e0741fdfe55db313fd89715374178a168091e2f29c1f4c9c71296dd"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-390-reduced.png",
+      "sha256": "4c5503b366d4b52e5853eeff72c649ccea7668a4d2771270cf9cac81107add12"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-390-shy.png",
+      "sha256": "6a1f31abefa6c3446b5c6d1b7e596b221e64b14dc11f80f7ed28304cbb2ea6d9"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-390-smile.png",
+      "sha256": "9fc57cd4eaedb1c56d49e9e28062417a9bb177d0e3894a95fa6cf06c6311c2c3"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-390-surprised.png",
+      "sha256": "6a7aef1efe944c660bf7c8d828994e17c2a6849e1257b4dca233b78b9ec7c2aa"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-390-thinking.png",
+      "sha256": "e68ed6d649f28f57957c88dee8489c4d1b41e56b89a70af3f6190989c7a2bddf"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-390-turn.png",
+      "sha256": "1639f62400fc1c79b99fb2d0d4e7cb7819e40fa943688ca7188438aae6fea0bc"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-390-watch.png",
+      "sha256": "f893d7528283bfeef8e8511290996540e10f5ff63e62da0ee5f16d0823e4d402"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ac4-recheck\\romance-comparison.png",
+      "sha256": "f3efbe6289347ce9e4b9d3b7e420675fc801bd60d6764f52d806b766d92bac40"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-parent-polish\\collection-actual-390.png",
+      "sha256": "08984278287d274aa3e467ff94528cbf85c2b0547c900810140f3523663712a9"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-parent-polish\\collection-legacy-390.png",
+      "sha256": "252800e4c73ff8c395d547a517d2841567bc6959c5eadf07b238e7cb82937de6"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-parent-polish\\next-reply-1440.png",
+      "sha256": "890c83b5285899fe587eaae5a2995b9f0cc4837e4c58f857fcc0d546963a80aa"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-parent-polish\\next-reply-390.png",
+      "sha256": "cc6095faceba434f8fa06fb7b2af0d3d16c05de533eabf61d2e6e47614560a28"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-parent-polish\\pending-13s-390.png",
+      "sha256": "2e01579ab15d2b1752791e7a032c38eb07b82a723fdc8030277a033dcde2eecb"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-parent-polish\\reply-after-13s-390.png",
+      "sha256": "6218b3d467e097762fb856df1714f4584544b7b6e7b72c61fa2e516dd837e328"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-parent-polish\\title-390.png",
+      "sha256": "168720620108da51b873afbc3bc6a619da0775d1495a665b9f3b6962335180c3"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\conversation-1440-office.png",
+      "sha256": "861908ca0257184e6ed8e29a7f940054bd81b6072570b2c869b39f405fcbe826"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\conversation-1440-romance.png",
+      "sha256": "f646c441f758d85881749f595a30b91dcba40a78c49379275f92090ed9c448d7"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\conversation-390-office.png",
+      "sha256": "cc84f27dbd7041d7e04f2819fcf1d7c3347f107a0a3341d8da3c419c73c69225"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\conversation-390-romance.png",
+      "sha256": "cac4e0021876843a4448996951a679d4e25bcb60f78fce858c5f9efbdf6d8b0e"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\log-1440-office.png",
+      "sha256": "b3e72c2e109f3de46dc6fdea27dfddcd1574a0624ab1eed819024b60e1eedd5b"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\log-1440-romance.png",
+      "sha256": "709a5074b5b776f9720b550dcd20755e6b00b001818ed7e95c24645b7c2587a8"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\log-390-office.png",
+      "sha256": "3ef0800178055b505f244dc9a8d1edcc0374bc08b126965bcb677c260836c5a3"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\log-390-romance.png",
+      "sha256": "b32df83cd8d819443dce1270d4631c234dbf65a4c94a22786cf62b3b963f1ba3"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\long-focus-1440-office.png",
+      "sha256": "7df50751bfccc695bfbc4dc3be21a9a5a7fb1546e0786b309e96aa905829e249"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\long-focus-1440-romance.png",
+      "sha256": "a4ede10b77c8732bce8a66a0a9a54fd188a92e945f4625db5e4d3320604ae511"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\long-focus-390-office.png",
+      "sha256": "5254dc1e85144dc2c39d5b0ccdc345fd9be3bc81e075f8c72354669ce698a8e1"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\long-focus-390-romance.png",
+      "sha256": "324f41377fbcc82c8209308ee26b8011cd34e359e51412ff936a0ed2e85fdcd8"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\settings-1440-office.png",
+      "sha256": "ebad127d3b5716367b226f57db4524e8e0a43fd87f1385a26aebab46b07baa54"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\settings-1440-romance.png",
+      "sha256": "526ed44b0f0f00d7af2904cf41f54cd94730ddd2315169dd628c9a88b1a8cbbb"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\settings-390-office.png",
+      "sha256": "82f0735f9df085392bf119df725fa83c7270b7b5d5132e652f319953bbdf1c4c"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\settings-390-romance.png",
+      "sha256": "771de508c60d57404aac3667f95124a9bf62f26885c1464aad5d46fa72fab1cd"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\suspense-1440.png",
+      "sha256": "5fee95d12bb771a1a763c771ba836fc57575e98d52bfac38ce9356e5244b904c"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\suspense-390.png",
+      "sha256": "da2fdef9709262fba20e235f355ac7ef0b8f2aacc5fc42c217732806e82901e4"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\title-1440-office.png",
+      "sha256": "6111626f1269f5c4cacc5b4d8352f23e250e63d89df42afd772bd4c82889bbb8"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\title-1440-romance.png",
+      "sha256": "6111626f1269f5c4cacc5b4d8352f23e250e63d89df42afd772bd4c82889bbb8"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\title-390-office.png",
+      "sha256": "168720620108da51b873afbc3bc6a619da0775d1495a665b9f3b6962335180c3"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\title-390-romance.png",
+      "sha256": "168720620108da51b873afbc3bc6a619da0775d1495a665b9f3b6962335180c3"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-ac4-office-1440.json",
+      "sha256": "626f1fc566de38cc1fd5d76d480ff0b90ae5272c45a7e97ba731b9587f4b54c2"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-ac4-office-390.json",
+      "sha256": "167539580f814120f1949f28909490d99be537f1134b4f2d8d1f2520bcb6ab0d"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-ac4-romance-1440.json",
+      "sha256": "52628881bec0b16bafbd031da59918424698841dd3781ee53d56a4e1bdb08448"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-ac4-romance-390.json",
+      "sha256": "a34584645a000f34177181ecdbeab8f759fc62b1786061654c21c352e5a593bb"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-audio-office-path.json",
+      "sha256": "4342fa4bc43aa6ce2a4feb040c690dd52c69a294501eaf1a4d93a0c7044ed653"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-audio-romance-path.json",
+      "sha256": "48705ac10ce55ee4d5bbc9386d806cae52680fd8ff0db3f4ca05d5c4e52673e9"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-audio-waveforms.json",
+      "sha256": "d8679b4d72de16b5fb93cf0cd513c479996b035f769c494c6dc3b4833510a868"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-parent-observations\\state-review\\v2-state-contract-review\\manifest.json",
+      "sha256": "69f7a41f376686554369c42bbc6a7588b5354f13369ed017490275b72244a91c"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-parent-observations\\state-review\\v2-state-contract-review\\observations.json",
+      "sha256": "a49049d25873a36e2f64c9ed680a0f496c20845c6c970d340ce9d1b80e520efa"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-parent-observations\\state-review\\v2-state-contract-review\\proposal-observations.json",
+      "sha256": "28f365f5413601875bcb9b590441167c9981cb28cd88199cd1e54b0ff3d1574d"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-parent-observations\\state-review\\v2-state-contract-review\\README.md",
+      "sha256": "20e5feeb8862e89bdbcd6699647e8b6a02f25174ee29a3b9e27eb4bf4742ef5b"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-ui-1440-office.json",
+      "sha256": "7c1eee6d204d2c33aef47bc75effd5de9d1db1aaec5f8ab1dffcc846a9e9186e"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-ui-1440-romance.json",
+      "sha256": "8108ba123fbe546197f9d82e4885aaea64155a49501f8535d21e07c197889220"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-ui-390-office.json",
+      "sha256": "d291fec52416eda06c37f4b30fd5c6ad2e61d5a5adc07b5d7e76a7b3df7c2c5f"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-ui-390-romance.json",
+      "sha256": "d089a744f60ab11cfa6af245f9171ef966536cd5709dcc467136bd299ab747f0"
+    }
+  ]
+}

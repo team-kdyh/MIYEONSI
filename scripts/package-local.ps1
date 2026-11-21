@@ -17,7 +17,10 @@ $taskPaths = @($taskNames | ForEach-Object {
 })
 New-Item -ItemType Directory -Path $taskDestination -Force | Out-Null
 Compress-Archive -LiteralPath $taskPaths -DestinationPath $taskArchive -CompressionLevel Optimal -Force
-$taskHash = (Get-FileHash -LiteralPath $taskArchive -Algorithm SHA256).Hash
+$taskHasher = [System.Security.Cryptography.SHA256]::Create()
+$taskArchiveStream = [System.IO.File]::OpenRead($taskArchive)
+try { $taskHash = [System.BitConverter]::ToString($taskHasher.ComputeHash($taskArchiveStream)).Replace('-', '') }
+finally { $taskArchiveStream.Dispose(); $taskHasher.Dispose() }
 Set-Content -LiteralPath ($taskArchive + '.sha256') -Value ($taskHash + '  AFTER-HOURS-local.zip') -Encoding ascii
 Write-Host "Created $taskArchive"
 Write-Host 'The private .env, saved games, runtime logs and node_modules are excluded.'

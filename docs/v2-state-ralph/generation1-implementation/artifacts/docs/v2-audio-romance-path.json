@@ -1,0 +1,357 @@
+{
+  "scope": "Mock model replies, real reconcile, UI and media playback. No paid API. No direct state injection or music-only UI control.",
+  "transitions": [
+    {
+      "from": "cafe-warmth",
+      "to": "rooftop-heart",
+      "overlap": [
+        {
+          "id": "cafe-warmth",
+          "time": 7.825589,
+          "volume": 0.3144224999998696,
+          "paused": false
+        },
+        {
+          "id": "rooftop-heart",
+          "time": 0.058589,
+          "volume": 0.03557750000013038,
+          "paused": false
+        }
+      ]
+    },
+    {
+      "from": "rooftop-heart",
+      "to": "rainy-memory",
+      "overlap": [
+        {
+          "id": "rainy-memory",
+          "time": 0.056016,
+          "volume": 0.033355000000260766,
+          "paused": false
+        },
+        {
+          "id": "rooftop-heart",
+          "time": 8.113353,
+          "volume": 0.3166449999997392,
+          "paused": false
+        }
+      ]
+    },
+    {
+      "from": "rainy-memory",
+      "to": "archive-unease",
+      "overlap": [
+        {
+          "id": "rainy-memory",
+          "time": 8.05459,
+          "volume": 0.3205650000001304,
+          "paused": false
+        },
+        {
+          "id": "archive-unease",
+          "time": 0.008883,
+          "volume": 0.029434999999869614,
+          "paused": false
+        }
+      ]
+    },
+    {
+      "from": "archive-unease",
+      "to": "archive-pursuit",
+      "overlap": [
+        {
+          "id": "archive-pursuit",
+          "time": 0.021396,
+          "volume": 0.03535,
+          "paused": false
+        },
+        {
+          "id": "archive-unease",
+          "time": 8.055515,
+          "volume": 0.31465,
+          "paused": false
+        }
+      ]
+    },
+    {
+      "from": "archive-pursuit",
+      "to": "resolution-dawn",
+      "overlap": [
+        {
+          "id": "archive-pursuit",
+          "time": 8.01097,
+          "volume": 0.3203200000003911,
+          "paused": false
+        },
+        {
+          "id": "resolution-dawn",
+          "time": 0.023309,
+          "volume": 0.029679999999608842,
+          "paused": false
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "text": "어떤 소리를 좋아하세요?",
+      "reply": "찻잔 내려놓는 소리요. 가끔 마지막 음이 삐끗해서 좋아요.",
+      "music": "cafe-warmth",
+      "location": "cafe",
+      "relationship": "strangers",
+      "accepted": [],
+      "ending": null
+    },
+    {
+      "text": "저는 빗소리도 좋아해요.",
+      "reply": "창문 가까운 자리가 좋겠네요.",
+      "music": "cafe-warmth",
+      "location": "cafe",
+      "relationship": "strangers",
+      "accepted": [],
+      "ending": null
+    },
+    {
+      "text": "다음에도 이야기해요.",
+      "reply": "또 들려주세요. 조용한 이야기도요.",
+      "music": "cafe-warmth",
+      "location": "cafe",
+      "relationship": "familiar",
+      "accepted": [
+        {
+          "kind": "relationship",
+          "value": "familiar",
+          "subject": "npc",
+          "status": "accepted",
+          "text": "familiar에 관한 대화 0",
+          "evidence": "",
+          "reference": "",
+          "id": "cf0c48c4-5861-4172-b1fd-ae61c351d17b",
+          "turn": 3
+        }
+      ],
+      "ending": null
+    },
+    {
+      "text": "좋아하는 향도 궁금해요.",
+      "reply": "시나몬이요. 겨울을 조금 먼저 꺼내는 향 같아요.",
+      "music": "cafe-warmth",
+      "location": "cafe",
+      "relationship": "familiar",
+      "accepted": [],
+      "ending": null
+    },
+    {
+      "text": "같이 있으면 즐거워요.",
+      "reply": "저도 자꾸 시계를 늦게 보게 돼요.",
+      "music": "cafe-warmth",
+      "location": "cafe",
+      "relationship": "attracted",
+      "accepted": [
+        {
+          "kind": "relationship",
+          "value": "attracted",
+          "subject": "npc",
+          "status": "accepted",
+          "text": "attracted에 관한 대화 0",
+          "evidence": "",
+          "reference": "",
+          "id": "3769b8d0-1ca1-4131-a07c-babdce53333e",
+          "turn": 5
+        }
+      ],
+      "ending": null
+    },
+    {
+      "text": "유나는 어떤 마음이에요?",
+      "reply": "좋아해요. 이 말은 편집하지 않을래요.",
+      "music": "rooftop-heart",
+      "location": "cafe",
+      "relationship": "confessed",
+      "accepted": [
+        {
+          "kind": "relationship",
+          "value": "confessed",
+          "subject": "npc",
+          "status": "accepted",
+          "text": "confessed에 관한 대화 0",
+          "evidence": "",
+          "reference": "",
+          "id": "f1ce648c-809c-4da0-adb4-f1d2e0aebd44",
+          "turn": 6
+        }
+      ],
+      "ending": null
+    },
+    {
+      "text": "좋아요. 우리 사귀어요. 옥상으로 함께 가요.",
+      "reply": "오늘 바람 소리를 오래 기억할 것 같아요.",
+      "music": "rooftop-heart",
+      "location": "rooftop",
+      "relationship": "couple",
+      "accepted": [
+        {
+          "kind": "relationship",
+          "value": "couple",
+          "subject": "mutual",
+          "status": "accepted",
+          "text": "couple에 관한 대화 0",
+          "evidence": "좋아요. 우리 사귀어요. 옥상으로 함께 가요.",
+          "reference": "",
+          "id": "7d0bc5c6-dff4-4c6e-8294-bd57c933680c",
+          "turn": 7
+        },
+        {
+          "kind": "move",
+          "value": "rooftop",
+          "subject": "mutual",
+          "status": "accepted",
+          "text": "rooftop에 관한 대화 0",
+          "evidence": "좋아요. 우리 사귀어요. 옥상으로 함께 가요.",
+          "reference": "",
+          "id": "889092fd-caa4-48fa-a92b-7c6852d04d1b",
+          "turn": 7
+        }
+      ],
+      "ending": null
+    },
+    {
+      "text": "좋아요. 오늘 함께 데이트해요.",
+      "reply": "뜨거운 차를 챙길게요. 옥상은 생각보다 춥더라고요.",
+      "music": "rooftop-heart",
+      "location": "rooftop",
+      "relationship": "couple",
+      "accepted": [
+        {
+          "kind": "relationship",
+          "value": "date",
+          "subject": "mutual",
+          "status": "accepted",
+          "text": "date에 관한 대화 0",
+          "evidence": "좋아요. 오늘 함께 데이트해요.",
+          "reference": "",
+          "id": "1cb68a66-c17e-45f6-84a8-6b9dd645a96b",
+          "turn": 8
+        }
+      ],
+      "ending": null
+    },
+    {
+      "text": "좋아요. 함께 차를 마시며 옥상 바람 소리를 들어요.",
+      "reply": "저도 차를 마셨어요. 오늘 바람은 찻잔에서도 울리네요.",
+      "music": "rooftop-heart",
+      "location": "rooftop",
+      "relationship": "couple",
+      "accepted": [
+        {
+          "kind": "relationship",
+          "value": "date",
+          "subject": "mutual",
+          "status": "fulfilled",
+          "text": "date에 관한 대화 0",
+          "evidence": "좋아요. 함께 차를 마시며 옥상 바람 소리를 들어요.",
+          "reference": "1cb68a66-c17e-45f6-84a8-6b9dd645a96b",
+          "id": "9278a2cc-f84b-4aaa-b837-1b7a5503c594",
+          "turn": 9
+        },
+        {
+          "id": "57ea8d84-4e6e-4edc-841a-a1ca46f79daf",
+          "turn": 9,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "유나가 차를 한 모금 마시며 바람 소리에 귀를 기울인다.",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "ending": null
+    },
+    {
+      "text": "좋아요. 비 내리는 거리로 함께 가요.",
+      "reply": "그날도 이렇게 비가 왔어요. 잊은 줄 알았는데.",
+      "music": "rainy-memory",
+      "location": "rainstreet",
+      "relationship": "couple",
+      "accepted": [
+        {
+          "kind": "move",
+          "value": "rainstreet",
+          "subject": "mutual",
+          "status": "accepted",
+          "text": "rainstreet에 관한 대화 0",
+          "evidence": "좋아요. 비 내리는 거리로 함께 가요.",
+          "reference": "",
+          "id": "5e4446bd-4dd0-4a85-bb8e-237fbcaa31b8",
+          "turn": 10
+        }
+      ],
+      "ending": null
+    },
+    {
+      "text": "좋아요. 보관실로 함께 가요.",
+      "reply": "테이프 끝에 빈 소리가 있어요. 원래는 없었는데.",
+      "music": "archive-unease",
+      "location": "archive",
+      "relationship": "couple",
+      "accepted": [
+        {
+          "kind": "move",
+          "value": "archive",
+          "subject": "mutual",
+          "status": "accepted",
+          "text": "archive에 관한 대화 0",
+          "evidence": "좋아요. 보관실로 함께 가요.",
+          "reference": "",
+          "id": "14f972a0-06c6-4d18-a54e-ab2a81d8c6c4",
+          "turn": 11
+        }
+      ],
+      "ending": null
+    },
+    {
+      "text": "녹음의 삭제된 부분을 확인해 주세요.",
+      "reply": "여기, 제가 지운 부분이에요. 이제 숨기지 않을게요.",
+      "music": "archive-pursuit",
+      "location": "archive",
+      "relationship": "couple",
+      "accepted": [
+        {
+          "kind": "clue",
+          "value": "edited-gap",
+          "subject": "npc",
+          "status": "fulfilled",
+          "text": "edited-gap에 관한 대화 0",
+          "evidence": "",
+          "reference": "",
+          "id": "727b2674-40de-4abe-8a73-a6af120bf79d",
+          "turn": 12
+        }
+      ],
+      "ending": null
+    },
+    {
+      "text": "좋아요. 기록을 두고 관계를 다시 시작해요.",
+      "reply": "처음부터 들을까요. 이번에는 멈추고 싶으면 말해 주세요.",
+      "music": "resolution-dawn",
+      "location": "archive",
+      "relationship": "couple",
+      "accepted": [
+        {
+          "kind": "resolution",
+          "value": "reset",
+          "subject": "player",
+          "status": "accepted",
+          "text": "reset에 관한 대화 0",
+          "evidence": "좋아요. 기록을 두고 관계를 다시 시작해요.",
+          "reference": "",
+          "id": "bfdcac26-9dde-40e0-81b1-bf2b8e042518",
+          "turn": 13
+        }
+      ],
+      "ending": "romance-0"
+    }
+  ],
+  "errors": []
+}

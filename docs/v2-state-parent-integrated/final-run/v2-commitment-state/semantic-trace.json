@@ -1,0 +1,5432 @@
+{
+  "executedAt": "2026-11-21T05:41:23.573Z",
+  "source": "mock authored replies; normal start/commitDialogue; no paid calls",
+  "hashes": {
+    "server/commitments.ts": "d29ef52d07bae1e71f2e05e24f394c201bd666be0cc91e9d489c54aef83e9b4a",
+    "server/commitments.test.ts": "d6a9dfa4d3de052082331b7bc8d4164c3cca985f270bf4d70e6d89f61057b184",
+    "server/narrative.ts": "80dc19e6b3aec1db26fc69a344fbce48c38a026ae03ceaa30e41f674833f7764",
+    "server/provider.ts": "1019c72de478e48ad5a26d47e43fecb9be296b99e5923160893f49a29259b020",
+    "server/storage.ts": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b"
+  },
+  "trace": [
+    {
+      "input": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon"
+          }
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentOffers": [
+          {
+            "eventIndex": 0,
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는"
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는"
+              }
+            ]
+          }
+        ]
+      },
+      "before": null,
+      "after": {
+        "format": 2,
+        "turn": 1,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "turn": 1
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "864c8384-a597-49d6-ab90-09b512d152f7",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "45147144-aeab-4401-b8ea-027976df829a",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ]
+      },
+      "result": "committed"
+    },
+    {
+      "input": "좋아요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "evidence": "좋아요.",
+            "value": "ribbon"
+          }
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 1,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "turn": 1
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "864c8384-a597-49d6-ab90-09b512d152f7",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "45147144-aeab-4401-b8ea-027976df829a",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ]
+      },
+      "after": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "06f1bc2e-144a-4a40-b5f5-15bfd7ffa60c",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "06f1bc2e-144a-4a40-b5f5-15bfd7ffa60c"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "864c8384-a597-49d6-ab90-09b512d152f7",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "45147144-aeab-4401-b8ea-027976df829a",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "committed"
+    },
+    {
+      "input": "제 노란 리본 가져왔어요.",
+      "reply": {
+        "line": "저는 아직 리본을 준비하지 못했어요.",
+        "actionBeats": [],
+        "events": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "conditionId": "864c8384-a597-49d6-ab90-09b512d152f7",
+            "performer": "player",
+            "source": "player",
+            "actionIndex": -1,
+            "eventId": "",
+            "quote": "제 노란 리본 가져왔어요."
+          }
+        ]
+      },
+      "before": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "06f1bc2e-144a-4a40-b5f5-15bfd7ffa60c",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "06f1bc2e-144a-4a40-b5f5-15bfd7ffa60c"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "864c8384-a597-49d6-ab90-09b512d152f7",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "45147144-aeab-4401-b8ea-027976df829a",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 3,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "06f1bc2e-144a-4a40-b5f5-15bfd7ffa60c",
+            "turn": 2
+          },
+          {
+            "id": "f252336d-ef7d-4046-a80a-d6b27cd1b347",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "player",
+            "text": "제 노란 리본 가져왔어요.",
+            "status": "fulfilled",
+            "reference": "864c8384-a597-49d6-ab90-09b512d152f7",
+            "evidence": "제 노란 리본 가져왔어요.",
+            "value": "condition-evidence"
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "06f1bc2e-144a-4a40-b5f5-15bfd7ffa60c"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "864c8384-a597-49d6-ab90-09b512d152f7",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "f252336d-ef7d-4046-a80a-d6b27cd1b347"
+                ]
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "45147144-aeab-4401-b8ea-027976df829a",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [
+              {
+                "turn": 3,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "864c8384-a597-49d6-ab90-09b512d152f7",
+                    "evidenceIds": [
+                      "f252336d-ef7d-4046-a80a-d6b27cd1b347"
+                    ]
+                  },
+                  {
+                    "id": "45147144-aeab-4401-b8ea-027976df829a",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              }
+            ],
+            "status": "partial"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "committed"
+    },
+    {
+      "input": "제 노란 리본 가져왔어요.",
+      "reply": {
+        "line": "저는 아직 리본을 준비하지 못했어요.",
+        "actionBeats": [],
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "fulfilled",
+            "reference": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "evidence": "제 노란 리본 가져왔어요.",
+            "value": "ribbon"
+          }
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 3,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "06f1bc2e-144a-4a40-b5f5-15bfd7ffa60c",
+            "turn": 2
+          },
+          {
+            "id": "f252336d-ef7d-4046-a80a-d6b27cd1b347",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "player",
+            "text": "제 노란 리본 가져왔어요.",
+            "status": "fulfilled",
+            "reference": "864c8384-a597-49d6-ab90-09b512d152f7",
+            "evidence": "제 노란 리본 가져왔어요.",
+            "value": "condition-evidence"
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "06f1bc2e-144a-4a40-b5f5-15bfd7ffa60c"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "864c8384-a597-49d6-ab90-09b512d152f7",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "f252336d-ef7d-4046-a80a-d6b27cd1b347"
+                ]
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "45147144-aeab-4401-b8ea-027976df829a",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [
+              {
+                "turn": 3,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "864c8384-a597-49d6-ab90-09b512d152f7",
+                    "evidenceIds": [
+                      "f252336d-ef7d-4046-a80a-d6b27cd1b347"
+                    ]
+                  },
+                  {
+                    "id": "45147144-aeab-4401-b8ea-027976df829a",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              }
+            ],
+            "status": "partial"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 3,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "06f1bc2e-144a-4a40-b5f5-15bfd7ffa60c",
+            "turn": 2
+          },
+          {
+            "id": "f252336d-ef7d-4046-a80a-d6b27cd1b347",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "player",
+            "text": "제 노란 리본 가져왔어요.",
+            "status": "fulfilled",
+            "reference": "864c8384-a597-49d6-ab90-09b512d152f7",
+            "evidence": "제 노란 리본 가져왔어요.",
+            "value": "condition-evidence"
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "06f1bc2e-144a-4a40-b5f5-15bfd7ffa60c"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "864c8384-a597-49d6-ab90-09b512d152f7",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "f252336d-ef7d-4046-a80a-d6b27cd1b347"
+                ]
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "45147144-aeab-4401-b8ea-027976df829a",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [
+              {
+                "turn": 3,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "864c8384-a597-49d6-ab90-09b512d152f7",
+                    "evidenceIds": [
+                      "f252336d-ef7d-4046-a80a-d6b27cd1b347"
+                    ]
+                  },
+                  {
+                    "id": "45147144-aeab-4401-b8ea-027976df829a",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              }
+            ],
+            "status": "partial"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "rejected",
+      "reason": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요."
+    },
+    {
+      "input": "제 노란 리본 가져왔어요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [
+          "유나가 노란 리본을 건네준다."
+        ],
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "fulfilled",
+            "reference": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "evidence": "제 노란 리본 가져왔어요.",
+            "value": "ribbon"
+          }
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "conditionId": "45147144-aeab-4401-b8ea-027976df829a",
+            "performer": "npc",
+            "source": "action",
+            "actionIndex": 0,
+            "eventId": "",
+            "quote": "유나가 노란 리본을 건네준다."
+          }
+        ]
+      },
+      "before": {
+        "format": 2,
+        "turn": 3,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "06f1bc2e-144a-4a40-b5f5-15bfd7ffa60c",
+            "turn": 2
+          },
+          {
+            "id": "f252336d-ef7d-4046-a80a-d6b27cd1b347",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "player",
+            "text": "제 노란 리본 가져왔어요.",
+            "status": "fulfilled",
+            "reference": "864c8384-a597-49d6-ab90-09b512d152f7",
+            "evidence": "제 노란 리본 가져왔어요.",
+            "value": "condition-evidence"
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "06f1bc2e-144a-4a40-b5f5-15bfd7ffa60c"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "864c8384-a597-49d6-ab90-09b512d152f7",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "f252336d-ef7d-4046-a80a-d6b27cd1b347"
+                ]
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "45147144-aeab-4401-b8ea-027976df829a",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [
+              {
+                "turn": 3,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "864c8384-a597-49d6-ab90-09b512d152f7",
+                    "evidenceIds": [
+                      "f252336d-ef7d-4046-a80a-d6b27cd1b347"
+                    ]
+                  },
+                  {
+                    "id": "45147144-aeab-4401-b8ea-027976df829a",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              }
+            ],
+            "status": "partial"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 4,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "06f1bc2e-144a-4a40-b5f5-15bfd7ffa60c",
+            "turn": 2
+          },
+          {
+            "id": "f252336d-ef7d-4046-a80a-d6b27cd1b347",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "player",
+            "text": "제 노란 리본 가져왔어요.",
+            "status": "fulfilled",
+            "reference": "864c8384-a597-49d6-ab90-09b512d152f7",
+            "evidence": "제 노란 리본 가져왔어요.",
+            "value": "condition-evidence"
+          },
+          {
+            "id": "bed2e6a7-f1cf-4ef3-bec8-142a3cbac379",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 노란 리본을 건네준다.",
+            "status": "fulfilled",
+            "reference": "45147144-aeab-4401-b8ea-027976df829a",
+            "evidence": "유나가 노란 리본을 건네준다.",
+            "value": "condition-evidence"
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "fulfilled",
+            "reference": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "evidence": "제 노란 리본 가져왔어요.",
+            "value": "ribbon",
+            "id": "85315217-8dd1-4d3b-b6ce-229b1a0ba4ff",
+            "turn": 4
+          },
+          {
+            "id": "7145a792-5375-45d5-95ff-2412d40ebaa6",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 노란 리본을 건네준다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "574b843a-859d-46c1-9a0e-d7e9d1e081b0",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "06f1bc2e-144a-4a40-b5f5-15bfd7ffa60c"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "864c8384-a597-49d6-ab90-09b512d152f7",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "f252336d-ef7d-4046-a80a-d6b27cd1b347"
+                ]
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "45147144-aeab-4401-b8ea-027976df829a",
+                "originalPerformer": "npc",
+                "evidenceIds": [
+                  "bed2e6a7-f1cf-4ef3-bec8-142a3cbac379"
+                ]
+              }
+            ],
+            "amendments": [],
+            "assessments": [
+              {
+                "turn": 3,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "864c8384-a597-49d6-ab90-09b512d152f7",
+                    "evidenceIds": [
+                      "f252336d-ef7d-4046-a80a-d6b27cd1b347"
+                    ]
+                  },
+                  {
+                    "id": "45147144-aeab-4401-b8ea-027976df829a",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              },
+              {
+                "turn": 4,
+                "result": "completed",
+                "conditions": [
+                  {
+                    "id": "864c8384-a597-49d6-ab90-09b512d152f7",
+                    "evidenceIds": [
+                      "f252336d-ef7d-4046-a80a-d6b27cd1b347"
+                    ]
+                  },
+                  {
+                    "id": "45147144-aeab-4401-b8ea-027976df829a",
+                    "evidenceIds": [
+                      "bed2e6a7-f1cf-4ef3-bec8-142a3cbac379"
+                    ]
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              }
+            ],
+            "status": "completed"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "committed"
+    },
+    {
+      "input": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon"
+          }
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentOffers": [
+          {
+            "eventIndex": 0,
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고"
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는"
+              }
+            ]
+          }
+        ]
+      },
+      "before": null,
+      "after": {
+        "format": 2,
+        "turn": 1,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "turn": 1
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ]
+      },
+      "result": "committed"
+    },
+    {
+      "input": "좋아요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "evidence": "좋아요.",
+            "value": "ribbon"
+          }
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 1,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "turn": 1
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ]
+      },
+      "after": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "1d376917-07f1-4d90-adb5-1aac86088d54",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "1d376917-07f1-4d90-adb5-1aac86088d54"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "committed"
+    },
+    {
+      "input": "노란 리본 가져왔어요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "conditionId": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+            "performer": "player",
+            "source": "player",
+            "actionIndex": -1,
+            "eventId": "",
+            "quote": "노란 리본 가져왔어요."
+          }
+        ]
+      },
+      "before": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "1d376917-07f1-4d90-adb5-1aac86088d54",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "1d376917-07f1-4d90-adb5-1aac86088d54"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 3,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "1d376917-07f1-4d90-adb5-1aac86088d54",
+            "turn": 2
+          },
+          {
+            "id": "ce169b04-93de-48a5-ba47-0f14ea35cff7",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "player",
+            "text": "노란 리본 가져왔어요.",
+            "status": "fulfilled",
+            "reference": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+            "evidence": "노란 리본 가져왔어요.",
+            "value": "condition-evidence"
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "1d376917-07f1-4d90-adb5-1aac86088d54"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "ce169b04-93de-48a5-ba47-0f14ea35cff7"
+                ]
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [
+              {
+                "turn": 3,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+                    "evidenceIds": [
+                      "ce169b04-93de-48a5-ba47-0f14ea35cff7"
+                    ]
+                  },
+                  {
+                    "id": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              }
+            ],
+            "status": "partial"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "committed"
+    },
+    {
+      "input": "편지를 접었어요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "fulfilled",
+            "reference": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "evidence": "편지를 접었어요.",
+            "value": "ribbon"
+          }
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "conditionId": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+            "performer": "player",
+            "source": "player",
+            "actionIndex": -1,
+            "eventId": "",
+            "quote": "편지를 접었어요."
+          }
+        ]
+      },
+      "before": {
+        "format": 2,
+        "turn": 3,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "1d376917-07f1-4d90-adb5-1aac86088d54",
+            "turn": 2
+          },
+          {
+            "id": "ce169b04-93de-48a5-ba47-0f14ea35cff7",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "player",
+            "text": "노란 리본 가져왔어요.",
+            "status": "fulfilled",
+            "reference": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+            "evidence": "노란 리본 가져왔어요.",
+            "value": "condition-evidence"
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "1d376917-07f1-4d90-adb5-1aac86088d54"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "ce169b04-93de-48a5-ba47-0f14ea35cff7"
+                ]
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [
+              {
+                "turn": 3,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+                    "evidenceIds": [
+                      "ce169b04-93de-48a5-ba47-0f14ea35cff7"
+                    ]
+                  },
+                  {
+                    "id": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              }
+            ],
+            "status": "partial"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 4,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "1d376917-07f1-4d90-adb5-1aac86088d54",
+            "turn": 2
+          },
+          {
+            "id": "ce169b04-93de-48a5-ba47-0f14ea35cff7",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "player",
+            "text": "노란 리본 가져왔어요.",
+            "status": "fulfilled",
+            "reference": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+            "evidence": "노란 리본 가져왔어요.",
+            "value": "condition-evidence"
+          },
+          {
+            "id": "cc073d5f-d749-4433-8699-dda9ffba9061",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "player",
+            "text": "편지를 접었어요.",
+            "status": "fulfilled",
+            "reference": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+            "evidence": "편지를 접었어요.",
+            "value": "condition-evidence"
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "fulfilled",
+            "reference": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "evidence": "편지를 접었어요.",
+            "value": "ribbon",
+            "id": "06c7e3f4-d63e-4059-aec9-149e90cd34ce",
+            "turn": 4
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "1d376917-07f1-4d90-adb5-1aac86088d54"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "ce169b04-93de-48a5-ba47-0f14ea35cff7"
+                ]
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "cc073d5f-d749-4433-8699-dda9ffba9061"
+                ]
+              }
+            ],
+            "amendments": [],
+            "assessments": [
+              {
+                "turn": 3,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+                    "evidenceIds": [
+                      "ce169b04-93de-48a5-ba47-0f14ea35cff7"
+                    ]
+                  },
+                  {
+                    "id": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              },
+              {
+                "turn": 4,
+                "result": "completed",
+                "conditions": [
+                  {
+                    "id": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+                    "evidenceIds": [
+                      "ce169b04-93de-48a5-ba47-0f14ea35cff7"
+                    ]
+                  },
+                  {
+                    "id": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+                    "evidenceIds": [
+                      "cc073d5f-d749-4433-8699-dda9ffba9061"
+                    ]
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              }
+            ],
+            "status": "completed"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "committed"
+    },
+    {
+      "input": "편지를 접었어요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "fulfilled",
+            "reference": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "evidence": "편지를 접었어요.",
+            "value": "ribbon"
+          }
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "conditionId": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+            "performer": "player",
+            "source": "player",
+            "actionIndex": -1,
+            "eventId": "",
+            "quote": "편지를 접었어요."
+          }
+        ]
+      },
+      "before": {
+        "format": 2,
+        "turn": 4,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "1d376917-07f1-4d90-adb5-1aac86088d54",
+            "turn": 2
+          },
+          {
+            "id": "ce169b04-93de-48a5-ba47-0f14ea35cff7",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "player",
+            "text": "노란 리본 가져왔어요.",
+            "status": "fulfilled",
+            "reference": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+            "evidence": "노란 리본 가져왔어요.",
+            "value": "condition-evidence"
+          },
+          {
+            "id": "cc073d5f-d749-4433-8699-dda9ffba9061",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "player",
+            "text": "편지를 접었어요.",
+            "status": "fulfilled",
+            "reference": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+            "evidence": "편지를 접었어요.",
+            "value": "condition-evidence"
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "fulfilled",
+            "reference": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "evidence": "편지를 접었어요.",
+            "value": "ribbon",
+            "id": "06c7e3f4-d63e-4059-aec9-149e90cd34ce",
+            "turn": 4
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "1d376917-07f1-4d90-adb5-1aac86088d54"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "ce169b04-93de-48a5-ba47-0f14ea35cff7"
+                ]
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "cc073d5f-d749-4433-8699-dda9ffba9061"
+                ]
+              }
+            ],
+            "amendments": [],
+            "assessments": [
+              {
+                "turn": 3,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+                    "evidenceIds": [
+                      "ce169b04-93de-48a5-ba47-0f14ea35cff7"
+                    ]
+                  },
+                  {
+                    "id": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              },
+              {
+                "turn": 4,
+                "result": "completed",
+                "conditions": [
+                  {
+                    "id": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+                    "evidenceIds": [
+                      "ce169b04-93de-48a5-ba47-0f14ea35cff7"
+                    ]
+                  },
+                  {
+                    "id": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+                    "evidenceIds": [
+                      "cc073d5f-d749-4433-8699-dda9ffba9061"
+                    ]
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              }
+            ],
+            "status": "completed"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 5,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "1d376917-07f1-4d90-adb5-1aac86088d54",
+            "turn": 2
+          },
+          {
+            "id": "ce169b04-93de-48a5-ba47-0f14ea35cff7",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "player",
+            "text": "노란 리본 가져왔어요.",
+            "status": "fulfilled",
+            "reference": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+            "evidence": "노란 리본 가져왔어요.",
+            "value": "condition-evidence"
+          },
+          {
+            "id": "cc073d5f-d749-4433-8699-dda9ffba9061",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "player",
+            "text": "편지를 접었어요.",
+            "status": "fulfilled",
+            "reference": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+            "evidence": "편지를 접었어요.",
+            "value": "condition-evidence"
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "fulfilled",
+            "reference": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "evidence": "편지를 접었어요.",
+            "value": "ribbon",
+            "id": "06c7e3f4-d63e-4059-aec9-149e90cd34ce",
+            "turn": 4
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "2f381ee1-199a-488a-a56b-6c78daa8b732",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "1d376917-07f1-4d90-adb5-1aac86088d54"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "ce169b04-93de-48a5-ba47-0f14ea35cff7"
+                ]
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "cc073d5f-d749-4433-8699-dda9ffba9061"
+                ]
+              }
+            ],
+            "amendments": [],
+            "assessments": [
+              {
+                "turn": 3,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+                    "evidenceIds": [
+                      "ce169b04-93de-48a5-ba47-0f14ea35cff7"
+                    ]
+                  },
+                  {
+                    "id": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              },
+              {
+                "turn": 4,
+                "result": "completed",
+                "conditions": [
+                  {
+                    "id": "94eeaba7-c87a-46b5-8e7e-10482e51e50b",
+                    "evidenceIds": [
+                      "ce169b04-93de-48a5-ba47-0f14ea35cff7"
+                    ]
+                  },
+                  {
+                    "id": "a04e626b-7eb8-47f4-91a1-f58a1482da77",
+                    "evidenceIds": [
+                      "cc073d5f-d749-4433-8699-dda9ffba9061"
+                    ]
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              }
+            ],
+            "status": "completed"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "committed"
+    },
+    {
+      "input": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon"
+          }
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentOffers": [
+          {
+            "eventIndex": 0,
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는"
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는"
+              }
+            ]
+          }
+        ]
+      },
+      "before": null,
+      "after": {
+        "format": 2,
+        "turn": 1,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "turn": 1
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "9672d3af-cf8f-4db0-a1a2-5575631e9884",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ]
+      },
+      "result": "committed"
+    },
+    {
+      "input": "좋아요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "evidence": "좋아요.",
+            "value": "ribbon"
+          }
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 1,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "turn": 1
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "9672d3af-cf8f-4db0-a1a2-5575631e9884",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ]
+      },
+      "after": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "9672d3af-cf8f-4db0-a1a2-5575631e9884",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "committed"
+    },
+    {
+      "input": "노란 리본을 가져왔어요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "conditionId": "unknown",
+            "performer": "player",
+            "source": "player",
+            "actionIndex": -1,
+            "eventId": "",
+            "quote": "노란 리본을 가져왔어요."
+          }
+        ]
+      },
+      "before": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "9672d3af-cf8f-4db0-a1a2-5575631e9884",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "9672d3af-cf8f-4db0-a1a2-5575631e9884",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "rejected",
+      "reason": "Error: 약속 조건 또는 이행 근거를 확인하지 못했습니다."
+    },
+    {
+      "input": "노란 리본을 가져왔어요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "conditionId": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+            "performer": "npc",
+            "source": "player",
+            "actionIndex": -1,
+            "eventId": "",
+            "quote": "노란 리본을 가져왔어요."
+          }
+        ]
+      },
+      "before": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "9672d3af-cf8f-4db0-a1a2-5575631e9884",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "9672d3af-cf8f-4db0-a1a2-5575631e9884",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "rejected",
+      "reason": "Error: 약속 조건 또는 이행 근거를 확인하지 못했습니다."
+    },
+    {
+      "input": "노란 리본을 가져왔어요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "unknown",
+            "conditionId": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+            "performer": "player",
+            "source": "player",
+            "actionIndex": -1,
+            "eventId": "",
+            "quote": "노란 리본을 가져왔어요."
+          }
+        ]
+      },
+      "before": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "9672d3af-cf8f-4db0-a1a2-5575631e9884",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "9672d3af-cf8f-4db0-a1a2-5575631e9884",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "rejected",
+      "reason": "Error: 약속 조건 또는 이행 근거를 확인하지 못했습니다."
+    },
+    {
+      "input": "노란 리본을 가져올게요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "conditionId": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+            "performer": "player",
+            "source": "player",
+            "actionIndex": -1,
+            "eventId": "",
+            "quote": "노란 리본을 가져올게요."
+          }
+        ]
+      },
+      "before": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "9672d3af-cf8f-4db0-a1a2-5575631e9884",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "9672d3af-cf8f-4db0-a1a2-5575631e9884",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "rejected",
+      "reason": "Error: 약속 조건 또는 이행 근거를 확인하지 못했습니다."
+    },
+    {
+      "input": "노란 리본을 봤어요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "conditionId": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+            "performer": "player",
+            "source": "player",
+            "actionIndex": -1,
+            "eventId": "",
+            "quote": "노란 리본을 봤어요."
+          }
+        ]
+      },
+      "before": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "9672d3af-cf8f-4db0-a1a2-5575631e9884",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "9672d3af-cf8f-4db0-a1a2-5575631e9884",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "rejected",
+      "reason": "Error: 약속 조건 또는 이행 근거를 확인하지 못했습니다."
+    },
+    {
+      "input": "친구가 노란 리본을 가져왔어요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "conditionId": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+            "performer": "player",
+            "source": "player",
+            "actionIndex": -1,
+            "eventId": "",
+            "quote": "친구가 노란 리본을 가져왔어요."
+          }
+        ]
+      },
+      "before": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "9672d3af-cf8f-4db0-a1a2-5575631e9884",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "9672d3af-cf8f-4db0-a1a2-5575631e9884",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "rejected",
+      "reason": "Error: 약속 조건 또는 이행 근거를 확인하지 못했습니다."
+    },
+    {
+      "input": "노란 리본을 가져왔어요?",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "conditionId": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+            "performer": "player",
+            "source": "player",
+            "actionIndex": -1,
+            "eventId": "",
+            "quote": "노란 리본을 가져왔어요?"
+          }
+        ]
+      },
+      "before": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "9672d3af-cf8f-4db0-a1a2-5575631e9884",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "5eae09dc-2df3-4b2f-bc59-5979d5cecef1",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "f157144b-a55f-4ff1-bfe2-908f8ce9b7b8"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e2ab0f09-6f10-4fd8-b3f3-6acea17c3ce8",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "9672d3af-cf8f-4db0-a1a2-5575631e9884",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "rejected",
+      "reason": "Error: 약속 조건 또는 이행 근거를 확인하지 못했습니다."
+    },
+    {
+      "input": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon"
+          }
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentOffers": [
+          {
+            "eventIndex": 0,
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고"
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는"
+              }
+            ]
+          }
+        ]
+      },
+      "before": null,
+      "after": {
+        "format": 2,
+        "turn": 1,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "turn": 1
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "67558a4b-1d4b-4ec1-87cd-25cd878f99d9",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ]
+      },
+      "result": "committed"
+    },
+    {
+      "input": "좋아요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "evidence": "좋아요.",
+            "value": "ribbon"
+          }
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 1,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "turn": 1
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "67558a4b-1d4b-4ec1-87cd-25cd878f99d9",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ]
+      },
+      "after": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f8adc42a-2ecf-4dfe-b9bd-a4aacbe284c3",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "f8adc42a-2ecf-4dfe-b9bd-a4aacbe284c3"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "67558a4b-1d4b-4ec1-87cd-25cd878f99d9",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "committed"
+    },
+    {
+      "input": "잘 모르겠어요.",
+      "reply": {
+        "line": "제가 편지를 대신 맡을게요.",
+        "actionBeats": [],
+        "events": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentAmendments": [
+          {
+            "promiseId": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "conditionId": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+            "performer": "npc",
+            "playerQuote": "편지는 대신 맡아 주세요.",
+            "npcQuote": "제가 편지를 대신 맡을게요."
+          }
+        ]
+      },
+      "before": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f8adc42a-2ecf-4dfe-b9bd-a4aacbe284c3",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "f8adc42a-2ecf-4dfe-b9bd-a4aacbe284c3"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "67558a4b-1d4b-4ec1-87cd-25cd878f99d9",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f8adc42a-2ecf-4dfe-b9bd-a4aacbe284c3",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "f8adc42a-2ecf-4dfe-b9bd-a4aacbe284c3"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "67558a4b-1d4b-4ec1-87cd-25cd878f99d9",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "rejected",
+      "reason": "Error: 약속 조건 또는 이행 근거를 확인하지 못했습니다."
+    },
+    {
+      "input": "편지는 대신 맡아 주세요.",
+      "reply": {
+        "line": "제가 편지를 대신 맡을게요.",
+        "actionBeats": [],
+        "events": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentAmendments": [
+          {
+            "promiseId": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "conditionId": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+            "performer": "npc",
+            "playerQuote": "편지는 대신 맡아 주세요.",
+            "npcQuote": "제가 편지를 대신 맡을게요."
+          }
+        ]
+      },
+      "before": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f8adc42a-2ecf-4dfe-b9bd-a4aacbe284c3",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "f8adc42a-2ecf-4dfe-b9bd-a4aacbe284c3"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "67558a4b-1d4b-4ec1-87cd-25cd878f99d9",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 3,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f8adc42a-2ecf-4dfe-b9bd-a4aacbe284c3",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "f8adc42a-2ecf-4dfe-b9bd-a4aacbe284c3"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "67558a4b-1d4b-4ec1-87cd-25cd878f99d9",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [
+              {
+                "promiseId": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+                "conditionId": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+                "performer": "npc",
+                "playerQuote": "편지는 대신 맡아 주세요.",
+                "npcQuote": "제가 편지를 대신 맡을게요.",
+                "id": "9241a319-1364-44e7-9240-3d408ef2dee8",
+                "previousPerformer": "player",
+                "turn": 3
+              }
+            ],
+            "assessments": [
+              {
+                "turn": 3,
+                "result": "pending",
+                "conditions": [
+                  {
+                    "id": "67558a4b-1d4b-4ec1-87cd-25cd878f99d9",
+                    "evidenceIds": []
+                  },
+                  {
+                    "id": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              }
+            ],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "committed"
+    },
+    {
+      "input": "고마워요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [
+          "유나가 편지를 접는다."
+        ],
+        "events": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "conditionId": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+            "performer": "npc",
+            "source": "action",
+            "actionIndex": 0,
+            "eventId": "",
+            "quote": "유나가 편지를 접는다."
+          }
+        ]
+      },
+      "before": {
+        "format": 2,
+        "turn": 3,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f8adc42a-2ecf-4dfe-b9bd-a4aacbe284c3",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "f8adc42a-2ecf-4dfe-b9bd-a4aacbe284c3"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "67558a4b-1d4b-4ec1-87cd-25cd878f99d9",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [
+              {
+                "promiseId": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+                "conditionId": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+                "performer": "npc",
+                "playerQuote": "편지는 대신 맡아 주세요.",
+                "npcQuote": "제가 편지를 대신 맡을게요.",
+                "id": "9241a319-1364-44e7-9240-3d408ef2dee8",
+                "previousPerformer": "player",
+                "turn": 3
+              }
+            ],
+            "assessments": [
+              {
+                "turn": 3,
+                "result": "pending",
+                "conditions": [
+                  {
+                    "id": "67558a4b-1d4b-4ec1-87cd-25cd878f99d9",
+                    "evidenceIds": []
+                  },
+                  {
+                    "id": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              }
+            ],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 4,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "f8adc42a-2ecf-4dfe-b9bd-a4aacbe284c3",
+            "turn": 2
+          },
+          {
+            "id": "d2d32ae2-7418-42e2-830c-ae44ab5b88af",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 편지를 접는다.",
+            "status": "fulfilled",
+            "reference": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+            "evidence": "유나가 편지를 접는다.",
+            "value": "condition-evidence"
+          },
+          {
+            "id": "6ee9f96d-e4ea-4d88-bc4e-b5cdbff17d88",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 편지를 접는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "f8adc42a-2ecf-4dfe-b9bd-a4aacbe284c3"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "67558a4b-1d4b-4ec1-87cd-25cd878f99d9",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+                "originalPerformer": "player",
+                "evidenceIds": [
+                  "d2d32ae2-7418-42e2-830c-ae44ab5b88af"
+                ]
+              }
+            ],
+            "amendments": [
+              {
+                "promiseId": "4dbfa855-cbd7-4fc7-ab91-eb9d44cd8768",
+                "conditionId": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+                "performer": "npc",
+                "playerQuote": "편지는 대신 맡아 주세요.",
+                "npcQuote": "제가 편지를 대신 맡을게요.",
+                "id": "9241a319-1364-44e7-9240-3d408ef2dee8",
+                "previousPerformer": "player",
+                "turn": 3
+              }
+            ],
+            "assessments": [
+              {
+                "turn": 3,
+                "result": "pending",
+                "conditions": [
+                  {
+                    "id": "67558a4b-1d4b-4ec1-87cd-25cd878f99d9",
+                    "evidenceIds": []
+                  },
+                  {
+                    "id": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+                    "evidenceIds": []
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              },
+              {
+                "turn": 4,
+                "result": "partial",
+                "conditions": [
+                  {
+                    "id": "67558a4b-1d4b-4ec1-87cd-25cd878f99d9",
+                    "evidenceIds": []
+                  },
+                  {
+                    "id": "b8c6fcde-ee40-4c2f-beee-15cadb66a5b3",
+                    "evidenceIds": [
+                      "d2d32ae2-7418-42e2-830c-ae44ab5b88af"
+                    ]
+                  }
+                ],
+                "reason": "Server-derived from accepted performer-specific evidence"
+              }
+            ],
+            "status": "partial"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "committed"
+    },
+    {
+      "input": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon"
+          }
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentOffers": [
+          {
+            "eventIndex": 0,
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고"
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는"
+              }
+            ]
+          }
+        ]
+      },
+      "before": null,
+      "after": {
+        "format": 2,
+        "turn": 1,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "turn": 1
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "ad2216ee-f63d-4990-8bcc-3c8ae09c2c8f",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "f8101196-1afb-4bb7-89e2-0a02a72d2f93",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ]
+      },
+      "result": "committed"
+    },
+    {
+      "input": "좋아요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "evidence": "좋아요.",
+            "value": "ribbon"
+          }
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 1,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "turn": 1
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "ad2216ee-f63d-4990-8bcc-3c8ae09c2c8f",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "f8101196-1afb-4bb7-89e2-0a02a72d2f93",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ]
+      },
+      "after": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "ef47228c-9094-444e-bd07-38c7c7be1f2c",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "ef47228c-9094-444e-bd07-38c7c7be1f2c"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "ad2216ee-f63d-4990-8bcc-3c8ae09c2c8f",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "f8101196-1afb-4bb7-89e2-0a02a72d2f93",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "committed"
+    },
+    {
+      "input": "그 약속은 거절할게요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "refused",
+            "reference": "ef47228c-9094-444e-bd07-38c7c7be1f2c",
+            "evidence": "그 약속은 거절할게요.",
+            "value": "ribbon"
+          }
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "ef47228c-9094-444e-bd07-38c7c7be1f2c",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "ef47228c-9094-444e-bd07-38c7c7be1f2c"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "ad2216ee-f63d-4990-8bcc-3c8ae09c2c8f",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "f8101196-1afb-4bb7-89e2-0a02a72d2f93",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 3,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "ef47228c-9094-444e-bd07-38c7c7be1f2c",
+            "turn": 2
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "refused",
+            "reference": "ef47228c-9094-444e-bd07-38c7c7be1f2c",
+            "evidence": "그 약속은 거절할게요.",
+            "value": "ribbon",
+            "id": "8c70c972-7f7d-4df3-8291-d3854b6e5252",
+            "turn": 3
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "ef47228c-9094-444e-bd07-38c7c7be1f2c"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "ad2216ee-f63d-4990-8bcc-3c8ae09c2c8f",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "f8101196-1afb-4bb7-89e2-0a02a72d2f93",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "committed"
+    },
+    {
+      "input": "노란 리본 가져왔어요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "conditionId": "ad2216ee-f63d-4990-8bcc-3c8ae09c2c8f",
+            "performer": "player",
+            "source": "player",
+            "actionIndex": -1,
+            "eventId": "",
+            "quote": "노란 리본 가져왔어요."
+          }
+        ]
+      },
+      "before": {
+        "format": 2,
+        "turn": 3,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "ef47228c-9094-444e-bd07-38c7c7be1f2c",
+            "turn": 2
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "refused",
+            "reference": "ef47228c-9094-444e-bd07-38c7c7be1f2c",
+            "evidence": "그 약속은 거절할게요.",
+            "value": "ribbon",
+            "id": "8c70c972-7f7d-4df3-8291-d3854b6e5252",
+            "turn": 3
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "ef47228c-9094-444e-bd07-38c7c7be1f2c"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "ad2216ee-f63d-4990-8bcc-3c8ae09c2c8f",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "f8101196-1afb-4bb7-89e2-0a02a72d2f93",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 3,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "ef47228c-9094-444e-bd07-38c7c7be1f2c",
+            "turn": 2
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "refused",
+            "reference": "ef47228c-9094-444e-bd07-38c7c7be1f2c",
+            "evidence": "그 약속은 거절할게요.",
+            "value": "ribbon",
+            "id": "8c70c972-7f7d-4df3-8291-d3854b6e5252",
+            "turn": 3
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "03f4eb57-e66e-4b0b-b6f4-852a32336803",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "ef47228c-9094-444e-bd07-38c7c7be1f2c"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "ad2216ee-f63d-4990-8bcc-3c8ae09c2c8f",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "f8101196-1afb-4bb7-89e2-0a02a72d2f93",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "rejected",
+      "reason": "Error: 약속 조건 또는 이행 근거를 확인하지 못했습니다."
+    },
+    {
+      "input": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon"
+          }
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentOffers": [
+          {
+            "eventIndex": 0,
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고"
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는"
+              }
+            ]
+          }
+        ]
+      },
+      "before": null,
+      "after": {
+        "format": 2,
+        "turn": 1,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "91aebb98-47f3-4b4c-91ec-d5370693f403",
+            "turn": 1
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "91aebb98-47f3-4b4c-91ec-d5370693f403",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "817ec869-14ce-474e-90d6-a155e394b76f",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "6e29df5d-b62c-441b-9533-2bb2b868d5a6",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ]
+      },
+      "result": "committed"
+    },
+    {
+      "input": "좋아요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "91aebb98-47f3-4b4c-91ec-d5370693f403",
+            "evidence": "좋아요.",
+            "value": "ribbon"
+          }
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 1,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "91aebb98-47f3-4b4c-91ec-d5370693f403",
+            "turn": 1
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "91aebb98-47f3-4b4c-91ec-d5370693f403",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "817ec869-14ce-474e-90d6-a155e394b76f",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "6e29df5d-b62c-441b-9533-2bb2b868d5a6",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ]
+      },
+      "after": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "ribbon",
+            "id": "91aebb98-47f3-4b4c-91ec-d5370693f403",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "91aebb98-47f3-4b4c-91ec-d5370693f403",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "e709fe29-01ec-441d-b11d-71038b625c8f",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "91aebb98-47f3-4b4c-91ec-d5370693f403",
+            "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "acceptanceIds": [
+              "e709fe29-01ec-441d-b11d-71038b625c8f"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고",
+                "id": "817ec869-14ce-474e-90d6-a155e394b76f",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는",
+                "id": "6e29df5d-b62c-441b-9533-2bb2b868d5a6",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "committed"
+    },
+    {
+      "input": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon"
+          }
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentOffers": [
+          {
+            "eventIndex": 0,
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는"
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는"
+              }
+            ]
+          }
+        ]
+      },
+      "before": null,
+      "after": {
+        "format": 2,
+        "turn": 1,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "turn": 1
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e69032c2-e820-4c1c-9ff9-3ef1381f8071",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "7138fcfa-8558-4e65-97a3-aadcfa9f1c79",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ]
+      },
+      "result": "committed"
+    },
+    {
+      "input": "좋아요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "evidence": "좋아요.",
+            "value": "ribbon"
+          }
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 1,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "turn": 1
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e69032c2-e820-4c1c-9ff9-3ef1381f8071",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "7138fcfa-8558-4e65-97a3-aadcfa9f1c79",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ]
+      },
+      "after": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "989e6f8e-3125-4431-8d76-447260543dfa",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "989e6f8e-3125-4431-8d76-447260543dfa"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e69032c2-e820-4c1c-9ff9-3ef1381f8071",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "7138fcfa-8558-4e65-97a3-aadcfa9f1c79",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "committed"
+    },
+    {
+      "input": "친구에게 노란 리본을 건네줬어요.",
+      "reply": {
+        "line": "알겠어요.",
+        "actionBeats": [],
+        "events": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "conditionId": "e69032c2-e820-4c1c-9ff9-3ef1381f8071",
+            "performer": "player",
+            "source": "player",
+            "actionIndex": -1,
+            "eventId": "",
+            "quote": "친구에게 노란 리본을 건네줬어요."
+          }
+        ]
+      },
+      "before": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "989e6f8e-3125-4431-8d76-447260543dfa",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "989e6f8e-3125-4431-8d76-447260543dfa"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e69032c2-e820-4c1c-9ff9-3ef1381f8071",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "7138fcfa-8558-4e65-97a3-aadcfa9f1c79",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "989e6f8e-3125-4431-8d76-447260543dfa",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "989e6f8e-3125-4431-8d76-447260543dfa"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e69032c2-e820-4c1c-9ff9-3ef1381f8071",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "7138fcfa-8558-4e65-97a3-aadcfa9f1c79",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "rejected",
+      "reason": "Error: 약속 조건 또는 이행 근거를 확인하지 못했습니다."
+    },
+    {
+      "input": "알겠어요.",
+      "reply": {
+        "line": "저는 아직 노란 리본을 가져오지 못했어요.",
+        "actionBeats": [],
+        "events": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "conditionId": "7138fcfa-8558-4e65-97a3-aadcfa9f1c79",
+            "performer": "npc",
+            "source": "line",
+            "actionIndex": -1,
+            "eventId": "",
+            "quote": "저는 아직 노란 리본을 가져오지 못했어요."
+          }
+        ]
+      },
+      "before": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "989e6f8e-3125-4431-8d76-447260543dfa",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "989e6f8e-3125-4431-8d76-447260543dfa"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e69032c2-e820-4c1c-9ff9-3ef1381f8071",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "7138fcfa-8558-4e65-97a3-aadcfa9f1c79",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "after": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "value": "ribbon",
+            "id": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "turn": 1
+          },
+          {
+            "kind": "promise",
+            "subject": "mutual",
+            "text": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "status": "accepted",
+            "reference": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "evidence": "좋아요.",
+            "value": "ribbon",
+            "id": "989e6f8e-3125-4431-8d76-447260543dfa",
+            "turn": 2
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "commitments": [
+          {
+            "promiseId": "4f63a4d8-4ea2-47c9-986e-737ba7fe8afb",
+            "originalText": "우리 각자 노란 리본을 가져오는 약속을 해요.",
+            "acceptanceIds": [
+              "989e6f8e-3125-4431-8d76-447260543dfa"
+            ],
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "e69032c2-e820-4c1c-9ff9-3ef1381f8071",
+                "originalPerformer": "player",
+                "evidenceIds": []
+              },
+              {
+                "performer": "npc",
+                "target": "서로",
+                "action": "노란 리본을 가져오는",
+                "id": "7138fcfa-8558-4e65-97a3-aadcfa9f1c79",
+                "originalPerformer": "npc",
+                "evidenceIds": []
+              }
+            ],
+            "amendments": [],
+            "assessments": [],
+            "status": "pending"
+          }
+        ],
+        "legacyCommitmentAssessments": []
+      },
+      "result": "rejected",
+      "reason": "Error: 약속 조건 또는 이행 근거를 확인하지 못했습니다."
+    }
+  ]
+}

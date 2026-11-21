@@ -1,0 +1,12 @@
+{
+  "scope": "Independent mock normal start, same-turn acceptance and performance; isolated prototype only, not active implementation",
+  "paidCalls": 0,
+  "baseSha256": "0e3b7da41c214ef3cb241e5df58c2ff9628231a021be0d1708292d373743ae48",
+  "prototypeSha256": "ae4a0b6b6a015e329ca4c979cc1469a1f8391234d225763c25efcb2483e7d854",
+  "focusedTests": {
+    "command": "npx tsx --test server/commitments-atomic.test.ts",
+    "passed": 3,
+    "failed": 0
+  },
+  "sourceRoot": "C:\\Users\\gjtjw\\Desktop\\\ub300\ud654\ud615 \uc2a4\ud1a0\ub9ac\uc9c4\ud589\\.ralph\\v2-state-g1-snapshot"
+}

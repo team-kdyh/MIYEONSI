@@ -1,0 +1,84 @@
+--- G1/server/commitments.ts
++++ G2/server/commitments.ts
+@@ -2,6 +2,8 @@
+ import type {StoryEvent, NarrativeReply, NarrativeState} from './narrative.ts';
+ 
+ type Actor='player'|'npc';
++// Fail atomically at capacity; never evict obligations or their evidence to fit.
++export const commitmentLimits={promises:128,conditions:6,acceptances:8,amendments:32,assessments:64,evidencePerCondition:1} as const;
+ export type ConditionInput={performer:Actor;target:string;action:string};
+ export type CommitmentOffer={eventIndex:number;conditions:ConditionInput[]};
+ export type ProgressInput={promiseId:string;conditionId:string;performer:Actor;source:'player'|'line'|'action'|'event';actionIndex:number;eventId:string;quote:string};
+@@ -38,17 +40,19 @@
+ export function commitments(s:NarrativeState):Commitment[]{return s.commitments??=[];}
+ export function validCommitments(s:NarrativeState):boolean{
+  if(s.commitments===undefined)return true; // Legacy bytes remain readable and unchanged.
+- if(!Array.isArray(s.commitments)||s.commitments.length>s.events.length)return false;
++ if(!Array.isArray(s.commitments)||s.commitments.length>s.events.length||s.commitments.length>commitmentLimits.promises)return false;
+  const ids=new Set<string>();
+  try{for(const c of s.commitments){
+   const origin=s.events.find(e=>e.id===c.promiseId&&e.kind==='promise'&&e.status==='offered');
+   if(!origin||ids.has(c.promiseId)||c.originalText!==origin.text||!Array.isArray(c.conditions)||!c.conditions.length||c.conditions.length>6||!Array.isArray(c.acceptanceIds)||!Array.isArray(c.amendments)||!Array.isArray(c.assessments))return false;
+   ids.add(c.promiseId);
++  if(c.acceptanceIds.length>commitmentLimits.acceptances||c.amendments.length>commitmentLimits.amendments||c.assessments.length>commitmentLimits.assessments)return false;
+   if(c.acceptanceIds.some(id=>!s.events.some(e=>e.id===id&&e.kind==='promise'&&e.status==='accepted'&&(e.reference===c.promiseId||c.acceptanceIds.includes(e.reference)))))return false;
+   const conditionIds=new Set<string>();
+   for(const condition of c.conditions){
+    if(!short(condition.id,100)||conditionIds.has(condition.id)||!actor(condition.performer)||!short(condition.target)||!short(condition.action)||!origin.text.includes(condition.action)||!Array.isArray(condition.evidenceIds)||new Set(condition.evidenceIds).size!==condition.evidenceIds.length)return false;
+    conditionIds.add(condition.id);
++   if(condition.evidenceIds.length>commitmentLimits.evidencePerCondition)return false;
+    if(!actor(condition.originalPerformer)||origin.subject!=='mutual'&&condition.originalPerformer!==origin.subject)return false;
+    let owner=condition.originalPerformer;
+    for(const amendment of c.amendments.filter(a=>a.conditionId===condition.id)){if(amendment.previousPerformer!==owner)return false;owner=amendment.performer;}
+@@ -65,9 +69,10 @@
+ type Performs=(offer:StoryEvent,sources:{text:string;action:boolean}[],names:string[],single:boolean)=>boolean;
+ export function applyProgress(s:NarrativeState,text:string,r:NarrativeReply,events:StoryEvent[],names:string[],performs:Performs,consent:(s:string)=>boolean){
+  const touched=new Set<Commitment>();
++ const refused=(c:Commitment)=>[...s.events,...r.events].some(e=>e.kind==='promise'&&e.status==='refused'&&(e.reference===c.promiseId||c.acceptanceIds.includes(e.reference)));
+  for(const a of r.commitmentAmendments??[]){
+   const c=commitments(s).find(c=>c.promiseId===a.promiseId),condition=c?.conditions.find(c=>c.id===a.conditionId);
+-  if(!c||!condition||!c.acceptanceIds.length||c.status==='completed'||condition.evidenceIds.length||condition.performer===a.performer)fail();
++  if(!c||!condition||!c.acceptanceIds.length||refused(c)||c.status==='completed'||condition.evidenceIds.length||condition.performer===a.performer||c.amendments.length>=commitmentLimits.amendments)fail();
+   if(!text.includes(a.playerQuote)||!r.line.includes(a.npcQuote)||![text,r.line].every(q=>consent(q)&&/대신|맡/.test(q)))fail();
+   const taking=a.performer==='npc'?a.npcQuote:a.playerQuote;
+   if(!/(?:제가|내가|저는|나는)/.test(taking))fail();
+@@ -78,7 +83,7 @@
+  }
+  for(const p of r.commitmentProgress??[]){
+   const c=commitments(s).find(c=>c.promiseId===p.promiseId),condition=c?.conditions.find(c=>c.id===p.conditionId),origin=s.events.find(e=>e.id===p.promiseId);
+-  if(!c||!condition||!origin||!c.acceptanceIds.length||condition.performer!==p.performer||s.events.some(e=>(e.reference===c.promiseId||c.acceptanceIds.includes(e.reference))&&e.status==='refused'))fail();
++  if(!c||!condition||!origin||!c.acceptanceIds.length||condition.performer!==p.performer||refused(c))fail();
+   let source='',action=false,existing:StoryEvent|undefined;
+   if(p.source==='player'&&p.performer==='player')source=text;
+   if(p.source==='line'&&p.performer==='npc')source=r.line;
+@@ -94,18 +99,19 @@
+   const recipients=[...source.matchAll(/([가-힣A-Za-z0-9]+)(?:에게|한테)\s/g)].map(m=>m[1]);
+   const targets=condition!.target==='서로'?(p.performer==='player'?['유나','서유나','부장','부장님','박도현']:['당신','플레이어',...names]):[condition!.target];
+   if(recipients.some(target=>!targets.includes(target)))fail();
+-  if(condition!.evidenceIds.length){touched.add(c!);continue;}
++  if(condition!.evidenceIds.length)continue;
+   const evidence=existing??{id:randomUUID(),turn:s.turn,kind:'complication' as const,subject:p.performer,text:source,status:'fulfilled' as const,reference:condition!.id,evidence:p.quote,value:'condition-evidence'};
+   if(!existing)events.push(evidence);
+   condition!.evidenceIds.push(evidence.id);touched.add(c!);
+  }
+- for(const c of touched){const count=c.conditions.filter(c=>c.evidenceIds.length).length;c.status=count===c.conditions.length?'completed':count?'partial':'pending';c.assessments.push({turn:s.turn,result:c.status,conditions:c.conditions.map(c=>({id:c.id,evidenceIds:[...c.evidenceIds]})),reason:'Server-derived from accepted performer-specific evidence'});}
++ for(const c of touched){if(c.assessments.length>=commitmentLimits.assessments)fail();const count=c.conditions.filter(c=>c.evidenceIds.length).length;c.status=count===c.conditions.length?'completed':count?'partial':'pending';c.assessments.push({turn:s.turn,result:c.status,conditions:c.conditions.map(c=>({id:c.id,evidenceIds:[...c.evidenceIds]})),reason:'Server-derived from accepted performer-specific evidence'});}
+ }
+ 
+ export function registerCommitments(s:NarrativeState,r:NarrativeReply,accepted:StoryEvent[]){
+  for(const o of r.commitmentOffers??[]){
+   const proposal=r.events[o.eventIndex],event=accepted.find(e=>e.kind===proposal.kind&&e.status===proposal.status&&e.text===proposal.text&&e.subject===proposal.subject);
+   if(!event||event.kind!=='promise'||event.status!=='offered'||commitments(s).some(c=>c.promiseId===event.id))fail();
++  if(commitments(s).length>=commitmentLimits.promises)fail();
+   if(event.subject==='mutual'&&!(['player','npc'] as const).every(actor=>o.conditions.some(c=>c.performer===actor)))fail();
+   if(event.subject!=='mutual'&&o.conditions.some(c=>c.performer!==event.subject))fail();
+   // Conditions must be literal pieces of the original contract, never a replacement.
+@@ -113,7 +119,7 @@
+   commitments(s).push({promiseId:event.id,originalText:event.text,acceptanceIds:[],conditions:o.conditions.map(c=>({...c,id:randomUUID(),originalPerformer:c.performer,evidenceIds:[]})),amendments:[],assessments:[],status:'pending'});
+  }
+  for(const e of accepted.filter(e=>e.kind==='promise'&&e.status==='accepted')){
+-  const c=commitments(s).find(c=>c.promiseId===e.reference||c.acceptanceIds.includes(e.reference));if(c&&!c.acceptanceIds.includes(e.id))c.acceptanceIds.push(e.id);
++  const c=commitments(s).find(c=>c.promiseId===e.reference||c.acceptanceIds.includes(e.reference));if(c&&!c.acceptanceIds.includes(e.id)){if(c.acceptanceIds.length>=commitmentLimits.acceptances)fail();c.acceptanceIds.push(e.id);}
+  }
+ }
+ 

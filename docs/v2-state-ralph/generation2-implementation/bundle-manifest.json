@@ -1,0 +1,4334 @@
+{
+  "candidateId": "state-followup-688ce619270e4e61",
+  "scope": "allowlisted source/assets and generated verification evidence; no credentials/private saves",
+  "files": [
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-concern.png",
+      "sha256": "232d8f8d167fa895ffd8f40134dc6319bde7618feb57f01bbc9bc4399ee82d26",
+      "bytes": 1859766,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-farewell.png",
+      "sha256": "e1af9acb60f49ae11f8a4c37d283e911484e4d94fd49e5c1122668965b88d3a1",
+      "bytes": 1862078,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-firm.png",
+      "sha256": "679cd1bce3f46c1cc4d003f2c4a49672c10be58dea7153c8d919cef119671c0e",
+      "bytes": 1864725,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-intense.png",
+      "sha256": "0682522ec09b5f957137a8bf51a2605396ea0f5df50c7cd435e82e7cd9853132",
+      "bytes": 1864898,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-laugh.png",
+      "sha256": "4296faa9d3ddec657bda1df7538a78b33f3a90f1d81e0c425dbd1891ec8c4e75",
+      "bytes": 1859084,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-listen.png",
+      "sha256": "94798f01a523557defba9847cd54f57076e66e4b718893fb82290c3dc34c4198",
+      "bytes": 1865589,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-neutral.png",
+      "sha256": "dddb9f435d0dc1967a2c578bf97141e6f062b71a9cd1ac5b41f375d320f1ca30",
+      "bytes": 1669925,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-offer.png",
+      "sha256": "09d56e46209ab99aa52b0ee5f517ea9c96e739a0bc1ce6ce8caa14f07ac0d87f",
+      "bytes": 1860077,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-reduced.png",
+      "sha256": "770aabcfb618f56e723bee09ae7d9ce6e57cb78e52c903979cce550152fa1948",
+      "bytes": 1853322,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-shy.png",
+      "sha256": "73161140e493d933dad13d7e479261e62e2b3f28bbce3e9b67a15a1773f82534",
+      "bytes": 1859928,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-smile.png",
+      "sha256": "dc4829521264ff5aa89b65a99d767cc8d73dbcf2ca8ac65e24488fc22dd80da4",
+      "bytes": 1857578,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-surprised.png",
+      "sha256": "081a85eff930b19e24a78a7cdb568730a4176be9751f05de6c9c8222a4ea0d11",
+      "bytes": 1865290,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-thinking.png",
+      "sha256": "82ff11f1dc6f4a167d0d62870b68a6b6a699b11c6a10cb383e26de3a9b3fa6d3",
+      "bytes": 1868101,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-turn.png",
+      "sha256": "f975cb6a9da3e532edf3791856cfca639478d683f7dd1a0374663b9cf56ca26a",
+      "bytes": 1856917,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-watch.png",
+      "sha256": "c80d8bd0f34ae5e82f15371a262d3dcfadcf0d656b49fda4f822aac5b08b74eb",
+      "bytes": 1860643,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-concern.png",
+      "sha256": "31b4f4fb5dcc027f392974039fbd76ad18296b5c142067518069086d85b42880",
+      "bytes": 453411,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-farewell.png",
+      "sha256": "4efb07247b11f7cb385da4a92bbc6819f377d5ad6c740857e37154d9a9c70b03",
+      "bytes": 454608,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-firm.png",
+      "sha256": "67ea73113075f28105dd0c499e67c46b6bbd272a30722768debcd988ea002b6d",
+      "bytes": 456930,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-intense.png",
+      "sha256": "355a919cd71f4d05e8bc2b1d56d043c58a711485f3a33ddf361c0ea69674a0d3",
+      "bytes": 457061,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-laugh.png",
+      "sha256": "7e9d011665b0cf0383ddb2e7ae20c22d32b7d22066c19ebf28e806114ed55147",
+      "bytes": 453003,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-listen.png",
+      "sha256": "9f5d83907723ede25fb93b5c2f50457e11b8ed92efc9397eb6c3f10dbf89ef5c",
+      "bytes": 457588,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-neutral.png",
+      "sha256": "7bbab48b5ab99d4214ef6ccf110f6c4452d2a85923a98613435fcbbb05769a66",
+      "bytes": 384321,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-offer.png",
+      "sha256": "138b4054a1f2fdde8a2d25da8cb7de3b85d6848aeec3b5e9bc515c9b7865f315",
+      "bytes": 453707,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-reduced.png",
+      "sha256": "81c83096af77ff7b7e8dc81cdb5544aa98799679719beed716696c7d4ffc7fb2",
+      "bytes": 452115,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-shy.png",
+      "sha256": "ae3e22ee668f94b1584c8f227d237a3a99c5d8ef87a6829a9d626f42359be37f",
+      "bytes": 453477,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-smile.png",
+      "sha256": "60f535e9b86b65bf6c0436c5d5d012bbfc664fa551f4d69d83dca9ee719aca9b",
+      "bytes": 450723,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-surprised.png",
+      "sha256": "a7f853d4780df263186012a160897ed39630ec461b939499d040ad0dfaf62a8d",
+      "bytes": 456840,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-thinking.png",
+      "sha256": "1a6208e65ccbd5f3a8a77baf9341b3538810cd44e9c45bf7f587c160376fb497",
+      "bytes": 459570,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-turn.png",
+      "sha256": "6d68fcfea9e0cfc1be4feceb621b74fc231e6d624c241f9f0e7148288a609417",
+      "bytes": 449717,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-watch.png",
+      "sha256": "b8ba8b3241aab3c586b7f514c6859a018c7298d3d8e1a2137f3a200e4511d075",
+      "bytes": 454386,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-comparison.png",
+      "sha256": "bf0c60db36b2109a4a2cc9982853f8d74832ceb8dcf4943662af0d27ac862600",
+      "bytes": 1499015,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-concern.png",
+      "sha256": "8ef64c75dd27b0f34f9cda6ed5641f8b9f91f12df28bfda796eebdfec51e94c4",
+      "bytes": 1872780,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-farewell.png",
+      "sha256": "a937c2aef6c81e2051627d70083cf131d69d52414ba5e4ba136f04ca61bc2c99",
+      "bytes": 1870080,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-firm.png",
+      "sha256": "aa135c4cbbe722212e3d9322f316abd68363e0960fb9481882d2d95ac9ca0590",
+      "bytes": 1876374,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-intense.png",
+      "sha256": "41a0455ce8c01bb1373ff3025efaa4761d9ac641a04f86bc1e0596d7513c7e78",
+      "bytes": 1867358,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-laugh.png",
+      "sha256": "bb616a6584734d4092225d72f4f57fbe0e46317a100f1d905afa04dc8eb5863a",
+      "bytes": 1869706,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-listen.png",
+      "sha256": "91fecf8b15d25f8af163c29d1a8fad479c330b4e95529b4e6a6d93cdcb94517b",
+      "bytes": 1867139,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-neutral.png",
+      "sha256": "4d022993662a8e2bef8be894677870461cb3c4e75e97ea9dc376b42a8dba7f58",
+      "bytes": 1678876,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-offer.png",
+      "sha256": "dcf7b26a7121e9fe30e38c630e2b5e80c91abec2dd12d1f0c72079d3fc4aba7a",
+      "bytes": 1874280,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-reduced.png",
+      "sha256": "7928f99ed675b50f69124900b7a5399706925750a8b41d368b788ef4ddd9b712",
+      "bytes": 1861067,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-shy.png",
+      "sha256": "177f6a0bf1dd42b82a4798548c472db70fa5696e88bae237abb67683d13ac446",
+      "bytes": 1874630,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-smile.png",
+      "sha256": "930f2cbab11d1fc9816057019db4d953ada11fa4ae56533d458e3cca413a8878",
+      "bytes": 1873988,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-surprised.png",
+      "sha256": "d44a10438e9593990889aabdd93f266bcbf2b4c460c2ad23b770943a2b3deb25",
+      "bytes": 1872091,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-thinking.png",
+      "sha256": "06ee161ea927aecb8b54253d55de559953f2d091b800397d8d3a14ebeb211e75",
+      "bytes": 1872368,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-turn.png",
+      "sha256": "56eefe4b2bc51fdbf6e84c1631735d38e1ee3ce741c7c6f761c7472a61f8904e",
+      "bytes": 1867265,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-watch.png",
+      "sha256": "c8b4c88f8485bd734ef3df3260be97fa598b1f4998f2f27177aac1eb43351644",
+      "bytes": 1867145,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-concern.png",
+      "sha256": "8310330e237d34a102011580d910ed41c2b855f4393718bbfbbf203bdbb56d77",
+      "bytes": 463094,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-farewell.png",
+      "sha256": "4e2067a1e7ebfa2fd5797cefe8fa6fa0ee80c41003a43636aed10d44d4aa9d45",
+      "bytes": 461176,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-firm.png",
+      "sha256": "16f4fa409daffe90059bcad957cf33785514d08a954508de17df1e013e1872c9",
+      "bytes": 465738,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-intense.png",
+      "sha256": "7f30760eaea2850bb0d157398272365bf26b24b0a394a8c710de62d677453ab2",
+      "bytes": 458781,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-laugh.png",
+      "sha256": "8a64379e3758e3a9319dc4b1ca097ccb251707b9481bf5092b031b90738ef2a6",
+      "bytes": 460264,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-listen.png",
+      "sha256": "38ff1ecaa4c194ce1f3b4e1f36a786500f6e0345175d7941d5a967b8f6eac446",
+      "bytes": 458152,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-neutral.png",
+      "sha256": "43c835789c5b4eee04515b9b5c857f5c6c111c25b3c95f7dcc7bc9157562344e",
+      "bytes": 390882,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-offer.png",
+      "sha256": "bb98c9f84e0741fdfe55db313fd89715374178a168091e2f29c1f4c9c71296dd",
+      "bytes": 463294,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-reduced.png",
+      "sha256": "4c5503b366d4b52e5853eeff72c649ccea7668a4d2771270cf9cac81107add12",
+      "bytes": 458753,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-shy.png",
+      "sha256": "6a1f31abefa6c3446b5c6d1b7e596b221e64b14dc11f80f7ed28304cbb2ea6d9",
+      "bytes": 464805,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-smile.png",
+      "sha256": "9fc57cd4eaedb1c56d49e9e28062417a9bb177d0e3894a95fa6cf06c6311c2c3",
+      "bytes": 463041,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-surprised.png",
+      "sha256": "6a7aef1efe944c660bf7c8d828994e17c2a6849e1257b4dca233b78b9ec7c2aa",
+      "bytes": 461660,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-thinking.png",
+      "sha256": "e68ed6d649f28f57957c88dee8489c4d1b41e56b89a70af3f6190989c7a2bddf",
+      "bytes": 462101,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-turn.png",
+      "sha256": "1639f62400fc1c79b99fb2d0d4e7cb7819e40fa943688ca7188438aae6fea0bc",
+      "bytes": 459185,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-watch.png",
+      "sha256": "f893d7528283bfeef8e8511290996540e10f5ff63e62da0ee5f16d0823e4d402",
+      "bytes": 458142,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-comparison.png",
+      "sha256": "f3efbe6289347ce9e4b9d3b7e420675fc801bd60d6764f52d806b766d92bac40",
+      "bytes": 1472301,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifact-hashes.json",
+      "sha256": "7e2b352c44caf6a46ec9ff728c3e149e56799d5486b07acaddc717ea500261d0",
+      "bytes": 17028,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/lifecycle-observations.json",
+      "sha256": "b1dd4cd3860cf166d5a1a2b2c63834774764f2b40b9233988b5416510b0a9f42",
+      "bytes": 440033,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-concern.png",
+      "sha256": "232d8f8d167fa895ffd8f40134dc6319bde7618feb57f01bbc9bc4399ee82d26",
+      "bytes": 1859766,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-farewell.png",
+      "sha256": "e1af9acb60f49ae11f8a4c37d283e911484e4d94fd49e5c1122668965b88d3a1",
+      "bytes": 1862078,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-firm.png",
+      "sha256": "679cd1bce3f46c1cc4d003f2c4a49672c10be58dea7153c8d919cef119671c0e",
+      "bytes": 1864725,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-intense.png",
+      "sha256": "0682522ec09b5f957137a8bf51a2605396ea0f5df50c7cd435e82e7cd9853132",
+      "bytes": 1864898,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-laugh.png",
+      "sha256": "4296faa9d3ddec657bda1df7538a78b33f3a90f1d81e0c425dbd1891ec8c4e75",
+      "bytes": 1859084,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-listen.png",
+      "sha256": "94798f01a523557defba9847cd54f57076e66e4b718893fb82290c3dc34c4198",
+      "bytes": 1865589,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-neutral.png",
+      "sha256": "dddb9f435d0dc1967a2c578bf97141e6f062b71a9cd1ac5b41f375d320f1ca30",
+      "bytes": 1669925,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-offer.png",
+      "sha256": "09d56e46209ab99aa52b0ee5f517ea9c96e739a0bc1ce6ce8caa14f07ac0d87f",
+      "bytes": 1860077,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-reduced.png",
+      "sha256": "770aabcfb618f56e723bee09ae7d9ce6e57cb78e52c903979cce550152fa1948",
+      "bytes": 1853322,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-shy.png",
+      "sha256": "73161140e493d933dad13d7e479261e62e2b3f28bbce3e9b67a15a1773f82534",
+      "bytes": 1859928,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-smile.png",
+      "sha256": "dc4829521264ff5aa89b65a99d767cc8d73dbcf2ca8ac65e24488fc22dd80da4",
+      "bytes": 1857578,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-surprised.png",
+      "sha256": "081a85eff930b19e24a78a7cdb568730a4176be9751f05de6c9c8222a4ea0d11",
+      "bytes": 1865290,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-thinking.png",
+      "sha256": "82ff11f1dc6f4a167d0d62870b68a6b6a699b11c6a10cb383e26de3a9b3fa6d3",
+      "bytes": 1868101,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-turn.png",
+      "sha256": "f975cb6a9da3e532edf3791856cfca639478d683f7dd1a0374663b9cf56ca26a",
+      "bytes": 1856917,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-watch.png",
+      "sha256": "c80d8bd0f34ae5e82f15371a262d3dcfadcf0d656b49fda4f822aac5b08b74eb",
+      "bytes": 1860643,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-concern.png",
+      "sha256": "31b4f4fb5dcc027f392974039fbd76ad18296b5c142067518069086d85b42880",
+      "bytes": 453411,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-farewell.png",
+      "sha256": "4efb07247b11f7cb385da4a92bbc6819f377d5ad6c740857e37154d9a9c70b03",
+      "bytes": 454608,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-firm.png",
+      "sha256": "67ea73113075f28105dd0c499e67c46b6bbd272a30722768debcd988ea002b6d",
+      "bytes": 456930,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-intense.png",
+      "sha256": "355a919cd71f4d05e8bc2b1d56d043c58a711485f3a33ddf361c0ea69674a0d3",
+      "bytes": 457061,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-laugh.png",
+      "sha256": "7e9d011665b0cf0383ddb2e7ae20c22d32b7d22066c19ebf28e806114ed55147",
+      "bytes": 453003,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-listen.png",
+      "sha256": "9f5d83907723ede25fb93b5c2f50457e11b8ed92efc9397eb6c3f10dbf89ef5c",
+      "bytes": 457588,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-neutral.png",
+      "sha256": "7bbab48b5ab99d4214ef6ccf110f6c4452d2a85923a98613435fcbbb05769a66",
+      "bytes": 384321,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-offer.png",
+      "sha256": "138b4054a1f2fdde8a2d25da8cb7de3b85d6848aeec3b5e9bc515c9b7865f315",
+      "bytes": 453707,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-reduced.png",
+      "sha256": "81c83096af77ff7b7e8dc81cdb5544aa98799679719beed716696c7d4ffc7fb2",
+      "bytes": 452115,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-shy.png",
+      "sha256": "ae3e22ee668f94b1584c8f227d237a3a99c5d8ef87a6829a9d626f42359be37f",
+      "bytes": 453477,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-smile.png",
+      "sha256": "60f535e9b86b65bf6c0436c5d5d012bbfc664fa551f4d69d83dca9ee719aca9b",
+      "bytes": 450723,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-surprised.png",
+      "sha256": "a7f853d4780df263186012a160897ed39630ec461b939499d040ad0dfaf62a8d",
+      "bytes": 456840,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-thinking.png",
+      "sha256": "1a6208e65ccbd5f3a8a77baf9341b3538810cd44e9c45bf7f587c160376fb497",
+      "bytes": 459570,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-turn.png",
+      "sha256": "6d68fcfea9e0cfc1be4feceb621b74fc231e6d624c241f9f0e7148288a609417",
+      "bytes": 449717,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-watch.png",
+      "sha256": "b8ba8b3241aab3c586b7f514c6859a018c7298d3d8e1a2137f3a200e4511d075",
+      "bytes": 454386,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-comparison.png",
+      "sha256": "bf0c60db36b2109a4a2cc9982853f8d74832ceb8dcf4943662af0d27ac862600",
+      "bytes": 1499015,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-concern.png",
+      "sha256": "8ef64c75dd27b0f34f9cda6ed5641f8b9f91f12df28bfda796eebdfec51e94c4",
+      "bytes": 1872780,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-farewell.png",
+      "sha256": "a937c2aef6c81e2051627d70083cf131d69d52414ba5e4ba136f04ca61bc2c99",
+      "bytes": 1870080,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-firm.png",
+      "sha256": "aa135c4cbbe722212e3d9322f316abd68363e0960fb9481882d2d95ac9ca0590",
+      "bytes": 1876374,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-intense.png",
+      "sha256": "41a0455ce8c01bb1373ff3025efaa4761d9ac641a04f86bc1e0596d7513c7e78",
+      "bytes": 1867358,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-laugh.png",
+      "sha256": "bb616a6584734d4092225d72f4f57fbe0e46317a100f1d905afa04dc8eb5863a",
+      "bytes": 1869706,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-listen.png",
+      "sha256": "91fecf8b15d25f8af163c29d1a8fad479c330b4e95529b4e6a6d93cdcb94517b",
+      "bytes": 1867139,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-neutral.png",
+      "sha256": "4d022993662a8e2bef8be894677870461cb3c4e75e97ea9dc376b42a8dba7f58",
+      "bytes": 1678876,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-offer.png",
+      "sha256": "dcf7b26a7121e9fe30e38c630e2b5e80c91abec2dd12d1f0c72079d3fc4aba7a",
+      "bytes": 1874280,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-reduced.png",
+      "sha256": "7928f99ed675b50f69124900b7a5399706925750a8b41d368b788ef4ddd9b712",
+      "bytes": 1861067,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-shy.png",
+      "sha256": "177f6a0bf1dd42b82a4798548c472db70fa5696e88bae237abb67683d13ac446",
+      "bytes": 1874630,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-smile.png",
+      "sha256": "930f2cbab11d1fc9816057019db4d953ada11fa4ae56533d458e3cca413a8878",
+      "bytes": 1873988,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-surprised.png",
+      "sha256": "d44a10438e9593990889aabdd93f266bcbf2b4c460c2ad23b770943a2b3deb25",
+      "bytes": 1872091,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-thinking.png",
+      "sha256": "06ee161ea927aecb8b54253d55de559953f2d091b800397d8d3a14ebeb211e75",
+      "bytes": 1872368,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-turn.png",
+      "sha256": "56eefe4b2bc51fdbf6e84c1631735d38e1ee3ce741c7c6f761c7472a61f8904e",
+      "bytes": 1867265,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-watch.png",
+      "sha256": "c8b4c88f8485bd734ef3df3260be97fa598b1f4998f2f27177aac1eb43351644",
+      "bytes": 1867145,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-concern.png",
+      "sha256": "8310330e237d34a102011580d910ed41c2b855f4393718bbfbbf203bdbb56d77",
+      "bytes": 463094,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-farewell.png",
+      "sha256": "4e2067a1e7ebfa2fd5797cefe8fa6fa0ee80c41003a43636aed10d44d4aa9d45",
+      "bytes": 461176,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-firm.png",
+      "sha256": "16f4fa409daffe90059bcad957cf33785514d08a954508de17df1e013e1872c9",
+      "bytes": 465738,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-intense.png",
+      "sha256": "7f30760eaea2850bb0d157398272365bf26b24b0a394a8c710de62d677453ab2",
+      "bytes": 458781,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-laugh.png",
+      "sha256": "8a64379e3758e3a9319dc4b1ca097ccb251707b9481bf5092b031b90738ef2a6",
+      "bytes": 460264,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-listen.png",
+      "sha256": "38ff1ecaa4c194ce1f3b4e1f36a786500f6e0345175d7941d5a967b8f6eac446",
+      "bytes": 458152,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-neutral.png",
+      "sha256": "43c835789c5b4eee04515b9b5c857f5c6c111c25b3c95f7dcc7bc9157562344e",
+      "bytes": 390882,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-offer.png",
+      "sha256": "bb98c9f84e0741fdfe55db313fd89715374178a168091e2f29c1f4c9c71296dd",
+      "bytes": 463294,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-reduced.png",
+      "sha256": "4c5503b366d4b52e5853eeff72c649ccea7668a4d2771270cf9cac81107add12",
+      "bytes": 458753,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-shy.png",
+      "sha256": "6a1f31abefa6c3446b5c6d1b7e596b221e64b14dc11f80f7ed28304cbb2ea6d9",
+      "bytes": 464805,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-smile.png",
+      "sha256": "9fc57cd4eaedb1c56d49e9e28062417a9bb177d0e3894a95fa6cf06c6311c2c3",
+      "bytes": 463041,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-surprised.png",
+      "sha256": "6a7aef1efe944c660bf7c8d828994e17c2a6849e1257b4dca233b78b9ec7c2aa",
+      "bytes": 461660,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-thinking.png",
+      "sha256": "e68ed6d649f28f57957c88dee8489c4d1b41e56b89a70af3f6190989c7a2bddf",
+      "bytes": 462101,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-turn.png",
+      "sha256": "1639f62400fc1c79b99fb2d0d4e7cb7819e40fa943688ca7188438aae6fea0bc",
+      "bytes": 459185,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-watch.png",
+      "sha256": "f893d7528283bfeef8e8511290996540e10f5ff63e62da0ee5f16d0823e4d402",
+      "bytes": 458142,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-comparison.png",
+      "sha256": "f3efbe6289347ce9e4b9d3b7e420675fc801bd60d6764f52d806b766d92bac40",
+      "bytes": 1472301,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-parent-polish/collection-legacy-390.png",
+      "sha256": "252800e4c73ff8c395d547a517d2841567bc6959c5eadf07b238e7cb82937de6",
+      "bytes": 46826,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/conversation-1440-office.png",
+      "sha256": "861908ca0257184e6ed8e29a7f940054bd81b6072570b2c869b39f405fcbe826",
+      "bytes": 1477099,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/conversation-1440-romance.png",
+      "sha256": "274a9ca94b31d5badac94da7b0859b8fb4ea6ffb582442dadb8c55591c051707",
+      "bytes": 1721472,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/conversation-390-office.png",
+      "sha256": "cc84f27dbd7041d7e04f2819fcf1d7c3347f107a0a3341d8da3c419c73c69225",
+      "bytes": 389503,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/conversation-390-romance.png",
+      "sha256": "16d76d2615dfe6981deebf287f9f4b9e546630649c3e3c164fa6ef85addf159e",
+      "bytes": 457283,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/log-1440-office.png",
+      "sha256": "b3e72c2e109f3de46dc6fdea27dfddcd1574a0624ab1eed819024b60e1eedd5b",
+      "bytes": 339232,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/log-1440-romance.png",
+      "sha256": "709a5074b5b776f9720b550dcd20755e6b00b001818ed7e95c24645b7c2587a8",
+      "bytes": 367273,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/log-390-office.png",
+      "sha256": "3ef0800178055b505f244dc9a8d1edcc0374bc08b126965bcb677c260836c5a3",
+      "bytes": 74895,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/log-390-romance.png",
+      "sha256": "b32df83cd8d819443dce1270d4631c234dbf65a4c94a22786cf62b3b963f1ba3",
+      "bytes": 76154,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/long-focus-1440-office.png",
+      "sha256": "295cdf055947199ecceae6b792ba60b1ca1359059bce119dc45ed9880a60ab73",
+      "bytes": 1477408,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/long-focus-1440-romance.png",
+      "sha256": "153ec1d13c57fe88b0a14352ee1d0ebb9f15c005756db5c3e9b89b1f37c70ce7",
+      "bytes": 1719895,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/long-focus-390-office.png",
+      "sha256": "f0565c5b871d09fea652fabea824e4c9c5b5035b8b74436af03f50c411c0f26f",
+      "bytes": 393234,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/long-focus-390-romance.png",
+      "sha256": "24631be039ff68a29cd62ad006752b7f454487128a0c486fbb29ecf432216a95",
+      "bytes": 462460,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/settings-1440-office.png",
+      "sha256": "ebad127d3b5716367b226f57db4524e8e0a43fd87f1385a26aebab46b07baa54",
+      "bytes": 318354,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/settings-1440-romance.png",
+      "sha256": "526ed44b0f0f00d7af2904cf41f54cd94730ddd2315169dd628c9a88b1a8cbbb",
+      "bytes": 339303,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/settings-390-office.png",
+      "sha256": "82f0735f9df085392bf119df725fa83c7270b7b5d5132e652f319953bbdf1c4c",
+      "bytes": 60585,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/settings-390-romance.png",
+      "sha256": "771de508c60d57404aac3667f95124a9bf62f26885c1464aad5d46fa72fab1cd",
+      "bytes": 63508,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/suspense-1440.png",
+      "sha256": "5fee95d12bb771a1a763c771ba836fc57575e98d52bfac38ce9356e5244b904c",
+      "bytes": 1495933,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/suspense-390.png",
+      "sha256": "da2fdef9709262fba20e235f355ac7ef0b8f2aacc5fc42c217732806e82901e4",
+      "bytes": 372368,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/title-1440-office.png",
+      "sha256": "6111626f1269f5c4cacc5b4d8352f23e250e63d89df42afd772bd4c82889bbb8",
+      "bytes": 891044,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/title-1440-romance.png",
+      "sha256": "6111626f1269f5c4cacc5b4d8352f23e250e63d89df42afd772bd4c82889bbb8",
+      "bytes": 891044,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/title-390-office.png",
+      "sha256": "168720620108da51b873afbc3bc6a619da0775d1495a665b9f3b6962335180c3",
+      "bytes": 155083,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/qa-screenshots/v2-ui/title-390-romance.png",
+      "sha256": "168720620108da51b873afbc3bc6a619da0775d1495a665b9f3b6962335180c3",
+      "bytes": 155083,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-ac2-office-counterfactual.json",
+      "sha256": "516aefc96b984fdd7b486c2b1858665c577523c87c1db4409ca7e7506ac325ef",
+      "bytes": 17866,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-ac2-office-durable-counterfactual.json",
+      "sha256": "9629a7557214eee2fac8f9dcb4ed1f5b22ac5a957e9f7adabc5d9e19b74a4d6f",
+      "bytes": 72488,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-ac2-romance-counterfactual.json",
+      "sha256": "a0f923c6cac8dd987036d3ebc07386fc628e7c07ec1edc5a9abf6bfe9406aae4",
+      "bytes": 38096,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-ac2-romance-durable-counterfactual.json",
+      "sha256": "23d59808bebcb7287113c152c66d3a72ad76d25f6d924583171996172d783c69",
+      "bytes": 60183,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-ac3-clockout-state-trace.json",
+      "sha256": "7d70678f42e7ad163a840bdcedc4f5ef74cc50ab92902e7920a2825215e0274c",
+      "bytes": 35579,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-ac3-credit-state-trace.json",
+      "sha256": "4a68982f64a98a3233b4b41cb3c2289052e061689bd17bdd25d1c3b698551bdf",
+      "bytes": 36085,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-ac3-delegation-state-trace.json",
+      "sha256": "4722e7466982457a2f741bfc1b79f3627be9d2de652114fd2c2f3b441bcfcf73",
+      "bytes": 36108,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-ac3-dinner-state-trace.json",
+      "sha256": "bec13b121f23aa9d91bc78fdd95df2717db109247c9c6a0a00440b07ef2ce9db",
+      "bytes": 35157,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-ac3-meeting-state-trace.json",
+      "sha256": "86424ed05b98da4f967ccf61db9799e09c78e859cb357ec2c1f415cc77c38b5a",
+      "bytes": 34789,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-ac3-memory-trace.json",
+      "sha256": "f37ba1780bfeeda7d568eed98b760160a13ad04d6bdabdf8a694d41e31a280aa",
+      "bytes": 30706,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-ac3-remote-state-trace.json",
+      "sha256": "6d48d268d3529dfeedaed2551fe150fa5e27acd3e4904c813ee61902badc08a8",
+      "bytes": 35518,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-ac3-vacation-state-trace.json",
+      "sha256": "8eb15953d44af0befb5ca40634e3037bf5cb63f012fb8805568b55e7cf40f0d9",
+      "bytes": 35461,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-ac3-weekend-state-trace.json",
+      "sha256": "10a7a8fe2d2716fafd511ba651d7d5ed2bdf25276aff3e72acafd14b8803f339",
+      "bytes": 35066,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-ac4-office-1440.json",
+      "sha256": "b624b9466e63f41894b97512b5bb082d4abebcc44acafb39ebfb58e4ea004aeb",
+      "bytes": 14480,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-ac4-office-390.json",
+      "sha256": "b83bc00d1a1e441e9684ef4bc33719bb2a68eae2827bffe90b5b8423e12ba749",
+      "bytes": 14876,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-ac4-romance-1440.json",
+      "sha256": "ed7d1417c291b48f51ed19e9ac152a41290cd52432ed154b34d3387b063b6246",
+      "bytes": 14346,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-ac4-romance-390.json",
+      "sha256": "b9e5cf50e59e1ca4d7f3330bdb3e755c73de44617c7c8114a2bedb617ae835bd",
+      "bytes": 14822,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-audio-office-path.json",
+      "sha256": "cd0dc8780c4d0df43c607ebde75ec81d4de94e775824f2109913e023d8c28fba",
+      "bytes": 1576,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-audio-romance-path.json",
+      "sha256": "e65b41b5fa40b2842881f79aaabd9d53548d6274fb43c4034907cb1ab84de95a",
+      "bytes": 10316,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-input-evidence.json",
+      "sha256": "22f3f02f3f05fef8a6842a84f225a9a948e507938ea975c9f4d3f7cb0db61313",
+      "bytes": 3042,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-interruption-evidence.json",
+      "sha256": "6a078003776ce5ef0872b652d33f178ef001d7cd9d1dc2f5f8455d300031d483",
+      "bytes": 2783,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-legacy-save-evidence.json",
+      "sha256": "3676cc929a8895dce62f5edfbfa0e5c5bf0461ac885b6d054c2376ec2a03b716",
+      "bytes": 300,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-parent-current/promise-edge-probe.json",
+      "sha256": "4d7e60a165e4aa0512382cd5df6cdabcfb57a9867296179d58f07f78094f3e2d",
+      "bytes": 13050,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-persistence-evidence.json",
+      "sha256": "807e720e8cfdf8c9a3ddf075af6b3d5deaedd9494ec13773374bd4316fe2d923",
+      "bytes": 1539399,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-recovery-evidence.json",
+      "sha256": "f304a960323ceb9ee337bc4e3ebcebcef6d0e412a755101657b64017f18a4e16",
+      "bytes": 3912752,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/artifacts/docs/v2-security-evidence.json",
+      "sha256": "2e460254ee5bb9f076fac210ee7c84f42fd817d306327f7e8b1a1bf03fcbb0e0",
+      "bytes": 369,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/browser-intermediate.txt",
+      "sha256": "06f13fa6ab5b29d4f1bd7821f2c7d078160d4c639e50bed4ffa60d7c73acbf03",
+      "bytes": 3466,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/browser.txt",
+      "sha256": "41a29d1b90cb8eb3966f6b709c9357c23e11210739ffca31d18bf777ae610fa6",
+      "bytes": 3465,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/build.txt",
+      "sha256": "d098bdae8a9727eff9c401bf13c8a288735e9defb4c01f4cf6672e77b8696d88",
+      "bytes": 454,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/candidate.json",
+      "sha256": "0118c7f93af0ab53b010e42731108f1ef4236fc74d6b40d1671a2f9b97bfbb9d",
+      "bytes": 15045,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/http-trace.json",
+      "sha256": "97d57bdf99c7740a8fa9b8b943165e269f456efe5fad11de9f41c6c24eb394b3",
+      "bytes": 295358,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/http.txt",
+      "sha256": "47b964b4aeb7d36786799f28b3c8016135ca328156aad0e603757c2bd30f21cb",
+      "bytes": 246,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/launcher-before.txt",
+      "sha256": "7f5955c1d2209ba28130e041445915a3ae8b6930501847648f06549bc9778f71",
+      "bytes": 1452,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/launcher-http.txt",
+      "sha256": "74234df06346be5b8fcd66762a3d7b105d9946191845a22fc531097e7e68565c",
+      "bytes": 5,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/launcher-restart.txt",
+      "sha256": "de8f46e29bfbdc79b052fb9134acb1b969f2f4278cf40e91f0ce158c0312d92c",
+      "bytes": 591,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/launcher-restop.txt",
+      "sha256": "59220902ff323102f560ce9b7acb7df1d39f68baeaf240d3c48fc56a0210e17e",
+      "bytes": 54,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/launcher-stop.txt",
+      "sha256": "59220902ff323102f560ce9b7acb7df1d39f68baeaf240d3c48fc56a0210e17e",
+      "bytes": 54,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/launcher.txt",
+      "sha256": "1152e143765777999a51c9e255e928269d14d3fa89d1188009243ec414520261",
+      "bytes": 591,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/legacy-probe.txt",
+      "sha256": "e3e0670adef04c602d3893fb861cff6d920ec298f7883c933890b7e130ea430c",
+      "bytes": 43,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/office-current-board.png",
+      "sha256": "cb5338f987fdb6c2740ed5fbbd7d48f63668afaa0985baeb6f814aac96fe20f8",
+      "bytes": 2078161,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/parent-visual-reuse.json",
+      "sha256": "18505fb4c0ff272f5a8f9b5f1fa424cd19627c8f3d0a38eab33041a6094d65a9",
+      "bytes": 6907,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/review.md",
+      "sha256": "883b2893057757c75ad1908698715701d499321ea59ec5b4b7cfc3361fd2777e",
+      "bytes": 10398,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/romance-current-board.png",
+      "sha256": "cd1112f30ae939273c323d6ba61d86926200dcedbee8cdec5921e633d308d023",
+      "bytes": 2017024,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/runs.json",
+      "sha256": "dd61e0226575f12240b0ce57de7aeed1e11ef676b62a0c8917725bee877c3432",
+      "bytes": 3749,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/semantic-trace.json",
+      "sha256": "6e0b1a1d4ec0ecae210ec25892564839d68f9d0dbbd178526095ee846239af97",
+      "bytes": 186072,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/semantic.txt",
+      "sha256": "5825f9c03066c1ac394500ab15ca4dded7abf3993858fe8a7b0a4c3ad51b78cb",
+      "bytes": 870,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-commitment-state/unit.txt",
+      "sha256": "a6e0702e9fc5b9fbadf48a920c076bbb3ab0f5da6199e0f54e9809095949ddd4",
+      "bytes": 30768,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/direct-visual/audio-listening-access.json",
+      "sha256": "2bea917c9588aba63f3e6ef5f970f45ebdd8771290282a46ac50177e1aaebce2",
+      "bytes": 808,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/direct-visual/boundary-capture-index.json",
+      "sha256": "f9a7ccd55028aa3d9f5094d5149ec4fd49896765f3331fdc99d57aa3e8a9eadb",
+      "bytes": 7555,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/direct-visual/current/office-comparison.html",
+      "sha256": "9753e1e5980ca5e90a3b132c3f4807780ec89e336b093e310786aff4c20492f8",
+      "bytes": 7182241,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/direct-visual/current/office-comparison.png",
+      "sha256": "bf0c60db36b2109a4a2cc9982853f8d74832ceb8dcf4943662af0d27ac862600",
+      "bytes": 1499015,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/direct-visual/current/render-gallery.ts",
+      "sha256": "d90228f2c8971a5b2ffa0378f8695afcf2e98e01505ebfe62f5a3d5749d065f3",
+      "bytes": 1891,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/direct-visual/current/romance-comparison.html",
+      "sha256": "b582f6c2afd2dca1d8d2680a30dacd48f467efe61cb2b0e561b29b21459e1d2f",
+      "bytes": 7296464,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/direct-visual/current/romance-comparison.png",
+      "sha256": "f3efbe6289347ce9e4b9d3b7e420675fc801bd60d6764f52d806b766d92bac40",
+      "bytes": 1472301,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/direct-visual/current-capture-copy-verification.json",
+      "sha256": "362e61724e6668dc0784a93740613fe5e3ff05a09581a3b7b1830c587b3e2bb0",
+      "bytes": 11713,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/direct-visual/dependency-comparison.json",
+      "sha256": "2a6cdf6242e5474ad1953f8d373255426ce60f57107dce0fa299900e3974dc4a",
+      "bytes": 6559,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/direct-visual/final-opened-paths.json",
+      "sha256": "a4347b05563c9bcf318341e70aeb2a96ac3759343bed09560da7d786b8c4f983",
+      "bytes": 7932,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/direct-visual/HANDOFF.md",
+      "sha256": "040637062e5e21a8b4de0da65e2109e94e34429b9044ffb240ef2367e5382890",
+      "bytes": 928,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/direct-visual/opened-images.json",
+      "sha256": "7e028042e2e5f96b506e103f5233790bf83046bb2b4bd990107a7da38783c87e",
+      "bytes": 32572,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/direct-visual/opened-paths.json",
+      "sha256": "8743f924b3492b40f63df61c70e0e6168df33ff80a0a6e20542586ce0f34b4e1",
+      "bytes": 7645,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/direct-visual/report-hashes.json",
+      "sha256": "b9de7246885caff0719c136cedfeb74308f47837a22c99c2ed6279fbfef32774",
+      "bytes": 818,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/direct-visual/report.md",
+      "sha256": "c5ed279b837b123e6e6af1239046e6bee116e790f7bd550ea22c01f22ee2f5fb",
+      "bytes": 14916,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/state-review/HANDOFF.md",
+      "sha256": "e74f49dcb8e4e1fdee392077186d8dedb80d0bdc68a21222f1215841fbf17994",
+      "bytes": 1710,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/state-review/v2-state-atomic-review/commitments-atomic.test.ts",
+      "sha256": "c2139cd0ab7c912b52b656d65d94588c2200a070a0ccdff866bdf385fc63b83f",
+      "bytes": 3298,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/state-review/v2-state-atomic-review/manifest.json",
+      "sha256": "21ad7c7a3f58365de1b8b99d8c400993439b5f8aefe34ed3a0893eebd95c2a5a",
+      "bytes": 589,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/state-review/v2-state-atomic-review/probe.ts",
+      "sha256": "2d5fcd4924a92c6be92bc1a272e64effbb92dc03289cd94744af5cc733aa872b",
+      "bytes": 2118,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/state-review/v2-state-atomic-review/proposal.patch",
+      "sha256": "ca445545cc77f00afe4bdafec71ac9b559cabba23483c846c26ceecff9949b94",
+      "bytes": 1361,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/state-review/v2-state-atomic-review/result.json",
+      "sha256": "75c6fb65bb0f2991d682b55a639380f443bf760a6ef3d05746907d2575d8bf8b",
+      "bytes": 5006,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/state-review/v2-state-contract-review/manifest.json",
+      "sha256": "69f7a41f376686554369c42bbc6a7588b5354f13369ed017490275b72244a91c",
+      "bytes": 8340,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/state-review/v2-state-contract-review/observations.json",
+      "sha256": "a49049d25873a36e2f64c9ed680a0f496c20845c6c970d340ce9d1b80e520efa",
+      "bytes": 979058,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/state-review/v2-state-contract-review/proposal-observations.json",
+      "sha256": "28f365f5413601875bcb9b590441167c9981cb28cd88199cd1e54b0ff3d1574d",
+      "bytes": 668915,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/state-review/v2-state-contract-review/README.md",
+      "sha256": "20e5feeb8862e89bdbcd6699647e8b6a02f25174ee29a3b9e27eb4bf4742ef5b",
+      "bytes": 8846,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/state-review/v2-state-storage-review/baseline-results.json",
+      "sha256": "fa37b84469e2ec86e2393c8c6fad505191da50819315f0e3f6f018ad3ad3f1cb",
+      "bytes": 450072,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/state-review/v2-state-storage-review/commitments-storage-review.test.ts",
+      "sha256": "f5397afe765d855b572645551c1b3a7980a666180519fade91bf25d87e296cfe",
+      "bytes": 8209,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/state-review/v2-state-storage-review/evidence-hashes.json",
+      "sha256": "1d27c9ef6937bc1cc37b7a62c3dcda053e3f5c2d2c8a9f90ee676d867353a654",
+      "bytes": 1286,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/state-review/v2-state-storage-review/patched-results.json",
+      "sha256": "dc15e34bbeeda1b53e865eac0b626f1457cabfcd93538aad2b97a46a7cee6378",
+      "bytes": 444333,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/state-review/v2-state-storage-review/recipient-amendment.patch",
+      "sha256": "a6df2e91ffb57436b8ab6f47987f62c2b82ca0a07974286e8bbdc6d0ecd4eb26",
+      "bytes": 5382,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/state-review/v2-state-storage-review/report.md",
+      "sha256": "c8d8385e48ff59fe82122496fa5d6f3d5176eb15d6c951918837e53f559f020a",
+      "bytes": 9299,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/state-review/v2-state-storage-review/snapshot-manifest.json",
+      "sha256": "23918e1f779cb1e9864fde6858845b50508ca6ea7ba7006346164a68b6acf944",
+      "bytes": 1804,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/state-review/v2-state-storage-review/source-stability.json",
+      "sha256": "1aaac56a0d509708107f8f5593dcd4621296e230672cbf8f661b02ea8b34af7a",
+      "bytes": 2602,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-parent-observations/state-review/v2-state-storage-review/verification.json",
+      "sha256": "9fccf932f50888e412dabe099c94761576e3120e8c9e66008f3f85a25fa856b5",
+      "bytes": 2086,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-QA.md",
+      "sha256": "ae6d3a835ba4fa71c349d10e1ce87038845dedf5a813330bac08b28d28e41dca",
+      "bytes": 22638,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-sequential-ralph/generation1-verdict.json",
+      "sha256": "066659be3a4434dc749f7867efb46f46bec6a52bac9077d60de92ed3693c6ac1",
+      "bytes": 61510,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-sequential-ralph/generation2-verdict.json",
+      "sha256": "3d61b2c945b9d0f2b92c15ee00367297e512dab7e425b20d69441c19a66f7cd7",
+      "bytes": 93914,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-sequential-ralph/terminal.json",
+      "sha256": "a17b198ce3538c412fbce5dafac3c1666ef2e3293528f19a964accd50bf5ce77",
+      "bytes": 63668,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/amendment-persistence.json",
+      "sha256": "1962418b31d1d5d83f5cf025a50fce63b7d88965f1b1edc2e375906c0c2c7cd7",
+      "bytes": 86229,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/lifecycle-observations.json",
+      "sha256": "a53a3e51086f3c7e596738cf7ae26d7036b629f19ffcff4944a74736beb29812",
+      "bytes": 440033,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-concern.png",
+      "sha256": "232d8f8d167fa895ffd8f40134dc6319bde7618feb57f01bbc9bc4399ee82d26",
+      "bytes": 1859766,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-farewell.png",
+      "sha256": "e1af9acb60f49ae11f8a4c37d283e911484e4d94fd49e5c1122668965b88d3a1",
+      "bytes": 1862078,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-firm.png",
+      "sha256": "679cd1bce3f46c1cc4d003f2c4a49672c10be58dea7153c8d919cef119671c0e",
+      "bytes": 1864725,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-intense.png",
+      "sha256": "0682522ec09b5f957137a8bf51a2605396ea0f5df50c7cd435e82e7cd9853132",
+      "bytes": 1864898,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-laugh.png",
+      "sha256": "4296faa9d3ddec657bda1df7538a78b33f3a90f1d81e0c425dbd1891ec8c4e75",
+      "bytes": 1859084,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-listen.png",
+      "sha256": "94798f01a523557defba9847cd54f57076e66e4b718893fb82290c3dc34c4198",
+      "bytes": 1865589,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-neutral.png",
+      "sha256": "dddb9f435d0dc1967a2c578bf97141e6f062b71a9cd1ac5b41f375d320f1ca30",
+      "bytes": 1669925,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-offer.png",
+      "sha256": "09d56e46209ab99aa52b0ee5f517ea9c96e739a0bc1ce6ce8caa14f07ac0d87f",
+      "bytes": 1860077,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-reduced.png",
+      "sha256": "770aabcfb618f56e723bee09ae7d9ce6e57cb78e52c903979cce550152fa1948",
+      "bytes": 1853322,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-shy.png",
+      "sha256": "73161140e493d933dad13d7e479261e62e2b3f28bbce3e9b67a15a1773f82534",
+      "bytes": 1859928,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-smile.png",
+      "sha256": "dc4829521264ff5aa89b65a99d767cc8d73dbcf2ca8ac65e24488fc22dd80da4",
+      "bytes": 1857578,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-surprised.png",
+      "sha256": "081a85eff930b19e24a78a7cdb568730a4176be9751f05de6c9c8222a4ea0d11",
+      "bytes": 1865290,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-thinking.png",
+      "sha256": "82ff11f1dc6f4a167d0d62870b68a6b6a699b11c6a10cb383e26de3a9b3fa6d3",
+      "bytes": 1868101,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-turn.png",
+      "sha256": "f975cb6a9da3e532edf3791856cfca639478d683f7dd1a0374663b9cf56ca26a",
+      "bytes": 1856917,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-watch.png",
+      "sha256": "c80d8bd0f34ae5e82f15371a262d3dcfadcf0d656b49fda4f822aac5b08b74eb",
+      "bytes": 1860643,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-concern.png",
+      "sha256": "31b4f4fb5dcc027f392974039fbd76ad18296b5c142067518069086d85b42880",
+      "bytes": 453411,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-farewell.png",
+      "sha256": "4efb07247b11f7cb385da4a92bbc6819f377d5ad6c740857e37154d9a9c70b03",
+      "bytes": 454608,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-firm.png",
+      "sha256": "67ea73113075f28105dd0c499e67c46b6bbd272a30722768debcd988ea002b6d",
+      "bytes": 456930,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-intense.png",
+      "sha256": "355a919cd71f4d05e8bc2b1d56d043c58a711485f3a33ddf361c0ea69674a0d3",
+      "bytes": 457061,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-laugh.png",
+      "sha256": "7e9d011665b0cf0383ddb2e7ae20c22d32b7d22066c19ebf28e806114ed55147",
+      "bytes": 453003,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-listen.png",
+      "sha256": "9f5d83907723ede25fb93b5c2f50457e11b8ed92efc9397eb6c3f10dbf89ef5c",
+      "bytes": 457588,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-neutral.png",
+      "sha256": "7bbab48b5ab99d4214ef6ccf110f6c4452d2a85923a98613435fcbbb05769a66",
+      "bytes": 384321,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-offer.png",
+      "sha256": "138b4054a1f2fdde8a2d25da8cb7de3b85d6848aeec3b5e9bc515c9b7865f315",
+      "bytes": 453707,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-reduced.png",
+      "sha256": "81c83096af77ff7b7e8dc81cdb5544aa98799679719beed716696c7d4ffc7fb2",
+      "bytes": 452115,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-shy.png",
+      "sha256": "ae3e22ee668f94b1584c8f227d237a3a99c5d8ef87a6829a9d626f42359be37f",
+      "bytes": 453477,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-smile.png",
+      "sha256": "60f535e9b86b65bf6c0436c5d5d012bbfc664fa551f4d69d83dca9ee719aca9b",
+      "bytes": 450723,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-surprised.png",
+      "sha256": "a7f853d4780df263186012a160897ed39630ec461b939499d040ad0dfaf62a8d",
+      "bytes": 456840,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-thinking.png",
+      "sha256": "1a6208e65ccbd5f3a8a77baf9341b3538810cd44e9c45bf7f587c160376fb497",
+      "bytes": 459570,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-turn.png",
+      "sha256": "6d68fcfea9e0cfc1be4feceb621b74fc231e6d624c241f9f0e7148288a609417",
+      "bytes": 449717,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-watch.png",
+      "sha256": "b8ba8b3241aab3c586b7f514c6859a018c7298d3d8e1a2137f3a200e4511d075",
+      "bytes": 454386,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-comparison.png",
+      "sha256": "bf0c60db36b2109a4a2cc9982853f8d74832ceb8dcf4943662af0d27ac862600",
+      "bytes": 1499015,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-concern.png",
+      "sha256": "8ef64c75dd27b0f34f9cda6ed5641f8b9f91f12df28bfda796eebdfec51e94c4",
+      "bytes": 1872780,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-farewell.png",
+      "sha256": "a937c2aef6c81e2051627d70083cf131d69d52414ba5e4ba136f04ca61bc2c99",
+      "bytes": 1870080,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-firm.png",
+      "sha256": "aa135c4cbbe722212e3d9322f316abd68363e0960fb9481882d2d95ac9ca0590",
+      "bytes": 1876374,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-intense.png",
+      "sha256": "41a0455ce8c01bb1373ff3025efaa4761d9ac641a04f86bc1e0596d7513c7e78",
+      "bytes": 1867358,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-laugh.png",
+      "sha256": "bb616a6584734d4092225d72f4f57fbe0e46317a100f1d905afa04dc8eb5863a",
+      "bytes": 1869706,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-listen.png",
+      "sha256": "91fecf8b15d25f8af163c29d1a8fad479c330b4e95529b4e6a6d93cdcb94517b",
+      "bytes": 1867139,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-neutral.png",
+      "sha256": "4d022993662a8e2bef8be894677870461cb3c4e75e97ea9dc376b42a8dba7f58",
+      "bytes": 1678876,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-offer.png",
+      "sha256": "dcf7b26a7121e9fe30e38c630e2b5e80c91abec2dd12d1f0c72079d3fc4aba7a",
+      "bytes": 1874280,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-reduced.png",
+      "sha256": "7928f99ed675b50f69124900b7a5399706925750a8b41d368b788ef4ddd9b712",
+      "bytes": 1861067,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-shy.png",
+      "sha256": "177f6a0bf1dd42b82a4798548c472db70fa5696e88bae237abb67683d13ac446",
+      "bytes": 1874630,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-smile.png",
+      "sha256": "930f2cbab11d1fc9816057019db4d953ada11fa4ae56533d458e3cca413a8878",
+      "bytes": 1873988,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-surprised.png",
+      "sha256": "d44a10438e9593990889aabdd93f266bcbf2b4c460c2ad23b770943a2b3deb25",
+      "bytes": 1872091,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-thinking.png",
+      "sha256": "06ee161ea927aecb8b54253d55de559953f2d091b800397d8d3a14ebeb211e75",
+      "bytes": 1872368,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-turn.png",
+      "sha256": "56eefe4b2bc51fdbf6e84c1631735d38e1ee3ce741c7c6f761c7472a61f8904e",
+      "bytes": 1867265,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-watch.png",
+      "sha256": "c8b4c88f8485bd734ef3df3260be97fa598b1f4998f2f27177aac1eb43351644",
+      "bytes": 1867145,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-concern.png",
+      "sha256": "8310330e237d34a102011580d910ed41c2b855f4393718bbfbbf203bdbb56d77",
+      "bytes": 463094,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-farewell.png",
+      "sha256": "4e2067a1e7ebfa2fd5797cefe8fa6fa0ee80c41003a43636aed10d44d4aa9d45",
+      "bytes": 461176,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-firm.png",
+      "sha256": "16f4fa409daffe90059bcad957cf33785514d08a954508de17df1e013e1872c9",
+      "bytes": 465738,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-intense.png",
+      "sha256": "7f30760eaea2850bb0d157398272365bf26b24b0a394a8c710de62d677453ab2",
+      "bytes": 458781,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-laugh.png",
+      "sha256": "8a64379e3758e3a9319dc4b1ca097ccb251707b9481bf5092b031b90738ef2a6",
+      "bytes": 460264,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-listen.png",
+      "sha256": "38ff1ecaa4c194ce1f3b4e1f36a786500f6e0345175d7941d5a967b8f6eac446",
+      "bytes": 458152,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-neutral.png",
+      "sha256": "43c835789c5b4eee04515b9b5c857f5c6c111c25b3c95f7dcc7bc9157562344e",
+      "bytes": 390882,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-offer.png",
+      "sha256": "bb98c9f84e0741fdfe55db313fd89715374178a168091e2f29c1f4c9c71296dd",
+      "bytes": 463294,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-reduced.png",
+      "sha256": "4c5503b366d4b52e5853eeff72c649ccea7668a4d2771270cf9cac81107add12",
+      "bytes": 458753,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-shy.png",
+      "sha256": "6a1f31abefa6c3446b5c6d1b7e596b221e64b14dc11f80f7ed28304cbb2ea6d9",
+      "bytes": 464805,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-smile.png",
+      "sha256": "9fc57cd4eaedb1c56d49e9e28062417a9bb177d0e3894a95fa6cf06c6311c2c3",
+      "bytes": 463041,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-surprised.png",
+      "sha256": "6a7aef1efe944c660bf7c8d828994e17c2a6849e1257b4dca233b78b9ec7c2aa",
+      "bytes": 461660,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-thinking.png",
+      "sha256": "e68ed6d649f28f57957c88dee8489c4d1b41e56b89a70af3f6190989c7a2bddf",
+      "bytes": 462101,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-turn.png",
+      "sha256": "1639f62400fc1c79b99fb2d0d4e7cb7819e40fa943688ca7188438aae6fea0bc",
+      "bytes": 459185,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-watch.png",
+      "sha256": "f893d7528283bfeef8e8511290996540e10f5ff63e62da0ee5f16d0823e4d402",
+      "bytes": 458142,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-comparison.png",
+      "sha256": "f3efbe6289347ce9e4b9d3b7e420675fc801bd60d6764f52d806b766d92bac40",
+      "bytes": 1472301,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-parent-polish/collection-actual-390.png",
+      "sha256": "08984278287d274aa3e467ff94528cbf85c2b0547c900810140f3523663712a9",
+      "bytes": 47276,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-parent-polish/collection-legacy-390.png",
+      "sha256": "252800e4c73ff8c395d547a517d2841567bc6959c5eadf07b238e7cb82937de6",
+      "bytes": 46826,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-parent-polish/next-reply-1440.png",
+      "sha256": "890c83b5285899fe587eaae5a2995b9f0cc4837e4c58f857fcc0d546963a80aa",
+      "bytes": 1495163,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-parent-polish/next-reply-390.png",
+      "sha256": "cc6095faceba434f8fa06fb7b2af0d3d16c05de533eabf61d2e6e47614560a28",
+      "bytes": 393186,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-parent-polish/pending-13s-390.png",
+      "sha256": "2e01579ab15d2b1752791e7a032c38eb07b82a723fdc8030277a033dcde2eecb",
+      "bytes": 385391,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-parent-polish/reply-after-13s-390.png",
+      "sha256": "6218b3d467e097762fb856df1714f4584544b7b6e7b72c61fa2e516dd837e328",
+      "bytes": 384247,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-parent-polish/title-390.png",
+      "sha256": "168720620108da51b873afbc3bc6a619da0775d1495a665b9f3b6962335180c3",
+      "bytes": 155083,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/conversation-1440-office.png",
+      "sha256": "861908ca0257184e6ed8e29a7f940054bd81b6072570b2c869b39f405fcbe826",
+      "bytes": 1477099,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/conversation-1440-romance.png",
+      "sha256": "f646c441f758d85881749f595a30b91dcba40a78c49379275f92090ed9c448d7",
+      "bytes": 1726355,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/conversation-390-office.png",
+      "sha256": "cc84f27dbd7041d7e04f2819fcf1d7c3347f107a0a3341d8da3c419c73c69225",
+      "bytes": 389503,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/conversation-390-romance.png",
+      "sha256": "cac4e0021876843a4448996951a679d4e25bcb60f78fce858c5f9efbdf6d8b0e",
+      "bytes": 457123,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/log-1440-office.png",
+      "sha256": "b3e72c2e109f3de46dc6fdea27dfddcd1574a0624ab1eed819024b60e1eedd5b",
+      "bytes": 339232,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/log-1440-romance.png",
+      "sha256": "709a5074b5b776f9720b550dcd20755e6b00b001818ed7e95c24645b7c2587a8",
+      "bytes": 367273,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/log-390-office.png",
+      "sha256": "3ef0800178055b505f244dc9a8d1edcc0374bc08b126965bcb677c260836c5a3",
+      "bytes": 74895,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/log-390-romance.png",
+      "sha256": "b32df83cd8d819443dce1270d4631c234dbf65a4c94a22786cf62b3b963f1ba3",
+      "bytes": 76154,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/long-focus-1440-office.png",
+      "sha256": "7df50751bfccc695bfbc4dc3be21a9a5a7fb1546e0786b309e96aa905829e249",
+      "bytes": 1474959,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/long-focus-1440-romance.png",
+      "sha256": "a4ede10b77c8732bce8a66a0a9a54fd188a92e945f4625db5e4d3320604ae511",
+      "bytes": 1715644,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/long-focus-390-office.png",
+      "sha256": "5254dc1e85144dc2c39d5b0ccdc345fd9be3bc81e075f8c72354669ce698a8e1",
+      "bytes": 390961,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/long-focus-390-romance.png",
+      "sha256": "324f41377fbcc82c8209308ee26b8011cd34e359e51412ff936a0ed2e85fdcd8",
+      "bytes": 459203,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/settings-1440-office.png",
+      "sha256": "ebad127d3b5716367b226f57db4524e8e0a43fd87f1385a26aebab46b07baa54",
+      "bytes": 318354,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/settings-1440-romance.png",
+      "sha256": "526ed44b0f0f00d7af2904cf41f54cd94730ddd2315169dd628c9a88b1a8cbbb",
+      "bytes": 339303,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/settings-390-office.png",
+      "sha256": "82f0735f9df085392bf119df725fa83c7270b7b5d5132e652f319953bbdf1c4c",
+      "bytes": 60585,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/settings-390-romance.png",
+      "sha256": "771de508c60d57404aac3667f95124a9bf62f26885c1464aad5d46fa72fab1cd",
+      "bytes": 63508,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/suspense-1440.png",
+      "sha256": "5fee95d12bb771a1a763c771ba836fc57575e98d52bfac38ce9356e5244b904c",
+      "bytes": 1495933,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/suspense-390.png",
+      "sha256": "da2fdef9709262fba20e235f355ac7ef0b8f2aacc5fc42c217732806e82901e4",
+      "bytes": 372368,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/title-1440-office.png",
+      "sha256": "6111626f1269f5c4cacc5b4d8352f23e250e63d89df42afd772bd4c82889bbb8",
+      "bytes": 891044,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/title-1440-romance.png",
+      "sha256": "6111626f1269f5c4cacc5b4d8352f23e250e63d89df42afd772bd4c82889bbb8",
+      "bytes": 891044,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/title-390-office.png",
+      "sha256": "168720620108da51b873afbc3bc6a619da0775d1495a665b9f3b6962335180c3",
+      "bytes": 155083,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/qa-screenshots/v2-ui/title-390-romance.png",
+      "sha256": "168720620108da51b873afbc3bc6a619da0775d1495a665b9f3b6962335180c3",
+      "bytes": 155083,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ac2-office-counterfactual.json",
+      "sha256": "affce1ca16ffa9bcafa5b9cb61200bfa3c351ab25afc0ef4b691efe9d08bca61",
+      "bytes": 17866,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ac2-office-durable-counterfactual.json",
+      "sha256": "6d24706a0f7c54ebc0d871e5087ccb466acc0946d32658e154b496e952213b60",
+      "bytes": 72488,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ac2-romance-counterfactual.json",
+      "sha256": "afde6e44084a44d5122b67b1323e862d06a2708ceaacbcde00444a45b0420d2f",
+      "bytes": 38096,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ac2-romance-durable-counterfactual.json",
+      "sha256": "2f9509ef03799418f2d6467558b0dc1f31d382bdeb66975a33c8590fbda63eec",
+      "bytes": 60183,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ac3-clockout-state-trace.json",
+      "sha256": "354744c191a8476d3a8398eb77b484b64c97e5cd399ab1f2ea568def31c4f9a3",
+      "bytes": 35579,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ac3-credit-state-trace.json",
+      "sha256": "ef841c549105bc2c85b80326f421525e261e14e566293584be427c90ceccb1bd",
+      "bytes": 36085,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ac3-delegation-state-trace.json",
+      "sha256": "3308ad24181370ca08e7463860ab0abac6c4cb3e21b950633bdf1c727d00cee2",
+      "bytes": 36108,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ac3-dinner-state-trace.json",
+      "sha256": "08547077ed2f0473d16a7a2f4f8461ce183f150c3a0871962a17cd9bfe4286dc",
+      "bytes": 35157,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ac3-meeting-state-trace.json",
+      "sha256": "dc7f1df82eda1e06b02ff63a6097520448cead603a402b3d4bd2d5a2311ae7ed",
+      "bytes": 34789,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ac3-memory-trace.json",
+      "sha256": "3f5c39b22db34b63749039166c49c888c05afcf3ea5878761a586e285edf5b1d",
+      "bytes": 30706,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ac3-remote-state-trace.json",
+      "sha256": "855e8aa6b927e314ae0b56bc1bc8c79b0ad93db6e6245a8f21f2242414ad3f96",
+      "bytes": 35518,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ac3-vacation-state-trace.json",
+      "sha256": "2b752ae09165942890a2cabe36d22c6a35f5f2856d4e3478ba0771e4f17d6ddc",
+      "bytes": 35461,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ac3-weekend-state-trace.json",
+      "sha256": "3089f92cb9f67b0aa07d3d8ef89a524bca0494c7bf79f8282e25f4bd94f1260c",
+      "bytes": 35066,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ac4-office-1440.json",
+      "sha256": "626f1fc566de38cc1fd5d76d480ff0b90ae5272c45a7e97ba731b9587f4b54c2",
+      "bytes": 14480,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ac4-office-390.json",
+      "sha256": "167539580f814120f1949f28909490d99be537f1134b4f2d8d1f2520bcb6ab0d",
+      "bytes": 14876,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ac4-romance-1440.json",
+      "sha256": "52628881bec0b16bafbd031da59918424698841dd3781ee53d56a4e1bdb08448",
+      "bytes": 14346,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ac4-romance-390.json",
+      "sha256": "a34584645a000f34177181ecdbeab8f759fc62b1786061654c21c352e5a593bb",
+      "bytes": 14822,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-audio-office-path.json",
+      "sha256": "4342fa4bc43aa6ce2a4feb040c690dd52c69a294501eaf1a4d93a0c7044ed653",
+      "bytes": 1567,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-audio-romance-path.json",
+      "sha256": "48705ac10ce55ee4d5bbc9386d806cae52680fd8ff0db3f4ca05d5c4e52673e9",
+      "bytes": 10334,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-audio-waveforms.json",
+      "sha256": "d8679b4d72de16b5fb93cf0cd513c479996b035f769c494c6dc3b4833510a868",
+      "bytes": 19897,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-commitment-state/http-trace.json",
+      "sha256": "affe65425fe6b00807273194ab1ef1038e7de6be9d10bd76e5c8b0f5922b3cb6",
+      "bytes": 295358,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-commitment-state/semantic-trace.json",
+      "sha256": "c3067dfbf1b104ee66bc40dd95db1297f193246f4f72d31bb082878c1074baec",
+      "bytes": 185384,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-input-evidence.json",
+      "sha256": "e400049d535c2aa10cb0b8bec89c0d35ff58fb1ca83dd8399f482fb570497cda",
+      "bytes": 3042,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-interruption-evidence.json",
+      "sha256": "35a7ef31b20cb2d9a425dbaee5543d227f48dc1252165052a1fcb17fabd8d827",
+      "bytes": 2783,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-legacy-save-evidence.json",
+      "sha256": "47c52e712b775360d4c02f22c4f6c8922ecb96a9984b0a0e1701ed15e99a11fd",
+      "bytes": 300,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-current/promise-edge-probe.json",
+      "sha256": "3b18bafb414800444167e8201ba9c503986def54f147191f54f6e7f1e00ddd7a",
+      "bytes": 13050,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-observations/state-review/HANDOFF.md",
+      "sha256": "e74f49dcb8e4e1fdee392077186d8dedb80d0bdc68a21222f1215841fbf17994",
+      "bytes": 1710,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-observations/state-review/v2-state-atomic-review/commitments-atomic.test.ts",
+      "sha256": "c2139cd0ab7c912b52b656d65d94588c2200a070a0ccdff866bdf385fc63b83f",
+      "bytes": 3298,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-observations/state-review/v2-state-atomic-review/manifest.json",
+      "sha256": "21ad7c7a3f58365de1b8b99d8c400993439b5f8aefe34ed3a0893eebd95c2a5a",
+      "bytes": 589,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-observations/state-review/v2-state-atomic-review/probe.ts",
+      "sha256": "2d5fcd4924a92c6be92bc1a272e64effbb92dc03289cd94744af5cc733aa872b",
+      "bytes": 2118,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-observations/state-review/v2-state-atomic-review/proposal.patch",
+      "sha256": "ca445545cc77f00afe4bdafec71ac9b559cabba23483c846c26ceecff9949b94",
+      "bytes": 1361,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-observations/state-review/v2-state-atomic-review/result.json",
+      "sha256": "75c6fb65bb0f2991d682b55a639380f443bf760a6ef3d05746907d2575d8bf8b",
+      "bytes": 5006,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-observations/state-review/v2-state-contract-review/manifest.json",
+      "sha256": "69f7a41f376686554369c42bbc6a7588b5354f13369ed017490275b72244a91c",
+      "bytes": 8340,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-observations/state-review/v2-state-contract-review/observations.json",
+      "sha256": "a49049d25873a36e2f64c9ed680a0f496c20845c6c970d340ce9d1b80e520efa",
+      "bytes": 979058,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-observations/state-review/v2-state-contract-review/proposal-observations.json",
+      "sha256": "28f365f5413601875bcb9b590441167c9981cb28cd88199cd1e54b0ff3d1574d",
+      "bytes": 668915,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-observations/state-review/v2-state-contract-review/README.md",
+      "sha256": "20e5feeb8862e89bdbcd6699647e8b6a02f25174ee29a3b9e27eb4bf4742ef5b",
+      "bytes": 8846,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-observations/state-review/v2-state-storage-review/baseline-results.json",
+      "sha256": "fa37b84469e2ec86e2393c8c6fad505191da50819315f0e3f6f018ad3ad3f1cb",
+      "bytes": 450072,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-observations/state-review/v2-state-storage-review/commitments-storage-review.test.ts",
+      "sha256": "f5397afe765d855b572645551c1b3a7980a666180519fade91bf25d87e296cfe",
+      "bytes": 8209,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-observations/state-review/v2-state-storage-review/evidence-hashes.json",
+      "sha256": "1d27c9ef6937bc1cc37b7a62c3dcda053e3f5c2d2c8a9f90ee676d867353a654",
+      "bytes": 1286,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-observations/state-review/v2-state-storage-review/patched-results.json",
+      "sha256": "dc15e34bbeeda1b53e865eac0b626f1457cabfcd93538aad2b97a46a7cee6378",
+      "bytes": 444333,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-observations/state-review/v2-state-storage-review/recipient-amendment.patch",
+      "sha256": "a6df2e91ffb57436b8ab6f47987f62c2b82ca0a07974286e8bbdc6d0ecd4eb26",
+      "bytes": 5382,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-observations/state-review/v2-state-storage-review/report.md",
+      "sha256": "c8d8385e48ff59fe82122496fa5d6f3d5176eb15d6c951918837e53f559f020a",
+      "bytes": 9299,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-observations/state-review/v2-state-storage-review/snapshot-manifest.json",
+      "sha256": "23918e1f779cb1e9864fde6858845b50508ca6ea7ba7006346164a68b6acf944",
+      "bytes": 1804,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-observations/state-review/v2-state-storage-review/source-stability.json",
+      "sha256": "1aaac56a0d509708107f8f5593dcd4621296e230672cbf8f661b02ea8b34af7a",
+      "bytes": 2602,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-parent-observations/state-review/v2-state-storage-review/verification.json",
+      "sha256": "9fccf932f50888e412dabe099c94761576e3120e8c9e66008f3f85a25fa856b5",
+      "bytes": 2086,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-persistence-evidence.json",
+      "sha256": "f4fbc3317224b23a5df26fed84d78919784d37ab4092dd31e327e0b88df37706",
+      "bytes": 1539399,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-recovery-evidence.json",
+      "sha256": "3fb46494438be9c01c2e7beb2e5b60bfacb9ae7fd06356d77ddd1edab5290df1",
+      "bytes": 3912751,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-security-evidence.json",
+      "sha256": "921a246ded1fc9d220f651c0474ed69110461a722d824454b9538edd67abbf2b",
+      "bytes": 369,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ui-1440-office.json",
+      "sha256": "7c1eee6d204d2c33aef47bc75effd5de9d1db1aaec5f8ab1dffcc846a9e9186e",
+      "bytes": 579,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ui-1440-romance.json",
+      "sha256": "8108ba123fbe546197f9d82e4885aaea64155a49501f8535d21e07c197889220",
+      "bytes": 580,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ui-390-office.json",
+      "sha256": "d291fec52416eda06c37f4b30fd5c6ad2e61d5a5adc07b5d7e76a7b3df7c2c5f",
+      "bytes": 578,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/artifacts/docs/v2-ui-390-romance.json",
+      "sha256": "d089a744f60ab11cfa6af245f9171ef966536cd5709dcc467136bd299ab747f0",
+      "bytes": 579,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/before-fix.txt",
+      "sha256": "81a1c2dc01f7e389603fed5f6ef7b0632ca93a061a249476227fd80dda532a7a",
+      "bytes": 1166,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/bounds-before.txt",
+      "sha256": "13d2fccfa8e39879516b676bc5bee1486475f76371fab7037acc1f1268bd2d8b",
+      "bytes": 4857,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/browser-intermediate-run.json",
+      "sha256": "1c0dcb2466732b1b3e4948c493f81bc2c726aa777b75d37514827394d66bcb30",
+      "bytes": 7803,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/browser-intermediate.txt",
+      "sha256": "79c6e1011635987fba3c8a62e33c7260ad0a2befa7c9682a929ffdd6db2237a7",
+      "bytes": 3432,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/browser-run.json",
+      "sha256": "a02c29172ecec32782b3a21241a1f760ff6f24dd06101599275dcd1c616bfa4c",
+      "bytes": 38313,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/browser.txt",
+      "sha256": "f6ba07f3fdc9f9a4cbc4e2a361bf812e9aa28c5991b558f3f1d4699c253814e7",
+      "bytes": 3431,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/build-run.json",
+      "sha256": "c7751988066dccc5ac80fa02d4fd47fd3458d2ff13458fbd9ccf904e871088c1",
+      "bytes": 16456,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/build.txt",
+      "sha256": "886f7f48a4d79abd45abb97547c014653d37626fb56dc34932fb56f5432ac5e0",
+      "bytes": 437,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/candidate.json",
+      "sha256": "06abfccc426c55ec0b20caaf6f21b1345088a0d05bf6b46ef5f165737dd1ff5f",
+      "bytes": 27322,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/index.html",
+      "sha256": "c5549521d8697af60bcfd3a5dd910869a5c9b31341bdcf61fb286b5c991e5d47",
+      "bytes": 3770,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/launcher-http.txt",
+      "sha256": "74234df06346be5b8fcd66762a3d7b105d9946191845a22fc531097e7e68565c",
+      "bytes": 5,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/launcher-restart-http.txt",
+      "sha256": "74234df06346be5b8fcd66762a3d7b105d9946191845a22fc531097e7e68565c",
+      "bytes": 5,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/launcher-restart.txt",
+      "sha256": "1a87f339c6cd5c25efb94f9bb8724af557b17a7b16f71320d918c00706397673",
+      "bytes": 591,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/launcher-restop.txt",
+      "sha256": "59220902ff323102f560ce9b7acb7df1d39f68baeaf240d3c48fc56a0210e17e",
+      "bytes": 54,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/launcher-run.json",
+      "sha256": "3b5910e0ce5d92367b53dafe1bb8f7f7ed9c3c2604e5670a325c70213d258375",
+      "bytes": 772,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/launcher-start.txt",
+      "sha256": "1bc85d8f4d5b0309f8890599bc3ff5f3cd6dd6c26e8c728dd8ce9de794e0591f",
+      "bytes": 591,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/launcher-stop.txt",
+      "sha256": "59220902ff323102f560ce9b7acb7df1d39f68baeaf240d3c48fc56a0210e17e",
+      "bytes": 54,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/probe-run.json",
+      "sha256": "31c83b8b9ee243835b97804c2b0897bcf8eaa4bd406e11c284d46a6602e6e81f",
+      "bytes": 16681,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/probe.txt",
+      "sha256": "252e646e5565366d9cc65079de5016be2b5e1e9ef8c2082f38e8eca936541881",
+      "bytes": 42,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/review.md",
+      "sha256": "2a88e95d276a97b350592133c6decf11e64c83f853974b1e0f895e214e5f11c3",
+      "bytes": 9701,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/unit-run.json",
+      "sha256": "bb57c626e9eaf0a6f97a6842ac2eb10b0f68ddeb31bb66ba767e03d39f398d72",
+      "bytes": 20569,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/unit.txt",
+      "sha256": "a3fafc880b22f7a98b111582d57459dc1752583e1077ca73fbbe8407094323bd",
+      "bytes": 30819,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "docs/v2-state-followup/visual-review.json",
+      "sha256": "98df6ddecb49f6a4631bef7a4ed2a76f3006edea9f75be5794a77bd6f30d0b59",
+      "bytes": 3244,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "index.html",
+      "sha256": "173845c79d1f549bcfcfc44a2bac8609489f0cc47bc3d91daecdb0a3eb68b60a",
+      "bytes": 319,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "e847d4063b65d9fa1f91d85199452c1d6fc4da428f27ea929a6e3cd32898e307",
+      "bytes": 125454,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "package.json",
+      "sha256": "248b48e0521529ad5756d4f0cb4c649db268a1be96e5171ad223840d73d78b67",
+      "bytes": 638,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "play.cmd",
+      "sha256": "a73f7ecdee9f98e6d43325779811cc21b6589a47978d90ed785f6411503e793e",
+      "bytes": 214,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "playwright.config.ts",
+      "sha256": "7899a53d1fae247c3a4ab2a9d952b1112cea113f040fcb1755e32652affbe2ee",
+      "bytes": 868,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/archive-theme.wav",
+      "sha256": "3e9e63f5adcaa8a13125a072466ee914d90e6f8d97aca8d6c6db95ddf8d0e72e",
+      "bytes": 282284,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/archive.png",
+      "sha256": "52d1a0e2ec3731f8934ff75e2fd25fcace71528ea082946a87c46ef40d4ba711",
+      "bytes": 2471495,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-manifest.json",
+      "sha256": "7574e940c6bfe883db70cafdabc6a0d8b18e96989637263a465df55d6bf69fb8",
+      "bytes": 1094,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/archive-pursuit.ogg",
+      "sha256": "9affe22de8b8125ad6709fdf4acde2e107e91483642fdee70397b81c3da2b311",
+      "bytes": 920512,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/archive-pursuit.score.json",
+      "sha256": "8dbb473ebfb76c93bce8c207a5549e092d503389d74bc4f3b51cd965842aeb9e",
+      "bytes": 88188,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/archive-unease.ogg",
+      "sha256": "15009a89a11c82293e1691bb16646321fdf0c63910cfdf7c2211f59b8fb2f709",
+      "bytes": 1022495,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/archive-unease.score.json",
+      "sha256": "f6b1a96db01beda7fe576f0d3c1319cdf3fc33820292b14b4d29e2f6fa3e0cff",
+      "bytes": 13764,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/cafe-warmth.ogg",
+      "sha256": "6e36898828d76fa9a46577384f3e42da3475ecfb6952af408b832891ffa94acb",
+      "bytes": 1041629,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/cafe-warmth.score.json",
+      "sha256": "d69b7edd52e0a9b2bb01c1eabd989a43c7773a82e6f8579123e2ae0f8812ed96",
+      "bytes": 55146,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/compose.py",
+      "sha256": "f993cb446bbfd3b13152eb2ff478a398d3f7eb2233d5d3ed0765a9bbae8fe452",
+      "bytes": 22221,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/manifest.json",
+      "sha256": "b6a8b390b1634300d73b2b24ce655c1c44fd83c211562a502d930695cd19ee92",
+      "bytes": 16089,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/office-groove.ogg",
+      "sha256": "ed29e9ee5af160f5021c6816c211d232df59301b947edc971499fa4ff3f64fb1",
+      "bytes": 940967,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/office-groove.score.json",
+      "sha256": "9a60cd7ea3814a5efd91b2739a34ba05b0934c258637152f2d95981c9242f656",
+      "bytes": 83403,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/office-pressure.ogg",
+      "sha256": "a03d29cb48c6d8075625b37e0d1113146f758aae7061b9abb389aed2f26c4078",
+      "bytes": 690644,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/office-pressure.score.json",
+      "sha256": "05d6925b5af1261dac2530ab8c3fafaa2664ef90a60bd8b616dee1ed6f4e26bc",
+      "bytes": 72947,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/rainy-memory.ogg",
+      "sha256": "156b725a24ba5e71bdb4fc75107e658563d23ab454637a969065d5f84512f2b2",
+      "bytes": 1224481,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/rainy-memory.score.json",
+      "sha256": "3e14088889f05b7eacc1531eb8f853450af0f1289a003c8fbdead070bac391ae",
+      "bytes": 48795,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/README.md",
+      "sha256": "2115cf784638ecbeb4e8e45eb095853c813391b7ff406b6212fe1023dc43cc6c",
+      "bytes": 3349,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/resolution-dawn.ogg",
+      "sha256": "eb75c8ab798eea7cd9b4a4c0640e95a35225f5c142c5fafe6d3ae7342fadfe26",
+      "bytes": 763935,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/resolution-dawn.score.json",
+      "sha256": "597853e64121289b40498edb45ff1351352b5ce5e1280aa05f8ab0eebe4e3ff7",
+      "bytes": 36939,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/rooftop-heart.ogg",
+      "sha256": "a4516c6187507bb7175f735eeb76fd47a8da3cfb999c9ed570bff02feb4c1c99",
+      "bytes": 697245,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/rooftop-heart.score.json",
+      "sha256": "c9c3dc1e0e3109593cb7a2e909c223773ea104d8e19185b8403c5c8bc5ad3474",
+      "bytes": 45331,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/audio-v2/verification.json",
+      "sha256": "48cb95be1debd8c581c453fdf348fcb33f2b83759d6626a89f93ea8c076e7768",
+      "bytes": 2656,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/boss-expressions.png",
+      "sha256": "e072f4d0c56c11349093c379303cacd2509b3a8610612a343b7f7fae96bda51a",
+      "bytes": 1814370,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/cafe.png",
+      "sha256": "9d546aca64cdbe9bb57aae91df908b59b36d747397175fe2004cddffdd6666c4",
+      "bytes": 2868610,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/chime.wav",
+      "sha256": "8c54330c0df2b0fe06668597dc2e1245516a12a98856a2536046f32bf3cd4b1a",
+      "bytes": 10628,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/evening.wav",
+      "sha256": "9fdf672d7feeeb062cae389da92372be163bb4cc27224c8cec74a2b8bde06125",
+      "bytes": 211724,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/generation-manifest.json",
+      "sha256": "371bf60753f9fbfaf5b7991fc791bd51c2c4a59aed412714457c4a85b37fbf6e",
+      "bytes": 5467,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/office.png",
+      "sha256": "bf3a39649b5920bc286a82b9db93c3d6d9a2490708b445c5607ea95d016d7751",
+      "bytes": 2315072,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/riverside.png",
+      "sha256": "393bda947f29056c417ab302924c8a4fb107a21d7d8f9053187bb3950f45aa9a",
+      "bytes": 2794411,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/supplemental-manifest.json",
+      "sha256": "2d0a394c52f48e100ac80dfad63e57c2c789d0478714bba2baeb2fb62d2975a3",
+      "bytes": 2241,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/tape.wav",
+      "sha256": "2c009c381d505f6e71115f54fd816197cfe00312a890e67a9bf7c7688cc17318",
+      "bytes": 18566,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/v2/boss-actions-a.png",
+      "sha256": "18176790fe162b6b65519c50a89dc9fc4cf5ab571a8f819204b6074bb9d12f40",
+      "bytes": 1127544,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/v2/boss-actions-b.png",
+      "sha256": "debd7febc1fd485aae4c4734cb18076a90fc735ec705e545296016daf615b7dd",
+      "bytes": 1502562,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/v2/generation-manifest.json",
+      "sha256": "acd768da058d599f6d5fdbc57729105afea68bf4505aeea57df8cda6da538075",
+      "bytes": 20929,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/v2/rainstreet.png",
+      "sha256": "44eda0f37410a72ab8939fab268e41c0ca65de2cc212696d34815d407fac60d4",
+      "bytes": 3235355,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/v2/rooftop.png",
+      "sha256": "6061e8b6712faa827cdf6c29e504c274a3997fb211aba44dd36bbdb983fa8cc4",
+      "bytes": 2782229,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/v2/yuna-actions-a.png",
+      "sha256": "ad4a35ffb0070f3ba704f389c7d7ee84a03e7563247972ca773053b7ac6d5c6c",
+      "bytes": 1723819,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/v2/yuna-actions-b.png",
+      "sha256": "b14c4daa745797c3995eb961f446c0d9b45751744430248d95580b6755e4f049",
+      "bytes": 1723201,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "public/assets/yuna-expressions.png",
+      "sha256": "09109a8eba18c5e8cd8e591583770e8da26658c5541c7e913dbc79846037ec80",
+      "bytes": 1741479,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "README.md",
+      "sha256": "d1693ff4f1743f3c2b65bb74378b964ad6f869ecdc5421ae30004f7476b722df",
+      "bytes": 7706,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "scripts/audit-v2-package.ps1",
+      "sha256": "a6c84a16e5c90f0c9ba7e86ae4696c2c78fdce9b249a3a34cd494d6bff4c595f",
+      "bytes": 2020,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "scripts/generate-notices.mjs",
+      "sha256": "0047b175b56e76672668862c4ce444e97c86aa6a82793e25e4d17ba7a3f34d05",
+      "bytes": 1833,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "scripts/index-v2-candidate.mjs",
+      "sha256": "c91076f2ac610f75f2d8e9ab8504ebdcda769cca34eeb4654b9f92bfede4c943",
+      "bytes": 3606,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "scripts/package-local.ps1",
+      "sha256": "be91813757e6d5324ac2e265a8800a6b525be6aa7aebd4e421a4b14774a96563",
+      "bytes": 1658,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "scripts/package-state-review.py",
+      "sha256": "eee27975af2d643e00d355ca7f46462c42f2023f82374e995866e7227be53ca5",
+      "bytes": 5130,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "scripts/start-local.ps1",
+      "sha256": "766b81d392afd7edada47a61141fb23b48d7d7423306c8c11f42d78094393cfd",
+      "bytes": 3861,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "scripts/stop-local.ps1",
+      "sha256": "14130f84e201acfeb334a88e9b58b341563c9ad3fbca78fc585126739cfde1d6",
+      "bytes": 1019,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "scripts/verify-state-followup.mjs",
+      "sha256": "a92c5ebe8df97629287d6e57f8047b16926af62967987c919c7ece336ee14a47",
+      "bytes": 2796,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "scripts/verify-v2-candidate.mjs",
+      "sha256": "99d611bd45bd8a8dfe11ff0134b9a89dbaa5cc773afc3c98f4f75a42a96cc261",
+      "bytes": 1589,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "scripts/verify-v2-launcher.ps1",
+      "sha256": "858df996f718638efd02d77864257dfbbcb64bcb1d10d35f66c1442e01e0fead",
+      "bytes": 2639,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/adversarial.test.ts",
+      "sha256": "e996bb47c24b633f4af3c3cebbef0b4a6d33558a8de05191f244a2337a77bc2b",
+      "bytes": 7384,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/boundaries.test.ts",
+      "sha256": "5c337434b8571ece449239360016d1ae71eb026b8f3f52a40933df7c0563078b",
+      "bytes": 1924,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/commitments-followup.test.ts",
+      "sha256": "fbcaff89e889081faddd8cd69b8fb16513b9982d3012e3cb14796689514b37cb",
+      "bytes": 5943,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/commitments-http.test.ts",
+      "sha256": "85ad89d60f56e0c8b3cf7ce87dd2a08321a0947b93e8e8e225bfcf95b22d55ef",
+      "bytes": 4286,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/commitments.test.ts",
+      "sha256": "d6a9dfa4d3de052082331b7bc8d4164c3cca985f270bf4d70e6d89f61057b184",
+      "bytes": 9234,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/commitments.ts",
+      "sha256": "777f8c04abd6f1d44f0022fb9392b30f2debb825ffde73e140b0b1355f7e87e4",
+      "bytes": 12784,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/dialogue.test.ts",
+      "sha256": "b1237b060052917274a489ef8fc2cea4cb2f166df725032b58185875af4c37c0",
+      "bytes": 3455,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/dialogue.ts",
+      "sha256": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+      "bytes": 6841,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/game.test.ts",
+      "sha256": "9fd4e4a93df045a9925f0f4b04ea453d2208476f02f8b223cca9199dcf26e9f5",
+      "bytes": 359,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/game.ts",
+      "sha256": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "bytes": 2210,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/index.ts",
+      "sha256": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+      "bytes": 9110,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/interpretation.test.ts",
+      "sha256": "57814fca4693c08bb253a17349492460ff4bdb3c1ac319022324aead0c8d90ba",
+      "bytes": 4609,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/interpretation.ts",
+      "sha256": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+      "bytes": 803,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/music.test.ts",
+      "sha256": "7d852867e9508110191ac1e73326b1f20ffaece325df4a4e4c205472f5a2574e",
+      "bytes": 3109,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/narrative-agency-regression.test.ts",
+      "sha256": "19eec66a693dc72c02b62f39d5738823be84fa6d084f900f773317f8a280964f",
+      "bytes": 17896,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/narrative-compound-natural.test.ts",
+      "sha256": "5e2502a7219a3622ba5b8b1fc58cff3e9f41d01a981314cce66641ab20c0886f",
+      "bytes": 5109,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/narrative-compound-promise.test.ts",
+      "sha256": "8c5cd8116c45aae46e74f16b31b10f720bf19ddacb323c517d92a51345a7c876",
+      "bytes": 2177,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/narrative-counterfactual.test.ts",
+      "sha256": "fdce8e99bf04a9c4b689ddf1e6a9327a1038597f8eaca060f374053139ddf3d1",
+      "bytes": 5022,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/narrative-lifecycle-regression.test.ts",
+      "sha256": "41947c5680523474b182f6ce7c60cfe4010538f70ce07888afd1200205332fdc",
+      "bytes": 13171,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/narrative-natural-delivery.test.ts",
+      "sha256": "92b63d6b0e1bb191905ad26242c4e19a705a53d41ed23e8b504ab3b0dc9b0ce5",
+      "bytes": 6713,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/narrative-promise-edge.test.ts",
+      "sha256": "efd0ed9a153f20d804e9d2d969f43738f1c042605782c4a9f86285f94356616c",
+      "bytes": 3152,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/narrative-route-agency.test.ts",
+      "sha256": "f3c970fbfe7a701318ae68a57b927409004a2dab0ad69a8f603141d5c731279b",
+      "bytes": 6945,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/narrative-short-reply.test.ts",
+      "sha256": "c5815acecd3557b49752ab14f7c32a6e88a9efcece2e38c939a16ed75f5dc103",
+      "bytes": 2675,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/narrative.test.ts",
+      "sha256": "1829c31f88bc676a8202baff2bebbb11974fb8aee9271baf1367ff59087a9724",
+      "bytes": 14192,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/narrative.ts",
+      "sha256": "9f9c696431d134a0a9db50f6c6c2c7872f0f1970fd87ce6f2da575ec74a13ca3",
+      "bytes": 32739,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/office.test.ts",
+      "sha256": "c70cc186f6eb79c0494e9b0732c697a4bc33e4151ffeed87e790e16b0eea418f",
+      "bytes": 7005,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/office.ts",
+      "sha256": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+      "bytes": 30184,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/persistence.test.ts",
+      "sha256": "3190e8f8d0c32758d13fbef7c5a072bdad05741b1653897195acb69d1cc973af",
+      "bytes": 6770,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/provider.ts",
+      "sha256": "e0e19d21eac3e9f5b430162db54afedcda6cf67bdf9b9a6ebc78f553878e8393",
+      "bytes": 14813,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/recovery.test.ts",
+      "sha256": "a0e865cced0e13a018cd50b4dface7367a0a2aba721759ce300b20d205d35d7e",
+      "bytes": 4533,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/romance.test.ts",
+      "sha256": "effbae28a210cb3e5da1636492ad71a317f786795e17a13af4e7ba5a65b2a577",
+      "bytes": 4987,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/romance.ts",
+      "sha256": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+      "bytes": 17563,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/storage.ts",
+      "sha256": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b",
+      "bytes": 6326,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/v2-ac3-lifecycle.test.ts",
+      "sha256": "01b4237cad47f53b84d80ac2512813d00e96a2f3427c9d7af27fd0b4daea2a5a",
+      "bytes": 9834,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/v2-security.test.ts",
+      "sha256": "9c0a05c6e7766c107d0c677cb2146bdfd49916ba2ffcd4e8b2825fa438c33711",
+      "bytes": 8012,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/v2-story.test.ts",
+      "sha256": "01dc2795d99e76b291df5e9dde548150a9f600512a9dd8993d4fbab487b897b5",
+      "bytes": 11166,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "server/visual-binding.test.ts",
+      "sha256": "6f6ae25b4eb34b8ba257eccc18b159195c37f59755d45851ce5e1b2a203515ca",
+      "bytes": 1032,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "src/CharacterSprite.tsx",
+      "sha256": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+      "bytes": 880,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "src/collection.ts",
+      "sha256": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+      "bytes": 1390,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "src/ConversationViewport.tsx",
+      "sha256": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+      "bytes": 1160,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+      "bytes": 15933,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "src/music.ts",
+      "sha256": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+      "bytes": 3244,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "src/OfficeAgreement.tsx",
+      "sha256": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+      "bytes": 1129,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "src/presentation.ts",
+      "sha256": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+      "bytes": 3128,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "src/StageEffects.tsx",
+      "sha256": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+      "bytes": 2830,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+      "bytes": 14083,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "src/visualAssets.ts",
+      "sha256": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179",
+      "bytes": 3676,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "stop.cmd",
+      "sha256": "a1c2e93da917825eb80b318a1b28f1e7334d99eac43a2247b254d4555ca47c91",
+      "bytes": 210,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/ac7.spec.ts",
+      "sha256": "c492c766ec4e0c0e4bdce9b45f06cb2f2fc9e3ec5936c38866fbd3394c8e250f",
+      "bytes": 8730,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/commitment-transport.mjs",
+      "sha256": "13e044ecbe26aaf90d80e330394f830ff3e90f1b9bf7fe7e5145aff0a1a9c121",
+      "bytes": 1882,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/final-live-smoke.ts",
+      "sha256": "7980eacdc75cd7f565b0ac70dccca8e7b927d2c7beab75c43ec93ea237a7d674",
+      "bytes": 6795,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/live-smoke.ts",
+      "sha256": "b81f9af6d95046f26ec4f9fcfd1227812e2bc2b144f4eef4e7c00100ebad2b92",
+      "bytes": 4909,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/office.spec.ts",
+      "sha256": "ffb52731108187876d0dbcde95c05acd930ce2d46ffdebf20c15d372d10d210f",
+      "bytes": 4903,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/persistence.spec.ts",
+      "sha256": "07a122da9738ef95d7c196893177f641c75cefa11100995eeb9266157c46cba6",
+      "bytes": 9447,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/play.spec.ts",
+      "sha256": "273a41ad05b989d6d1122f15b9a2ccd045a4566c97bcf2f450b43b09663054b5",
+      "bytes": 8501,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/presentation.spec.ts",
+      "sha256": "73056c33f19be36c3d9e33d0442e551bedd9811eb4f21fe2c914d561f3e2dcb0",
+      "bytes": 9411,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/provider-fixture.mjs",
+      "sha256": "5801bb1cb5fb383361655a83e170d309461dbaa466323ac81fd6e7594c3ef3da",
+      "bytes": 1111,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/romance.spec.ts",
+      "sha256": "7fc1635aa937b253c4eaaf0e1ec3e796468a7c7ca51dfb2bc25d8e0780366ca7",
+      "bytes": 3898,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-ac2-receipt-replay.ts",
+      "sha256": "459cf63dc66bba32af1652a499586981cc309fe59a24ccbadea204ae5da5a654",
+      "bytes": 2104,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-ac3-receipt-audit.ts",
+      "sha256": "831855f7ac251422a4af810cbbdbf590ec4c5d3daea185dbc47dc3068e354427",
+      "bytes": 2112,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-ac4-boundaries.spec.ts",
+      "sha256": "ad8f9367a9af617bb04794aa96e65dc80277e9c3d82c364d75d9e6dcb65dfaf1",
+      "bytes": 8636,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-ac4-gallery.ts",
+      "sha256": "d9d1d922fe1a3c03e571c8d35e601bda546b25e5225e4030ae1956e828374d76",
+      "bytes": 1797,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-art.spec.ts",
+      "sha256": "c7878e7cad5542f8d879fc067dd76cb90b89caf5d2905759e7c22bee4973042d",
+      "bytes": 5265,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-audio.spec.ts",
+      "sha256": "b7a099ee780824d6af263fbf5d593dde30bd1a6b7abd4a7c91ddecb0849c211e",
+      "bytes": 11193,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-browser-fixture.mjs",
+      "sha256": "38719f39071c19d0eff38b86f90f6f2fad749ae39f48a3cd2e3c25a18ab55dce",
+      "bytes": 1680,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-final-live/guard.mjs",
+      "sha256": "b095848b94d31091bb169595e1206df805e1f92815806417306280b3bff9fe0c",
+      "bytes": 7440,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-final-live/guard.test.mjs",
+      "sha256": "df8b4895304c5700013f8c6e458bb285f6b2003b6a3e9b17bf09e56b36930364",
+      "bytes": 10612,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-final-live/runner.mjs",
+      "sha256": "48c8ede7f4484ad6e7a9af2e70e5b1c0e7d513f2282903e8e76612313076b7db",
+      "bytes": 10085,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-final-live/server.mjs",
+      "sha256": "af47d2a0ae7ef7c8fe6df8f27b712b356520e3bc0638e4c1c556715f749d24fc",
+      "bytes": 2623,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-journey.spec.ts",
+      "sha256": "d544bb6629a6008055fe6cea08c0073b29471948c5f07c16a7ca43a9de8e8f9b",
+      "bytes": 5015,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-live-screens.mjs",
+      "sha256": "0cba909fd8c8cf4584a3bef0b70145c8fd542cad650ae811897860c05f07dfab",
+      "bytes": 2320,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-live-server.ts",
+      "sha256": "f82ef81fbf6d9bb56fa8ba2f4b84d6c426855e2c3ec3cf2e6750f8a4b4d70c3f",
+      "bytes": 526,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-live-smoke.ts",
+      "sha256": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21",
+      "bytes": 4204,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-persistence-fixture.mjs",
+      "sha256": "f01a8251115cbfcae79b76c60dca27e53318b6b98035708b458ec0f998327b67",
+      "bytes": 994,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-promise-edge-probe.ts",
+      "sha256": "007a03c977fa30d62917ba7a0d4d15f5d6e90b9188b03dfdb28c85894a28eda4",
+      "bytes": 2815,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-receipt-replay.ts",
+      "sha256": "33a1eeadae8371cbca038fdf229580fa0796bf9df0f4c23a926d5d2148001b25",
+      "bytes": 1253,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-security-fixture.mjs",
+      "sha256": "3105e050717c602b00fed0c386db67e798599accdc1476c74d229a8aab177d0c",
+      "bytes": 418,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-ui-polish.spec.ts",
+      "sha256": "81fe4c0b6a1b3fc840fa517c00f253995e9c6bff30e4c796ccd9321614726248",
+      "bytes": 7868,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tests/v2-ui.spec.ts",
+      "sha256": "c2092085aeaf3accb1dbe2dbf3016276bff6265ab3c7866385e5133e52230a05",
+      "bytes": 7778,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "sha256": "e222f1044fa602c49c52ded5c71fbbdfec097a326acf43097d25c11077721200",
+      "bytes": 89224,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "d1e556b51e31d1b2e49ac3d052749c0003c9eef273e5389d3b365127ea4caa29",
+      "bytes": 310,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "verification/v2-sequential-generation2.seed.json",
+      "sha256": "e08445986d8c0e44730ea197a6d113f36a0a146d18df6ee9d9369fe8b590299e",
+      "bytes": 28626,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "31b239847ea277dbb06377722343de8a1643b78cbc9a2bed7592b09fe047902f",
+      "bytes": 180,
+      "generated": true,
+      "includedInBundle": true,
+      "externalEvaluatorAccess": "not observed"
+    }
+  ]
+}

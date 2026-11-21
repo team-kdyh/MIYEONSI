@@ -1,0 +1,16 @@
+{
+  "executedAt": "2026-11-21T05:41:26.482Z",
+  "paidCalls": 0,
+  "transport": "mock returning 503; no network",
+  "observations": [
+    {
+      "defaultProvider": "openai",
+      "passiveCalls": 0,
+      "hostileRequestsRejected": 6,
+      "modelErrorStatus": 400,
+      "failedTurnPreserved": true,
+      "explicitOffline": true,
+      "initialVersion": 0
+    }
+  ]
+}

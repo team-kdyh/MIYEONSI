@@ -1,0 +1,156 @@
+{
+  "command": "npx playwright test",
+  "startedAt": "2026-11-21T05:29:42.709Z",
+  "finishedAt": "2026-11-21T05:32:37.149Z",
+  "exitCode": 0,
+  "node": "v24.14.0",
+  "platform": "win32",
+  "paidCalls": 0,
+  "port": 3197,
+  "artifacts": [
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-parent-polish\\collection-legacy-390.png",
+      "sha256": "252800e4c73ff8c395d547a517d2841567bc6959c5eadf07b238e7cb82937de6"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\conversation-1440-office.png",
+      "sha256": "861908ca0257184e6ed8e29a7f940054bd81b6072570b2c869b39f405fcbe826"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\conversation-1440-romance.png",
+      "sha256": "1ea386be410029e3bf963ac80d029fa930c32779c9291f521f6b3eb71b75931f"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\conversation-390-office.png",
+      "sha256": "72cbdd96794243faec9d3333b36642941823c3eacd513ae4b73208b542b8f96a"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\conversation-390-romance.png",
+      "sha256": "cac4e0021876843a4448996951a679d4e25bcb60f78fce858c5f9efbdf6d8b0e"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\long-focus-1440-office.png",
+      "sha256": "57f12294fa9299be288018abb3cc7ac6821866e9d068dd808967132f745692c3"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\long-focus-1440-romance.png",
+      "sha256": "f4ac0e20e7800121d6f33ebc8fa9cc405e69a47b2dd8f4f51ef3dc6ccf448b51"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\long-focus-390-office.png",
+      "sha256": "495efbce7107bedaf5294f2460a034a8490a483358026bdfdfa89e1b9118df0d"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\long-focus-390-romance.png",
+      "sha256": "5b5b5a4c684c2089db2ebb37cb8717fbb71061309a77ab989866319fedcbb32b"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\qa-screenshots\\v2-ui\\settings-390-office.png",
+      "sha256": "a7bbb3f588d497f0fe805197fe7a37fd2ce677a97a4468bf431e12efb8a1b19b"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-ac4-office-1440.json",
+      "sha256": "4a87e33ae23609eece9776cbe75cb1ff824dd74461d36c7e23561fa13901b350"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-ac4-office-390.json",
+      "sha256": "2222cd27fb70170a8a2e3c666f9b7b7ace33aa9a93727f765a0ab24b53a4fae8"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-ac4-romance-1440.json",
+      "sha256": "0cc55458e6dadbcbb212f58f902b35a69b869cda0322f57e849a2e216e33949f"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-ac4-romance-390.json",
+      "sha256": "4b77f0d38e8755cca6e5130ef2c00d73acb731504cb6fbd072318b6048040cd0"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-audio-office-path.json",
+      "sha256": "6c33193dd10a664624ece74376c1406b893446529986e6adf251558c8785c267"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-audio-romance-path.json",
+      "sha256": "374130784771a755cca83f2b1a0bd91201c5c9b6f02ca084fc058b81a57b943a"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-audio-waveforms.json",
+      "sha256": "d8679b4d72de16b5fb93cf0cd513c479996b035f769c494c6dc3b4833510a868"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-parent-observations\\state-review\\HANDOFF.md",
+      "sha256": "e74f49dcb8e4e1fdee392077186d8dedb80d0bdc68a21222f1215841fbf17994"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-parent-observations\\state-review\\v2-state-atomic-review\\commitments-atomic.test.ts",
+      "sha256": "c2139cd0ab7c912b52b656d65d94588c2200a070a0ccdff866bdf385fc63b83f"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-parent-observations\\state-review\\v2-state-atomic-review\\manifest.json",
+      "sha256": "21ad7c7a3f58365de1b8b99d8c400993439b5f8aefe34ed3a0893eebd95c2a5a"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-parent-observations\\state-review\\v2-state-atomic-review\\probe.ts",
+      "sha256": "2d5fcd4924a92c6be92bc1a272e64effbb92dc03289cd94744af5cc733aa872b"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-parent-observations\\state-review\\v2-state-atomic-review\\proposal.patch",
+      "sha256": "ca445545cc77f00afe4bdafec71ac9b559cabba23483c846c26ceecff9949b94"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-parent-observations\\state-review\\v2-state-atomic-review\\result.json",
+      "sha256": "75c6fb65bb0f2991d682b55a639380f443bf760a6ef3d05746907d2575d8bf8b"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-parent-observations\\state-review\\v2-state-storage-review\\baseline-results.json",
+      "sha256": "fa37b84469e2ec86e2393c8c6fad505191da50819315f0e3f6f018ad3ad3f1cb"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-parent-observations\\state-review\\v2-state-storage-review\\commitments-storage-review.test.ts",
+      "sha256": "f5397afe765d855b572645551c1b3a7980a666180519fade91bf25d87e296cfe"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-parent-observations\\state-review\\v2-state-storage-review\\evidence-hashes.json",
+      "sha256": "1d27c9ef6937bc1cc37b7a62c3dcda053e3f5c2d2c8a9f90ee676d867353a654"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-parent-observations\\state-review\\v2-state-storage-review\\patched-results.json",
+      "sha256": "dc15e34bbeeda1b53e865eac0b626f1457cabfcd93538aad2b97a46a7cee6378"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-parent-observations\\state-review\\v2-state-storage-review\\recipient-amendment.patch",
+      "sha256": "a6df2e91ffb57436b8ab6f47987f62c2b82ca0a07974286e8bbdc6d0ecd4eb26"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-parent-observations\\state-review\\v2-state-storage-review\\report.md",
+      "sha256": "c8d8385e48ff59fe82122496fa5d6f3d5176eb15d6c951918837e53f559f020a"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-parent-observations\\state-review\\v2-state-storage-review\\snapshot-manifest.json",
+      "sha256": "23918e1f779cb1e9864fde6858845b50508ca6ea7ba7006346164a68b6acf944"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-parent-observations\\state-review\\v2-state-storage-review\\source-stability.json",
+      "sha256": "1aaac56a0d509708107f8f5593dcd4621296e230672cbf8f661b02ea8b34af7a"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-parent-observations\\state-review\\v2-state-storage-review\\verification.json",
+      "sha256": "9fccf932f50888e412dabe099c94761576e3120e8c9e66008f3f85a25fa856b5"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-ui-1440-office.json",
+      "sha256": "7c1eee6d204d2c33aef47bc75effd5de9d1db1aaec5f8ab1dffcc846a9e9186e"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-ui-1440-romance.json",
+      "sha256": "8108ba123fbe546197f9d82e4885aaea64155a49501f8535d21e07c197889220"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-ui-390-office.json",
+      "sha256": "d291fec52416eda06c37f4b30fd5c6ad2e61d5a5adc07b5d7e76a7b3df7c2c5f"
+    },
+    {
+      "path": "docs\\v2-state-followup\\artifacts\\docs\\v2-ui-390-romance.json",
+      "sha256": "d089a744f60ab11cfa6af245f9171ef966536cd5709dcc467136bd299ab747f0"
+    }
+  ]
+}

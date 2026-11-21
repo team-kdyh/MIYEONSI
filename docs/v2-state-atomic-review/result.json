@@ -1,0 +1,167 @@
+{
+  "scope": "Mock normal start/offer and same-turn acceptance+actual performance; no API",
+  "original": "제가 노란 리본을 가져오는 약속을 할게요.",
+  "before": {
+    "format": 2,
+    "turn": 1,
+    "location": "cafe",
+    "relationship": "strangers",
+    "dates": 0,
+    "events": [
+      {
+        "kind": "promise",
+        "subject": "player",
+        "text": "제가 노란 리본을 가져오는 약속을 할게요.",
+        "status": "offered",
+        "reference": "",
+        "evidence": "제가 노란 리본을 가져오는 약속을 할게요.",
+        "value": "ribbon",
+        "id": "1aad7c57-a25a-4ea8-9c02-e6e769aa6238",
+        "turn": 1
+      }
+    ],
+    "pose": "listen",
+    "emotion": "차분함",
+    "musicMood": "cafe-warmth",
+    "commitments": [
+      {
+        "promiseId": "1aad7c57-a25a-4ea8-9c02-e6e769aa6238",
+        "originalText": "제가 노란 리본을 가져오는 약속을 할게요.",
+        "acceptanceIds": [],
+        "conditions": [
+          {
+            "performer": "player",
+            "target": "유나",
+            "action": "노란 리본을 가져오는",
+            "id": "3b889ebf-4764-4f95-883a-375b1be8ac58",
+            "originalPerformer": "player",
+            "evidenceIds": []
+          }
+        ],
+        "amendments": [],
+        "assessments": [],
+        "status": "pending"
+      }
+    ]
+  },
+  "text": "좋아요. 노란 리본 가져왔어요.",
+  "response": {
+    "line": "좋아요.",
+    "actionBeats": [],
+    "events": [
+      {
+        "kind": "promise",
+        "subject": "player",
+        "text": "제가 노란 리본을 가져오는 약속을 할게요.",
+        "status": "accepted",
+        "reference": "1aad7c57-a25a-4ea8-9c02-e6e769aa6238",
+        "evidence": "좋아요.",
+        "value": "ribbon"
+      }
+    ],
+    "emotion": "차분함",
+    "pose": "listen",
+    "musicMood": "cafe-warmth",
+    "recall": [],
+    "conjecture": "",
+    "commitmentProgress": [
+      {
+        "promiseId": "1aad7c57-a25a-4ea8-9c02-e6e769aa6238",
+        "conditionId": "3b889ebf-4764-4f95-883a-375b1be8ac58",
+        "performer": "player",
+        "source": "player",
+        "actionIndex": -1,
+        "eventId": "",
+        "quote": "노란 리본 가져왔어요."
+      }
+    ]
+  },
+  "outcome": {
+    "committed": false,
+    "error": "Error: 약속 조건 또는 이행 근거를 확인하지 못했습니다."
+  },
+  "positiveSeparateTurns": {
+    "format": 2,
+    "turn": 3,
+    "location": "cafe",
+    "relationship": "strangers",
+    "dates": 0,
+    "events": [
+      {
+        "kind": "promise",
+        "subject": "player",
+        "text": "제가 노란 리본을 가져오는 약속을 할게요.",
+        "status": "offered",
+        "reference": "",
+        "evidence": "제가 노란 리본을 가져오는 약속을 할게요.",
+        "value": "ribbon",
+        "id": "1aad7c57-a25a-4ea8-9c02-e6e769aa6238",
+        "turn": 1
+      },
+      {
+        "kind": "promise",
+        "subject": "player",
+        "text": "제가 노란 리본을 가져오는 약속을 할게요.",
+        "status": "accepted",
+        "reference": "1aad7c57-a25a-4ea8-9c02-e6e769aa6238",
+        "evidence": "좋아요.",
+        "value": "ribbon",
+        "id": "e6803971-78fc-41c2-af1d-32e889c4d50d",
+        "turn": 2
+      },
+      {
+        "id": "857a2a8d-a118-4d0c-a5b8-184f24853759",
+        "turn": 3,
+        "kind": "complication",
+        "subject": "player",
+        "text": "노란 리본 가져왔어요.",
+        "status": "fulfilled",
+        "reference": "3b889ebf-4764-4f95-883a-375b1be8ac58",
+        "evidence": "노란 리본 가져왔어요.",
+        "value": "condition-evidence"
+      }
+    ],
+    "pose": "listen",
+    "emotion": "차분함",
+    "musicMood": "cafe-warmth",
+    "commitments": [
+      {
+        "promiseId": "1aad7c57-a25a-4ea8-9c02-e6e769aa6238",
+        "originalText": "제가 노란 리본을 가져오는 약속을 할게요.",
+        "acceptanceIds": [
+          "e6803971-78fc-41c2-af1d-32e889c4d50d"
+        ],
+        "conditions": [
+          {
+            "performer": "player",
+            "target": "유나",
+            "action": "노란 리본을 가져오는",
+            "id": "3b889ebf-4764-4f95-883a-375b1be8ac58",
+            "originalPerformer": "player",
+            "evidenceIds": [
+              "857a2a8d-a118-4d0c-a5b8-184f24853759"
+            ]
+          }
+        ],
+        "amendments": [],
+        "assessments": [
+          {
+            "turn": 3,
+            "result": "completed",
+            "conditions": [
+              {
+                "id": "3b889ebf-4764-4f95-883a-375b1be8ac58",
+                "evidenceIds": [
+                  "857a2a8d-a118-4d0c-a5b8-184f24853759"
+                ]
+              }
+            ],
+            "reason": "Server-derived from accepted performer-specific evidence"
+          }
+        ],
+        "status": "completed"
+      }
+    ],
+    "legacyCommitmentAssessments": []
+  }
+}

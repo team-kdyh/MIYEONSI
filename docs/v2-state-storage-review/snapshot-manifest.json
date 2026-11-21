@@ -1,0 +1,51 @@
+{
+  "capturedAt": "2026-11-21T05:22:38.2131938Z",
+  "source": "C:/Users/gjtjw/.ouroboros/worktrees/대화형 스토리진행/ralph-afterhours-v2-state-49c8729",
+  "scope": "Read-only source snapshot; no private data/env; isolated reducer/storage probes only",
+  "files": [
+    {
+      "path": "server/commitments.ts",
+      "sha256": "0e3b7da41c214ef3cb241e5df58c2ff9628231a021be0d1708292d373743ae48"
+    },
+    {
+      "path": "server/narrative.ts",
+      "sha256": "9f9c696431d134a0a9db50f6c6c2c7872f0f1970fd87ce6f2da575ec74a13ca3"
+    },
+    {
+      "path": "server/storage.ts",
+      "sha256": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b"
+    },
+    {
+      "path": "server/dialogue.ts",
+      "sha256": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5"
+    },
+    {
+      "path": "server/game.ts",
+      "sha256": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0"
+    },
+    {
+      "path": "server/office.ts",
+      "sha256": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98"
+    },
+    {
+      "path": "server/romance.ts",
+      "sha256": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df"
+    },
+    {
+      "path": "server/interpretation.ts",
+      "sha256": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0"
+    },
+    {
+      "path": "server/provider.ts",
+      "sha256": "e0e19d21eac3e9f5b430162db54afedcda6cf67bdf9b9a6ebc78f553878e8393"
+    },
+    {
+      "path": "server/commitments.test.ts",
+      "sha256": "d6a9dfa4d3de052082331b7bc8d4164c3cca985f270bf4d70e6d89f61057b184"
+    },
+    {
+      "path": "server/commitments-http.test.ts",
+      "sha256": "85ad89d60f56e0c8b3cf7ce87dd2a08321a0947b93e8e8e225bfcf95b22d55ef"
+    }
+  ]
+}

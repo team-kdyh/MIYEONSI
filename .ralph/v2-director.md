@@ -1,6 +1,10 @@
 # AFTER HOURS v2 — direction and delivery contract
 
-## Current continuation: bounded commitment state
+## Current integrated commitment candidate
+
+The root now includes persistent participant/condition/evidence records, independent original-clause coverage/recipient/atomic-acceptance fixes and state Ralph G2's refusal/history bounds. Read `docs/v2-state-parent-integrated/review.md`, `docs/v2-state-merge-review.md` and `docs/v2-state-g2-merge-review/README.md`.358 unit tests and build pass; exact browser/launcher scope is recorded there. Root3001 serves the integrated candidate. Preserve all earlier state/grade evidence below as history. Active worker changes must be compared against these parent fixes before integration. No new paid allocation was approved; actual model behavior for the changed schema/provider is unverified. Do not turn free regression passes or audio playback checks into commercial-release or listening approval.
+
+## Earlier continuation: bounded commitment state
 
 Read `docs/v2-parent-compound/review.md` and `docs/v2-mutual-state-review/README.md` first. The root is now narrative5aa03219…, build/325 tests pass, but participant-specific and cross-turn partial completion still fail two exact normal-turn probes. Implement the existing validated Seed84d0c8a7a66d AC2/6 using bounded condition/performer IDs, accumulated provenance, explicit amendments, server-derived completion and preserved saves. Keep the current free dialogue and presentation; the design document is guidance, not new criteria. No new paid calls/ledger approval, no runtime signals or grader modifications. Earlier snapshots below are chronological evidence.
 

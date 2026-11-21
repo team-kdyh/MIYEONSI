@@ -1,5 +1,5 @@
 from pathlib import Path,PurePosixPath
-import zipfile,json,hashlib,re,datetime
+import zipfile,json,hashlib,re,datetime,sys
 root=Path(__file__).resolve().parent.parent
 archive=root/'artifacts/AFTER-HOURS-playable.zip'
 hashbytes=lambda data:hashlib.sha256(data).hexdigest()
@@ -22,5 +22,7 @@ with zipfile.ZipFile(archive) as z:
         checked.append({'entry':name,'sha256':f['sha256']})
 result={'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'archive':archive.relative_to(root).as_posix(),'sha256':hashbytes(archive.read_bytes()),'bytes':archive.stat().st_size,'payloadCount':len(checked),'result':'pass','scope':'Exact rebuilt playable ZIP versus current source. No private paths or credential-shaped contents found. Earlier separate installation evidence applies to baseline 14128a7; this rebuild is not a new fresh-install or live-model test.','files':checked}
 assert result['sha256']==(root/'artifacts/AFTER-HOURS-playable.zip.sha256').read_text().split()[0]
-(root/'docs/v2-revision-parent-review/playable-audit.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf8')
+destination=sys.argv[1] if len(sys.argv)>1 else 'docs/v2-revision-parent-review/playable-audit.json'
+assert destination in {'docs/v2-revision-parent-review/playable-audit.json','docs/v2-audio-race-review/playable-audit.json'}, 'Explicit evidence destination required'
+(root/destination).write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf8')
 print(json.dumps({k:result[k] for k in ['result','payloadCount','bytes','sha256']}))

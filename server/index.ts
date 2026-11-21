@@ -27,7 +27,7 @@ app.use('/api',async(req,res,next)=>{
  res.locals.id=id;next();
 });
 app.all('/api/:action',async(req,res)=>{
- const id:string=res.locals.id; if(locks.has(id)){res.status(409).json({error:'앞선 선택을 처리 중입니다.'});return;}locks.add(id);
+ const id:string=res.locals.id; if(locks.has(id)){res.status(409).json({error:'앞선 대화를 처리 중입니다.'});return;}locks.add(id);
  try{
  const a=req.params.action;
  if(req.method==='POST'){
@@ -52,10 +52,10 @@ app.all('/api/:action',async(req,res)=>{
  if(choice!=null)throw Error('이야기는 자유 대사로 진행됩니다.');
  if(typeof requestId!=='string'||!/^[a-zA-Z0-9-]{8,80}$/.test(requestId))throw Error('요청 식별자가 필요합니다.');
  const hash=createHash('sha256').update(JSON.stringify({text,choice,version,step:req.body.step})).digest('hex');
- const old=p.committed?.find(t=>t.id===requestId);if(old){if(old.hash!==hash){res.status(409).json({error:'동일 요청의 내용이 다릅니다. 현재 상태를 복구했습니다.',state:payload(p)});return;}if(old.afterVersion!==canonical(p.game).version){res.status(409).json({error:'이미 처리한 선택 이후 진행이 변경되었습니다. 현재 상태를 복구했습니다. 새 선택을 제출하세요.',state:payload(p)});return;}res.json(payload(p));return;}
+ const old=p.committed?.find(t=>t.id===requestId);if(old){if(old.hash!==hash){res.status(409).json({error:'동일 요청의 내용이 다릅니다. 현재 상태를 복구했습니다.',state:payload(p)});return;}if(old.afterVersion!==canonical(p.game).version){res.status(409).json({error:'이미 처리한 대화 이후 이야기가 진행됐습니다. 현재 상태를 복구했습니다. 새 대사를 입력하세요.',state:payload(p)});return;}res.json(payload(p));return;}
  if(++rate.count>300){res.status(429).json({error:'시간당 요청 한도입니다. 잠시 후 다시 시도하세요.'});return;}
  if(p.game.ending)throw Error('이미 끝난 이야기입니다.');
- if(version!==canonical(p.game).version||req.body.step!==p.game.step){res.status(409).json({error:'진행 버전이 변경되었습니다. 현재 상태를 복구했습니다. 새 선택을 제출하세요.',state:payload(p)});return;}
+ if(version!==canonical(p.game).version||req.body.step!==p.game.step){res.status(409).json({error:'다른 화면에서 이야기가 진행됐습니다. 현재 상태를 복구했습니다. 새 대사를 입력하세요.',state:payload(p)});return;}
  if((p.requests??0)>=100)throw Error('이 세션의 AI 요청 한도(100회)에 도달했습니다. 새 게임을 시작하세요.');
  p.requests=(p.requests??0)+1;
  // Count attempts durably even when the provider fails; never persist a failed turn.

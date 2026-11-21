@@ -257,7 +257,7 @@ export function reconcile(game:Game,text:string,reply:NarrativeReply):{game:Game
    const origin=commitmentOrigin(ref,prior.events);
    if(!origin)continue;
    const existingContract=prior.commitments?.find(c=>c.promiseId===origin.id);
-   if(e.kind==='promise'&&e.status==='accepted'&&existingContract&&e.text!==origin.text&&!prior.events.some(p=>existingContract.acceptanceIds.includes(p.id)&&p.text===e.text))throw Error('이미 수락한 약속의 다른 내용은 commitmentRevisions로 명시해야 합니다.');
+   if(e.kind==='promise'&&e.status==='accepted'&&existingContract&&e.text!==origin.text&&!prior.events.some(p=>existingContract.acceptanceIds.includes(p.id)&&p.text===e.text))throw Error('약속 내용이 달라졌지만 변경에 대한 합의를 확인하지 못했습니다. 기존 약속은 그대로 유지됩니다.');
    if(e.status==='accepted'&&s.commitments?.some(c=>c.promiseId===origin.id)&&(!grounded||!consent(clause)))continue;
    if(prior.events.some(p=>['fulfilled','refused'].includes(p.status)&&commitmentOrigin(p,prior.events)?.id===origin.id))continue;
    if(e.status==='fulfilled'){

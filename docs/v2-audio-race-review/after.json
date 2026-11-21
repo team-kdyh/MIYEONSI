@@ -1,0 +1,16 @@
+{
+  "scope": "Deterministic media-promise scheduling with actual MusicMixer; no network or audio listening; not claimed as the root cause of the separate browser flake",
+  "sourceHash": "e07ecf46842e6663cb9ab6286d66dc5f0acc57c20fe05866e233f2f0060e07cb",
+  "afterNewSuccess": {
+    "paused": false,
+    "blocked": false
+  },
+  "afterOldFailure": {
+    "paused": false,
+    "blocked": false
+  },
+  "changes": [
+    false
+  ],
+  "pass": true
+}

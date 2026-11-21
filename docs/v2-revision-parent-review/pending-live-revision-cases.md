@@ -1,0 +1,14 @@
+# Revision scenarios for the pending final live review
+
+This supplements the still-pending final conversational QA plan. It authorizes **zero calls**, creates no active ledger, and does not increase the proposed24 allocation. Original12 + v2 additional32 remain exhausted. If approval arrives, the final owner must freeze the then-current source and account for these scenarios within the approved total, prioritizing consent/state correctness over guaranteed story coverage.
+
+The current implementation adds `commitmentRevisions` to the structured response. Controlled responses prove the reducer's narrow paths; they do not establish that the real model emits this array correctly or keeps visible speech aligned with it. The output ceiling remains1600 tokens. These additional fields may affect success/latency/length; no observed result is assumed.
+
+Use a naturally earned, accepted multi-condition promise in the continuous romance path. Save a normal partial-performance state through the public API, retaining that same state for comparison. The concrete nouns should come from that conversation, not be injected into a completed fixture. For example, if the actual promise includes a ribbon and a folded letter, changing the letter to a drawing is relevant. Otherwise adapt the objects while retaining the same semantic contrast.
+
+1. From the partial save, propose a natural change such as “편지는 접기 힘들 것 같아요. 대신 그림을 그려도 될까요?” Observe the character's actual response and whether the model establishes a proposal, agreement, or rejection. Do not pretend the current literal protocol necessarily accepts this phrasing.
+2. If actual dialogue establishes the change, save/reload, then perform only the changed action. Check stable promise identity, retention of the unaffected partial, new active action, historical old evidence, and a completion claim earned only after all current conditions. Inspect visible speech as well as state.
+3. Restore the exact earlier partial save. Express a proposed change followed by withdrawal, e.g. “편지 대신 그림으로 바꿀까 했는데, 아니요. 방금 말은 취소할게요. 원래 약속대로 할게요.” The current contract must stay unchanged; NPC speech must not claim the cancelled change was accepted.
+4. Ask the same follow-up about remaining obligations in both branches. Different active terms must survive restore and govern the answer. If the model refuses both changes, record that actual result rather than fabricating a successful branch.
+
+A slot for each extra turn must be explicitly reserved from the existing approved plan if and when approved. These cases cannot be added invisibly beyond24. If meaningful coverage cannot fit, report the omitted cases; they are not satisfied by the mocked holdout. Do not supply fixed NPC answers, expected event IDs, hidden completed state, or model-output patches to obtain a pass.

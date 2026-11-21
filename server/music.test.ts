@@ -32,3 +32,27 @@ test('blocked playback is caught and user resume retries without creating a new 
 test('ended and legacy saves use appropriate v2 score without rewriting story state',()=>{
  const g=start('romance');assert.equal(musicFor(g),'cafe-warmth');g.step=3;assert.equal(musicFor(g),'rooftop-heart');g.step=4;assert.equal(musicFor(g),'archive-unease');g.step=5;assert.equal(musicFor(g),'archive-pursuit');g.ending='romance-0';assert.equal(musicFor(g),'resolution-dawn');
 });
+
+class DeferredMedia extends Media {
+ pending:{resolve:()=>void;reject:()=>void}[]=[];
+ play(){this.plays++;return new Promise<void>((resolve,reject)=>this.pending.push({resolve:()=>{this.paused=false;resolve();},reject:()=>reject(Error('delayed playback failure'))}));}
+}
+const settle=()=>new Promise(r=>setImmediate(r));
+test('late failure from an earlier play request cannot undo successful user retry',async()=>{
+ const nodes=[new DeferredMedia(),new DeferredMedia()];let blocked=false;
+ const mixer=new MusicMixer(nodes as unknown as HTMLAudioElement[],v=>blocked=v,()=>0);
+ mixer.request('cafe-warmth');mixer.resume();
+ nodes[0].pending[1].resolve();await settle();assert.equal(blocked,false);assert.equal(nodes[0].paused,false);
+ nodes[0].pending[0].reject();await settle();assert.equal(blocked,false);assert.equal(nodes[0].paused,false);mixer.dispose();
+});
+test('outgoing track outcome cannot overwrite the incoming track playback status',async()=>{
+ for(const incomingWorks of [true,false]){
+  const nodes=[new DeferredMedia(),new DeferredMedia()];let blocked=false,now=0;
+  const mixer=new MusicMixer(nodes as unknown as HTMLAudioElement[],v=>blocked=v,()=>now);
+  mixer.request('cafe-warmth');now=8000;mixer.request('rainy-memory');
+  if(incomingWorks)nodes[1].pending[0].resolve();else nodes[1].pending[0].reject();
+  await settle();assert.equal(blocked,!incomingWorks);
+  if(incomingWorks)nodes[0].pending[0].reject();else nodes[0].pending[0].resolve();
+  await settle();assert.equal(blocked,!incomingWorks);mixer.dispose();
+ }
+});

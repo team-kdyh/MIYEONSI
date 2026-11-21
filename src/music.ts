@@ -22,6 +22,7 @@ export class MusicMixer {
  private muted=false;
  private volume=.35;
  private disposed=false;
+ private playRequests=[0,0];
  constructor(private nodes:HTMLAudioElement[],private blocked:(value:boolean)=>void,private now=()=>performance.now()){}
  request(id:MusicId|null){
   this.desired=id;
@@ -33,7 +34,13 @@ export class MusicMixer {
   this.apply();if(mute)this.nodes.forEach(n=>n.pause());else if(resume)this.resume();
  }
  private play(node:HTMLAudioElement){
-  void node.play().then(()=>{if(this.disposed||this.muted||!this.desired)node.pause();else this.blocked(false);}).catch(()=>{if(!this.disposed&&!this.muted&&this.desired)this.blocked(true);});
+  const index=this.nodes.indexOf(node),attempt=++this.playRequests[index];
+  const latest=()=>!this.disposed&&this.playRequests[index]===attempt;
+  void node.play().then(()=>{
+   if(!latest())return;
+   if(this.muted||!this.desired)node.pause();
+   else if(index===this.current)this.blocked(false);
+  }).catch(()=>{if(latest()&&!this.muted&&this.desired&&index===this.current)this.blocked(true);});
  }
  resume(){if(this.desired&&!this.muted)this.nodes.forEach((node,i)=>{if(i===this.current||this.gains[i]>0)this.play(node);});}
  private apply(){this.nodes.forEach((n,i)=>{n.muted=this.muted;n.volume=this.gains[i]*this.volume;});}

@@ -1,0 +1,430 @@
+{
+  "at": "2026-11-21T06:24:57.073227+00:00",
+  "scope": "Current original runtime/test source and rendered assets exactly match the isolated 371-unit/build/4-audio-browser candidate. Non-rendered support manifests/docs are outside this comparison. No paid generation or listening inference.",
+  "unit": 371,
+  "audioBrowser": 4,
+  "source": [
+    {
+      "path": "server/adversarial.test.ts",
+      "sha256": "e996bb47c24b633f4af3c3cebbef0b4a6d33558a8de05191f244a2337a77bc2b"
+    },
+    {
+      "path": "server/boundaries.test.ts",
+      "sha256": "5c337434b8571ece449239360016d1ae71eb026b8f3f52a40933df7c0563078b"
+    },
+    {
+      "path": "server/commitment-revisions-http.test.ts",
+      "sha256": "33e24d9d4b3b0e639e234c4e22018031025ba716f9006ee001dd8dcf711c5a33"
+    },
+    {
+      "path": "server/commitment-revisions-retraction.test.ts",
+      "sha256": "00807f6fcaf5cab8ce1f2497133ceffcf7ef59de45db0b0d366462dd07a8005d"
+    },
+    {
+      "path": "server/commitment-revisions.test.ts",
+      "sha256": "49305f304454a048ce8924aa22d17dbc558a38877647af9693cf594da8fdb047"
+    },
+    {
+      "path": "server/commitment-revisions.ts",
+      "sha256": "5e3fbd10031d7bb13e3a7f6c35464ec1f3911422dbc528ee789e62c0af620c07"
+    },
+    {
+      "path": "server/commitments-atomic.test.ts",
+      "sha256": "8bdb19d0a5684f1c0a29fe116b4ec5c82e7d3dc3dae9eba89b523968e509f9da"
+    },
+    {
+      "path": "server/commitments-coverage.test.ts",
+      "sha256": "26dec4965a05003fc6c247efb25bfeb42ee9f1a6644abfa314a4dd1b5113bd73"
+    },
+    {
+      "path": "server/commitments-followup.test.ts",
+      "sha256": "1fdf6f685f5e42400c153b99a5334cbc25e23ecba8583f9bc050d6506a4ab2f5"
+    },
+    {
+      "path": "server/commitments-http.test.ts",
+      "sha256": "3c0a1b4c70bec34c73bd5874c137ea63c63c15e92ab26aeb741fb0a71d3af1d3"
+    },
+    {
+      "path": "server/commitments-storage-review.test.ts",
+      "sha256": "adf0de99c6e53f4a7668f26158c635471f4cb42a48a1a442f78c1b4be3443c24"
+    },
+    {
+      "path": "server/commitments.test.ts",
+      "sha256": "d6a9dfa4d3de052082331b7bc8d4164c3cca985f270bf4d70e6d89f61057b184"
+    },
+    {
+      "path": "server/commitments.ts",
+      "sha256": "71c5bf86fa567ba345f06aef98806e15180bde58889cac7b4804bdbb3dcbeef1"
+    },
+    {
+      "path": "server/dialogue.test.ts",
+      "sha256": "b1237b060052917274a489ef8fc2cea4cb2f166df725032b58185875af4c37c0"
+    },
+    {
+      "path": "server/dialogue.ts",
+      "sha256": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5"
+    },
+    {
+      "path": "server/game.test.ts",
+      "sha256": "9fd4e4a93df045a9925f0f4b04ea453d2208476f02f8b223cca9199dcf26e9f5"
+    },
+    {
+      "path": "server/game.ts",
+      "sha256": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0"
+    },
+    {
+      "path": "server/index.ts",
+      "sha256": "f57dc2bd094410a32f9fd188e21d8fe1af79d78c27c08ad904d6d768556dc4d8"
+    },
+    {
+      "path": "server/interpretation.test.ts",
+      "sha256": "57814fca4693c08bb253a17349492460ff4bdb3c1ac319022324aead0c8d90ba"
+    },
+    {
+      "path": "server/interpretation.ts",
+      "sha256": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0"
+    },
+    {
+      "path": "server/music.test.ts",
+      "sha256": "3b49e85fa9af4fe7ed0c4ff0230547074768bc19405d05efe7bc636fbe2a63fa"
+    },
+    {
+      "path": "server/narrative-agency-regression.test.ts",
+      "sha256": "19eec66a693dc72c02b62f39d5738823be84fa6d084f900f773317f8a280964f"
+    },
+    {
+      "path": "server/narrative-compound-natural.test.ts",
+      "sha256": "5e2502a7219a3622ba5b8b1fc58cff3e9f41d01a981314cce66641ab20c0886f"
+    },
+    {
+      "path": "server/narrative-compound-promise.test.ts",
+      "sha256": "8c5cd8116c45aae46e74f16b31b10f720bf19ddacb323c517d92a51345a7c876"
+    },
+    {
+      "path": "server/narrative-counterfactual.test.ts",
+      "sha256": "fdce8e99bf04a9c4b689ddf1e6a9327a1038597f8eaca060f374053139ddf3d1"
+    },
+    {
+      "path": "server/narrative-lifecycle-regression.test.ts",
+      "sha256": "41947c5680523474b182f6ce7c60cfe4010538f70ce07888afd1200205332fdc"
+    },
+    {
+      "path": "server/narrative-natural-delivery.test.ts",
+      "sha256": "92b63d6b0e1bb191905ad26242c4e19a705a53d41ed23e8b504ab3b0dc9b0ce5"
+    },
+    {
+      "path": "server/narrative-promise-edge.test.ts",
+      "sha256": "efd0ed9a153f20d804e9d2d969f43738f1c042605782c4a9f86285f94356616c"
+    },
+    {
+      "path": "server/narrative-route-agency.test.ts",
+      "sha256": "f3c970fbfe7a701318ae68a57b927409004a2dab0ad69a8f603141d5c731279b"
+    },
+    {
+      "path": "server/narrative-short-reply.test.ts",
+      "sha256": "c5815acecd3557b49752ab14f7c32a6e88a9efcece2e38c939a16ed75f5dc103"
+    },
+    {
+      "path": "server/narrative.test.ts",
+      "sha256": "1829c31f88bc676a8202baff2bebbb11974fb8aee9271baf1367ff59087a9724"
+    },
+    {
+      "path": "server/narrative.ts",
+      "sha256": "4a62df967baf09c31c53ab02c88facfb738e8f343d08b2b5a1710952fa4273c3"
+    },
+    {
+      "path": "server/office.test.ts",
+      "sha256": "c70cc186f6eb79c0494e9b0732c697a4bc33e4151ffeed87e790e16b0eea418f"
+    },
+    {
+      "path": "server/office.ts",
+      "sha256": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98"
+    },
+    {
+      "path": "server/persistence.test.ts",
+      "sha256": "3190e8f8d0c32758d13fbef7c5a072bdad05741b1653897195acb69d1cc973af"
+    },
+    {
+      "path": "server/provider.ts",
+      "sha256": "3ca5fa34fec91adb276070b86c1c8e972c411fb7d088d0242d8493068fff403d"
+    },
+    {
+      "path": "server/recovery.test.ts",
+      "sha256": "a0e865cced0e13a018cd50b4dface7367a0a2aba721759ce300b20d205d35d7e"
+    },
+    {
+      "path": "server/romance.test.ts",
+      "sha256": "effbae28a210cb3e5da1636492ad71a317f786795e17a13af4e7ba5a65b2a577"
+    },
+    {
+      "path": "server/romance.ts",
+      "sha256": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df"
+    },
+    {
+      "path": "server/storage.ts",
+      "sha256": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b"
+    },
+    {
+      "path": "server/v2-ac3-lifecycle.test.ts",
+      "sha256": "01b4237cad47f53b84d80ac2512813d00e96a2f3427c9d7af27fd0b4daea2a5a"
+    },
+    {
+      "path": "server/v2-security.test.ts",
+      "sha256": "9c0a05c6e7766c107d0c677cb2146bdfd49916ba2ffcd4e8b2825fa438c33711"
+    },
+    {
+      "path": "server/v2-story.test.ts",
+      "sha256": "01dc2795d99e76b291df5e9dde548150a9f600512a9dd8993d4fbab487b897b5"
+    },
+    {
+      "path": "server/visual-binding.test.ts",
+      "sha256": "6f6ae25b4eb34b8ba257eccc18b159195c37f59755d45851ce5e1b2a203515ca"
+    },
+    {
+      "path": "src/CharacterSprite.tsx",
+      "sha256": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c"
+    },
+    {
+      "path": "src/collection.ts",
+      "sha256": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9"
+    },
+    {
+      "path": "src/ConversationViewport.tsx",
+      "sha256": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10"
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8"
+    },
+    {
+      "path": "src/music.ts",
+      "sha256": "e07ecf46842e6663cb9ab6286d66dc5f0acc57c20fe05866e233f2f0060e07cb"
+    },
+    {
+      "path": "src/OfficeAgreement.tsx",
+      "sha256": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa"
+    },
+    {
+      "path": "src/presentation.ts",
+      "sha256": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8"
+    },
+    {
+      "path": "src/StageEffects.tsx",
+      "sha256": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9"
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91"
+    },
+    {
+      "path": "src/visualAssets.ts",
+      "sha256": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+    }
+  ],
+  "rendered": [
+    {
+      "path": "public/assets/archive-theme.wav",
+      "sha256": "3e9e63f5adcaa8a13125a072466ee914d90e6f8d97aca8d6c6db95ddf8d0e72e"
+    },
+    {
+      "path": "public/assets/archive.png",
+      "sha256": "52d1a0e2ec3731f8934ff75e2fd25fcace71528ea082946a87c46ef40d4ba711"
+    },
+    {
+      "path": "public/assets/boss-expressions.png",
+      "sha256": "e072f4d0c56c11349093c379303cacd2509b3a8610612a343b7f7fae96bda51a"
+    },
+    {
+      "path": "public/assets/cafe.png",
+      "sha256": "9d546aca64cdbe9bb57aae91df908b59b36d747397175fe2004cddffdd6666c4"
+    },
+    {
+      "path": "public/assets/chime.wav",
+      "sha256": "8c54330c0df2b0fe06668597dc2e1245516a12a98856a2536046f32bf3cd4b1a"
+    },
+    {
+      "path": "public/assets/evening.wav",
+      "sha256": "9fdf672d7feeeb062cae389da92372be163bb4cc27224c8cec74a2b8bde06125"
+    },
+    {
+      "path": "public/assets/office.png",
+      "sha256": "bf3a39649b5920bc286a82b9db93c3d6d9a2490708b445c5607ea95d016d7751"
+    },
+    {
+      "path": "public/assets/riverside.png",
+      "sha256": "393bda947f29056c417ab302924c8a4fb107a21d7d8f9053187bb3950f45aa9a"
+    },
+    {
+      "path": "public/assets/tape.wav",
+      "sha256": "2c009c381d505f6e71115f54fd816197cfe00312a890e67a9bf7c7688cc17318"
+    },
+    {
+      "path": "public/assets/yuna-expressions.png",
+      "sha256": "09109a8eba18c5e8cd8e591583770e8da26658c5541c7e913dbc79846037ec80"
+    },
+    {
+      "path": "public/assets/audio-v2/archive-pursuit.ogg",
+      "sha256": "9affe22de8b8125ad6709fdf4acde2e107e91483642fdee70397b81c3da2b311"
+    },
+    {
+      "path": "public/assets/audio-v2/archive-unease.ogg",
+      "sha256": "15009a89a11c82293e1691bb16646321fdf0c63910cfdf7c2211f59b8fb2f709"
+    },
+    {
+      "path": "public/assets/audio-v2/cafe-warmth.ogg",
+      "sha256": "6e36898828d76fa9a46577384f3e42da3475ecfb6952af408b832891ffa94acb"
+    },
+    {
+      "path": "public/assets/audio-v2/office-groove.ogg",
+      "sha256": "ed29e9ee5af160f5021c6816c211d232df59301b947edc971499fa4ff3f64fb1"
+    },
+    {
+      "path": "public/assets/audio-v2/office-pressure.ogg",
+      "sha256": "a03d29cb48c6d8075625b37e0d1113146f758aae7061b9abb389aed2f26c4078"
+    },
+    {
+      "path": "public/assets/audio-v2/rainy-memory.ogg",
+      "sha256": "156b725a24ba5e71bdb4fc75107e658563d23ab454637a969065d5f84512f2b2"
+    },
+    {
+      "path": "public/assets/audio-v2/resolution-dawn.ogg",
+      "sha256": "eb75c8ab798eea7cd9b4a4c0640e95a35225f5c142c5fafe6d3ae7342fadfe26"
+    },
+    {
+      "path": "public/assets/audio-v2/rooftop-heart.ogg",
+      "sha256": "a4516c6187507bb7175f735eeb76fd47a8da3cfb999c9ed570bff02feb4c1c99"
+    },
+    {
+      "path": "public/assets/v2/boss-actions-a.png",
+      "sha256": "18176790fe162b6b65519c50a89dc9fc4cf5ab571a8f819204b6074bb9d12f40"
+    },
+    {
+      "path": "public/assets/v2/boss-actions-b.png",
+      "sha256": "debd7febc1fd485aae4c4734cb18076a90fc735ec705e545296016daf615b7dd"
+    },
+    {
+      "path": "public/assets/v2/rainstreet.png",
+      "sha256": "44eda0f37410a72ab8939fab268e41c0ca65de2cc212696d34815d407fac60d4"
+    },
+    {
+      "path": "public/assets/v2/rooftop.png",
+      "sha256": "6061e8b6712faa827cdf6c29e504c274a3997fb211aba44dd36bbdb983fa8cc4"
+    },
+    {
+      "path": "public/assets/v2/yuna-actions-a.png",
+      "sha256": "ad4a35ffb0070f3ba704f389c7d7ee84a03e7563247972ca773053b7ac6d5c6c"
+    },
+    {
+      "path": "public/assets/v2/yuna-actions-b.png",
+      "sha256": "b14c4daa745797c3995eb961f446c0d9b45751744430248d95580b6755e4f049"
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "4ecad26d97567b30fadbd33b73c6e87e9fb5b794fef3d1edb4ae7ffd15ee76af"
+    },
+    {
+      "path": "dist/assets/archive-theme.wav",
+      "sha256": "3e9e63f5adcaa8a13125a072466ee914d90e6f8d97aca8d6c6db95ddf8d0e72e"
+    },
+    {
+      "path": "dist/assets/archive.png",
+      "sha256": "52d1a0e2ec3731f8934ff75e2fd25fcace71528ea082946a87c46ef40d4ba711"
+    },
+    {
+      "path": "dist/assets/boss-expressions.png",
+      "sha256": "e072f4d0c56c11349093c379303cacd2509b3a8610612a343b7f7fae96bda51a"
+    },
+    {
+      "path": "dist/assets/cafe.png",
+      "sha256": "9d546aca64cdbe9bb57aae91df908b59b36d747397175fe2004cddffdd6666c4"
+    },
+    {
+      "path": "dist/assets/chime.wav",
+      "sha256": "8c54330c0df2b0fe06668597dc2e1245516a12a98856a2536046f32bf3cd4b1a"
+    },
+    {
+      "path": "dist/assets/evening.wav",
+      "sha256": "9fdf672d7feeeb062cae389da92372be163bb4cc27224c8cec74a2b8bde06125"
+    },
+    {
+      "path": "dist/assets/index-CYHDXGMC.js",
+      "sha256": "9857e9d7f6eef6613d4578a74f70edf8314e137a2a455ceb8662260383c1b6a3"
+    },
+    {
+      "path": "dist/assets/index-LjVWzUeO.css",
+      "sha256": "17afd9af28cd8faeec723d862f3c01004f4da2386818271fa2e00c04b62cf392"
+    },
+    {
+      "path": "dist/assets/office.png",
+      "sha256": "bf3a39649b5920bc286a82b9db93c3d6d9a2490708b445c5607ea95d016d7751"
+    },
+    {
+      "path": "dist/assets/riverside.png",
+      "sha256": "393bda947f29056c417ab302924c8a4fb107a21d7d8f9053187bb3950f45aa9a"
+    },
+    {
+      "path": "dist/assets/tape.wav",
+      "sha256": "2c009c381d505f6e71115f54fd816197cfe00312a890e67a9bf7c7688cc17318"
+    },
+    {
+      "path": "dist/assets/yuna-expressions.png",
+      "sha256": "09109a8eba18c5e8cd8e591583770e8da26658c5541c7e913dbc79846037ec80"
+    },
+    {
+      "path": "dist/assets/audio-v2/archive-pursuit.ogg",
+      "sha256": "9affe22de8b8125ad6709fdf4acde2e107e91483642fdee70397b81c3da2b311"
+    },
+    {
+      "path": "dist/assets/audio-v2/archive-unease.ogg",
+      "sha256": "15009a89a11c82293e1691bb16646321fdf0c63910cfdf7c2211f59b8fb2f709"
+    },
+    {
+      "path": "dist/assets/audio-v2/cafe-warmth.ogg",
+      "sha256": "6e36898828d76fa9a46577384f3e42da3475ecfb6952af408b832891ffa94acb"
+    },
+    {
+      "path": "dist/assets/audio-v2/office-groove.ogg",
+      "sha256": "ed29e9ee5af160f5021c6816c211d232df59301b947edc971499fa4ff3f64fb1"
+    },
+    {
+      "path": "dist/assets/audio-v2/office-pressure.ogg",
+      "sha256": "a03d29cb48c6d8075625b37e0d1113146f758aae7061b9abb389aed2f26c4078"
+    },
+    {
+      "path": "dist/assets/audio-v2/rainy-memory.ogg",
+      "sha256": "156b725a24ba5e71bdb4fc75107e658563d23ab454637a969065d5f84512f2b2"
+    },
+    {
+      "path": "dist/assets/audio-v2/resolution-dawn.ogg",
+      "sha256": "eb75c8ab798eea7cd9b4a4c0640e95a35225f5c142c5fafe6d3ae7342fadfe26"
+    },
+    {
+      "path": "dist/assets/audio-v2/rooftop-heart.ogg",
+      "sha256": "a4516c6187507bb7175f735eeb76fd47a8da3cfb999c9ed570bff02feb4c1c99"
+    },
+    {
+      "path": "dist/assets/v2/boss-actions-a.png",
+      "sha256": "18176790fe162b6b65519c50a89dc9fc4cf5ab571a8f819204b6074bb9d12f40"
+    },
+    {
+      "path": "dist/assets/v2/boss-actions-b.png",
+      "sha256": "debd7febc1fd485aae4c4734cb18076a90fc735ec705e545296016daf615b7dd"
+    },
+    {
+      "path": "dist/assets/v2/rainstreet.png",
+      "sha256": "44eda0f37410a72ab8939fab268e41c0ca65de2cc212696d34815d407fac60d4"
+    },
+    {
+      "path": "dist/assets/v2/rooftop.png",
+      "sha256": "6061e8b6712faa827cdf6c29e504c274a3997fb211aba44dd36bbdb983fa8cc4"
+    },
+    {
+      "path": "dist/assets/v2/yuna-actions-a.png",
+      "sha256": "ad4a35ffb0070f3ba704f389c7d7ee84a03e7563247972ca773053b7ac6d5c6c"
+    },
+    {
+      "path": "dist/assets/v2/yuna-actions-b.png",
+      "sha256": "b14c4daa745797c3995eb961f446c0d9b45751744430248d95580b6755e4f049"
+    }
+  ]
+}

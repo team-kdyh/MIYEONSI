@@ -28,7 +28,7 @@ test('AC7 schema/429/real timer timeout/cancel recover with same request without
     await new Promise(r=>setTimeout(r,150));trace.push({failure:mode,result:'client abort observed'});
    }else{
     const failed=await call('turn',input);assert.equal(failed.status,400);
-    if(['schema','event','commitment'].includes(mode)){assert.equal(failed.state.code,'reply_rejected');assert.equal(failed.state.committed,false);assert.match(failed.state.error,/입력한 말과 이전 진행/);assert.doesNotMatch(failed.state.error,/근거|조건|정본|검증|확정/);}else assert.match(failed.state.error,mode==='429'?/429/:/초과/);
+    if(['schema','event','commitment'].includes(mode)){assert.equal(failed.state.code,'reply_rejected');assert.equal(failed.state.committed,false);assert.match(failed.state.error,/보내신 말은 고치지 않아도/);assert.doesNotMatch(failed.state.error,/근거|조건|정본|검증|확정/);}else assert.match(failed.state.error,mode==='429'?/429/:/초과/);
     if(mode==='timeout')assert.ok(Date.now()-started>=29500,'exercise production thirty-second timeout');
    }
    assert.deepEqual((await call()).state,initial,'failed generation leaves game, unlocks and version unchanged');

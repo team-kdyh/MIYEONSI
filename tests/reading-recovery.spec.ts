@@ -10,7 +10,7 @@ for(const size of [{width:1440,height:623},{width:1280,height:720},{width:390,he
  await page.route('**/api/**',r=>r.fulfill({json:{game,provider:'openai',slots:[null,null,null],collection:[],endings}}));
  await page.goto('/');await page.getByRole('button',{name:/이어하기/}).click();
  await expect(page.locator('.text-ink')).toHaveText(text);await expect(page.getByRole('navigation',{name:'대사 읽기'})).toHaveCount(0);
- await expect(page.getByRole('complementary',{name:'현재 이야기'})).toContainText('지금의 목표');
+ await expect(page.getByRole('complementary',{name:'현재 이야기'})).toContainText('카페에서 소리를 모으는 유나');
  await expect(page.locator('#reply')).toBeInViewport({ratio:1});
  const layout=await page.evaluate(()=>{const r=document.querySelector('.conversation-scroll')!,p=document.querySelector('.dialogue')!.getBoundingClientRect(),sprite=document.querySelector('.sprite')!.getBoundingClientRect();return {fits:r.scrollHeight<=r.clientHeight+1,body:document.documentElement.scrollHeight<=innerHeight,face:sprite.top+sprite.height*.3<p.top};});
  expect(layout).toEqual({fits:true,body:true,face:true});
@@ -33,7 +33,7 @@ test('rejected reply preserves text, explains recovery in the dialogue, and retr
  await page.reload();await page.getByRole('button',{name:/이어하기/}).click();await expect(page.getByRole('button',{name:'답변 다시 받기'})).toBeVisible();
  reject=false;await page.getByRole('button',{name:'답변 다시 받기'}).click();expect(ids).toHaveLength(2);expect(ids[1]).toBe(ids[0]);
  await expect(page.getByRole('alert')).toHaveCount(0);await expect(page.locator('.text-ink')).toHaveText(game.dialogue.reply);await expect(page.locator('#reply')).toHaveValue('');
- reject=true;await page.locator('#reply').fill('다른 말');await page.locator('#reply').press('Enter');await page.getByRole('button',{name:'말 고치기'}).click();await expect(page.locator('#reply')).toBeFocused();await expect(page.locator('#reply')).toHaveValue('다른 말');expect(await page.evaluate(()=>sessionStorage.getItem('afterhours-pending'))).toBeNull();
+ reject=true;await page.locator('#reply').fill('다른 말');await page.locator('#reply').press('Enter');await page.getByRole('button',{name:'입력으로 돌아가기'}).click();await expect(page.locator('#reply')).toBeFocused();await expect(page.locator('#reply')).toHaveValue('다른 말');expect(await page.evaluate(()=>sessionStorage.getItem('afterhours-pending'))).toBeNull();
 });
 
 test('small screen and large text preserve every action and dialogue character across reading pages',async({page})=>{

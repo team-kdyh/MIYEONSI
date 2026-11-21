@@ -5,8 +5,9 @@ import {ProfileStore,StorageError,type Profile} from './storage.ts';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {start,view,endings,stories,sceneFor,type Game} from './game.ts';
-import {canonical,commitDialogue,type DialogueGame} from './dialogue.ts';
-import {respond,type Provider} from './provider.ts';
+import {canonical,type DialogueGame} from './dialogue.ts';
+import type {Provider} from './provider.ts';
+import {conversationTurn} from './conversation-turn.ts';
 import {ReplyRejectedError,rejectedReplyMessage} from './reply-error.ts';
 import {createHash} from 'node:crypto';
 import {loadEnvFile} from 'node:process';
@@ -57,18 +58,18 @@ app.all('/api/:action',async(req,res)=>{
  if(++rate.count>300){res.status(429).json({error:'시간당 요청 한도입니다. 잠시 후 다시 시도하세요.'});return;}
  if(p.game.ending)throw Error('이미 끝난 이야기입니다.');
  if(version!==canonical(p.game).version||req.body.step!==p.game.step){res.status(409).json({error:'다른 화면에서 이야기가 진행됐습니다. 현재 상태를 복구했습니다. 새 대사를 입력하세요.',state:payload(p)});return;}
- if((p.requests??0)>=100)throw Error('이 세션의 AI 요청 한도(100회)에 도달했습니다. 새 게임을 시작하세요.');
- p.requests=(p.requests??0)+1;
- // Count attempts durably even when the provider fails; never persist a failed turn.
- await store.save(id,p);
  const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),30000);
  const cancel=()=>{if(!res.writableEnded)controller.abort();};res.on('close',cancel);
  try{
- const reply=await respond(p.game,text.trim()||(choice!=null?sceneFor(p.game).choices[choice]:''),selectedProvider(p),controller.signal);
- if(controller.signal.aborted)throw Error('응답이 취소되었거나 시간이 초과되었습니다. 다시 시도하세요.');
  const beforeVersion=canonical(p.game).version;
- try{p.game=commitDialogue(p.game,choice??null,text.trim(),reply,requestId);}
- catch(e){throw new ReplyRejectedError(e instanceof Error?e.message:'Invalid generated turn');}
+ const generated=await conversationTurn(p.game,text.trim(),requestId,selectedProvider(p),controller.signal,async attempt=>{
+  if(attempt>0&&++rate.count>300)throw Error('시간당 요청 한도입니다. 잠시 후 다시 시도하세요.');
+  if((p.requests??0)>=100)throw Error('이 세션의 AI 요청 한도(100회)에 도달했습니다. 새 게임을 시작하세요.');
+  p.requests=(p.requests??0)+1;
+  await store.save(id,p);
+ });
+ if(controller.signal.aborted)throw Error('응답이 취소되었거나 시간이 초과되었습니다. 다시 시도하세요.');
+ const reply=generated.reply;p.game=generated.game;
  p.epoch=canonical(p.game).version;
  const unlocks=p.game.ending&&!p.collection.includes(p.game.ending)?[p.game.ending]:[];
  if(p.game.ending&&!p.collection.includes(p.game.ending))p.collection.push(p.game.ending);

@@ -1,0 +1,17 @@
+✔ conversation envelope omits all transaction fields for ordinary speech and rejects crossed fields (3.5578ms)
+✔ asking for alternatives, joking, hesitation and a topic change persist without objective progress or repair (32.5695ms)
+✔ invalid draft is re-authored internally from unchanged state and original input; only final dialogue is committed (4.809ms)
+✔ repair cannot just delete rejected changes and retain the same spoken claim (3.2892ms)
+✔ two invalid drafts stop without mutation; storage errors and network failures are not repair triggers (4.7689ms)
+✔ abort before repair generation and explicit model refusal never issue another request (1.5137ms)
+✔ genuine novel agreement still commits through the state engine and is available to following conversation (1.6722ms)
+✔ repair preserves a real creative agreement while replacing an invalid extra transition atomically (1.3017ms)
+✔ HTTP repairs internally, counts every attempt, replays once, and preserves original input on cancel/limit/failure (1007.5673ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1239.8467

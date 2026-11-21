@@ -1,0 +1,148 @@
+{
+  "at": "2026-11-21T08:16:10.620Z",
+  "scope": "Actual launcher server and compiled frontend; isolated fresh browser contexts; no mocked routes, no dialogue turn, no paid call; existing player cookies/saves untouched",
+  "hashes": {
+    "src/main.tsx": "a6dbf47c8d2b1b3994bdf1e38715706be3175bb236c42aed725ca9758f206dd1",
+    "src/ConversationViewport.tsx": "2d92ac26af1c75efa6b869cf2219b724a539b01a0f4d562f2f1381f1949d6c01",
+    "src/style.css": "63bd924c5b723fd0134d33b9f039ba6edff1e9457a4e27648e58545a311afbaf",
+    "server/provider.ts": "4126c8ad3b0aee924d91a655a70022c2ec3f6127d8676b120d6cb0f0fc82d5ba",
+    "server/story-guide.ts": "36cda878a41e6f44f83362205054cd160e7f071fa84c5790c554486dab9d3e37",
+    "server/index.ts": "5e8b83d4fc70032786ccd316b3d87ce69fda057b0f7ac6a9f044d6f64b669274",
+    "server/reply-error.ts": "b6a099bad4b970ff9349d2631001cd3634373ecc941f926484d5f3cf0af2725e",
+    "server/conversation-response.ts": "1a5c0d50b8cddf1de34654606e9754939b6fd6e65b31bf7c5ce17c4fa3629291",
+    "server/conversation-turn.ts": "9d6040374771776daadceaa8fd2e5d9f543b49b79298009683046c04cde26c97",
+    "dist/index.html": "2520506c441354720b45bbabea3d82c7c36dad4bdc98ab395e9263e6a84bc538"
+  },
+  "rows": [
+    {
+      "mode": "office",
+      "guide": "직장 이야기 1 · 퇴근 전 사무실17:50 추가 업무에서 칼퇴퇴근 직전, 부장이 추가 보고서를 부탁했다.",
+      "reply": "잠깐, 퇴근 전에 이 일 이야기 좀 할까요?",
+      "choices": 0,
+      "inputBottom": 548,
+      "height": 623,
+      "bodyFits": true,
+      "js": [
+        "http://127.0.0.1:3001/assets/index-DqDFvD0u.js"
+      ],
+      "errors": [],
+      "requests": [
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/index-DqDFvD0u.js"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/index-BEjBQ1ag.css"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/cafe.png"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/yuna-expressions.png"
+        },
+        {
+          "method": "POST",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/api/new"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/office.png"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/boss-expressions.png"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/audio-v2/office-groove.ogg"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/audio-v2/office-groove.ogg"
+        }
+      ]
+    },
+    {
+      "mode": "romance",
+      "guide": "1장 · 소리가 머무는 카페사라지는 소리문 닫을 무렵의 카페에서 소리를 모으는 유나를 만났다.",
+      "reply": "여기 앉아도 돼요? 방금 컵 내려놓는 소리가 참 좋았거든요.",
+      "choices": 0,
+      "inputBottom": 548,
+      "height": 623,
+      "bodyFits": true,
+      "js": [
+        "http://127.0.0.1:3001/assets/index-DqDFvD0u.js"
+      ],
+      "errors": [],
+      "requests": [
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/index-DqDFvD0u.js"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/index-BEjBQ1ag.css"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/cafe.png"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/yuna-expressions.png"
+        },
+        {
+          "method": "POST",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/api/new"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/audio-v2/cafe-warmth.ogg"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/audio-v2/cafe-warmth.ogg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+import {test,expect} from '@playwright/test';
+import {readFile,mkdir} from 'node:fs/promises';
+const tracePath='docs/flexible-review/browser-model-calls.jsonl';
+const readCalls=async()=>{try{return (await readFile(tracePath,'utf8')).trim().split('\n').filter(Boolean).map(l=>JSON.parse(l));}catch{return [];}};
+for(const width of [1440,390])test(`flexible ${width}: one player submission survives invalid generation, then a joke continues without a checklist`,async({page})=>{
+ await page.setViewportSize({width,height:width===1440?720:844});await mkdir('docs/flexible-review/screenshots',{recursive:true});
+ await page.addInitScript(()=>{localStorage.setItem('afterhours-settings',JSON.stringify({mute:true,reduced:true,speed:0}));(window as any).seenAlerts=[];new MutationObserver(()=>{for(const alert of document.querySelectorAll('[role=alert]'))(window as any).seenAlerts.push(alert.textContent);}).observe(document,{subtree:true,childList:true,characterData:true});});
+ const errors:string[]=[],requests:any[]=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(r.url().endsWith('/api/turn'))requests.push(r.postDataJSON());});
+ await page.goto('/');await page.getByRole('button',{name:/칼퇴의 기술/}).click();await page.getByRole('button',{name:'이야기 시작'}).click();
+  await expect(page.locator('#reply')).toBeVisible();
+  const initial=await page.request.get('/api/state');expect(initial.status()).toBe(200);const before=(await initial.json()).game,callsBefore=(await readCalls()).length;
+ const guide=page.getByRole('complementary',{name:'현재 이야기'});await expect(guide).toContainText('추가 보고서를 부탁했다');await expect(guide).not.toContainText(/지금의 목표|항목 합의|\d \/ \d/);
+ const first='네 선택지를 주세요';await page.locator('#reply').fill(first);const response=page.waitForResponse(r=>r.url().endsWith('/api/turn'));await page.locator('#reply').press('Enter');expect((await response).status()).toBe(200);
+ await expect(page.locator('.text-ink')).toContainText('남은 표를 제가 맡는 방법');await expect(page.locator('#reply')).toHaveValue('');await expect(page.getByRole('alert')).toHaveCount(0);await expect(page.locator('.choices')).toHaveCount(0);
+ let current=(await (await page.request.get('/api/state')).json()).game;expect(current.dialogue.version).toBe(before.dialogue.version+1);expect(current.narrative.location).toBe('office');expect(current.narrative.events.filter((e:any)=>e.kind==='concession')).toHaveLength(0);expect(current.log.filter((e:any)=>e.text===first)).toHaveLength(1);expect(JSON.stringify(current)).not.toContain('이미 퇴근한');
+ const trace=(await readCalls()).slice(callsBefore);expect(trace).toHaveLength(2);expect(trace.map(t=>t.player)).toEqual([first,first]);expect(trace.map(t=>t.repair)).toEqual([false,true]);expect(requests).toHaveLength(1);
+ await page.screenshot({path:`docs/flexible-review/screenshots/alternatives-${width}.png`});
+ await page.locator('#reply').fill('그럼 커피도 야근 수당을 받나요?');await page.locator('#reply').press('Enter');await expect(page.locator('.text-ink')).toContainText('커피는 벌써 식어서 퇴근');expect((await readCalls()).length-callsBefore).toBe(3);expect(requests).toHaveLength(2);
+ current=(await (await page.request.get('/api/state')).json()).game;expect(current.narrative.turn).toBe(2);expect(current.ending).toBeNull();
+ await page.reload();await page.getByRole('button',{name:/이어하기/}).click();await expect(page.locator('.text-ink')).toHaveText(current.dialogue.reply);await expect(page.locator('#reply')).toBeInViewport({ratio:1});await expect(guide).not.toContainText(/항목 합의|지금의 목표/);
+ const layout=await page.evaluate(()=>{const s=document.querySelector('.sprite')!.getBoundingClientRect(),d=document.querySelector('.dialogue')!.getBoundingClientRect();return {fits:document.documentElement.scrollHeight<=innerHeight,face:s.top+s.height*.3<d.top};});expect(layout).toEqual({fits:true,face:true});expect(await page.evaluate(()=>(window as any).seenAlerts)).toEqual([]);expect(errors).toEqual([]);
+ await page.screenshot({path:`docs/flexible-review/screenshots/banter-${width}.png`});
+});

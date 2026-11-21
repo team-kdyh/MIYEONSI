@@ -1,0 +1,61 @@
+{
+  "capturedAt": "2026-11-21T04:32:06.5010140Z",
+  "sourceRoot": "C:\\Users\\gjtjw\\Desktop\\대화형 스토리진행",
+  "scope": "Frozen ORIGINAL root only; no model/network/private-state access",
+  "files": [
+    {
+      "file": "server/game.ts",
+      "before": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "copied": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "after": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0"
+    },
+    {
+      "file": "server/narrative.ts",
+      "before": "5597bad918c7aa1e79ae0e59a92b3ee233d70a1f9b65db0929fd010af5cee8f0",
+      "copied": "5597bad918c7aa1e79ae0e59a92b3ee233d70a1f9b65db0929fd010af5cee8f0",
+      "after": "5597bad918c7aa1e79ae0e59a92b3ee233d70a1f9b65db0929fd010af5cee8f0"
+    },
+    {
+      "file": "server/dialogue.ts",
+      "before": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+      "copied": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+      "after": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5"
+    },
+    {
+      "file": "server/office.ts",
+      "before": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+      "copied": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+      "after": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98"
+    },
+    {
+      "file": "server/romance.ts",
+      "before": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+      "copied": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+      "after": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df"
+    },
+    {
+      "file": "server/interpretation.ts",
+      "before": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+      "copied": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+      "after": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0"
+    },
+    {
+      "file": "server/storage.ts",
+      "before": "6d80fdec35b99205f30d5f1270060b4a00bee8520d4258ec0c5afea591e8d9da",
+      "copied": "6d80fdec35b99205f30d5f1270060b4a00bee8520d4258ec0c5afea591e8d9da",
+      "after": "6d80fdec35b99205f30d5f1270060b4a00bee8520d4258ec0c5afea591e8d9da"
+    },
+    {
+      "file": "server/provider.ts",
+      "before": "d42f3f53111f385b981dc522188f8bdef24e7e925ab361a7d1cf71d41c9718b4",
+      "copied": "d42f3f53111f385b981dc522188f8bdef24e7e925ab361a7d1cf71d41c9718b4",
+      "after": "d42f3f53111f385b981dc522188f8bdef24e7e925ab361a7d1cf71d41c9718b4"
+    },
+    {
+      "file": "server/index.ts",
+      "before": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+      "copied": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+      "after": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4"
+    }
+  ]
+}

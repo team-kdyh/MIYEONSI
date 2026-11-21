@@ -1,0 +1,3611 @@
+{
+  "createdAt": "2026-11-21T04:32:45.428Z",
+  "scope": "Three proposal-validation probes with matched positive controls; controlled fixture states created through normal commitDialogue calls, no narrative state injection and no live model calls. Synthetic profiles saved only inside this audit folder.",
+  "narrativeSha256": "5597bad918c7aa1e79ae0e59a92b3ee233d70a1f9b65db0929fd010af5cee8f0",
+  "rows": [
+    {
+      "id": "R1-short-refusal",
+      "expected": "reject",
+      "status": "committed",
+      "expectationMet": false,
+      "text": "안 돼요.",
+      "reply": {
+        "line": "이야기를 듣고 있어요.",
+        "events": [
+          {
+            "kind": "resolution",
+            "subject": "player",
+            "status": "accepted",
+            "text": "플레이어가 이 이야기를 마무리하고 떠난다.",
+            "reference": "",
+            "evidence": "안 돼요.",
+            "value": "leave"
+          }
+        ],
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "당신",
+            "text": "카페 소리 이야기를 해요 2"
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "이제 조금 편해졌네요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "당신을 더 알아가고 싶어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "저를 어떻게 생각해요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "저도 좋아해요. 우리 사귀어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "우리 관계는 여기서 끝내고 헤어질래요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 8,
+          "location": "cafe",
+          "relationship": "apart",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "familiar",
+              "id": "00780ce3-4507-48ea-b2d1-8d7ed6e98065",
+              "turn": 4
+            },
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "attracted",
+              "id": "46331654-7273-49c1-9f85-18235b8e90c2",
+              "turn": 5
+            },
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "confessed",
+              "id": "66fb6900-c732-4c04-b6a6-063428467bfc",
+              "turn": 6
+            },
+            {
+              "kind": "relationship",
+              "subject": "mutual",
+              "status": "accepted",
+              "text": "서로 연인이 되기로 합의했다.",
+              "reference": "",
+              "evidence": "저도 좋아해요. 우리 사귀어요.",
+              "value": "couple",
+              "id": "b81761c4-9981-4a39-8c36-73efe675db1f",
+              "turn": 7
+            },
+            {
+              "kind": "relationship",
+              "subject": "player",
+              "status": "accepted",
+              "text": "플레이어가 관계를 끝내기로 결정했다.",
+              "reference": "",
+              "evidence": "우리 관계는 여기서 끝내고 헤어질래요.",
+              "value": "apart",
+              "id": "0f6c80b7-38df-4db5-8392-78fbaaf9ecc9",
+              "turn": 8
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 8,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:32:45.372Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "00780ce3-4507-48ea-b2d1-8d7ed6e98065",
+              "eventId": "00780ce3-4507-48ea-b2d1-8d7ed6e98065",
+              "version": 4,
+              "confirmedAt": "2026-11-21T04:32:45.376Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "46331654-7273-49c1-9f85-18235b8e90c2",
+              "eventId": "46331654-7273-49c1-9f85-18235b8e90c2",
+              "version": 5,
+              "confirmedAt": "2026-11-21T04:32:45.376Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "66fb6900-c732-4c04-b6a6-063428467bfc",
+              "eventId": "66fb6900-c732-4c04-b6a6-063428467bfc",
+              "version": 6,
+              "confirmedAt": "2026-11-21T04:32:45.376Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "b81761c4-9981-4a39-8c36-73efe675db1f",
+              "eventId": "b81761c4-9981-4a39-8c36-73efe675db1f",
+              "version": 7,
+              "confirmedAt": "2026-11-21T04:32:45.377Z",
+              "kind": "relationship",
+              "text": "서로 연인이 되기로 합의했다."
+            },
+            {
+              "id": "0f6c80b7-38df-4db5-8392-78fbaaf9ecc9",
+              "eventId": "0f6c80b7-38df-4db5-8392-78fbaaf9ecc9",
+              "version": 8,
+              "confirmedAt": "2026-11-21T04:32:45.377Z",
+              "kind": "relationship",
+              "text": "플레이어가 관계를 끝내기로 결정했다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 0",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 1",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 2",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "이제 조금 편해졌네요.",
+              "version": 4
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 4,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 4,
+              "eventId": "00780ce3-4507-48ea-b2d1-8d7ed6e98065"
+            },
+            {
+              "kind": "user_claim",
+              "text": "당신을 더 알아가고 싶어요.",
+              "version": 5
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 5,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 5,
+              "eventId": "46331654-7273-49c1-9f85-18235b8e90c2"
+            },
+            {
+              "kind": "user_claim",
+              "text": "저를 어떻게 생각해요?",
+              "version": 6
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 6,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 6,
+              "eventId": "66fb6900-c732-4c04-b6a6-063428467bfc"
+            },
+            {
+              "kind": "user_claim",
+              "text": "저도 좋아해요. 우리 사귀어요.",
+              "version": 7
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 7,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "서로 연인이 되기로 합의했다.",
+              "version": 7,
+              "eventId": "b81761c4-9981-4a39-8c36-73efe675db1f"
+            },
+            {
+              "kind": "user_claim",
+              "text": "우리 관계는 여기서 끝내고 헤어질래요.",
+              "version": 8
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 8,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "플레이어가 관계를 끝내기로 결정했다.",
+              "version": 8,
+              "eventId": "0f6c80b7-38df-4db5-8392-78fbaaf9ecc9"
+            }
+          ],
+          "reply": "이야기를 듣고 있어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "카페 소리 이야기를 해요 0"
+            },
+            {
+              "turn": 2,
+              "text": "카페 소리 이야기를 해요 1"
+            },
+            {
+              "turn": 3,
+              "text": "카페 소리 이야기를 해요 2"
+            },
+            {
+              "turn": 4,
+              "text": "이제 조금 편해졌네요."
+            },
+            {
+              "turn": 5,
+              "text": "당신을 더 알아가고 싶어요."
+            },
+            {
+              "turn": 6,
+              "text": "저를 어떻게 생각해요?"
+            },
+            {
+              "turn": 7,
+              "text": "저도 좋아해요. 우리 사귀어요."
+            },
+            {
+              "turn": 8,
+              "text": "우리 관계는 여기서 끝내고 헤어질래요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "당신",
+            "text": "이제 조금 편해졌네요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "당신을 더 알아가고 싶어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "저를 어떻게 생각해요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "저도 좋아해요. 우리 사귀어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "우리 관계는 여기서 끝내고 헤어질래요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "안 돼요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          }
+        ],
+        "ending": "romance-2",
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 9,
+          "location": "cafe",
+          "relationship": "apart",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "familiar",
+              "id": "00780ce3-4507-48ea-b2d1-8d7ed6e98065",
+              "turn": 4
+            },
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "attracted",
+              "id": "46331654-7273-49c1-9f85-18235b8e90c2",
+              "turn": 5
+            },
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "confessed",
+              "id": "66fb6900-c732-4c04-b6a6-063428467bfc",
+              "turn": 6
+            },
+            {
+              "kind": "relationship",
+              "subject": "mutual",
+              "status": "accepted",
+              "text": "서로 연인이 되기로 합의했다.",
+              "reference": "",
+              "evidence": "저도 좋아해요. 우리 사귀어요.",
+              "value": "couple",
+              "id": "b81761c4-9981-4a39-8c36-73efe675db1f",
+              "turn": 7
+            },
+            {
+              "kind": "relationship",
+              "subject": "player",
+              "status": "accepted",
+              "text": "플레이어가 관계를 끝내기로 결정했다.",
+              "reference": "",
+              "evidence": "우리 관계는 여기서 끝내고 헤어질래요.",
+              "value": "apart",
+              "id": "0f6c80b7-38df-4db5-8392-78fbaaf9ecc9",
+              "turn": 8
+            },
+            {
+              "kind": "resolution",
+              "subject": "player",
+              "status": "accepted",
+              "text": "플레이어가 이 이야기를 마무리하고 떠난다.",
+              "reference": "",
+              "evidence": "안 돼요.",
+              "value": "leave",
+              "id": "f0a3240e-d340-4256-96e2-15712f38b922",
+              "turn": 9
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 9,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:32:45.372Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "00780ce3-4507-48ea-b2d1-8d7ed6e98065",
+              "eventId": "00780ce3-4507-48ea-b2d1-8d7ed6e98065",
+              "version": 4,
+              "confirmedAt": "2026-11-21T04:32:45.376Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "46331654-7273-49c1-9f85-18235b8e90c2",
+              "eventId": "46331654-7273-49c1-9f85-18235b8e90c2",
+              "version": 5,
+              "confirmedAt": "2026-11-21T04:32:45.376Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "66fb6900-c732-4c04-b6a6-063428467bfc",
+              "eventId": "66fb6900-c732-4c04-b6a6-063428467bfc",
+              "version": 6,
+              "confirmedAt": "2026-11-21T04:32:45.376Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "b81761c4-9981-4a39-8c36-73efe675db1f",
+              "eventId": "b81761c4-9981-4a39-8c36-73efe675db1f",
+              "version": 7,
+              "confirmedAt": "2026-11-21T04:32:45.377Z",
+              "kind": "relationship",
+              "text": "서로 연인이 되기로 합의했다."
+            },
+            {
+              "id": "0f6c80b7-38df-4db5-8392-78fbaaf9ecc9",
+              "eventId": "0f6c80b7-38df-4db5-8392-78fbaaf9ecc9",
+              "version": 8,
+              "confirmedAt": "2026-11-21T04:32:45.377Z",
+              "kind": "relationship",
+              "text": "플레이어가 관계를 끝내기로 결정했다."
+            },
+            {
+              "id": "f0a3240e-d340-4256-96e2-15712f38b922",
+              "eventId": "f0a3240e-d340-4256-96e2-15712f38b922",
+              "version": 9,
+              "confirmedAt": "2026-11-21T04:32:45.378Z",
+              "kind": "ending",
+              "text": "플레이어가 이 이야기를 마무리하고 떠난다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 0",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 1",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 2",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "이제 조금 편해졌네요.",
+              "version": 4
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 4,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 4,
+              "eventId": "00780ce3-4507-48ea-b2d1-8d7ed6e98065"
+            },
+            {
+              "kind": "user_claim",
+              "text": "당신을 더 알아가고 싶어요.",
+              "version": 5
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 5,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 5,
+              "eventId": "46331654-7273-49c1-9f85-18235b8e90c2"
+            },
+            {
+              "kind": "user_claim",
+              "text": "저를 어떻게 생각해요?",
+              "version": 6
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 6,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 6,
+              "eventId": "66fb6900-c732-4c04-b6a6-063428467bfc"
+            },
+            {
+              "kind": "user_claim",
+              "text": "저도 좋아해요. 우리 사귀어요.",
+              "version": 7
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 7,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "서로 연인이 되기로 합의했다.",
+              "version": 7,
+              "eventId": "b81761c4-9981-4a39-8c36-73efe675db1f"
+            },
+            {
+              "kind": "user_claim",
+              "text": "우리 관계는 여기서 끝내고 헤어질래요.",
+              "version": 8
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 8,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "플레이어가 관계를 끝내기로 결정했다.",
+              "version": 8,
+              "eventId": "0f6c80b7-38df-4db5-8392-78fbaaf9ecc9"
+            },
+            {
+              "kind": "user_claim",
+              "text": "안 돼요.",
+              "version": 9
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 9,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "플레이어가 이 이야기를 마무리하고 떠난다.",
+              "version": 9,
+              "eventId": "f0a3240e-d340-4256-96e2-15712f38b922"
+            }
+          ],
+          "reply": "이야기를 듣고 있어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "카페 소리 이야기를 해요 0"
+            },
+            {
+              "turn": 2,
+              "text": "카페 소리 이야기를 해요 1"
+            },
+            {
+              "turn": 3,
+              "text": "카페 소리 이야기를 해요 2"
+            },
+            {
+              "turn": 4,
+              "text": "이제 조금 편해졌네요."
+            },
+            {
+              "turn": 5,
+              "text": "당신을 더 알아가고 싶어요."
+            },
+            {
+              "turn": 6,
+              "text": "저를 어떻게 생각해요?"
+            },
+            {
+              "turn": 7,
+              "text": "저도 좋아해요. 우리 사귀어요."
+            },
+            {
+              "turn": 8,
+              "text": "우리 관계는 여기서 끝내고 헤어질래요."
+            },
+            {
+              "turn": 9,
+              "text": "안 돼요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "afterSummary": {
+        "location": "cafe",
+        "relationship": "apart",
+        "dates": 0,
+        "ending": "romance-2",
+        "version": 9
+      },
+      "restoredSummary": {
+        "location": "cafe",
+        "relationship": "apart",
+        "dates": 0,
+        "ending": "romance-2",
+        "version": 9
+      },
+      "inputUnchanged": true
+    },
+    {
+      "id": "R1-positive-control",
+      "expected": "commit",
+      "status": "committed",
+      "expectationMet": true,
+      "text": "여기서 이야기를 끝내고 떠날게요.",
+      "reply": {
+        "line": "이야기를 듣고 있어요.",
+        "events": [
+          {
+            "kind": "resolution",
+            "subject": "player",
+            "status": "accepted",
+            "text": "플레이어가 이 이야기를 마무리하고 떠난다.",
+            "reference": "",
+            "evidence": "여기서 이야기를 끝내고 떠날게요.",
+            "value": "leave"
+          }
+        ],
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "당신",
+            "text": "카페 소리 이야기를 해요 2"
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "이제 조금 편해졌네요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "당신을 더 알아가고 싶어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "저를 어떻게 생각해요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "저도 좋아해요. 우리 사귀어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "우리 관계는 여기서 끝내고 헤어질래요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 8,
+          "location": "cafe",
+          "relationship": "apart",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "familiar",
+              "id": "00780ce3-4507-48ea-b2d1-8d7ed6e98065",
+              "turn": 4
+            },
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "attracted",
+              "id": "46331654-7273-49c1-9f85-18235b8e90c2",
+              "turn": 5
+            },
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "confessed",
+              "id": "66fb6900-c732-4c04-b6a6-063428467bfc",
+              "turn": 6
+            },
+            {
+              "kind": "relationship",
+              "subject": "mutual",
+              "status": "accepted",
+              "text": "서로 연인이 되기로 합의했다.",
+              "reference": "",
+              "evidence": "저도 좋아해요. 우리 사귀어요.",
+              "value": "couple",
+              "id": "b81761c4-9981-4a39-8c36-73efe675db1f",
+              "turn": 7
+            },
+            {
+              "kind": "relationship",
+              "subject": "player",
+              "status": "accepted",
+              "text": "플레이어가 관계를 끝내기로 결정했다.",
+              "reference": "",
+              "evidence": "우리 관계는 여기서 끝내고 헤어질래요.",
+              "value": "apart",
+              "id": "0f6c80b7-38df-4db5-8392-78fbaaf9ecc9",
+              "turn": 8
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 8,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:32:45.372Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "00780ce3-4507-48ea-b2d1-8d7ed6e98065",
+              "eventId": "00780ce3-4507-48ea-b2d1-8d7ed6e98065",
+              "version": 4,
+              "confirmedAt": "2026-11-21T04:32:45.376Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "46331654-7273-49c1-9f85-18235b8e90c2",
+              "eventId": "46331654-7273-49c1-9f85-18235b8e90c2",
+              "version": 5,
+              "confirmedAt": "2026-11-21T04:32:45.376Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "66fb6900-c732-4c04-b6a6-063428467bfc",
+              "eventId": "66fb6900-c732-4c04-b6a6-063428467bfc",
+              "version": 6,
+              "confirmedAt": "2026-11-21T04:32:45.376Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "b81761c4-9981-4a39-8c36-73efe675db1f",
+              "eventId": "b81761c4-9981-4a39-8c36-73efe675db1f",
+              "version": 7,
+              "confirmedAt": "2026-11-21T04:32:45.377Z",
+              "kind": "relationship",
+              "text": "서로 연인이 되기로 합의했다."
+            },
+            {
+              "id": "0f6c80b7-38df-4db5-8392-78fbaaf9ecc9",
+              "eventId": "0f6c80b7-38df-4db5-8392-78fbaaf9ecc9",
+              "version": 8,
+              "confirmedAt": "2026-11-21T04:32:45.377Z",
+              "kind": "relationship",
+              "text": "플레이어가 관계를 끝내기로 결정했다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 0",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 1",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 2",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "이제 조금 편해졌네요.",
+              "version": 4
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 4,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 4,
+              "eventId": "00780ce3-4507-48ea-b2d1-8d7ed6e98065"
+            },
+            {
+              "kind": "user_claim",
+              "text": "당신을 더 알아가고 싶어요.",
+              "version": 5
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 5,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 5,
+              "eventId": "46331654-7273-49c1-9f85-18235b8e90c2"
+            },
+            {
+              "kind": "user_claim",
+              "text": "저를 어떻게 생각해요?",
+              "version": 6
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 6,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 6,
+              "eventId": "66fb6900-c732-4c04-b6a6-063428467bfc"
+            },
+            {
+              "kind": "user_claim",
+              "text": "저도 좋아해요. 우리 사귀어요.",
+              "version": 7
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 7,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "서로 연인이 되기로 합의했다.",
+              "version": 7,
+              "eventId": "b81761c4-9981-4a39-8c36-73efe675db1f"
+            },
+            {
+              "kind": "user_claim",
+              "text": "우리 관계는 여기서 끝내고 헤어질래요.",
+              "version": 8
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 8,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "플레이어가 관계를 끝내기로 결정했다.",
+              "version": 8,
+              "eventId": "0f6c80b7-38df-4db5-8392-78fbaaf9ecc9"
+            }
+          ],
+          "reply": "이야기를 듣고 있어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "카페 소리 이야기를 해요 0"
+            },
+            {
+              "turn": 2,
+              "text": "카페 소리 이야기를 해요 1"
+            },
+            {
+              "turn": 3,
+              "text": "카페 소리 이야기를 해요 2"
+            },
+            {
+              "turn": 4,
+              "text": "이제 조금 편해졌네요."
+            },
+            {
+              "turn": 5,
+              "text": "당신을 더 알아가고 싶어요."
+            },
+            {
+              "turn": 6,
+              "text": "저를 어떻게 생각해요?"
+            },
+            {
+              "turn": 7,
+              "text": "저도 좋아해요. 우리 사귀어요."
+            },
+            {
+              "turn": 8,
+              "text": "우리 관계는 여기서 끝내고 헤어질래요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "당신",
+            "text": "이제 조금 편해졌네요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "당신을 더 알아가고 싶어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "저를 어떻게 생각해요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "저도 좋아해요. 우리 사귀어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "우리 관계는 여기서 끝내고 헤어질래요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "여기서 이야기를 끝내고 떠날게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          }
+        ],
+        "ending": "romance-2",
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 9,
+          "location": "cafe",
+          "relationship": "apart",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "familiar",
+              "id": "00780ce3-4507-48ea-b2d1-8d7ed6e98065",
+              "turn": 4
+            },
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "attracted",
+              "id": "46331654-7273-49c1-9f85-18235b8e90c2",
+              "turn": 5
+            },
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "confessed",
+              "id": "66fb6900-c732-4c04-b6a6-063428467bfc",
+              "turn": 6
+            },
+            {
+              "kind": "relationship",
+              "subject": "mutual",
+              "status": "accepted",
+              "text": "서로 연인이 되기로 합의했다.",
+              "reference": "",
+              "evidence": "저도 좋아해요. 우리 사귀어요.",
+              "value": "couple",
+              "id": "b81761c4-9981-4a39-8c36-73efe675db1f",
+              "turn": 7
+            },
+            {
+              "kind": "relationship",
+              "subject": "player",
+              "status": "accepted",
+              "text": "플레이어가 관계를 끝내기로 결정했다.",
+              "reference": "",
+              "evidence": "우리 관계는 여기서 끝내고 헤어질래요.",
+              "value": "apart",
+              "id": "0f6c80b7-38df-4db5-8392-78fbaaf9ecc9",
+              "turn": 8
+            },
+            {
+              "kind": "resolution",
+              "subject": "player",
+              "status": "accepted",
+              "text": "플레이어가 이 이야기를 마무리하고 떠난다.",
+              "reference": "",
+              "evidence": "여기서 이야기를 끝내고 떠날게요.",
+              "value": "leave",
+              "id": "d16ba2eb-96db-4e69-a162-4edf3099d8c0",
+              "turn": 9
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 9,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:32:45.372Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "00780ce3-4507-48ea-b2d1-8d7ed6e98065",
+              "eventId": "00780ce3-4507-48ea-b2d1-8d7ed6e98065",
+              "version": 4,
+              "confirmedAt": "2026-11-21T04:32:45.376Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "46331654-7273-49c1-9f85-18235b8e90c2",
+              "eventId": "46331654-7273-49c1-9f85-18235b8e90c2",
+              "version": 5,
+              "confirmedAt": "2026-11-21T04:32:45.376Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "66fb6900-c732-4c04-b6a6-063428467bfc",
+              "eventId": "66fb6900-c732-4c04-b6a6-063428467bfc",
+              "version": 6,
+              "confirmedAt": "2026-11-21T04:32:45.376Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "b81761c4-9981-4a39-8c36-73efe675db1f",
+              "eventId": "b81761c4-9981-4a39-8c36-73efe675db1f",
+              "version": 7,
+              "confirmedAt": "2026-11-21T04:32:45.377Z",
+              "kind": "relationship",
+              "text": "서로 연인이 되기로 합의했다."
+            },
+            {
+              "id": "0f6c80b7-38df-4db5-8392-78fbaaf9ecc9",
+              "eventId": "0f6c80b7-38df-4db5-8392-78fbaaf9ecc9",
+              "version": 8,
+              "confirmedAt": "2026-11-21T04:32:45.377Z",
+              "kind": "relationship",
+              "text": "플레이어가 관계를 끝내기로 결정했다."
+            },
+            {
+              "id": "d16ba2eb-96db-4e69-a162-4edf3099d8c0",
+              "eventId": "d16ba2eb-96db-4e69-a162-4edf3099d8c0",
+              "version": 9,
+              "confirmedAt": "2026-11-21T04:32:45.392Z",
+              "kind": "ending",
+              "text": "플레이어가 이 이야기를 마무리하고 떠난다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 0",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 1",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 2",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "이제 조금 편해졌네요.",
+              "version": 4
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 4,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 4,
+              "eventId": "00780ce3-4507-48ea-b2d1-8d7ed6e98065"
+            },
+            {
+              "kind": "user_claim",
+              "text": "당신을 더 알아가고 싶어요.",
+              "version": 5
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 5,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 5,
+              "eventId": "46331654-7273-49c1-9f85-18235b8e90c2"
+            },
+            {
+              "kind": "user_claim",
+              "text": "저를 어떻게 생각해요?",
+              "version": 6
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 6,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 6,
+              "eventId": "66fb6900-c732-4c04-b6a6-063428467bfc"
+            },
+            {
+              "kind": "user_claim",
+              "text": "저도 좋아해요. 우리 사귀어요.",
+              "version": 7
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 7,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "서로 연인이 되기로 합의했다.",
+              "version": 7,
+              "eventId": "b81761c4-9981-4a39-8c36-73efe675db1f"
+            },
+            {
+              "kind": "user_claim",
+              "text": "우리 관계는 여기서 끝내고 헤어질래요.",
+              "version": 8
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 8,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "플레이어가 관계를 끝내기로 결정했다.",
+              "version": 8,
+              "eventId": "0f6c80b7-38df-4db5-8392-78fbaaf9ecc9"
+            },
+            {
+              "kind": "user_claim",
+              "text": "여기서 이야기를 끝내고 떠날게요.",
+              "version": 9
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 9,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "플레이어가 이 이야기를 마무리하고 떠난다.",
+              "version": 9,
+              "eventId": "d16ba2eb-96db-4e69-a162-4edf3099d8c0"
+            }
+          ],
+          "reply": "이야기를 듣고 있어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "카페 소리 이야기를 해요 0"
+            },
+            {
+              "turn": 2,
+              "text": "카페 소리 이야기를 해요 1"
+            },
+            {
+              "turn": 3,
+              "text": "카페 소리 이야기를 해요 2"
+            },
+            {
+              "turn": 4,
+              "text": "이제 조금 편해졌네요."
+            },
+            {
+              "turn": 5,
+              "text": "당신을 더 알아가고 싶어요."
+            },
+            {
+              "turn": 6,
+              "text": "저를 어떻게 생각해요?"
+            },
+            {
+              "turn": 7,
+              "text": "저도 좋아해요. 우리 사귀어요."
+            },
+            {
+              "turn": 8,
+              "text": "우리 관계는 여기서 끝내고 헤어질래요."
+            },
+            {
+              "turn": 9,
+              "text": "여기서 이야기를 끝내고 떠날게요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "afterSummary": {
+        "location": "cafe",
+        "relationship": "apart",
+        "dates": 0,
+        "ending": "romance-2",
+        "version": 9
+      },
+      "restoredSummary": {
+        "location": "cafe",
+        "relationship": "apart",
+        "dates": 0,
+        "ending": "romance-2",
+        "version": 9
+      },
+      "inputUnchanged": true
+    },
+    {
+      "id": "R2-future-move",
+      "expected": "reject",
+      "status": "committed",
+      "expectationMet": false,
+      "text": "내일 옥상에서 만나요.",
+      "reply": {
+        "line": "이야기를 듣고 있어요.",
+        "events": [
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "내일 옥상에서 만나요.",
+            "value": "rooftop"
+          }
+        ],
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "카페에서 잠시 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:32:45.399Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "카페에서 잠시 이야기해요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 1,
+              "recallIds": []
+            }
+          ],
+          "reply": "이야기를 듣고 있어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "카페에서 잠시 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "카페에서 잠시 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "내일 옥상에서 만나요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "rooftop",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "move",
+              "subject": "mutual",
+              "status": "accepted",
+              "text": "두 사람이 옥상으로 이동한다.",
+              "reference": "",
+              "evidence": "내일 옥상에서 만나요.",
+              "value": "rooftop",
+              "id": "8d9dc277-5665-4268-a449-2b5b3e30aceb",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:32:45.399Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "8d9dc277-5665-4268-a449-2b5b3e30aceb",
+              "eventId": "8d9dc277-5665-4268-a449-2b5b3e30aceb",
+              "version": 2,
+              "confirmedAt": "2026-11-21T04:32:45.399Z",
+              "kind": "scene",
+              "text": "두 사람이 옥상으로 이동한다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "카페에서 잠시 이야기해요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "내일 옥상에서 만나요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "두 사람이 옥상으로 이동한다.",
+              "version": 2,
+              "eventId": "8d9dc277-5665-4268-a449-2b5b3e30aceb"
+            }
+          ],
+          "reply": "이야기를 듣고 있어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "카페에서 잠시 이야기해요."
+            },
+            {
+              "turn": 2,
+              "text": "내일 옥상에서 만나요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "afterSummary": {
+        "location": "rooftop",
+        "relationship": "strangers",
+        "dates": 0,
+        "ending": null,
+        "version": 2
+      },
+      "restoredSummary": {
+        "location": "rooftop",
+        "relationship": "strangers",
+        "dates": 0,
+        "ending": null,
+        "version": 2
+      },
+      "inputUnchanged": true
+    },
+    {
+      "id": "R2-positive-control",
+      "expected": "commit",
+      "status": "committed",
+      "expectationMet": true,
+      "text": "지금 옥상으로 같이 가요.",
+      "reply": {
+        "line": "이야기를 듣고 있어요.",
+        "events": [
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 같이 가요.",
+            "value": "rooftop"
+          }
+        ],
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "카페에서 잠시 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:32:45.399Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "카페에서 잠시 이야기해요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 1,
+              "recallIds": []
+            }
+          ],
+          "reply": "이야기를 듣고 있어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "카페에서 잠시 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "카페에서 잠시 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "지금 옥상으로 같이 가요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "rooftop",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "move",
+              "subject": "mutual",
+              "status": "accepted",
+              "text": "두 사람이 옥상으로 이동한다.",
+              "reference": "",
+              "evidence": "지금 옥상으로 같이 가요.",
+              "value": "rooftop",
+              "id": "9d045ac2-91ce-47d3-811d-41e7f7d6519b",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:32:45.399Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "9d045ac2-91ce-47d3-811d-41e7f7d6519b",
+              "eventId": "9d045ac2-91ce-47d3-811d-41e7f7d6519b",
+              "version": 2,
+              "confirmedAt": "2026-11-21T04:32:45.405Z",
+              "kind": "scene",
+              "text": "두 사람이 옥상으로 이동한다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "카페에서 잠시 이야기해요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "지금 옥상으로 같이 가요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "두 사람이 옥상으로 이동한다.",
+              "version": 2,
+              "eventId": "9d045ac2-91ce-47d3-811d-41e7f7d6519b"
+            }
+          ],
+          "reply": "이야기를 듣고 있어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "카페에서 잠시 이야기해요."
+            },
+            {
+              "turn": 2,
+              "text": "지금 옥상으로 같이 가요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "afterSummary": {
+        "location": "rooftop",
+        "relationship": "strangers",
+        "dates": 0,
+        "ending": null,
+        "version": 2
+      },
+      "restoredSummary": {
+        "location": "rooftop",
+        "relationship": "strangers",
+        "dates": 0,
+        "ending": null,
+        "version": 2
+      },
+      "inputUnchanged": true
+    },
+    {
+      "id": "R3-postponed-date",
+      "expected": "reject",
+      "status": "committed",
+      "expectationMet": false,
+      "text": "오늘 데이트는 미루고 다음 주에 만나요.",
+      "reply": {
+        "line": "이야기를 듣고 있어요.",
+        "events": [
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "fulfilled",
+            "text": "함께 종이배를 접으며 카페 데이트를 경험했다.",
+            "reference": "8a126443-9501-4202-af09-4fc6d75ee6e7",
+            "evidence": "오늘 데이트는 미루고 다음 주에 만나요.",
+            "value": "date"
+          }
+        ],
+        "actionBeats": [
+          "유나가 작은 종이배를 접어 컵 옆에 놓는다."
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 2,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "당신",
+            "text": "카페 소리 이야기를 해요 2"
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "이제 조금 편해졌네요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "당신을 더 알아가고 싶어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "저를 어떻게 생각해요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "저도 좋아해요. 우리 사귀어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "오늘 여기서 데이트해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 8,
+          "location": "cafe",
+          "relationship": "couple",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "familiar",
+              "id": "da877fef-4bbb-4afe-9835-c9fef9c0df6f",
+              "turn": 4
+            },
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "attracted",
+              "id": "b558e0cf-dacb-48f1-a28a-aec6eb2540fb",
+              "turn": 5
+            },
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "confessed",
+              "id": "27f9f1a3-12b7-4a10-98a3-4d0514bead81",
+              "turn": 6
+            },
+            {
+              "kind": "relationship",
+              "subject": "mutual",
+              "status": "accepted",
+              "text": "서로 연인이 되기로 합의했다.",
+              "reference": "",
+              "evidence": "저도 좋아해요. 우리 사귀어요.",
+              "value": "couple",
+              "id": "a9098056-d431-4e83-93ab-ab51842fefd2",
+              "turn": 7
+            },
+            {
+              "kind": "relationship",
+              "subject": "mutual",
+              "status": "accepted",
+              "text": "카페 데이트에 지금 참여하기로 한다.",
+              "reference": "",
+              "evidence": "오늘 여기서 데이트해요.",
+              "value": "date",
+              "id": "8a126443-9501-4202-af09-4fc6d75ee6e7",
+              "turn": 8
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "activeDate": {
+            "eventId": "8a126443-9501-4202-af09-4fc6d75ee6e7",
+            "location": "cafe",
+            "turn": 8
+          }
+        },
+        "dialogue": {
+          "version": 8,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:32:45.410Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "da877fef-4bbb-4afe-9835-c9fef9c0df6f",
+              "eventId": "da877fef-4bbb-4afe-9835-c9fef9c0df6f",
+              "version": 4,
+              "confirmedAt": "2026-11-21T04:32:45.411Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "b558e0cf-dacb-48f1-a28a-aec6eb2540fb",
+              "eventId": "b558e0cf-dacb-48f1-a28a-aec6eb2540fb",
+              "version": 5,
+              "confirmedAt": "2026-11-21T04:32:45.411Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "27f9f1a3-12b7-4a10-98a3-4d0514bead81",
+              "eventId": "27f9f1a3-12b7-4a10-98a3-4d0514bead81",
+              "version": 6,
+              "confirmedAt": "2026-11-21T04:32:45.411Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "a9098056-d431-4e83-93ab-ab51842fefd2",
+              "eventId": "a9098056-d431-4e83-93ab-ab51842fefd2",
+              "version": 7,
+              "confirmedAt": "2026-11-21T04:32:45.411Z",
+              "kind": "relationship",
+              "text": "서로 연인이 되기로 합의했다."
+            },
+            {
+              "id": "8a126443-9501-4202-af09-4fc6d75ee6e7",
+              "eventId": "8a126443-9501-4202-af09-4fc6d75ee6e7",
+              "version": 8,
+              "confirmedAt": "2026-11-21T04:32:45.412Z",
+              "kind": "relationship",
+              "text": "카페 데이트에 지금 참여하기로 한다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 0",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 1",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 2",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "이제 조금 편해졌네요.",
+              "version": 4
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 4,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 4,
+              "eventId": "da877fef-4bbb-4afe-9835-c9fef9c0df6f"
+            },
+            {
+              "kind": "user_claim",
+              "text": "당신을 더 알아가고 싶어요.",
+              "version": 5
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 5,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 5,
+              "eventId": "b558e0cf-dacb-48f1-a28a-aec6eb2540fb"
+            },
+            {
+              "kind": "user_claim",
+              "text": "저를 어떻게 생각해요?",
+              "version": 6
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 6,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 6,
+              "eventId": "27f9f1a3-12b7-4a10-98a3-4d0514bead81"
+            },
+            {
+              "kind": "user_claim",
+              "text": "저도 좋아해요. 우리 사귀어요.",
+              "version": 7
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 7,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "서로 연인이 되기로 합의했다.",
+              "version": 7,
+              "eventId": "a9098056-d431-4e83-93ab-ab51842fefd2"
+            },
+            {
+              "kind": "user_claim",
+              "text": "오늘 여기서 데이트해요.",
+              "version": 8
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 8,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "카페 데이트에 지금 참여하기로 한다.",
+              "version": 8,
+              "eventId": "8a126443-9501-4202-af09-4fc6d75ee6e7"
+            }
+          ],
+          "reply": "이야기를 듣고 있어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "카페 소리 이야기를 해요 0"
+            },
+            {
+              "turn": 2,
+              "text": "카페 소리 이야기를 해요 1"
+            },
+            {
+              "turn": 3,
+              "text": "카페 소리 이야기를 해요 2"
+            },
+            {
+              "turn": 4,
+              "text": "이제 조금 편해졌네요."
+            },
+            {
+              "turn": 5,
+              "text": "당신을 더 알아가고 싶어요."
+            },
+            {
+              "turn": 6,
+              "text": "저를 어떻게 생각해요?"
+            },
+            {
+              "turn": 7,
+              "text": "저도 좋아해요. 우리 사귀어요."
+            },
+            {
+              "turn": 8,
+              "text": "오늘 여기서 데이트해요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "after": {
+        "mode": "romance",
+        "step": 3,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "당신",
+            "text": "이제 조금 편해졌네요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "당신을 더 알아가고 싶어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "저를 어떻게 생각해요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "저도 좋아해요. 우리 사귀어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "오늘 여기서 데이트해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "오늘 데이트는 미루고 다음 주에 만나요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 9,
+          "location": "cafe",
+          "relationship": "couple",
+          "dates": 1,
+          "events": [
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "familiar",
+              "id": "da877fef-4bbb-4afe-9835-c9fef9c0df6f",
+              "turn": 4
+            },
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "attracted",
+              "id": "b558e0cf-dacb-48f1-a28a-aec6eb2540fb",
+              "turn": 5
+            },
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "confessed",
+              "id": "27f9f1a3-12b7-4a10-98a3-4d0514bead81",
+              "turn": 6
+            },
+            {
+              "kind": "relationship",
+              "subject": "mutual",
+              "status": "accepted",
+              "text": "서로 연인이 되기로 합의했다.",
+              "reference": "",
+              "evidence": "저도 좋아해요. 우리 사귀어요.",
+              "value": "couple",
+              "id": "a9098056-d431-4e83-93ab-ab51842fefd2",
+              "turn": 7
+            },
+            {
+              "kind": "relationship",
+              "subject": "mutual",
+              "status": "accepted",
+              "text": "카페 데이트에 지금 참여하기로 한다.",
+              "reference": "",
+              "evidence": "오늘 여기서 데이트해요.",
+              "value": "date",
+              "id": "8a126443-9501-4202-af09-4fc6d75ee6e7",
+              "turn": 8
+            },
+            {
+              "kind": "relationship",
+              "subject": "mutual",
+              "status": "fulfilled",
+              "text": "함께 종이배를 접으며 카페 데이트를 경험했다.",
+              "reference": "8a126443-9501-4202-af09-4fc6d75ee6e7",
+              "evidence": "오늘 데이트는 미루고 다음 주에 만나요.",
+              "value": "date",
+              "id": "85f84ce2-c3ca-4e00-aee0-498ecdd7033b",
+              "turn": 9
+            },
+            {
+              "id": "90be1752-a0ce-40ff-a9fc-b08c6b6c5a1c",
+              "turn": 9,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 작은 종이배를 접어 컵 옆에 놓는다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 9,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:32:45.410Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "da877fef-4bbb-4afe-9835-c9fef9c0df6f",
+              "eventId": "da877fef-4bbb-4afe-9835-c9fef9c0df6f",
+              "version": 4,
+              "confirmedAt": "2026-11-21T04:32:45.411Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "b558e0cf-dacb-48f1-a28a-aec6eb2540fb",
+              "eventId": "b558e0cf-dacb-48f1-a28a-aec6eb2540fb",
+              "version": 5,
+              "confirmedAt": "2026-11-21T04:32:45.411Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "27f9f1a3-12b7-4a10-98a3-4d0514bead81",
+              "eventId": "27f9f1a3-12b7-4a10-98a3-4d0514bead81",
+              "version": 6,
+              "confirmedAt": "2026-11-21T04:32:45.411Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "a9098056-d431-4e83-93ab-ab51842fefd2",
+              "eventId": "a9098056-d431-4e83-93ab-ab51842fefd2",
+              "version": 7,
+              "confirmedAt": "2026-11-21T04:32:45.411Z",
+              "kind": "relationship",
+              "text": "서로 연인이 되기로 합의했다."
+            },
+            {
+              "id": "8a126443-9501-4202-af09-4fc6d75ee6e7",
+              "eventId": "8a126443-9501-4202-af09-4fc6d75ee6e7",
+              "version": 8,
+              "confirmedAt": "2026-11-21T04:32:45.412Z",
+              "kind": "relationship",
+              "text": "카페 데이트에 지금 참여하기로 한다."
+            },
+            {
+              "id": "85f84ce2-c3ca-4e00-aee0-498ecdd7033b",
+              "eventId": "85f84ce2-c3ca-4e00-aee0-498ecdd7033b",
+              "version": 9,
+              "confirmedAt": "2026-11-21T04:32:45.412Z",
+              "kind": "relationship",
+              "text": "함께 종이배를 접으며 카페 데이트를 경험했다."
+            },
+            {
+              "id": "90be1752-a0ce-40ff-a9fc-b08c6b6c5a1c",
+              "eventId": "90be1752-a0ce-40ff-a9fc-b08c6b6c5a1c",
+              "version": 9,
+              "confirmedAt": "2026-11-21T04:32:45.412Z",
+              "kind": "scene",
+              "text": "유나가 작은 종이배를 접어 컵 옆에 놓는다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 1",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 2",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "이제 조금 편해졌네요.",
+              "version": 4
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 4,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 4,
+              "eventId": "da877fef-4bbb-4afe-9835-c9fef9c0df6f"
+            },
+            {
+              "kind": "user_claim",
+              "text": "당신을 더 알아가고 싶어요.",
+              "version": 5
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 5,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 5,
+              "eventId": "b558e0cf-dacb-48f1-a28a-aec6eb2540fb"
+            },
+            {
+              "kind": "user_claim",
+              "text": "저를 어떻게 생각해요?",
+              "version": 6
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 6,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 6,
+              "eventId": "27f9f1a3-12b7-4a10-98a3-4d0514bead81"
+            },
+            {
+              "kind": "user_claim",
+              "text": "저도 좋아해요. 우리 사귀어요.",
+              "version": 7
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 7,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "서로 연인이 되기로 합의했다.",
+              "version": 7,
+              "eventId": "a9098056-d431-4e83-93ab-ab51842fefd2"
+            },
+            {
+              "kind": "user_claim",
+              "text": "오늘 여기서 데이트해요.",
+              "version": 8
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 8,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "카페 데이트에 지금 참여하기로 한다.",
+              "version": 8,
+              "eventId": "8a126443-9501-4202-af09-4fc6d75ee6e7"
+            },
+            {
+              "kind": "user_claim",
+              "text": "오늘 데이트는 미루고 다음 주에 만나요.",
+              "version": 9
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 9,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "함께 종이배를 접으며 카페 데이트를 경험했다.",
+              "version": 9,
+              "eventId": "85f84ce2-c3ca-4e00-aee0-498ecdd7033b"
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 작은 종이배를 접어 컵 옆에 놓는다.",
+              "version": 9,
+              "eventId": "90be1752-a0ce-40ff-a9fc-b08c6b6c5a1c"
+            }
+          ],
+          "reply": "이야기를 듣고 있어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "카페 소리 이야기를 해요 0"
+            },
+            {
+              "turn": 2,
+              "text": "카페 소리 이야기를 해요 1"
+            },
+            {
+              "turn": 3,
+              "text": "카페 소리 이야기를 해요 2"
+            },
+            {
+              "turn": 4,
+              "text": "이제 조금 편해졌네요."
+            },
+            {
+              "turn": 5,
+              "text": "당신을 더 알아가고 싶어요."
+            },
+            {
+              "turn": 6,
+              "text": "저를 어떻게 생각해요?"
+            },
+            {
+              "turn": 7,
+              "text": "저도 좋아해요. 우리 사귀어요."
+            },
+            {
+              "turn": 8,
+              "text": "오늘 여기서 데이트해요."
+            },
+            {
+              "turn": 9,
+              "text": "오늘 데이트는 미루고 다음 주에 만나요."
+            }
+          ],
+          "actionBeats": [
+            "유나가 작은 종이배를 접어 컵 옆에 놓는다."
+          ]
+        }
+      },
+      "afterSummary": {
+        "location": "cafe",
+        "relationship": "couple",
+        "dates": 1,
+        "ending": null,
+        "version": 9
+      },
+      "restoredSummary": {
+        "location": "cafe",
+        "relationship": "couple",
+        "dates": 1,
+        "ending": null,
+        "version": 9
+      },
+      "inputUnchanged": true
+    },
+    {
+      "id": "R3-positive-control",
+      "expected": "commit",
+      "status": "committed",
+      "expectationMet": true,
+      "text": "저는 종이배를 접었어요. 같이 물에 띄워요.",
+      "reply": {
+        "line": "이야기를 듣고 있어요.",
+        "events": [
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "fulfilled",
+            "text": "함께 종이배를 접으며 카페 데이트를 경험했다.",
+            "reference": "8a126443-9501-4202-af09-4fc6d75ee6e7",
+            "evidence": "저는 종이배를 접었어요. 같이 물에 띄워요.",
+            "value": "date"
+          }
+        ],
+        "actionBeats": [
+          "유나가 작은 종이배를 접어 컵 옆에 놓는다."
+        ],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 2,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "당신",
+            "text": "카페 소리 이야기를 해요 2"
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "이제 조금 편해졌네요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "당신을 더 알아가고 싶어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "저를 어떻게 생각해요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "저도 좋아해요. 우리 사귀어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "오늘 여기서 데이트해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 8,
+          "location": "cafe",
+          "relationship": "couple",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "familiar",
+              "id": "da877fef-4bbb-4afe-9835-c9fef9c0df6f",
+              "turn": 4
+            },
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "attracted",
+              "id": "b558e0cf-dacb-48f1-a28a-aec6eb2540fb",
+              "turn": 5
+            },
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "confessed",
+              "id": "27f9f1a3-12b7-4a10-98a3-4d0514bead81",
+              "turn": 6
+            },
+            {
+              "kind": "relationship",
+              "subject": "mutual",
+              "status": "accepted",
+              "text": "서로 연인이 되기로 합의했다.",
+              "reference": "",
+              "evidence": "저도 좋아해요. 우리 사귀어요.",
+              "value": "couple",
+              "id": "a9098056-d431-4e83-93ab-ab51842fefd2",
+              "turn": 7
+            },
+            {
+              "kind": "relationship",
+              "subject": "mutual",
+              "status": "accepted",
+              "text": "카페 데이트에 지금 참여하기로 한다.",
+              "reference": "",
+              "evidence": "오늘 여기서 데이트해요.",
+              "value": "date",
+              "id": "8a126443-9501-4202-af09-4fc6d75ee6e7",
+              "turn": 8
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "activeDate": {
+            "eventId": "8a126443-9501-4202-af09-4fc6d75ee6e7",
+            "location": "cafe",
+            "turn": 8
+          }
+        },
+        "dialogue": {
+          "version": 8,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:32:45.410Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "da877fef-4bbb-4afe-9835-c9fef9c0df6f",
+              "eventId": "da877fef-4bbb-4afe-9835-c9fef9c0df6f",
+              "version": 4,
+              "confirmedAt": "2026-11-21T04:32:45.411Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "b558e0cf-dacb-48f1-a28a-aec6eb2540fb",
+              "eventId": "b558e0cf-dacb-48f1-a28a-aec6eb2540fb",
+              "version": 5,
+              "confirmedAt": "2026-11-21T04:32:45.411Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "27f9f1a3-12b7-4a10-98a3-4d0514bead81",
+              "eventId": "27f9f1a3-12b7-4a10-98a3-4d0514bead81",
+              "version": 6,
+              "confirmedAt": "2026-11-21T04:32:45.411Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "a9098056-d431-4e83-93ab-ab51842fefd2",
+              "eventId": "a9098056-d431-4e83-93ab-ab51842fefd2",
+              "version": 7,
+              "confirmedAt": "2026-11-21T04:32:45.411Z",
+              "kind": "relationship",
+              "text": "서로 연인이 되기로 합의했다."
+            },
+            {
+              "id": "8a126443-9501-4202-af09-4fc6d75ee6e7",
+              "eventId": "8a126443-9501-4202-af09-4fc6d75ee6e7",
+              "version": 8,
+              "confirmedAt": "2026-11-21T04:32:45.412Z",
+              "kind": "relationship",
+              "text": "카페 데이트에 지금 참여하기로 한다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 0",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 1",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 2",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "이제 조금 편해졌네요.",
+              "version": 4
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 4,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 4,
+              "eventId": "da877fef-4bbb-4afe-9835-c9fef9c0df6f"
+            },
+            {
+              "kind": "user_claim",
+              "text": "당신을 더 알아가고 싶어요.",
+              "version": 5
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 5,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 5,
+              "eventId": "b558e0cf-dacb-48f1-a28a-aec6eb2540fb"
+            },
+            {
+              "kind": "user_claim",
+              "text": "저를 어떻게 생각해요?",
+              "version": 6
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 6,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 6,
+              "eventId": "27f9f1a3-12b7-4a10-98a3-4d0514bead81"
+            },
+            {
+              "kind": "user_claim",
+              "text": "저도 좋아해요. 우리 사귀어요.",
+              "version": 7
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 7,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "서로 연인이 되기로 합의했다.",
+              "version": 7,
+              "eventId": "a9098056-d431-4e83-93ab-ab51842fefd2"
+            },
+            {
+              "kind": "user_claim",
+              "text": "오늘 여기서 데이트해요.",
+              "version": 8
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 8,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "카페 데이트에 지금 참여하기로 한다.",
+              "version": 8,
+              "eventId": "8a126443-9501-4202-af09-4fc6d75ee6e7"
+            }
+          ],
+          "reply": "이야기를 듣고 있어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "카페 소리 이야기를 해요 0"
+            },
+            {
+              "turn": 2,
+              "text": "카페 소리 이야기를 해요 1"
+            },
+            {
+              "turn": 3,
+              "text": "카페 소리 이야기를 해요 2"
+            },
+            {
+              "turn": 4,
+              "text": "이제 조금 편해졌네요."
+            },
+            {
+              "turn": 5,
+              "text": "당신을 더 알아가고 싶어요."
+            },
+            {
+              "turn": 6,
+              "text": "저를 어떻게 생각해요?"
+            },
+            {
+              "turn": 7,
+              "text": "저도 좋아해요. 우리 사귀어요."
+            },
+            {
+              "turn": 8,
+              "text": "오늘 여기서 데이트해요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "after": {
+        "mode": "romance",
+        "step": 3,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "당신",
+            "text": "이제 조금 편해졌네요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "당신을 더 알아가고 싶어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "저를 어떻게 생각해요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "저도 좋아해요. 우리 사귀어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "오늘 여기서 데이트해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "저는 종이배를 접었어요. 같이 물에 띄워요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "이야기를 듣고 있어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 9,
+          "location": "cafe",
+          "relationship": "couple",
+          "dates": 1,
+          "events": [
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "familiar",
+              "id": "da877fef-4bbb-4afe-9835-c9fef9c0df6f",
+              "turn": 4
+            },
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "attracted",
+              "id": "b558e0cf-dacb-48f1-a28a-aec6eb2540fb",
+              "turn": 5
+            },
+            {
+              "kind": "relationship",
+              "subject": "npc",
+              "status": "accepted",
+              "text": "유나가 관계의 변화를 말한다.",
+              "reference": "",
+              "evidence": "",
+              "value": "confessed",
+              "id": "27f9f1a3-12b7-4a10-98a3-4d0514bead81",
+              "turn": 6
+            },
+            {
+              "kind": "relationship",
+              "subject": "mutual",
+              "status": "accepted",
+              "text": "서로 연인이 되기로 합의했다.",
+              "reference": "",
+              "evidence": "저도 좋아해요. 우리 사귀어요.",
+              "value": "couple",
+              "id": "a9098056-d431-4e83-93ab-ab51842fefd2",
+              "turn": 7
+            },
+            {
+              "kind": "relationship",
+              "subject": "mutual",
+              "status": "accepted",
+              "text": "카페 데이트에 지금 참여하기로 한다.",
+              "reference": "",
+              "evidence": "오늘 여기서 데이트해요.",
+              "value": "date",
+              "id": "8a126443-9501-4202-af09-4fc6d75ee6e7",
+              "turn": 8
+            },
+            {
+              "kind": "relationship",
+              "subject": "mutual",
+              "status": "fulfilled",
+              "text": "함께 종이배를 접으며 카페 데이트를 경험했다.",
+              "reference": "8a126443-9501-4202-af09-4fc6d75ee6e7",
+              "evidence": "저는 종이배를 접었어요. 같이 물에 띄워요.",
+              "value": "date",
+              "id": "81a88784-91b8-451c-92f9-ffd4a2903caf",
+              "turn": 9
+            },
+            {
+              "id": "512708fa-43a3-4e19-a87a-7d40cb7da41f",
+              "turn": 9,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 작은 종이배를 접어 컵 옆에 놓는다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 9,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:32:45.410Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "da877fef-4bbb-4afe-9835-c9fef9c0df6f",
+              "eventId": "da877fef-4bbb-4afe-9835-c9fef9c0df6f",
+              "version": 4,
+              "confirmedAt": "2026-11-21T04:32:45.411Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "b558e0cf-dacb-48f1-a28a-aec6eb2540fb",
+              "eventId": "b558e0cf-dacb-48f1-a28a-aec6eb2540fb",
+              "version": 5,
+              "confirmedAt": "2026-11-21T04:32:45.411Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "27f9f1a3-12b7-4a10-98a3-4d0514bead81",
+              "eventId": "27f9f1a3-12b7-4a10-98a3-4d0514bead81",
+              "version": 6,
+              "confirmedAt": "2026-11-21T04:32:45.411Z",
+              "kind": "relationship",
+              "text": "유나가 관계의 변화를 말한다."
+            },
+            {
+              "id": "a9098056-d431-4e83-93ab-ab51842fefd2",
+              "eventId": "a9098056-d431-4e83-93ab-ab51842fefd2",
+              "version": 7,
+              "confirmedAt": "2026-11-21T04:32:45.411Z",
+              "kind": "relationship",
+              "text": "서로 연인이 되기로 합의했다."
+            },
+            {
+              "id": "8a126443-9501-4202-af09-4fc6d75ee6e7",
+              "eventId": "8a126443-9501-4202-af09-4fc6d75ee6e7",
+              "version": 8,
+              "confirmedAt": "2026-11-21T04:32:45.412Z",
+              "kind": "relationship",
+              "text": "카페 데이트에 지금 참여하기로 한다."
+            },
+            {
+              "id": "81a88784-91b8-451c-92f9-ffd4a2903caf",
+              "eventId": "81a88784-91b8-451c-92f9-ffd4a2903caf",
+              "version": 9,
+              "confirmedAt": "2026-11-21T04:32:45.420Z",
+              "kind": "relationship",
+              "text": "함께 종이배를 접으며 카페 데이트를 경험했다."
+            },
+            {
+              "id": "512708fa-43a3-4e19-a87a-7d40cb7da41f",
+              "eventId": "512708fa-43a3-4e19-a87a-7d40cb7da41f",
+              "version": 9,
+              "confirmedAt": "2026-11-21T04:32:45.420Z",
+              "kind": "scene",
+              "text": "유나가 작은 종이배를 접어 컵 옆에 놓는다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 1",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "카페 소리 이야기를 해요 2",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "이제 조금 편해졌네요.",
+              "version": 4
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 4,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 4,
+              "eventId": "da877fef-4bbb-4afe-9835-c9fef9c0df6f"
+            },
+            {
+              "kind": "user_claim",
+              "text": "당신을 더 알아가고 싶어요.",
+              "version": 5
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 5,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 5,
+              "eventId": "b558e0cf-dacb-48f1-a28a-aec6eb2540fb"
+            },
+            {
+              "kind": "user_claim",
+              "text": "저를 어떻게 생각해요?",
+              "version": 6
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 6,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 관계의 변화를 말한다.",
+              "version": 6,
+              "eventId": "27f9f1a3-12b7-4a10-98a3-4d0514bead81"
+            },
+            {
+              "kind": "user_claim",
+              "text": "저도 좋아해요. 우리 사귀어요.",
+              "version": 7
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 7,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "서로 연인이 되기로 합의했다.",
+              "version": 7,
+              "eventId": "a9098056-d431-4e83-93ab-ab51842fefd2"
+            },
+            {
+              "kind": "user_claim",
+              "text": "오늘 여기서 데이트해요.",
+              "version": 8
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 8,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "카페 데이트에 지금 참여하기로 한다.",
+              "version": 8,
+              "eventId": "8a126443-9501-4202-af09-4fc6d75ee6e7"
+            },
+            {
+              "kind": "user_claim",
+              "text": "저는 종이배를 접었어요. 같이 물에 띄워요.",
+              "version": 9
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "이야기를 듣고 있어요.",
+              "version": 9,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "함께 종이배를 접으며 카페 데이트를 경험했다.",
+              "version": 9,
+              "eventId": "81a88784-91b8-451c-92f9-ffd4a2903caf"
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 작은 종이배를 접어 컵 옆에 놓는다.",
+              "version": 9,
+              "eventId": "512708fa-43a3-4e19-a87a-7d40cb7da41f"
+            }
+          ],
+          "reply": "이야기를 듣고 있어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "카페 소리 이야기를 해요 0"
+            },
+            {
+              "turn": 2,
+              "text": "카페 소리 이야기를 해요 1"
+            },
+            {
+              "turn": 3,
+              "text": "카페 소리 이야기를 해요 2"
+            },
+            {
+              "turn": 4,
+              "text": "이제 조금 편해졌네요."
+            },
+            {
+              "turn": 5,
+              "text": "당신을 더 알아가고 싶어요."
+            },
+            {
+              "turn": 6,
+              "text": "저를 어떻게 생각해요?"
+            },
+            {
+              "turn": 7,
+              "text": "저도 좋아해요. 우리 사귀어요."
+            },
+            {
+              "turn": 8,
+              "text": "오늘 여기서 데이트해요."
+            },
+            {
+              "turn": 9,
+              "text": "저는 종이배를 접었어요. 같이 물에 띄워요."
+            }
+          ],
+          "actionBeats": [
+            "유나가 작은 종이배를 접어 컵 옆에 놓는다."
+          ]
+        }
+      },
+      "afterSummary": {
+        "location": "cafe",
+        "relationship": "couple",
+        "dates": 1,
+        "ending": null,
+        "version": 9
+      },
+      "restoredSummary": {
+        "location": "cafe",
+        "relationship": "couple",
+        "dates": 1,
+        "ending": null,
+        "version": 9
+      },
+      "inputUnchanged": true
+    }
+  ]
+}

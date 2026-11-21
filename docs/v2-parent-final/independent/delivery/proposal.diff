@@ -1,0 +1,54 @@
+--- worker-current/server/narrative.ts
++++ proposal/server/narrative.ts
+@@ -101,6 +101,32 @@
+ // by the fulfillment proposal. NFD tolerates inflection (그려/그린, 접어/접는다).
+ const predicateKey=(word:string)=>word.normalize('NFD').slice(0,3);
+ const commitmentPredicate=(text:string)=>text.match(/(?:을|를)\s+([가-힣]+)/u)?.[1];
++// Normalize a bounded set of Korean endings, preserving whole stems rather
++// than enumerating every conjugated delivery phrase. Not a general analyzer.
++const deliveryForms=(word:string)=>{
++ const forms=new Set([word.replace(/(?:기로|었어요|았어요|었다|았다|어요|아요|는다|습니다|는|다|요|고|기|음)$/u,'')]);
++ for(const form of [...forms]){
++  const last=form.at(-1),n=last?last.charCodeAt(0)-0xac00:-1;
++  if(n>=0&&n<11172&&[4,20].includes(n%28)){
++   const bare=form.slice(0,-1)+String.fromCharCode(last!.charCodeAt(0)-n%28);
++   forms.add(bare);if(n%28===4)forms.add(bare.slice(0,-1)+String.fromCharCode(bare.charCodeAt(bare.length-1)+8));
++  }
++ }
++ for(const form of [...forms])if(form.endsWith('주')&&form.length>1&&(form.charCodeAt(form.length-2)-0xac00)%28===0)forms.add(form.slice(0,-1));
++ for(const form of [...forms]){
++  if(!form)continue;
++  const end=form.at(-1)!,n=end.charCodeAt(0)-0xac00;
++  if(n>=0&&n<11172&&n%28===0){
++   const vowel=Math.floor(n/28)%21,contractions:Record<number,number>={6:20,9:8,14:13};
++   if(vowel in contractions)forms.add(form.slice(0,-1)+String.fromCharCode(end.charCodeAt(0)+(contractions[vowel]-vowel)*28));
++  }
++  if(form.endsWith('해'))forms.add(form.slice(0,-1)+'하');
++ }
++ return [...forms];
++};
++const delivered=(text:string)=>!/(?:놓|두)고\s*왔/u.test(text)&&(text.match(/[가-힣]+/gu)??[]).flatMap(deliveryForms)
++ .some(stem=>/^(?:가져오|갖다주|갖고오|건네|내밀|전하|전달하|드리|꺼내|보이|놓|내려놓)$/u.test(stem));
++const temporalTopic=(word:string)=>/^(?:오늘|어제|내일|지금|방금|아까|나중(?:에)?|(?:이번|지난|다음)(?:번|주|달|해)?(?:에)?)$/u.test(word);
+ const performedCommitment=(offer:StoryEvent,sources:{text:string;action:boolean}[],names:string[],singlePending:boolean)=>{
+  // New activities may introduce new objects ("draw a picture" -> "draw a cat").
+  // Match the grounded visible consequence as well as the original offer; do not
+@@ -117,15 +143,15 @@
+   if(predicate&&!delivery&&!samePredicate&&!demonstrative&&!verbalAnswer)return false;
+   // Delivery requires a transfer/display consequence, not merely inspecting or
+   // searching for the object. Other novel activities remain open vocabulary.
+-  if(delivery&&!/^\s*다\s*했/.test(clause)&&!/가져왔|가져온|가져와|건네|전달했|전달한다|놓는|놓았|놓아요|놓습니다|놓음/.test(clause))return false;
++  if(delivery&&!/^\s*다\s*했/.test(clause)&&!delivered(clause))return false;
+   // Explicit grammatical actors must agree with the original performer. Object
+   // particles and recipients are deliberately excluded ("친구에게 리본을…").
+   const offerWords:string[]=offer.text.match(/[가-힣]+/gu)??[];
+-  const actors=[...clause.matchAll(/(?:^|\s)([가-힣]+?)(?:은|는|이|가)\s/gu)]
++  const actors=[...clause.matchAll(/(?<!\S)([가-힣]+?)(?:은|는|이|가)\s/gu)]
+    // "종이 봉투" is a noun phrase, and "배가 든 봉투" is an object
+    // description; neither introduces a performer.
+    .filter(m=>!offerWords.includes(m[0].trim())&&!/^(?:든|담긴|들어있는)\s/.test(clause.slice(m.index!+m[0].length)))
+-   .map(m=>m[1]);
++   .map(m=>m[1]).filter(actor=>!temporalTopic(actor));
+   const ownActors=offer.subject==='player'?['저','제','나','내',...names]:['저','제','나','내','유나','서유나','부장','부장님','박도현','그녀'];
+   if(actors.some(actor=>!ownActors.includes(actor)&&!terms.includes(actor)))return false;
+   if(offer.subject==='npc'&&writesPlayer(clause,names)||offer.subject==='player'&&/(?:유나|부장(?:님)?|그녀)(?:\s*씨)?[은는이가]/.test(clause))return false;

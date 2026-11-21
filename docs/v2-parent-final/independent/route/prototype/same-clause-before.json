@@ -1,0 +1,53 @@
+{
+  "sourceSha256": "3e1a498eb6acd74d88082931ff583e6a49adb3638103f1f08fc2b5934cea47e7",
+  "rows": [
+    {
+      "text": "지금 옥상으로 가서 내일 공연 계획을 세워봐요.",
+      "reply": {
+        "line": "이야기를 들어요.",
+        "events": [
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가서 내일 공연 계획을 세워봐요.",
+            "value": "rooftop"
+          }
+        ],
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "status": "rejected"
+    },
+    {
+      "text": "오늘은 회사에 있고 내일 옥상에서 만나요.",
+      "reply": {
+        "line": "이야기를 들어요.",
+        "events": [
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "오늘은 회사에 있고 내일 옥상에서 만나요.",
+            "value": "rooftop"
+          }
+        ],
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "status": "rejected"
+    }
+  ]
+}

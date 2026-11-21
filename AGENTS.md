@@ -1,5 +1,11 @@
 # AFTER HOURS — project direction
 
+## Latest parent free-verification checkpoint
+
+Read `docs/v2-parent-final/review.md` first. Original root now integrates the immutable sequential generation1 promise fix plus independent delivery/route guards; narrative SHA256 `fcb42511a5ad93a7be77dc4e436a1bb3a12d770ee9b958c9c9bece3441d9e673`. Build,302 unit tests,25 browser tests and5/5 old promise diagnostic passed. The older four-failure checkpoint below is preserved history, not proof those bugs remain. New evidence is versioned; old evidence bytes and private saves remain intact. This is NOT live-model verification or release approval. The active separate Ralph worktree may have later changes: compare sources, do not blindly overwrite either checkout.
+
+Paid restrictions below remain unchanged:12+32 consumed, proposed24 still unanswered, no active approval ledger, workers make zero paid calls. Read exact independent failed/positive cases and remaining conservative-language limits before broadening guards. Browser tests can use `AFTERHOURS_TEST_PORT` to avoid another worktree's verification port. User preview remains root localhost3001.
+
 ## Parent integration checkpoint after v2 generation2
 
 The first v2 Ralph loop terminated `grade_regressing` after two generations; preserve `docs/v2-ralph-terminal.json`. The parent integrated that snapshot and subsequent free fixes into this repository. Read `.ralph/v2-director.md`'s continuation section and `docs/v2-parent-current/review.md` before editing. The validated generation2 Seed is preserved exactly at `verification/v2-generation2.seed.json`; do not lower its criteria.

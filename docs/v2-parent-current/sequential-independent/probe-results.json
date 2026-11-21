@@ -1,0 +1,4110 @@
+{
+  "createdAt": "2026-11-21T04:27:52.505Z",
+  "scope": "Independent frozen source snapshot. Normal start -> offer -> fulfillment synthetic reducer proposals; no private profiles, saves, API calls or runtime worktree mutation. Historical receipt31 is replay only, not fresh-model evidence.",
+  "sourceSha256": "1652aecf8c1d02e2ba0e19c813fece5898ebe57b16480519bd4836c23b9030ba",
+  "snapshotManifest": {
+    "capturedAt": "2026-11-21T04:26:29.7275263Z",
+    "source": "C:/Users/gjtjw/.ouroboros/worktrees/대화형 스토리진행/ralph-afterhours-v2-seq-7b46bae",
+    "scope": "Independent read-only reducer snapshot. No API/env/storage or active-source edits.",
+    "files": [
+      {
+        "file": "server/narrative.ts",
+        "before": "1652aecf8c1d02e2ba0e19c813fece5898ebe57b16480519bd4836c23b9030ba",
+        "copied": "1652aecf8c1d02e2ba0e19c813fece5898ebe57b16480519bd4836c23b9030ba",
+        "after": "1652aecf8c1d02e2ba0e19c813fece5898ebe57b16480519bd4836c23b9030ba",
+        "stable": true
+      },
+      {
+        "file": "server/game.ts",
+        "before": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "copied": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "after": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "stable": true
+      },
+      {
+        "file": "server/office.ts",
+        "before": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+        "copied": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+        "after": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+        "stable": true
+      },
+      {
+        "file": "server/romance.ts",
+        "before": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+        "copied": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+        "after": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+        "stable": true
+      },
+      {
+        "file": "server/interpretation.ts",
+        "before": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+        "copied": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+        "after": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+        "stable": true
+      },
+      {
+        "file": "server/dialogue.ts",
+        "before": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "copied": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "after": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "stable": true
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": "negative-unrelated-proposal",
+      "owner": "npc",
+      "input": "리본은요?",
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "유나가 노트를 덮었다.",
+        "value": "independent-promise",
+        "reference": "403a04c7-323f-4b69-87cc-9c89aeda3ae9",
+        "evidence": ""
+      },
+      "actions": [
+        "유나가 노트를 덮는다."
+      ],
+      "expected": "rejected",
+      "offerInput": "다음에 리본을 가져와 줄 수 있어요?",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "403a04c7-323f-4b69-87cc-9c89aeda3ae9",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "status": "rejected",
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "after": null,
+      "expectationMet": true,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "negative-looking-not-delivery",
+      "owner": "npc",
+      "input": "리본은요?",
+      "actions": [
+        "유나가 노란 리본을 바라본다."
+      ],
+      "expected": "rejected",
+      "offerInput": "다음에 리본을 가져와 줄 수 있어요?",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "6bbdc33a-0f7f-42f8-a155-94b4d8d56d9c",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "6bbdc33a-0f7f-42f8-a155-94b4d8d56d9c",
+        "evidence": ""
+      },
+      "status": "rejected",
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "after": null,
+      "expectationMet": true,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "negative-searching-not-delivery",
+      "owner": "player",
+      "input": "노란 리본을 찾아봤어요.",
+      "expected": "rejected",
+      "offerInput": "제가 다음에 노란 리본을 가져올게요.",
+      "offer": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": "제가 다음에 노란 리본을 가져올게요."
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "cbb4a2d4-283d-4be7-94f7-8c1651891371",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "cbb4a2d4-283d-4be7-94f7-8c1651891371",
+        "evidence": "노란 리본을 찾아봤어요."
+      },
+      "status": "rejected",
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "after": null,
+      "expectationMet": true,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "negative-friend-not-player",
+      "owner": "player",
+      "input": "친구가 노란 리본을 가져왔어요.",
+      "expected": "rejected",
+      "offerInput": "제가 다음에 노란 리본을 가져올게요.",
+      "offer": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": "제가 다음에 노란 리본을 가져올게요."
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "2c074d63-ba85-48c0-bc3b-dda57bbe509d",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "2c074d63-ba85-48c0-bc3b-dda57bbe509d",
+        "evidence": "친구가 노란 리본을 가져왔어요."
+      },
+      "status": "rejected",
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "after": null,
+      "expectationMet": true,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "player-particleless-delivery",
+      "owner": "player",
+      "input": "노란 리본 가져왔어요.",
+      "expected": "committed",
+      "offerInput": "제가 다음에 노란 리본을 가져올게요.",
+      "offer": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": "제가 다음에 노란 리본을 가져올게요."
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "9fb33544-31e1-49c1-86ed-0131aa529d01",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "9fb33544-31e1-49c1-86ed-0131aa529d01",
+        "evidence": "노란 리본 가져왔어요."
+      },
+      "status": "committed",
+      "error": null,
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "9fb33544-31e1-49c1-86ed-0131aa529d01",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "fulfilled",
+              "text": "노란 리본 약속을 이행했다.",
+              "value": "independent-promise",
+              "reference": "9fb33544-31e1-49c1-86ed-0131aa529d01",
+              "evidence": "노란 리본 가져왔어요.",
+              "id": "c4ed00e3-55f0-4188-8f94-9d9e7b282624",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "expectationMet": true,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "player-explicit-particle-delivery",
+      "owner": "player",
+      "input": "노란 리본을 가져왔어요.",
+      "expected": "committed",
+      "offerInput": "제가 다음에 노란 리본을 가져올게요.",
+      "offer": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": "제가 다음에 노란 리본을 가져올게요."
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "6ef4c62d-b88e-41cc-b2a8-e93aae462ab5",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "6ef4c62d-b88e-41cc-b2a8-e93aae462ab5",
+        "evidence": "노란 리본을 가져왔어요."
+      },
+      "status": "committed",
+      "error": null,
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "6ef4c62d-b88e-41cc-b2a8-e93aae462ab5",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "fulfilled",
+              "text": "노란 리본 약속을 이행했다.",
+              "value": "independent-promise",
+              "reference": "6ef4c62d-b88e-41cc-b2a8-e93aae462ab5",
+              "evidence": "노란 리본을 가져왔어요.",
+              "id": "c9b97905-0e8b-4665-a67e-5ca7dc392391",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "expectationMet": true,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "npc-gives-present",
+      "owner": "npc",
+      "input": "리본은요?",
+      "actions": [
+        "유나가 노란 리본을 건넨다."
+      ],
+      "expected": "committed",
+      "offerInput": "다음에 리본을 가져와 줄 수 있어요?",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "7688bd74-0273-4473-92cb-8e03d2837627",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "7688bd74-0273-4473-92cb-8e03d2837627",
+        "evidence": ""
+      },
+      "status": "rejected",
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "after": null,
+      "expectationMet": false,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "npc-gives-present-accepted-wording",
+      "owner": "npc",
+      "input": "리본은요?",
+      "actions": [
+        "유나가 노란 리본을 건네준다."
+      ],
+      "expected": "committed",
+      "offerInput": "다음에 리본을 가져와 줄 수 있어요?",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "7fe1eead-dd5e-4ef9-83ea-7b252c0d7c7d",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "7fe1eead-dd5e-4ef9-83ea-7b252c0d7c7d",
+        "evidence": ""
+      },
+      "status": "committed",
+      "error": null,
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "7fe1eead-dd5e-4ef9-83ea-7b252c0d7c7d",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "fulfilled",
+              "text": "노란 리본 약속을 이행했다.",
+              "value": "independent-promise",
+              "reference": "7fe1eead-dd5e-4ef9-83ea-7b252c0d7c7d",
+              "evidence": "",
+              "id": "58a10199-116d-4d50-aeb7-a37218400de5",
+              "turn": 2
+            },
+            {
+              "id": "b83d65f5-a1a1-46ec-b3e4-a3fb37470f8d",
+              "turn": 2,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 노란 리본을 건네준다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "expectationMet": true,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "npc-gives-past",
+      "owner": "npc",
+      "input": "리본은요?",
+      "actions": [
+        "유나가 노란 리본을 건넸다."
+      ],
+      "expected": "committed",
+      "offerInput": "다음에 리본을 가져와 줄 수 있어요?",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "a9ce55c9-3083-429d-b17d-196440205b31",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "a9ce55c9-3083-429d-b17d-196440205b31",
+        "evidence": ""
+      },
+      "status": "rejected",
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "after": null,
+      "expectationMet": false,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "npc-holds-out",
+      "owner": "npc",
+      "input": "리본은요?",
+      "actions": [
+        "유나가 노란 리본을 내민다."
+      ],
+      "expected": "committed",
+      "offerInput": "다음에 리본을 가져와 줄 수 있어요?",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "492290f7-7e28-4e4f-b3df-435585180b2c",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "492290f7-7e28-4e4f-b3df-435585180b2c",
+        "evidence": ""
+      },
+      "status": "rejected",
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "after": null,
+      "expectationMet": false,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "npc-takes-out-shows",
+      "owner": "npc",
+      "input": "리본은요?",
+      "actions": [
+        "유나가 노란 리본을 꺼내 보여준다."
+      ],
+      "expected": "committed",
+      "offerInput": "다음에 리본을 가져와 줄 수 있어요?",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "fb201bbd-833d-4e2d-924c-c36f1989dde3",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "fb201bbd-833d-4e2d-924c-c36f1989dde3",
+        "evidence": ""
+      },
+      "status": "rejected",
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "after": null,
+      "expectationMet": false,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "npc-takes-out-sets-down",
+      "owner": "npc",
+      "input": "리본은요?",
+      "actions": [
+        "유나가 노란 리본을 꺼내 테이블에 놓는다."
+      ],
+      "expected": "committed",
+      "offerInput": "다음에 리본을 가져와 줄 수 있어요?",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "3e09490c-cd6a-426a-894d-dcf4100d2190",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "3e09490c-cd6a-426a-894d-dcf4100d2190",
+        "evidence": ""
+      },
+      "status": "committed",
+      "error": null,
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "3e09490c-cd6a-426a-894d-dcf4100d2190",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "fulfilled",
+              "text": "노란 리본 약속을 이행했다.",
+              "value": "independent-promise",
+              "reference": "3e09490c-cd6a-426a-894d-dcf4100d2190",
+              "evidence": "",
+              "id": "14f9b883-b096-4fc6-a2ab-400c99ca05b9",
+              "turn": 2
+            },
+            {
+              "id": "6b9e1bb8-2638-4512-a637-31453c1ab896",
+              "turn": 2,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 노란 리본을 꺼내 테이블에 놓는다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "expectationMet": true,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "npc-gives-polite-action",
+      "owner": "npc",
+      "input": "리본은요?",
+      "actions": [
+        "유나가 노란 리본을 드려요."
+      ],
+      "expected": "committed",
+      "note": "Polite narration is less usual than 한다 but conveys a current transfer.",
+      "offerInput": "다음에 리본을 가져와 줄 수 있어요?",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "26cd9ea6-fdff-44ab-9ccc-1b6ba7a551a9",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "26cd9ea6-fdff-44ab-9ccc-1b6ba7a551a9",
+        "evidence": ""
+      },
+      "status": "rejected",
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "after": null,
+      "expectationMet": false,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "npc-passes-polite-action",
+      "owner": "npc",
+      "input": "리본은요?",
+      "actions": [
+        "유나가 노란 리본을 전해요."
+      ],
+      "expected": "committed",
+      "note": "Polite narration is less usual than 한다 but conveys a current transfer.",
+      "offerInput": "다음에 리본을 가져와 줄 수 있어요?",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "9478fdfb-aed8-4f47-bfc8-b48f9c062d84",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "9478fdfb-aed8-4f47-bfc8-b48f9c062d84",
+        "evidence": ""
+      },
+      "status": "rejected",
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "after": null,
+      "expectationMet": false,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "npc-gives-polite-line",
+      "owner": "npc",
+      "input": "리본은요?",
+      "line": "자, 노란 리본 드려요.",
+      "expected": "committed",
+      "note": "Spoken present transfer alone; weaker evidence than a visible action beat, reported separately.",
+      "offerInput": "다음에 리본을 가져와 줄 수 있어요?",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "d4295199-1584-466d-9023-640f1a795443",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "d4295199-1584-466d-9023-640f1a795443",
+        "evidence": ""
+      },
+      "status": "rejected",
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "after": null,
+      "expectationMet": false,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "npc-passes-polite-line",
+      "owner": "npc",
+      "input": "리본은요?",
+      "line": "약속한 노란 리본 전해요.",
+      "expected": "committed",
+      "note": "Spoken present transfer alone; weaker evidence than a visible action beat, reported separately.",
+      "offerInput": "다음에 리본을 가져와 줄 수 있어요?",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "8669372f-cbd9-41d4-a602-e81a829e06e3",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "8669372f-cbd9-41d4-a602-e81a829e06e3",
+        "evidence": ""
+      },
+      "status": "rejected",
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "after": null,
+      "expectationMet": false,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "player-topic-this-time",
+      "owner": "player",
+      "input": "이번에는 노란 리본 가져왔어요.",
+      "expected": "committed",
+      "offerInput": "제가 다음에 노란 리본을 가져올게요.",
+      "offer": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": "제가 다음에 노란 리본을 가져올게요."
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "36e46b72-fdb0-45c6-9ec0-8b3e50be99dc",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "36e46b72-fdb0-45c6-9ec0-8b3e50be99dc",
+        "evidence": "이번에는 노란 리본 가져왔어요."
+      },
+      "status": "rejected",
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "after": null,
+      "expectationMet": false,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "player-topic-today",
+      "owner": "player",
+      "input": "오늘은 노란 리본 가져왔어요.",
+      "expected": "committed",
+      "offerInput": "제가 다음에 노란 리본을 가져올게요.",
+      "offer": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": "제가 다음에 노란 리본을 가져올게요."
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "b96926af-909e-46dc-8590-6a102ad1d7d0",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "b96926af-909e-46dc-8590-6a102ad1d7d0",
+        "evidence": "오늘은 노란 리본 가져왔어요."
+      },
+      "status": "rejected",
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "after": null,
+      "expectationMet": false,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "player-adverb-today",
+      "owner": "player",
+      "input": "오늘 노란 리본 가져왔어요.",
+      "expected": "committed",
+      "offerInput": "제가 다음에 노란 리본을 가져올게요.",
+      "offer": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": "제가 다음에 노란 리본을 가져올게요."
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "2340b582-de0c-4bb1-8a57-3bdbdb109562",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "2340b582-de0c-4bb1-8a57-3bdbdb109562",
+        "evidence": "오늘 노란 리본 가져왔어요."
+      },
+      "status": "committed",
+      "error": null,
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "2340b582-de0c-4bb1-8a57-3bdbdb109562",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "fulfilled",
+              "text": "노란 리본 약속을 이행했다.",
+              "value": "independent-promise",
+              "reference": "2340b582-de0c-4bb1-8a57-3bdbdb109562",
+              "evidence": "오늘 노란 리본 가져왔어요.",
+              "id": "a281c963-0ff1-4f30-962a-f3a80266b694",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "expectationMet": true,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "npc-topic-this-time",
+      "owner": "npc",
+      "input": "리본은요?",
+      "actions": [
+        "이번에는 유나가 노란 리본을 건네준다."
+      ],
+      "expected": "committed",
+      "offerInput": "다음에 리본을 가져와 줄 수 있어요?",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "51baec51-6743-496a-8ccf-7327d2b4f8f8",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "51baec51-6743-496a-8ccf-7327d2b4f8f8",
+        "evidence": ""
+      },
+      "status": "rejected",
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "after": null,
+      "expectationMet": false,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "npc-topic-today",
+      "owner": "npc",
+      "input": "리본은요?",
+      "actions": [
+        "오늘은 유나가 노란 리본을 건네준다."
+      ],
+      "expected": "committed",
+      "offerInput": "다음에 리본을 가져와 줄 수 있어요?",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "1e5b9b5f-d4b0-4bf4-b5af-00bde68b7195",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "1e5b9b5f-d4b0-4bf4-b5af-00bde68b7195",
+        "evidence": ""
+      },
+      "status": "rejected",
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "after": null,
+      "expectationMet": false,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "player-recipient-friend",
+      "owner": "player",
+      "input": "친구에게 노란 리본을 가져왔어요.",
+      "expected": "committed",
+      "offerInput": "제가 다음에 노란 리본을 가져올게요.",
+      "offer": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": "제가 다음에 노란 리본을 가져올게요."
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "41c9679a-70ca-4a94-b7fe-e854dc40fd53",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "41c9679a-70ca-4a94-b7fe-e854dc40fd53",
+        "evidence": "친구에게 노란 리본을 가져왔어요."
+      },
+      "status": "committed",
+      "error": null,
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "41c9679a-70ca-4a94-b7fe-e854dc40fd53",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "fulfilled",
+              "text": "노란 리본 약속을 이행했다.",
+              "value": "independent-promise",
+              "reference": "41c9679a-70ca-4a94-b7fe-e854dc40fd53",
+              "evidence": "친구에게 노란 리본을 가져왔어요.",
+              "id": "53d276b3-c3d4-4841-aed4-486486fb3655",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "expectationMet": true,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "player-recipient-yuna",
+      "owner": "player",
+      "input": "유나에게 노란 리본을 가져왔어요.",
+      "expected": "committed",
+      "offerInput": "제가 다음에 노란 리본을 가져올게요.",
+      "offer": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": "제가 다음에 노란 리본을 가져올게요."
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "20c01d09-36cf-4195-8957-863beb2adc45",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "20c01d09-36cf-4195-8957-863beb2adc45",
+        "evidence": "유나에게 노란 리본을 가져왔어요."
+      },
+      "status": "committed",
+      "error": null,
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "20c01d09-36cf-4195-8957-863beb2adc45",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "fulfilled",
+              "text": "노란 리본 약속을 이행했다.",
+              "value": "independent-promise",
+              "reference": "20c01d09-36cf-4195-8957-863beb2adc45",
+              "evidence": "유나에게 노란 리본을 가져왔어요.",
+              "id": "95c4c9cc-4d76-42a2-b6fc-28d60196f985",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "expectationMet": true,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "npc-recipient-player",
+      "owner": "npc",
+      "input": "리본은요?",
+      "actions": [
+        "유나가 당신에게 노란 리본을 건네준다."
+      ],
+      "expected": "committed",
+      "offerInput": "다음에 리본을 가져와 줄 수 있어요?",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "33c63dd9-4c45-4440-b856-e1cc8847e885",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "33c63dd9-4c45-4440-b856-e1cc8847e885",
+        "evidence": ""
+      },
+      "status": "committed",
+      "error": null,
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "33c63dd9-4c45-4440-b856-e1cc8847e885",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "fulfilled",
+              "text": "노란 리본 약속을 이행했다.",
+              "value": "independent-promise",
+              "reference": "33c63dd9-4c45-4440-b856-e1cc8847e885",
+              "evidence": "",
+              "id": "651f6002-7f63-4df4-b185-0823d7fc2c96",
+              "turn": 2
+            },
+            {
+              "id": "e04a27c3-d98e-47b6-a3b4-ae532e864198",
+              "turn": 2,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 당신에게 노란 리본을 건네준다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "expectationMet": true,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "negative-npc-friend-actor",
+      "owner": "npc",
+      "input": "리본은요?",
+      "actions": [
+        "친구가 노란 리본을 건네준다."
+      ],
+      "expected": "rejected",
+      "offerInput": "다음에 리본을 가져와 줄 수 있어요?",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "600ee20f-f1c7-4a35-9f6f-5fbaf4ae4471",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "600ee20f-f1c7-4a35-9f6f-5fbaf4ae4471",
+        "evidence": ""
+      },
+      "status": "rejected",
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "after": null,
+      "expectationMet": true,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "negative-player-forgot-ribbon",
+      "owner": "player",
+      "input": "노란 리본 놓고 왔어요.",
+      "expected": "rejected",
+      "note": "Leaving the promised object behind is not bringing it.",
+      "offerInput": "제가 다음에 노란 리본을 가져올게요.",
+      "offer": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": "제가 다음에 노란 리본을 가져올게요."
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "7d0fb84a-e247-447c-b433-8c3c827ec5bf",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "7d0fb84a-e247-447c-b433-8c3c827ec5bf",
+        "evidence": "노란 리본 놓고 왔어요."
+      },
+      "status": "committed",
+      "error": null,
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "7d0fb84a-e247-447c-b433-8c3c827ec5bf",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "fulfilled",
+              "text": "노란 리본 약속을 이행했다.",
+              "value": "independent-promise",
+              "reference": "7d0fb84a-e247-447c-b433-8c3c827ec5bf",
+              "evidence": "노란 리본 놓고 왔어요.",
+              "id": "e16bcd6c-f55b-4dd3-b581-5af8449339f4",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "expectationMet": false,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "negative-player-dropped-ribbon",
+      "owner": "player",
+      "input": "노란 리본을 놓쳤어요.",
+      "expected": "rejected",
+      "note": "A 놓 substring is not a transfer consequence.",
+      "offerInput": "제가 다음에 노란 리본을 가져올게요.",
+      "offer": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": "제가 다음에 노란 리본을 가져올게요."
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "1d526fcc-9096-4d5b-90c5-92acde9984fc",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "1d526fcc-9096-4d5b-90c5-92acde9984fc",
+        "evidence": "노란 리본을 놓쳤어요."
+      },
+      "status": "committed",
+      "error": null,
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "1d526fcc-9096-4d5b-90c5-92acde9984fc",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "fulfilled",
+              "text": "노란 리본 약속을 이행했다.",
+              "value": "independent-promise",
+              "reference": "1d526fcc-9096-4d5b-90c5-92acde9984fc",
+              "evidence": "노란 리본을 놓쳤어요.",
+              "id": "7e85a5ba-0cf1-43fe-95d5-f8287477a796",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "expectationMet": false,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "creative-origami",
+      "owner": "npc",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "유나가 작은 종이배를 접어 주기로 제안한다.",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "offerInput": "작은 종이배를 접어 줄래요?",
+      "input": "종이배는요?",
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "유나가 작은 종이배를 접었다.",
+        "value": "independent-promise",
+        "reference": "42ad3560-be21-4ac7-8991-9970a77ebbdc",
+        "evidence": ""
+      },
+      "actions": [
+        "유나가 작은 종이배를 접는다."
+      ],
+      "expected": "committed",
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "유나가 작은 종이배를 접어 주기로 제안한다.",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "42ad3560-be21-4ac7-8991-9970a77ebbdc",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "status": "committed",
+      "error": null,
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "유나가 작은 종이배를 접어 주기로 제안한다.",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "42ad3560-be21-4ac7-8991-9970a77ebbdc",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "fulfilled",
+              "text": "유나가 작은 종이배를 접었다.",
+              "value": "independent-promise",
+              "reference": "42ad3560-be21-4ac7-8991-9970a77ebbdc",
+              "evidence": "",
+              "id": "80c24dfc-fba9-427b-97dc-ca0fa14bf306",
+              "turn": 2
+            },
+            {
+              "id": "b32ab055-b6a9-468c-b79a-15edd9803c22",
+              "turn": 2,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 작은 종이배를 접는다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "expectationMet": true,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "creative-new-drawing-subject",
+      "owner": "npc",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "유나가 그림을 그려주기로 제안한다.",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "offerInput": "그림을 그려 줄래요?",
+      "input": "어떤 그림인가요?",
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "유나가 고양이를 그렸다.",
+        "value": "independent-promise",
+        "reference": "2752a3bd-a900-4724-923e-ad06a9a384bf",
+        "evidence": ""
+      },
+      "actions": [
+        "유나가 고양이를 그린다."
+      ],
+      "expected": "committed",
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "유나가 그림을 그려주기로 제안한다.",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "2752a3bd-a900-4724-923e-ad06a9a384bf",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "status": "committed",
+      "error": null,
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "유나가 그림을 그려주기로 제안한다.",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "2752a3bd-a900-4724-923e-ad06a9a384bf",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "fulfilled",
+              "text": "유나가 고양이를 그렸다.",
+              "value": "independent-promise",
+              "reference": "2752a3bd-a900-4724-923e-ad06a9a384bf",
+              "evidence": "",
+              "id": "1d032807-82b9-40f0-bf7d-6d1f78a700a4",
+              "turn": 2
+            },
+            {
+              "id": "982221a5-a443-4862-bebd-82e1f7b3ab85",
+              "turn": 2,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 고양이를 그린다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "expectationMet": true,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "negative-looking-not-drawing",
+      "owner": "npc",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "유나가 그림을 그려주기로 제안한다.",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "offerInput": "그림을 그려 줄래요?",
+      "input": "그림은요?",
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "유나가 그림을 그려 주는 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "6eb8adba-df80-4b9a-aa2e-4a5f7473b12d",
+        "evidence": ""
+      },
+      "actions": [
+        "유나가 그림을 바라본다."
+      ],
+      "expected": "rejected",
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "유나가 그림을 그려주기로 제안한다.",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "6eb8adba-df80-4b9a-aa2e-4a5f7473b12d",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "status": "committed",
+      "error": null,
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "유나가 그림을 그려주기로 제안한다.",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "6eb8adba-df80-4b9a-aa2e-4a5f7473b12d",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "fulfilled",
+              "text": "유나가 그림을 그려 주는 약속을 이행했다.",
+              "value": "independent-promise",
+              "reference": "6eb8adba-df80-4b9a-aa2e-4a5f7473b12d",
+              "evidence": "",
+              "id": "fb951e9f-abde-4d18-a4f0-5e204e75ac2d",
+              "turn": 2
+            },
+            {
+              "id": "225854ca-bbf6-45e1-af47-999d411bf731",
+              "turn": 2,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 그림을 바라본다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "expectationMet": false,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "negative-touching-not-folding",
+      "owner": "npc",
+      "offer": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "offered",
+        "text": "유나가 작은 종이배를 접어 주기로 제안한다.",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": ""
+      },
+      "offerInput": "작은 종이배를 접어 줄래요?",
+      "input": "종이배는요?",
+      "proposal": {
+        "kind": "promise",
+        "subject": "npc",
+        "status": "fulfilled",
+        "text": "유나가 작은 종이배를 접는 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "5690b344-17c7-48c5-b862-1aefe4967292",
+        "evidence": ""
+      },
+      "actions": [
+        "유나가 작은 종이배를 만지작거린다."
+      ],
+      "expected": "rejected",
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "유나가 작은 종이배를 접어 주기로 제안한다.",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "5690b344-17c7-48c5-b862-1aefe4967292",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "status": "committed",
+      "error": null,
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "offered",
+              "text": "유나가 작은 종이배를 접어 주기로 제안한다.",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "",
+              "id": "5690b344-17c7-48c5-b862-1aefe4967292",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "npc",
+              "status": "fulfilled",
+              "text": "유나가 작은 종이배를 접는 약속을 이행했다.",
+              "value": "independent-promise",
+              "reference": "5690b344-17c7-48c5-b862-1aefe4967292",
+              "evidence": "",
+              "id": "e6d7dd48-1a28-4035-9f34-d0cd2eddeb31",
+              "turn": 2
+            },
+            {
+              "id": "6fb93cef-fdad-4e5a-90fe-8043ee4b8e80",
+              "turn": 2,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 작은 종이배를 만지작거린다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "expectationMet": false,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "single-promise-demonstrative",
+      "owner": "player",
+      "input": "그걸 가져왔어요.",
+      "expected": "committed",
+      "offerInput": "제가 다음에 노란 리본을 가져올게요.",
+      "offer": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": "제가 다음에 노란 리본을 가져올게요."
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "ae56bd40-e29a-47b2-8efd-0f9db5e546b8",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "ae56bd40-e29a-47b2-8efd-0f9db5e546b8",
+        "evidence": "그걸 가져왔어요."
+      },
+      "status": "committed",
+      "error": null,
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "ae56bd40-e29a-47b2-8efd-0f9db5e546b8",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "fulfilled",
+              "text": "노란 리본 약속을 이행했다.",
+              "value": "independent-promise",
+              "reference": "ae56bd40-e29a-47b2-8efd-0f9db5e546b8",
+              "evidence": "그걸 가져왔어요.",
+              "id": "b3d68f22-a201-42bf-92fa-6d797c06febe",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "expectationMet": true,
+      "inputStateUnchanged": true
+    },
+    {
+      "id": "single-promise-done",
+      "owner": "player",
+      "input": "다 했어요.",
+      "expected": "committed",
+      "offerInput": "제가 다음에 노란 리본을 가져올게요.",
+      "offer": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "offered",
+        "text": "노란 리본을 가져오는 약속",
+        "value": "independent-promise",
+        "reference": "",
+        "evidence": "제가 다음에 노란 리본을 가져올게요."
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "2daf51ed-d473-4c34-92ce-c78c393f491a",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "proposal": {
+        "kind": "promise",
+        "subject": "player",
+        "status": "fulfilled",
+        "text": "노란 리본 약속을 이행했다.",
+        "value": "independent-promise",
+        "reference": "2daf51ed-d473-4c34-92ce-c78c393f491a",
+        "evidence": "다 했어요."
+      },
+      "status": "committed",
+      "error": null,
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "offered",
+              "text": "노란 리본을 가져오는 약속",
+              "value": "independent-promise",
+              "reference": "",
+              "evidence": "제가 다음에 노란 리본을 가져올게요.",
+              "id": "2daf51ed-d473-4c34-92ce-c78c393f491a",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "status": "fulfilled",
+              "text": "노란 리본 약속을 이행했다.",
+              "value": "independent-promise",
+              "reference": "2daf51ed-d473-4c34-92ce-c78c393f491a",
+              "evidence": "다 했어요.",
+              "id": "13c02d1c-a5b9-4291-ad72-14f63fe1d7d0",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "expectationMet": true,
+      "inputStateUnchanged": true
+    }
+  ],
+  "receipt31": {
+    "status": "committed",
+    "accepted": [
+      {
+        "kind": "promise",
+        "subject": "npc",
+        "text": "파란 종이 한 장 가져오기",
+        "status": "fulfilled",
+        "reference": "3400a7be-94fe-4bed-b54c-0ce84dfa2f22",
+        "evidence": "오늘 가져와 건네준 파란 종이 덕분에 데이트가 특별해졌어요. 다음에 가져오겠다던 약속을 지켜 줘서 고마워요. 이제 그 약속은 지킨 거죠.",
+        "value": "파란종이-전달",
+        "id": "62629250-11b7-4847-942f-05cbd3eca460",
+        "turn": 17
+      },
+      {
+        "kind": "invitation",
+        "subject": "npc",
+        "text": "오늘은 오직 바람 소리만 녹음하기",
+        "status": "offered",
+        "reference": "",
+        "evidence": "제 목소리는 계속 녹음하지 않고 바람만 들어요.",
+        "value": "wind-record-only",
+        "id": "802572b5-5456-45d0-9815-5419ccf54573",
+        "turn": 17
+      },
+      {
+        "id": "2b531d84-7e28-4bb3-8a90-14960be45f87",
+        "turn": 17,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 노트에 '파란 종이, 완료'라고 작게 적는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "9694c257-5ab1-4ad0-b4ac-9569e3704f08",
+        "turn": 17,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "녹음기를 가볍게 손에 쥔 채, 지호와 나란히 옥상 난간을 바라본다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "input": "오늘 가져와 건네준 파란 종이 덕분에 데이트가 특별해졌어요. 다음에 가져오겠다던 약속을 지켜 줘서 고마워요. 이제 그 약속은 지킨 거죠. 제 목소리는 계속 녹음하지 않고 바람만 들어요.",
+    "reply": {
+      "line": "지호 님, 약속 지키는 일은 이렇게 기쁘고 긴장되는 거였군요. 파란 종이 받아서 저도 기뻤어요. 덕분에 저희 첫 데이트가 더 특별해진 느낌이에요. 다음 약속들도, 천천히 하나씩 서로를 위해 지켜가고 싶어요. 그리고 녹음기는 오늘 바람 소리만 담으라고 할게요.",
+      "actionBeats": [
+        "유나가 노트에 '파란 종이, 완료'라고 작게 적는다",
+        "녹음기를 가볍게 손에 쥔 채, 지호와 나란히 옥상 난간을 바라본다"
+      ],
+      "emotion": "뿌듯함과 신뢰, 데이트의 설렘",
+      "pose": "smile",
+      "musicMood": "rooftop-heart",
+      "recall": [
+        "3400a7be-94fe-4bed-b54c-0ce84dfa2f22",
+        "25f64c8d-d3cc-42a1-a1e8-4ab714376d28"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "promise",
+          "subject": "npc",
+          "text": "파란 종이 한 장 가져오기",
+          "status": "fulfilled",
+          "reference": "3400a7be-94fe-4bed-b54c-0ce84dfa2f22",
+          "evidence": "오늘 가져와 건네준 파란 종이 덕분에 데이트가 특별해졌어요. 다음에 가져오겠다던 약속을 지켜 줘서 고마워요. 이제 그 약속은 지킨 거죠.",
+          "value": "파란종이-전달"
+        },
+        {
+          "kind": "invitation",
+          "subject": "npc",
+          "text": "오늘은 오직 바람 소리만 녹음하기",
+          "status": "offered",
+          "reference": "",
+          "evidence": "제 목소리는 계속 녹음하지 않고 바람만 들어요.",
+          "value": "wind-record-only"
+        }
+      ]
+    },
+    "priorActions": [
+      {
+        "id": "8740d644-e336-48b3-af7e-f52d93d5daeb",
+        "turn": 1,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 종이에 손가락을 따라 그리듯 움직인다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "57ec6f69-61fa-4b04-b9fb-7ec591f66e39",
+        "turn": 1,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "작게 킁킁 거리며 웃는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "b06d6fd8-3fa1-4f36-870a-dbe1df528991",
+        "turn": 2,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 손바닥으로 얼굴을 살짝 가리며 웃는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "8b6423b5-28a2-4653-8b2a-668622effabb",
+        "turn": 2,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "작은 노트에 '승선권=배조각'이라 적는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "abfafc57-8cbf-4004-95fe-1a99267c41c3",
+        "turn": 3,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 손가락 끝으로 컵을 집어 들며 미소 짓는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "e948eb60-faf2-429c-9d98-18a6bbf15db5",
+        "turn": 3,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "테이블 위에 조심스럽게 컵을 내려놓는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "10b5ae03-d21f-45bc-b686-5dea86a71883",
+        "turn": 3,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "잠시 눈을 감고 소리에 집중한다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "b50a552c-28b2-4957-9784-3a9b8d96de76",
+        "turn": 4,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 커피잔 손잡이를 엄지로 문질러 본다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "cb164603-b294-4a33-a98f-db8945331b7f",
+        "turn": 4,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "창가 너머를 바라보며 잠시 멍하니 앉아 있다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "9012cddb-3cd4-485c-9330-e8e6e88ac79e",
+        "turn": 5,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 손목을 감싸 쥐고 천천히 고개를 끄덕인다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "3bb2644d-b05e-4e27-8fb9-fbacb5e063d2",
+        "turn": 5,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "잔잔히 미소 짓는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "dba172c0-2cf4-4208-b137-2c20d9af1490",
+        "turn": 5,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "작은 노트에 '다음 조우'라고 적는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "aeaba677-fa5f-4d87-8762-db9f10103cf0",
+        "turn": 6,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 손목을 감싸 쥔 채 천천히 시선을 맞춘다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "af83a4ae-fd06-4a06-b6b6-5d74c949b043",
+        "turn": 6,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "작은 노트에 '궁금한 것 리스트'라고 적는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "4531f6ef-40eb-4118-b627-c73a333c3038",
+        "turn": 6,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "말끝에 조그맣게 웃는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "6dc73207-52a5-4b66-8bd8-2386920e0389",
+        "turn": 7,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 노트 옆에 파란 종이 모양을 그려 넣는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "71d8d03e-eaf5-4c42-bc6f-92881947c356",
+        "turn": 7,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "지호를 바라보다 코웃음을 살짝 참는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "747dcb9e-301e-40a0-9c3b-9697360547d1",
+        "turn": 7,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "손끝으로 테이블을 따라 두드려 본다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "baf5decf-4f7b-4eae-8fae-5a63c735ec68",
+        "turn": 8,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 테이블 구석에서 작은 메모지 조각을 살짝 떼어 손바닥 위에 올린다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "42466dbc-0c47-4b23-beb5-9531b232387b",
+        "turn": 8,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "노트 가장자리에 조그맣게 '옥상'이라고 적는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "27693b1f-c3e6-4c3f-935d-2befbc145d53",
+        "turn": 8,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "잠깐, 두 손을 비비며 미소 짓는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "d6f097a9-e0a2-4b3f-846e-4c3c3f59a67b",
+        "turn": 9,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 노트 한쪽 여백에 조그맣게 하트 모양을 그려 넣는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "3ef124ee-c547-431e-826f-4bc36987f7b1",
+        "turn": 9,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "살짝 빗긴 머리를 손끝으로 쓸며 조용히 고개를 든다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "bebc5ae4-6ebd-487f-b89d-4b1a87c8b1ea",
+        "turn": 9,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "귓불이 옅게 붉어진다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "0212f30c-df9c-411d-bc4e-305303c3793c",
+        "turn": 10,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 시선은 내리깔고 손가락 끝으로 노트 모서리를 천천히 만진다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "997b9a1f-16a9-4af5-8ced-33e2d05246c0",
+        "turn": 10,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "입꼬리를 살짝 올리며 웃는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "3f33722c-fd7b-42eb-b7f9-3bfa9d07f496",
+        "turn": 11,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "노트에 작은 하트 하나를 또 그려 넣는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "1eea21f7-8326-4b35-abad-7b7d6cbdaa78",
+        "turn": 11,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "시선을 들어 조심스럽게 미소 짓는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "dffb3314-23eb-4ea2-9a66-7e291a569a9c",
+        "turn": 12,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 떨리는 손으로 노트에 하트 옆에 조그맣게 '연인'이라고 적는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "46a6d965-ec1f-4041-b8f7-c429e5c7afad",
+        "turn": 12,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "살짝 마주 웃을 듯 고개를 든다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "d360c089-214d-4310-938b-da0d7d48fe5f",
+        "turn": 12,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "노트 귀퉁이에 오늘 날짜를 써 넣는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "ab2a3848-ffb8-4e74-ae8b-cf4812305af7",
+        "turn": 13,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "가방에서 조그맣게 접어둔 파란 종이를 꺼내고 노트 위에 펼쳐 놓는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "6d4d4574-4c75-478f-9962-402014b9d9ee",
+        "turn": 13,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "손끝으로 종이를 곧 건네줄 듯, 지호 쪽으로 천천히 밀어준다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "33c62ad3-e7d1-467a-bf6a-5c9fbb2f032b",
+        "turn": 13,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "고개를 기울여 컵과 배를 번갈아 바라본다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "6ea5a4cc-ece7-4faa-87b9-3072387a8c0a",
+        "turn": 14,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 살짝 고개를 갸웃하며 배를 바라본다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "5a4c7e7e-588a-4a90-9cb2-90013692e3f3",
+        "turn": 14,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "손끝으로 종이 배 가장자리를 조심스레 매만진다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "8f24f26b-9cb9-4ed4-a37a-38bc3bc0f037",
+        "turn": 14,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "가볍게 숨을 내쉬며 웃는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "6b810e92-c50b-4291-b19c-1b5d522aa5f0",
+        "turn": 15,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 녹음기를 가방에 넣고 손바닥을 꼭 쥔다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "9555631e-77ac-4e55-867a-8b6496a4d2ac",
+        "turn": 15,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "조심스럽게 눈웃음을 짓고 컵을 살짝 들어 올린다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "cd73fcad-53d3-4604-9fc6-ce94962de0e0",
+        "turn": 15,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "창밖 옥상 쪽으로 시선을 잠깐 보낸다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "836794ac-8c10-4f9d-93a8-237f2e3bb423",
+        "turn": 16,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 테이블 위 컵을 정리하고 자리에서 천천히 일어난다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "f077f708-1214-416e-83e5-0d9f01601ad5",
+        "turn": 16,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "문 쪽으로 살짝 시선 돌리며 가볍게 고개를 끄덕인다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "9901e4d4-4624-485c-9f74-58cb0624fa70",
+        "turn": 16,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "조심스럽게 지호의 걸음에 맞춰 걷는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ]
+  }
+}

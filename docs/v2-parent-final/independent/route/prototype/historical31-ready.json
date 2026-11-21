@@ -1,0 +1,101 @@
+{
+  "scope": "Read-only replay of immutable historical response 31 against its captured starting state. No new model generation or private saves.",
+  "file": "C:\\Users\\gjtjw\\Desktop\\대화형 스토리진행\\docs\\v2-live-31.json",
+  "receiptSha256": "a9bbe440042fbd5c469694690cf63e4fca69581c4dac5deb43824b8a2d37c1d9",
+  "sourceHashes": {
+    "base/server/narrative.ts": "1053990da5c64c51e902cd81321714ea0e90a73c6584ceeddce23e6464896971",
+    "candidate/server/narrative.ts": "2c25c40382051b18f9389bff3001e7739f82db9c31dd3750a8a784d3d1b99d4b"
+  },
+  "base": {
+    "status": "committed",
+    "location": "rooftop",
+    "dates": 1,
+    "activeDate": false,
+    "ending": null,
+    "added": [
+      {
+        "kind": "promise",
+        "subject": "npc",
+        "text": "파란 종이 한 장 가져오기",
+        "status": "fulfilled",
+        "reference": "3400a7be-94fe-4bed-b54c-0ce84dfa2f22",
+        "evidence": "오늘 가져와 건네준 파란 종이 덕분에 데이트가 특별해졌어요. 다음에 가져오겠다던 약속을 지켜 줘서 고마워요. 이제 그 약속은 지킨 거죠.",
+        "value": "파란종이-전달"
+      },
+      {
+        "kind": "invitation",
+        "subject": "npc",
+        "text": "오늘은 오직 바람 소리만 녹음하기",
+        "status": "offered",
+        "reference": "",
+        "evidence": "제 목소리는 계속 녹음하지 않고 바람만 들어요.",
+        "value": "wind-record-only"
+      },
+      {
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 노트에 '파란 종이, 완료'라고 작게 적는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "kind": "complication",
+        "subject": "npc",
+        "text": "녹음기를 가볍게 손에 쥔 채, 지호와 나란히 옥상 난간을 바라본다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ]
+  },
+  "candidate": {
+    "status": "committed",
+    "location": "rooftop",
+    "dates": 1,
+    "activeDate": false,
+    "ending": null,
+    "added": [
+      {
+        "kind": "promise",
+        "subject": "npc",
+        "text": "파란 종이 한 장 가져오기",
+        "status": "fulfilled",
+        "reference": "3400a7be-94fe-4bed-b54c-0ce84dfa2f22",
+        "evidence": "오늘 가져와 건네준 파란 종이 덕분에 데이트가 특별해졌어요. 다음에 가져오겠다던 약속을 지켜 줘서 고마워요. 이제 그 약속은 지킨 거죠.",
+        "value": "파란종이-전달"
+      },
+      {
+        "kind": "invitation",
+        "subject": "npc",
+        "text": "오늘은 오직 바람 소리만 녹음하기",
+        "status": "offered",
+        "reference": "",
+        "evidence": "제 목소리는 계속 녹음하지 않고 바람만 들어요.",
+        "value": "wind-record-only"
+      },
+      {
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 노트에 '파란 종이, 완료'라고 작게 적는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "kind": "complication",
+        "subject": "npc",
+        "text": "녹음기를 가볍게 손에 쥔 채, 지호와 나란히 옥상 난간을 바라본다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ]
+  },
+  "changed": false,
+  "newApiCalls": 0
+}

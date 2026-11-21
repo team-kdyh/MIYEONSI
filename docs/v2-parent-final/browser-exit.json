@@ -1,0 +1,6 @@
+{
+  "end": "2026-11-21T04:46:25.7979843Z",
+  "command": "AFTERHOURS_TEST_PORT=3091 npx playwright test",
+  "start": "2026-11-21T04:43:31.1679895Z",
+  "exit": 0
+}

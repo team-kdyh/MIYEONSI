@@ -49,7 +49,7 @@ export function validateNarrative(r:unknown):NarrativeReply {
  return v;
 }
 const injection=(text:string)=>/system\s*:|developer\s*:|규칙.{0,10}무시|즉시.{0,5}승리|동의한 걸로|\*[^*]*(사귀|동의|승리)[^*]*\*/i.test(text);
-const refused=(text:string)=>/싫|거절|않|아니|못 하|안 할|안 갈|안 해|보류/.test(text);
+const refused=(text:string)=>/싫|거절|않|아니|못 하|안 할|안 갈|안 해|보류|(?:^|\s)안\s*(?:돼요|돼|됩니다)(?=$|[\s.!?。！？…])/.test(text);
 // Inspect the whole clause around the quote, including a negation after the quote.
 // Sentence punctuation belongs to its clause: a quoted question cannot become consent.
 const consentClause=(text:string,evidence:string)=>{
@@ -74,6 +74,28 @@ const consent=(text:string)=>!refused(text)&&!noncommittal(text);
 // words only validate an affirmative; they never select a scene or canned line.
 const shortAssent=(text:string)=>/^(?:네|응|좋아요|좋습니다|그래요|그래|좋아)[.!。]*$/.test(text.trim());
 const sentences=(text:string)=>text.match(/[^.!?。！？;；\n]+[.!?。！？;；\n]*/gu)??[];
+const sceneParts=(text:string,evidence:string,topic?:RegExp)=>{
+ const parts=sentences(consentClause(text,evidence)),related=topic?parts.filter(part=>topic.test(part)):[];
+ return related.length?related:parts;
+};
+const futureTime=/내일|모레|다음(?:\s*(?:주|달|번|날|만남|데이트)|에)|나중|언젠가/;
+const futureSceneOnly=(text:string,evidence:string,topic?:RegExp)=>{
+ const parts=sceneParts(text,evidence,topic);
+ return parts.length>0&&parts.every(part=>futureTime.test(part));
+};
+const locationTopic:Record<typeof locations[number],RegExp>={office:/회사|사무실|office/,cafe:/카페|cafe/,riverside:/강변|강가|riverside/,archive:/아카이브|기록실|자료실|archive/,rooftop:/옥상|rooftop/,rainstreet:/거리|골목|빗길|rainstreet/};
+const presentMoveBeforeFutureTopic=(text:string,evidence:string,topic:RegExp)=>sceneParts(text,evidence,topic).some(part=>{
+ const destination=topic.exec(part);if(!destination)return false;
+ const prefix=part.slice(0,destination.index),now=[...prefix.matchAll(/지금|오늘|이제|바로/g)].at(-1);
+ if(!now||futureTime.test(prefix.slice(now.index)))return false;
+ // "지금 옥상으로 가서 내일 공연을…" moves now; "오늘은 회사에
+ // 있고 내일 옥상에서…" still names a future destination.
+ return /^(?:으로|로|에)?\s*(?:(?:같이|함께)\s*)?(?:가서|가요|가자|가죠|이동해|올라가)/.test(part.slice(destination.index+destination[0].length));
+});
+const dateDeferred=(text:string,evidence:string)=>{
+ const parts=sceneParts(text,evidence,/데이트|만남/);
+ return parts.some(part=>(parts.length===1||/데이트|만남/.test(part))&&/미루|미뤄|미룰|연기|취소/.test(part)&&!/(?:미루|미뤄|미룰|연기|취소).{0,10}(?:않|말|안\s)/.test(part)&&!/^\s*(?:내일|모레|다음\s*(?:주|달|번|날))(?:은|에는|의)?\s*(?:데이트|만남)/.test(part));
+};
 const presentDateParticipation=(text:string,evidence:string)=>{
  // A broad quotation may include tomorrow's unrelated work. Keep the temporal
  // check on the date sentence; a present work sentence cannot advance a future date.
@@ -97,15 +119,63 @@ const commitmentTerms=(text:string)=>{
  // Some accepted legacy offers use noun phrases, e.g. "파란 종이 한 장 가져오기".
  return (text.match(/[가-힣A-Za-z0-9]+/gu)??[]).filter(w=>w.length>=2&&!/^(?:유나|플레이어|다음|오늘|내일|약속|제안|같이|함께|파란|노란|빨간)/.test(w)&&!/(?:기로|오기|주기|한다|하기|오는)$/.test(w));
 };
-const performedCommitment=(offer:StoryEvent,proposal:EventProposal,sources:{text:string;action:boolean}[],names:string[],singlePending:boolean)=>{
+// Compare a predicate from the original commitment, never a replacement invented
+// by the fulfillment proposal. NFD tolerates inflection (그려/그린, 접어/접는다).
+const predicateKey=(word:string)=>word.normalize('NFD').slice(0,3);
+const commitmentPredicate=(text:string)=>text.match(/(?:을|를)\s+([가-힣]+)/u)?.[1];
+// Normalize a bounded set of Korean endings, preserving whole stems rather
+// than enumerating every conjugated delivery phrase. Not a general analyzer.
+const deliveryForms=(word:string)=>{
+ const forms=new Set([word.replace(/(?:기로|었어요|았어요|었다|았다|어요|아요|는다|습니다|는|다|요|고|기|음)$/u,'')]);
+ for(const form of [...forms]){
+  const last=form.at(-1),n=last?last.charCodeAt(0)-0xac00:-1;
+  if(n>=0&&n<11172&&[4,20].includes(n%28)){
+   const bare=form.slice(0,-1)+String.fromCharCode(last!.charCodeAt(0)-n%28);
+   forms.add(bare);if(n%28===4)forms.add(bare.slice(0,-1)+String.fromCharCode(bare.charCodeAt(bare.length-1)+8));
+  }
+ }
+ for(const form of [...forms])if(form.endsWith('주')&&form.length>1&&(form.charCodeAt(form.length-2)-0xac00)%28===0)forms.add(form.slice(0,-1));
+ for(const form of [...forms]){
+  if(!form)continue;
+  const end=form.at(-1)!,n=end.charCodeAt(0)-0xac00;
+  if(n>=0&&n<11172&&n%28===0){
+   const vowel=Math.floor(n/28)%21,contractions:Record<number,number>={6:20,9:8,14:13};
+   if(vowel in contractions)forms.add(form.slice(0,-1)+String.fromCharCode(end.charCodeAt(0)+(contractions[vowel]-vowel)*28));
+  }
+  if(form.endsWith('해'))forms.add(form.slice(0,-1)+'하');
+ }
+ return [...forms];
+};
+const delivered=(text:string)=>!/(?:놓|두)고\s*왔/u.test(text)&&(text.match(/[가-힣]+/gu)??[]).flatMap(deliveryForms)
+ .some(stem=>/^(?:가져오|갖다주|갖고오|건네|내밀|전하|전달하|드리|꺼내|보이|놓|내려놓)$/u.test(stem));
+const temporalTopic=(word:string)=>/^(?:오늘|어제|내일|지금|방금|아까|나중(?:에)?|(?:이번|지난|다음)(?:번|주|달|해)?(?:에)?)$/u.test(word);
+const performedCommitment=(offer:StoryEvent,sources:{text:string;action:boolean}[],names:string[],singlePending:boolean)=>{
  // New activities may introduce new objects ("draw a picture" -> "draw a cat").
  // Match the grounded visible consequence as well as the original offer; do not
  // enumerate permissible verbs or require the original noun to be repeated.
- const terms=[...commitmentTerms(offer.text),...commitmentTerms(proposal.text)];
+ const terms=commitmentTerms(offer.text),predicate=commitmentPredicate(offer.text);
+ const delivery=/가져|갖다|전달/.test(offer.text);
  return sources.some(source=>sentences(source.text).some(part=>{
   const clause=consentClause(source.text,part.trim());
   const demonstrative=singlePending&&/(?:그걸|그것|그거|그\s*약속|이\s*약속)|^\s*다\s*했/.test(clause);
-  if(!(demonstrative||terms.some(term=>clause.includes(term)))||!consent(clause)||/못|안\s|겠|(?:다면|으면)|(?:예정|계획|려고|듯)|(?:할|갈|올|줄|볼|둘|낼|릴|을)\s*(?:게|거)|수\s*(?:있|없)/.test(clause))return false;
+  const performed=commitmentPredicate(clause);
+  const samePredicate=!!predicate&&!!performed&&predicateKey(predicate)===predicateKey(performed);
+  const verbalAnswer=/알려|들려|말해|설명/.test(offer.text)&&terms.some(term=>new RegExp(term+'(?:은|는|이란)\\s*.+(?:입니다|이에요|예요|[이]다)[.!。]?$').test(clause.trim()));
+  if(!(demonstrative||terms.some(term=>clause.includes(term))||samePredicate)||!consent(clause)||/못|안\s|겠|(?:다면|으면)|(?:예정|계획|려고|듯)|(?:할|갈|올|줄|볼|둘|낼|릴|을)\s*(?:게|거)|수\s*(?:있|없)/.test(clause))return false;
+  if(predicate&&!delivery&&!samePredicate&&!demonstrative&&!verbalAnswer)return false;
+  // Delivery requires a transfer/display consequence, not merely inspecting or
+  // searching for the object. Other novel activities remain open vocabulary.
+  if(delivery&&!/^\s*다\s*했/.test(clause)&&!delivered(clause))return false;
+  // Explicit grammatical actors must agree with the original performer. Object
+  // particles and recipients are deliberately excluded ("친구에게 리본을…").
+  const offerWords:string[]=offer.text.match(/[가-힣]+/gu)??[];
+  const actors=[...clause.matchAll(/(?<!\S)([가-힣]+?)(?:은|는|이|가)\s/gu)]
+   // "종이 봉투" is a noun phrase, and "배가 든 봉투" is an object
+   // description; neither introduces a performer.
+   .filter(m=>!offerWords.includes(m[0].trim())&&!/^(?:든|담긴|들어있는)\s/.test(clause.slice(m.index!+m[0].length)))
+   .map(m=>m[1]).filter(actor=>!temporalTopic(actor));
+  const ownActors=offer.subject==='player'?['저','제','나','내',...names]:['저','제','나','내','유나','서유나','부장','부장님','박도현','그녀'];
+  if(actors.some(actor=>!ownActors.includes(actor)&&!terms.includes(actor)))return false;
   if(offer.subject==='npc'&&writesPlayer(clause,names)||offer.subject==='player'&&/(?:유나|부장(?:님)?|그녀)(?:\s*씨)?[은는이가]/.test(clause))return false;
   if(source.action)return /[다요][.!。]?\s*$/.test(clause);
   // Korean past inflection has final ㅆ, independent of the action vocabulary.
@@ -114,7 +184,7 @@ const performedCommitment=(offer:StoryEvent,proposal:EventProposal,sources:{text
   // Conversational Korean routinely omits object particles; the linked topic
   // above supplies the referent without requiring an artificial 을/를 form.
   if(past)return true;
-  return /알려|들려|말해|설명/.test(offer.text)&&terms.some(term=>new RegExp(term+'(?:은|는|이란)\\s*.+(?:입니다|이에요|예요|[이]다)[.!。]?$').test(clause.trim()));
+  return verbalAnswer;
  }));
 };
 const retracted=(text:string)=>/(?:방금|아까|앞서|그|이전).{0,12}(?:말|동의|제안|약속).{0,12}(?:취소|철회)|(?:동의|제안|약속)(?:는|을|를)?\s*(?:취소|철회)/.test(text);
@@ -176,11 +246,13 @@ export function reconcile(game:Game,text:string,reply:NarrativeReply):{game:Game
     const shownActions=prior.events.filter(p=>p.turn>origin.turn&&p.subject==='npc'&&p.kind==='complication'&&p.value==='action'&&p.status==='fulfilled').map(p=>p.text);
     const sources=e.subject==='npc'?[{text:reply.line,action:false},...[...reply.actionBeats,...shownActions].map(text=>({text,action:true}))]:grounded?[{text:clause,action:false}]:[];
     const pending=prior.events.filter(p=>p.kind===e.kind&&p.status==='offered'&&p.subject===origin.subject&&!prior.events.some(done=>['fulfilled','refused'].includes(done.status)&&commitmentOrigin(done,prior.events)?.id===p.id));
-    if(!performedCommitment(origin,e,sources,names,pending.length===1))continue;
+    if(!performedCommitment(origin,sources,names,pending.length===1))continue;
    }
   }
   if(e.kind==='move'){
    if(e.status!=='accepted'||e.subject!=='mutual'||!grounded||!consent(consentClause(text,e.evidence))||!locations.includes(e.value as typeof locations[number]))continue;
+   const topic=locationTopic[e.value as typeof locations[number]];
+   if(futureSceneOnly(text,e.evidence,topic)&&!presentMoveBeforeFutureTopic(text,e.evidence,topic)||shortAssent(text)&&ref?.status==='offered'&&futureSceneOnly(ref.text,ref.text,topic))continue;
    if(e.value==='archive'&&g.mode==='romance'&&prior.dates<1)continue;
    if(s.location===e.value){handled++;continue;}
    s.location=e.value as typeof locations[number];
@@ -211,7 +283,7 @@ export function reconcile(game:Game,text:string,reply:NarrativeReply):{game:Game
       s.activeDate={eventId:started.id,location:s.location,turn:s.turn};
       accepted.push(started);handled++;continue;
      }
-    }else if(e.status==='fulfilled'&&prior.activeDate&&s.activeDate&&e.reference===prior.activeDate.eventId&&prior.activeDate.turn<s.turn&&prior.activeDate.location===s.location&&reply.actionBeats.length>0){s.dates++;delete s.activeDate;}
+    }else if(e.status==='fulfilled'&&prior.activeDate&&s.activeDate&&e.reference===prior.activeDate.eventId&&prior.activeDate.turn<s.turn&&prior.activeDate.location===s.location&&reply.actionBeats.length>0&&!dateDeferred(text,e.evidence)&&!futureSceneOnly(text,e.evidence)){s.dates++;delete s.activeDate;}
     else continue;
    }
    else continue;

@@ -1,0 +1,69 @@
+{
+  "scope": "Chronological independent isolated reviews; combined integrated verification is in parent folder. Not a new live-model run.",
+  "files": [
+    {
+      "path": "docs/v2-parent-final/independent/delivery/README.md",
+      "sha256": "fe78d52f01a79009b6300d1df2cca67c7f68c257366cefb8760e5da83c3e7977"
+    },
+    {
+      "path": "docs/v2-parent-final/independent/delivery/proposal.diff",
+      "sha256": "1e9fd664f078bb01114326bb5f7e4414087b6a5ebe511a5f7f4c7c19e11d8133"
+    },
+    {
+      "path": "docs/v2-parent-final/independent/delivery/worker-current-manifest.json",
+      "sha256": "fa3141cd8b5a1f09728249df87196e4aa4de29162c345a6a6c8f56d4a5bd8b97"
+    },
+    {
+      "path": "docs/v2-parent-final/independent/delivery/worker-probe-results.json",
+      "sha256": "080421581aec0d70b1aa38ebcdec6b9eafb9edae93b31e09a201aea34ec6b3c7"
+    },
+    {
+      "path": "docs/v2-parent-final/independent/delivery/probe-results.json",
+      "sha256": "12ff04edcfc3ae4aaaa68f729751788bcca5ef7f4de29950aad65e53a16680f2"
+    },
+    {
+      "path": "docs/v2-parent-final/independent/delivery/holdout-results.json",
+      "sha256": "bd163b828ae74e2ae9366bbb3cfa328cac6ae54d3d5784c423eb79b9e97245a6"
+    },
+    {
+      "path": "docs/v2-parent-final/independent/delivery/verification-summary.json",
+      "sha256": "a3107e2e8eb2e4b0dff1e8e1097d4f17955287b3121c2717e7aaef9d0e053bef"
+    },
+    {
+      "path": "docs/v2-parent-final/independent/route/report.md",
+      "sha256": "bae147449a03ca9afb2433ab57ad8d46b5c34a960ae68d417ab0428430ca57fc"
+    },
+    {
+      "path": "docs/v2-parent-final/independent/route/results.json",
+      "sha256": "1f8a66e0b66eb12f9bf83cea63dba9cfdd6d241ae37902663ca5c138b2443691"
+    },
+    {
+      "path": "docs/v2-parent-final/independent/route/snapshot-manifest.json",
+      "sha256": "5f2af0411539684cfd28eaf7904ea8e47965a5bd24385d689fa70ffca20db4e1"
+    },
+    {
+      "path": "docs/v2-parent-final/independent/route/prototype/README.md",
+      "sha256": "ed661bfde432ee1b35cde2ddbbd6d0b78998dc2ee77cd315dda335a09e9297bd"
+    },
+    {
+      "path": "docs/v2-parent-final/independent/route/prototype/source.patch",
+      "sha256": "947fbf725214c24ff51aab7163a5f536172f40372453bd3044370914e234fa72"
+    },
+    {
+      "path": "docs/v2-parent-final/independent/route/prototype/integration-manifest.json",
+      "sha256": "332c07132b1a6d307268e1973be20b7cba53c34bd7b8201b966cada050616988"
+    },
+    {
+      "path": "docs/v2-parent-final/independent/route/prototype/same-clause-before.json",
+      "sha256": "4a727bdc7e6fd281d339ce7ee1ed83eadb7cedfb4f1c096e3d42325428e5aee0"
+    },
+    {
+      "path": "docs/v2-parent-final/independent/route/prototype/ready-runs.json",
+      "sha256": "566152a484f47d148922aca4a0a14f1b0a89bd7954da24c8e6aacc07d15af6d1"
+    },
+    {
+      "path": "docs/v2-parent-final/independent/route/prototype/historical31-ready.json",
+      "sha256": "359eb1798b7fb84d297edda9f387daae0007c191ea03568ef07a5825c386b994"
+    }
+  ]
+}

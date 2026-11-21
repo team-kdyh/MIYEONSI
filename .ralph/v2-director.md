@@ -1,5 +1,9 @@
 # AFTER HOURS v2 — direction and delivery contract
 
+## Latest original-root checkpoint
+
+The parent has integrated the frozen sequential generation1 patch and independent natural-delivery/route fixes into the original root. Read `docs/v2-parent-final/review.md` first:302 unit tests,25 browser tests,5/5 old promise diagnostics passed on narrative SHA `fcb42511a5ad93a7be77dc4e436a1bb3a12d770ee9b958c9c9bece3441d9e673`. This corrects the old four-defect checkpoint below without deleting it. Separate active Ralph worktree changes must be compared before integration. No new paid calls or approval were received;12+32 consumed and24 proposed remain unchanged. Do not equate this free checkpoint with fresh model quality or release approval.
+
 ## Parent continuation after the first Ralph loop
 
 The first real loop `job_18106ce21343` ended after generation2 with `grade_regressing`, formal3/7 and QA0.58/REVISE. Its original result is preserved in `docs/v2-ralph-terminal.json`; do not change or erase it. The validated generation2 contract is preserved verbatim in `verification/v2-generation2.seed.json`. No acceptance criterion has been lowered.

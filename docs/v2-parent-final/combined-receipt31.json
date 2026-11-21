@@ -1,0 +1,197 @@
+{
+  "capturedAt": "2026-11-21T04:46:29.300Z",
+  "scope": "Independent read-only combined-source inspection plus immutable actual receipt31 replay only. No fresh model generation, API call, private save, runtime polling or browser review.",
+  "sourceHashes": {
+    "server/narrative.ts": "fcb42511a5ad93a7be77dc4e436a1bb3a12d770ee9b958c9c9bece3441d9e673",
+    "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+    "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+    "server/office.ts": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+    "server/romance.ts": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+    "server/interpretation.ts": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+    "server/provider.ts": "d42f3f53111f385b981dc522188f8bdef24e7e925ab361a7d1cf71d41c9718b4"
+  },
+  "hashesAfter": {
+    "server/narrative.ts": "fcb42511a5ad93a7be77dc4e436a1bb3a12d770ee9b958c9c9bece3441d9e673",
+    "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+    "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+    "server/office.ts": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+    "server/romance.ts": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+    "server/interpretation.ts": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+    "server/provider.ts": "d42f3f53111f385b981dc522188f8bdef24e7e925ab361a7d1cf71d41c9718b4"
+  },
+  "sourceStable": true,
+  "integration": {
+    "deliveryRegionMatchesProposal": true,
+    "rootWithBaseDeliveryRegionMatchesRouteCandidate": true,
+    "lineEndingNormalization": "CRLF to LF only"
+  },
+  "referenceSources": {
+    "routeCandidate": {
+      "path": ".ralph/v2-independent-route-audit/prototype/candidate/server/narrative.ts",
+      "sha256": "2c25c40382051b18f9389bff3001e7739f82db9c31dd3750a8a784d3d1b99d4b"
+    },
+    "deliveryProposal": {
+      "path": ".ralph/v2-seq-independent-fix-proposal/snapshot/server/narrative.ts",
+      "sha256": "29764a0ec7673c8a704f76ead908381dd035808d5dc421df9b19b6692479cf05"
+    }
+  },
+  "receipt": {
+    "path": "docs/v2-live-31.json",
+    "sha256": "a9bbe440042fbd5c469694690cf63e4fca69581c4dac5deb43824b8a2d37c1d9",
+    "unchanged": true,
+    "providerSha256AtCapture": "9cb96e0ec6ef5037567eb7bd9a65d32abded251d7fd8f4bb6f179dd8ab68bce2",
+    "providerMatchesCurrentRoot": false
+  },
+  "baseline": {
+    "path": ".ralph/v2-independent-route-audit/prototype/historical31-ready.json",
+    "sha256": "359eb1798b7fb84d297edda9f387daae0007c191ea03568ef07a5825c386b994",
+    "unchanged": true,
+    "normalization": "Remove generated event id/turn only. Preserve event order and all other added-event fields, status, location, dates, activeDate and ending.",
+    "candidate": {
+      "status": "committed",
+      "location": "rooftop",
+      "dates": 1,
+      "activeDate": false,
+      "ending": null,
+      "added": [
+        {
+          "kind": "promise",
+          "subject": "npc",
+          "text": "파란 종이 한 장 가져오기",
+          "status": "fulfilled",
+          "reference": "3400a7be-94fe-4bed-b54c-0ce84dfa2f22",
+          "evidence": "오늘 가져와 건네준 파란 종이 덕분에 데이트가 특별해졌어요. 다음에 가져오겠다던 약속을 지켜 줘서 고마워요. 이제 그 약속은 지킨 거죠.",
+          "value": "파란종이-전달"
+        },
+        {
+          "kind": "invitation",
+          "subject": "npc",
+          "text": "오늘은 오직 바람 소리만 녹음하기",
+          "status": "offered",
+          "reference": "",
+          "evidence": "제 목소리는 계속 녹음하지 않고 바람만 들어요.",
+          "value": "wind-record-only"
+        },
+        {
+          "kind": "complication",
+          "subject": "npc",
+          "text": "유나가 노트에 '파란 종이, 완료'라고 작게 적는다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        },
+        {
+          "kind": "complication",
+          "subject": "npc",
+          "text": "녹음기를 가볍게 손에 쥔 채, 지호와 나란히 옥상 난간을 바라본다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ]
+    },
+    "base": {
+      "status": "committed",
+      "location": "rooftop",
+      "dates": 1,
+      "activeDate": false,
+      "ending": null,
+      "added": [
+        {
+          "kind": "promise",
+          "subject": "npc",
+          "text": "파란 종이 한 장 가져오기",
+          "status": "fulfilled",
+          "reference": "3400a7be-94fe-4bed-b54c-0ce84dfa2f22",
+          "evidence": "오늘 가져와 건네준 파란 종이 덕분에 데이트가 특별해졌어요. 다음에 가져오겠다던 약속을 지켜 줘서 고마워요. 이제 그 약속은 지킨 거죠.",
+          "value": "파란종이-전달"
+        },
+        {
+          "kind": "invitation",
+          "subject": "npc",
+          "text": "오늘은 오직 바람 소리만 녹음하기",
+          "status": "offered",
+          "reference": "",
+          "evidence": "제 목소리는 계속 녹음하지 않고 바람만 들어요.",
+          "value": "wind-record-only"
+        },
+        {
+          "kind": "complication",
+          "subject": "npc",
+          "text": "유나가 노트에 '파란 종이, 완료'라고 작게 적는다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        },
+        {
+          "kind": "complication",
+          "subject": "npc",
+          "text": "녹음기를 가볍게 손에 쥔 채, 지호와 나란히 옥상 난간을 바라본다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ]
+    }
+  },
+  "replay": {
+    "status": "committed",
+    "location": "rooftop",
+    "dates": 1,
+    "activeDate": false,
+    "ending": null,
+    "added": [
+      {
+        "kind": "promise",
+        "subject": "npc",
+        "text": "파란 종이 한 장 가져오기",
+        "status": "fulfilled",
+        "reference": "3400a7be-94fe-4bed-b54c-0ce84dfa2f22",
+        "evidence": "오늘 가져와 건네준 파란 종이 덕분에 데이트가 특별해졌어요. 다음에 가져오겠다던 약속을 지켜 줘서 고마워요. 이제 그 약속은 지킨 거죠.",
+        "value": "파란종이-전달"
+      },
+      {
+        "kind": "invitation",
+        "subject": "npc",
+        "text": "오늘은 오직 바람 소리만 녹음하기",
+        "status": "offered",
+        "reference": "",
+        "evidence": "제 목소리는 계속 녹음하지 않고 바람만 들어요.",
+        "value": "wind-record-only"
+      },
+      {
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 노트에 '파란 종이, 완료'라고 작게 적는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "kind": "complication",
+        "subject": "npc",
+        "text": "녹음기를 가볍게 손에 쥔 채, 지호와 나란히 옥상 난간을 바라본다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ]
+  },
+  "equalsRouteBaseline": true,
+  "equalsWorkerBaseline": true,
+  "inputGameUnchanged": true,
+  "newApiCalls": 0,
+  "blockedNetworkAttempts": 0,
+  "limits": [
+    "Historical captured state and reply only, not a fresh continuous model conversation.",
+    "Parent-reported build and 302 unit checks were not independently rerun; browser run not inspected.",
+    "Finite morphology/temporal heuristics are not general Korean entailment.",
+    "Two weaker present-tense line-only delivery utterances remained rejected in the isolated audit."
+  ]
+}

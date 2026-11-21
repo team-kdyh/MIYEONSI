@@ -1,0 +1,49 @@
+{
+  "capturedAt": "2026-11-21T04:33:23.8648372Z",
+  "source": "C:/Users/gjtjw/.ouroboros/worktrees/대화형 스토리진행/ralph-afterhours-v2-seq-7b46bae",
+  "scope": "Latest readonly worker snapshot; no active edits or runtime polling",
+  "files": [
+    {
+      "file": "server/narrative.ts",
+      "before": "1053990da5c64c51e902cd81321714ea0e90a73c6584ceeddce23e6464896971",
+      "copied": "1053990da5c64c51e902cd81321714ea0e90a73c6584ceeddce23e6464896971",
+      "after": "1053990da5c64c51e902cd81321714ea0e90a73c6584ceeddce23e6464896971",
+      "stable": true
+    },
+    {
+      "file": "server/game.ts",
+      "before": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "copied": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "after": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "stable": true
+    },
+    {
+      "file": "server/office.ts",
+      "before": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+      "copied": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+      "after": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+      "stable": true
+    },
+    {
+      "file": "server/romance.ts",
+      "before": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+      "copied": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+      "after": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+      "stable": true
+    },
+    {
+      "file": "server/interpretation.ts",
+      "before": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+      "copied": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+      "after": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+      "stable": true
+    },
+    {
+      "file": "server/dialogue.ts",
+      "before": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+      "copied": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+      "after": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+      "stable": true
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "createdAt": "2026-11-21T04:41:33.315Z",
+  "baseNarrativeSha256": "1053990da5c64c51e902cd81321714ea0e90a73c6584ceeddce23e6464896971",
+  "candidateNarrativeSha256": "2c25c40382051b18f9389bff3001e7739f82db9c31dd3750a8a784d3d1b99d4b",
+  "regressionSha256": "573cfec1a4e70074a532d62e0080dc65a3e55e57aea7b7b4888d715c451b6beb",
+  "appliedRegressionSha256": "f3c970fbfe7a701318ae68a57b927409004a2dab0ad69a8f603141d5c731279b",
+  "patchSha256": "947fbf725214c24ff51aab7163a5f536172f40372453bd3044370914e234fa72",
+  "files": [
+    "server/narrative.ts",
+    "server/narrative-route-agency.test.ts"
+  ],
+  "patchAppliedInOwnDisposableRepository": true,
+  "sourceByteIdenticalToCandidate": true,
+  "regressionTextIdentical": true,
+  "lineEndingNote": "With Windows core.autocrlf=true, the new test becomes CRLF; candidate test is LF. Production source bytes match exactly.",
+  "verification": {
+    "targeted": {
+      "base": "3/7",
+      "candidate": "7/7"
+    },
+    "regression": {
+      "base": "128/132, four new failures",
+      "candidate": "132/132"
+    },
+    "typecheckExitCode": 0,
+    "historical31": "base and candidate committed; normalized results unchanged"
+  },
+  "networkOrPaidCalls": 0,
+  "productionEdits": 0
+}

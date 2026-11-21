@@ -21,6 +21,6 @@ for(const c of cases){
  rows.push({...c,before,proposal,status,after,expectationMet:status===c.expected});
 }
 const sourceSha256=createHash('sha256').update(await readFile('server/narrative.ts')).digest('hex');
-await writeFile('docs/v2-parent-current/promise-edge-probe.json',JSON.stringify({scope:'Synthetic model proposals through normal start and pure reducer turns; no external model or production storage mutation',sourceSha256,rows},null,2));
+await writeFile(process.argv[2]??'docs/v2-parent-current/promise-edge-probe.json',JSON.stringify({scope:'Synthetic model proposals through normal start and pure reducer turns; no external model or production storage mutation',sourceSha256,rows},null,2));
 console.log(JSON.stringify({checks:rows.length,met:rows.filter(r=>r.expectationMet).length,knownMismatches:rows.filter(r=>!r.expectationMet).map(r=>r.id)}));
 if(rows.some(r=>!r.expectationMet))process.exitCode=1;

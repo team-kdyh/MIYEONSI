@@ -1,0 +1,3567 @@
+{
+  "createdAt": "2026-11-21T04:00:48.856951+00:00",
+  "source": "C:\\Users\\gjtjw\\.ouroboros\\worktrees\\대화형 스토리진행\\ralph-afterhours-v2-293c383da8",
+  "destination": "C:\\Users\\gjtjw\\Desktop\\대화형 스토리진행",
+  "head": "88e6fe3abb108a6a38880e435f830ebe05e16ea2",
+  "scope": "G2 implementation snapshot only; formal evaluation still runs against original worktree, later parent fixes separate. Private env/saves/ignored data never copied.",
+  "files": [
+    {
+      "path": ".env.example",
+      "sourceSha256": "df4aa8afc56ab21e55048590a123e967888d2fdc7178ab8a7b4e6513542148d3",
+      "size": 39,
+      "existed": true,
+      "beforeSha256": "095b651d9cbae9c176699204219fd0531b7c9858e105fb58c8ef7c5962e1ac27"
+    },
+    {
+      "path": "README.md",
+      "sourceSha256": "24c800a339d6854ceb307a3396650cce68b96150d73ba18525a77ce6e5269cbc",
+      "size": 7054,
+      "existed": true,
+      "beforeSha256": "30d5ad6ddb14083296e36256057a2b2804eea35dacb42e65b8232c359bb56867"
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-motion-attracted.png",
+      "sourceSha256": "3b73f71fd5c7f8233d33ca926e37cfdeb98be44117477b0c20a58680b16358a6",
+      "size": 1686393,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-motion-confessed.png",
+      "sourceSha256": "937456866dcc70f09b49478d908205c4aa1b11209b9fe1eed7973577bee89534",
+      "size": 1687363,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-motion-couple-accepted.png",
+      "sourceSha256": "50b66f09699c3bf48fd84d5b693ccee6639b7157cabb3f9d8221f0017b12d92d",
+      "size": 1688080,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-motion-couple-offered.png",
+      "sourceSha256": "5d27c742655ca841f5642ab08751ba68d3b9686e0d1ef732d213b9ce7250adb1",
+      "size": 1681649,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-motion-couple-refused.png",
+      "sourceSha256": "8981885c94b42612bee82e1ac279d43aed1f5134fd959dfd81f8f50adb1b1b2d",
+      "size": 1686140,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-motion-date-future-accepted.png",
+      "sourceSha256": "50b66f09699c3bf48fd84d5b693ccee6639b7157cabb3f9d8221f0017b12d92d",
+      "size": 1688080,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-motion-date-offered.png",
+      "sourceSha256": "85776259b654bf7fa90ea708ea68f03a40af5a59623583170b675291ed6ca020",
+      "size": 1687540,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-motion-date-participated.png",
+      "sourceSha256": "7e88a85f32e997e6baa9d93321c0eb04c9b80838d271725c3629047a270641c3",
+      "size": 1688088,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-motion-date-refused.png",
+      "sourceSha256": "5d27c742655ca841f5642ab08751ba68d3b9686e0d1ef732d213b9ce7250adb1",
+      "size": 1681649,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-motion-date-started.png",
+      "sourceSha256": "93b871028d002c91014e3695cc134aa2f2afcb95ff7426dacdfefe81cc6fe0d5",
+      "size": 1682911,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-motion-familiar.png",
+      "sourceSha256": "93b871028d002c91014e3695cc134aa2f2afcb95ff7426dacdfefe81cc6fe0d5",
+      "size": 1682911,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-motion-move-accepted.png",
+      "sourceSha256": "50b66f09699c3bf48fd84d5b693ccee6639b7157cabb3f9d8221f0017b12d92d",
+      "size": 1688080,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-motion-move-offered.png",
+      "sourceSha256": "7c67859901d2744207ac50ba5d2b765d5618bdf884552f6022615fcadcea1dfb",
+      "size": 1723768,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-motion-move-refused.png",
+      "sourceSha256": "8203b72e7f314e9bd1ef77a6b7bb1adfb4d1512e57a9b74aa06445de7812cf26",
+      "size": 1716267,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-reduced-attracted.png",
+      "sourceSha256": "d934377a8760577d65790e0f959819684889b545bcf837fac591a1dc25c1a14d",
+      "size": 1683534,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-reduced-confessed.png",
+      "sourceSha256": "1937ddbea656b5e7de74da3b65f23a0ddd5870d6447ae2f7906f230ab22e232c",
+      "size": 1684526,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-reduced-couple-accepted.png",
+      "sourceSha256": "30a263f0fde6c70644bd9828d099b9aab8f2ed1f4e164606abd469736187f7eb",
+      "size": 1685224,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-reduced-couple-offered.png",
+      "sourceSha256": "00c1efaf4a9d9fb7685aaf47d7b0e09a8cce41f80c4a09709b38db566f52c0fa",
+      "size": 1678536,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-reduced-couple-refused.png",
+      "sourceSha256": "43ad0c23bfd104f0bee6f47f79279743a67da8a509d50fa94bcc1dd392d05ccb",
+      "size": 1683108,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-reduced-date-future-accepted.png",
+      "sourceSha256": "30a263f0fde6c70644bd9828d099b9aab8f2ed1f4e164606abd469736187f7eb",
+      "size": 1685224,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-reduced-date-offered.png",
+      "sourceSha256": "981fc0a9c89a39faf8e5582af5e91c6034981412af40869bd11c0bee1b679d37",
+      "size": 1684329,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-reduced-date-participated.png",
+      "sourceSha256": "c12dddfc8ab8e25479fb9c01ed3cd81d27c46fbb1f8180873bc6ab5624d9409a",
+      "size": 1685223,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-reduced-date-refused.png",
+      "sourceSha256": "00c1efaf4a9d9fb7685aaf47d7b0e09a8cce41f80c4a09709b38db566f52c0fa",
+      "size": 1678536,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-reduced-date-started.png",
+      "sourceSha256": "722390eeea93e2ea8e58f2a3e2331dfe2e6bac5bb3a1c02b9267381c7a54ada9",
+      "size": 1679742,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-reduced-familiar.png",
+      "sourceSha256": "722390eeea93e2ea8e58f2a3e2331dfe2e6bac5bb3a1c02b9267381c7a54ada9",
+      "size": 1679742,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-reduced-move-accepted.png",
+      "sourceSha256": "30a263f0fde6c70644bd9828d099b9aab8f2ed1f4e164606abd469736187f7eb",
+      "size": 1685224,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-reduced-move-offered.png",
+      "sourceSha256": "2b683d6d3e2cd5d76cad1562fa7bf082359ca1fa5954daf6a31a1e2a47463472",
+      "size": 1710896,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/1440-reduced-move-refused.png",
+      "sourceSha256": "3979eb9915ccdffbfa404ceb56db82edca2e6f8216e57d01e415d220766a0b5e",
+      "size": 1702675,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-motion-attracted.png",
+      "sourceSha256": "8185e0a8b12673402dfa7b5b36f04a2f1e9a542cbac2bb359a869c73e07794bb",
+      "size": 396948,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-motion-confessed.png",
+      "sourceSha256": "21bd00f3173ecf71b541bc8ccf90a5bfe019eeb342b4cbeb03f55bf05d89ddb9",
+      "size": 396838,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-motion-couple-accepted.png",
+      "sourceSha256": "5e6a83f613e63aecbb41ba581b948bf54e6d9e8e358acf94288b029df5876cf1",
+      "size": 397704,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-motion-couple-offered.png",
+      "sourceSha256": "7f643b7bbf0bd0ab7ada84c41732325c7d17a48031e409cb98c57606263154d4",
+      "size": 393170,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-motion-couple-refused.png",
+      "sourceSha256": "a0c95c621fbee2bf0527be69b7cbfb9bddc2bee00a38f875e8f6046a9b310def",
+      "size": 396413,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-motion-date-future-accepted.png",
+      "sourceSha256": "5e6a83f613e63aecbb41ba581b948bf54e6d9e8e358acf94288b029df5876cf1",
+      "size": 397704,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-motion-date-offered.png",
+      "sourceSha256": "5c9eeba71f379910925091c491f43e3374dd68a865526f3bba68109aa880c88c",
+      "size": 397488,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-motion-date-participated.png",
+      "sourceSha256": "94f501ee82bfc284f90089ee0d99ccc2d799d976a79105bc9ef9cabd4ee03ff1",
+      "size": 397624,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-motion-date-refused.png",
+      "sourceSha256": "7f643b7bbf0bd0ab7ada84c41732325c7d17a48031e409cb98c57606263154d4",
+      "size": 393170,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-motion-date-started.png",
+      "sourceSha256": "716c0ae91769079ea02e314e4729d1a635b2e71812d22e4875757015a77cce07",
+      "size": 394003,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-motion-familiar.png",
+      "sourceSha256": "716c0ae91769079ea02e314e4729d1a635b2e71812d22e4875757015a77cce07",
+      "size": 394003,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-motion-move-accepted.png",
+      "sourceSha256": "5e6a83f613e63aecbb41ba581b948bf54e6d9e8e358acf94288b029df5876cf1",
+      "size": 397704,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-motion-move-offered.png",
+      "sourceSha256": "8f8bfab5482485aa95ddc30418d3bd7da3eba5ca51aed16a9299bd4be6fc7f21",
+      "size": 458607,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-motion-move-refused.png",
+      "sourceSha256": "d844cddf9ccea8d5055eda5e47af8f701aed4d78123ffcc9a6616d95e5d55f56",
+      "size": 454489,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-attracted.png",
+      "sourceSha256": "08b9ec671ea1094cb5b62b2768508b568a7ba9c68e4f178ba221d8d4a38b0b9f",
+      "size": 395603,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-confessed.png",
+      "sourceSha256": "9d2bb0e364edad03ab2ba1026cec23622ae3a0a443eb7e18b4eaf1bf3846b0ca",
+      "size": 395914,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-couple-accepted.png",
+      "sourceSha256": "212d67ddc782453f19b13f061ff0c40727737b466338ea1248b607184a459e62",
+      "size": 396494,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-couple-offered.png",
+      "sourceSha256": "a1a6fa1e15b441c11a994d17688b815573a1507b09abe1fdf288f66961cdc206",
+      "size": 392113,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-couple-refused.png",
+      "sourceSha256": "38ad4b13a966eef1c639a37d8de22873853650f13f485ac935f39e508e635562",
+      "size": 395069,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-date-future-accepted.png",
+      "sourceSha256": "212d67ddc782453f19b13f061ff0c40727737b466338ea1248b607184a459e62",
+      "size": 396494,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-date-offered.png",
+      "sourceSha256": "a7f88b60e6262c86a29bc6557ac8a7184baf98307856e5f68f7817855623c9ae",
+      "size": 396265,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-date-participated.png",
+      "sourceSha256": "23e955e046572cd85be242ea1a395aee5a3d3492c395cdb16449c2582b96d537",
+      "size": 396378,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-date-refused.png",
+      "sourceSha256": "a1a6fa1e15b441c11a994d17688b815573a1507b09abe1fdf288f66961cdc206",
+      "size": 392113,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-date-started.png",
+      "sourceSha256": "517ec51818e657bc1fc7f32b4860ffdf2ec345bb5204340bd42bc93105e1c182",
+      "size": 393091,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-familiar.png",
+      "sourceSha256": "517ec51818e657bc1fc7f32b4860ffdf2ec345bb5204340bd42bc93105e1c182",
+      "size": 393091,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-move-accepted.png",
+      "sourceSha256": "212d67ddc782453f19b13f061ff0c40727737b466338ea1248b607184a459e62",
+      "size": 396494,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-move-offered.png",
+      "sourceSha256": "01e94cf1c9a3fefdab6f75e8845930bce0d2e101ebef79ff0c0e7397b5502e2a",
+      "size": 455039,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-move-refused.png",
+      "sourceSha256": "958fdd4b41d7317b7c383921b65404c84c732a4241f4cbb1f259433ec9ccda50",
+      "size": 451120,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/receipt-12-1440.png",
+      "sourceSha256": "2604c8700e9accd27a8bdf3c43a6c8aebda509dcb0fe16c370920865ca434460",
+      "size": 1730250,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/receipt-12-390.png",
+      "sourceSha256": "c3d803fd0491fdacde898b98068f9d7673d58ae5431d24d3216c8703e36d20b2",
+      "size": 463972,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/receipt-26-1440.png",
+      "sourceSha256": "38382829fb83fd28a44f881091923b188d2b37d241ee757640b8b6b6a4ab27d2",
+      "size": 1741484,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/receipt-26-390.png",
+      "sourceSha256": "a7d61a70321d31710fceaad2af7c83bd3d5f0768a9ffb6a0476a1c5195f27fb0",
+      "size": 468819,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/receipt-28-1440.png",
+      "sourceSha256": "426d1cd11571555a302b0c2c1409102aeac145038e42cb1024d2d5942e15a552",
+      "size": 1734692,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/receipt-28-390.png",
+      "sourceSha256": "663c542dca87515f8603843b8a6de94697f5c18ca001f8803737b032fe8ed2f2",
+      "size": 466661,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/receipt-29-1440.png",
+      "sourceSha256": "658ad8edf087b214cd970abd79ebc42457d203269853b9cfcb5698bcf951776c",
+      "size": 1696313,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/receipt-29-390.png",
+      "sourceSha256": "f9003fd6141487a78eba5c1c98a2172b88e9407f67027d1fe1357fae5748f255",
+      "size": 402887,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/receipt-32-1440.png",
+      "sourceSha256": "be243b07e3232c4e1e0490c738b48b290542b78295a075cd65aa469f1b6d66ab",
+      "size": 1729687,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/receipt-32-390.png",
+      "sourceSha256": "888ea16357d84c87261bf508c4d3a2797edb0b604064268090b815d81ee31ce0",
+      "size": 467366,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/receipt-4-1440.png",
+      "sourceSha256": "0d1af66632ca9e8b89bf406ad8e5a93ad05d2b25e7dd652986b3838b3eb1e46d",
+      "size": 1478870,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/receipt-4-390.png",
+      "sourceSha256": "0691bc05dd403a38f0570737c078123ce2a4d4df2f22b896a9de73ad63561002",
+      "size": 394309,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/receipt-5-1440.png",
+      "sourceSha256": "5e8d2ec7811cbcfe70a20b19b1b4875865ea09ffc403ef42da0ac2dff1e4d1c7",
+      "size": 1475071,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/receipt-5-390.png",
+      "sourceSha256": "a92c84168d944f4d74033a7046ea2c56b9685768c2032a11fb9d5065ef694eec",
+      "size": 391645,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/receipt-6-1440.png",
+      "sourceSha256": "ad87683a95befd2ec5701b339c0959e7493d1834d6d1e42bde36dedac7fc1b46",
+      "size": 1467866,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-boundaries/receipt-6-390.png",
+      "sourceSha256": "a2273c2dc327966e71380f6f2b7a7ba5d1fc369438c9951ddf38bfd1b7a18ed3",
+      "size": 388279,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-concern.png",
+      "sourceSha256": "232d8f8d167fa895ffd8f40134dc6319bde7618feb57f01bbc9bc4399ee82d26",
+      "size": 1859766,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-farewell.png",
+      "sourceSha256": "e1af9acb60f49ae11f8a4c37d283e911484e4d94fd49e5c1122668965b88d3a1",
+      "size": 1862078,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-firm.png",
+      "sourceSha256": "679cd1bce3f46c1cc4d003f2c4a49672c10be58dea7153c8d919cef119671c0e",
+      "size": 1864725,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-intense.png",
+      "sourceSha256": "0682522ec09b5f957137a8bf51a2605396ea0f5df50c7cd435e82e7cd9853132",
+      "size": 1864898,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-laugh.png",
+      "sourceSha256": "4296faa9d3ddec657bda1df7538a78b33f3a90f1d81e0c425dbd1891ec8c4e75",
+      "size": 1859084,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-listen.png",
+      "sourceSha256": "94798f01a523557defba9847cd54f57076e66e4b718893fb82290c3dc34c4198",
+      "size": 1865589,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-neutral.png",
+      "sourceSha256": "dddb9f435d0dc1967a2c578bf97141e6f062b71a9cd1ac5b41f375d320f1ca30",
+      "size": 1669925,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-offer.png",
+      "sourceSha256": "09d56e46209ab99aa52b0ee5f517ea9c96e739a0bc1ce6ce8caa14f07ac0d87f",
+      "size": 1860077,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-reduced.png",
+      "sourceSha256": "770aabcfb618f56e723bee09ae7d9ce6e57cb78e52c903979cce550152fa1948",
+      "size": 1853322,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-shy.png",
+      "sourceSha256": "73161140e493d933dad13d7e479261e62e2b3f28bbce3e9b67a15a1773f82534",
+      "size": 1859928,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-smile.png",
+      "sourceSha256": "dc4829521264ff5aa89b65a99d767cc8d73dbcf2ca8ac65e24488fc22dd80da4",
+      "size": 1857578,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-surprised.png",
+      "sourceSha256": "081a85eff930b19e24a78a7cdb568730a4176be9751f05de6c9c8222a4ea0d11",
+      "size": 1865290,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-thinking.png",
+      "sourceSha256": "82ff11f1dc6f4a167d0d62870b68a6b6a699b11c6a10cb383e26de3a9b3fa6d3",
+      "size": 1868101,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-turn.png",
+      "sourceSha256": "f975cb6a9da3e532edf3791856cfca639478d683f7dd1a0374663b9cf56ca26a",
+      "size": 1856917,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-1440-watch.png",
+      "sourceSha256": "c80d8bd0f34ae5e82f15371a262d3dcfadcf0d656b49fda4f822aac5b08b74eb",
+      "size": 1860643,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-concern.png",
+      "sourceSha256": "31b4f4fb5dcc027f392974039fbd76ad18296b5c142067518069086d85b42880",
+      "size": 453411,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-farewell.png",
+      "sourceSha256": "4efb07247b11f7cb385da4a92bbc6819f377d5ad6c740857e37154d9a9c70b03",
+      "size": 454608,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-firm.png",
+      "sourceSha256": "67ea73113075f28105dd0c499e67c46b6bbd272a30722768debcd988ea002b6d",
+      "size": 456930,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-intense.png",
+      "sourceSha256": "355a919cd71f4d05e8bc2b1d56d043c58a711485f3a33ddf361c0ea69674a0d3",
+      "size": 457061,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-laugh.png",
+      "sourceSha256": "7e9d011665b0cf0383ddb2e7ae20c22d32b7d22066c19ebf28e806114ed55147",
+      "size": 453003,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-listen.png",
+      "sourceSha256": "9f5d83907723ede25fb93b5c2f50457e11b8ed92efc9397eb6c3f10dbf89ef5c",
+      "size": 457588,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-neutral.png",
+      "sourceSha256": "7bbab48b5ab99d4214ef6ccf110f6c4452d2a85923a98613435fcbbb05769a66",
+      "size": 384321,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-offer.png",
+      "sourceSha256": "138b4054a1f2fdde8a2d25da8cb7de3b85d6848aeec3b5e9bc515c9b7865f315",
+      "size": 453707,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-reduced.png",
+      "sourceSha256": "81c83096af77ff7b7e8dc81cdb5544aa98799679719beed716696c7d4ffc7fb2",
+      "size": 452115,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-shy.png",
+      "sourceSha256": "ae3e22ee668f94b1584c8f227d237a3a99c5d8ef87a6829a9d626f42359be37f",
+      "size": 453477,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-smile.png",
+      "sourceSha256": "60f535e9b86b65bf6c0436c5d5d012bbfc664fa551f4d69d83dca9ee719aca9b",
+      "size": 450723,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-surprised.png",
+      "sourceSha256": "a7f853d4780df263186012a160897ed39630ec461b939499d040ad0dfaf62a8d",
+      "size": 456840,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-thinking.png",
+      "sourceSha256": "1a6208e65ccbd5f3a8a77baf9341b3538810cd44e9c45bf7f587c160376fb497",
+      "size": 459570,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-turn.png",
+      "sourceSha256": "6d68fcfea9e0cfc1be4feceb621b74fc231e6d624c241f9f0e7148288a609417",
+      "size": 449717,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-390-watch.png",
+      "sourceSha256": "b8ba8b3241aab3c586b7f514c6859a018c7298d3d8e1a2137f3a200e4511d075",
+      "size": 454386,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/office-comparison.png",
+      "sourceSha256": "bf0c60db36b2109a4a2cc9982853f8d74832ceb8dcf4943662af0d27ac862600",
+      "size": 1499015,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-concern.png",
+      "sourceSha256": "8ef64c75dd27b0f34f9cda6ed5641f8b9f91f12df28bfda796eebdfec51e94c4",
+      "size": 1872780,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-farewell.png",
+      "sourceSha256": "a937c2aef6c81e2051627d70083cf131d69d52414ba5e4ba136f04ca61bc2c99",
+      "size": 1870080,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-firm.png",
+      "sourceSha256": "aa135c4cbbe722212e3d9322f316abd68363e0960fb9481882d2d95ac9ca0590",
+      "size": 1876374,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-intense.png",
+      "sourceSha256": "41a0455ce8c01bb1373ff3025efaa4761d9ac641a04f86bc1e0596d7513c7e78",
+      "size": 1867358,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-laugh.png",
+      "sourceSha256": "bb616a6584734d4092225d72f4f57fbe0e46317a100f1d905afa04dc8eb5863a",
+      "size": 1869706,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-listen.png",
+      "sourceSha256": "91fecf8b15d25f8af163c29d1a8fad479c330b4e95529b4e6a6d93cdcb94517b",
+      "size": 1867139,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-neutral.png",
+      "sourceSha256": "4d022993662a8e2bef8be894677870461cb3c4e75e97ea9dc376b42a8dba7f58",
+      "size": 1678876,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-offer.png",
+      "sourceSha256": "dcf7b26a7121e9fe30e38c630e2b5e80c91abec2dd12d1f0c72079d3fc4aba7a",
+      "size": 1874280,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-reduced.png",
+      "sourceSha256": "7928f99ed675b50f69124900b7a5399706925750a8b41d368b788ef4ddd9b712",
+      "size": 1861067,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-shy.png",
+      "sourceSha256": "177f6a0bf1dd42b82a4798548c472db70fa5696e88bae237abb67683d13ac446",
+      "size": 1874630,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-smile.png",
+      "sourceSha256": "930f2cbab11d1fc9816057019db4d953ada11fa4ae56533d458e3cca413a8878",
+      "size": 1873988,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-surprised.png",
+      "sourceSha256": "d44a10438e9593990889aabdd93f266bcbf2b4c460c2ad23b770943a2b3deb25",
+      "size": 1872091,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-thinking.png",
+      "sourceSha256": "06ee161ea927aecb8b54253d55de559953f2d091b800397d8d3a14ebeb211e75",
+      "size": 1872368,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-turn.png",
+      "sourceSha256": "56eefe4b2bc51fdbf6e84c1631735d38e1ee3ce741c7c6f761c7472a61f8904e",
+      "size": 1867265,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-1440-watch.png",
+      "sourceSha256": "c8b4c88f8485bd734ef3df3260be97fa598b1f4998f2f27177aac1eb43351644",
+      "size": 1867145,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-concern.png",
+      "sourceSha256": "8310330e237d34a102011580d910ed41c2b855f4393718bbfbbf203bdbb56d77",
+      "size": 463094,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-farewell.png",
+      "sourceSha256": "4e2067a1e7ebfa2fd5797cefe8fa6fa0ee80c41003a43636aed10d44d4aa9d45",
+      "size": 461176,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-firm.png",
+      "sourceSha256": "16f4fa409daffe90059bcad957cf33785514d08a954508de17df1e013e1872c9",
+      "size": 465738,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-intense.png",
+      "sourceSha256": "7f30760eaea2850bb0d157398272365bf26b24b0a394a8c710de62d677453ab2",
+      "size": 458781,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-laugh.png",
+      "sourceSha256": "8a64379e3758e3a9319dc4b1ca097ccb251707b9481bf5092b031b90738ef2a6",
+      "size": 460264,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-listen.png",
+      "sourceSha256": "38ff1ecaa4c194ce1f3b4e1f36a786500f6e0345175d7941d5a967b8f6eac446",
+      "size": 458152,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-neutral.png",
+      "sourceSha256": "43c835789c5b4eee04515b9b5c857f5c6c111c25b3c95f7dcc7bc9157562344e",
+      "size": 390882,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-offer.png",
+      "sourceSha256": "bb98c9f84e0741fdfe55db313fd89715374178a168091e2f29c1f4c9c71296dd",
+      "size": 463294,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-reduced.png",
+      "sourceSha256": "4c5503b366d4b52e5853eeff72c649ccea7668a4d2771270cf9cac81107add12",
+      "size": 458753,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-shy.png",
+      "sourceSha256": "6a1f31abefa6c3446b5c6d1b7e596b221e64b14dc11f80f7ed28304cbb2ea6d9",
+      "size": 464805,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-smile.png",
+      "sourceSha256": "9fc57cd4eaedb1c56d49e9e28062417a9bb177d0e3894a95fa6cf06c6311c2c3",
+      "size": 463041,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-surprised.png",
+      "sourceSha256": "6a7aef1efe944c660bf7c8d828994e17c2a6849e1257b4dca233b78b9ec7c2aa",
+      "size": 461660,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-thinking.png",
+      "sourceSha256": "e68ed6d649f28f57957c88dee8489c4d1b41e56b89a70af3f6190989c7a2bddf",
+      "size": 462101,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-turn.png",
+      "sourceSha256": "1639f62400fc1c79b99fb2d0d4e7cb7819e40fa943688ca7188438aae6fea0bc",
+      "size": 459185,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-390-watch.png",
+      "sourceSha256": "f893d7528283bfeef8e8511290996540e10f5ff63e62da0ee5f16d0823e4d402",
+      "size": 458142,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ac4-recheck/romance-comparison.png",
+      "sourceSha256": "f3efbe6289347ce9e4b9d3b7e420675fc801bd60d6764f52d806b766d92bac40",
+      "size": 1472301,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-1440-concern.png",
+      "sourceSha256": "e3c601b1f66a623549488bfa529383775b149758d1c0ea4f3d78b18fd3727dba",
+      "size": 1839301,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-1440-farewell.png",
+      "sourceSha256": "bf8b3cf4fb270aa1cadebc4c82b100e01316924826facec5e1a7361e364dbd26",
+      "size": 1845853,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-1440-firm.png",
+      "sourceSha256": "e58467a8a64766add81f6d9ce8b4bdfaa68922be548947d9dd16fd2487b48c05",
+      "size": 1846797,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-1440-intense.png",
+      "sourceSha256": "72eb300508da43fe44c6b9da0b6b716748fdaba867407c5f6eff1ac4ed836a37",
+      "size": 1846971,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-1440-laugh.png",
+      "sourceSha256": "79d44cc9337bc44e7cc69982812339dfbaee2a861b9c5757e3bc0c27144b1458",
+      "size": 1846293,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-1440-listen.png",
+      "sourceSha256": "d2b82fbe65a202442d81fc8f59d37bb6cfbc10c450e9cbc14b374216f703a5e8",
+      "size": 1843097,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-1440-neutral.png",
+      "sourceSha256": "ceced7f9d725fdaf0035a2a3214412b2508d8a11ebab5fff7dd061c8304dda08",
+      "size": 1664641,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-1440-offer.png",
+      "sourceSha256": "f554f9f295d171c0d9256cd6cf4efb06fb9a7871c38d827f91e303a86b2b69aa",
+      "size": 1839775,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-1440-reduced.png",
+      "sourceSha256": "8c955b577a3e82f4b03b9d52bcf488620780bea6097afcc00e94205cd54c2e73",
+      "size": 1836928,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-1440-shy.png",
+      "sourceSha256": "f1f9ce27a0e92f74fd0f14113dfa8e46567339e26a0d0324bb24830d701b3389",
+      "size": 1839469,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-1440-smile.png",
+      "sourceSha256": "a3127b14d02bbf5b60a12cadf91d63c9bf0efd95f978cc69e11323ae8b650d39",
+      "size": 1839590,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-1440-surprised.png",
+      "sourceSha256": "3c5a23c16e15029fb67a238369271548a939647673d214c674512cda568ea467",
+      "size": 1842079,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-1440-thinking.png",
+      "sourceSha256": "ca4749b618d80ba87725256780e6ff2ec043270c590917d8a734f2af049ea404",
+      "size": 1846147,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-1440-turn.png",
+      "sourceSha256": "c9ce04c2898936b35a26632829f802c2a581e58d44aacb8dd234c2cdf0a4efcc",
+      "size": 1830965,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-1440-watch.png",
+      "sourceSha256": "3f10abf8f2369cb5afaa26ee4f984b1377d27e19f72330d3033508b22bea82f2",
+      "size": 1839758,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-390-concern.png",
+      "sourceSha256": "bbcc965e1cc2c34666a7897a721f89084b6dad7efb6c7b447302f4da4ace301a",
+      "size": 441203,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-390-farewell.png",
+      "sourceSha256": "69e7190b1f2b5228d2b4c47ca1961dff3a8234e4268e3cb861bf93a8a4585295",
+      "size": 444569,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-390-firm.png",
+      "sourceSha256": "1cbd23340b1088ce01b40002022503bdd1f64081a757c206a8b5856f03c32af0",
+      "size": 448423,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-390-intense.png",
+      "sourceSha256": "78ce7ed8db49723decddf82e4b160073459f577c4ff082c89bbdcb2d65c9d74c",
+      "size": 448635,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-390-laugh.png",
+      "sourceSha256": "b173a2396b31952ab8e6dfc125a2214363a0958521a1231ac81f919e3e89af63",
+      "size": 446547,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-390-listen.png",
+      "sourceSha256": "3758aaa41d0bff60d0e37bf6ef53a8d4cddea8443aba96d519f9cb7834d52d54",
+      "size": 449647,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-390-neutral.png",
+      "sourceSha256": "85bb6bfdf826611a995ba49fc4d8753f60afe160e34d613c17e1581a87823ac2",
+      "size": 379356,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-390-offer.png",
+      "sourceSha256": "e59dba8956872b6574e129d444b9a05cf147c7d5d0ea826f4c0d682ff98d8f9e",
+      "size": 443313,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-390-reduced.png",
+      "sourceSha256": "bfa4c1000439698a6711732f88f31a7cb4d44887a44a9f09e890ebd3ebc5634f",
+      "size": 442413,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-390-shy.png",
+      "sourceSha256": "775e764bb3b7a367d4392e251bb9d534ddf1d71614ee02d2b928819e6540ac91",
+      "size": 441271,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-390-smile.png",
+      "sourceSha256": "37f3e2f1fbd6d8c20153e1627fb629015a9dd7124c742f803b392e353f8da885",
+      "size": 441992,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-390-surprised.png",
+      "sourceSha256": "bcc333e433671e11899e810f35fbfd94ecfa888d07ec76b242b7141eaee81ab7",
+      "size": 445482,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-390-thinking.png",
+      "sourceSha256": "286ded944f020be15f4c695aaa1f737308ece484fa0ceb3b8732a4781d9b708d",
+      "size": 452012,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-390-turn.png",
+      "sourceSha256": "ee69277243e28c1573fd8dd8d3ccd54a7fa0a1e075d9233db3a02b8229420e62",
+      "size": 438393,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/office-390-watch.png",
+      "sourceSha256": "99e6fff17d45bdb8771893e9121b956764628f788e6873f83df142ab750e2531",
+      "size": 443848,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-1440-concern.png",
+      "sourceSha256": "bb3fd8b76b7924b0f033ce29b4b25907694ecf04bd178d5edf04c670f3ce05af",
+      "size": 1855896,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-1440-farewell.png",
+      "sourceSha256": "8109dbec93a6d120c44d706455fed940de21a5cad7cb9eb7cc58813c2d6f1802",
+      "size": 1851017,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-1440-firm.png",
+      "sourceSha256": "44fbee906a13fc8c5a5056130c958754acaa4dd5f9386f43e78491ada97641f7",
+      "size": 1856953,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-1440-intense.png",
+      "sourceSha256": "ee8417a10c6c0b67542c372ec49aa21314cc6dadeaf7f63197cd9653cafc6b47",
+      "size": 1845109,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-1440-laugh.png",
+      "sourceSha256": "c995310b287ffc74d1db837ecbf0ddbb67c071abe088da4db0910f02c47fd792",
+      "size": 1849822,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-1440-listen.png",
+      "sourceSha256": "44402c455bf72969b0953457ce7731569aeeb54c3c4cc3d310d186276d27cb17",
+      "size": 1847229,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-1440-neutral.png",
+      "sourceSha256": "d0d47d442878feb0f49dbf0ade6be366b19fa83fa265f6440294aebfdf305169",
+      "size": 1674960,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-1440-offer.png",
+      "sourceSha256": "9353132e6bda094ffc5d58aa07ce230c10138cb2cdf4611217a5b0a74bffc5a6",
+      "size": 1858361,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-1440-reduced.png",
+      "sourceSha256": "ddcc6383ccde8f2d207c133f5aa2613e1f55ae1faacad5da3e6734d623a8d09b",
+      "size": 1841867,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-1440-shy.png",
+      "sourceSha256": "6a2494d238e1410d47614fcdd3d601a60bc19f9550c46515dfa92917b3694838",
+      "size": 1854143,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-1440-smile.png",
+      "sourceSha256": "2c82cda21849598be7bf7af679c9e13de01380cf937752cd5da1736fdc7b537a",
+      "size": 1858165,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-1440-surprised.png",
+      "sourceSha256": "119a59b7a964c1c88ad887edd541a8894580a3de01b6d8e08f2c0585cb4836a9",
+      "size": 1854526,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-1440-thinking.png",
+      "sourceSha256": "724a7a266fd7d5750ca21378dd2e01bb86960c31941e8050fe65ae8176c4e26d",
+      "size": 1854841,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-1440-turn.png",
+      "sourceSha256": "d592f4c7e14e95df47cfc7afd96b1c8875f0946c53264e7305e44b9de3f260d3",
+      "size": 1847491,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-1440-watch.png",
+      "sourceSha256": "44eda32b374be8043c79cbd86fc4cabfbff69e141978c023778d02e53f26743e",
+      "size": 1847254,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-390-concern.png",
+      "sourceSha256": "f77e8e30d01f0a6e494799eb31b97f8404b22cd47447f6906422fe0d350db031",
+      "size": 459273,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-390-farewell.png",
+      "sourceSha256": "cbc96176e24c1d1a6a7abb37734a0fa0e3ca42515254995b2b44b61338095b24",
+      "size": 455292,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-390-firm.png",
+      "sourceSha256": "d805beb5f253595a80ebea5b8964875143d0513ff514ba4234c2a6a5b5810df2",
+      "size": 458271,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-390-intense.png",
+      "sourceSha256": "1eba51aa45adc21da9dfca730b83de524a9d2b2c2341e22f28a3336cfece5aae",
+      "size": 450442,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-390-laugh.png",
+      "sourceSha256": "987706bbc60d12e008dd9aacb9f8f30408fc0b3dd8bdbea8d2df5130df1b71af",
+      "size": 454120,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-390-listen.png",
+      "sourceSha256": "7ba4aba57294d303554a2b60517a9340d289517a7d7701cf6c96a0165dd5dfbc",
+      "size": 451591,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-390-neutral.png",
+      "sourceSha256": "b42bed32bf42139aadc84c33a42bb9da25efb616c07bd8b7e13f3698042f615f",
+      "size": 388455,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-390-offer.png",
+      "sourceSha256": "aee3c6be5918eb799c2e3fd35310a0e88068b96b95c9ab635d44edc5eed5a4fd",
+      "size": 459641,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-390-reduced.png",
+      "sourceSha256": "71a3b4f3cee5dcb2ade9aa36a0020457f3b9ee0011e5a2a5f63a9d06401ffe39",
+      "size": 452619,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-390-shy.png",
+      "sourceSha256": "125ea81ad6de69e40e95a571e971b54cb151a385cd9067f1c87f3684bf61fa37",
+      "size": 455838,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-390-smile.png",
+      "sourceSha256": "1718837849ec1f77884b46c8b38aa532c425a62f72a54bd853281e2548517ad3",
+      "size": 458456,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-390-surprised.png",
+      "sourceSha256": "af160d31089ca8a7c14afdc63943c299c6c85301629e7f4aefe256659656e542",
+      "size": 456833,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-390-thinking.png",
+      "sourceSha256": "7cf863461cbf62d26ceb4ac784fb8094a4dc4466e7a98e6450b61e2d45228ae5",
+      "size": 457181,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-390-turn.png",
+      "sourceSha256": "88b84461b65fa8f1071ed7a1e9522b2a439abb20e173b6ef18e30d4b8d1908d7",
+      "size": 452228,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-art/romance-390-watch.png",
+      "sourceSha256": "39e0a34da27408d25d16273e80ba9ea07a0bebf750eb96ef4177bafbee242cda",
+      "size": 451554,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-live/log-1440.png",
+      "sourceSha256": "f3eeeb242c7945343fadaf2a5527e96aaa33e1dc38fd2d3f02d61c6ff58a7157",
+      "size": 355627,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-live/log-390.png",
+      "sourceSha256": "5862fad902f70ddf9fdcafd7f91b3b8891e1f64a3e985c3b240d3d8ad106a34e",
+      "size": 68791,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-live/receipt-17-1440.png",
+      "sourceSha256": "44e6b27537464e7e85bd2963dff754308e2fe66a98f826b5ca748fcbf6a52b1f",
+      "size": 1730942,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-live/receipt-17-390.png",
+      "sourceSha256": "215b14f4f93dc70cd4807e95251514a8e8e76eb8a5e391c5445eff8e31cc3460",
+      "size": 470037,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-live/receipt-25-1440.png",
+      "sourceSha256": "2702d4175fa08d001c9a395d0270884322b3f165a2e7542fed2e83e80ac69e43",
+      "size": 1718691,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-live/receipt-25-390.png",
+      "sourceSha256": "787b3d92835203d3e51bf0076e2dca19e56a058184a87f829de9fab79da871a5",
+      "size": 467896,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-live/receipt-29-1440.png",
+      "sourceSha256": "c466abf674767ffd0d58152fa7b5ed34e3b15f6043e06198b1b587beef35d48c",
+      "size": 1692320,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-live/receipt-29-390.png",
+      "sourceSha256": "8c415c8201b411ac908aaac10803d8fc90f72a0493713f598f8c93638c7c3924",
+      "size": 401661,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-live/receipt-32-1440.png",
+      "sourceSha256": "54e0065194857312217a165da7eb3de25d89ebddabd36895c45f0cf1ed211ffb",
+      "size": 1719447,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-live/receipt-32-390.png",
+      "sourceSha256": "1c3d47261fd5689104d6c83c3d75fce3ff8253be7c996d5b794a537b243d598e",
+      "size": 468159,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-live/receipt-5-1440.png",
+      "sourceSha256": "34042e30ccc8800bb0d4b96e6d9d0be19b3b8e60f47a1877b8aa0ab92b29ee9f",
+      "size": 1473072,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-live/receipt-5-390.png",
+      "sourceSha256": "8b78cc86cd341932d24d1fd3cc0d4fb94c9ac380678e977b661b5eab6a68e922",
+      "size": 394161,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-live/settings-1440.png",
+      "sourceSha256": "5d2dc079da0aafbc18e0879ad2495d4b2ffbcace574dc66c2c30c7529b707776",
+      "size": 345713,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-live/settings-390.png",
+      "sourceSha256": "7c8cde3357062e879625c040221bc52165533dd3f3b8caded1923031d81d7d1e",
+      "size": 60861,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/conversation-1440-office.png",
+      "sourceSha256": "dd6fd13f4622f611f011f97b0208e53cb795281cbc6e05b85b7ebab45a00deba",
+      "size": 1481626,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/conversation-1440-romance.png",
+      "sourceSha256": "30a21540eab1e0eca02df12921b01882029abed735e705fab63aafd6da7013d3",
+      "size": 1725775,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/conversation-390-office.png",
+      "sourceSha256": "2f0a663cb5ed7c5b5d1e10fd9d3dc4cbd0ab1389df25ded6c3ede1b7757065fe",
+      "size": 390507,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/conversation-390-romance.png",
+      "sourceSha256": "16d76d2615dfe6981deebf287f9f4b9e546630649c3e3c164fa6ef85addf159e",
+      "size": 457283,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/log-1440-office.png",
+      "sourceSha256": "3176629fcae63b5b11cb075cc0e483327b30ceb5db4801047349f4ce07a007d1",
+      "size": 342052,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/log-1440-romance.png",
+      "sourceSha256": "e4e758a6735c48e12e9c147a37f5d42cff28942aea875fd517b360bc17d5b018",
+      "size": 370026,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/log-390-office.png",
+      "sourceSha256": "880a22fb9a66600d5f8124e7740b144f0c23595d232465cd6cbc007ea2e5e5d8",
+      "size": 75276,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/log-390-romance.png",
+      "sourceSha256": "2105a383304b30c05377f1d9f8195d6e1eccf1bd82f51a447ec44ab062ff8979",
+      "size": 76469,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/long-focus-1440-office.png",
+      "sourceSha256": "0962e0b23b67d20f9a0944551a7efea6e772a320ce52d8ea49f15420b51103cf",
+      "size": 1482021,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/long-focus-1440-romance.png",
+      "sourceSha256": "13b8c7b8d0576eb812d61f7995ed4f02530d19f8bb098b4619a41f8904853c7b",
+      "size": 1722809,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/long-focus-390-office.png",
+      "sourceSha256": "f0fa9e19e4f8903ff4c875ac774acf360d793a763551680e947a074dde8769b5",
+      "size": 393100,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/long-focus-390-romance.png",
+      "sourceSha256": "0cbf7be06f4721f9c8ec03ea24c61c68f1f255cabe064f5f260ab8e30551cf0d",
+      "size": 459888,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/settings-1440-office.png",
+      "sourceSha256": "ebad127d3b5716367b226f57db4524e8e0a43fd87f1385a26aebab46b07baa54",
+      "size": 318354,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/settings-1440-romance.png",
+      "sourceSha256": "526ed44b0f0f00d7af2904cf41f54cd94730ddd2315169dd628c9a88b1a8cbbb",
+      "size": 339303,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/settings-390-office.png",
+      "sourceSha256": "82f0735f9df085392bf119df725fa83c7270b7b5d5132e652f319953bbdf1c4c",
+      "size": 60585,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/settings-390-romance.png",
+      "sourceSha256": "771de508c60d57404aac3667f95124a9bf62f26885c1464aad5d46fa72fab1cd",
+      "size": 63508,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/suspense-1440.png",
+      "sourceSha256": "5fee95d12bb771a1a763c771ba836fc57575e98d52bfac38ce9356e5244b904c",
+      "size": 1495933,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/suspense-390.png",
+      "sourceSha256": "da2fdef9709262fba20e235f355ac7ef0b8f2aacc5fc42c217732806e82901e4",
+      "size": 372368,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/title-1440-office.png",
+      "sourceSha256": "b93e6f778f5834728830419e9dd30f9b91e25cb4455efade57e3bc743d26543d",
+      "size": 891260,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/title-1440-romance.png",
+      "sourceSha256": "b93e6f778f5834728830419e9dd30f9b91e25cb4455efade57e3bc743d26543d",
+      "size": 891260,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/title-390-office.png",
+      "sourceSha256": "abf45d661e62d9b2f2792b5bb099433f87c69e89d8fb35afedcf31e1d8a520f4",
+      "size": 202353,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/qa-screenshots/v2-ui/title-390-romance.png",
+      "sourceSha256": "abf45d661e62d9b2f2792b5bb099433f87c69e89d8fb35afedcf31e1d8a520f4",
+      "size": 202353,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-QA-generation1.md",
+      "sourceSha256": "fbf15dba10800a6a6694edfe575d8ed50724f73d41e8ce850bdbd7397c9812db",
+      "size": 14785,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-QA.md",
+      "sourceSha256": "6295c9b6299dd9c546338ae856c11e56390c0d0da489b68c82b3a003637ae0c7",
+      "size": 16041,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac2-agency-after.tap",
+      "sourceSha256": "e5ad357edd85f73abdbca1c07bce0b4dea252a46fc98d24e69dcdb46e56bfc23",
+      "size": 5865,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac2-agency-before.tap",
+      "sourceSha256": "e323b924a93939e551f4bc142eb4c934ee0d34db5b8a9715c4bc1b7f1c8379ab",
+      "size": 22667,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac2-ambiguous-before.tap",
+      "sourceSha256": "1e398e897c5f8204b30b8e29ad3c49fee797caa9388c8c2e5314ad85605348bd",
+      "size": 9636,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac2-browser-run.txt",
+      "sourceSha256": "75d8deaef8e5cb214bc935385bb2aaa6b2b228bc49b19929c794de24aca97ac5",
+      "size": 1032,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac2-narrative-run.txt",
+      "sourceSha256": "ba4e02d0ff263636a03735d92033777ce7f33f97ac4010e3fa07cbe6d7fd9e9b",
+      "size": 1050,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac2-office-counterfactual.json",
+      "sourceSha256": "c93520a04727381acf7c01170c37fc4e40455117368ef38fd61dfa5b801c8134",
+      "size": 17866,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac2-office-durable-counterfactual.json",
+      "sourceSha256": "76cdaa1fbe015b9095f7eb9d37b6fa80923c7e2fb11e73b388713126d8240453",
+      "size": 71948,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac2-receipt-replay.json",
+      "sourceSha256": "b5a9607505a534f4749b3e826224ab33d6657a731bf7d37c4578aebd991f85b0",
+      "size": 5060,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac2-recheck-build.txt",
+      "sourceSha256": "aee709a5fa661c937104d4cc194444a739e3c669b55e8c4fd22aeb864c437c60",
+      "size": 454,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac2-recheck-unit.txt",
+      "sourceSha256": "3ff2abc8490567e903a2c596ae7aa41c31336eccb6a546455b2d66d0dd86d53b",
+      "size": 19708,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac2-recheck.md",
+      "sourceSha256": "d519bf7e853c2dd3939875cc41d811396b772c3d16ee7a29427d5990d95661c8",
+      "size": 5097,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac2-romance-counterfactual.json",
+      "sourceSha256": "9bb0a42cc7f6d938dd9ef19b502e73886e032153b14f6a750d8b84f30de0e3b0",
+      "size": 37961,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac2-romance-durable-counterfactual.json",
+      "sourceSha256": "5185189aae4842d07ae1b797387a90e99cfdf62c9e7dd16c7bf7d20c596d2921",
+      "size": 59643,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac2-source-hashes.json",
+      "sourceSha256": "027b9988d773539c3657dbde1f7da4d744ddf2a5f36859804ed1e6dc68f7982e",
+      "size": 877,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac2-unit-run.txt",
+      "sourceSha256": "aecbeff5aa03c00f06bd133b050da677c8967326e039ca185ca10993ac0d4b9d",
+      "size": 11645,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac2-verification.md",
+      "sourceSha256": "3a0429e4e0d3065bbb0c458a39f3558f193f39bfc0f0ae5e7090911a262ae162",
+      "size": 5553,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac3-build-run.txt",
+      "sourceSha256": "2368865671381968cc3de3f43a1fa8a7793540fe2b9249028640f079ea70d935",
+      "size": 454,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac3-clockout-state-trace.json",
+      "sourceSha256": "cd4cd11d48df963bf18a757af8c626da69a56eaae0a30074084bdee07861a25b",
+      "size": 35309,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac3-credit-state-trace.json",
+      "sourceSha256": "3b76ac7aad9be82581a973996c55a234ec660dd6b0bc3c120fa4c35b1d82d99c",
+      "size": 35815,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac3-delegation-state-trace.json",
+      "sourceSha256": "bc56b67fdc592cb50c4ebce9c45f83f8e60a4b2dd7300aea44ac5237711b5d06",
+      "size": 35838,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac3-dinner-state-trace.json",
+      "sourceSha256": "adf41c01e5d9bf4c2b5125e4db5b4f6d49c215d421dec5a4a15320fc717dde3f",
+      "size": 34887,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac3-lifecycle-run.txt",
+      "sourceSha256": "c6a2b42a00d8da1ab4d1162ef5e41ac213a2efdf674b9c14149d06d8a0f369c9",
+      "size": 9485,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac3-meeting-state-trace.json",
+      "sourceSha256": "08a827b76045f3976c183ed1d680285cadadfd23315391f49789da005e7b88b0",
+      "size": 34519,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac3-memory-trace.json",
+      "sourceSha256": "97541c5f52dfeb8d3acc12e3e1a83fcbab180fb0f9e40b96a7721f5889bd0a73",
+      "size": 30574,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac3-receipt-audit.json",
+      "sourceSha256": "ee20054d96c2325719de81f115ea50a414f6573989d941cb8a7800414888cbef",
+      "size": 11155,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac3-recheck-build-initial-failure.txt",
+      "sourceSha256": "bd94fb3ae4d682ee1263b8251136999d5973b216e89c0c670c7e53c2c53c0f96",
+      "size": 437,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac3-recheck-build.txt",
+      "sourceSha256": "c0375e1fb4ab80f9cd36b5c3eee25fc3a2a4fe8e2230f4f280e3a9a40f2afa44",
+      "size": 454,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac3-recheck-unit.txt",
+      "sourceSha256": "e226fb782cd76604fe8b9f26e2b2f387b7a456ba336a6c0272c323172beafbbf",
+      "size": 20703,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac3-recheck.md",
+      "sourceSha256": "838ff3f83a359c44d1df115e97a7f1e7f6c6c86c21986345bfda58b636e6ae82",
+      "size": 6698,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac3-remote-state-trace.json",
+      "sourceSha256": "ca315edc0c5f5fd7da078fb253ce77a11bbf643282d48a447a0fa508c3c2bc92",
+      "size": 35248,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac3-source-hashes.json",
+      "sourceSha256": "064d30500075e6a0a0a0ae984c396dda115953127af1e31a76be47674db95980",
+      "size": 481,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac3-unit-run.txt",
+      "sourceSha256": "0fe8a00cbfaa52e5fdd3613432594f6eca2b282ad53ebe6875100839410fc1a8",
+      "size": 12616,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac3-vacation-state-trace.json",
+      "sourceSha256": "8eb3eacf9620c145dfe63528062a36b27eed714b7a05e01fc2c45d4458ed6024",
+      "size": 35191,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac3-verification.md",
+      "sourceSha256": "b794227c52133b20f669c29767056349ec18bc1a4935ad22dd43f67f848dbd17",
+      "size": 4169,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac3-weekend-state-trace.json",
+      "sourceSha256": "0ebdd911eb752b92320e50fd52eb7d7938e9df3d451431c9131c0a338b31bfea",
+      "size": 34796,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-boundaries-1440-false.json",
+      "sourceSha256": "f35d9f830f287bdd00250dea5a9298156251a30adff1f555ec2c1e86d9071971",
+      "size": 165971,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-boundaries-1440-true.json",
+      "sourceSha256": "532cb274ffbca726de83c83d8099f2412cf903164927912a5d1592d774cc66fd",
+      "size": 165985,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-boundaries-390-false.json",
+      "sourceSha256": "c024e16cd994dc8833f3c6a0030998e94bda238b73a88569678d36f58650acc7",
+      "size": 165957,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-boundaries-390-true.json",
+      "sourceSha256": "4d240e9db32ba8117c9de26ecd1ad449abb96cbfcf2b1df71d8bfb1bb5a4d2ca",
+      "size": 165971,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-captured-1440.json",
+      "sourceSha256": "a02511be3ad1c68002e35927d0a0930ee3445712eb432b9a843f9e51518b8502",
+      "size": 3871,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-captured-390.json",
+      "sourceSha256": "0c2b346dc60491061a408b9821d10e6c650675c2bfd492cb1c60fb02245b6b44",
+      "size": 3863,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-hmr-interrupted-run.txt",
+      "sourceSha256": "d213bfd8f89697033290f5ef3d458ef424adc237c48cf67b5ead9489608b5b13",
+      "size": 5642,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-office-1440.json",
+      "sourceSha256": "7fc72e3d74374588fc32c8bd6eb94e09e7d5530bd465a40fef70cc24a0057630",
+      "size": 14480,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-office-390.json",
+      "sourceSha256": "fbbd1799e3c41e714ae6a540b6597f27384f204389473ae496bce77d0ce16c1b",
+      "size": 14876,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-office-comparison.html",
+      "sourceSha256": "9753e1e5980ca5e90a3b132c3f4807780ec89e336b093e310786aff4c20492f8",
+      "size": 7182241,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-recheck-browser.txt",
+      "sourceSha256": "f6a03b81001d704a8ffe6fbd8b5ae56b6d88b462c0db9fff46f71364370b7fe6",
+      "size": 1741,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-recheck-build.txt",
+      "sourceSha256": "cce328ce3fdfca39a15c4a18204740f78de94bc4d914eb494564a8ca9214fbff",
+      "size": 454,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-recheck-hashes.json",
+      "sourceSha256": "0a52182b1e8d746436817ade4e2284c6743e6923d57cc29648450ae12838f841",
+      "size": 3599,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-recheck-initial-failure.txt",
+      "sourceSha256": "6dd8b030641b22ff4f2ef6c8a4cb1a6a7664fee807ae71edb088051500bac726",
+      "size": 4319,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-recheck-unit.txt",
+      "sourceSha256": "5aea960384225d161069c51004f25b0e8298a2f9670cebe2b968e262a18e7946",
+      "size": 20791,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-recheck.md",
+      "sourceSha256": "b3b2efdd7d7d44a2960e0d393bef60d1d69f687af0116ab5ebd66c123f0ff4f4",
+      "size": 9236,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-romance-1440.json",
+      "sourceSha256": "2ae746c515c19bd96425d9f6440300ad9047f5e86a7bcd46bf9e785db4234c9e",
+      "size": 14346,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-romance-390.json",
+      "sourceSha256": "50a7b70e64eb826936702bbbaeed6c7b07e7183f22bd28c36ab147ad7ebe1222",
+      "size": 14822,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-romance-comparison.html",
+      "sourceSha256": "b582f6c2afd2dca1d8d2680a30dacd48f467efe61cb2b0e561b29b21459e1d2f",
+      "size": 7296464,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-screenshot-index.json",
+      "sourceSha256": "4130f16601e64f671a07d838512625578a435a6c2ac99b6b577b9df61cbef6a9",
+      "size": 24143,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-ui-regression.txt",
+      "sourceSha256": "53b64e7a6dd650011a70d018e5a08ad9df1b4d3aa06104ae4c6b9d14ae3412b1",
+      "size": 1032,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac4-verification.md",
+      "sourceSha256": "38fd4153b6b42905de409d56e65efd9791c41f5b990da37c7d0df88a927d60dd",
+      "size": 4493,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac5-autoplay-run.txt",
+      "sourceSha256": "189073bc88d51ce47fb4e5067ec2a202d4a636b5f2afb2ff79eb8b1e8104bf29",
+      "size": 725,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac5-browser-initial-failures.txt",
+      "sourceSha256": "566e1e6838fb186466aca53b0a8f6908dc3224a331451129b2224fac97559ec8",
+      "size": 5964,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac5-browser-run.txt",
+      "sourceSha256": "2a0f48dc7f9b4206d9a90b7eed87a9eb461f2dce2a134232906eea9bb0e41968",
+      "size": 997,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac5-build-run.txt",
+      "sourceSha256": "8c8ac0e71c2ce21cbe7ee0df6bd21fa1037d70784327cb1eb9d57a5a0b2ccfaa",
+      "size": 454,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac5-source-hashes.json",
+      "sourceSha256": "33c126935a92858c29afc07e2b11f2c70d00a9dd725f59aecf256562363bdbdd",
+      "size": 882,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac5-ui-regression.txt",
+      "sourceSha256": "a2b62aeb4d89a21c5b7e67277d276fa349cd8fbe10c226f00fa1caf6d1b08e97",
+      "size": 1031,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac5-unit-run.txt",
+      "sourceSha256": "f3101d4a17c7677c580c709e67237abf071ae695ad6761516429c72dd262b674",
+      "size": 13010,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac5-verification.md",
+      "sourceSha256": "5341c3aa995a370033f683fa7320f1ecf510f814d25c21f47487c52c7ad105b1",
+      "size": 7072,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac6-audit.json",
+      "sourceSha256": "bd94a0edb6cbd2d43e925e51c545fefd698a03f1fabc79012fb92b88749cca63",
+      "size": 1361,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac6-verification.md",
+      "sourceSha256": "90ecf6faa76bc912ca988c43cecef5e1bd8e825416e989872a5aeff9d6bb97da",
+      "size": 4452,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/art-boundaries.txt",
+      "sourceSha256": "4376f0d20530292caea9ccbe2f3ebaab602c4ce9856244f115f2bda6e304c1c0",
+      "size": 1344,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/browser-final.txt",
+      "sourceSha256": "418acb69d6f87aa55ab19bd2ac133859a3674c64358f37b07731325dae94833f",
+      "size": 2576,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/browser-retry.txt",
+      "sourceSha256": "391cab45652b1c3f07d3fea9a8031e9016b02518ef9e08971fb3494f3ec586a7",
+      "size": 5306,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/browser.txt",
+      "sourceSha256": "def680241949b242fb573d35196913ab3b0bfb8b140c569f7c6630563f345de5",
+      "size": 5560,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/build-final.txt",
+      "sourceSha256": "48065f4c4faf2086c963c91325bfc2d38fc4ddad50e15ed1de9140c0b574a209",
+      "size": 438,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/build-retry.txt",
+      "sourceSha256": "42082e93a0f932b9b5219ac28eae4e63016da22bbd2630a0207ad3489c57cee7",
+      "size": 438,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/build.txt",
+      "sourceSha256": "6dad74871f14e6f0dbb68751c9062402f23555ce3f7ced074e415d8ac98383e0",
+      "size": 438,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/candidate.json",
+      "sourceSha256": "622428a770ab0208870415fa68eba4128e8e6f85c0420a53f3b73756cdf92301",
+      "size": 217203,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/cleanup-stop.txt",
+      "sourceSha256": "e92f85152efb3c947493bf4eb1c4a5eaef7e7317105d5446922b3f5ee9137b9a",
+      "size": 110,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/launch-1.stderr.txt",
+      "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/launch-1.txt",
+      "sourceSha256": "716e4822ab9038a0c6bd4375723c2aa34cc2988861c13efa57425ebc17a4c41d",
+      "size": 571,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/launch-2.stderr.txt",
+      "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/launch-2.txt",
+      "sourceSha256": "8d69fdbd894069849ada76b8a1ca064f2a5bf6da8dc70cb9f5a9665a6662e79f",
+      "size": 571,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/launch-initial-interrupted.txt",
+      "sourceSha256": "06b168020ca4675680cabdbd8282392ebc41b88107adcc53c399824e474abf4d",
+      "size": 1164,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/launch-pipeline-interrupted.txt",
+      "sourceSha256": "d563bee91400deda03dcea2b43411bbc89d56ea79f074ded2772303a4dd624f7",
+      "size": 1164,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/launcher-harness-failure.json",
+      "sourceSha256": "6e08e5d04256b2b2fc127ed7bc26a7879b216f30d8ee3ca59f9a4af1edec8d19",
+      "size": 154,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/launcher.json",
+      "sourceSha256": "58fc9e8f0995365a5b1a5acee4e76231770244f72a03b6516fc19165f2c34adf",
+      "size": 1297,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/package-audit.json",
+      "sourceSha256": "9c59a2baa605be2acf685db0cd54c8b484f7678b1887717f3c006d9e5d612241",
+      "size": 47070,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/package-final.json",
+      "sourceSha256": "ce26439c1ef7ae53394df4f7c5e088c81e9e91cd66e406eb907c4a5edba8068b",
+      "size": 231,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/package-final.txt",
+      "sourceSha256": "11f909e5d268b9e08542e3a8f9814d820afeb2ec62cfe2ebb744db13c97925e6",
+      "size": 210,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/package-run.json",
+      "sourceSha256": "12a933356be8337bc66503451ca697fd5b901e4473f73e4715de04046ffdd994",
+      "size": 180,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/package-run.txt",
+      "sourceSha256": "b3a5244e024dc9e87929a703c8dc43a63ef31a9e7d4e8f11a1318f4215108836",
+      "size": 732,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/preserved-records.json",
+      "sourceSha256": "9de1f2b86c4e2d55236cf193c6708ad48d12e2de4c760e968bb65f95f1941447",
+      "size": 488,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/receipt-replay.txt",
+      "sourceSha256": "a4b0e80a3f76bb30043e23d2ceb1467916193f4ae75e2a83e3959a8064360064",
+      "size": 73,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/runs-final.json",
+      "sourceSha256": "e0900fe2c7a81070a5b46b38706e876361da0cd68e1c01ae3d72f5069b8a45dd",
+      "size": 1042,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/runs-retry.json",
+      "sourceSha256": "fef03faab1e3cd3322a06d7f4d8a4939e8d99d1afbf9ae1aacbf2f3498cdf5c9",
+      "size": 1042,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/runs.json",
+      "sourceSha256": "52486f2f9b8209c8a57e4feb39616c269b8a547323902eff98d5fb9d1939fc88",
+      "size": 1825,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/stop-1.txt",
+      "sourceSha256": "e92f85152efb3c947493bf4eb1c4a5eaef7e7317105d5446922b3f5ee9137b9a",
+      "size": 110,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/stop-2.txt",
+      "sourceSha256": "e92f85152efb3c947493bf4eb1c4a5eaef7e7317105d5446922b3f5ee9137b9a",
+      "size": 110,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/typecheck-final.txt",
+      "sourceSha256": "b08138990fc88094f266d86df9ea7bc3293e7b28b8e58628d5dba1758da8e91d",
+      "size": 48,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/typecheck-retry.txt",
+      "sourceSha256": "b08138990fc88094f266d86df9ea7bc3293e7b28b8e58628d5dba1758da8e91d",
+      "size": 48,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/typecheck.txt",
+      "sourceSha256": "b08138990fc88094f266d86df9ea7bc3293e7b28b8e58628d5dba1758da8e91d",
+      "size": 48,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-current/unit.txt",
+      "sourceSha256": "222799f3994fdf2a59fe7f5d975301f2b5de30f7d8f16dec281c178da1a974ea",
+      "size": 20569,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ac7-recheck.md",
+      "sourceSha256": "fbeae2e6a8d86eacff2cff10714525ce66cce182449b981cee45c31a0c9e8d1c",
+      "size": 11907,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-api-smoke-ledger.json",
+      "sourceSha256": "50ff257f4925f42d8557995519d990ff07b1a711dd9d268b9b92369d98e0cc2c",
+      "size": 38066,
+      "existed": true,
+      "beforeSha256": "c54b8cea605a0e131d2ec4fdb5945d41e88438caa577f83a3ca3b95b2aa23dd8"
+    },
+    {
+      "path": "docs/v2-art-office-1440.json",
+      "sourceSha256": "a05a76fae9cf6a66286cdaa4d4a42d51c761030c3035dfab91f8146ef85d8222",
+      "size": 2730,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-art-office-390.json",
+      "sourceSha256": "a05a76fae9cf6a66286cdaa4d4a42d51c761030c3035dfab91f8146ef85d8222",
+      "size": 2730,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-art-romance-1440.json",
+      "sourceSha256": "11d13e9aafcc843146dfe8a3e33e6d1693f0cacf5f596dc3daf2e7c3e9968a53",
+      "size": 2759,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-art-romance-390.json",
+      "sourceSha256": "11d13e9aafcc843146dfe8a3e33e6d1693f0cacf5f596dc3daf2e7c3e9968a53",
+      "size": 2759,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-art-source-hashes.json",
+      "sourceSha256": "7168739cf268a27be438859652132b6342b70808ce52351d4728664dcea7e57b",
+      "size": 749,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-audio-office-path.json",
+      "sourceSha256": "ebf6a018a890d13882cd10ab8b00c4a1d940bcb971d998ddc088763db622459a",
+      "size": 1578,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-audio-romance-path.json",
+      "sourceSha256": "731fcd5a76f9df9edd40321330b1425035ba1f03b2b4736e3cca15e9f13579ce",
+      "size": 10333,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-audio-score-analysis.json",
+      "sourceSha256": "d4e8dd9dae586569574b4073a85734058f4847d55b7547b347f17eee9865f549",
+      "size": 1966,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-audio-waveforms.json",
+      "sourceSha256": "d8679b4d72de16b5fb93cf0cd513c479996b035f769c494c6dc3b4833510a868",
+      "size": 19897,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-audio-waveforms.png",
+      "sourceSha256": "e79a16a128895e71cc5cdc1e35994ff9a93ef4444ad84d1d8d470b3797a7acd9",
+      "size": 43777,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-audio-waveforms.svg",
+      "sourceSha256": "a9d6e51845fb24e1fdf4f40b25e7308ae5685ea16d03e931bc409bf020ff4db5",
+      "size": 50472,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-final-receipt-replay.json",
+      "sourceSha256": "2b8fc3210d531ea995d866adb6761aa16e7c4f1ab0224e12d2c812d18e5467f8",
+      "size": 353,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-independent-critique.md",
+      "sourceSha256": "cf90a924e79dad7dc33cdecd748e2ae78f416b02b5b6f25b993491e495a2cfbc",
+      "size": 12293,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-input-evidence.json",
+      "sourceSha256": "784067b3b572995f1cdee8e66602e2cdc5ff88fc69ce860ecc96e33c12200140",
+      "size": 3042,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-interruption-evidence.json",
+      "sourceSha256": "3adf97dcc7250d69c685a5aa56a95aeffff1e9a76560bfe14f9d8e6e9628eb6a",
+      "size": 2783,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-legacy-save-evidence.json",
+      "sourceSha256": "592e57afb5664b6cd520f7e4a7269f7e363a8df6a9cba42a6f1d6ff3b33ff282",
+      "size": 300,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-01.json",
+      "sourceSha256": "0df14c21a1b7c163f76f5affdfafe9601fd66fe6461f54b0d98f9deb5f70348a",
+      "size": 39311,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-02.json",
+      "sourceSha256": "dce2bfd6d5d8198e174b588b90ca7e56ed52230d439e792dab01588116f6201b",
+      "size": 39524,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-03.json",
+      "sourceSha256": "1e44ef31579ed3d2f537538a408dac519a89b128f099f2c78640be7b9f15db75",
+      "size": 39328,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-04.json",
+      "sourceSha256": "077fee7f0c0fde76ed68dd7ffbdc8367b74bed516db0d1773c65d46b45410441",
+      "size": 55852,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-05.json",
+      "sourceSha256": "bae35ef58f45c032bf1b4f4a712b5f3737eced2ccc26189ce71c8bb3d6a915a2",
+      "size": 71097,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-06.json",
+      "sourceSha256": "659d3f57a6c17050c3ea7c2304b4738e2b4c689e3b2371edd4b5f3994bf585ab",
+      "size": 83956,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-07.json",
+      "sourceSha256": "22d9daa1742b6ed13b841dd8830a467d543b45dd6179464d0da96c94901c4caa",
+      "size": 39661,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-08.json",
+      "sourceSha256": "ea3e7e56f75c07dca8823bc140fe82ccd1338fa88bad53182aa140686853c1b7",
+      "size": 90724,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-09.json",
+      "sourceSha256": "d4d86fb5fc7437dfd3ed697a08c31ba465043ec9b8b8aed8c72b5be09eb24020",
+      "size": 104286,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-10.json",
+      "sourceSha256": "1528bf09e5ef517cf5d6895a38861882066da970ee9d78506938a44962c8aa6c",
+      "size": 89798,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-11.json",
+      "sourceSha256": "4f912990ea71cf37566fe2be0dd356a2a5adf093b12e1cd3b53b2e79973b4bbd",
+      "size": 82916,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-12.json",
+      "sourceSha256": "8affb52a651ae02cfc544e0900800704992a9af8515e3d87cdd51672b1a446fe",
+      "size": 103672,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-13.json",
+      "sourceSha256": "4e373ad98989e9797a9a7e3996667b5507dbfb2ec0a0795bda0ca45fae8db051",
+      "size": 116301,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-14.json",
+      "sourceSha256": "a18427a125f9fad22f2041d2988c2e11e068f5fc95bc9d906f6ff257d768419c",
+      "size": 129248,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-15.json",
+      "sourceSha256": "90302a28b1851fedb2c91b792302a406cc5e21b0f01252a3fca25ac8b32417c7",
+      "size": 140241,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-16.json",
+      "sourceSha256": "087fc3cc4c5634d2bcd9c13071e171095edd250bc0d5a42c09b9871342d3e867",
+      "size": 151163,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-17.json",
+      "sourceSha256": "35dc22126e231d2620387a95331261d370d696029a68300ca58eafa06984fb33",
+      "size": 162757,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-18.json",
+      "sourceSha256": "9118db81be863604a46b813ae1dddbb6f52456a434db44d797bac07e7edd2236",
+      "size": 175256,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-19.json",
+      "sourceSha256": "c5222240fdec4f5232a156c9ca2695603318fd8200bbe26a424effd2ab81839e",
+      "size": 134287,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-20.json",
+      "sourceSha256": "37d1de7dd6592d753658082ed57bf0c5480e6656727e80db8e476e0274824357",
+      "size": 134622,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-21.json",
+      "sourceSha256": "6656c7d676ddfd06e678abf17f7973262e2d218c06f3144a16bb9cb40b5b8ae7",
+      "size": 185326,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-22.json",
+      "sourceSha256": "d68063e8e4ca0e0ec4a97caa12ab8d763deb970c83d5ae416f00f763324fb121",
+      "size": 193912,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-23.json",
+      "sourceSha256": "f343228773e8063d90f23ab480ce236c028ceff701356fe18922f6fb0d7a5832",
+      "size": 145982,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-24.json",
+      "sourceSha256": "3c54c4eb036001d569d8c8a1201ba4b7ca118ffdf55b676cafe7ff577131d773",
+      "size": 205320,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-25.json",
+      "sourceSha256": "d02aa249f71d89ce972df874d55f6a87e10a4e93e75d643f15556285878c8c6a",
+      "size": 212023,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-26.json",
+      "sourceSha256": "640a3dec19fa435d460043e3e8a39e7de03c5792f975aa488d2511a729bf9463",
+      "size": 221647,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-27.json",
+      "sourceSha256": "fb4de1d9acd5f8cf0855ab0d63007bdb68f7da4c5581d168b29a0ca9a3f5e2ee",
+      "size": 232806,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-28.json",
+      "sourceSha256": "2d689c4227a315c85cb4c88d0be075a39dfb99242553d931c7bab8cedaf0dcb6",
+      "size": 242535,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-29.json",
+      "sourceSha256": "ef0cd93499507b8ab369e2108917c871085464b1efe8b4709641f99377577fb1",
+      "size": 253604,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-30.json",
+      "sourceSha256": "8e1169dfa2477df627ad3e116242de751ba72bbdaacf518bb8bc9f192efba392",
+      "size": 140853,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-31.json",
+      "sourceSha256": "a9bbe440042fbd5c469694690cf63e4fca69581c4dac5deb43824b8a2d37c1d9",
+      "size": 264782,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-32.json",
+      "sourceSha256": "884b9113220eb8bd2c0c66e69f332fbcec974cc263b5525ccf84a60638412b4c",
+      "size": 221570,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-screen-evidence.json",
+      "sourceSha256": "9c88d042687e9550aa86851d2e8b64f99941c53b5783fb5e5181bf079fa407d2",
+      "size": 2485,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-summary.json",
+      "sourceSha256": "3f68802714e1f8c936a4fd683090b582d6aaaa78f4bb8f156cdb257f6a41f1b8",
+      "size": 97277,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-live-transcript.md",
+      "sourceSha256": "f3237f85e291f26dc26e8861b21e2f1b81c2c3fce8efba179c2eb02a1118613b",
+      "size": 32327,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-package-audit.json",
+      "sourceSha256": "76914ccebcb1643d54ffd4a7e3e58b0ba13f7a12180fe8b4cc3b60c2cc8b0cf1",
+      "size": 717,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-parent-agency-after-ac3.json",
+      "sourceSha256": "0b06762880cbb96eed46ebf0e84b65e1660afeb4e692a816f701c574a56bc7f8",
+      "size": 2340,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-parent-agency-probe.json",
+      "sourceSha256": "c67d18bd8aeee4e28596f5a45a2bcda145f49a1f04f23ec0b47368e422096f14",
+      "size": 2340,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-parent-architecture-after-ac3.md",
+      "sourceSha256": "81da57be9733103cd0831c15a3622ea214a65297ef3cb6e0758d1e825dddc60a",
+      "size": 7235,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-parent-audit.md",
+      "sourceSha256": "afc4ec5aacf02c619e3b29e4697a177c65e27312e768d804369c4c50baae0ef7",
+      "size": 3660,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-parent-followup-review.md",
+      "sourceSha256": "784f3c2b00428ec051f1a306e6c67d27ca9b27e74791744a68cdc6db426ecafe",
+      "size": 8821,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-parent-probe-assertions.json",
+      "sourceSha256": "3961846dab762d48397ca444b8014300850c390cf3ad5f83e5aad6c2b2736797",
+      "size": 590,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-parent-reducer-after-ac3.json",
+      "sourceSha256": "6e33e37164b3d0a0054b813853e7028e359b8a5c7ed2ab0f50566cc8b1fda1e8",
+      "size": 14484,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-parent-reducer-probe.json",
+      "sourceSha256": "a5b42a5035dd987b3148cb33f0d30f70fed4bc507a034d6985928ba5b467e513",
+      "size": 17986,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-parent-visual-after-ac4.md",
+      "sourceSha256": "c1436f70de2b19c198f7ba5915d6030c50d4c1a84d6b3cb3a24754029e3b2c73",
+      "size": 4094,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-parent-visual-review.md",
+      "sourceSha256": "2209f676381c3833f3e1fe9819038ab6f3fdc018bcc646a09886a80365165e79",
+      "size": 7361,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-persistence-evidence.json",
+      "sourceSha256": "7bc3d48747877d26750ffde68dad8850f3c65a310db26009d8d3e3da9726a603",
+      "size": 1536238,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-art-run.txt",
+      "sourceSha256": "ce63fd4b020303e0402fc52cffd06b928f31eea76f99a3bf1d789bd3a92e3931",
+      "size": 1156,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-audio-run.txt",
+      "sourceSha256": "0988e5a1b2f57e9bf3f055359f7c67dd437da96cd66c1ecb4d07edfc5a594f7a",
+      "size": 1119,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-build-run.txt",
+      "sourceSha256": "2c9e161bd9841320ef7b349d610ae95d1f447562a531738d77e30f1a14726f9c",
+      "size": 454,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-final-browser-initial-failure.txt",
+      "sourceSha256": "cb03471b43dbafee0082ca231397326af9cf4b1b2539cc8faa946acc7713c7e3",
+      "size": 11588,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-final-browser-run.txt",
+      "sourceSha256": "823871211aba368387aa5fc98e79c10777baae58a169aca7d068ceaf72b43b6e",
+      "size": 2791,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-final-build-run.txt",
+      "sourceSha256": "6dca658d67f9257e24954667484e7b506fb8c470121f55b3983af2325c8fa33e",
+      "size": 454,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-final-source-hashes.json",
+      "sourceSha256": "9fe933efa43ac8b27773c32a4d75512b21ea0d539c04267f4e04720dc5d22997",
+      "size": 5633,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-final-unit-initial-failure.txt",
+      "sourceSha256": "2451d50041805c407812808792de02fdc6b94c7f3ddc6da1ad34b0ff1e894a55",
+      "size": 14901,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-final-unit-run.txt",
+      "sourceSha256": "11a6747aff3b4bcd79771284987660aceed96a8c983bdda2d06d882f23c125c5",
+      "size": 13666,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-launch-run.txt",
+      "sourceSha256": "6c805cc0b8d17fae12f6c5803960b963f5b85b0ba9ebd9505d0c2dabef0a3d59",
+      "size": 704,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-live-console.txt",
+      "sourceSha256": "ff20f9e295032421ac08cd9d1141b035fe97e6cb6f23f4a9e46382c2686de960",
+      "size": 3009,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-live-screens-run.txt",
+      "sourceSha256": "f30e884d84f31526fb0b3762e0e559a35f95dc8352de1f1b4c4cf1c8fb4b6cc4",
+      "size": 67,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-package-initial-failure.txt",
+      "sourceSha256": "983067fb2cb9d05be730a55ea85a806ad55d1bc16779a0019811d676521544ad",
+      "size": 723,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-package-run.txt",
+      "sourceSha256": "11f909e5d268b9e08542e3a8f9814d820afeb2ec62cfe2ebb744db13c97925e6",
+      "size": 210,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-persistence-run.txt",
+      "sourceSha256": "6f81a7c8cdc9b3c65a777145beaef136340aedd5a766c70ba606dad3021d2246",
+      "size": 1269,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-repair-run.txt",
+      "sourceSha256": "e0e114d6ef0e9e1ab2c5438b81dc888770c4c10da0a4365b8d710476876d4f55",
+      "size": 2678,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-safety-audit.json",
+      "sourceSha256": "a9eb6c246c7c5e58beddcbeba76fd5b9731f1efdd9ce05f009e8dc59dfe452b7",
+      "size": 372,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-stop-run.txt",
+      "sourceSha256": "59220902ff323102f560ce9b7acb7df1d39f68baeaf240d3c48fc56a0210e17e",
+      "size": 54,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-ui-run.txt",
+      "sourceSha256": "d4058cca4e6dbc2989631ba7c29daef79a393bf2b54c1dd27880dfa34d9a51da",
+      "size": 1031,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-qa-unit-run.txt",
+      "sourceSha256": "32f54ae1b52362ef375a33113e1c773d855982863cbf9d412ec28993d615b66e",
+      "size": 13193,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-recovery-evidence.json",
+      "sourceSha256": "ce2146a48dc35436c56b46a494ebaada4ccd0a36303e255e9535589601b2a789",
+      "size": 3898839,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-security-evidence.json",
+      "sourceSha256": "a6b9bc1d58eed129389962a9b4ac081fb741c813bfc49a93ffc53334ec7505e9",
+      "size": 369,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ui-1440-office.json",
+      "sourceSha256": "7c1eee6d204d2c33aef47bc75effd5de9d1db1aaec5f8ab1dffcc846a9e9186e",
+      "size": 579,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ui-1440-romance.json",
+      "sourceSha256": "8108ba123fbe546197f9d82e4885aaea64155a49501f8535d21e07c197889220",
+      "size": 580,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ui-390-office.json",
+      "sourceSha256": "d291fec52416eda06c37f4b30fd5c6ad2e61d5a5adc07b5d7e76a7b3df7c2c5f",
+      "size": 578,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ui-390-romance.json",
+      "sourceSha256": "d089a744f60ab11cfa6af245f9171ef966536cd5709dcc467136bd299ab747f0",
+      "size": 579,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ui-source-hashes.json",
+      "sourceSha256": "4a92814b29a71a3c28ee4ec9f918a3fe823415a84fcce87e70a47cc99fb7d317",
+      "size": 623,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "docs/v2-ui-verification.md",
+      "sourceSha256": "eb065e8c906c8861569482086e77c95959fdb8cd437f2f99690edbba7d75e498",
+      "size": 4604,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "play.cmd",
+      "sourceSha256": "f5dc013f3b68326a7268c0460c1f49bcfbb81288379d4580cafefae79f1ee29e",
+      "size": 135,
+      "existed": true,
+      "beforeSha256": "a18e3be1348d81330716d45700e9a7b8d54b4c170976df9a2e196b34aeb8f260"
+    },
+    {
+      "path": "playwright.config.ts",
+      "sourceSha256": "edecabcf89c28bc236a4685c932e9cdcfa97892b07ed33b2f0cfa86e689b0a58",
+      "size": 664,
+      "existed": true,
+      "beforeSha256": "6250a134765b9ffee1bc3698343658c82752fa3616ec8f29e876a9f96e76785d"
+    },
+    {
+      "path": "playwright.v2-art.config.ts",
+      "sourceSha256": "9fe6ba3c0085b225b5eef92d105ba5b7429a12f0310717ad3cf6614e71e00b69",
+      "size": 400,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "playwright.v2-audio.config.ts",
+      "sourceSha256": "7462204d3664d9bf04c8ddca98ae758209974de0603cb8082003e206714b45ab",
+      "size": 375,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "playwright.v2-persistence.config.ts",
+      "sourceSha256": "68e3222938cb0f08532677f4f4dcd7f4b6dfeab622df9c534b53e1486f2adbd8",
+      "size": 527,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "playwright.v2-ui.config.ts",
+      "sourceSha256": "d6d156fbb503f8ffcb0b7062f3c5f052edbf4d0b4a34cfa8645849ca2db3bde5",
+      "size": 338,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/README.md",
+      "sourceSha256": "5683d5035f3604c3736c8bb05660e492e01056054c60933a45fd60a91d4fefe2",
+      "size": 3317,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/archive-pursuit.ogg",
+      "sourceSha256": "9affe22de8b8125ad6709fdf4acde2e107e91483642fdee70397b81c3da2b311",
+      "size": 920512,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/archive-pursuit.score.json",
+      "sourceSha256": "8dbb473ebfb76c93bce8c207a5549e092d503389d74bc4f3b51cd965842aeb9e",
+      "size": 88188,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/archive-unease.ogg",
+      "sourceSha256": "15009a89a11c82293e1691bb16646321fdf0c63910cfdf7c2211f59b8fb2f709",
+      "size": 1022495,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/archive-unease.score.json",
+      "sourceSha256": "f6b1a96db01beda7fe576f0d3c1319cdf3fc33820292b14b4d29e2f6fa3e0cff",
+      "size": 13764,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/cafe-warmth.ogg",
+      "sourceSha256": "6e36898828d76fa9a46577384f3e42da3475ecfb6952af408b832891ffa94acb",
+      "size": 1041629,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/cafe-warmth.score.json",
+      "sourceSha256": "d69b7edd52e0a9b2bb01c1eabd989a43c7773a82e6f8579123e2ae0f8812ed96",
+      "size": 55146,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/compose.py",
+      "sourceSha256": "a8d82b56e665a8c54ecabce040fb7abbf7d0a9e51de55808711908ebec1e1a84",
+      "size": 21865,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/manifest.json",
+      "sourceSha256": "b6a8b390b1634300d73b2b24ce655c1c44fd83c211562a502d930695cd19ee92",
+      "size": 16089,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/office-groove.ogg",
+      "sourceSha256": "ed29e9ee5af160f5021c6816c211d232df59301b947edc971499fa4ff3f64fb1",
+      "size": 940967,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/office-groove.score.json",
+      "sourceSha256": "9a60cd7ea3814a5efd91b2739a34ba05b0934c258637152f2d95981c9242f656",
+      "size": 83403,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/office-pressure.ogg",
+      "sourceSha256": "a03d29cb48c6d8075625b37e0d1113146f758aae7061b9abb389aed2f26c4078",
+      "size": 690644,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/office-pressure.score.json",
+      "sourceSha256": "05d6925b5af1261dac2530ab8c3fafaa2664ef90a60bd8b616dee1ed6f4e26bc",
+      "size": 72947,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/rainy-memory.ogg",
+      "sourceSha256": "156b725a24ba5e71bdb4fc75107e658563d23ab454637a969065d5f84512f2b2",
+      "size": 1224481,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/rainy-memory.score.json",
+      "sourceSha256": "3e14088889f05b7eacc1531eb8f853450af0f1289a003c8fbdead070bac391ae",
+      "size": 48795,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/resolution-dawn.ogg",
+      "sourceSha256": "eb75c8ab798eea7cd9b4a4c0640e95a35225f5c142c5fafe6d3ae7342fadfe26",
+      "size": 763935,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/resolution-dawn.score.json",
+      "sourceSha256": "597853e64121289b40498edb45ff1351352b5ce5e1280aa05f8ab0eebe4e3ff7",
+      "size": 36939,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/rooftop-heart.ogg",
+      "sourceSha256": "a4516c6187507bb7175f735eeb76fd47a8da3cfb999c9ed570bff02feb4c1c99",
+      "size": 697245,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/rooftop-heart.score.json",
+      "sourceSha256": "c9c3dc1e0e3109593cb7a2e909c223773ea104d8e19185b8403c5c8bc5ad3474",
+      "size": 45331,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/audio-v2/verification.json",
+      "sourceSha256": "48cb95be1debd8c581c453fdf348fcb33f2b83759d6626a89f93ea8c076e7768",
+      "size": 2656,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/v2/boss-actions-a.png",
+      "sourceSha256": "18176790fe162b6b65519c50a89dc9fc4cf5ab571a8f819204b6074bb9d12f40",
+      "size": 1127544,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/v2/boss-actions-b.png",
+      "sourceSha256": "debd7febc1fd485aae4c4734cb18076a90fc735ec705e545296016daf615b7dd",
+      "size": 1502562,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/v2/generation-manifest.json",
+      "sourceSha256": "acd768da058d599f6d5fdbc57729105afea68bf4505aeea57df8cda6da538075",
+      "size": 20929,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/v2/rainstreet.png",
+      "sourceSha256": "44eda0f37410a72ab8939fab268e41c0ca65de2cc212696d34815d407fac60d4",
+      "size": 3235355,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/v2/rooftop.png",
+      "sourceSha256": "6061e8b6712faa827cdf6c29e504c274a3997fb211aba44dd36bbdb983fa8cc4",
+      "size": 2782229,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/v2/yuna-actions-a.png",
+      "sourceSha256": "ad4a35ffb0070f3ba704f389c7d7ee84a03e7563247972ca773053b7ac6d5c6c",
+      "size": 1723819,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "public/assets/v2/yuna-actions-b.png",
+      "sourceSha256": "b14c4daa745797c3995eb961f446c0d9b45751744430248d95580b6755e4f049",
+      "size": 1723201,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "scripts/audit-v2-package.ps1",
+      "sourceSha256": "3601c6ffe078e4fade96623dedceda714149884e1d63c9e5ccd4cfd11f6f0ed1",
+      "size": 1998,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "scripts/index-v2-candidate.mjs",
+      "sourceSha256": "6b6727b11d66a60f8b7b9702a3b4760a6a35be6bc7920f50c72e94826e8de974",
+      "size": 3585,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "scripts/start-local.ps1",
+      "sourceSha256": "bd6543510c2f260b375de46585f761e79589f3676cddd0c08eaf989ec19572a2",
+      "size": 3629,
+      "existed": true,
+      "beforeSha256": "983a2acf5b531b29d06818cdd7c4523b94ff7b7142b36005174aff830883d14a"
+    },
+    {
+      "path": "scripts/verify-v2-candidate.mjs",
+      "sourceSha256": "6f375a0c51e1325437e62d54378aa56a30ebbe7c5d33980868038da26343b01c",
+      "size": 1562,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "scripts/verify-v2-launcher.ps1",
+      "sourceSha256": "cb28d35a2a5a94944d1370bdd4b77cda6c0aef41ececd9b1ac063d301efdd417",
+      "size": 2606,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "server/adversarial.test.ts",
+      "sourceSha256": "e996bb47c24b633f4af3c3cebbef0b4a6d33558a8de05191f244a2337a77bc2b",
+      "size": 7384,
+      "existed": true,
+      "beforeSha256": "9cb9058f6fc533822475e5d9ad2ad80d8e5c0f5ac80e71c34a2066e326dadfa3"
+    },
+    {
+      "path": "server/dialogue.test.ts",
+      "sourceSha256": "b1237b060052917274a489ef8fc2cea4cb2f166df725032b58185875af4c37c0",
+      "size": 3455,
+      "existed": true,
+      "beforeSha256": "1a380a6b9f28bf077a63eb46218b531afa2871a9d301febee8086b3df2979741"
+    },
+    {
+      "path": "server/dialogue.ts",
+      "sourceSha256": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+      "size": 6841,
+      "existed": true,
+      "beforeSha256": "0e6205c18ade035bcda7aeb98011dda8e65335dc1a85877030c2d4644c04fee6"
+    },
+    {
+      "path": "server/game.ts",
+      "sourceSha256": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "size": 2210,
+      "existed": true,
+      "beforeSha256": "13f171bdee0600d46c903429265a72304fa287b520c2dc7b5e523afb3a0ffc6b"
+    },
+    {
+      "path": "server/index.ts",
+      "sourceSha256": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+      "size": 9110,
+      "existed": true,
+      "beforeSha256": "97e3ef0353e45654daf92688a543af21dd7e7e6b66c4e063ca88cb0f1a610b09"
+    },
+    {
+      "path": "server/interpretation.test.ts",
+      "sourceSha256": "57814fca4693c08bb253a17349492460ff4bdb3c1ac319022324aead0c8d90ba",
+      "size": 4609,
+      "existed": true,
+      "beforeSha256": "5514ad68d1874f0f4249d58d6b985bdba85cfdbecc655f3065767e8e214bb683"
+    },
+    {
+      "path": "server/music.test.ts",
+      "sourceSha256": "a96b3a75746ad0fdad049918940a24417440316c6cfc7d2595503c8ea734d0e0",
+      "size": 3076,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "server/narrative-agency-regression.test.ts",
+      "sourceSha256": "81120fe9738e44e4d6871af30b9cf3a3979b1c332fce14a31d73e63c8f35de2e",
+      "size": 17887,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "server/narrative-counterfactual.test.ts",
+      "sourceSha256": "b9922bc539054fdd47d5ba0db223519cfd186650cd19787596d1de972c1433cf",
+      "size": 4956,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "server/narrative.test.ts",
+      "sourceSha256": "e2613053275ccbe8b08449df7199e038faf78669b7f0c75c49c5ea74f5b9cb3d",
+      "size": 14023,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "server/narrative.ts",
+      "sourceSha256": "a5abec4c7ef351c548048887b82cf403295ac35eb7e36028730aef56a85709ef",
+      "size": 19830,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "server/persistence.test.ts",
+      "sourceSha256": "3190e8f8d0c32758d13fbef7c5a072bdad05741b1653897195acb69d1cc973af",
+      "size": 6770,
+      "existed": true,
+      "beforeSha256": "97c4176757f99b7c3541952a72ac94c56ac470c3123875089e336ab5592726ef"
+    },
+    {
+      "path": "server/provider.ts",
+      "sourceSha256": "d42f3f53111f385b981dc522188f8bdef24e7e925ab361a7d1cf71d41c9718b4",
+      "size": 13921,
+      "existed": true,
+      "beforeSha256": "42510419e74f65bb9ca8ca341d9ca6b46d7a0e6a220ef1ac23ddba6818921309"
+    },
+    {
+      "path": "server/recovery.test.ts",
+      "sourceSha256": "a0e865cced0e13a018cd50b4dface7367a0a2aba721759ce300b20d205d35d7e",
+      "size": 4533,
+      "existed": true,
+      "beforeSha256": "351a34a74df9dc2009db1cfbf5b1ebcaf8c9aa543f306e45e316c3e1b7e7c23f"
+    },
+    {
+      "path": "server/romance.ts",
+      "sourceSha256": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+      "size": 17563,
+      "existed": true,
+      "beforeSha256": "dfe6a00a02f735a685d7ed6dbb98e6e0f6d216badce3dbbc9278947a2b5bb755"
+    },
+    {
+      "path": "server/storage.ts",
+      "sourceSha256": "6d80fdec35b99205f30d5f1270060b4a00bee8520d4258ec0c5afea591e8d9da",
+      "size": 6211,
+      "existed": true,
+      "beforeSha256": "a4d1afcdc8f2248a40ee8e7bf513ada98d81e2ff578edee3b143efff6889d28f"
+    },
+    {
+      "path": "server/v2-ac3-lifecycle.test.ts",
+      "sourceSha256": "8f87cdbb2cda3bcd4e03fbbabde59f58102e9fb820363f0cebc9e4615e2e2e44",
+      "size": 9725,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "server/v2-security.test.ts",
+      "sourceSha256": "9c0a05c6e7766c107d0c677cb2146bdfd49916ba2ffcd4e8b2825fa438c33711",
+      "size": 8012,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "server/v2-story.test.ts",
+      "sourceSha256": "01dc2795d99e76b291df5e9dde548150a9f600512a9dd8993d4fbab487b897b5",
+      "size": 11166,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "server/visual-binding.test.ts",
+      "sourceSha256": "3a224920f8ed5d3a115a80dcf939e1938e2b4b74841532acd83e41709315f816",
+      "size": 1018,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "src/CharacterSprite.tsx",
+      "sourceSha256": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+      "size": 880,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "src/OfficeAgreement.tsx",
+      "sourceSha256": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+      "size": 1129,
+      "existed": true,
+      "beforeSha256": "7d585dd3a84b38ce538493aafea3e4b92b96dad097dd9b859a297bb4484b15b6"
+    },
+    {
+      "path": "src/StageEffects.tsx",
+      "sourceSha256": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+      "size": 2830,
+      "existed": true,
+      "beforeSha256": "e2c21f30bec1d6216deab365d0c721343f94c3e69b3bcd9f5ffa1a9e91b06ef9"
+    },
+    {
+      "path": "src/main.tsx",
+      "sourceSha256": "33eca42f7280f54d503db01966b67437c3cf732ec182bf4e2f548791dea869cf",
+      "size": 15727,
+      "existed": true,
+      "beforeSha256": "5899c332b86bd44e11698d842af61be7275e6914e742b47f7fc1beaee9f5d00e"
+    },
+    {
+      "path": "src/music.ts",
+      "sourceSha256": "f16880daffa7a8996e4040112543b61f809f6413d391c67ef510d0c7137d0045",
+      "size": 3186,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "src/presentation.ts",
+      "sourceSha256": "ad53276bd1d890422d865915fa5896271e39c59678355ac09af2a9bc85f6faa9",
+      "size": 3127,
+      "existed": true,
+      "beforeSha256": "a86661dfdaf6f80e43429936c821397a6d57afbf483cdabe5e4c7a46663dc6fe"
+    },
+    {
+      "path": "src/style.css",
+      "sourceSha256": "87ecf8acab98d669c7a606ecc0e90bf113cc9b75f7c2ab3656454c6f936a3c2a",
+      "size": 12559,
+      "existed": true,
+      "beforeSha256": "cf4c637984d4577bd6b7d23015bf302644c1a81e94777c7358c0f7afd585182b"
+    },
+    {
+      "path": "src/visualAssets.ts",
+      "sourceSha256": "74bf10d9ed51214c21576d540c1d62e249f599f3e163260e76d384e3c1c46a45",
+      "size": 3617,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "tests/persistence.spec.ts",
+      "sourceSha256": "07a122da9738ef95d7c196893177f641c75cefa11100995eeb9266157c46cba6",
+      "size": 9447,
+      "existed": true,
+      "beforeSha256": "9a5a4038b68ced0463d937a7f650e80fefe8535502e5759b11b9a1a40030f991"
+    },
+    {
+      "path": "tests/provider-fixture.mjs",
+      "sourceSha256": "5801bb1cb5fb383361655a83e170d309461dbaa466323ac81fd6e7594c3ef3da",
+      "size": 1111,
+      "existed": true,
+      "beforeSha256": "f28c38c2929b619965815685d171e79f20289f77dfee6654bd8ece3a65b2c284"
+    },
+    {
+      "path": "tests/v2-ac2-receipt-replay.ts",
+      "sourceSha256": "f2371f4371b49930056fe87ce38c992bd2809b7429c7e2e42deb5df6633d036b",
+      "size": 2076,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "tests/v2-ac3-receipt-audit.ts",
+      "sourceSha256": "b5cc1d2b3d1320388f71a76c977a27db615be2b369a4737a129df55fb45473d0",
+      "size": 2090,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "tests/v2-ac4-boundaries.spec.ts",
+      "sourceSha256": "0bc97e5d992a33911856bd481fa682ae01f9042424e0a6b45c34468336887391",
+      "size": 8558,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "tests/v2-ac4-gallery.ts",
+      "sourceSha256": "df461be6d2010996ed8841e6560c2c0266b84f1f86e3b09ca7d92e14c52bf8e5",
+      "size": 1780,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "tests/v2-art.spec.ts",
+      "sourceSha256": "c7878e7cad5542f8d879fc067dd76cb90b89caf5d2905759e7c22bee4973042d",
+      "size": 5265,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "tests/v2-audio.spec.ts",
+      "sourceSha256": "e33dfc1d0494e5da6f76cd2f2904b31d95cf3e66ec49aa8de3d3f117a07501c2",
+      "size": 11095,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "tests/v2-live-screens.mjs",
+      "sourceSha256": "867ba488b8968ae91ea3eb8c647149d22fa556f57927a41a5aa7e3660850783b",
+      "size": 2301,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "tests/v2-live-server.ts",
+      "sourceSha256": "71033d7bce7057635e9a97f7da7770dd8ebc75d05eafc963fb011bce0ae8f6ad",
+      "size": 515,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "tests/v2-live-smoke.ts",
+      "sourceSha256": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21",
+      "size": 4204,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "tests/v2-persistence-fixture.mjs",
+      "sourceSha256": "dabb4b34ce8a0431c42fd0b47485260e02c9bc7fb07aa80f4c12734094e3630a",
+      "size": 986,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "tests/v2-receipt-replay.ts",
+      "sourceSha256": "213b811a54032768e534e8fd5263c149557ee79b66b0223f6c8bd8b6f10db530",
+      "size": 1238,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "tests/v2-security-fixture.mjs",
+      "sourceSha256": "09c2e869d0d90aa6734c3652aebab5d93d597880d48abc297a57b175ee130f3b",
+      "size": 411,
+      "existed": false,
+      "beforeSha256": null
+    },
+    {
+      "path": "tests/v2-ui.spec.ts",
+      "sourceSha256": "c2092085aeaf3accb1dbe2dbf3016276bff6265ab3c7866385e5133e52230a05",
+      "size": 7778,
+      "existed": false,
+      "beforeSha256": null
+    }
+  ],
+  "copiedAt": "2026-11-21T04:01:01.228944+00:00",
+  "verification": "All508 destination byte hashes equal source snapshot.24 preexisting files backed up. Private env/data excluded."
+}

@@ -1,5 +1,17 @@
 # AFTER HOURS v2 — direction and delivery contract
 
+## Parent continuation after the first Ralph loop
+
+The first real loop `job_18106ce21343` ended after generation2 with `grade_regressing`, formal3/7 and QA0.58/REVISE. Its original result is preserved in `docs/v2-ralph-terminal.json`; do not change or erase it. The validated generation2 contract is preserved verbatim in `verification/v2-generation2.seed.json`. No acceptance criterion has been lowered.
+
+The parent integrated the generation2 snapshot into the original workspace, then fixed long-reply scroll reset, overflow indication, mobile title discovery, client timeout32 seconds, legacy collection visibility/current epilogue, a real HTTP/mock-transport browser journey, four reproduced lifecycle defects, natural particle omission, and short affirmative replies to explicit existing offers. Details and chronological source hashes are in `docs/v2-parent-current/`. Do not overwrite these with an older worktree snapshot.
+
+**Remaining reproduced defects have a free executable reproducer:** `npx tsx tests/v2-promise-edge-probe.ts`. At the parent checkpoint it fails4/5 checks: an unrelated fulfilled proposal supports its own wrong referent; looking at a promised ribbon counts as delivering it; searching for it counts as delivery; a friend delivering it counts as the player performing their promise. Preserve the positive particleless delivery, origami, new drawing subject, short replies, future-vs-current dates, same-object return visits and memory controls. Correct semantic ownership and completion without a closed list of permitted story actions or canned dialogue. Ordinary unit tests passing does not resolve the separately failing probe.
+
+**No paid call is currently available.** The original12 and v2 additional32 attempts remain consumed and immutable. Parent requested up to24 more but has not received a user answer. `tests/v2-final-live/` is an approval-gated future runner, not new authorization; the active approval ledger is deliberately absent. Do not provision approval, use the template as approval, create a new budget, or call an API. Continue free implementation/verification, and report the fresh-model evidence gap honestly. Only the parent final-QA owner may use a subsequently approved allocation.
+
+For AC4 review, open the actual comparison PNGs in `docs/qa-screenshots/v2-ac4-recheck/`, their full-resolution originals/index, the current default art captures, and `docs/v2-parent-visual-observation.json`. The parent and independent reviewer visually saw12 different actual illustrated cells per actor. This is controlled-render evidence, not proof all poses naturally appeared in live generation. Do not infer whole-project file absence from a two-provider-file scope. Keep actual renderer hashes and evidence scope explicit.
+
 The user called the current game unsatisfying and supplied screenshots of its opaque cream document layout and three choices. Treat this as a product redesign, not cosmetic cleanup. See `.ralph/v2-experience-review.md` for inspected code defects and official research links.
 
 ## Experience

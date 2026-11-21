@@ -1,0 +1,21 @@
+import {readFileSync,readdirSync,statSync,writeFileSync,existsSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
+const walk=p=>statSync(p).isDirectory()?readdirSync(p).sort().flatMap(n=>walk(`${p}/${n}`)):[p];
+const roots=['src','server','public','dist','scripts','tests','package.json','package-lock.json','tsconfig.json','vite.config.ts','index.html','play.cmd','stop.cmd',...readdirSync('.').filter(n=>/^playwright.*\.ts$/.test(n))];
+const files=[...new Set(roots.flatMap(walk))].sort().map(path=>({path,sha256:hash(path),bytes:statSync(path).size}));
+const digest=createHash('sha256').update(JSON.stringify(files)).digest('hex');
+const ledger=JSON.parse(readFileSync('docs/v2-api-smoke-ledger.json','utf8'));
+const receipts=ledger.attempts.map(a=>{
+ const path=`docs/v2-live-${String(a.id).padStart(2,'0')}.json`;
+ const r=JSON.parse(readFileSync(path,'utf8'));
+ const changes=Object.entries(a.hashes).filter(([p,h])=>!existsSync(p)||hash(p)!==h).map(([path,recorded])=>({path,recorded,current:existsSync(path)?hash(path):null}));
+ return {attempt:a.id,reservedAt:a.reservedAt,result:a.result,path,sha256:hash(path),reservationMatches:r.attempt.id===a.id&&r.attempt.reservedAt===a.reservedAt,changes,status:changes.length?'historical; fresh generation requires revalidation':'matching recorded files only; not all candidate files were recorded'};
+});
+const required=['play.cmd','stop.cmd','README.md','docs/v2-QA.md'];
+const deliverableRoots=['README.md','THIRD_PARTY_NOTICES.txt','.env.example','play.cmd','stop.cmd','package.json','package-lock.json','tsconfig.json','vite.config.ts','index.html','src','server','public','dist','scripts','tests','docs','verification',...readdirSync('.').filter(n=>/^playwright.*\.ts$/.test(n))];
+const inventory=[...new Set(deliverableRoots.filter(existsSync).flatMap(walk))].sort().filter(p=>p!=='docs/v2-ac7-current/candidate.json');
+const docEvidence=inventory.filter(p=>p.startsWith('docs/')).map(path=>({path,sha256:hash(path),bytes:statSync(path).size}));
+const report={candidateId:`afterhours-v2-g2-${digest.slice(0,16)}`,createdAt:new Date().toISOString(),identityScope:'All source, dependency lock, assets, execution and verification scripts; docs are separate evidence hashes to avoid a self-referential ID.',sourceDigest:digest,files,deliverables:{scope:'Project-root recursive allowlist, same distribution roots as scripts/package-local.ps1; excludes .env, private saves, node_modules, runtime metadata and artifacts',roots:deliverableRoots,paths:inventory,required:required.map(path=>({path,exists:existsSync(path),sha256:existsSync(path)?hash(path):null})),limitedTwoFileScope:{paths:['server/narrative.ts','server/provider.ts'],finding:'Not finding a launcher or QA document in this limited scope establishes no whole-project absence.'}},evidence:docEvidence,paid:{previous:12,used:ledger.attempts.length,limit:ledger.phaseLimit,remaining:ledger.phaseLimit-ledger.attempts.length,newCalls:0,ledgerSha256:hash('docs/v2-api-smoke-ledger.json'),oldLedgerSha256:hash('docs/api-smoke-ledger.json'),receipts},verdict:'AC7 incomplete: fresh candidate conversation/counterfactual continuation evidence is unavailable within exhausted call limit.'};
+writeFileSync('docs/v2-ac7-current/candidate.json',JSON.stringify(report,null,2));
+console.log(JSON.stringify({candidateId:report.candidateId,files:files.length,deliverables:inventory.length,receipts:receipts.length,changed:receipts.filter(r=>r.changes.length).length,remaining:report.paid.remaining}));

@@ -1,0 +1,29 @@
+﻿{
+    "environment":  "Windows PowerShell; no browser launch; isolated save directory; no turn requests",
+    "results":  [
+                    {
+                        "finishedAt":  "2026-11-21T03:51:59.0897846Z",
+                        "launchExit":  0,
+                        "startedAt":  "2026-11-21T03:51:46.6264744Z",
+                        "httpStatus":  200,
+                        "pid":  20368,
+                        "processGone":  true,
+                        "cycle":  1,
+                        "launchCommand":  "play.cmd -NoBrowser -Port 3077",
+                        "stopExit":  0,
+                        "stopCommand":  "stop.cmd"
+                    },
+                    {
+                        "finishedAt":  "2026-11-21T03:52:08.8885500Z",
+                        "launchExit":  0,
+                        "startedAt":  "2026-11-21T03:51:59.0947666Z",
+                        "httpStatus":  200,
+                        "pid":  21036,
+                        "processGone":  true,
+                        "cycle":  2,
+                        "launchCommand":  "play.cmd -NoBrowser -Port 3077",
+                        "stopExit":  0,
+                        "stopCommand":  "stop.cmd"
+                    }
+                ]
+}

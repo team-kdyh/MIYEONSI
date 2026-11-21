@@ -1,0 +1,19 @@
+
+Running 11 tests using 1 worker
+
+  ok  1 tests\v2-ac4-boundaries.spec.ts:10:65 › agency visuals 1440 reduced=false (20.0s)
+  ok  2 tests\v2-ac4-boundaries.spec.ts:10:65 › agency visuals 1440 reduced=true (9.3s)
+  ok  3 tests\v2-ac4-boundaries.spec.ts:10:65 › agency visuals 390 reduced=false (14.8s)
+  ok  4 tests\v2-ac4-boundaries.spec.ts:10:65 › agency visuals 390 reduced=true (3.2s)
+  ok  5 tests\v2-ac4-boundaries.spec.ts:55:31 › captured real replies use committed visuals 1440 (7.2s)
+  ok  6 tests\v2-ac4-boundaries.spec.ts:55:31 › captured real replies use committed visuals 390 (3.0s)
+  ok  7 tests\v2-art.spec.ts:8:1 › staged provenance hashes match shipped originals (29ms)
+  ok  8 tests\v2-art.spec.ts:13:79 › office 1440: real sheets, validated move, action and reduced motion (21.7s)
+  ok  9 tests\v2-art.spec.ts:13:79 › office 390: real sheets, validated move, action and reduced motion (15.4s)
+  ok 10 tests\v2-art.spec.ts:13:79 › romance 1440: real sheets, validated move, action and reduced motion (21.4s)
+  ok 11 tests\v2-art.spec.ts:13:79 › romance 390: real sheets, validated move, action and reduced motion (16.0s)
+
+  11 passed (2.3m)
+
+(node:5360) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

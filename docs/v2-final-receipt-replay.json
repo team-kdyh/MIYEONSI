@@ -1,0 +1,21 @@
+{
+  "scope": "Offline deterministic replay of captured real responses through final reducer; no new generation",
+  "rows": [
+    {
+      "receipt": 29,
+      "matched": true
+    },
+    {
+      "receipt": 30,
+      "matched": true
+    },
+    {
+      "receipt": 31,
+      "matched": true
+    },
+    {
+      "receipt": 32,
+      "matched": true
+    }
+  ]
+}

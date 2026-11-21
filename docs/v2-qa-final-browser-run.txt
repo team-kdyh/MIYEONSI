@@ -1,0 +1,29 @@
+[WebServer] (node:8848) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 20 tests using 1 worker
+
+(node:14432) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\persistence.spec.ts:3:1 › AC6 failed save delivery offers state recovery without replaying a mutation (720ms)
+  ok  2 tests\persistence.spec.ts:19:1 › AC6 unrecoverable storage displays an explicit confirmed reset path (253ms)
+  ok  3 tests\persistence.spec.ts:29:1 › AC6 reload restores all three manual slots, relationship, log and unlocked ending (1.7s)
+  ok  4 tests\persistence.spec.ts:62:1 › AC6 pending response from another timeline recovers current state (427ms)
+  ok  5 tests\persistence.spec.ts:78:1 › AC6 delivered but not displayed turn survives reload and retries once (607ms)
+  ok  6 tests\persistence.spec.ts:106:1 › AC6 conflicting stale tab recovers server state without advancing (481ms)
+  ok  7 tests\persistence.spec.ts:118:1 › v2 browser settings and explicit provider survive refresh and a new game (717ms)
+  ok  8 tests\v2-art.spec.ts:8:1 › staged provenance hashes match shipped originals (35ms)
+  ok  9 tests\v2-art.spec.ts:13:79 › office 1440: real sheets, validated move, action and reduced motion (21.3s)
+  ok 10 tests\v2-art.spec.ts:13:79 › office 390: real sheets, validated move, action and reduced motion (15.4s)
+  ok 11 tests\v2-art.spec.ts:13:79 › romance 1440: real sheets, validated move, action and reduced motion (21.6s)
+  ok 12 tests\v2-art.spec.ts:13:79 › romance 390: real sheets, validated move, action and reduced motion (15.2s)
+  ok 13 tests\v2-audio.spec.ts:8:1 › all eight shipped compositions decode, match provenance and have non-silent distinct waveforms (2.7s)
+  ok 14 tests\v2-audio.spec.ts:30:49 › office: normal validated conversation path with real playback and crossfades (10.8s)
+  ok 15 tests\v2-audio.spec.ts:30:49 › romance: normal validated conversation path with real playback and crossfades (42.8s)
+  ok 16 tests\v2-audio.spec.ts:88:1 › autoplay rejection shows a visible gesture retry and recovers real playback (655ms)
+  ok 17 tests\v2-ui.spec.ts:6:2 › office: viewport 1440, free text, scroll, keyboard and settings (3.6s)
+  ok 18 tests\v2-ui.spec.ts:6:2 › romance: viewport 1440, free text, scroll, keyboard and settings (4.3s)
+  ok 19 tests\v2-ui.spec.ts:6:2 › office: viewport 390, free text, scroll, keyboard and settings (2.0s)
+  ok 20 tests\v2-ui.spec.ts:6:2 › romance: viewport 390, free text, scroll, keyboard and settings (2.2s)
+
+  20 passed (2.5m)

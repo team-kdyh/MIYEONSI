@@ -1,0 +1,3144 @@
+[
+  {
+    "instrument": "pluck",
+    "note": 43,
+    "bar": 1,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 1,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 1,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 1,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 50,
+    "bar": 1,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 1,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 1,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 1,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 71,
+    "bar": 1,
+    "beat": 0,
+    "beats": 0.8,
+    "velocity": 0.22468261832609826,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 74,
+    "bar": 1,
+    "beat": 1,
+    "beats": 0.65,
+    "velocity": 0.2113767372300768,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 76,
+    "bar": 1,
+    "beat": 2.5,
+    "beats": 0.5,
+    "velocity": 0.193883034361027,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 74,
+    "bar": 1,
+    "beat": 3.25,
+    "beats": 0.5,
+    "velocity": 0.20485513527786012,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 1,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 1,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 1,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 1,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "pluck",
+    "note": 40,
+    "bar": 2,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 52,
+    "bar": 2,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 2,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 2,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 47,
+    "bar": 2,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 52,
+    "bar": 2,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 2,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 2,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 71,
+    "bar": 2,
+    "beat": 0.5,
+    "beats": 1.1,
+    "velocity": 0.2145647214426521,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 67,
+    "bar": 2,
+    "beat": 2,
+    "beats": 1.4,
+    "velocity": 0.2208949915602275,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 2,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 2,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 2,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 2,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "pluck",
+    "note": 48,
+    "bar": 3,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 60,
+    "bar": 3,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 3,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 67,
+    "bar": 3,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 3,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 60,
+    "bar": 3,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 67,
+    "bar": 3,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 3,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 72,
+    "bar": 3,
+    "beat": 0,
+    "beats": 0.7,
+    "velocity": 0.2260713200466125,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 76,
+    "bar": 3,
+    "beat": 1.5,
+    "beats": 0.5,
+    "velocity": 0.2102623538226025,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 74,
+    "bar": 3,
+    "beat": 2.5,
+    "beats": 0.8,
+    "velocity": 0.2013033886110258,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 3,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 3,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 3,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 3,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "pluck",
+    "note": 50,
+    "bar": 4,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 4,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 66,
+    "bar": 4,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 69,
+    "bar": 4,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 57,
+    "bar": 4,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 4,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 69,
+    "bar": 4,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 66,
+    "bar": 4,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 69,
+    "bar": 4,
+    "beat": 0.5,
+    "beats": 0.6,
+    "velocity": 0.1956062103734968,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 66,
+    "bar": 4,
+    "beat": 1.5,
+    "beats": 0.6,
+    "velocity": 0.21864201230561153,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 69,
+    "bar": 4,
+    "beat": 2.5,
+    "beats": 1,
+    "velocity": 0.20099733171534082,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 4,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 4,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 4,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 4,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "pluck",
+    "note": 43,
+    "bar": 5,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 5,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 5,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 5,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 50,
+    "bar": 5,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 5,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 5,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 5,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 76,
+    "bar": 5,
+    "beat": 0,
+    "beats": 0.7,
+    "velocity": 0.22101815797543373,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 79,
+    "bar": 5,
+    "beat": 1,
+    "beats": 0.8,
+    "velocity": 0.20098247508569303,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 76,
+    "bar": 5,
+    "beat": 2.5,
+    "beats": 1,
+    "velocity": 0.2121495130523012,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 5,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 5,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 5,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 5,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "pluck",
+    "note": 40,
+    "bar": 6,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 52,
+    "bar": 6,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 6,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 6,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 47,
+    "bar": 6,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 52,
+    "bar": 6,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 6,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 6,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 72,
+    "bar": 6,
+    "beat": 0.5,
+    "beats": 1,
+    "velocity": 0.21661291917525574,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 71,
+    "bar": 6,
+    "beat": 2,
+    "beats": 1.4,
+    "velocity": 0.2234954947262645,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 6,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 6,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 6,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 6,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "pluck",
+    "note": 48,
+    "bar": 7,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 60,
+    "bar": 7,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 7,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 67,
+    "bar": 7,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 7,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 60,
+    "bar": 7,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 67,
+    "bar": 7,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 7,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 71,
+    "bar": 7,
+    "beat": 0,
+    "beats": 0.8,
+    "velocity": 0.2129230198837512,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 74,
+    "bar": 7,
+    "beat": 1.5,
+    "beats": 0.6,
+    "velocity": 0.2064827275448533,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 71,
+    "bar": 7,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.19694869912070473,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 7,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 7,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 7,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 7,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "pluck",
+    "note": 50,
+    "bar": 8,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 8,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 66,
+    "bar": 8,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 69,
+    "bar": 8,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 57,
+    "bar": 8,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 8,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 69,
+    "bar": 8,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 66,
+    "bar": 8,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 69,
+    "bar": 8,
+    "beat": 0,
+    "beats": 1,
+    "velocity": 0.22172793946287847,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 66,
+    "bar": 8,
+    "beat": 2,
+    "beats": 1.5,
+    "velocity": 0.2093850261162921,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 8,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 8,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 8,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 8,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "pluck",
+    "note": 48,
+    "bar": 9,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 60,
+    "bar": 9,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 64,
+    "bar": 9,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 67,
+    "bar": 9,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 9,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 60,
+    "bar": 9,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 67,
+    "bar": 9,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 64,
+    "bar": 9,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 71,
+    "bar": 9,
+    "beat": 0,
+    "beats": 0.8,
+    "velocity": 0.20901254741223532,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 74,
+    "bar": 9,
+    "beat": 1,
+    "beats": 0.65,
+    "velocity": 0.2008348159076921,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 76,
+    "bar": 9,
+    "beat": 2.5,
+    "beats": 0.5,
+    "velocity": 0.22097247576888196,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 74,
+    "bar": 9,
+    "beat": 3.25,
+    "beats": 0.5,
+    "velocity": 0.22066102252072792,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 9,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 9,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 9,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 9,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "tap",
+    "bar": 9,
+    "beat": 2,
+    "velocity": 0.16,
+    "pan": 0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 45,
+    "bar": 10,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 57,
+    "bar": 10,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 60,
+    "bar": 10,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 64,
+    "bar": 10,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 52,
+    "bar": 10,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 57,
+    "bar": 10,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 64,
+    "bar": 10,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 60,
+    "bar": 10,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 71,
+    "bar": 10,
+    "beat": 0.5,
+    "beats": 1.1,
+    "velocity": 0.2167589346548567,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 67,
+    "bar": 10,
+    "beat": 2,
+    "beats": 1.4,
+    "velocity": 0.21807849845635977,
+    "pan": 0.08
+  },
+  {
+    "instrument": "bell",
+    "note": 72,
+    "bar": 10,
+    "beat": 3.25,
+    "beats": 0.4,
+    "velocity": 0.065,
+    "pan": 0.5
+  },
+  {
+    "instrument": "shaker",
+    "bar": 10,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 10,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 10,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 10,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "tap",
+    "bar": 10,
+    "beat": 2,
+    "velocity": 0.16,
+    "pan": 0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 43,
+    "bar": 11,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 11,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 11,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 11,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 50,
+    "bar": 11,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 11,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 11,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 11,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 72,
+    "bar": 11,
+    "beat": 0,
+    "beats": 0.7,
+    "velocity": 0.21034457039184878,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 76,
+    "bar": 11,
+    "beat": 1.5,
+    "beats": 0.5,
+    "velocity": 0.19474475792376056,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 74,
+    "bar": 11,
+    "beat": 2.5,
+    "beats": 0.8,
+    "velocity": 0.19350174658889194,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 11,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 11,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 11,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 11,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "tap",
+    "bar": 11,
+    "beat": 2,
+    "velocity": 0.16,
+    "pan": 0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 50,
+    "bar": 12,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 12,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 64,
+    "bar": 12,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 69,
+    "bar": 12,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 57,
+    "bar": 12,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 12,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 69,
+    "bar": 12,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 64,
+    "bar": 12,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 69,
+    "bar": 12,
+    "beat": 0.5,
+    "beats": 0.6,
+    "velocity": 0.19530250457251674,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 66,
+    "bar": 12,
+    "beat": 1.5,
+    "beats": 0.6,
+    "velocity": 0.21368685818098165,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 69,
+    "bar": 12,
+    "beat": 2.5,
+    "beats": 1,
+    "velocity": 0.2204002745778227,
+    "pan": 0.08
+  },
+  {
+    "instrument": "bell",
+    "note": 76,
+    "bar": 12,
+    "beat": 3.25,
+    "beats": 0.4,
+    "velocity": 0.065,
+    "pan": 0.5
+  },
+  {
+    "instrument": "shaker",
+    "bar": 12,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 12,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 12,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 12,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "tap",
+    "bar": 12,
+    "beat": 2,
+    "velocity": 0.16,
+    "pan": 0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 48,
+    "bar": 13,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 60,
+    "bar": 13,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 64,
+    "bar": 13,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 67,
+    "bar": 13,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 13,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 60,
+    "bar": 13,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 67,
+    "bar": 13,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 64,
+    "bar": 13,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 76,
+    "bar": 13,
+    "beat": 0,
+    "beats": 0.7,
+    "velocity": 0.20073711462530727,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 79,
+    "bar": 13,
+    "beat": 1,
+    "beats": 0.8,
+    "velocity": 0.2247545409517655,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 76,
+    "bar": 13,
+    "beat": 2.5,
+    "beats": 1,
+    "velocity": 0.19994471280195122,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 13,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 13,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 13,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 13,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "tap",
+    "bar": 13,
+    "beat": 2,
+    "velocity": 0.16,
+    "pan": 0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 45,
+    "bar": 14,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 57,
+    "bar": 14,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 60,
+    "bar": 14,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 64,
+    "bar": 14,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 52,
+    "bar": 14,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 57,
+    "bar": 14,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 64,
+    "bar": 14,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 60,
+    "bar": 14,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 72,
+    "bar": 14,
+    "beat": 0.5,
+    "beats": 1,
+    "velocity": 0.2069882558321081,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 71,
+    "bar": 14,
+    "beat": 2,
+    "beats": 1.4,
+    "velocity": 0.21890606411996308,
+    "pan": 0.08
+  },
+  {
+    "instrument": "bell",
+    "note": 72,
+    "bar": 14,
+    "beat": 3.25,
+    "beats": 0.4,
+    "velocity": 0.065,
+    "pan": 0.5
+  },
+  {
+    "instrument": "shaker",
+    "bar": 14,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 14,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 14,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 14,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "tap",
+    "bar": 14,
+    "beat": 2,
+    "velocity": 0.16,
+    "pan": 0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 43,
+    "bar": 15,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 15,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 15,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 15,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 50,
+    "bar": 15,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 15,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 15,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 15,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 71,
+    "bar": 15,
+    "beat": 0,
+    "beats": 0.8,
+    "velocity": 0.2250181230733585,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 74,
+    "bar": 15,
+    "beat": 1.5,
+    "beats": 0.6,
+    "velocity": 0.2137409776486309,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 71,
+    "bar": 15,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.21750837805287546,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 15,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 15,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 15,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 15,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "tap",
+    "bar": 15,
+    "beat": 2,
+    "velocity": 0.16,
+    "pan": 0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 50,
+    "bar": 16,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 16,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 64,
+    "bar": 16,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 69,
+    "bar": 16,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 57,
+    "bar": 16,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 16,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 69,
+    "bar": 16,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 64,
+    "bar": 16,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 69,
+    "bar": 16,
+    "beat": 0,
+    "beats": 1,
+    "velocity": 0.21247290581078337,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 66,
+    "bar": 16,
+    "beat": 2,
+    "beats": 1.5,
+    "velocity": 0.22068012842381798,
+    "pan": 0.08
+  },
+  {
+    "instrument": "bell",
+    "note": 76,
+    "bar": 16,
+    "beat": 3.25,
+    "beats": 0.4,
+    "velocity": 0.065,
+    "pan": 0.5
+  },
+  {
+    "instrument": "shaker",
+    "bar": 16,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 16,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 16,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 16,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "tap",
+    "bar": 16,
+    "beat": 2,
+    "velocity": 0.16,
+    "pan": 0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 43,
+    "bar": 17,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 17,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 17,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 17,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 50,
+    "bar": 17,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 17,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 17,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 17,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 71,
+    "bar": 17,
+    "beat": 0,
+    "beats": 0.8,
+    "velocity": 0.21183680967444826,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 74,
+    "bar": 17,
+    "beat": 1,
+    "beats": 0.65,
+    "velocity": 0.2007759630600313,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 76,
+    "bar": 17,
+    "beat": 2.5,
+    "beats": 0.5,
+    "velocity": 0.216522111190408,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 74,
+    "bar": 17,
+    "beat": 3.25,
+    "beats": 0.5,
+    "velocity": 0.22640600308338832,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 17,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 17,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 17,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 17,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "tap",
+    "bar": 17,
+    "beat": 2,
+    "velocity": 0.16,
+    "pan": 0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 40,
+    "bar": 18,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 52,
+    "bar": 18,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 18,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 18,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 47,
+    "bar": 18,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 52,
+    "bar": 18,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 18,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 18,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 71,
+    "bar": 18,
+    "beat": 0.5,
+    "beats": 1.1,
+    "velocity": 0.2236815298356075,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 67,
+    "bar": 18,
+    "beat": 2,
+    "beats": 1.4,
+    "velocity": 0.20305742736717014,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 18,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 18,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 18,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 18,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "tap",
+    "bar": 18,
+    "beat": 2,
+    "velocity": 0.16,
+    "pan": 0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 48,
+    "bar": 19,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 60,
+    "bar": 19,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 19,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 67,
+    "bar": 19,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 19,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 60,
+    "bar": 19,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 67,
+    "bar": 19,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 19,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 72,
+    "bar": 19,
+    "beat": 0,
+    "beats": 0.7,
+    "velocity": 0.19956174147995948,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 76,
+    "bar": 19,
+    "beat": 1.5,
+    "beats": 0.5,
+    "velocity": 0.20778517088518575,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 74,
+    "bar": 19,
+    "beat": 2.5,
+    "beats": 0.8,
+    "velocity": 0.2160230465490359,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 19,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 19,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 19,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 19,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "tap",
+    "bar": 19,
+    "beat": 2,
+    "velocity": 0.16,
+    "pan": 0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 50,
+    "bar": 20,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 20,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 66,
+    "bar": 20,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 69,
+    "bar": 20,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 57,
+    "bar": 20,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 20,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 69,
+    "bar": 20,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 66,
+    "bar": 20,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 69,
+    "bar": 20,
+    "beat": 0.5,
+    "beats": 0.6,
+    "velocity": 0.2063745237970137,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 66,
+    "bar": 20,
+    "beat": 1.5,
+    "beats": 0.6,
+    "velocity": 0.2201522789081614,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 69,
+    "bar": 20,
+    "beat": 2.5,
+    "beats": 1,
+    "velocity": 0.21325159614484893,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 20,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 20,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 20,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 20,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "tap",
+    "bar": 20,
+    "beat": 2,
+    "velocity": 0.16,
+    "pan": 0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 43,
+    "bar": 21,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 21,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 21,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 21,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 50,
+    "bar": 21,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 21,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 21,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 21,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 76,
+    "bar": 21,
+    "beat": 0,
+    "beats": 0.7,
+    "velocity": 0.21508276197406215,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 79,
+    "bar": 21,
+    "beat": 1,
+    "beats": 0.8,
+    "velocity": 0.19903504254553084,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 76,
+    "bar": 21,
+    "beat": 2.5,
+    "beats": 1,
+    "velocity": 0.20855059932032424,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 21,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 21,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 21,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 21,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "tap",
+    "bar": 21,
+    "beat": 2,
+    "velocity": 0.16,
+    "pan": 0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 40,
+    "bar": 22,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 52,
+    "bar": 22,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 22,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 22,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 47,
+    "bar": 22,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 52,
+    "bar": 22,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 59,
+    "bar": 22,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 22,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 72,
+    "bar": 22,
+    "beat": 0.5,
+    "beats": 1,
+    "velocity": 0.2175993174374178,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 71,
+    "bar": 22,
+    "beat": 2,
+    "beats": 1.4,
+    "velocity": 0.2232487026286454,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 22,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 22,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 22,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 22,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "tap",
+    "bar": 22,
+    "beat": 2,
+    "velocity": 0.16,
+    "pan": 0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 48,
+    "bar": 23,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 60,
+    "bar": 23,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 23,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 67,
+    "bar": 23,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 55,
+    "bar": 23,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 60,
+    "bar": 23,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 67,
+    "bar": 23,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 23,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 71,
+    "bar": 23,
+    "beat": 0,
+    "beats": 0.8,
+    "velocity": 0.2188545434515743,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 74,
+    "bar": 23,
+    "beat": 1.5,
+    "beats": 0.6,
+    "velocity": 0.22330429064008198,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 71,
+    "bar": 23,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.2114496144437991,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 23,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 23,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 23,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 23,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "tap",
+    "bar": 23,
+    "beat": 2,
+    "velocity": 0.16,
+    "pan": 0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 50,
+    "bar": 24,
+    "beat": 0.0,
+    "beats": 0.7,
+    "velocity": 0.26,
+    "pan": -0.3
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 24,
+    "beat": 0.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 66,
+    "bar": 24,
+    "beat": 1.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "pluck",
+    "note": 69,
+    "bar": 24,
+    "beat": 1.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 57,
+    "bar": 24,
+    "beat": 2.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.19999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 62,
+    "bar": 24,
+    "beat": 2.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": -0.09999999999999998
+  },
+  {
+    "instrument": "pluck",
+    "note": 69,
+    "bar": 24,
+    "beat": 3.0,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 0.10000000000000003
+  },
+  {
+    "instrument": "pluck",
+    "note": 66,
+    "bar": 24,
+    "beat": 3.5,
+    "beats": 0.7,
+    "velocity": 0.18,
+    "pan": 5.551115123125783e-17
+  },
+  {
+    "instrument": "piano",
+    "note": 69,
+    "bar": 24,
+    "beat": 0,
+    "beats": 1,
+    "velocity": 0.20513512288772784,
+    "pan": 0.08
+  },
+  {
+    "instrument": "piano",
+    "note": 66,
+    "bar": 24,
+    "beat": 2,
+    "beats": 1.5,
+    "velocity": 0.20117414868334563,
+    "pan": 0.08
+  },
+  {
+    "instrument": "shaker",
+    "bar": 24,
+    "beat": 0.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 24,
+    "beat": 1.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 24,
+    "beat": 2.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "shaker",
+    "bar": 24,
+    "beat": 3.5,
+    "velocity": 0.18,
+    "pan": -0.4
+  },
+  {
+    "instrument": "tap",
+    "bar": 24,
+    "beat": 2,
+    "velocity": 0.16,
+    "pan": 0.3
+  }
+]

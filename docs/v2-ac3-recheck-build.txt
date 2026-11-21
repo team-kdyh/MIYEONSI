@@ -1,0 +1,17 @@
+
+> after-hours@0.1.0 build
+> npm run typecheck && vite build
+
+
+> after-hours@0.1.0 typecheck
+> tsc --noEmit
+
+vite v6.4.6 building for production...
+transforming...
+✓ 35 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.42 kB │ gzip:  0.32 kB
+dist/assets/index-CgIqvmtw.css   11.70 kB │ gzip:  3.65 kB
+dist/assets/index-BjuTNT2R.js   270.97 kB │ gzip: 87.31 kB
+✓ built in 772ms

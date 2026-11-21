@@ -1,0 +1,5040 @@
+{
+  "scope": "Deterministic model fixture through real reconcile and browser; not live OpenAI",
+  "trace": [
+    {
+      "id": "move-offered",
+      "input": "바람 소리를 듣고 싶어요.",
+      "response": {
+        "line": "옥상에서 들어 볼까요?",
+        "pose": "offer",
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop"
+          }
+        ],
+        "actionBeats": [
+          "유나가 헤드폰 한쪽을 내민다."
+        ],
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 0,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [],
+        "pose": "neutral",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "after": {
+        "format": 2,
+        "turn": 1,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "offer",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-move-offered.png"
+    },
+    {
+      "id": "move-refused",
+      "input": "옥상에는 안 갈래요.",
+      "response": {
+        "line": "그럼 여기서 들어요.",
+        "pose": "listen",
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop"
+          }
+        ],
+        "actionBeats": [
+          "유나가 귀 가까이 손을 대고 듣는다."
+        ],
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 1,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "offer",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "after": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-move-refused.png"
+    },
+    {
+      "id": "move-accepted",
+      "input": "지금 옥상으로 가요.",
+      "response": {
+        "line": "조금 더 이야기해요.",
+        "pose": "smile",
+        "events": [
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop"
+          }
+        ],
+        "actionBeats": [
+          "유나가 두 손을 모으고 미소 짓는다."
+        ],
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 2,
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "after": {
+        "format": 2,
+        "turn": 3,
+        "location": "rooftop",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "smile",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-move-accepted.png"
+    },
+    {
+      "id": "familiar",
+      "input": "대화가 편해졌어요.",
+      "response": {
+        "line": "조금 더 이야기해요.",
+        "pose": "laugh",
+        "events": [
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar"
+          }
+        ],
+        "actionBeats": [
+          "유나가 입가에 손을 대고 웃는다."
+        ],
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 3,
+        "location": "rooftop",
+        "relationship": "strangers",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "smile",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "after": {
+        "format": 2,
+        "turn": 4,
+        "location": "rooftop",
+        "relationship": "familiar",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "laugh",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-familiar.png"
+    },
+    {
+      "id": "attracted",
+      "input": "당신 이야기를 더 듣고 싶어요.",
+      "response": {
+        "line": "조금 더 이야기해요.",
+        "pose": "shy",
+        "events": [
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted"
+          }
+        ],
+        "actionBeats": [
+          "유나가 수줍게 두 손을 모은다."
+        ],
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 4,
+        "location": "rooftop",
+        "relationship": "familiar",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "laugh",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "after": {
+        "format": 2,
+        "turn": 5,
+        "location": "rooftop",
+        "relationship": "attracted",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "05c7c767-5a88-4069-af00-5a0acc6c14ef",
+            "turn": 5
+          },
+          {
+            "id": "d3e6fe62-8e21-4229-a884-9582eaab23ec",
+            "turn": 5,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 수줍게 두 손을 모은다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "shy",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-attracted.png"
+    },
+    {
+      "id": "confessed",
+      "input": "어떤 마음이에요?",
+      "response": {
+        "line": "저는 당신을 좋아해요.",
+        "pose": "thinking",
+        "events": [
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 좋아한다고 고백한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed"
+          }
+        ],
+        "actionBeats": [
+          "유나가 손목을 감싸며 망설인다."
+        ],
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 5,
+        "location": "rooftop",
+        "relationship": "attracted",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "05c7c767-5a88-4069-af00-5a0acc6c14ef",
+            "turn": 5
+          },
+          {
+            "id": "d3e6fe62-8e21-4229-a884-9582eaab23ec",
+            "turn": 5,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 수줍게 두 손을 모은다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "shy",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "after": {
+        "format": 2,
+        "turn": 6,
+        "location": "rooftop",
+        "relationship": "confessed",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "05c7c767-5a88-4069-af00-5a0acc6c14ef",
+            "turn": 5
+          },
+          {
+            "id": "d3e6fe62-8e21-4229-a884-9582eaab23ec",
+            "turn": 5,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 수줍게 두 손을 모은다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 좋아한다고 고백한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "884badd0-8aa6-40a8-b71f-3d86154748ea",
+            "turn": 6
+          },
+          {
+            "id": "0feecda1-8bdb-410f-b627-1054d82be1de",
+            "turn": 6,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 손목을 감싸며 망설인다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "thinking",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-confessed.png"
+    },
+    {
+      "id": "couple-offered",
+      "input": "생각할 시간이 필요해요.",
+      "response": {
+        "line": "조금 더 이야기해요.",
+        "pose": "listen",
+        "events": [
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 연인이 되고 싶다는 마음을 전하고 답을 기다린다.",
+            "reference": "",
+            "evidence": "",
+            "value": "couple"
+          }
+        ],
+        "actionBeats": [
+          "유나가 귀 가까이 손을 대고 듣는다."
+        ],
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 6,
+        "location": "rooftop",
+        "relationship": "confessed",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "05c7c767-5a88-4069-af00-5a0acc6c14ef",
+            "turn": 5
+          },
+          {
+            "id": "d3e6fe62-8e21-4229-a884-9582eaab23ec",
+            "turn": 5,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 수줍게 두 손을 모은다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 좋아한다고 고백한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "884badd0-8aa6-40a8-b71f-3d86154748ea",
+            "turn": 6
+          },
+          {
+            "id": "0feecda1-8bdb-410f-b627-1054d82be1de",
+            "turn": 6,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 손목을 감싸며 망설인다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "thinking",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "after": {
+        "format": 2,
+        "turn": 7,
+        "location": "rooftop",
+        "relationship": "confessed",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "05c7c767-5a88-4069-af00-5a0acc6c14ef",
+            "turn": 5
+          },
+          {
+            "id": "d3e6fe62-8e21-4229-a884-9582eaab23ec",
+            "turn": 5,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 수줍게 두 손을 모은다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 좋아한다고 고백한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "884badd0-8aa6-40a8-b71f-3d86154748ea",
+            "turn": 6
+          },
+          {
+            "id": "0feecda1-8bdb-410f-b627-1054d82be1de",
+            "turn": 6,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 손목을 감싸며 망설인다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 연인이 되고 싶다는 마음을 전하고 답을 기다린다.",
+            "reference": "",
+            "evidence": "",
+            "value": "couple",
+            "id": "459ded69-7ec6-4f74-b6b7-02e19aed4261",
+            "turn": 7
+          },
+          {
+            "id": "942a72d0-cd1f-4c5b-a5e4-89cfa0a52984",
+            "turn": 7,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-couple-offered.png"
+    },
+    {
+      "id": "couple-refused",
+      "input": "지금은 사귀지 않을래요.",
+      "response": {
+        "line": "조금 더 이야기해요.",
+        "pose": "concern",
+        "events": [
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 지금 연인이 되는 것을 거절했다.",
+            "reference": "",
+            "evidence": "지금은 사귀지 않을래요.",
+            "value": "couple"
+          }
+        ],
+        "actionBeats": [
+          "유나가 녹음기를 가슴에 안는다."
+        ],
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 7,
+        "location": "rooftop",
+        "relationship": "confessed",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "05c7c767-5a88-4069-af00-5a0acc6c14ef",
+            "turn": 5
+          },
+          {
+            "id": "d3e6fe62-8e21-4229-a884-9582eaab23ec",
+            "turn": 5,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 수줍게 두 손을 모은다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 좋아한다고 고백한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "884badd0-8aa6-40a8-b71f-3d86154748ea",
+            "turn": 6
+          },
+          {
+            "id": "0feecda1-8bdb-410f-b627-1054d82be1de",
+            "turn": 6,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 손목을 감싸며 망설인다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 연인이 되고 싶다는 마음을 전하고 답을 기다린다.",
+            "reference": "",
+            "evidence": "",
+            "value": "couple",
+            "id": "459ded69-7ec6-4f74-b6b7-02e19aed4261",
+            "turn": 7
+          },
+          {
+            "id": "942a72d0-cd1f-4c5b-a5e4-89cfa0a52984",
+            "turn": 7,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "after": {
+        "format": 2,
+        "turn": 8,
+        "location": "rooftop",
+        "relationship": "confessed",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "05c7c767-5a88-4069-af00-5a0acc6c14ef",
+            "turn": 5
+          },
+          {
+            "id": "d3e6fe62-8e21-4229-a884-9582eaab23ec",
+            "turn": 5,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 수줍게 두 손을 모은다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 좋아한다고 고백한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "884badd0-8aa6-40a8-b71f-3d86154748ea",
+            "turn": 6
+          },
+          {
+            "id": "0feecda1-8bdb-410f-b627-1054d82be1de",
+            "turn": 6,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 손목을 감싸며 망설인다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 연인이 되고 싶다는 마음을 전하고 답을 기다린다.",
+            "reference": "",
+            "evidence": "",
+            "value": "couple",
+            "id": "459ded69-7ec6-4f74-b6b7-02e19aed4261",
+            "turn": 7
+          },
+          {
+            "id": "942a72d0-cd1f-4c5b-a5e4-89cfa0a52984",
+            "turn": 7,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 지금 연인이 되는 것을 거절했다.",
+            "reference": "",
+            "evidence": "지금은 사귀지 않을래요.",
+            "value": "couple",
+            "id": "9f9a51e8-7b55-4fce-b5b7-5816e0e863a5",
+            "turn": 8
+          },
+          {
+            "id": "ffe84f60-581e-4bb3-b1bd-6adc542374fc",
+            "turn": 8,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 녹음기를 가슴에 안는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "concern",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-couple-refused.png"
+    },
+    {
+      "id": "couple-accepted",
+      "input": "이제 저도 좋아해요. 우리 사귀어요.",
+      "response": {
+        "line": "조금 더 이야기해요.",
+        "pose": "smile",
+        "events": [
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 연인이 되기로 합의했다.",
+            "reference": "",
+            "evidence": "우리 사귀어요.",
+            "value": "couple"
+          }
+        ],
+        "actionBeats": [
+          "유나가 두 손을 모으고 미소 짓는다."
+        ],
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 8,
+        "location": "rooftop",
+        "relationship": "confessed",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "05c7c767-5a88-4069-af00-5a0acc6c14ef",
+            "turn": 5
+          },
+          {
+            "id": "d3e6fe62-8e21-4229-a884-9582eaab23ec",
+            "turn": 5,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 수줍게 두 손을 모은다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 좋아한다고 고백한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "884badd0-8aa6-40a8-b71f-3d86154748ea",
+            "turn": 6
+          },
+          {
+            "id": "0feecda1-8bdb-410f-b627-1054d82be1de",
+            "turn": 6,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 손목을 감싸며 망설인다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 연인이 되고 싶다는 마음을 전하고 답을 기다린다.",
+            "reference": "",
+            "evidence": "",
+            "value": "couple",
+            "id": "459ded69-7ec6-4f74-b6b7-02e19aed4261",
+            "turn": 7
+          },
+          {
+            "id": "942a72d0-cd1f-4c5b-a5e4-89cfa0a52984",
+            "turn": 7,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 지금 연인이 되는 것을 거절했다.",
+            "reference": "",
+            "evidence": "지금은 사귀지 않을래요.",
+            "value": "couple",
+            "id": "9f9a51e8-7b55-4fce-b5b7-5816e0e863a5",
+            "turn": 8
+          },
+          {
+            "id": "ffe84f60-581e-4bb3-b1bd-6adc542374fc",
+            "turn": 8,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 녹음기를 가슴에 안는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "concern",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "after": {
+        "format": 2,
+        "turn": 9,
+        "location": "rooftop",
+        "relationship": "couple",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "05c7c767-5a88-4069-af00-5a0acc6c14ef",
+            "turn": 5
+          },
+          {
+            "id": "d3e6fe62-8e21-4229-a884-9582eaab23ec",
+            "turn": 5,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 수줍게 두 손을 모은다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 좋아한다고 고백한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "884badd0-8aa6-40a8-b71f-3d86154748ea",
+            "turn": 6
+          },
+          {
+            "id": "0feecda1-8bdb-410f-b627-1054d82be1de",
+            "turn": 6,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 손목을 감싸며 망설인다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 연인이 되고 싶다는 마음을 전하고 답을 기다린다.",
+            "reference": "",
+            "evidence": "",
+            "value": "couple",
+            "id": "459ded69-7ec6-4f74-b6b7-02e19aed4261",
+            "turn": 7
+          },
+          {
+            "id": "942a72d0-cd1f-4c5b-a5e4-89cfa0a52984",
+            "turn": 7,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 지금 연인이 되는 것을 거절했다.",
+            "reference": "",
+            "evidence": "지금은 사귀지 않을래요.",
+            "value": "couple",
+            "id": "9f9a51e8-7b55-4fce-b5b7-5816e0e863a5",
+            "turn": 8
+          },
+          {
+            "id": "ffe84f60-581e-4bb3-b1bd-6adc542374fc",
+            "turn": 8,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 녹음기를 가슴에 안는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 연인이 되기로 합의했다.",
+            "reference": "",
+            "evidence": "우리 사귀어요.",
+            "value": "couple",
+            "id": "00101371-5aa7-4de8-ab9d-3c9fbd8e2199",
+            "turn": 9
+          },
+          {
+            "id": "76b5a8c2-d920-42af-b3f0-22530bcd1749",
+            "turn": 9,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "smile",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-couple-accepted.png"
+    },
+    {
+      "id": "date-offered",
+      "input": "데이트는 어떻게 할까요?",
+      "response": {
+        "line": "조금 더 이야기해요.",
+        "pose": "offer",
+        "events": [
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 다음 주 빗길 데이트를 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "date"
+          }
+        ],
+        "actionBeats": [
+          "유나가 헤드폰 한쪽을 내민다."
+        ],
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 9,
+        "location": "rooftop",
+        "relationship": "couple",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "05c7c767-5a88-4069-af00-5a0acc6c14ef",
+            "turn": 5
+          },
+          {
+            "id": "d3e6fe62-8e21-4229-a884-9582eaab23ec",
+            "turn": 5,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 수줍게 두 손을 모은다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 좋아한다고 고백한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "884badd0-8aa6-40a8-b71f-3d86154748ea",
+            "turn": 6
+          },
+          {
+            "id": "0feecda1-8bdb-410f-b627-1054d82be1de",
+            "turn": 6,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 손목을 감싸며 망설인다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 연인이 되고 싶다는 마음을 전하고 답을 기다린다.",
+            "reference": "",
+            "evidence": "",
+            "value": "couple",
+            "id": "459ded69-7ec6-4f74-b6b7-02e19aed4261",
+            "turn": 7
+          },
+          {
+            "id": "942a72d0-cd1f-4c5b-a5e4-89cfa0a52984",
+            "turn": 7,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 지금 연인이 되는 것을 거절했다.",
+            "reference": "",
+            "evidence": "지금은 사귀지 않을래요.",
+            "value": "couple",
+            "id": "9f9a51e8-7b55-4fce-b5b7-5816e0e863a5",
+            "turn": 8
+          },
+          {
+            "id": "ffe84f60-581e-4bb3-b1bd-6adc542374fc",
+            "turn": 8,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 녹음기를 가슴에 안는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 연인이 되기로 합의했다.",
+            "reference": "",
+            "evidence": "우리 사귀어요.",
+            "value": "couple",
+            "id": "00101371-5aa7-4de8-ab9d-3c9fbd8e2199",
+            "turn": 9
+          },
+          {
+            "id": "76b5a8c2-d920-42af-b3f0-22530bcd1749",
+            "turn": 9,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "smile",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "after": {
+        "format": 2,
+        "turn": 10,
+        "location": "rooftop",
+        "relationship": "couple",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "05c7c767-5a88-4069-af00-5a0acc6c14ef",
+            "turn": 5
+          },
+          {
+            "id": "d3e6fe62-8e21-4229-a884-9582eaab23ec",
+            "turn": 5,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 수줍게 두 손을 모은다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 좋아한다고 고백한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "884badd0-8aa6-40a8-b71f-3d86154748ea",
+            "turn": 6
+          },
+          {
+            "id": "0feecda1-8bdb-410f-b627-1054d82be1de",
+            "turn": 6,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 손목을 감싸며 망설인다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 연인이 되고 싶다는 마음을 전하고 답을 기다린다.",
+            "reference": "",
+            "evidence": "",
+            "value": "couple",
+            "id": "459ded69-7ec6-4f74-b6b7-02e19aed4261",
+            "turn": 7
+          },
+          {
+            "id": "942a72d0-cd1f-4c5b-a5e4-89cfa0a52984",
+            "turn": 7,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 지금 연인이 되는 것을 거절했다.",
+            "reference": "",
+            "evidence": "지금은 사귀지 않을래요.",
+            "value": "couple",
+            "id": "9f9a51e8-7b55-4fce-b5b7-5816e0e863a5",
+            "turn": 8
+          },
+          {
+            "id": "ffe84f60-581e-4bb3-b1bd-6adc542374fc",
+            "turn": 8,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 녹음기를 가슴에 안는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 연인이 되기로 합의했다.",
+            "reference": "",
+            "evidence": "우리 사귀어요.",
+            "value": "couple",
+            "id": "00101371-5aa7-4de8-ab9d-3c9fbd8e2199",
+            "turn": 9
+          },
+          {
+            "id": "76b5a8c2-d920-42af-b3f0-22530bcd1749",
+            "turn": 9,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 다음 주 빗길 데이트를 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "date",
+            "id": "99109e7b-3918-47c7-8be5-ba95c6e3fcc2",
+            "turn": 10
+          },
+          {
+            "id": "812a2639-8bd4-44f8-8868-35053035621c",
+            "turn": 10,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "offer",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-date-offered.png"
+    },
+    {
+      "id": "date-refused",
+      "input": "다음 주 데이트는 하지 않을래요.",
+      "response": {
+        "line": "조금 더 이야기해요.",
+        "pose": "listen",
+        "events": [
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 다음 주 데이트를 거절했다.",
+            "reference": "",
+            "evidence": "다음 주 데이트는 하지 않을래요.",
+            "value": "date"
+          }
+        ],
+        "actionBeats": [
+          "유나가 귀 가까이 손을 대고 듣는다."
+        ],
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 10,
+        "location": "rooftop",
+        "relationship": "couple",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "05c7c767-5a88-4069-af00-5a0acc6c14ef",
+            "turn": 5
+          },
+          {
+            "id": "d3e6fe62-8e21-4229-a884-9582eaab23ec",
+            "turn": 5,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 수줍게 두 손을 모은다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 좋아한다고 고백한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "884badd0-8aa6-40a8-b71f-3d86154748ea",
+            "turn": 6
+          },
+          {
+            "id": "0feecda1-8bdb-410f-b627-1054d82be1de",
+            "turn": 6,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 손목을 감싸며 망설인다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 연인이 되고 싶다는 마음을 전하고 답을 기다린다.",
+            "reference": "",
+            "evidence": "",
+            "value": "couple",
+            "id": "459ded69-7ec6-4f74-b6b7-02e19aed4261",
+            "turn": 7
+          },
+          {
+            "id": "942a72d0-cd1f-4c5b-a5e4-89cfa0a52984",
+            "turn": 7,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 지금 연인이 되는 것을 거절했다.",
+            "reference": "",
+            "evidence": "지금은 사귀지 않을래요.",
+            "value": "couple",
+            "id": "9f9a51e8-7b55-4fce-b5b7-5816e0e863a5",
+            "turn": 8
+          },
+          {
+            "id": "ffe84f60-581e-4bb3-b1bd-6adc542374fc",
+            "turn": 8,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 녹음기를 가슴에 안는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 연인이 되기로 합의했다.",
+            "reference": "",
+            "evidence": "우리 사귀어요.",
+            "value": "couple",
+            "id": "00101371-5aa7-4de8-ab9d-3c9fbd8e2199",
+            "turn": 9
+          },
+          {
+            "id": "76b5a8c2-d920-42af-b3f0-22530bcd1749",
+            "turn": 9,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 다음 주 빗길 데이트를 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "date",
+            "id": "99109e7b-3918-47c7-8be5-ba95c6e3fcc2",
+            "turn": 10
+          },
+          {
+            "id": "812a2639-8bd4-44f8-8868-35053035621c",
+            "turn": 10,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "offer",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "after": {
+        "format": 2,
+        "turn": 11,
+        "location": "rooftop",
+        "relationship": "couple",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "05c7c767-5a88-4069-af00-5a0acc6c14ef",
+            "turn": 5
+          },
+          {
+            "id": "d3e6fe62-8e21-4229-a884-9582eaab23ec",
+            "turn": 5,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 수줍게 두 손을 모은다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 좋아한다고 고백한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "884badd0-8aa6-40a8-b71f-3d86154748ea",
+            "turn": 6
+          },
+          {
+            "id": "0feecda1-8bdb-410f-b627-1054d82be1de",
+            "turn": 6,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 손목을 감싸며 망설인다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 연인이 되고 싶다는 마음을 전하고 답을 기다린다.",
+            "reference": "",
+            "evidence": "",
+            "value": "couple",
+            "id": "459ded69-7ec6-4f74-b6b7-02e19aed4261",
+            "turn": 7
+          },
+          {
+            "id": "942a72d0-cd1f-4c5b-a5e4-89cfa0a52984",
+            "turn": 7,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 지금 연인이 되는 것을 거절했다.",
+            "reference": "",
+            "evidence": "지금은 사귀지 않을래요.",
+            "value": "couple",
+            "id": "9f9a51e8-7b55-4fce-b5b7-5816e0e863a5",
+            "turn": 8
+          },
+          {
+            "id": "ffe84f60-581e-4bb3-b1bd-6adc542374fc",
+            "turn": 8,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 녹음기를 가슴에 안는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 연인이 되기로 합의했다.",
+            "reference": "",
+            "evidence": "우리 사귀어요.",
+            "value": "couple",
+            "id": "00101371-5aa7-4de8-ab9d-3c9fbd8e2199",
+            "turn": 9
+          },
+          {
+            "id": "76b5a8c2-d920-42af-b3f0-22530bcd1749",
+            "turn": 9,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 다음 주 빗길 데이트를 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "date",
+            "id": "99109e7b-3918-47c7-8be5-ba95c6e3fcc2",
+            "turn": 10
+          },
+          {
+            "id": "812a2639-8bd4-44f8-8868-35053035621c",
+            "turn": 10,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 다음 주 데이트를 거절했다.",
+            "reference": "",
+            "evidence": "다음 주 데이트는 하지 않을래요.",
+            "value": "date",
+            "id": "60e61525-2edd-4ea1-b12b-23f2a0430a4a",
+            "turn": 11
+          },
+          {
+            "id": "2010e03d-da7a-4ce2-8062-fffde0bbaf7f",
+            "turn": 11,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-date-refused.png"
+    },
+    {
+      "id": "date-future-accepted",
+      "input": "내일 같이 데이트해요.",
+      "response": {
+        "line": "조금 더 이야기해요.",
+        "pose": "smile",
+        "events": [
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "내일 데이트하기로 약속했다.",
+            "reference": "",
+            "evidence": "내일 같이 데이트해요.",
+            "value": "date"
+          }
+        ],
+        "actionBeats": [
+          "유나가 두 손을 모으고 미소 짓는다."
+        ],
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 11,
+        "location": "rooftop",
+        "relationship": "couple",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "05c7c767-5a88-4069-af00-5a0acc6c14ef",
+            "turn": 5
+          },
+          {
+            "id": "d3e6fe62-8e21-4229-a884-9582eaab23ec",
+            "turn": 5,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 수줍게 두 손을 모은다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 좋아한다고 고백한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "884badd0-8aa6-40a8-b71f-3d86154748ea",
+            "turn": 6
+          },
+          {
+            "id": "0feecda1-8bdb-410f-b627-1054d82be1de",
+            "turn": 6,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 손목을 감싸며 망설인다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 연인이 되고 싶다는 마음을 전하고 답을 기다린다.",
+            "reference": "",
+            "evidence": "",
+            "value": "couple",
+            "id": "459ded69-7ec6-4f74-b6b7-02e19aed4261",
+            "turn": 7
+          },
+          {
+            "id": "942a72d0-cd1f-4c5b-a5e4-89cfa0a52984",
+            "turn": 7,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 지금 연인이 되는 것을 거절했다.",
+            "reference": "",
+            "evidence": "지금은 사귀지 않을래요.",
+            "value": "couple",
+            "id": "9f9a51e8-7b55-4fce-b5b7-5816e0e863a5",
+            "turn": 8
+          },
+          {
+            "id": "ffe84f60-581e-4bb3-b1bd-6adc542374fc",
+            "turn": 8,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 녹음기를 가슴에 안는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 연인이 되기로 합의했다.",
+            "reference": "",
+            "evidence": "우리 사귀어요.",
+            "value": "couple",
+            "id": "00101371-5aa7-4de8-ab9d-3c9fbd8e2199",
+            "turn": 9
+          },
+          {
+            "id": "76b5a8c2-d920-42af-b3f0-22530bcd1749",
+            "turn": 9,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 다음 주 빗길 데이트를 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "date",
+            "id": "99109e7b-3918-47c7-8be5-ba95c6e3fcc2",
+            "turn": 10
+          },
+          {
+            "id": "812a2639-8bd4-44f8-8868-35053035621c",
+            "turn": 10,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 다음 주 데이트를 거절했다.",
+            "reference": "",
+            "evidence": "다음 주 데이트는 하지 않을래요.",
+            "value": "date",
+            "id": "60e61525-2edd-4ea1-b12b-23f2a0430a4a",
+            "turn": 11
+          },
+          {
+            "id": "2010e03d-da7a-4ce2-8062-fffde0bbaf7f",
+            "turn": 11,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "listen",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "after": {
+        "format": 2,
+        "turn": 12,
+        "location": "rooftop",
+        "relationship": "couple",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "05c7c767-5a88-4069-af00-5a0acc6c14ef",
+            "turn": 5
+          },
+          {
+            "id": "d3e6fe62-8e21-4229-a884-9582eaab23ec",
+            "turn": 5,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 수줍게 두 손을 모은다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 좋아한다고 고백한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "884badd0-8aa6-40a8-b71f-3d86154748ea",
+            "turn": 6
+          },
+          {
+            "id": "0feecda1-8bdb-410f-b627-1054d82be1de",
+            "turn": 6,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 손목을 감싸며 망설인다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 연인이 되고 싶다는 마음을 전하고 답을 기다린다.",
+            "reference": "",
+            "evidence": "",
+            "value": "couple",
+            "id": "459ded69-7ec6-4f74-b6b7-02e19aed4261",
+            "turn": 7
+          },
+          {
+            "id": "942a72d0-cd1f-4c5b-a5e4-89cfa0a52984",
+            "turn": 7,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 지금 연인이 되는 것을 거절했다.",
+            "reference": "",
+            "evidence": "지금은 사귀지 않을래요.",
+            "value": "couple",
+            "id": "9f9a51e8-7b55-4fce-b5b7-5816e0e863a5",
+            "turn": 8
+          },
+          {
+            "id": "ffe84f60-581e-4bb3-b1bd-6adc542374fc",
+            "turn": 8,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 녹음기를 가슴에 안는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 연인이 되기로 합의했다.",
+            "reference": "",
+            "evidence": "우리 사귀어요.",
+            "value": "couple",
+            "id": "00101371-5aa7-4de8-ab9d-3c9fbd8e2199",
+            "turn": 9
+          },
+          {
+            "id": "76b5a8c2-d920-42af-b3f0-22530bcd1749",
+            "turn": 9,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 다음 주 빗길 데이트를 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "date",
+            "id": "99109e7b-3918-47c7-8be5-ba95c6e3fcc2",
+            "turn": 10
+          },
+          {
+            "id": "812a2639-8bd4-44f8-8868-35053035621c",
+            "turn": 10,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 다음 주 데이트를 거절했다.",
+            "reference": "",
+            "evidence": "다음 주 데이트는 하지 않을래요.",
+            "value": "date",
+            "id": "60e61525-2edd-4ea1-b12b-23f2a0430a4a",
+            "turn": 11
+          },
+          {
+            "id": "2010e03d-da7a-4ce2-8062-fffde0bbaf7f",
+            "turn": 11,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "내일 데이트하기로 약속했다.",
+            "reference": "",
+            "evidence": "내일 같이 데이트해요.",
+            "value": "date",
+            "id": "2e553703-06d2-4e8d-8db2-eb2650899f0e",
+            "turn": 12
+          },
+          {
+            "id": "1e561e1d-e2f4-4592-8fd9-e970a7c36a0b",
+            "turn": 12,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "smile",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-date-future-accepted.png"
+    },
+    {
+      "id": "date-started",
+      "input": "오늘 여기서 같이 데이트해요.",
+      "response": {
+        "line": "조금 더 이야기해요.",
+        "pose": "laugh",
+        "events": [
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "옥상에서 데이트를 시작했다.",
+            "reference": "",
+            "evidence": "오늘 여기서 같이 데이트해요.",
+            "value": "date"
+          }
+        ],
+        "actionBeats": [
+          "유나가 입가에 손을 대고 웃는다."
+        ],
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 12,
+        "location": "rooftop",
+        "relationship": "couple",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "05c7c767-5a88-4069-af00-5a0acc6c14ef",
+            "turn": 5
+          },
+          {
+            "id": "d3e6fe62-8e21-4229-a884-9582eaab23ec",
+            "turn": 5,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 수줍게 두 손을 모은다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 좋아한다고 고백한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "884badd0-8aa6-40a8-b71f-3d86154748ea",
+            "turn": 6
+          },
+          {
+            "id": "0feecda1-8bdb-410f-b627-1054d82be1de",
+            "turn": 6,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 손목을 감싸며 망설인다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 연인이 되고 싶다는 마음을 전하고 답을 기다린다.",
+            "reference": "",
+            "evidence": "",
+            "value": "couple",
+            "id": "459ded69-7ec6-4f74-b6b7-02e19aed4261",
+            "turn": 7
+          },
+          {
+            "id": "942a72d0-cd1f-4c5b-a5e4-89cfa0a52984",
+            "turn": 7,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 지금 연인이 되는 것을 거절했다.",
+            "reference": "",
+            "evidence": "지금은 사귀지 않을래요.",
+            "value": "couple",
+            "id": "9f9a51e8-7b55-4fce-b5b7-5816e0e863a5",
+            "turn": 8
+          },
+          {
+            "id": "ffe84f60-581e-4bb3-b1bd-6adc542374fc",
+            "turn": 8,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 녹음기를 가슴에 안는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 연인이 되기로 합의했다.",
+            "reference": "",
+            "evidence": "우리 사귀어요.",
+            "value": "couple",
+            "id": "00101371-5aa7-4de8-ab9d-3c9fbd8e2199",
+            "turn": 9
+          },
+          {
+            "id": "76b5a8c2-d920-42af-b3f0-22530bcd1749",
+            "turn": 9,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 다음 주 빗길 데이트를 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "date",
+            "id": "99109e7b-3918-47c7-8be5-ba95c6e3fcc2",
+            "turn": 10
+          },
+          {
+            "id": "812a2639-8bd4-44f8-8868-35053035621c",
+            "turn": 10,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 다음 주 데이트를 거절했다.",
+            "reference": "",
+            "evidence": "다음 주 데이트는 하지 않을래요.",
+            "value": "date",
+            "id": "60e61525-2edd-4ea1-b12b-23f2a0430a4a",
+            "turn": 11
+          },
+          {
+            "id": "2010e03d-da7a-4ce2-8062-fffde0bbaf7f",
+            "turn": 11,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "내일 데이트하기로 약속했다.",
+            "reference": "",
+            "evidence": "내일 같이 데이트해요.",
+            "value": "date",
+            "id": "2e553703-06d2-4e8d-8db2-eb2650899f0e",
+            "turn": 12
+          },
+          {
+            "id": "1e561e1d-e2f4-4592-8fd9-e970a7c36a0b",
+            "turn": 12,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "smile",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "after": {
+        "format": 2,
+        "turn": 13,
+        "location": "rooftop",
+        "relationship": "couple",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "05c7c767-5a88-4069-af00-5a0acc6c14ef",
+            "turn": 5
+          },
+          {
+            "id": "d3e6fe62-8e21-4229-a884-9582eaab23ec",
+            "turn": 5,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 수줍게 두 손을 모은다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 좋아한다고 고백한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "884badd0-8aa6-40a8-b71f-3d86154748ea",
+            "turn": 6
+          },
+          {
+            "id": "0feecda1-8bdb-410f-b627-1054d82be1de",
+            "turn": 6,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 손목을 감싸며 망설인다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 연인이 되고 싶다는 마음을 전하고 답을 기다린다.",
+            "reference": "",
+            "evidence": "",
+            "value": "couple",
+            "id": "459ded69-7ec6-4f74-b6b7-02e19aed4261",
+            "turn": 7
+          },
+          {
+            "id": "942a72d0-cd1f-4c5b-a5e4-89cfa0a52984",
+            "turn": 7,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 지금 연인이 되는 것을 거절했다.",
+            "reference": "",
+            "evidence": "지금은 사귀지 않을래요.",
+            "value": "couple",
+            "id": "9f9a51e8-7b55-4fce-b5b7-5816e0e863a5",
+            "turn": 8
+          },
+          {
+            "id": "ffe84f60-581e-4bb3-b1bd-6adc542374fc",
+            "turn": 8,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 녹음기를 가슴에 안는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 연인이 되기로 합의했다.",
+            "reference": "",
+            "evidence": "우리 사귀어요.",
+            "value": "couple",
+            "id": "00101371-5aa7-4de8-ab9d-3c9fbd8e2199",
+            "turn": 9
+          },
+          {
+            "id": "76b5a8c2-d920-42af-b3f0-22530bcd1749",
+            "turn": 9,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 다음 주 빗길 데이트를 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "date",
+            "id": "99109e7b-3918-47c7-8be5-ba95c6e3fcc2",
+            "turn": 10
+          },
+          {
+            "id": "812a2639-8bd4-44f8-8868-35053035621c",
+            "turn": 10,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 다음 주 데이트를 거절했다.",
+            "reference": "",
+            "evidence": "다음 주 데이트는 하지 않을래요.",
+            "value": "date",
+            "id": "60e61525-2edd-4ea1-b12b-23f2a0430a4a",
+            "turn": 11
+          },
+          {
+            "id": "2010e03d-da7a-4ce2-8062-fffde0bbaf7f",
+            "turn": 11,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "내일 데이트하기로 약속했다.",
+            "reference": "",
+            "evidence": "내일 같이 데이트해요.",
+            "value": "date",
+            "id": "2e553703-06d2-4e8d-8db2-eb2650899f0e",
+            "turn": 12
+          },
+          {
+            "id": "1e561e1d-e2f4-4592-8fd9-e970a7c36a0b",
+            "turn": 12,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "옥상에서 데이트를 시작했다.",
+            "reference": "",
+            "evidence": "오늘 여기서 같이 데이트해요.",
+            "value": "date",
+            "id": "f1464788-1771-40eb-a08f-d48775a78030",
+            "turn": 13
+          },
+          {
+            "id": "489ab717-8dda-44cd-9f00-aff3bb2ff0e1",
+            "turn": 13,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "laugh",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "activeDate": {
+          "eventId": "f1464788-1771-40eb-a08f-d48775a78030",
+          "location": "rooftop",
+          "turn": 13
+        }
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-date-started.png"
+    },
+    {
+      "id": "date-participated",
+      "input": "지금 같이 종이배를 접고 있어요.",
+      "response": {
+        "line": "조금 더 이야기해요.",
+        "pose": "smile",
+        "events": [
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "fulfilled",
+            "text": "옥상 데이트에서 종이배를 함께 접었다.",
+            "reference": "f1464788-1771-40eb-a08f-d48775a78030",
+            "evidence": "지금 같이 종이배를 접고 있어요.",
+            "value": "date"
+          }
+        ],
+        "actionBeats": [
+          "유나가 종이배를 나란히 놓는다."
+        ],
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": ""
+      },
+      "before": {
+        "format": 2,
+        "turn": 13,
+        "location": "rooftop",
+        "relationship": "couple",
+        "dates": 0,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "05c7c767-5a88-4069-af00-5a0acc6c14ef",
+            "turn": 5
+          },
+          {
+            "id": "d3e6fe62-8e21-4229-a884-9582eaab23ec",
+            "turn": 5,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 수줍게 두 손을 모은다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 좋아한다고 고백한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "884badd0-8aa6-40a8-b71f-3d86154748ea",
+            "turn": 6
+          },
+          {
+            "id": "0feecda1-8bdb-410f-b627-1054d82be1de",
+            "turn": 6,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 손목을 감싸며 망설인다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 연인이 되고 싶다는 마음을 전하고 답을 기다린다.",
+            "reference": "",
+            "evidence": "",
+            "value": "couple",
+            "id": "459ded69-7ec6-4f74-b6b7-02e19aed4261",
+            "turn": 7
+          },
+          {
+            "id": "942a72d0-cd1f-4c5b-a5e4-89cfa0a52984",
+            "turn": 7,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 지금 연인이 되는 것을 거절했다.",
+            "reference": "",
+            "evidence": "지금은 사귀지 않을래요.",
+            "value": "couple",
+            "id": "9f9a51e8-7b55-4fce-b5b7-5816e0e863a5",
+            "turn": 8
+          },
+          {
+            "id": "ffe84f60-581e-4bb3-b1bd-6adc542374fc",
+            "turn": 8,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 녹음기를 가슴에 안는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 연인이 되기로 합의했다.",
+            "reference": "",
+            "evidence": "우리 사귀어요.",
+            "value": "couple",
+            "id": "00101371-5aa7-4de8-ab9d-3c9fbd8e2199",
+            "turn": 9
+          },
+          {
+            "id": "76b5a8c2-d920-42af-b3f0-22530bcd1749",
+            "turn": 9,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 다음 주 빗길 데이트를 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "date",
+            "id": "99109e7b-3918-47c7-8be5-ba95c6e3fcc2",
+            "turn": 10
+          },
+          {
+            "id": "812a2639-8bd4-44f8-8868-35053035621c",
+            "turn": 10,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 다음 주 데이트를 거절했다.",
+            "reference": "",
+            "evidence": "다음 주 데이트는 하지 않을래요.",
+            "value": "date",
+            "id": "60e61525-2edd-4ea1-b12b-23f2a0430a4a",
+            "turn": 11
+          },
+          {
+            "id": "2010e03d-da7a-4ce2-8062-fffde0bbaf7f",
+            "turn": 11,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "내일 데이트하기로 약속했다.",
+            "reference": "",
+            "evidence": "내일 같이 데이트해요.",
+            "value": "date",
+            "id": "2e553703-06d2-4e8d-8db2-eb2650899f0e",
+            "turn": 12
+          },
+          {
+            "id": "1e561e1d-e2f4-4592-8fd9-e970a7c36a0b",
+            "turn": 12,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "옥상에서 데이트를 시작했다.",
+            "reference": "",
+            "evidence": "오늘 여기서 같이 데이트해요.",
+            "value": "date",
+            "id": "f1464788-1771-40eb-a08f-d48775a78030",
+            "turn": 13
+          },
+          {
+            "id": "489ab717-8dda-44cd-9f00-aff3bb2ff0e1",
+            "turn": 13,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "laugh",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "activeDate": {
+          "eventId": "f1464788-1771-40eb-a08f-d48775a78030",
+          "location": "rooftop",
+          "turn": 13
+        }
+      },
+      "after": {
+        "format": 2,
+        "turn": 14,
+        "location": "rooftop",
+        "relationship": "couple",
+        "dates": 1,
+        "events": [
+          {
+            "kind": "invitation",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "rooftop",
+            "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "turn": 1
+          },
+          {
+            "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+            "turn": 1,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "invitation",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 옥상 초대를 거절했다.",
+            "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+            "evidence": "옥상에는 안 갈래요.",
+            "value": "rooftop",
+            "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+            "turn": 2
+          },
+          {
+            "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+            "turn": 2,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "move",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 옥상으로 이동한다.",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요.",
+            "value": "rooftop",
+            "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+            "turn": 3
+          },
+          {
+            "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+            "turn": 3,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "6e2e82fa-8edb-48b3-9692-75603a1bd05b",
+            "turn": 4
+          },
+          {
+            "id": "2d116c27-23b5-4de2-9325-7c8f18e8c764",
+            "turn": 4,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 마음을 말한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "05c7c767-5a88-4069-af00-5a0acc6c14ef",
+            "turn": 5
+          },
+          {
+            "id": "d3e6fe62-8e21-4229-a884-9582eaab23ec",
+            "turn": 5,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 수줍게 두 손을 모은다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "fulfilled",
+            "text": "유나가 좋아한다고 고백한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "884badd0-8aa6-40a8-b71f-3d86154748ea",
+            "turn": 6
+          },
+          {
+            "id": "0feecda1-8bdb-410f-b627-1054d82be1de",
+            "turn": 6,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 손목을 감싸며 망설인다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 연인이 되고 싶다는 마음을 전하고 답을 기다린다.",
+            "reference": "",
+            "evidence": "",
+            "value": "couple",
+            "id": "459ded69-7ec6-4f74-b6b7-02e19aed4261",
+            "turn": 7
+          },
+          {
+            "id": "942a72d0-cd1f-4c5b-a5e4-89cfa0a52984",
+            "turn": 7,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 지금 연인이 되는 것을 거절했다.",
+            "reference": "",
+            "evidence": "지금은 사귀지 않을래요.",
+            "value": "couple",
+            "id": "9f9a51e8-7b55-4fce-b5b7-5816e0e863a5",
+            "turn": 8
+          },
+          {
+            "id": "ffe84f60-581e-4bb3-b1bd-6adc542374fc",
+            "turn": 8,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 녹음기를 가슴에 안는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "두 사람이 연인이 되기로 합의했다.",
+            "reference": "",
+            "evidence": "우리 사귀어요.",
+            "value": "couple",
+            "id": "00101371-5aa7-4de8-ab9d-3c9fbd8e2199",
+            "turn": 9
+          },
+          {
+            "id": "76b5a8c2-d920-42af-b3f0-22530bcd1749",
+            "turn": 9,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "status": "offered",
+            "text": "유나가 다음 주 빗길 데이트를 제안한다.",
+            "reference": "",
+            "evidence": "",
+            "value": "date",
+            "id": "99109e7b-3918-47c7-8be5-ba95c6e3fcc2",
+            "turn": 10
+          },
+          {
+            "id": "812a2639-8bd4-44f8-8868-35053035621c",
+            "turn": 10,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 헤드폰 한쪽을 내민다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "status": "refused",
+            "text": "플레이어가 다음 주 데이트를 거절했다.",
+            "reference": "",
+            "evidence": "다음 주 데이트는 하지 않을래요.",
+            "value": "date",
+            "id": "60e61525-2edd-4ea1-b12b-23f2a0430a4a",
+            "turn": 11
+          },
+          {
+            "id": "2010e03d-da7a-4ce2-8062-fffde0bbaf7f",
+            "turn": 11,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 귀 가까이 손을 대고 듣는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "내일 데이트하기로 약속했다.",
+            "reference": "",
+            "evidence": "내일 같이 데이트해요.",
+            "value": "date",
+            "id": "2e553703-06d2-4e8d-8db2-eb2650899f0e",
+            "turn": 12
+          },
+          {
+            "id": "1e561e1d-e2f4-4592-8fd9-e970a7c36a0b",
+            "turn": 12,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 두 손을 모으고 미소 짓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "accepted",
+            "text": "옥상에서 데이트를 시작했다.",
+            "reference": "",
+            "evidence": "오늘 여기서 같이 데이트해요.",
+            "value": "date",
+            "id": "f1464788-1771-40eb-a08f-d48775a78030",
+            "turn": 13
+          },
+          {
+            "id": "489ab717-8dda-44cd-9f00-aff3bb2ff0e1",
+            "turn": 13,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 입가에 손을 대고 웃는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "status": "fulfilled",
+            "text": "옥상 데이트에서 종이배를 함께 접었다.",
+            "reference": "f1464788-1771-40eb-a08f-d48775a78030",
+            "evidence": "지금 같이 종이배를 접고 있어요.",
+            "value": "date",
+            "id": "681dd823-4b06-446c-a2a9-b923f6551b74",
+            "turn": 14
+          },
+          {
+            "id": "d662efbd-d2cb-47cd-a1ee-608911c623f9",
+            "turn": 14,
+            "kind": "complication",
+            "subject": "npc",
+            "text": "유나가 종이배를 나란히 놓는다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "action"
+          }
+        ],
+        "pose": "smile",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth"
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-date-participated.png"
+    }
+  ]
+}

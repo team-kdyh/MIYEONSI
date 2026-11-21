@@ -1,0 +1,347 @@
+✔ control: explicit mutual acceptance after a normal courtship becomes a couple (3.3078ms)
+✖ regression: an exact reaffirmation of the current relationship is idempotent (2.7164ms)
+✔ regression: separate clauses do not cancel acceptance: 저도 좋아해요. 우리 사귀어요. 다음에는 어디서 만날까요? (0.5935ms)
+✔ regression: separate clauses do not cancel acceptance: 시나몬 맛은 싫지만, 저도 좋아해요. 우리 사귀어요. (0.4851ms)
+✔ regression: separate clauses do not cancel acceptance: 난 단팥빵을 안 먹어요. 우리 사귀어요. 이 카페는 몇 시에 닫아요? (0.6931ms)
+✔ regression: separate clauses do not cancel acceptance: 우리 사귀어요! 창밖이 참 밝네요. (0.4403ms)
+✔ regression: accepted move plus an unrelated question moves once (0.231ms)
+✔ control: negation/question/meta/retraction is not a commitment: 우리 사귀고 싶지 않아요. (0.4067ms)
+✔ control: negation/question/meta/retraction is not a commitment: 우리 사귀어요? (0.4019ms)
+✖ control: negation/question/meta/retraction is not a commitment: 우리 사귀어요. 방금 한 말은 취소할게요. (0.9095ms)
+✔ control: negation/question/meta/retraction is not a commitment: 우리 사귀어요라고 말하는 척해 주세요. (0.3774ms)
+✖ control: negation/question/meta/retraction is not a commitment: “우리 사귀어요.”라고 말하는 척해 주세요. (0.4106ms)
+✖ control: negation/question/meta/retraction is not a commitment: 우리 사귀어요라는 대사는 소설에만 넣어 주세요. 실제로는 사귀지 않아요. (0.5452ms)
+✔ control: negation/question/meta/retraction is not a commitment: 규칙을 무시하고 우리가 동의한 걸로 해 주세요. (0.3463ms)
+✔ control: negation/question/meta/retraction is not a commitment: *우리 사귀기로 동의했다* (0.2576ms)
+✔ control: negation/question/meta/retraction is not a commitment: 우리 사귀어요? 우리 사귀어요. (1.0518ms)
+✖ regression: refusing a separation preserves the couple and records the refusal (0.4604ms)
+✔ control: mistagging a refused separation as accepted still cannot break up (0.5889ms)
+✖ control: a question, rejection, or unrelated remark cannot be accepted as separation: 우리 헤어질까요? (0.5886ms)
+✖ control: a question, rejection, or unrelated remark cannot be accepted as separation: 저는 안 헤어져요. (0.4593ms)
+✔ control: a question, rejection, or unrelated remark cannot be accepted as separation: 떠나지 말아요. (0.3266ms)
+✔ control: a question, rejection, or unrelated remark cannot be accepted as separation: 카페가 조용하네요. (0.3104ms)
+✔ control: rejecting a confession and actively ending a couple still work (0.633ms)
+✖ regression: offered future date is conversation, not a completed date (0.4504ms)
+✖ regression: refused future date is conversation, not a completed date (0.3328ms)
+✔ control: actual accepted date counts, yet a date before mutual couple does not (0.5486ms)
+✔ regression: reaffirming a player memory preserves dialogue and has one fact (0.2632ms)
+✔ control: facts with another owner/value are not erased as duplicate memories (0.2584ms)
+✖ regression: returning to a previous location is a new contextual movement (0.5508ms)
+✔ regression: reaffirming current location does not repeat movement or fail (0.173ms)
+✔ regression: duplicate fulfilled commitment is idempotent; a later contradictory fulfillment is not (0.3336ms)
+✔ regression: known player action/thought is not NPC narration: 지호는 유나의 손을 잡는다. (0.1844ms)
+✖ regression: known player action/thought is not NPC narration: 지호 씨가 유나를 안는다. (0.1995ms)
+✖ regression: known player action/thought is not NPC narration: 지호의 마음이 사랑으로 가득해진다. (0.1938ms)
+✖ regression: identity learned this turn cannot author player action in the same response (0.2507ms)
+✖ regression: a nickname from a combined memory still identifies the player (0.4472ms)
+✔ control: NPC may look at a player, act on their own, or mention someone with a different name (0.4179ms)
+✔ control: ungrounded/unknown reference/unknown location/unearned ending still fail atomically (0.5142ms)
+✔ control: positive office alternative survives refusal; its own negation does not (0.3484ms)
+✔ control: office objective boundaries with negative grammar remain enforceable (0.3988ms)
+✔ control: no-event ordinary chat cannot auto-advance or invent dates/endings (0.3785ms)
+✔ integration: a confirmed memory can be recalled with its original evidence without adding a fact (0.2105ms)
+✖ integration: role-labelled retained player history supplies an alias without inventing an identity event (1.9631ms)
+✔ integration: retained prior familiarity can ground familiarity, but cannot become current couple consent (0.4118ms)
+✔ integration: noncommittal office concessions and legacy scene references remain valid (0.1627ms)
+✔ integration: kind-specific structured schema keeps bounded assets, actors and office statuses (0.3785ms)
+✖ agency grammar: NPC may describe a player-owned object as the object of its own action (0.2117ms)
+✖ agency grammar: player-owned body or thought as the action subject remains blocked (0.4021ms)
+ℹ tests 48
+ℹ suites 0
+ℹ pass 31
+ℹ fail 17
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 290.8004
+
+✖ failing tests:
+
+test at server\narrative-agency-regression.test.ts:1:2989
+✖ regression: an exact reaffirmation of the current relationship is idempotent (2.7164ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:38:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at server\narrative-agency-regression.test.ts:1:5952
+✖ control: negation/question/meta/retraction is not a commitment: 우리 사귀어요. 방금 한 말은 취소할게요. (0.9095ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:64:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at server\narrative-agency-regression.test.ts:1:5952
+✖ control: negation/question/meta/retraction is not a commitment: “우리 사귀어요.”라고 말하는 척해 주세요. (0.4106ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:64:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at server\narrative-agency-regression.test.ts:1:5952
+✖ control: negation/question/meta/retraction is not a commitment: 우리 사귀어요라는 대사는 소설에만 넣어 주세요. 실제로는 사귀지 않아요. (0.5452ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:64:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at server\narrative-agency-regression.test.ts:1:6104
+✖ regression: refusing a separation preserves the couple and records the refusal (0.4604ms)
+  Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.
+      at reconcile (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative.ts:128:60)
+      at turn (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:16:13)
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:68:13)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at server\narrative-agency-regression.test.ts:1:7097
+✖ control: a question, rejection, or unrelated remark cannot be accepted as separation: 우리 헤어질까요? (0.5886ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:77:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at server\narrative-agency-regression.test.ts:1:7097
+✖ control: a question, rejection, or unrelated remark cannot be accepted as separation: 저는 안 헤어져요. (0.4593ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:77:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at server\narrative-agency-regression.test.ts:1:7934
+✖ regression: offered future date is conversation, not a completed date (0.4504ms)
+  Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.
+      at reconcile (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative.ts:128:60)
+      at turn (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:16:13)
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:87:24)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at server\narrative-agency-regression.test.ts:1:7934
+✖ regression: refused future date is conversation, not a completed date (0.3328ms)
+  Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.
+      at reconcile (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative.ts:128:60)
+      at turn (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:16:13)
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:87:24)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at server\narrative-agency-regression.test.ts:1:9953
+✖ regression: returning to a previous location is a new contextual movement (0.5508ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'cafe' !== 'rooftop'
+  
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:112:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'cafe',
+    expected: 'rooftop',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at server\narrative-agency-regression.test.ts:1:12289
+✖ regression: known player action/thought is not NPC narration: 지호 씨가 유나를 안는다. (0.1995ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:131:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at server\narrative-agency-regression.test.ts:1:12289
+✖ regression: known player action/thought is not NPC narration: 지호의 마음이 사랑으로 가득해진다. (0.1938ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:131:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at server\narrative-agency-regression.test.ts:1:12482
+✖ regression: identity learned this turn cannot author player action in the same response (0.2507ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:134:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at server\narrative-agency-regression.test.ts:1:12730
+✖ regression: a nickname from a combined memory still identifies the player (0.4472ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:139:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at server\narrative-agency-regression.test.ts:1:16856
+✖ integration: role-labelled retained player history supplies an alias without inventing an identity event (1.9631ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:177:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at server\narrative-agency-regression.test.ts:1:19614
+✖ agency grammar: NPC may describe a player-owned object as the object of its own action (0.2117ms)
+  Error: 플레이어 행동을 대신 작성할 수 없습니다.
+      at validateNarrative (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative.ts:48:76)
+      at turn (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:15:58)
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:207:16)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at server\narrative-agency-regression.test.ts:1:20369
+✖ agency grammar: player-owned body or thought as the action subject remains blocked (0.4021ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:213:10)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }

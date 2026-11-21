@@ -1,5 +1,13 @@
 # AFTER HOURS — project direction
 
+## Parent integration checkpoint after v2 generation2
+
+The first v2 Ralph loop terminated `grade_regressing` after two generations; preserve `docs/v2-ralph-terminal.json`. The parent integrated that snapshot and subsequent free fixes into this repository. Read `.ralph/v2-director.md`'s continuation section and `docs/v2-parent-current/review.md` before editing. The validated generation2 Seed is preserved exactly at `verification/v2-generation2.seed.json`; do not lower its criteria.
+
+The additional32 Responses attempts are **fully consumed** (previous12 remain unchanged). Parent has asked about24 further attempts but no reply/approval has arrived. The active final approval ledger is intentionally absent; its template and guarded runner do not authorize a call. Workers must make zero paid calls. Continue free defect correction and report fresh-model verification as unavailable until a real approved successor/allocation is supplied by the parent. Do not replace live evidence with mocks or reset a ledger.
+
+The integrated checkpoint passes244 unit tests and25 browser tests, but a separate executable diagnostic `npx tsx tests/v2-promise-edge-probe.ts` reproduces four incomplete/other-actor promise completions. Correct them while preserving the new free-input controls; those passing test counts are not a release verdict. UI/media are already integrated, including12 actual art cells per character and8 original tracks. Root localhost3001 is the user's preview server; new worker verification should use its own scoped server/port and private test storage.
+
 ## Active v2 redesign (2026-11-21, supersedes conflicting v1 details below)
 
 The user rejected the v1 experience and explicitly requested a substantial redesign: no story answer choices, OpenAI-led character conversation which changes the story, full-screen background/character/bottom-chat presentation, much richer 2D poses, multiple situation-specific music tracks, more original assets, and real Ralph iteration until a credible release candidate. The old 0.94 grade is evidence for the old contract only; it is not a v2 quality approval.

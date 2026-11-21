@@ -1,3 +1,5 @@
+import {MusicMixer,musicIds,type MusicId} from './music';
+import {backgroundAsset} from './visualAssets';
 import React,{useEffect,useRef,useState} from 'react';
 import type {PresentationCue} from './presentation';
 
@@ -11,16 +13,24 @@ export function TypedText({text,speed,reduced}:{text:string;speed:number;reduced
 export function BackgroundTransition({background}:{background:string}){
  const previous=useRef(background),[old,setOld]=useState(background);
  useEffect(()=>{setOld(previous.current);previous.current=background;},[background]);
- return <div className="background-arrival" key={background} style={{backgroundImage:`url(/assets/${old}.png)`}}/>;
+ return <div className="background-arrival" key={background} style={{backgroundImage:`url(${backgroundAsset(old)})`}}/>;
 }
 
 export function Soundscape({cue,mute,volume}:{cue:PresentationCue|null;mute:boolean;volume:number}){
- const music=useRef<HTMLAudioElement>(null),effect=useRef<HTMLAudioElement>(null);
- const [blocked,setBlocked]=useState(false);
+ const music=useRef<HTMLAudioElement>(null),incoming=useRef<HTMLAudioElement>(null),effect=useRef<HTMLAudioElement>(null);
+ const mixer=useRef<MusicMixer|null>(null),[blocked,setBlocked]=useState(false);
  useEffect(()=>{
-  const nodes=[music.current,effect.current];
-  for(const node of nodes){if(!node)continue;node.volume=volume/100;node.muted=mute;if(mute||!cue)node.pause();else void node.play().then(()=>setBlocked(false)).catch(()=>setBlocked(true));}
-  return()=>{for(const node of nodes)node?.pause();};
- },[cue?.id,cue?.music,mute,volume]);
- return <><audio ref={music} data-testid="music" loop src={cue?`/assets/${cue.music}.wav`:undefined}/><audio ref={effect} data-testid="effect" src={cue?`/assets/${cue.sound}.wav`:undefined}/>{blocked&&!mute&&cue&&<button onClick={()=>{void music.current?.play().then(()=>setBlocked(false));void effect.current?.play();}}>배경음 재생</button>}</>;
+  const player=new MusicMixer([music.current!,incoming.current!],setBlocked);mixer.current=player;
+  const timer=setInterval(()=>player.tick(),40);
+  return()=>{clearInterval(timer);player.dispose();mixer.current=null;};
+ },[]);
+ useEffect(()=>{mixer.current?.settings(mute,volume);if(effect.current){effect.current.volume=Math.max(0,Math.min(100,Number.isFinite(volume)?volume:35))/100;effect.current.muted=mute;if(mute)effect.current.pause();}},[mute,volume]);
+ useEffect(()=>{mixer.current?.request(cue&&musicIds.includes(cue.music as MusicId)?cue.music as MusicId:null);},[cue?.music]);
+ useEffect(()=>{
+  const node=effect.current;if(!node)return;
+  if(!cue||mute){node.pause();return;}
+  node.src=`/assets/${cue.sound}.wav`;void node.play().catch(()=>{});
+  return()=>node.pause();
+ },[cue?.id,cue?.sound,mute]);
+ return <><audio ref={music} data-testid="music" preload="auto"/><audio ref={incoming} data-testid="music-incoming" preload="auto"/><audio ref={effect} data-testid="effect"/>{blocked&&!mute&&cue&&<button className="audio-resume" onClick={()=>mixer.current?.resume()}>배경음 재생</button>}</>;
 }

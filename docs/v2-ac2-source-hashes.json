@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-21T02:51:27.602Z",
+  "scope": "implementation and mock verification; no live evidence",
+  "hashes": {
+    "server/narrative.ts": "28d8ae56b6caea4dbe779f2b0597241952752f5b2e1cf35e5cd0722dfeaef2d8",
+    "server/provider.ts": "e51d6f0c7bccc73c37048cd1ab81af31a300685b389e93f5a1a284fe32da2413",
+    "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+    "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+    "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+    "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+    "src/presentation.ts": "9781bc0d202f0b1ebe5173f1ef9436bf1dd6ae957ca1e720328baf6b6db2f356",
+    "server/narrative.test.ts": "9c1871f322dee011697542c784b740955bf788eb4869f12740fbcb522c9f861c"
+  }
+}

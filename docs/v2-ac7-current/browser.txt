@@ -1,0 +1,72 @@
+
+Running 20 tests using 1 worker
+
+  ok  1 tests\persistence.spec.ts:3:1 › AC6 failed save delivery offers state recovery without replaying a mutation (1.2s)
+  ok  2 tests\persistence.spec.ts:19:1 › AC6 unrecoverable storage displays an explicit confirmed reset path (346ms)
+  ok  3 tests\persistence.spec.ts:29:1 › AC6 reload restores all three manual slots, relationship, log and unlocked ending (1.7s)
+  ok  4 tests\persistence.spec.ts:62:1 › AC6 pending response from another timeline recovers current state (418ms)
+  ok  5 tests\persistence.spec.ts:78:1 › AC6 delivered but not displayed turn survives reload and retries once (633ms)
+  ok  6 tests\persistence.spec.ts:106:1 › AC6 conflicting stale tab recovers server state without advancing (440ms)
+  ok  7 tests\persistence.spec.ts:118:1 › v2 browser settings and explicit provider survive refresh and a new game (636ms)
+  ok  8 tests\v2-art.spec.ts:8:1 › staged provenance hashes match shipped originals (38ms)
+  ok  9 tests\v2-art.spec.ts:13:79 › office 1440: real sheets, validated move, action and reduced motion (21.5s)
+  ok 10 tests\v2-art.spec.ts:13:79 › office 390: real sheets, validated move, action and reduced motion (15.2s)
+  ok 11 tests\v2-art.spec.ts:13:79 › romance 1440: real sheets, validated move, action and reduced motion (22.5s)
+  ok 12 tests\v2-art.spec.ts:13:79 › romance 390: real sheets, validated move, action and reduced motion (14.9s)
+  ok 13 tests\v2-audio.spec.ts:8:1 › all eight shipped compositions decode, match provenance and have non-silent distinct waveforms (3.3s)
+  ok 14 tests\v2-audio.spec.ts:30:49 › office: normal validated conversation path with real playback and crossfades (10.8s)
+  x  15 tests\v2-audio.spec.ts:30:49 › romance: normal validated conversation path with real playback and crossfades (18.5s)
+  ok 16 tests\v2-audio.spec.ts:88:1 › autoplay rejection shows a visible gesture retry and recovers real playback (871ms)
+  ok 17 tests\v2-ui.spec.ts:6:2 › office: viewport 1440, free text, scroll, keyboard and settings (3.1s)
+  ok 18 tests\v2-ui.spec.ts:6:2 › romance: viewport 1440, free text, scroll, keyboard and settings (4.4s)
+  ok 19 tests\v2-ui.spec.ts:6:2 › office: viewport 390, free text, scroll, keyboard and settings (1.9s)
+  ok 20 tests\v2-ui.spec.ts:6:2 › romance: viewport 390, free text, scroll, keyboard and settings (2.2s)
+
+
+  1) tests\v2-audio.spec.ts:30:49 › romance: normal validated conversation path with real playback and crossfades 
+
+    Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.
+
+       at ..\server\narrative.ts:187
+
+      185 |   accepted.push({...e,id:randomUUID(),turn:s.turn});
+      186 |  }
+    > 187 |  if(handled!==reply.events.length)throw Error('사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.');
+          |                                         ^
+      188 |  for(const beat of reply.actionBeats)accepted.push({id:randomUUID(),turn:s.turn,kind:'complication',subject:'npc',text:beat,status:'fulfilled',reference:'',evidence:'',value:'action'});
+      189 |  s.events.push(...accepted);s.pose=reply.pose;s.emotion=reply.emotion;s.musicMood=reply.musicMood;
+      190 |  g.narrative=s;
+        at reconcile (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative.ts:187:41)
+        at C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\tests\v2-audio.spec.ts:57:17
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  locator('.text-ink')
+    Expected: "테이프 끝에 빈 소리가 있어요. 원래는 없었는데."
+    Received: "그날도 이렇게 비가 왔어요. 잊은 줄 알았는데."
+
+    Call log:
+      - Expect "toHaveText" locator('.text-ink') with timeout 5000ms
+      - waiting for locator('.text-ink')
+      - Test ended.
+
+
+      67 |  const transitions:any[]=[];
+      68 |  for(const step of steps){
+    > 69 |   await page.locator('#reply').fill(step.text);await page.locator('#reply').press('Enter');await expect(page.locator('.text-ink')).toHaveText(step.line);
+         |                                                                                                                                    ^
+      70 |   if(step.music===last)continue;
+      71 |   await expect.poll(()=>audio().evaluateAll((ns:HTMLAudioElement[])=>ns.filter(n=>!n.paused&&n.volume>.02&&n.volume<.33).length),{timeout:12000,intervals:[80]}).toBe(2);
+      72 |   const overlap=await audio().evaluateAll((ns:HTMLAudioElement[])=>ns.map(n=>({id:n.dataset.track,time:n.currentTime,volume:n.volume,paused:n.paused})));
+        at C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\tests\v2-audio.spec.ts:69:132
+
+    Error Context: test-results-v2-final\v2-audio-romance-normal-va-5bf41-eal-playback-and-crossfades\error-context.md
+
+  1 failed
+    tests\v2-audio.spec.ts:30:49 › romance: normal validated conversation path with real playback and crossfades 
+  19 passed (2.1m)
+
+(node:36652) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:25196) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

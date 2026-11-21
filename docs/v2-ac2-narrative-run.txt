@@ -1,0 +1,17 @@
+✔ v2 schema and director contain no choice-derived intent or forced turn limit (5.6585ms)
+✔ same-state office creative acceptance, refusal and alternate scope have distinct durable consequences (5.7235ms)
+✔ same-state romance accepts new rooftop outing, stays for alternative plan, or refuses without moving (2.9635ms)
+✔ ten-turn detail ownership, novel promise fulfillment and three saved slots survive reload (13.8848ms)
+✔ forged consent, refusal, unknown assets/reference and unearned endings reject atomically (0.6127ms)
+✔ office resolution requires prior agreements, never model victory alone (0.411ms)
+✔ reciprocal courtship and date are required before archive clues and resolution (1.1745ms)
+✔ mock Responses transports novel Korean speech/actions/events end to end with bounded output (15.35ms)
+✔ positive alternative survives a separate overtime refusal; negative proposal does not (0.253ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 266.4574

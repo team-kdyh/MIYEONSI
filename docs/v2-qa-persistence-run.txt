@@ -1,0 +1,16 @@
+[WebServer] (node:18968) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 7 tests using 1 worker
+
+(node:28732) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\persistence.spec.ts:3:1 › AC6 failed save delivery offers state recovery without replaying a mutation (1.2s)
+  ok 2 tests\persistence.spec.ts:19:1 › AC6 unrecoverable storage displays an explicit confirmed reset path (280ms)
+  ok 3 tests\persistence.spec.ts:29:1 › AC6 reload restores all three manual slots, relationship, log and unlocked ending (2.1s)
+  ok 4 tests\persistence.spec.ts:62:1 › AC6 pending response from another timeline recovers current state (627ms)
+  ok 5 tests\persistence.spec.ts:78:1 › AC6 delivered but not displayed turn survives reload and retries once (1.0s)
+  ok 6 tests\persistence.spec.ts:106:1 › AC6 conflicting stale tab recovers server state without advancing (544ms)
+  ok 7 tests\persistence.spec.ts:118:1 › v2 browser settings and explicit provider survive refresh and a new game (662ms)
+
+  7 passed (8.8s)

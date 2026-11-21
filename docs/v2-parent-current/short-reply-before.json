@@ -1,0 +1,35 @@
+{
+  "scope": "Controlled fixture states and pure reducer only; no network, paid API or production state mutation",
+  "rows": [
+    {
+      "case": "explicit prior confession, natural affirmative",
+      "word": "네",
+      "result": "rejected"
+    },
+    {
+      "case": "explicit prior confession, natural affirmative",
+      "word": "응",
+      "result": "rejected"
+    },
+    {
+      "case": "explicit prior confession, natural affirmative",
+      "word": "좋아요",
+      "result": "committed",
+      "relationship": "couple"
+    },
+    {
+      "case": "affirmative refers to explicit pending date offer",
+      "offer": "지금 여기서 데이트해요.",
+      "result": "committed",
+      "activeDate": false,
+      "dates": 0
+    },
+    {
+      "case": "affirmative refers to explicit pending date offer",
+      "offer": "내일 여기서 데이트해요.",
+      "result": "committed",
+      "activeDate": false,
+      "dates": 0
+    }
+  ]
+}

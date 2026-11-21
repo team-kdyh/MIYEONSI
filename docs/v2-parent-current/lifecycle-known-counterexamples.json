@@ -1,0 +1,72 @@
+{
+  "scope": "Read-only independent reviewer counterexamples on isolated candidate; no provider/API/state injection.",
+  "narrativeSha256": "1f623facef4f432d58520bb5e0230822cfaae123b1a1bb061bb899f7208a11d2",
+  "rows": [
+    {
+      "id": "proposal-relabels-unrelated-action",
+      "owner": "npc",
+      "input": "리본은요?",
+      "line": "잠깐만요.",
+      "action": "유나가 노트를 덮는다.",
+      "proposal": "유나가 노트를 덮었다.",
+      "expected": "rejected",
+      "status": "committed",
+      "expectationMet": false
+    },
+    {
+      "id": "same-object-observation-only",
+      "owner": "npc",
+      "input": "리본은요?",
+      "line": "예쁜 색이네요.",
+      "action": "유나가 노란 리본을 바라본다.",
+      "proposal": "노란 리본 약속을 이행했다.",
+      "expected": "rejected",
+      "status": "committed",
+      "expectationMet": false
+    },
+    {
+      "id": "player-same-object-search-only",
+      "owner": "player",
+      "input": "노란 리본을 찾아봤어요.",
+      "line": "그랬군요.",
+      "action": "",
+      "proposal": "노란 리본 약속을 이행했다.",
+      "expected": "rejected",
+      "status": "committed",
+      "expectationMet": false
+    },
+    {
+      "id": "future-will-ending",
+      "owner": "npc",
+      "input": "리본은요?",
+      "line": "내일 노란 리본을 가져오겠어요.",
+      "action": "",
+      "proposal": "노란 리본 약속을 이행했다.",
+      "expected": "rejected",
+      "status": "rejected",
+      "expectationMet": true
+    },
+    {
+      "id": "counterfactual-past",
+      "owner": "player",
+      "input": "노란 리본을 가져왔다면 좋겠어요.",
+      "line": "그랬군요.",
+      "action": "",
+      "proposal": "노란 리본 약속을 이행했다.",
+      "expected": "rejected",
+      "status": "rejected",
+      "expectationMet": true
+    },
+    {
+      "id": "delivery-unrelated-future-speech",
+      "owner": "npc",
+      "input": "리본은요?",
+      "line": "노란 리본을 가져왔어요. 다음에 이야기해요.",
+      "action": "",
+      "proposal": "노란 리본 약속을 이행했다.",
+      "expected": "committed",
+      "status": "committed",
+      "expectationMet": true
+    }
+  ]
+}

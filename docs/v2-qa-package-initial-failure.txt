@@ -1,0 +1,9 @@
+ZipArchiveHelper : The process cannot access the file 'C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v
+2-293c383da8\docs\v2-qa-package-run.txt' because it is being used by another process.
+At C:\Windows\system32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Archive\Microsoft.PowerShell.Archive.psm1:70
+7 char:30
++ ... sArchived = ZipArchiveHelper $subDirFiles.ToArray() $destinationPath  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (C:\Users\gjtjw\...package-run.txt:String) [Write-Error], IOException
+    + FullyQualifiedErrorId : CompressArchiveUnauthorizedAccessError,ZipArchiveHelper
+ 

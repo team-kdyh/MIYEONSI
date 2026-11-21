@@ -1,0 +1,1625 @@
+{
+  "scope": "Deterministic mocked proposals through production reducer and disk store; not new model generation or live conversational proof",
+  "rows": [
+    {
+      "label": "accept",
+      "startHash": "9040018dc59c498c552db07d2ef3e7ea026ab049a2c340469cf2a1d5bab44aeb",
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "dialogue": {
+          "version": 0,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.750Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            }
+          ],
+          "ledger": [],
+          "reply": ""
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 0,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [],
+          "pose": "neutral",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "input": "지금 옥상으로 가요.",
+      "generated": {
+        "line": "말씀하신 계획을 확인했어요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [
+          {
+            "kind": "move",
+            "value": "rooftop",
+            "text": "지금 옥상으로 가요.",
+            "status": "accepted",
+            "subject": "mutual",
+            "reference": "",
+            "evidence": "지금 옥상으로 가요."
+          }
+        ],
+        "recall": [],
+        "conjecture": ""
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "지금 옥상으로 가요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.750Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "24e2f72b-67d8-45be-9cb6-1d6b91c49127",
+              "eventId": "24e2f72b-67d8-45be-9cb6-1d6b91c49127",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.792Z",
+              "kind": "scene",
+              "text": "지금 옥상으로 가요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "지금 옥상으로 가요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "지금 옥상으로 가요.",
+              "version": 1,
+              "eventId": "24e2f72b-67d8-45be-9cb6-1d6b91c49127"
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "지금 옥상으로 가요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "rooftop",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "move",
+              "value": "rooftop",
+              "text": "지금 옥상으로 가요.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "지금 옥상으로 가요.",
+              "id": "24e2f72b-67d8-45be-9cb6-1d6b91c49127",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "commonInput": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+      "continued": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "지금 옥상으로 가요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.750Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "24e2f72b-67d8-45be-9cb6-1d6b91c49127",
+              "eventId": "24e2f72b-67d8-45be-9cb6-1d6b91c49127",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.792Z",
+              "kind": "scene",
+              "text": "지금 옥상으로 가요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "지금 옥상으로 가요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "지금 옥상으로 가요.",
+              "version": 1,
+              "eventId": "24e2f72b-67d8-45be-9cb6-1d6b91c49127"
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 2,
+              "recallIds": []
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "지금 옥상으로 가요."
+            },
+            {
+              "turn": 2,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "rooftop",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "move",
+              "value": "rooftop",
+              "text": "지금 옥상으로 가요.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "지금 옥상으로 가요.",
+              "id": "24e2f72b-67d8-45be-9cb6-1d6b91c49127",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "restored": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "지금 옥상으로 가요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.750Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "24e2f72b-67d8-45be-9cb6-1d6b91c49127",
+              "eventId": "24e2f72b-67d8-45be-9cb6-1d6b91c49127",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.792Z",
+              "kind": "scene",
+              "text": "지금 옥상으로 가요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "지금 옥상으로 가요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "지금 옥상으로 가요.",
+              "version": 1,
+              "eventId": "24e2f72b-67d8-45be-9cb6-1d6b91c49127"
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 2,
+              "recallIds": []
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "지금 옥상으로 가요."
+            },
+            {
+              "turn": 2,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "rooftop",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "move",
+              "value": "rooftop",
+              "text": "지금 옥상으로 가요.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "지금 옥상으로 가요.",
+              "id": "24e2f72b-67d8-45be-9cb6-1d6b91c49127",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "following": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "지금 옥상으로 가요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.750Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "24e2f72b-67d8-45be-9cb6-1d6b91c49127",
+              "eventId": "24e2f72b-67d8-45be-9cb6-1d6b91c49127",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.792Z",
+              "kind": "scene",
+              "text": "지금 옥상으로 가요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "지금 옥상으로 가요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "지금 옥상으로 가요.",
+              "version": 1,
+              "eventId": "24e2f72b-67d8-45be-9cb6-1d6b91c49127"
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 3,
+              "recallIds": []
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "지금 옥상으로 가요."
+            },
+            {
+              "turn": 2,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            },
+            {
+              "turn": 3,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "rooftop",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "move",
+              "value": "rooftop",
+              "text": "지금 옥상으로 가요.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "지금 옥상으로 가요.",
+              "id": "24e2f72b-67d8-45be-9cb6-1d6b91c49127",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "consequence": {
+        "location": "rooftop",
+        "relationship": "strangers",
+        "dates": 0,
+        "ending": null,
+        "agreements": []
+      },
+      "resolution": null
+    },
+    {
+      "label": "creative",
+      "startHash": "9040018dc59c498c552db07d2ef3e7ea026ab049a2c340469cf2a1d5bab44aeb",
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "dialogue": {
+          "version": 0,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.750Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            }
+          ],
+          "ledger": [],
+          "reply": ""
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 0,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [],
+          "pose": "neutral",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "input": "대신 지금 강변으로 가요.",
+      "generated": {
+        "line": "말씀하신 계획을 확인했어요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [
+          {
+            "kind": "move",
+            "value": "riverside",
+            "text": "대신 지금 강변으로 가요.",
+            "status": "accepted",
+            "subject": "mutual",
+            "reference": "",
+            "evidence": "대신 지금 강변으로 가요."
+          }
+        ],
+        "recall": [],
+        "conjecture": ""
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "대신 지금 강변으로 가요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.750Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "f5e3e6c2-45ff-47e7-b6b0-0077caa83158",
+              "eventId": "f5e3e6c2-45ff-47e7-b6b0-0077caa83158",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.851Z",
+              "kind": "scene",
+              "text": "대신 지금 강변으로 가요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "대신 지금 강변으로 가요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "대신 지금 강변으로 가요.",
+              "version": 1,
+              "eventId": "f5e3e6c2-45ff-47e7-b6b0-0077caa83158"
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "대신 지금 강변으로 가요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "riverside",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "move",
+              "value": "riverside",
+              "text": "대신 지금 강변으로 가요.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "대신 지금 강변으로 가요.",
+              "id": "f5e3e6c2-45ff-47e7-b6b0-0077caa83158",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "commonInput": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+      "continued": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "대신 지금 강변으로 가요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.750Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "f5e3e6c2-45ff-47e7-b6b0-0077caa83158",
+              "eventId": "f5e3e6c2-45ff-47e7-b6b0-0077caa83158",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.851Z",
+              "kind": "scene",
+              "text": "대신 지금 강변으로 가요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "대신 지금 강변으로 가요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "대신 지금 강변으로 가요.",
+              "version": 1,
+              "eventId": "f5e3e6c2-45ff-47e7-b6b0-0077caa83158"
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 2,
+              "recallIds": []
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "대신 지금 강변으로 가요."
+            },
+            {
+              "turn": 2,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "riverside",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "move",
+              "value": "riverside",
+              "text": "대신 지금 강변으로 가요.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "대신 지금 강변으로 가요.",
+              "id": "f5e3e6c2-45ff-47e7-b6b0-0077caa83158",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "restored": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "대신 지금 강변으로 가요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.750Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "f5e3e6c2-45ff-47e7-b6b0-0077caa83158",
+              "eventId": "f5e3e6c2-45ff-47e7-b6b0-0077caa83158",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.851Z",
+              "kind": "scene",
+              "text": "대신 지금 강변으로 가요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "대신 지금 강변으로 가요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "대신 지금 강변으로 가요.",
+              "version": 1,
+              "eventId": "f5e3e6c2-45ff-47e7-b6b0-0077caa83158"
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 2,
+              "recallIds": []
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "대신 지금 강변으로 가요."
+            },
+            {
+              "turn": 2,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "riverside",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "move",
+              "value": "riverside",
+              "text": "대신 지금 강변으로 가요.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "대신 지금 강변으로 가요.",
+              "id": "f5e3e6c2-45ff-47e7-b6b0-0077caa83158",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "following": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "대신 지금 강변으로 가요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.750Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "f5e3e6c2-45ff-47e7-b6b0-0077caa83158",
+              "eventId": "f5e3e6c2-45ff-47e7-b6b0-0077caa83158",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.851Z",
+              "kind": "scene",
+              "text": "대신 지금 강변으로 가요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "대신 지금 강변으로 가요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "대신 지금 강변으로 가요.",
+              "version": 1,
+              "eventId": "f5e3e6c2-45ff-47e7-b6b0-0077caa83158"
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 3,
+              "recallIds": []
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "대신 지금 강변으로 가요."
+            },
+            {
+              "turn": 2,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            },
+            {
+              "turn": 3,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "riverside",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "move",
+              "value": "riverside",
+              "text": "대신 지금 강변으로 가요.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "대신 지금 강변으로 가요.",
+              "id": "f5e3e6c2-45ff-47e7-b6b0-0077caa83158",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "consequence": {
+        "location": "riverside",
+        "relationship": "strangers",
+        "dates": 0,
+        "ending": null,
+        "agreements": []
+      },
+      "resolution": null
+    },
+    {
+      "label": "refuse",
+      "startHash": "9040018dc59c498c552db07d2ef3e7ea026ab049a2c340469cf2a1d5bab44aeb",
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "dialogue": {
+          "version": 0,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.750Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            }
+          ],
+          "ledger": [],
+          "reply": ""
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 0,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [],
+          "pose": "neutral",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "input": "옥상은 싫어요. 카페에 있을래요.",
+      "generated": {
+        "line": "말씀하신 계획을 확인했어요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [],
+        "recall": [],
+        "conjecture": ""
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "옥상은 싫어요. 카페에 있을래요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.750Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "옥상은 싫어요. 카페에 있을래요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "옥상은 싫어요. 카페에 있을래요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "commonInput": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+      "continued": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "옥상은 싫어요. 카페에 있을래요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.750Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "옥상은 싫어요. 카페에 있을래요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 2,
+              "recallIds": []
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "옥상은 싫어요. 카페에 있을래요."
+            },
+            {
+              "turn": 2,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "restored": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "옥상은 싫어요. 카페에 있을래요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.750Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "옥상은 싫어요. 카페에 있을래요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 2,
+              "recallIds": []
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "옥상은 싫어요. 카페에 있을래요."
+            },
+            {
+              "turn": 2,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "following": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "옥상은 싫어요. 카페에 있을래요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.750Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "옥상은 싫어요. 카페에 있을래요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 3,
+              "recallIds": []
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "옥상은 싫어요. 카페에 있을래요."
+            },
+            {
+              "turn": 2,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            },
+            {
+              "turn": 3,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        }
+      },
+      "consequence": {
+        "location": "cafe",
+        "relationship": "strangers",
+        "dates": 0,
+        "ending": null,
+        "agreements": []
+      },
+      "resolution": null
+    }
+  ]
+}

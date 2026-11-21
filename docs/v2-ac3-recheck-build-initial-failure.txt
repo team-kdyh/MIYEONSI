@@ -1,0 +1,10 @@
+
+> after-hours@0.1.0 build
+> npm run typecheck && vite build
+
+
+> after-hours@0.1.0 typecheck
+> tsc --noEmit
+
+server/v2-ac3-lifecycle.test.ts(106,38): error TS2550: Property 'findLast' does not exist on type 'LedgerEntry[]'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2023' or later.
+server/v2-ac3-lifecycle.test.ts(106,47): error TS7006: Parameter 'e' implicitly has an 'any' type.

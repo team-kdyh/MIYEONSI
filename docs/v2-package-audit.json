@@ -1,0 +1,13 @@
+{
+  "archive": "artifacts\\AFTER-HOURS-local.zip",
+  "sha256": "4907b95582996a43a4417ab8b6662fa81f9df0a0a15874be9ade487318025bb5",
+  "bytes": 180122874,
+  "entries": 486,
+  "requiredMissing": [],
+  "excludedPrivatePathsFound": [],
+  "credentialLeaks": [],
+  "sourceMismatches": [],
+  "crcFailure": null,
+  "initialHarnessFailure": "First archive attempt redirected its own log into docs while docs was being archived; Windows file locking rejected it. Original error preserved. Redirecting to excluded .ralph staging completed packaging; no source/criteria reduction.",
+  "scope": "ZIP contents/CRC/source identity verified. Launcher was tested in source workspace; no clean-machine installation claim."
+}

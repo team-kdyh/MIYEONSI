@@ -1,0 +1,55 @@
+
+Running 20 tests using 1 worker
+
+  x   1 tests\persistence.spec.ts:3:1 › AC6 failed save delivery offers state recovery without replaying a mutation (1.1s)
+  ok  2 tests\persistence.spec.ts:19:1 › AC6 unrecoverable storage displays an explicit confirmed reset path (402ms)
+  ok  3 tests\persistence.spec.ts:29:1 › AC6 reload restores all three manual slots, relationship, log and unlocked ending (1.9s)
+  ok  4 tests\persistence.spec.ts:62:1 › AC6 pending response from another timeline recovers current state (459ms)
+  ok  5 tests\persistence.spec.ts:78:1 › AC6 delivered but not displayed turn survives reload and retries once (623ms)
+  ok  6 tests\persistence.spec.ts:106:1 › AC6 conflicting stale tab recovers server state without advancing (495ms)
+  ok  7 tests\persistence.spec.ts:118:1 › v2 browser settings and explicit provider survive refresh and a new game (659ms)
+  ok  8 tests\v2-art.spec.ts:8:1 › staged provenance hashes match shipped originals (45ms)
+  ok  9 tests\v2-art.spec.ts:13:79 › office 1440: real sheets, validated move, action and reduced motion (22.0s)
+  ok 10 tests\v2-art.spec.ts:13:79 › office 390: real sheets, validated move, action and reduced motion (15.9s)
+  ok 11 tests\v2-art.spec.ts:13:79 › romance 1440: real sheets, validated move, action and reduced motion (21.2s)
+  ok 12 tests\v2-art.spec.ts:13:79 › romance 390: real sheets, validated move, action and reduced motion (15.0s)
+  ok 13 tests\v2-audio.spec.ts:8:1 › all eight shipped compositions decode, match provenance and have non-silent distinct waveforms (2.7s)
+  ok 14 tests\v2-audio.spec.ts:30:49 › office: normal validated conversation path with real playback and crossfades (10.8s)
+  ok 15 tests\v2-audio.spec.ts:30:49 › romance: normal validated conversation path with real playback and crossfades (42.8s)
+  ok 16 tests\v2-audio.spec.ts:92:1 › autoplay rejection shows a visible gesture retry and recovers real playback (628ms)
+  ok 17 tests\v2-ui.spec.ts:6:2 › office: viewport 1440, free text, scroll, keyboard and settings (3.7s)
+  ok 18 tests\v2-ui.spec.ts:6:2 › romance: viewport 1440, free text, scroll, keyboard and settings (4.2s)
+  ok 19 tests\v2-ui.spec.ts:6:2 › office: viewport 390, free text, scroll, keyboard and settings (2.0s)
+  ok 20 tests\v2-ui.spec.ts:6:2 › romance: viewport 390, free text, scroll, keyboard and settings (2.1s)
+
+
+  1) tests\persistence.spec.ts:3:1 › AC6 failed save delivery offers state recovery without replaying a mutation 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    Expected: {"dialogue": {"facts": [{"confirmedAt": "2026-11-21T03:51:34.577Z", "eventId": "start", "id": "scene-0", "kind": "scene", "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.·
+    현재 반론: “고객이 오늘 숫자를 기다린다는데요?”·
+    협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패.", "version": 0}], "ledger": [], "reply": "", "version": 0}, "end": null, "ending": null, "log": [{"speaker": "박도현 · 46", "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.·
+    현재 반론: “고객이 오늘 숫자를 기다린다는데요?”·
+    협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."}], "mode": "office", "narrative": {"dates": 0, "emotion": "차분함", "events": [], "format": 2, "location": "office", "musicMood": "office-groove", "pose": "neutral", "relationship": "strangers", "turn": 0}, "office": {"evidence": [], "feedback": "", "missionId": "clockout", "outcome": null, "secured": {}, "turn": 0, "version": 0}, "scene": {"choices": [], "expression": 0, "text": "", "title": "17:50 추가 업무에서 칼퇴"}, "step": 0}
+    Received: undefined
+
+      14 |  await expect(page.getByRole('alert')).toHaveCount(0);
+      15 |  const saved=await (await page.request.get('/api/state')).json();
+    > 16 |  expect(saved.game).toEqual(initial.game);expect(saved.slots[0]).toBeTruthy();
+         |                     ^
+      17 | });
+      18 |
+      19 | test('AC6 unrecoverable storage displays an explicit confirmed reset path',async({page})=>{
+        at C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\tests\persistence.spec.ts:16:21
+
+    Error Context: test-results-v2-final\persistence-AC6-failed-sav-a4557-ithout-replaying-a-mutation\error-context.md
+
+  1 failed
+    tests\persistence.spec.ts:3:1 › AC6 failed save delivery offers state recovery without replaying a mutation 
+  19 passed (2.5m)
+
+(node:30336) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30496) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

@@ -1,0 +1,22 @@
+[WebServer] (node:32240) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:26644) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 11 tests using 1 worker
+
+(node:2648) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\v2-ac4-boundaries.spec.ts:10:65 › agency visuals 1440 reduced=false (19.9s)
+  ok  2 tests\v2-ac4-boundaries.spec.ts:10:65 › agency visuals 1440 reduced=true (9.3s)
+  ok  3 tests\v2-ac4-boundaries.spec.ts:10:65 › agency visuals 390 reduced=false (14.6s)
+  ok  4 tests\v2-ac4-boundaries.spec.ts:10:65 › agency visuals 390 reduced=true (3.5s)
+  ok  5 tests\v2-ac4-boundaries.spec.ts:55:31 › captured real replies use committed visuals 1440 (8.2s)
+  ok  6 tests\v2-ac4-boundaries.spec.ts:55:31 › captured real replies use committed visuals 390 (3.7s)
+  ok  7 tests\v2-art.spec.ts:8:1 › staged provenance hashes match shipped originals (67ms)
+  ok  8 tests\v2-art.spec.ts:13:79 › office 1440: real sheets, validated move, action and reduced motion (21.6s)
+  ok  9 tests\v2-art.spec.ts:13:79 › office 390: real sheets, validated move, action and reduced motion (15.4s)
+  ok 10 tests\v2-art.spec.ts:13:79 › romance 1440: real sheets, validated move, action and reduced motion (21.1s)
+  ok 11 tests\v2-art.spec.ts:13:79 › romance 390: real sheets, validated move, action and reduced motion (15.1s)
+
+  11 passed (2.3m)

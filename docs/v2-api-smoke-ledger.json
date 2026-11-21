@@ -7,5 +7,646 @@
   "cumulativeLimit": 44,
   "maxOutputTokensPerCall": 1600,
   "reservationPolicy": "Only final conversational-QA owner reserves each attempt before network request. Include failures. No live calls from general tests, passive loads, or concurrent workers.",
-  "attempts": []
+  "attempts": [
+    {
+      "id": 1,
+      "reservedAt": "2026-11-21T03:04:51.891Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "office creative alternative A, fresh state",
+      "maxOutputTokens": 1600,
+      "result": "failed",
+      "latencyMs": 3896,
+      "hashes": {
+        "server/provider.ts": "c248a81d24cf7fd82f3cc5ccb86d3d566cce232fbc0548574883ebdf047d235f",
+        "server/narrative.ts": "bbfb9e59f71c01d1de2cc6a5e4a8958cb4d47186da7cfbb65aceb5aa280820e8",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "645d9297527c33527170ab0e642fb90125caf8db67cfd6e2c3ee3694a6ba67bc"
+      }
+    },
+    {
+      "id": 2,
+      "reservedAt": "2026-11-21T03:05:18.735Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "office creative alternative A, fresh state",
+      "maxOutputTokens": 1600,
+      "result": "failed",
+      "latencyMs": 2345,
+      "hashes": {
+        "server/provider.ts": "c248a81d24cf7fd82f3cc5ccb86d3d566cce232fbc0548574883ebdf047d235f",
+        "server/narrative.ts": "bbfb9e59f71c01d1de2cc6a5e4a8958cb4d47186da7cfbb65aceb5aa280820e8",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 3,
+      "reservedAt": "2026-11-21T03:05:49.030Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "office creative alternative A, fresh state",
+      "maxOutputTokens": 1600,
+      "result": "failed",
+      "latencyMs": 3076,
+      "hashes": {
+        "server/provider.ts": "c248a81d24cf7fd82f3cc5ccb86d3d566cce232fbc0548574883ebdf047d235f",
+        "server/narrative.ts": "c0c53a4f172831f68c6bd6d7b2bec7fe4d0783039b659d7fa906d5084aa846ee",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 4,
+      "reservedAt": "2026-11-21T03:06:22.541Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "office creative alternative A, fresh state",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 3160,
+      "hashes": {
+        "server/provider.ts": "681cf1b20d3d60069d7726fbda4dd626e8a00606f873e6f72bda9c1b6573e32c",
+        "server/narrative.ts": "4c2bfc4404370bf8b4b85583472b338db832575a62674d29a826b0cff6de889f",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 5,
+      "reservedAt": "2026-11-21T03:06:32.281Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "office A negotiate departure after accepted novel handoff",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 3871,
+      "hashes": {
+        "server/provider.ts": "681cf1b20d3d60069d7726fbda4dd626e8a00606f873e6f72bda9c1b6573e32c",
+        "server/narrative.ts": "4c2bfc4404370bf8b4b85583472b338db832575a62674d29a826b0cff6de889f",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 6,
+      "reservedAt": "2026-11-21T03:06:36.174Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "office A natural closure",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 2118,
+      "hashes": {
+        "server/provider.ts": "681cf1b20d3d60069d7726fbda4dd626e8a00606f873e6f72bda9c1b6573e32c",
+        "server/narrative.ts": "4c2bfc4404370bf8b4b85583472b338db832575a62674d29a826b0cff6de889f",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 7,
+      "reservedAt": "2026-11-21T03:07:08.226Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "office B same fresh state refusal counterfactual",
+      "maxOutputTokens": 1600,
+      "result": "failed",
+      "latencyMs": 2420,
+      "hashes": {
+        "server/provider.ts": "681cf1b20d3d60069d7726fbda4dd626e8a00606f873e6f72bda9c1b6573e32c",
+        "server/narrative.ts": "4c2bfc4404370bf8b4b85583472b338db832575a62674d29a826b0cff6de889f",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 8,
+      "reservedAt": "2026-11-21T03:08:05.602Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "office B refusal after schema repair",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 2297,
+      "hashes": {
+        "server/provider.ts": "ddda1d73e9a04876b9c0e9c81eabe97008d9340352cca2f4526d04547042355b",
+        "server/narrative.ts": "86ff05b3fa1f3fa1f0a740f7750cbe44a0f2e049d130a90848fcd87992b97c81",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 9,
+      "reservedAt": "2026-11-21T03:08:07.916Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "office B unresolved consequences",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 3668,
+      "hashes": {
+        "server/provider.ts": "ddda1d73e9a04876b9c0e9c81eabe97008d9340352cca2f4526d04547042355b",
+        "server/narrative.ts": "86ff05b3fa1f3fa1f0a740f7750cbe44a0f2e049d130a90848fcd87992b97c81",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 10,
+      "reservedAt": "2026-11-21T03:08:11.623Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 1 personal name preferences and novel promise",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 2211,
+      "hashes": {
+        "server/provider.ts": "ddda1d73e9a04876b9c0e9c81eabe97008d9340352cca2f4526d04547042355b",
+        "server/narrative.ts": "86ff05b3fa1f3fa1f0a740f7750cbe44a0f2e049d130a90848fcd87992b97c81",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 11,
+      "reservedAt": "2026-11-21T03:08:22.532Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 2 accept novel promise and ordinary joke",
+      "maxOutputTokens": 1600,
+      "result": "failed",
+      "latencyMs": 4192,
+      "hashes": {
+        "server/provider.ts": "ddda1d73e9a04876b9c0e9c81eabe97008d9340352cca2f4526d04547042355b",
+        "server/narrative.ts": "86ff05b3fa1f3fa1f0a740f7750cbe44a0f2e049d130a90848fcd87992b97c81",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 12,
+      "reservedAt": "2026-11-21T03:08:52.147Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 2 accept novel promise and ordinary joke",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 2566,
+      "hashes": {
+        "server/provider.ts": "a615d7883a30c6c6afb42cb54db17389c8a69ae949e933241753e0ca7650341c",
+        "server/narrative.ts": "5a2a3581aedb0e3121a0bca080adbab9dfe777c69296d32c3736e6693c7900fc",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 13,
+      "reservedAt": "2026-11-21T03:08:54.729Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 3 refuse recording without refusing relationship",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 2017,
+      "hashes": {
+        "server/provider.ts": "a615d7883a30c6c6afb42cb54db17389c8a69ae949e933241753e0ca7650341c",
+        "server/narrative.ts": "5a2a3581aedb0e3121a0bca080adbab9dfe777c69296d32c3736e6693c7900fc",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 14,
+      "reservedAt": "2026-11-21T03:08:56.767Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 4 relaxed conversation without forced chapter advance",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 2120,
+      "hashes": {
+        "server/provider.ts": "a615d7883a30c6c6afb42cb54db17389c8a69ae949e933241753e0ca7650341c",
+        "server/narrative.ts": "5a2a3581aedb0e3121a0bca080adbab9dfe777c69296d32c3736e6693c7900fc",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 15,
+      "reservedAt": "2026-11-21T03:09:24.421Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 5 familiarity warm reciprocal conversation",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 2030,
+      "hashes": {
+        "server/provider.ts": "a615d7883a30c6c6afb42cb54db17389c8a69ae949e933241753e0ca7650341c",
+        "server/narrative.ts": "5a2a3581aedb0e3121a0bca080adbab9dfe777c69296d32c3736e6693c7900fc",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 16,
+      "reservedAt": "2026-11-21T03:09:26.473Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 6 mutual attraction without forced acceptance",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 2786,
+      "hashes": {
+        "server/provider.ts": "a615d7883a30c6c6afb42cb54db17389c8a69ae949e933241753e0ca7650341c",
+        "server/narrative.ts": "5a2a3581aedb0e3121a0bca080adbab9dfe777c69296d32c3736e6693c7900fc",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 17,
+      "reservedAt": "2026-11-21T03:09:29.334Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 7 recall after save reload and promise consequence",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 3151,
+      "hashes": {
+        "server/provider.ts": "a615d7883a30c6c6afb42cb54db17389c8a69ae949e933241753e0ca7650341c",
+        "server/narrative.ts": "5a2a3581aedb0e3121a0bca080adbab9dfe777c69296d32c3736e6693c7900fc",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 18,
+      "reservedAt": "2026-11-21T03:09:54.711Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 8 relationship familiarity and plan after prompt repair",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 3017,
+      "hashes": {
+        "server/provider.ts": "f63047b4652851d3c0d6226bd5d322b71889bb3dd957ad2763112bafdc695708",
+        "server/narrative.ts": "5a2a3581aedb0e3121a0bca080adbab9dfe777c69296d32c3736e6693c7900fc",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 19,
+      "reservedAt": "2026-11-21T03:09:57.759Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 9 reciprocal attraction",
+      "maxOutputTokens": 1600,
+      "result": "failed",
+      "latencyMs": 3185,
+      "hashes": {
+        "server/provider.ts": "f63047b4652851d3c0d6226bd5d322b71889bb3dd957ad2763112bafdc695708",
+        "server/narrative.ts": "5a2a3581aedb0e3121a0bca080adbab9dfe777c69296d32c3736e6693c7900fc",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 20,
+      "reservedAt": "2026-11-21T03:10:37.384Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 9 retry stage-valid reciprocal affection",
+      "maxOutputTokens": 1600,
+      "result": "failed",
+      "latencyMs": 3791,
+      "hashes": {
+        "server/provider.ts": "e4f19d2da52019af90ea709eb9800f213a4f696d58fccc5f090b18c996874917",
+        "server/narrative.ts": "4e2856b6b0b3549303487311d2bd82e9b7c7eaa42efd78bdc81ad37ddc888cf8",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 21,
+      "reservedAt": "2026-11-21T03:11:07.638Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 9 retry stage-valid reciprocal affection",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 3904,
+      "hashes": {
+        "server/provider.ts": "e4f19d2da52019af90ea709eb9800f213a4f696d58fccc5f090b18c996874917",
+        "server/narrative.ts": "543b3ed93bd7f9ceee01ed8aecd39cdc128b8e4e50968c3a154d872e1db8098a",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 22,
+      "reservedAt": "2026-11-21T03:11:11.569Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 10 sustained affection",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 2503,
+      "hashes": {
+        "server/provider.ts": "e4f19d2da52019af90ea709eb9800f213a4f696d58fccc5f090b18c996874917",
+        "server/narrative.ts": "543b3ed93bd7f9ceee01ed8aecd39cdc128b8e4e50968c3a154d872e1db8098a",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 23,
+      "reservedAt": "2026-11-21T03:11:31.105Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 11 actual confession",
+      "maxOutputTokens": 1600,
+      "result": "failed",
+      "latencyMs": 2501,
+      "hashes": {
+        "server/provider.ts": "e4f19d2da52019af90ea709eb9800f213a4f696d58fccc5f090b18c996874917",
+        "server/narrative.ts": "543b3ed93bd7f9ceee01ed8aecd39cdc128b8e4e50968c3a154d872e1db8098a",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 24,
+      "reservedAt": "2026-11-21T03:11:59.290Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 11 actual confession",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 2634,
+      "hashes": {
+        "server/provider.ts": "e4f19d2da52019af90ea709eb9800f213a4f696d58fccc5f090b18c996874917",
+        "server/narrative.ts": "45a4f352e88683d9423e443fd001118934590af387a2e0e7f2cf948db2ec2098",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 25,
+      "reservedAt": "2026-11-21T03:12:01.949Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 12 explicit mutual coupling",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 2916,
+      "hashes": {
+        "server/provider.ts": "e4f19d2da52019af90ea709eb9800f213a4f696d58fccc5f090b18c996874917",
+        "server/narrative.ts": "45a4f352e88683d9423e443fd001118934590af387a2e0e7f2cf948db2ec2098",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 26,
+      "reservedAt": "2026-11-21T03:12:04.960Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 13 actual date and novel promise fulfillment",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 3307,
+      "hashes": {
+        "server/provider.ts": "e4f19d2da52019af90ea709eb9800f213a4f696d58fccc5f090b18c996874917",
+        "server/narrative.ts": "45a4f352e88683d9423e443fd001118934590af387a2e0e7f2cf948db2ec2098",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 27,
+      "reservedAt": "2026-11-21T03:12:47.076Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 14 actual date activity and promise fulfillment",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 2971,
+      "hashes": {
+        "server/provider.ts": "badc86c92145ac24003950600c8d6c1083803e1e95d91b3f3eb44d11f62ef0b4",
+        "server/narrative.ts": "45a4f352e88683d9423e443fd001118934590af387a2e0e7f2cf948db2ec2098",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 28,
+      "reservedAt": "2026-11-21T03:12:50.083Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 15 delayed refusal memory and actual rooftop move",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 3950,
+      "hashes": {
+        "server/provider.ts": "badc86c92145ac24003950600c8d6c1083803e1e95d91b3f3eb44d11f62ef0b4",
+        "server/narrative.ts": "45a4f352e88683d9423e443fd001118934590af387a2e0e7f2cf948db2ec2098",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 29,
+      "reservedAt": "2026-11-21T03:13:25.760Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 16 explicit current location/date after omission repair",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 3197,
+      "hashes": {
+        "server/provider.ts": "9cb96e0ec6ef5037567eb7bd9a65d32abded251d7fd8f4bb6f179dd8ab68bce2",
+        "server/narrative.ts": "45a4f352e88683d9423e443fd001118934590af387a2e0e7f2cf948db2ec2098",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 30,
+      "reservedAt": "2026-11-21T03:13:29.182Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "office A closure after resolution omission repair",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 2893,
+      "hashes": {
+        "server/provider.ts": "9cb96e0ec6ef5037567eb7bd9a65d32abded251d7fd8f4bb6f179dd8ab68bce2",
+        "server/narrative.ts": "45a4f352e88683d9423e443fd001118934590af387a2e0e7f2cf948db2ec2098",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 31,
+      "reservedAt": "2026-11-21T03:13:47.477Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance 17 novel promise fulfilled from delivered paper and memory",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 3520,
+      "hashes": {
+        "server/provider.ts": "9cb96e0ec6ef5037567eb7bd9a65d32abded251d7fd8f4bb6f179dd8ab68bce2",
+        "server/narrative.ts": "45a4f352e88683d9423e443fd001118934590af387a2e0e7f2cf948db2ec2098",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    },
+    {
+      "id": 32,
+      "reservedAt": "2026-11-21T03:13:51.123Z",
+      "owner": "AC7 final conversational QA",
+      "purpose": "romance counterfactual refusal of outing without refusing relationship",
+      "maxOutputTokens": 1600,
+      "result": "committed",
+      "latencyMs": 2722,
+      "hashes": {
+        "server/provider.ts": "9cb96e0ec6ef5037567eb7bd9a65d32abded251d7fd8f4bb6f179dd8ab68bce2",
+        "server/narrative.ts": "45a4f352e88683d9423e443fd001118934590af387a2e0e7f2cf948db2ec2098",
+        "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+        "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+        "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+        "server/storage.ts": "0217e9957546f34674aa2e7348d52f63109f61dbcfb8376ab78b880f41f6b916",
+        "src/main.tsx": "e803a53f143d4e3d247ba4d7e73d04c8bf8fad9ed69def48afb49dff7fd9abe6",
+        "src/style.css": "8e52773d8d0f4e3da887beabf81fa7e2072149f04df8231cb8e56565856f2b89",
+        "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+      }
+    }
+  ]
 }

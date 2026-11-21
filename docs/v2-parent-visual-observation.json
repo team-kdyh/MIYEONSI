@@ -1,0 +1,16 @@
+{
+  "scope": "Parent visually opened both actual browser comparison PNGs. These are controlled mock dialogue captures, not new live calls.",
+  "observations": [
+    "Both characters have twelve visibly distinct illustration cells; catalogue aliases were not counted again.",
+    "Old and new expressions preserve adult character identity and outfit.",
+    "Boss hand/watch/document/thinking variations and Yuna headphones/recorder/tape variations are actually visible.",
+    "All shown mobile captures retain face and composer.",
+    "These comparisons do not establish natural live-model pose frequency, music enjoyment or complete story quality."
+  ],
+  "hashes": {
+    "docs/qa-screenshots/v2-ac4-recheck/office-comparison.png": "bf0c60db36b2109a4a2cc9982853f8d74832ceb8dcf4943662af0d27ac862600",
+    "docs/qa-screenshots/v2-ac4-recheck/romance-comparison.png": "f3efbe6289347ce9e4b9d3b7e420675fc801bd60d6764f52d806b766d92bac40",
+    "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+    "src/visualAssets.ts": "74bf10d9ed51214c21576d540c1d62e249f599f3e163260e76d384e3c1c46a45"
+  }
+}

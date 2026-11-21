@@ -1,0 +1,60 @@
+{
+  "environment": {
+    "platform": "win32",
+    "release": "10.0.26300",
+    "node": "v24.14.0",
+    "cwd": "C:\\Users\\gjtjw\\.ouroboros\\worktrees\\대화형 스토리진행\\ralph-afterhours-v2-293c383da8",
+    "shell": "powershell.exe -NoProfile",
+    "paidCalls": 0
+  },
+  "results": [
+    {
+      "name": "typecheck",
+      "command": "npm.cmd run typecheck",
+      "startedAt": "2026-11-21T03:46:41.059Z",
+      "finishedAt": "2026-11-21T03:46:44.339Z",
+      "exitCode": 0,
+      "log": "docs/v2-ac7-current/typecheck.txt"
+    },
+    {
+      "name": "build",
+      "command": "npm.cmd run build",
+      "startedAt": "2026-11-21T03:46:44.341Z",
+      "finishedAt": "2026-11-21T03:46:48.820Z",
+      "exitCode": 0,
+      "log": "docs/v2-ac7-current/build.txt"
+    },
+    {
+      "name": "unit",
+      "command": "npm.cmd test",
+      "startedAt": "2026-11-21T03:46:48.821Z",
+      "finishedAt": "2026-11-21T03:47:27.078Z",
+      "exitCode": 0,
+      "log": "docs/v2-ac7-current/unit.txt"
+    },
+    {
+      "name": "browser",
+      "command": "npx.cmd playwright test",
+      "startedAt": "2026-11-21T03:47:27.079Z",
+      "finishedAt": "2026-11-21T03:49:37.087Z",
+      "exitCode": 1,
+      "log": "docs/v2-ac7-current/browser.txt"
+    },
+    {
+      "name": "art-boundaries",
+      "command": "npx.cmd playwright test --config playwright.v2-art.config.ts",
+      "startedAt": "2026-11-21T03:49:37.088Z",
+      "finishedAt": "2026-11-21T03:51:54.822Z",
+      "exitCode": 0,
+      "log": "docs/v2-ac7-current/art-boundaries.txt"
+    },
+    {
+      "name": "receipt-replay",
+      "command": "npx.cmd tsx tests/v2-ac3-receipt-audit.ts",
+      "startedAt": "2026-11-21T03:51:54.823Z",
+      "finishedAt": "2026-11-21T03:51:57.695Z",
+      "exitCode": 0,
+      "log": "docs/v2-ac7-current/receipt-replay.txt"
+    }
+  ]
+}

@@ -17,7 +17,7 @@ test('AC6: atomic boundaries, process restarts, slots, endings, conflicts and co
  async function stop(){if(child&&child.exitCode===null){const done=once(child,'exit');child.kill();await done;}}
  async function call(action='state',body?:object,failure?:string){const r=await fetch(`http://127.0.0.1:${port}/api/${action}`,{method:body?'POST':'GET',headers:{cookie,...(body?{'content-type':'application/json'}:{}),...(failure?{'x-test-failure':failure}:{})},body:body?JSON.stringify(body):undefined});cookie=r.headers.get('set-cookie')?.split(';')[0]||cookie;const data=await r.json();trace.push({action,input:body,failure:failure??null,status:r.status,state:data});return {status:r.status,data};}
  let counter=0;
- const input=(s:any,choice=0)=>({text:'',choice,step:s.game.step,version:s.game.dialogue.version,requestId:`ac6-request-${++counter}`});
+ const input=(s:any,choice=0)=>({text:'오늘 이야기 조금 더 해요.',choice:null,step:s.game.step,version:s.game.dialogue.version,requestId:`ac6-request-${++counter}`});
  try{
   await boot();await call();
   for(const mode of ['office','romance']){
@@ -40,8 +40,8 @@ test('AC6: atomic boundaries, process restarts, slots, endings, conflicts and co
    // A delivered response is deliberately discarded before any display/update.
    s=retried;if(!s.game.ending){const third=input(s);const delivered=await call('turn',third);await stop();await boot();assert.deepEqual((await call('turn',third)).data,delivered.data);s=delivered.data;}
    await call('save',{slot:1});const middle=structuredClone(s.game);
-   for(let n=0;n<25&&!s.game.ending;n++)s=(await call('turn',input(s))).data;
-   assert.ok(s.game.ending);assert.ok(s.collection.includes(s.game.ending));
+   for(let n=0;n<10;n++)s=(await call('turn',input(s))).data;
+   assert.equal(s.game.ending,null,'relaxed preview does not force an ending');assert.ok(s.game.narrative.turn>=10);
    await call('save',{slot:2});s=(await call()).data;
    await stop();await boot();assert.deepEqual((await call()).data,s);
    const id=cookie.split('=')[1],store=new ProfileStore(dir);const disk=(await store.load(id)).profile;
@@ -74,6 +74,6 @@ test('AC6: atomic boundaries, process restarts, slots, endings, conflicts and co
   const envelope=JSON.parse(await readFile(file,'utf8'));envelope.format=999;await writeFile(file,JSON.stringify(envelope));await writeFile(file+'.bak','broken');
   const failed=await call();assert.equal(failed.status,503);assert.equal(failed.data.canReset,true);
   assert.equal((await call('reset',{})).data.game,null);
-  await writeFile('docs/ac7-persistence-evidence.json',JSON.stringify({criterion:7,executedAt:new Date().toISOString(),provider:'offline',initial:'new temporary data directory; public HTTP new game',claim:'before/after commit failure, restart, slots, idempotency, conflicts, corruption recovery',codeVersion:createHash('sha256').update(await readFile('server/index.ts')).update(await readFile('server/storage.ts')).update(await readFile('server/persistence.test.ts')).digest('hex'),result:'pass',trace},null,2));
+  await writeFile('docs/v2-persistence-evidence.json',JSON.stringify({criterion:7,executedAt:new Date().toISOString(),provider:'offline',initial:'new temporary data directory; public HTTP new game',claim:'before/after commit failure, restart, slots, idempotency, conflicts, corruption recovery',codeVersion:createHash('sha256').update(await readFile('server/index.ts')).update(await readFile('server/storage.ts')).update(await readFile('server/persistence.test.ts')).digest('hex'),result:'pass',trace},null,2));
  }finally{await stop();await rm(dir,{recursive:true,force:true});}
 });

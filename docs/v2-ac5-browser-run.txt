@@ -1,0 +1,14 @@
+[WebServer] (node:19112) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:12024) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:32576) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\v2-audio.spec.ts:8:1 › all eight shipped compositions decode, match provenance and have non-silent distinct waveforms (2.7s)
+  ok 2 tests\v2-audio.spec.ts:30:49 › office: normal validated conversation path with real playback and crossfades (10.9s)
+  ok 3 tests\v2-audio.spec.ts:30:49 › romance: normal validated conversation path with real playback and crossfades (43.2s)
+
+  3 passed (1.0m)

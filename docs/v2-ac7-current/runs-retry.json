@@ -1,0 +1,36 @@
+{
+  "environment": {
+    "platform": "win32",
+    "release": "10.0.26300",
+    "node": "v24.14.0",
+    "cwd": "C:\\Users\\gjtjw\\.ouroboros\\worktrees\\대화형 스토리진행\\ralph-afterhours-v2-293c383da8",
+    "shell": "powershell.exe -NoProfile",
+    "paidCalls": 0
+  },
+  "results": [
+    {
+      "name": "typecheck",
+      "command": "npm.cmd run typecheck",
+      "startedAt": "2026-11-21T03:51:22.185Z",
+      "finishedAt": "2026-11-21T03:51:25.463Z",
+      "exitCode": 0,
+      "log": "docs/v2-ac7-current/typecheck-retry.txt"
+    },
+    {
+      "name": "build",
+      "command": "npm.cmd run build",
+      "startedAt": "2026-11-21T03:51:25.465Z",
+      "finishedAt": "2026-11-21T03:51:30.267Z",
+      "exitCode": 0,
+      "log": "docs/v2-ac7-current/build-retry.txt"
+    },
+    {
+      "name": "browser",
+      "command": "npx.cmd playwright test",
+      "startedAt": "2026-11-21T03:51:30.267Z",
+      "finishedAt": "2026-11-21T03:54:04.597Z",
+      "exitCode": 1,
+      "log": "docs/v2-ac7-current/browser-retry.txt"
+    }
+  ]
+}

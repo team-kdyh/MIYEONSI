@@ -1,0 +1,5318 @@
+[
+  {
+    "instrument": "piano",
+    "note": 36,
+    "bar": 1,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 1,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 43,
+    "bar": 1,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 1,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 36,
+    "bar": 1,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 51,
+    "bar": 1,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 1,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 36,
+    "bar": 1,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 36,
+    "bar": 1,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 1,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 1,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 55,
+    "bar": 1,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 1,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 1,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 55,
+    "bar": 1,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "marimba",
+    "note": 60,
+    "bar": 1,
+    "beat": 0.5,
+    "beats": 0.5,
+    "velocity": 0.21161130360490965,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 63,
+    "bar": 1,
+    "beat": 2,
+    "beats": 0.8,
+    "velocity": 0.20699426934025353,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 55,
+    "bar": 1,
+    "beat": 4,
+    "beats": 0.7,
+    "velocity": 0.21357983274957443,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 1,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 1,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 1,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 1,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 1,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 1,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 1,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 1,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 1,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 1,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 32,
+    "bar": 2,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 44,
+    "bar": 2,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 39,
+    "bar": 2,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 44,
+    "bar": 2,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 32,
+    "bar": 2,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 2,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 44,
+    "bar": 2,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 32,
+    "bar": 2,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 32,
+    "bar": 2,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 44,
+    "bar": 2,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 2,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 2,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 44,
+    "bar": 2,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 2,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 2,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "kick",
+    "bar": 2,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 2,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 2,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 2,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 2,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 2,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 2,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 2,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 2,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 2,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 41,
+    "bar": 3,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 3,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 3,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 3,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 41,
+    "bar": 3,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 56,
+    "bar": 3,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 3,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 29,
+    "bar": 3,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 41,
+    "bar": 3,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 3,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 56,
+    "bar": 3,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 60,
+    "bar": 3,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 3,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 56,
+    "bar": 3,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 60,
+    "bar": 3,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "marimba",
+    "note": 65,
+    "bar": 3,
+    "beat": 0.5,
+    "beats": 0.5,
+    "velocity": 0.19814186992575733,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 68,
+    "bar": 3,
+    "beat": 2,
+    "beats": 0.8,
+    "velocity": 0.19768668873466178,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 60,
+    "bar": 3,
+    "beat": 4,
+    "beats": 0.7,
+    "velocity": 0.2141853247082095,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 3,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 3,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 3,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 3,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 3,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 3,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 3,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 3,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 3,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 3,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 43,
+    "bar": 4,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 4,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 50,
+    "bar": 4,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 4,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 43,
+    "bar": 4,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 59,
+    "bar": 4,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 4,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 31,
+    "bar": 4,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 43,
+    "bar": 4,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 4,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 59,
+    "bar": 4,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 62,
+    "bar": 4,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 4,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 59,
+    "bar": 4,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 62,
+    "bar": 4,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "kick",
+    "bar": 4,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 4,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 4,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 4,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 4,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 4,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 4,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 4,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 4,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 4,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 36,
+    "bar": 5,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 5,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 43,
+    "bar": 5,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 5,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 36,
+    "bar": 5,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 51,
+    "bar": 5,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 5,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 36,
+    "bar": 5,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 36,
+    "bar": 5,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 5,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 5,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 55,
+    "bar": 5,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 5,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 5,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 55,
+    "bar": 5,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "marimba",
+    "note": 60,
+    "bar": 5,
+    "beat": 0.5,
+    "beats": 0.5,
+    "velocity": 0.19131064245251894,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 63,
+    "bar": 5,
+    "beat": 2,
+    "beats": 0.8,
+    "velocity": 0.20411250291290145,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 55,
+    "bar": 5,
+    "beat": 4,
+    "beats": 0.7,
+    "velocity": 0.18948713198859862,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 5,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 5,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 5,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 5,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 5,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 5,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 5,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 5,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 5,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 5,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 32,
+    "bar": 6,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 44,
+    "bar": 6,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 39,
+    "bar": 6,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 44,
+    "bar": 6,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 32,
+    "bar": 6,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 6,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 44,
+    "bar": 6,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 32,
+    "bar": 6,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 32,
+    "bar": 6,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 44,
+    "bar": 6,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 6,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 6,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 44,
+    "bar": 6,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 6,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 6,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "kick",
+    "bar": 6,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 6,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 6,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 6,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 6,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 6,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 6,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 6,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 6,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 6,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 41,
+    "bar": 7,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 7,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 7,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 7,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 41,
+    "bar": 7,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 56,
+    "bar": 7,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 7,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 29,
+    "bar": 7,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 41,
+    "bar": 7,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 7,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 56,
+    "bar": 7,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 60,
+    "bar": 7,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 7,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 56,
+    "bar": 7,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 60,
+    "bar": 7,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "marimba",
+    "note": 65,
+    "bar": 7,
+    "beat": 0.5,
+    "beats": 0.5,
+    "velocity": 0.20225337998936707,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 68,
+    "bar": 7,
+    "beat": 2,
+    "beats": 0.8,
+    "velocity": 0.19356104639297167,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 60,
+    "bar": 7,
+    "beat": 4,
+    "beats": 0.7,
+    "velocity": 0.18814803575125394,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 7,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 7,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 7,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 7,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 7,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 7,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 7,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 7,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 7,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 7,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 43,
+    "bar": 8,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 8,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 50,
+    "bar": 8,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 8,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 43,
+    "bar": 8,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 59,
+    "bar": 8,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 8,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 31,
+    "bar": 8,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 43,
+    "bar": 8,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 8,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 59,
+    "bar": 8,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 62,
+    "bar": 8,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 8,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 59,
+    "bar": 8,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 62,
+    "bar": 8,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "kick",
+    "bar": 8,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 8,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 8,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 8,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 8,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 8,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 8,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 8,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 8,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 8,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 39,
+    "bar": 9,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 51,
+    "bar": 9,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 46,
+    "bar": 9,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 51,
+    "bar": 9,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 39,
+    "bar": 9,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 55,
+    "bar": 9,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 51,
+    "bar": 9,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 39,
+    "bar": 9,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 39,
+    "bar": 9,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 9,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 55,
+    "bar": 9,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 58,
+    "bar": 9,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 9,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 55,
+    "bar": 9,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 58,
+    "bar": 9,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "marimba",
+    "note": 63,
+    "bar": 9,
+    "beat": 0.5,
+    "beats": 0.5,
+    "velocity": 0.20102936511357594,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 67,
+    "bar": 9,
+    "beat": 2,
+    "beats": 0.8,
+    "velocity": 0.19978101013876884,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 58,
+    "bar": 9,
+    "beat": 4,
+    "beats": 0.7,
+    "velocity": 0.18524835983541055,
+    "pan": 0.08
+  },
+  {
+    "instrument": "strings",
+    "note": 70,
+    "bar": 9,
+    "beat": 1,
+    "beats": 3.5,
+    "velocity": 0.065,
+    "pan": 0.4
+  },
+  {
+    "instrument": "kick",
+    "bar": 9,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 9,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 9,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 9,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 9,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 9,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 9,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 9,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 9,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 9,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 34,
+    "bar": 10,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 46,
+    "bar": 10,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 41,
+    "bar": 10,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 46,
+    "bar": 10,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 34,
+    "bar": 10,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 50,
+    "bar": 10,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 46,
+    "bar": 10,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 34,
+    "bar": 10,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 34,
+    "bar": 10,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 46,
+    "bar": 10,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 50,
+    "bar": 10,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 10,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 46,
+    "bar": 10,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 50,
+    "bar": 10,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 10,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 65,
+    "bar": 10,
+    "beat": 1,
+    "beats": 3.5,
+    "velocity": 0.065,
+    "pan": 0.4
+  },
+  {
+    "instrument": "kick",
+    "bar": 10,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 10,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 10,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 10,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 10,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 10,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 10,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 10,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 10,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 10,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 36,
+    "bar": 11,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 11,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 43,
+    "bar": 11,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 11,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 36,
+    "bar": 11,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 51,
+    "bar": 11,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 11,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 36,
+    "bar": 11,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 36,
+    "bar": 11,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 11,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 11,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 55,
+    "bar": 11,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 11,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 11,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 55,
+    "bar": 11,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "marimba",
+    "note": 60,
+    "bar": 11,
+    "beat": 0.5,
+    "beats": 0.5,
+    "velocity": 0.2043650029756547,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 63,
+    "bar": 11,
+    "beat": 2,
+    "beats": 0.8,
+    "velocity": 0.2135455730113432,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 55,
+    "bar": 11,
+    "beat": 4,
+    "beats": 0.7,
+    "velocity": 0.18958389133764264,
+    "pan": 0.08
+  },
+  {
+    "instrument": "strings",
+    "note": 67,
+    "bar": 11,
+    "beat": 1,
+    "beats": 3.5,
+    "velocity": 0.065,
+    "pan": 0.4
+  },
+  {
+    "instrument": "kick",
+    "bar": 11,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 11,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 11,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 11,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 11,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 11,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 11,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 11,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 11,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 11,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 43,
+    "bar": 12,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 12,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 50,
+    "bar": 12,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 12,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 43,
+    "bar": 12,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 59,
+    "bar": 12,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 12,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 31,
+    "bar": 12,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 43,
+    "bar": 12,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 12,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 59,
+    "bar": 12,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 62,
+    "bar": 12,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 12,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 59,
+    "bar": 12,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 62,
+    "bar": 12,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 74,
+    "bar": 12,
+    "beat": 1,
+    "beats": 3.5,
+    "velocity": 0.065,
+    "pan": 0.4
+  },
+  {
+    "instrument": "kick",
+    "bar": 12,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 12,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 12,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 12,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 12,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 12,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 12,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 12,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 12,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 12,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 39,
+    "bar": 13,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 51,
+    "bar": 13,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 46,
+    "bar": 13,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 51,
+    "bar": 13,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 39,
+    "bar": 13,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 55,
+    "bar": 13,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 51,
+    "bar": 13,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 39,
+    "bar": 13,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 39,
+    "bar": 13,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 13,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 55,
+    "bar": 13,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 58,
+    "bar": 13,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 13,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 55,
+    "bar": 13,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 58,
+    "bar": 13,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "marimba",
+    "note": 63,
+    "bar": 13,
+    "beat": 0.5,
+    "beats": 0.5,
+    "velocity": 0.19441098960280956,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 67,
+    "bar": 13,
+    "beat": 2,
+    "beats": 0.8,
+    "velocity": 0.19125597381340168,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 58,
+    "bar": 13,
+    "beat": 4,
+    "beats": 0.7,
+    "velocity": 0.2070282065416631,
+    "pan": 0.08
+  },
+  {
+    "instrument": "strings",
+    "note": 70,
+    "bar": 13,
+    "beat": 1,
+    "beats": 3.5,
+    "velocity": 0.065,
+    "pan": 0.4
+  },
+  {
+    "instrument": "kick",
+    "bar": 13,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 13,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 13,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 13,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 13,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 13,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 13,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 13,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 13,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 13,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 34,
+    "bar": 14,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 46,
+    "bar": 14,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 41,
+    "bar": 14,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 46,
+    "bar": 14,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 34,
+    "bar": 14,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 50,
+    "bar": 14,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 46,
+    "bar": 14,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 34,
+    "bar": 14,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 34,
+    "bar": 14,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 46,
+    "bar": 14,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 50,
+    "bar": 14,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 14,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 46,
+    "bar": 14,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 50,
+    "bar": 14,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 14,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 65,
+    "bar": 14,
+    "beat": 1,
+    "beats": 3.5,
+    "velocity": 0.065,
+    "pan": 0.4
+  },
+  {
+    "instrument": "kick",
+    "bar": 14,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 14,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 14,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 14,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 14,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 14,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 14,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 14,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 14,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 14,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 36,
+    "bar": 15,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 15,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 43,
+    "bar": 15,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 15,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 36,
+    "bar": 15,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 51,
+    "bar": 15,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 15,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 36,
+    "bar": 15,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 36,
+    "bar": 15,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 15,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 15,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 55,
+    "bar": 15,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 15,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 15,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 55,
+    "bar": 15,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "marimba",
+    "note": 60,
+    "bar": 15,
+    "beat": 0.5,
+    "beats": 0.5,
+    "velocity": 0.20786400039843456,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 63,
+    "bar": 15,
+    "beat": 2,
+    "beats": 0.8,
+    "velocity": 0.19463552741802936,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 55,
+    "bar": 15,
+    "beat": 4,
+    "beats": 0.7,
+    "velocity": 0.2094635934061688,
+    "pan": 0.08
+  },
+  {
+    "instrument": "strings",
+    "note": 67,
+    "bar": 15,
+    "beat": 1,
+    "beats": 3.5,
+    "velocity": 0.065,
+    "pan": 0.4
+  },
+  {
+    "instrument": "kick",
+    "bar": 15,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 15,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 15,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 15,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 15,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 15,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 15,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 15,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 15,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 15,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 43,
+    "bar": 16,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 16,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 50,
+    "bar": 16,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 16,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 43,
+    "bar": 16,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 59,
+    "bar": 16,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 16,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 31,
+    "bar": 16,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 43,
+    "bar": 16,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 16,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 59,
+    "bar": 16,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 62,
+    "bar": 16,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 16,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 59,
+    "bar": 16,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 62,
+    "bar": 16,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 74,
+    "bar": 16,
+    "beat": 1,
+    "beats": 3.5,
+    "velocity": 0.065,
+    "pan": 0.4
+  },
+  {
+    "instrument": "kick",
+    "bar": 16,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 16,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 16,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 16,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 16,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 16,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 16,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 16,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 16,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 16,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 36,
+    "bar": 17,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 17,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 43,
+    "bar": 17,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 17,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 36,
+    "bar": 17,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 51,
+    "bar": 17,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 17,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 36,
+    "bar": 17,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 36,
+    "bar": 17,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 17,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 17,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 55,
+    "bar": 17,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 17,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 17,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 55,
+    "bar": 17,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "marimba",
+    "note": 60,
+    "bar": 17,
+    "beat": 0.5,
+    "beats": 0.5,
+    "velocity": 0.18975680242779147,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 63,
+    "bar": 17,
+    "beat": 2,
+    "beats": 0.8,
+    "velocity": 0.21195324287328982,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 55,
+    "bar": 17,
+    "beat": 4,
+    "beats": 0.7,
+    "velocity": 0.1900737775714037,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 17,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 17,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 17,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 17,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 17,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 17,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 17,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 17,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 17,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 17,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 32,
+    "bar": 18,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 44,
+    "bar": 18,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 39,
+    "bar": 18,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 44,
+    "bar": 18,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 32,
+    "bar": 18,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 18,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 44,
+    "bar": 18,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 32,
+    "bar": 18,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 32,
+    "bar": 18,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 44,
+    "bar": 18,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 18,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 18,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 44,
+    "bar": 18,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 18,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 18,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "kick",
+    "bar": 18,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 18,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 18,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 18,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 18,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 18,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 18,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 18,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 18,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 18,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 41,
+    "bar": 19,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 19,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 19,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 19,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 41,
+    "bar": 19,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 56,
+    "bar": 19,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 19,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 29,
+    "bar": 19,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 41,
+    "bar": 19,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 19,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 56,
+    "bar": 19,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 60,
+    "bar": 19,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 19,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 56,
+    "bar": 19,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 60,
+    "bar": 19,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "marimba",
+    "note": 65,
+    "bar": 19,
+    "beat": 0.5,
+    "beats": 0.5,
+    "velocity": 0.20756761410539692,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 68,
+    "bar": 19,
+    "beat": 2,
+    "beats": 0.8,
+    "velocity": 0.20636261192613753,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 60,
+    "bar": 19,
+    "beat": 4,
+    "beats": 0.7,
+    "velocity": 0.18519096759350906,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 19,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 19,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 19,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 19,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 19,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 19,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 19,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 19,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 19,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 19,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 43,
+    "bar": 20,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 20,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 50,
+    "bar": 20,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 20,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 43,
+    "bar": 20,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 59,
+    "bar": 20,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 20,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 31,
+    "bar": 20,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 43,
+    "bar": 20,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 20,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 59,
+    "bar": 20,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 62,
+    "bar": 20,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 20,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 59,
+    "bar": 20,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 62,
+    "bar": 20,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "kick",
+    "bar": 20,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 20,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 20,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 20,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 20,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 20,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 20,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 20,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 20,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 20,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 36,
+    "bar": 21,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 21,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 43,
+    "bar": 21,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 21,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 36,
+    "bar": 21,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 51,
+    "bar": 21,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 21,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 36,
+    "bar": 21,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 36,
+    "bar": 21,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 21,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 21,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 55,
+    "bar": 21,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 21,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 21,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 55,
+    "bar": 21,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "marimba",
+    "note": 60,
+    "bar": 21,
+    "beat": 0.5,
+    "beats": 0.5,
+    "velocity": 0.18794434901543833,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 63,
+    "bar": 21,
+    "beat": 2,
+    "beats": 0.8,
+    "velocity": 0.21355115339080336,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 55,
+    "bar": 21,
+    "beat": 4,
+    "beats": 0.7,
+    "velocity": 0.20062890118963828,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 21,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 21,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 21,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 21,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 21,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 21,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 21,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 21,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 21,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 21,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 32,
+    "bar": 22,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 44,
+    "bar": 22,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 39,
+    "bar": 22,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 44,
+    "bar": 22,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 32,
+    "bar": 22,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 22,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 44,
+    "bar": 22,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 32,
+    "bar": 22,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 32,
+    "bar": 22,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 44,
+    "bar": 22,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 22,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 22,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 44,
+    "bar": 22,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 48,
+    "bar": 22,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 51,
+    "bar": 22,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "kick",
+    "bar": 22,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 22,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 22,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 22,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 22,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 22,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 22,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 22,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 22,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 22,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 41,
+    "bar": 23,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 23,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 48,
+    "bar": 23,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 23,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 41,
+    "bar": 23,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 56,
+    "bar": 23,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 23,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 29,
+    "bar": 23,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 41,
+    "bar": 23,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 23,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 56,
+    "bar": 23,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 60,
+    "bar": 23,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 23,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 56,
+    "bar": 23,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 60,
+    "bar": 23,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "marimba",
+    "note": 65,
+    "bar": 23,
+    "beat": 0.5,
+    "beats": 0.5,
+    "velocity": 0.18544259612290787,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 68,
+    "bar": 23,
+    "beat": 2,
+    "beats": 0.8,
+    "velocity": 0.20127407821215818,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 60,
+    "bar": 23,
+    "beat": 4,
+    "beats": 0.7,
+    "velocity": 0.19619899903669716,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 23,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 23,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 23,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 23,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 23,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 23,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 23,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 23,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 23,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 23,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "piano",
+    "note": 43,
+    "bar": 24,
+    "beat": 0,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 24,
+    "beat": 0.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 50,
+    "bar": 24,
+    "beat": 1.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 24,
+    "beat": 2.25,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 43,
+    "bar": 24,
+    "beat": 3,
+    "beats": 0.37,
+    "velocity": 0.23,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 59,
+    "bar": 24,
+    "beat": 3.75,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "piano",
+    "note": 53,
+    "bar": 24,
+    "beat": 4.5,
+    "beats": 0.37,
+    "velocity": 0.16,
+    "pan": -0.16
+  },
+  {
+    "instrument": "bass",
+    "note": 31,
+    "bar": 24,
+    "beat": 0,
+    "beats": 2.6,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "bass",
+    "note": 43,
+    "bar": 24,
+    "beat": 3,
+    "beats": 1.7,
+    "velocity": 0.18,
+    "pan": 0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 24,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 59,
+    "bar": 24,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 62,
+    "bar": 24,
+    "beat": 0.25,
+    "beats": 1.8,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "strings",
+    "note": 53,
+    "bar": 24,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.105,
+    "pan": -0.24
+  },
+  {
+    "instrument": "strings",
+    "note": 59,
+    "bar": 24,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.10079999999999999,
+    "pan": -0.12
+  },
+  {
+    "instrument": "strings",
+    "note": 62,
+    "bar": 24,
+    "beat": 3.25,
+    "beats": 1.4,
+    "velocity": 0.0966,
+    "pan": 0.0
+  },
+  {
+    "instrument": "kick",
+    "bar": 24,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 24,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": 0
+  },
+  {
+    "instrument": "tap",
+    "bar": 24,
+    "beat": 1.5,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "tap",
+    "bar": 24,
+    "beat": 4,
+    "velocity": 0.3,
+    "pan": -0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 24,
+    "beat": 0.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 24,
+    "beat": 1,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 24,
+    "beat": 2,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 24,
+    "beat": 2.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 24,
+    "beat": 3.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  },
+  {
+    "instrument": "hat",
+    "bar": 24,
+    "beat": 4.5,
+    "velocity": 0.15,
+    "pan": 0.35
+  }
+]

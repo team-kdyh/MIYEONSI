@@ -1,0 +1,86 @@
+[WebServer] (node:34432) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:36440) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 9 tests using 1 worker
+
+(node:35512) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\v2-ac4-boundaries.spec.ts:10:65 › agency visuals 1440 reduced=false (20.1s)
+  ok 2 tests\v2-ac4-boundaries.spec.ts:10:65 › agency visuals 1440 reduced=true (8.9s)
+  ok 3 tests\v2-ac4-boundaries.spec.ts:10:65 › agency visuals 390 reduced=false (14.3s)
+  ok 4 tests\v2-ac4-boundaries.spec.ts:10:65 › agency visuals 390 reduced=true (3.6s)
+  ok 5 tests\v2-art.spec.ts:8:1 › staged provenance hashes match shipped originals (55ms)
+  ok 6 tests\v2-art.spec.ts:13:79 › office 1440: real sheets, validated move, action and reduced motion (22.6s)
+  x  7 tests\v2-art.spec.ts:13:79 › office 390: real sheets, validated move, action and reduced motion (11.8s)
+(node:35508) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  8 tests\v2-art.spec.ts:13:79 › romance 1440: real sheets, validated move, action and reduced motion (19.4s)
+(node:5760) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 9 tests\v2-art.spec.ts:13:79 › romance 390: real sheets, validated move, action and reduced motion (15.3s)
+
+
+  1) tests\v2-art.spec.ts:13:79 › office 390: real sheets, validated move, action and reduced motion 
+
+    Error: expect(locator).toHaveCSS(expected) failed
+
+    Locator: locator('.sprite-entry')
+    Expected: "1"
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toHaveCSS" locator('.sprite-entry') with timeout 5000ms
+      - waiting for locator('.sprite-entry')
+        - locator resolved to <div class="sprite-entry">…</div>
+        - unexpected value "0.0913425"
+        - locator resolved to <div class="sprite-entry">…</div>
+        - unexpected value "0.135044"
+        - locator resolved to <div class="sprite-entry">…</div>
+        - unexpected value "0.300647"
+        - locator resolved to <div class="sprite-entry">…</div>
+        - unexpected value "0.557645"
+
+
+      38 |   await expect(page.locator('.stage')).toHaveCSS('background-image',`url("${new URL(backgroundAsset(g.narrative!.location),page.url()).href}")`);
+      39 |   await page.evaluate(async()=>{for(const e of document.querySelectorAll('.stage,.sprite')){const url=getComputedStyle(e).backgroundImage.match(/url\("?(.*?)"?\)/)?.[1];if(url){const image=new Image();image.src=url;await image.decode();}}});
+    > 40 |   await expect(page.locator('.sprite-entry')).toHaveCSS('opacity','1');
+         |                                               ^
+      41 |   await expect(page.locator('.sprite-entry')).toHaveCSS('animation-iteration-count','1');
+      42 |   await expect(sprite).toHaveCSS('aspect-ratio','3 / 4');
+      43 |   const bounds=await sprite.boundingBox();const panel=await page.locator('.dialogue').boundingBox();expect(bounds!.y+bounds!.height*.92).toBeLessThan(panel!.y);
+        at C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\tests\v2-art.spec.ts:40:47
+
+    Error Context: test-results-v2-art\v2-art-office-390-real-she-d5c52-e-action-and-reduced-motion\error-context.md
+
+  2) tests\v2-art.spec.ts:13:79 › romance 1440: real sheets, validated move, action and reduced motion 
+
+    Error: expect(locator).toHaveCSS(expected) failed
+
+    Locator: locator('.sprite-entry')
+    Expected: "1"
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toHaveCSS" locator('.sprite-entry') with timeout 5000ms
+      - waiting for locator('.sprite-entry')
+
+
+      38 |   await expect(page.locator('.stage')).toHaveCSS('background-image',`url("${new URL(backgroundAsset(g.narrative!.location),page.url()).href}")`);
+      39 |   await page.evaluate(async()=>{for(const e of document.querySelectorAll('.stage,.sprite')){const url=getComputedStyle(e).backgroundImage.match(/url\("?(.*?)"?\)/)?.[1];if(url){const image=new Image();image.src=url;await image.decode();}}});
+    > 40 |   await expect(page.locator('.sprite-entry')).toHaveCSS('opacity','1');
+         |                                               ^
+      41 |   await expect(page.locator('.sprite-entry')).toHaveCSS('animation-iteration-count','1');
+      42 |   await expect(sprite).toHaveCSS('aspect-ratio','3 / 4');
+      43 |   const bounds=await sprite.boundingBox();const panel=await page.locator('.dialogue').boundingBox();expect(bounds!.y+bounds!.height*.92).toBeLessThan(panel!.y);
+        at C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\tests\v2-art.spec.ts:40:47
+
+    Error Context: test-results-v2-art\v2-art-romance-1440-real-s-fc22c-e-action-and-reduced-motion\error-context.md
+
+  2 failed
+    tests\v2-art.spec.ts:13:79 › office 390: real sheets, validated move, action and reduced motion 
+    tests\v2-art.spec.ts:13:79 › romance 1440: real sheets, validated move, action and reduced motion 
+  7 passed (2.0m)

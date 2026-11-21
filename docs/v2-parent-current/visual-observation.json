@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-21T04:18:21.377513+00:00",
+  "scope": "Parent directly opened both newly regenerated12-cell montages of current-browser390x844 captures; synthetic dialogue through real reducer, not new model calls.",
+  "observations": [
+    "12 genuinely different illustration cells per actor; semantic aliases not counted.",
+    "Faces, hands/props and bottom composer visible; identity/clothes coherent.",
+    "OpenAI pose frequency and subjective music enjoyment were not measured."
+  ],
+  "hashes": {
+    "docs/qa-screenshots/v2-ac4-recheck/office-comparison.png": "bf0c60db36b2109a4a2cc9982853f8d74832ceb8dcf4943662af0d27ac862600",
+    "docs/qa-screenshots/v2-ac4-recheck/romance-comparison.png": "f3efbe6289347ce9e4b9d3b7e420675fc801bd60d6764f52d806b766d92bac40",
+    "src/main.tsx": "7fe72805c7fdc5ac1341beea45cc99d2c27e09eac5912f93467a339a663eadae",
+    "src/style.css": "aacea413940c9eefd6893e4999da024b3b085c3a28bcf5487c73315196056dcf",
+    "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+    "src/visualAssets.ts": "74bf10d9ed51214c21576d540c1d62e249f599f3e163260e76d384e3c1c46a45",
+    "src/ConversationViewport.tsx": "77b6b56d5e255fcec0773604e738b5ace2867adc220067a1a33c6120120f3171",
+    "tests/v2-art.spec.ts": "c7878e7cad5542f8d879fc067dd76cb90b89caf5d2905759e7c22bee4973042d",
+    "tests/v2-ac4-boundaries.spec.ts": "accd495815245f7fe6e8f5781ba0a68160b5dd1949b0306add2acc82517101af"
+  }
+}

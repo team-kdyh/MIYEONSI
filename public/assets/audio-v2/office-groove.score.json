@@ -1,0 +1,4988 @@
+[
+  {
+    "instrument": "epiano",
+    "note": 66,
+    "bar": 1,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 1,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 1,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 1,
+    "beat": 0.651,
+    "beats": 0.8,
+    "velocity": 0.132,
+    "pan": 0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 66,
+    "bar": 1,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 1,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 1,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 1,
+    "beat": 2.6510000000000002,
+    "beats": 0.8,
+    "velocity": 0.1144,
+    "pan": 0.12
+  },
+  {
+    "instrument": "bass",
+    "note": 38,
+    "bar": 1,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 45,
+    "bar": 1,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 50,
+    "bar": 1,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 45,
+    "bar": 1,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 1,
+    "beat": 0.6,
+    "beats": 0.35,
+    "velocity": 0.24138114131742786,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 78,
+    "bar": 1,
+    "beat": 1.6,
+    "beats": 0.6,
+    "velocity": 0.2171993448207067,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 1,
+    "beat": 2.6,
+    "beats": 0.35,
+    "velocity": 0.22740440204494178,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 1,
+    "beat": 3.3,
+    "beats": 0.4,
+    "velocity": 0.24650634744170485,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 1,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 1,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 1,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 1,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 1,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 1,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 1,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 1,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 1,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 1,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 1,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 1,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 2,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 2,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 2,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 2,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 2,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 2,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 42,
+    "bar": 2,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 49,
+    "bar": 2,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 54,
+    "bar": 2,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 49,
+    "bar": 2,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 2,
+    "beat": 0.6,
+    "beats": 0.5,
+    "velocity": 0.2390085456882914,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 2,
+    "beat": 2.1,
+    "beats": 0.5,
+    "velocity": 0.2263373530370292,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 2,
+    "beat": 3.1,
+    "beats": 0.6,
+    "velocity": 0.2470964387790416,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 2,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 2,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 2,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 2,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 2,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 2,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 2,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 2,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 2,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 2,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 2,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 2,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 62,
+    "bar": 3,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 66,
+    "bar": 3,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 3,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 62,
+    "bar": 3,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 66,
+    "bar": 3,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 3,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 35,
+    "bar": 3,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 42,
+    "bar": 3,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 47,
+    "bar": 3,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 42,
+    "bar": 3,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 3,
+    "beat": 0,
+    "beats": 0.7,
+    "velocity": 0.21520783652160616,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 3,
+    "beat": 1.6,
+    "beats": 0.4,
+    "velocity": 0.2193746260396069,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 78,
+    "bar": 3,
+    "beat": 2.6,
+    "beats": 0.4,
+    "velocity": 0.2178072921110222,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 3,
+    "beat": 3.3,
+    "beats": 0.4,
+    "velocity": 0.2150930653124648,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 3,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 3,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 3,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 3,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 3,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 3,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 3,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 3,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 3,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 3,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 3,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 3,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 68,
+    "bar": 4,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 4,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 4,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 68,
+    "bar": 4,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 4,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 4,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 40,
+    "bar": 4,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 47,
+    "bar": 4,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 52,
+    "bar": 4,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 47,
+    "bar": 4,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 4,
+    "beat": 1.1,
+    "beats": 0.6,
+    "velocity": 0.24491692950813096,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 4,
+    "beat": 2.6,
+    "beats": 0.35,
+    "velocity": 0.22982154154559653,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 4,
+    "beat": 3.3,
+    "beats": 0.4,
+    "velocity": 0.23192156483495327,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 4,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 4,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 4,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 4,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 4,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 4,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 4,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 4,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 4,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 4,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 4,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 4,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 5,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 5,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 5,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 78,
+    "bar": 5,
+    "beat": 0.651,
+    "beats": 0.8,
+    "velocity": 0.132,
+    "pan": 0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 5,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 5,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 5,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 78,
+    "bar": 5,
+    "beat": 2.6510000000000002,
+    "beats": 0.8,
+    "velocity": 0.1144,
+    "pan": 0.12
+  },
+  {
+    "instrument": "bass",
+    "note": 40,
+    "bar": 5,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 47,
+    "bar": 5,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 52,
+    "bar": 5,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 47,
+    "bar": 5,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 5,
+    "beat": 0.6,
+    "beats": 0.6,
+    "velocity": 0.21564410779616663,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 79,
+    "bar": 5,
+    "beat": 1.6,
+    "beats": 0.4,
+    "velocity": 0.2480536112417257,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 78,
+    "bar": 5,
+    "beat": 3.1,
+    "beats": 0.5,
+    "velocity": 0.2393400616043504,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 5,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 5,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 5,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 5,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 5,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 5,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 5,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 5,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 5,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 5,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 5,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 5,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 61,
+    "bar": 6,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 6,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 6,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 61,
+    "bar": 6,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 6,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 6,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 33,
+    "bar": 6,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 40,
+    "bar": 6,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 45,
+    "bar": 6,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 40,
+    "bar": 6,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 6,
+    "beat": 0,
+    "beats": 0.6,
+    "velocity": 0.21616194118352566,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 6,
+    "beat": 1.6,
+    "beats": 0.6,
+    "velocity": 0.22477697011837436,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 6,
+    "beat": 3.1,
+    "beats": 0.5,
+    "velocity": 0.23013755620247062,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 6,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 6,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 6,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 6,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 6,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 6,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 6,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 6,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 6,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 6,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 6,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 6,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 66,
+    "bar": 7,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 7,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 7,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 66,
+    "bar": 7,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 7,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 7,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 38,
+    "bar": 7,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 45,
+    "bar": 7,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 50,
+    "bar": 7,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 45,
+    "bar": 7,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 7,
+    "beat": 0.6,
+    "beats": 1.1,
+    "velocity": 0.2169158520824685,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 78,
+    "bar": 7,
+    "beat": 2.6,
+    "beats": 0.5,
+    "velocity": 0.23500177489963464,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 7,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 7,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 7,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 7,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 7,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 7,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 7,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 7,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 7,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 7,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 7,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 7,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 61,
+    "bar": 8,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 8,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 8,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 61,
+    "bar": 8,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 8,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 8,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 33,
+    "bar": 8,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 40,
+    "bar": 8,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 45,
+    "bar": 8,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 40,
+    "bar": 8,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 8,
+    "beat": 0.6,
+    "beats": 0.4,
+    "velocity": 0.21755251075994853,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 8,
+    "beat": 1.3,
+    "beats": 0.4,
+    "velocity": 0.2466579206463613,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 8,
+    "beat": 2.1,
+    "beats": 0.5,
+    "velocity": 0.24613607413539837,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 8,
+    "beat": 3.1,
+    "beats": 0.5,
+    "velocity": 0.2337829377521481,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 8,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 8,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 8,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 8,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 8,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 8,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 8,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 8,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 8,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 8,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 8,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 8,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 59,
+    "bar": 9,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 62,
+    "bar": 9,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 66,
+    "bar": 9,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 59,
+    "bar": 9,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 62,
+    "bar": 9,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 66,
+    "bar": 9,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 31,
+    "bar": 9,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 38,
+    "bar": 9,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 43,
+    "bar": 9,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 38,
+    "bar": 9,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 9,
+    "beat": 0.6,
+    "beats": 0.35,
+    "velocity": 0.21789479618753105,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 78,
+    "bar": 9,
+    "beat": 1.6,
+    "beats": 0.6,
+    "velocity": 0.24428072270743356,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 9,
+    "beat": 2.6,
+    "beats": 0.35,
+    "velocity": 0.2294144574597487,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 9,
+    "beat": 3.3,
+    "beats": 0.4,
+    "velocity": 0.21841565247732675,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 66,
+    "bar": 9,
+    "beat": 3.3,
+    "beats": 0.25,
+    "velocity": 0.12,
+    "pan": 0.48
+  },
+  {
+    "instrument": "kick",
+    "bar": 9,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 9,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 9,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 9,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 9,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 9,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 9,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 9,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 9,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 9,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 9,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 9,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 64,
+    "bar": 10,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 10,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 10,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 64,
+    "bar": 10,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 10,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 10,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 37,
+    "bar": 10,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 44,
+    "bar": 10,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 49,
+    "bar": 10,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 44,
+    "bar": 10,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 10,
+    "beat": 0.6,
+    "beats": 0.5,
+    "velocity": 0.23059542131820143,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 10,
+    "beat": 2.1,
+    "beats": 0.5,
+    "velocity": 0.2288644487601916,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 10,
+    "beat": 3.1,
+    "beats": 0.6,
+    "velocity": 0.22238154977664482,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 10,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 10,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 10,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 10,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 10,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 10,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 10,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 10,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 10,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 10,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 10,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 10,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 58,
+    "bar": 11,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 61,
+    "bar": 11,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 64,
+    "bar": 11,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 58,
+    "bar": 11,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 61,
+    "bar": 11,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 64,
+    "bar": 11,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 30,
+    "bar": 11,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 37,
+    "bar": 11,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 42,
+    "bar": 11,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 37,
+    "bar": 11,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 11,
+    "beat": 0,
+    "beats": 0.7,
+    "velocity": 0.2313588764328316,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 11,
+    "beat": 1.6,
+    "beats": 0.4,
+    "velocity": 0.22581504701956795,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 78,
+    "bar": 11,
+    "beat": 2.6,
+    "beats": 0.4,
+    "velocity": 0.23590273996493047,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 11,
+    "beat": 3.3,
+    "beats": 0.4,
+    "velocity": 0.22875104472651564,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 64,
+    "bar": 11,
+    "beat": 3.3,
+    "beats": 0.25,
+    "velocity": 0.12,
+    "pan": 0.48
+  },
+  {
+    "instrument": "kick",
+    "bar": 11,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 11,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 11,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 11,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 11,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 11,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 11,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 11,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 11,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 11,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 11,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 11,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 62,
+    "bar": 12,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 66,
+    "bar": 12,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 12,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 62,
+    "bar": 12,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 66,
+    "bar": 12,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 12,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 35,
+    "bar": 12,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 42,
+    "bar": 12,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 47,
+    "bar": 12,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 42,
+    "bar": 12,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 12,
+    "beat": 1.1,
+    "beats": 0.6,
+    "velocity": 0.21174937155932932,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 12,
+    "beat": 2.6,
+    "beats": 0.35,
+    "velocity": 0.2328568234754934,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 12,
+    "beat": 3.3,
+    "beats": 0.4,
+    "velocity": 0.2406979946548162,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 12,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 12,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 12,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 12,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 12,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 12,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 12,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 12,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 12,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 12,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 12,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 12,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 13,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 13,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 78,
+    "bar": 13,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 13,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 13,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 78,
+    "bar": 13,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 40,
+    "bar": 13,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 47,
+    "bar": 13,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 52,
+    "bar": 13,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 47,
+    "bar": 13,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 13,
+    "beat": 0.6,
+    "beats": 0.6,
+    "velocity": 0.24346187285165466,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 79,
+    "bar": 13,
+    "beat": 1.6,
+    "beats": 0.4,
+    "velocity": 0.2347218184635826,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 78,
+    "bar": 13,
+    "beat": 3.1,
+    "beats": 0.5,
+    "velocity": 0.21614180463682237,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 78,
+    "bar": 13,
+    "beat": 3.3,
+    "beats": 0.25,
+    "velocity": 0.12,
+    "pan": 0.48
+  },
+  {
+    "instrument": "kick",
+    "bar": 13,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 13,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 13,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 13,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 13,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 13,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 13,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 13,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 13,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 13,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 13,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 13,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 61,
+    "bar": 14,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 14,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 14,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 61,
+    "bar": 14,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 14,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 14,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 33,
+    "bar": 14,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 40,
+    "bar": 14,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 45,
+    "bar": 14,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 40,
+    "bar": 14,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 14,
+    "beat": 0,
+    "beats": 0.6,
+    "velocity": 0.22618006344065109,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 14,
+    "beat": 1.6,
+    "beats": 0.6,
+    "velocity": 0.2439464719496518,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 14,
+    "beat": 3.1,
+    "beats": 0.5,
+    "velocity": 0.24580979079286178,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 14,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 14,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 14,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 14,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 14,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 14,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 14,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 14,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 14,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 14,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 14,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 14,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 66,
+    "bar": 15,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 15,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 15,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 66,
+    "bar": 15,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 15,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 15,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 38,
+    "bar": 15,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 45,
+    "bar": 15,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 50,
+    "bar": 15,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 45,
+    "bar": 15,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 15,
+    "beat": 0.6,
+    "beats": 1.1,
+    "velocity": 0.2119150748971364,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 78,
+    "bar": 15,
+    "beat": 2.6,
+    "beats": 0.5,
+    "velocity": 0.21932789413727252,
+    "pan": 0.08
+  },
+  {
+    "instrument": "marimba",
+    "note": 71,
+    "bar": 15,
+    "beat": 3.3,
+    "beats": 0.25,
+    "velocity": 0.12,
+    "pan": 0.48
+  },
+  {
+    "instrument": "kick",
+    "bar": 15,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 15,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 15,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 15,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 15,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 15,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 15,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 15,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 15,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 15,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 15,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 15,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 61,
+    "bar": 16,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 16,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 16,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 61,
+    "bar": 16,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 16,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 16,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 33,
+    "bar": 16,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 40,
+    "bar": 16,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 45,
+    "bar": 16,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 40,
+    "bar": 16,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 16,
+    "beat": 0.6,
+    "beats": 0.4,
+    "velocity": 0.24010438497020148,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 16,
+    "beat": 1.3,
+    "beats": 0.4,
+    "velocity": 0.22960502803084554,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 16,
+    "beat": 2.1,
+    "beats": 0.5,
+    "velocity": 0.24558170378558883,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 16,
+    "beat": 3.1,
+    "beats": 0.5,
+    "velocity": 0.24295292701356752,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 16,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 16,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 16,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 16,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 16,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 16,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 16,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 16,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 16,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 16,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 16,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 16,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 66,
+    "bar": 17,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 17,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 17,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 17,
+    "beat": 0.651,
+    "beats": 0.8,
+    "velocity": 0.132,
+    "pan": 0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 66,
+    "bar": 17,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 17,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 17,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 17,
+    "beat": 2.6510000000000002,
+    "beats": 0.8,
+    "velocity": 0.1144,
+    "pan": 0.12
+  },
+  {
+    "instrument": "bass",
+    "note": 38,
+    "bar": 17,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 45,
+    "bar": 17,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 50,
+    "bar": 17,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 45,
+    "bar": 17,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 17,
+    "beat": 0.6,
+    "beats": 0.35,
+    "velocity": 0.20488530639926586,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 78,
+    "bar": 17,
+    "beat": 1.6,
+    "beats": 0.6,
+    "velocity": 0.19422399221793718,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 17,
+    "beat": 2.6,
+    "beats": 0.35,
+    "velocity": 0.1881690513245617,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 17,
+    "beat": 3.3,
+    "beats": 0.4,
+    "velocity": 0.20502924623548205,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 17,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 17,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 17,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 17,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 17,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 17,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 17,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 17,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 17,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 17,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 17,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 17,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 18,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 18,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 18,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 18,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 18,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 18,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 42,
+    "bar": 18,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 49,
+    "bar": 18,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 54,
+    "bar": 18,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 49,
+    "bar": 18,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 18,
+    "beat": 0.6,
+    "beats": 0.5,
+    "velocity": 0.18732022701091136,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 18,
+    "beat": 2.1,
+    "beats": 0.5,
+    "velocity": 0.21021652742172192,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 18,
+    "beat": 3.1,
+    "beats": 0.6,
+    "velocity": 0.18616830582024543,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 18,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 18,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 18,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 18,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 18,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 18,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 18,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 18,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 18,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 18,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 18,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 18,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 62,
+    "bar": 19,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 66,
+    "bar": 19,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 19,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 62,
+    "bar": 19,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 66,
+    "bar": 19,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 19,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 35,
+    "bar": 19,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 42,
+    "bar": 19,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 47,
+    "bar": 19,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 42,
+    "bar": 19,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 19,
+    "beat": 0,
+    "beats": 0.7,
+    "velocity": 0.20206506992309686,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 19,
+    "beat": 1.6,
+    "beats": 0.4,
+    "velocity": 0.20322783625092075,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 78,
+    "bar": 19,
+    "beat": 2.6,
+    "beats": 0.4,
+    "velocity": 0.19496865468841504,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 19,
+    "beat": 3.3,
+    "beats": 0.4,
+    "velocity": 0.20675211021684028,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 19,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 19,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 19,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 19,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 19,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 19,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 19,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 19,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 19,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 19,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 19,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 19,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 68,
+    "bar": 20,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 20,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 20,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 68,
+    "bar": 20,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 20,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 20,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 40,
+    "bar": 20,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 47,
+    "bar": 20,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 52,
+    "bar": 20,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 47,
+    "bar": 20,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 20,
+    "beat": 1.1,
+    "beats": 0.6,
+    "velocity": 0.20217485856160777,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 20,
+    "beat": 2.6,
+    "beats": 0.35,
+    "velocity": 0.1963118834480273,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 20,
+    "beat": 3.3,
+    "beats": 0.4,
+    "velocity": 0.2077257439852685,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 20,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 20,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 20,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 20,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 20,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 20,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 20,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 20,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 20,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 20,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 20,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 20,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 21,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 21,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 21,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 78,
+    "bar": 21,
+    "beat": 0.651,
+    "beats": 0.8,
+    "velocity": 0.132,
+    "pan": 0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 21,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 21,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 21,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 78,
+    "bar": 21,
+    "beat": 2.6510000000000002,
+    "beats": 0.8,
+    "velocity": 0.1144,
+    "pan": 0.12
+  },
+  {
+    "instrument": "bass",
+    "note": 40,
+    "bar": 21,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 47,
+    "bar": 21,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 52,
+    "bar": 21,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 47,
+    "bar": 21,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 21,
+    "beat": 0.6,
+    "beats": 0.6,
+    "velocity": 0.20112036018311896,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 79,
+    "bar": 21,
+    "beat": 1.6,
+    "beats": 0.4,
+    "velocity": 0.19494826544361396,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 78,
+    "bar": 21,
+    "beat": 3.1,
+    "beats": 0.5,
+    "velocity": 0.18562979663892112,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 21,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 21,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 21,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 21,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 21,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 21,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 21,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 21,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 21,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 21,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 21,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 21,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 61,
+    "bar": 22,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 22,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 22,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 61,
+    "bar": 22,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 22,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 22,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 33,
+    "bar": 22,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 40,
+    "bar": 22,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 45,
+    "bar": 22,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 40,
+    "bar": 22,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 22,
+    "beat": 0,
+    "beats": 0.6,
+    "velocity": 0.1976953543754708,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 22,
+    "beat": 1.6,
+    "beats": 0.6,
+    "velocity": 0.18790782606452108,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 22,
+    "beat": 3.1,
+    "beats": 0.5,
+    "velocity": 0.18545111799204728,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 22,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 22,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 22,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 22,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 22,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 22,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 22,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 22,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 22,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 22,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 22,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 22,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 66,
+    "bar": 23,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 23,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 23,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 66,
+    "bar": 23,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 23,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 71,
+    "bar": 23,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 38,
+    "bar": 23,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 45,
+    "bar": 23,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 50,
+    "bar": 23,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 45,
+    "bar": 23,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 74,
+    "bar": 23,
+    "beat": 0.6,
+    "beats": 1.1,
+    "velocity": 0.2024382512471069,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 78,
+    "bar": 23,
+    "beat": 2.6,
+    "beats": 0.5,
+    "velocity": 0.20426105556192234,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 23,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 23,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 23,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 23,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 23,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 23,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 23,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 23,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 23,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 23,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 23,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 23,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "epiano",
+    "note": 61,
+    "bar": 24,
+    "beat": 0.6,
+    "beats": 0.8,
+    "velocity": 0.15,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 24,
+    "beat": 0.617,
+    "beats": 0.8,
+    "velocity": 0.144,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 24,
+    "beat": 0.634,
+    "beats": 0.8,
+    "velocity": 0.138,
+    "pan": 0.0
+  },
+  {
+    "instrument": "epiano",
+    "note": 61,
+    "bar": 24,
+    "beat": 2.6,
+    "beats": 0.8,
+    "velocity": 0.13,
+    "pan": -0.24
+  },
+  {
+    "instrument": "epiano",
+    "note": 67,
+    "bar": 24,
+    "beat": 2.617,
+    "beats": 0.8,
+    "velocity": 0.1248,
+    "pan": -0.12
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 24,
+    "beat": 2.634,
+    "beats": 0.8,
+    "velocity": 0.11960000000000001,
+    "pan": 0.0
+  },
+  {
+    "instrument": "bass",
+    "note": 33,
+    "bar": 24,
+    "beat": 0,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 40,
+    "bar": 24,
+    "beat": 1.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 45,
+    "bar": 24,
+    "beat": 2,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "bass",
+    "note": 40,
+    "bar": 24,
+    "beat": 3.1,
+    "beats": 0.72,
+    "velocity": 0.28,
+    "pan": -0.14
+  },
+  {
+    "instrument": "epiano",
+    "note": 76,
+    "bar": 24,
+    "beat": 0.6,
+    "beats": 0.4,
+    "velocity": 0.18602773693398073,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 24,
+    "beat": 1.3,
+    "beats": 0.4,
+    "velocity": 0.2148191580396911,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 69,
+    "bar": 24,
+    "beat": 2.1,
+    "beats": 0.5,
+    "velocity": 0.18775785730031103,
+    "pan": 0.08
+  },
+  {
+    "instrument": "epiano",
+    "note": 73,
+    "bar": 24,
+    "beat": 3.1,
+    "beats": 0.5,
+    "velocity": 0.21482344998400707,
+    "pan": 0.08
+  },
+  {
+    "instrument": "kick",
+    "bar": 24,
+    "beat": 0,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "kick",
+    "bar": 24,
+    "beat": 2,
+    "velocity": 0.2,
+    "pan": 0
+  },
+  {
+    "instrument": "brush",
+    "bar": 24,
+    "beat": 1,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "brush",
+    "bar": 24,
+    "beat": 3,
+    "velocity": 0.48,
+    "pan": 0.18
+  },
+  {
+    "instrument": "shaker",
+    "bar": 24,
+    "beat": 0,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 24,
+    "beat": 0.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 24,
+    "beat": 1,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 24,
+    "beat": 1.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 24,
+    "beat": 2,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 24,
+    "beat": 2.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 24,
+    "beat": 3,
+    "velocity": 0.27,
+    "pan": -0.35
+  },
+  {
+    "instrument": "shaker",
+    "bar": 24,
+    "beat": 3.6,
+    "velocity": 0.27,
+    "pan": -0.35
+  }
+]

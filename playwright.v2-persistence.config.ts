@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'./tests',testMatch:'persistence.spec.ts',workers:1,outputDir:'test-results-v2-persistence',use:{baseURL:'http://127.0.0.1:3038',browserName:'chromium'},webServer:{command:'node --import ./tests/v2-persistence-fixture.mjs --import tsx server/index.ts',url:'http://127.0.0.1:3038',reuseExistingServer:false,env:{PORT:'3038',OPENAI_API_KEY:'isolated-mock-no-network',AFTERHOURS_DATA_DIR:`.ralph/v2-ac6/data-${Date.now()}`}},reporter:'list'});

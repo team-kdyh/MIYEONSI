@@ -1,0 +1,203 @@
+{
+  "scope": "Captured-response replay, not new live generation; UUID identity excluded, all other event fields compared",
+  "hashes": {
+    "server/narrative.ts": "2235815283c65b163a8567e3a342c1991812b3b987510b964bbaa59ad2143966",
+    "server/provider.ts": "9cb96e0ec6ef5037567eb7bd9a65d32abded251d7fd8f4bb6f179dd8ab68bce2",
+    "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+    "tests/v2-ac2-receipt-replay.ts": "f2371f4371b49930056fe87ce38c992bd2809b7429c7e2e42deb5df6633d036b"
+  },
+  "rows": [
+    {
+      "id": 1,
+      "originalCommitted": false,
+      "replay": "rejected",
+      "error": "사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요."
+    },
+    {
+      "id": 2,
+      "originalCommitted": false,
+      "replay": "committed",
+      "matchesOriginal": false
+    },
+    {
+      "id": 3,
+      "originalCommitted": false,
+      "replay": "committed",
+      "matchesOriginal": false
+    },
+    {
+      "id": 4,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 5,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 6,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 7,
+      "originalCommitted": false,
+      "replay": "rejected",
+      "error": "사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요."
+    },
+    {
+      "id": 8,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 9,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 10,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 11,
+      "originalCommitted": false,
+      "replay": "rejected",
+      "error": "사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요."
+    },
+    {
+      "id": 12,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 13,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 14,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 15,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 16,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 17,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 18,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 19,
+      "originalCommitted": false,
+      "replay": "rejected",
+      "error": "사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요."
+    },
+    {
+      "id": 20,
+      "originalCommitted": false,
+      "replay": "committed",
+      "matchesOriginal": false
+    },
+    {
+      "id": 21,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 22,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 23,
+      "originalCommitted": false,
+      "replay": "rejected",
+      "error": "사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요."
+    },
+    {
+      "id": 24,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 25,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 26,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 27,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 28,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 29,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 30,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 31,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    },
+    {
+      "id": 32,
+      "originalCommitted": true,
+      "replay": "committed",
+      "matchesOriginal": true
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "scope": "Exact historical real response state rendered with current UI. No fresh generation.",
+  "trace": [
+    {
+      "receipt": 4,
+      "source": "docs/v2-live-04.json",
+      "mode": "office",
+      "requestedPose": "thinking",
+      "renderedPose": "thinking",
+      "location": "office",
+      "actionBeats": [
+        "가방을 책상에 내려놓고 폰을 꺼낸다",
+        "잠깐 웃고 다시 메모장을 펼친다"
+      ],
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/receipt-4-1440.png"
+    },
+    {
+      "receipt": 5,
+      "source": "docs/v2-live-05.json",
+      "mode": "office",
+      "requestedPose": "smile",
+      "renderedPose": "smile",
+      "location": "office",
+      "actionBeats": [
+        "폰을 들어 메신저 창을 연다",
+        "잠시 당신을 바라보고 고개를 끄덕인다"
+      ],
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/receipt-5-1440.png"
+    },
+    {
+      "receipt": 6,
+      "source": "docs/v2-live-06.json",
+      "mode": "office",
+      "requestedPose": "offer",
+      "renderedPose": "offer",
+      "location": "office",
+      "actionBeats": [
+        "폰으로 메시지를 빠르게 작성한다",
+        "서류철을 닫으면서 책상 위를 정돈한다"
+      ],
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/receipt-6-1440.png"
+    },
+    {
+      "receipt": 12,
+      "source": "docs/v2-live-12.json",
+      "mode": "romance",
+      "requestedPose": "laugh",
+      "renderedPose": "laugh",
+      "location": "cafe",
+      "actionBeats": [
+        "유나가 손바닥으로 얼굴을 살짝 가리며 웃는다",
+        "작은 노트에 '승선권=배조각'이라 적는다"
+      ],
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/receipt-12-1440.png"
+    },
+    {
+      "receipt": 26,
+      "source": "docs/v2-live-26.json",
+      "mode": "romance",
+      "requestedPose": "offer",
+      "renderedPose": "smile",
+      "location": "cafe",
+      "actionBeats": [
+        "가방에서 조그맣게 접어둔 파란 종이를 꺼내고 노트 위에 펼쳐 놓는다",
+        "손끝으로 종이를 곧 건네줄 듯, 지호 쪽으로 천천히 밀어준다",
+        "고개를 기울여 컵과 배를 번갈아 바라본다"
+      ],
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/receipt-26-1440.png"
+    },
+    {
+      "receipt": 28,
+      "source": "docs/v2-live-28.json",
+      "mode": "romance",
+      "requestedPose": "concern",
+      "renderedPose": "thinking",
+      "location": "cafe",
+      "actionBeats": [
+        "유나가 녹음기를 가방에 넣고 손바닥을 꼭 쥔다",
+        "조심스럽게 눈웃음을 짓고 컵을 살짝 들어 올린다",
+        "창밖 옥상 쪽으로 시선을 잠깐 보낸다"
+      ],
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/receipt-28-1440.png"
+    },
+    {
+      "receipt": 29,
+      "source": "docs/v2-live-29.json",
+      "mode": "romance",
+      "requestedPose": "turn",
+      "renderedPose": "turn",
+      "location": "rooftop",
+      "actionBeats": [
+        "유나가 테이블 위 컵을 정리하고 자리에서 천천히 일어난다",
+        "문 쪽으로 살짝 시선 돌리며 가볍게 고개를 끄덕인다",
+        "조심스럽게 지호의 걸음에 맞춰 걷는다"
+      ],
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/receipt-29-1440.png"
+    },
+    {
+      "receipt": 32,
+      "source": "docs/v2-live-32.json",
+      "mode": "romance",
+      "requestedPose": "smile",
+      "renderedPose": "smile",
+      "location": "cafe",
+      "actionBeats": [
+        "유나가 녹음기를 조심스레 가방에 넣는다",
+        "손끝이 머그잔을 쓰다듬고, 시선을 천천히 맞춘다"
+      ],
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/receipt-32-1440.png"
+    }
+  ]
+}

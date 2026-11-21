@@ -1,0 +1,31 @@
+{
+  "executedAt": "2026-11-21T02:44:14.5250105Z",
+  "paidCalls": 0,
+  "hashes": {
+    "server/index.ts": "9ec822bf05ace1ff0b8b83cdc8d49c562d050dbb790539bbd2e7a36a83d6af42",
+    "server/storage.ts": "b2b0dce5b036460d125b954c7534bfbb9138e7d89ed1dacb6d2166a27df1123f",
+    "server/provider.ts": "abee42022c4a34bdbe647c16de3854f0354d6a0c8298eecaadac55ce4582deb9",
+    "server/v2-security.test.ts": "762703523b0b88f7d54863c12df33677263389ca61d788ea5b113098fc587767",
+    "server/persistence.test.ts": "aff60bd7777045820753a3f0e11e88e8d986244365a26a4361b38dba00c11f87",
+    "server/recovery.test.ts": "132439ea384223d5552fcdf679d4bd7b45072f64bdd4627836ad68fa24776d85",
+    "server/adversarial.test.ts": "a3264598e44a14ff7cd1afb4dbe4cb91e0070a463db0bf91d6bd08e24bcf7538",
+    "tests/persistence.spec.ts": "b3aa4eb52e50874e69ec9df77befe5ac451338d512da9f6ad08837d0cfa74b12",
+    "tests/v2-security-fixture.mjs": "09c2e869d0d90aa6734c3652aebab5d93d597880d48abc297a57b175ee130f3b",
+    "src/style.css": "c4e5f7abb937c87cc4add72c29649f3f18eded28993ec897650f10bc36c08905"
+  },
+  "build": "pass",
+  "unitTests": {
+    "passed": 114,
+    "failed": 0
+  },
+  "browserTests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "afterResetFixTargetedTests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "secretPatternMatches": 0,
+  "privateEnvTracked": false
+}

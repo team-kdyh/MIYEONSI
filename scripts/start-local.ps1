@@ -1,15 +1,15 @@
-param([switch]$NoBrowser)
+param([switch]$NoBrowser, [ValidateRange(1024,65535)][int]$Port = $(if ($env:AFTERHOURS_PORT) { [int]$env:AFTERHOURS_PORT } else { 3001 }))
 $ErrorActionPreference = 'Stop'
 $taskRoot = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '..')).Path
 $taskData = Join-Path $taskRoot '.local-data'
 $taskEntry = Join-Path $taskRoot 'server\index.ts'
-$taskUrl = 'http://127.0.0.1:3001'
+$taskUrl = "http://127.0.0.1:$Port"
 $taskNode = (Get-Command node.exe -ErrorAction Stop).Source
 $taskNpm = (Get-Command npm.cmd -ErrorAction Stop).Source
 if ([int]((& $taskNode --version).TrimStart('v').Split('.')[0]) -lt 22) {
     throw 'Node.js 22 or newer is required. Install Node.js and run play.cmd again.'
 }
-$taskListener = Get-NetTCPConnection -State Listen -LocalPort 3001 -ErrorAction SilentlyContinue | Select-Object -First 1
+$taskListener = Get-NetTCPConnection -State Listen -LocalPort $Port -ErrorAction SilentlyContinue | Select-Object -First 1
 if ($taskListener) {
     $taskExisting = Get-CimInstance Win32_Process -Filter "ProcessId = $($taskListener.OwningProcess)"
     if ($taskExisting.CommandLine -and $taskExisting.CommandLine.Contains($taskEntry)) {
@@ -17,7 +17,7 @@ if ($taskListener) {
         if (-not $NoBrowser) { Start-Process $taskUrl }
         exit 0
     }
-    throw 'Port 3001 is in use by another process. Close that service before starting this game.'
+    throw "Port $Port is in use by another process. Set AFTERHOURS_PORT to an unused port or close that service."
 }
 New-Item -ItemType Directory -Path $taskData -Force | Out-Null
 Push-Location $taskRoot
@@ -36,7 +36,7 @@ try {
     if ($LASTEXITCODE -ne 0) { throw 'Game build failed. The server was not started.' }
     $taskOut = Join-Path $taskData 'server.stdout.log'
     $taskErr = Join-Path $taskData 'server.stderr.log'
-    $env:PORT = '3001'
+    $env:PORT = [string]$Port
     $taskProcess = Start-Process -FilePath $taskNode -ArgumentList @('--import', 'tsx', ('"' + $taskEntry + '"')) -WorkingDirectory $taskRoot -WindowStyle Hidden -RedirectStandardOutput $taskOut -RedirectStandardError $taskErr -PassThru
     $taskReady = $false
     for ($taskAttempt = 0; $taskAttempt -lt 50; $taskAttempt++) {

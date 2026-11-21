@@ -1,0 +1,14 @@
+{
+  "credentialScanFiles": 275,
+  "credentialLeaks": [],
+  "historical12AttemptLedgerUnchanged": true,
+  "lastPaidReceiptImplementationMatches": {
+    "server/provider.ts": true,
+    "server/narrative.ts": true,
+    "server/dialogue.ts": true,
+    "server/index.ts": true,
+    "server/storage.ts": true
+  },
+  "paidLimitUsed": 32,
+  "cumulativeAttempts": 44
+}

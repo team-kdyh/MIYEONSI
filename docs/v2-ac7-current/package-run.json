@@ -1,0 +1,6 @@
+{
+  "startedAt": "2026-11-21T03:57:26.8033265Z",
+  "command": "powershell -File scripts/package-local.ps1",
+  "exitCode": 1,
+  "finishedAt": "2026-11-21T03:58:05.5377049Z"
+}

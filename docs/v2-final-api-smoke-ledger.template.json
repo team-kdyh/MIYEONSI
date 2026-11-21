@@ -1,0 +1,19 @@
+{
+  "phase": "v2 final frozen-candidate conversational QA",
+  "approval": "pending",
+  "owner": "parent",
+  "approvedAt": null,
+  "userApprovalReference": null,
+  "workersQuiescent": false,
+  "phaseLimit": 24,
+  "previousAttempts": 44,
+  "cumulativeLimit": 68,
+  "maxOutputTokensPerCall": 1600,
+  "previousLedgers": [
+    {"path":"docs/api-smoke-ledger.json","attempts":12,"sha256":null},
+    {"path":"docs/v2-api-smoke-ledger.json","attempts":32,"sha256":null}
+  ],
+  "candidate": {"model":"gpt-4.1","sourceHashes":{}},
+  "reservationPolicy": "Parent only after actual user approval and worker quiescence. Reserve before upstream, include failures, never reset any ledger, never exceed 24 additional/68 cumulative attempts. One natural turn per command.",
+  "attempts": []
+}

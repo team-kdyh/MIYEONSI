@@ -62,7 +62,7 @@ test('HTTP malformed inputs and exact character/body boundaries preserve rejecte
    if(bytes===4096)assert.equal(state.game.dialogue.version,version+1);else assert.equal(digest(state),before);
    observations.push({name:'UTF-8 HTTP body boundary',bytes,status:response.status,before,after:digest(state),versionDelta:state.game.dialogue.version-version});
   }
-  await writeFile('docs/supplemental-input-evidence.json',JSON.stringify({executedAt:new Date().toISOString(),provider:'offline',realHttpServer:true,paidCalls:0,observations},null,2));
+  await writeFile('docs/v2-input-evidence.json',JSON.stringify({executedAt:new Date().toISOString(),provider:'offline',realHttpServer:true,paidCalls:0,observations},null,2));
  }finally{await f.close();}
 });
 
@@ -71,14 +71,14 @@ test('repeated precommit and postcommit interruptions survive restart with exact
  try{
   await f.boot();await f.call();let state=(await f.call('new',{mode:'office'})).data;
   for(let turn=1;turn<=2;turn++){
-   const before=structuredClone(state),request={text:state.game.scene.choices[0],choice:null,step:state.game.step,version:state.game.dialogue.version,requestId:`interrupt-sequence-${turn}`};
+   const before=structuredClone(state),request={text:'제안은 조금 더 생각해 볼게요.',choice:null,step:state.game.step,version:state.game.dialogue.version,requestId:`interrupt-sequence-${turn}`};
    const interrupted=await f.call('turn',request,'before-commit');assert.equal(interrupted.status,400);
    assert.deepEqual((await f.call()).data,before);
    await f.stop();await f.boot();assert.deepEqual((await f.call()).data,before);
    sequence.push({turn,stage:'before-commit -> restart',status:400,before:digest(before),after:digest((await f.call()).data),unchanged:true});
    await assert.rejects(f.call('turn',request,'after-commit'));
    await f.stop();await f.boot();state=(await f.call()).data;
-   assert.equal(state.game.office.turn,turn);assert.equal(state.game.dialogue.version,before.game.dialogue.version+1);
+   assert.equal(state.game.narrative.turn,turn);assert.equal(state.game.dialogue.version,before.game.dialogue.version+1);
    const persisted=structuredClone(state);
    for(let retry=1;retry<=3;retry++){
     const result=await f.call('turn',request);assert.equal(result.status,200);assert.deepEqual(result.data,persisted);
@@ -87,7 +87,7 @@ test('repeated precommit and postcommit interruptions survive restart with exact
    const records=await f.committed();assert.equal(records.filter(record=>record.id===request.requestId).length,1);assert.equal(records.length,turn);
    sequence.push({turn,stage:'read-only persisted journal audit',uniqueRequestId:request.requestId,matchingCommits:1,totalCommits:records.length});
   }
-  assert.equal(state.game.ending,'office-clockout-success');assert.equal(state.collection.filter((id:string)=>id==='office-clockout-success').length,1);
-  await writeFile('docs/supplemental-interruption-evidence.json',JSON.stringify({executedAt:new Date().toISOString(),provider:'offline',paidCalls:0,serverRestarts:4,injectedInterruptions:4,duplicateRetries:6,finalStateHash:digest(state),ending:state.game.ending,sequence},null,2));
+  assert.equal(state.game.ending,null);assert.equal(state.collection.length,0);
+  await writeFile('docs/v2-interruption-evidence.json',JSON.stringify({executedAt:new Date().toISOString(),provider:'offline',paidCalls:0,serverRestarts:4,injectedInterruptions:4,duplicateRetries:6,finalStateHash:digest(state),ending:state.game.ending,sequence},null,2));
  }finally{await f.close();}
 });

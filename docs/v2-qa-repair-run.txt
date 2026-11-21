@@ -1,0 +1,35 @@
+✔ v2 schema and director contain no choice-derived intent or forced turn limit (6.9689ms)
+✔ same-state office creative acceptance, refusal and alternate scope have distinct durable consequences (5.3255ms)
+✔ same-state romance accepts new rooftop outing, stays for alternative plan, or refuses without moving (5.2799ms)
+✔ ten-turn detail ownership, novel promise fulfillment and three saved slots survive reload (23.223ms)
+✔ forged consent, refusal, unknown assets/reference and unearned endings reject atomically (0.729ms)
+✔ office resolution requires prior agreements, never model victory alone (0.5719ms)
+✔ reciprocal courtship and date are required before archive clues and resolution (1.5069ms)
+✔ mock Responses transports novel Korean speech/actions/events end to end with bounded output (19.1347ms)
+✔ positive alternative survives a separate overtime refusal; negative proposal does not (0.3396ms)
+✔ QA romance schema permits only current next milestone, never skipping familiar (0.3827ms)
+✔ AC3 v2 clockout: novel complete plan resolves its own objectives only (6.077ms)
+✔ AC3 v2 dinner: novel complete plan resolves its own objectives only (1.1946ms)
+✔ AC3 v2 weekend: novel complete plan resolves its own objectives only (1.3784ms)
+✔ AC3 v2 vacation: novel complete plan resolves its own objectives only (1.6204ms)
+✔ AC3 v2 credit: novel complete plan resolves its own objectives only (1.0065ms)
+✔ AC3 v2 meeting: novel complete plan resolves its own objectives only (0.7541ms)
+✔ AC3 v2 delegation: novel complete plan resolves its own objectives only (1.2051ms)
+✔ AC3 v2 remote: novel complete plan resolves its own objectives only (1.0502ms)
+✔ AC3 v2 four thematic endings are earned and have distinct durable decisions (5.3474ms)
+✔ AC3 v2 refusal, repeated clue and same-turn relationship acceleration cannot earn romance (1.6084ms)
+✔ AC3 v2 generic bookkeeping cannot substitute for the mission objective (0.2293ms)
+✔ QA consent clause keeps questions local and rejects negated separation (0.5958ms)
+✔ QA repeated owned detail is idempotent and named player action fails closed (0.4945ms)
+✔ QA live 02 creative office proposal is not negated by separate coffee joke (10.0248ms)
+✔ QA live 03 pending concession remains pending, never earns an ending (2.5294ms)
+✔ QA player refusals survive beyond bounded chat history and reach provider separately (1.0014ms)
+✔ QA live 20 real prior familiarity may ground familiarity, never a later couple acceptance (2.1808ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 280.8633

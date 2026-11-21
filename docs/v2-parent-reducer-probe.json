@@ -1,0 +1,520 @@
+{
+  "createdAt": "2026-11-21T02:50:58.315Z",
+  "method": "Pure in-memory reducer and schema calls. No provider, network, paid API, production writes, or test suite run.",
+  "sourceRoot": "C:/Users/gjtjw/.ouroboros/worktrees/대화형 스토리진행/ralph-afterhours-v2-293c383da8",
+  "beforeHash": {
+    "server/narrative.ts": "28d8ae56b6caea4dbe779f2b0597241952752f5b2e1cf35e5cd0722dfeaef2d8",
+    "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+    "server/provider.ts": "e51d6f0c7bccc73c37048cd1ab81af31a300685b389e93f5a1a284fe32da2413",
+    "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+    "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4"
+  },
+  "afterHash": {
+    "server/narrative.ts": "28d8ae56b6caea4dbe779f2b0597241952752f5b2e1cf35e5cd0722dfeaef2d8",
+    "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+    "server/provider.ts": "e51d6f0c7bccc73c37048cd1ab81af31a300685b389e93f5a1a284fe32da2413",
+    "server/dialogue.ts": "428f8bfbfb965a4fa0736eece601d643b473aaabbd749d30d01705a4e695b448",
+    "server/index.ts": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4"
+  },
+  "sourceUnchangedDuringProbe": true,
+  "observations": [
+    {
+      "name": "control: explicit relationship acceptance",
+      "input": "저도 좋아해요. 우리 사귀어요.",
+      "proposal": [
+        {
+          "kind": "relationship",
+          "subject": "mutual",
+          "text": "두 사람이 연애를 시작하기로 답했다.",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "우리 사귀어요.",
+          "value": "couple"
+        }
+      ],
+      "schemaValid": true,
+      "expectation": "A valid explicit acceptance after NPC confession becomes couple.",
+      "returned": true,
+      "before": {
+        "relationship": "confessed",
+        "location": "cafe",
+        "dates": 0,
+        "turn": 6,
+        "events": [
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "text": "유나는 여러 대화 뒤 친숙함을 느낀다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "a3c59ff3-d6e3-42b8-9f04-2b987e50780d",
+            "turn": 4
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "text": "유나는 대화를 기다린다는 호감을 표현한다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "3a81821e-2c7d-40ba-be9d-c39b51448da0",
+            "turn": 5
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "text": "유나가 자기 마음을 고백한다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "fb842313-0769-43fc-a342-3770d03d887a",
+            "turn": 6
+          }
+        ]
+      },
+      "after": {
+        "relationship": "couple",
+        "location": "cafe",
+        "dates": 0,
+        "turn": 7,
+        "events": [
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "text": "유나는 여러 대화 뒤 친숙함을 느낀다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "a3c59ff3-d6e3-42b8-9f04-2b987e50780d",
+            "turn": 4
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "text": "유나는 대화를 기다린다는 호감을 표현한다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "3a81821e-2c7d-40ba-be9d-c39b51448da0",
+            "turn": 5
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "text": "유나가 자기 마음을 고백한다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "fb842313-0769-43fc-a342-3770d03d887a",
+            "turn": 6
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "text": "두 사람이 연애를 시작하기로 답했다.",
+            "status": "accepted",
+            "reference": "",
+            "evidence": "우리 사귀어요.",
+            "value": "couple",
+            "id": "374e3a03-0d20-4827-8f75-e6855acc1077",
+            "turn": 7
+          }
+        ]
+      },
+      "expectationMet": true,
+      "sourceObjectUnchanged": true
+    },
+    {
+      "name": "acceptance plus follow-up question",
+      "input": "저도 좋아해요. 우리 사귀어요. 다음에는 어디서 만날까요?",
+      "proposal": [
+        {
+          "kind": "relationship",
+          "subject": "mutual",
+          "text": "두 사람이 연애를 시작하기로 답했다.",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "우리 사귀어요.",
+          "value": "couple"
+        }
+      ],
+      "schemaValid": true,
+      "expectation": "The separate follow-up question must not cancel explicit acceptance.",
+      "returned": false,
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "before": {
+        "relationship": "confessed",
+        "location": "cafe",
+        "dates": 0,
+        "turn": 6
+      },
+      "expectationMet": false,
+      "sourceObjectUnchanged": true
+    },
+    {
+      "name": "acceptance plus unrelated food dislike",
+      "input": "시나몬 맛은 싫지만, 저도 좋아해요. 우리 사귀어요.",
+      "proposal": [
+        {
+          "kind": "relationship",
+          "subject": "mutual",
+          "text": "두 사람이 연애를 시작하기로 답했다.",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "우리 사귀어요.",
+          "value": "couple"
+        }
+      ],
+      "schemaValid": true,
+      "expectation": "A separate disliked food must not cancel relationship acceptance.",
+      "returned": false,
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "before": {
+        "relationship": "confessed",
+        "location": "cafe",
+        "dates": 0,
+        "turn": 6
+      },
+      "expectationMet": false,
+      "sourceObjectUnchanged": true
+    },
+    {
+      "name": "move acceptance plus follow-up question",
+      "input": "좋아요. 옥상으로 가요. 바람이 많이 불까요?",
+      "proposal": [
+        {
+          "kind": "move",
+          "subject": "mutual",
+          "text": "둘이 옥상으로 이동한다.",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "옥상으로 가요.",
+          "value": "rooftop"
+        }
+      ],
+      "schemaValid": true,
+      "expectation": "The explicit movement acceptance remains valid with a question.",
+      "returned": false,
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "before": {},
+      "expectationMet": false,
+      "sourceObjectUnchanged": true
+    },
+    {
+      "name": "refused separation changes relationship",
+      "input": "헤어지고 싶지 않아요.",
+      "proposal": [
+        {
+          "kind": "relationship",
+          "subject": "player",
+          "text": "플레이어가 결별을 거절했다.",
+          "status": "refused",
+          "reference": "",
+          "evidence": "헤어지고 싶지 않아요.",
+          "value": "apart"
+        }
+      ],
+      "schemaValid": true,
+      "expectation": "Refusing separation must preserve couple.",
+      "returned": true,
+      "before": {
+        "relationship": "couple",
+        "location": "cafe",
+        "dates": 0,
+        "turn": 7,
+        "events": [
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "text": "유나는 여러 대화 뒤 친숙함을 느낀다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "28f4fc49-09b9-4aac-8ee2-792629cf9c10",
+            "turn": 4
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "text": "유나는 대화를 기다린다는 호감을 표현한다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "b4fd1d11-ef2c-4e2c-852a-3a2375b23455",
+            "turn": 5
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "text": "유나가 자기 마음을 고백한다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "607dc487-9a12-416b-8bdf-4a074acb8a1f",
+            "turn": 6
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "text": "두 사람이 연애를 시작하기로 서로 답했다.",
+            "status": "accepted",
+            "reference": "",
+            "evidence": "저도 좋아해요. 우리 사귀어요.",
+            "value": "couple",
+            "id": "822e571b-2168-46e6-addb-880abb12912c",
+            "turn": 7
+          }
+        ]
+      },
+      "after": {
+        "relationship": "apart",
+        "location": "cafe",
+        "dates": 0,
+        "turn": 8,
+        "events": [
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "text": "유나는 여러 대화 뒤 친숙함을 느낀다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "28f4fc49-09b9-4aac-8ee2-792629cf9c10",
+            "turn": 4
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "text": "유나는 대화를 기다린다는 호감을 표현한다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "b4fd1d11-ef2c-4e2c-852a-3a2375b23455",
+            "turn": 5
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "text": "유나가 자기 마음을 고백한다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "607dc487-9a12-416b-8bdf-4a074acb8a1f",
+            "turn": 6
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "text": "두 사람이 연애를 시작하기로 서로 답했다.",
+            "status": "accepted",
+            "reference": "",
+            "evidence": "저도 좋아해요. 우리 사귀어요.",
+            "value": "couple",
+            "id": "822e571b-2168-46e6-addb-880abb12912c",
+            "turn": 7
+          },
+          {
+            "kind": "relationship",
+            "subject": "player",
+            "text": "플레이어가 결별을 거절했다.",
+            "status": "refused",
+            "reference": "",
+            "evidence": "헤어지고 싶지 않아요.",
+            "value": "apart",
+            "id": "572126fc-d353-4a8b-aa72-b437df6984a3",
+            "turn": 8
+          }
+        ]
+      },
+      "expectationMet": false,
+      "sourceObjectUnchanged": true
+    },
+    {
+      "name": "future offered date counts as experienced date",
+      "input": "다음 주 토요일에 여기서 데이트하고 싶어요.",
+      "proposal": [
+        {
+          "kind": "relationship",
+          "subject": "mutual",
+          "text": "다음 주 토요일 데이트를 제안했다.",
+          "status": "offered",
+          "reference": "",
+          "evidence": "다음 주 토요일에 여기서 데이트하고 싶어요.",
+          "value": "date"
+        }
+      ],
+      "schemaValid": true,
+      "expectation": "An offered future date does not increment experienced dates.",
+      "returned": true,
+      "before": {
+        "relationship": "couple",
+        "location": "cafe",
+        "dates": 0,
+        "turn": 7,
+        "events": [
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "text": "유나는 여러 대화 뒤 친숙함을 느낀다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "7a1f6b69-bfa6-4f9b-b167-40c008367e14",
+            "turn": 4
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "text": "유나는 대화를 기다린다는 호감을 표현한다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "7f36affb-db98-40af-8959-5412f53f8911",
+            "turn": 5
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "text": "유나가 자기 마음을 고백한다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "b936187c-8cff-4f44-8b08-4c3f56c1160e",
+            "turn": 6
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "text": "두 사람이 연애를 시작하기로 서로 답했다.",
+            "status": "accepted",
+            "reference": "",
+            "evidence": "저도 좋아해요. 우리 사귀어요.",
+            "value": "couple",
+            "id": "f6eb3e2b-8654-41b1-b4e6-373c87c95097",
+            "turn": 7
+          }
+        ]
+      },
+      "after": {
+        "relationship": "couple",
+        "location": "cafe",
+        "dates": 1,
+        "turn": 8,
+        "events": [
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "text": "유나는 여러 대화 뒤 친숙함을 느낀다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "familiar",
+            "id": "7a1f6b69-bfa6-4f9b-b167-40c008367e14",
+            "turn": 4
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "text": "유나는 대화를 기다린다는 호감을 표현한다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "attracted",
+            "id": "7f36affb-db98-40af-8959-5412f53f8911",
+            "turn": 5
+          },
+          {
+            "kind": "relationship",
+            "subject": "npc",
+            "text": "유나가 자기 마음을 고백한다.",
+            "status": "fulfilled",
+            "reference": "",
+            "evidence": "",
+            "value": "confessed",
+            "id": "b936187c-8cff-4f44-8b08-4c3f56c1160e",
+            "turn": 6
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "text": "두 사람이 연애를 시작하기로 서로 답했다.",
+            "status": "accepted",
+            "reference": "",
+            "evidence": "저도 좋아해요. 우리 사귀어요.",
+            "value": "couple",
+            "id": "f6eb3e2b-8654-41b1-b4e6-373c87c95097",
+            "turn": 7
+          },
+          {
+            "kind": "relationship",
+            "subject": "mutual",
+            "text": "다음 주 토요일 데이트를 제안했다.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "다음 주 토요일에 여기서 데이트하고 싶어요.",
+            "value": "date",
+            "id": "d4a68289-3223-479f-8d5c-b82c872889b9",
+            "turn": 8
+          }
+        ]
+      },
+      "expectationMet": false,
+      "sourceObjectUnchanged": true
+    },
+    {
+      "name": "reconfirming an existing detail",
+      "input": "저는 지호예요.",
+      "proposal": [
+        {
+          "kind": "detail",
+          "subject": "player",
+          "text": "플레이어의 이름은 지호다.",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "저는 지호예요.",
+          "value": "name"
+        }
+      ],
+      "schemaValid": true,
+      "expectation": "Correctly repeating an existing detail should not fail the whole dialogue; it can be idempotently ignored.",
+      "returned": false,
+      "error": "Error: 사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+      "before": {
+        "relationship": "strangers",
+        "location": "cafe",
+        "dates": 0,
+        "turn": 1
+      },
+      "expectationMet": false,
+      "sourceObjectUnchanged": true
+    },
+    {
+      "name": "NPC action agency guard",
+      "action": "유나가 당신을 바라보며 웃는다.",
+      "returned": true,
+      "expected": "Both are NPC actions; neither dictates a player action."
+    },
+    {
+      "name": "NPC action agency guard",
+      "action": "유나가 컵 테두리를 가볍게 두드린다.",
+      "returned": true,
+      "expected": "Both are NPC actions; neither dictates a player action."
+    }
+  ]
+}

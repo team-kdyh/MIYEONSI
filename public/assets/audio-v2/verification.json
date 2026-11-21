@@ -1,0 +1,92 @@
+{
+  "tracks": [
+    {
+      "id": "office-groove",
+      "duration": 61.276599,
+      "bytes": 940967,
+      "peak": -7.663,
+      "rms": -19.968,
+      "loopSeamMax": 4.343802356743254e-05,
+      "events": 618,
+      "scoreHash": "9a60cd7ea3814a5efd91b2739a34ba05b0934c258637152f2d95981c9242f656"
+    },
+    {
+      "id": "office-pressure",
+      "duration": 52.363628,
+      "bytes": 690644,
+      "peak": -8.047,
+      "rms": -19.974,
+      "loopSeamMax": 3.447126437094994e-05,
+      "events": 536,
+      "scoreHash": "05d6925b5af1261dac2530ab8c3fafaa2664ef90a60bd8b616dee1ed6f4e26bc"
+    },
+    {
+      "id": "cafe-warmth",
+      "duration": 72.0,
+      "bytes": 1041629,
+      "peak": -5.104,
+      "rms": -19.966,
+      "loopSeamMax": 6.913761171745136e-05,
+      "events": 374,
+      "scoreHash": "d69b7edd52e0a9b2bb01c1eabd989a43c7773a82e6f8579123e2ae0f8812ed96"
+    },
+    {
+      "id": "rooftop-heart",
+      "duration": 60.0,
+      "bytes": 697245,
+      "peak": -6.672,
+      "rms": -19.984,
+      "loopSeamMax": 8.354139572475106e-05,
+      "events": 295,
+      "scoreHash": "c9c3dc1e0e3109593cb7a2e909c223773ea104d8e19185b8403c5c8bc5ad3474"
+    },
+    {
+      "id": "rainy-memory",
+      "duration": 73.846145,
+      "bytes": 1224481,
+      "peak": -4.565,
+      "rms": -19.976,
+      "loopSeamMax": 0.00030809719464741647,
+      "events": 319,
+      "scoreHash": "3e14088889f05b7eacc1531eb8f853450af0f1289a003c8fbdead070bac391ae"
+    },
+    {
+      "id": "archive-unease",
+      "duration": 64.0,
+      "bytes": 1022495,
+      "peak": -7.901,
+      "rms": -22.974,
+      "loopSeamMax": 0.00011420834925957024,
+      "events": 96,
+      "scoreHash": "f6b1a96db01beda7fe576f0d3c1319cdf3fc33820292b14b4d29e2f6fa3e0cff"
+    },
+    {
+      "id": "archive-pursuit",
+      "duration": 69.230771,
+      "bytes": 920512,
+      "peak": -8.051,
+      "rms": -19.983,
+      "loopSeamMax": 0.00023741976474411786,
+      "events": 644,
+      "scoreHash": "8dbb473ebfb76c93bce8c207a5549e092d503389d74bc4f3b51cd965842aeb9e"
+    },
+    {
+      "id": "resolution-dawn",
+      "duration": 66.666667,
+      "bytes": 763935,
+      "peak": -7.327,
+      "rms": -19.969,
+      "loopSeamMax": 5.8374269428895786e-05,
+      "events": 230,
+      "scoreHash": "597853e64121289b40498edb45ff1351352b5ce5e1280aa05f8ab0eebe4e3ff7"
+    }
+  ],
+  "allChecksPassed": true,
+  "distinctAudioHashes": 8,
+  "distinctScoreHashes": 8,
+  "totalOggBytes": 7301908,
+  "totalDurationSeconds": 519.38381,
+  "paidCalls": 0,
+  "productionFilesChanged": false,
+  "humanListeningApproval": false
+}

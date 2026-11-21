@@ -1,0 +1,77 @@
+[WebServer] (node:34076) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:36212) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:18348) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\v2-ac4-boundaries.spec.ts:10:65 › agency visuals 1440 reduced=false (18.1s)
+  ok 2 tests\v2-ac4-boundaries.spec.ts:10:65 › agency visuals 1440 reduced=true (5.3s)
+  ok 3 tests\v2-ac4-boundaries.spec.ts:10:65 › agency visuals 390 reduced=false (13.9s)
+  ok 4 tests\v2-ac4-boundaries.spec.ts:10:65 › agency visuals 390 reduced=true (2.4s)
+  x  5 tests\v2-ac4-boundaries.spec.ts:55:31 › captured real replies use committed visuals 1440 (5.4s)
+(node:19684) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  6 tests\v2-ac4-boundaries.spec.ts:55:31 › captured real replies use committed visuals 390 (5.4s)
+
+
+  1) tests\v2-ac4-boundaries.spec.ts:55:31 › captured real replies use committed visuals 1440 ──────
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  locator('.action-beat')
+    Expected: "가방을 책상에 내려놓고 폰을 꺼낸다 잠깐 웃고 다시 메모장을 펼친다"
+    Received: "가방을 책상에 내려놓고 폰을 꺼낸다 · 잠깐 웃고 다시 메모장을 펼친다"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveText" locator('.action-beat') with timeout 5000ms
+      - waiting for locator('.action-beat')
+        14 × locator resolved to <p class="action-beat">가방을 책상에 내려놓고 폰을 꺼낸다 · 잠깐 웃고 다시 메모장을 펼친다</p>
+           - unexpected value "가방을 책상에 내려놓고 폰을 꺼낸다 · 잠깐 웃고 다시 메모장을 펼친다"
+
+
+      66 |   const g=state.game,pose=presentationPose(g.mode,g.narrative.pose,g.dialogue.actionBeats);
+      67 |   await expect(page.locator('.sprite')).toHaveAttribute('data-pose',pose);
+    > 68 |   await expect(page.locator('.action-beat')).toHaveText(g.dialogue.actionBeats.join(' '));
+         |                                              ^
+      69 |   await expect(page.locator('.stage')).toHaveCSS('background-image',`url("${new URL(backgroundAsset(g.narrative.location),page.url()).href}")`);
+      70 |   const screenshot=`docs/qa-screenshots/v2-ac4-boundaries/receipt-${id}-${width}.png`;
+      71 |   await page.screenshot({path:screenshot});
+        at C:\Users\gjtjw\Desktop\대화형 스토리진행\tests\v2-ac4-boundaries.spec.ts:68:46
+
+    Error Context: test-results-v2-art\v2-ac4-boundaries-captured-127c9--use-committed-visuals-1440\error-context.md
+
+  2) tests\v2-ac4-boundaries.spec.ts:55:31 › captured real replies use committed visuals 390 ───────
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  locator('.action-beat')
+    Expected: "가방을 책상에 내려놓고 폰을 꺼낸다 잠깐 웃고 다시 메모장을 펼친다"
+    Received: "가방을 책상에 내려놓고 폰을 꺼낸다 · 잠깐 웃고 다시 메모장을 펼친다"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveText" locator('.action-beat') with timeout 5000ms
+      - waiting for locator('.action-beat')
+        14 × locator resolved to <p class="action-beat">가방을 책상에 내려놓고 폰을 꺼낸다 · 잠깐 웃고 다시 메모장을 펼친다</p>
+           - unexpected value "가방을 책상에 내려놓고 폰을 꺼낸다 · 잠깐 웃고 다시 메모장을 펼친다"
+
+
+      66 |   const g=state.game,pose=presentationPose(g.mode,g.narrative.pose,g.dialogue.actionBeats);
+      67 |   await expect(page.locator('.sprite')).toHaveAttribute('data-pose',pose);
+    > 68 |   await expect(page.locator('.action-beat')).toHaveText(g.dialogue.actionBeats.join(' '));
+         |                                              ^
+      69 |   await expect(page.locator('.stage')).toHaveCSS('background-image',`url("${new URL(backgroundAsset(g.narrative.location),page.url()).href}")`);
+      70 |   const screenshot=`docs/qa-screenshots/v2-ac4-boundaries/receipt-${id}-${width}.png`;
+      71 |   await page.screenshot({path:screenshot});
+        at C:\Users\gjtjw\Desktop\대화형 스토리진행\tests\v2-ac4-boundaries.spec.ts:68:46
+
+    Error Context: test-results-v2-art\v2-ac4-boundaries-captured-1021c-s-use-committed-visuals-390\error-context.md
+
+  2 failed
+    tests\v2-ac4-boundaries.spec.ts:55:31 › captured real replies use committed visuals 1440 ───────
+    tests\v2-ac4-boundaries.spec.ts:55:31 › captured real replies use committed visuals 390 ────────
+  4 passed (54.5s)

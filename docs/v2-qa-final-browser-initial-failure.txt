@@ -1,0 +1,151 @@
+[WebServer] (node:30280) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 20 tests using 1 worker
+
+(node:24832) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\persistence.spec.ts:3:1 › AC6 failed save delivery offers state recovery without replaying a mutation (1.0s)
+  ok  2 tests\persistence.spec.ts:19:1 › AC6 unrecoverable storage displays an explicit confirmed reset path (260ms)
+  ok  3 tests\persistence.spec.ts:29:1 › AC6 reload restores all three manual slots, relationship, log and unlocked ending (1.8s)
+  ok  4 tests\persistence.spec.ts:62:1 › AC6 pending response from another timeline recovers current state (412ms)
+  ok  5 tests\persistence.spec.ts:78:1 › AC6 delivered but not displayed turn survives reload and retries once (646ms)
+  ok  6 tests\persistence.spec.ts:106:1 › AC6 conflicting stale tab recovers server state without advancing (455ms)
+  ok  7 tests\persistence.spec.ts:118:1 › v2 browser settings and explicit provider survive refresh and a new game (638ms)
+  ok  8 tests\v2-art.spec.ts:8:1 › staged provenance hashes match shipped originals (39ms)
+  x   9 tests\v2-art.spec.ts:13:79 › office 1440: real sheets, validated move, action and reduced motion (5.3s)
+(node:36368) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  10 tests\v2-art.spec.ts:13:79 › office 390: real sheets, validated move, action and reduced motion (5.4s)
+(node:25088) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  11 tests\v2-art.spec.ts:13:79 › romance 1440: real sheets, validated move, action and reduced motion (5.4s)
+(node:2372) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  12 tests\v2-art.spec.ts:13:79 › romance 390: real sheets, validated move, action and reduced motion (5.3s)
+(node:11824) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 13 tests\v2-audio.spec.ts:8:1 › all eight shipped compositions decode, match provenance and have non-silent distinct waveforms (2.6s)
+  ok 14 tests\v2-audio.spec.ts:30:49 › office: normal validated conversation path with real playback and crossfades (10.8s)
+  ok 15 tests\v2-audio.spec.ts:30:49 › romance: normal validated conversation path with real playback and crossfades (42.8s)
+  ok 16 tests\v2-audio.spec.ts:88:1 › autoplay rejection shows a visible gesture retry and recovers real playback (678ms)
+  ok 17 tests\v2-ui.spec.ts:6:2 › office: viewport 1440, free text, scroll, keyboard and settings (3.7s)
+  ok 18 tests\v2-ui.spec.ts:6:2 › romance: viewport 1440, free text, scroll, keyboard and settings (4.4s)
+  ok 19 tests\v2-ui.spec.ts:6:2 › office: viewport 390, free text, scroll, keyboard and settings (2.0s)
+  ok 20 tests\v2-ui.spec.ts:6:2 › romance: viewport 390, free text, scroll, keyboard and settings (2.3s)
+
+
+  1) tests\v2-art.spec.ts:13:79 › office 1440: real sheets, validated move, action and reduced motion 
+
+    Error: expect(locator).toHaveCSS(expected) failed
+
+    Locator:  locator('.sprite')
+    Expected: "url(\"http://127.0.0.1:3034/assets/boss-expressions.png\")"
+    Received: "url(\"http://127.0.0.1:3061/assets/boss-expressions.png\")"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCSS" locator('.sprite') with timeout 5000ms
+      - waiting for locator('.sprite')
+        14 × locator resolved to <div role="img" data-pose="neutral" data-expression="0" class="sprite office" aria-label="박도현 부장 · 서류철을 품에 든다"></div>
+           - unexpected value "url("http://127.0.0.1:3061/assets/boss-expressions.png")"
+
+
+      34 |   await page.locator('#reply').fill(index%2?'빗길로 함께 가요.':'옥상으로 함께 가요.');await page.locator('#reply').press('Enter');
+      35 |   const sprite=page.locator('.sprite');await expect(sprite).toHaveAttribute('data-pose',pose);
+    > 36 |   await expect(sprite).toHaveCSS('background-image',`url("http://127.0.0.1:3034${asset.sheet}")`);
+         |                        ^
+      37 |   await expect(page.locator('.action-beat')).toHaveText(asset.label);
+      38 |   await expect(page.locator('.stage')).toHaveCSS('background-image',`url("http://127.0.0.1:3034${backgroundAsset(g.narrative!.location)}")`);
+      39 |   await page.evaluate(async()=>{for(const e of document.querySelectorAll('.stage,.sprite')){const url=getComputedStyle(e).backgroundImage.match(/url\("?(.*?)"?\)/)?.[1];if(url){const image=new Image();image.src=url;await image.decode();}}});
+        at C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\tests\v2-art.spec.ts:36:24
+
+    Error Context: test-results-v2-final\v2-art-office-1440-real-sh-b59e2-e-action-and-reduced-motion\error-context.md
+
+  2) tests\v2-art.spec.ts:13:79 › office 390: real sheets, validated move, action and reduced motion 
+
+    Error: expect(locator).toHaveCSS(expected) failed
+
+    Locator:  locator('.sprite')
+    Expected: "url(\"http://127.0.0.1:3034/assets/boss-expressions.png\")"
+    Received: "url(\"http://127.0.0.1:3061/assets/boss-expressions.png\")"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCSS" locator('.sprite') with timeout 5000ms
+      - waiting for locator('.sprite')
+        14 × locator resolved to <div role="img" data-pose="neutral" data-expression="0" class="sprite office" aria-label="박도현 부장 · 서류철을 품에 든다"></div>
+           - unexpected value "url("http://127.0.0.1:3061/assets/boss-expressions.png")"
+
+
+      34 |   await page.locator('#reply').fill(index%2?'빗길로 함께 가요.':'옥상으로 함께 가요.');await page.locator('#reply').press('Enter');
+      35 |   const sprite=page.locator('.sprite');await expect(sprite).toHaveAttribute('data-pose',pose);
+    > 36 |   await expect(sprite).toHaveCSS('background-image',`url("http://127.0.0.1:3034${asset.sheet}")`);
+         |                        ^
+      37 |   await expect(page.locator('.action-beat')).toHaveText(asset.label);
+      38 |   await expect(page.locator('.stage')).toHaveCSS('background-image',`url("http://127.0.0.1:3034${backgroundAsset(g.narrative!.location)}")`);
+      39 |   await page.evaluate(async()=>{for(const e of document.querySelectorAll('.stage,.sprite')){const url=getComputedStyle(e).backgroundImage.match(/url\("?(.*?)"?\)/)?.[1];if(url){const image=new Image();image.src=url;await image.decode();}}});
+        at C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\tests\v2-art.spec.ts:36:24
+
+    Error Context: test-results-v2-final\v2-art-office-390-real-she-d5c52-e-action-and-reduced-motion\error-context.md
+
+  3) tests\v2-art.spec.ts:13:79 › romance 1440: real sheets, validated move, action and reduced motion 
+
+    Error: expect(locator).toHaveCSS(expected) failed
+
+    Locator:  locator('.sprite')
+    Expected: "url(\"http://127.0.0.1:3034/assets/yuna-expressions.png\")"
+    Received: "url(\"http://127.0.0.1:3061/assets/yuna-expressions.png\")"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCSS" locator('.sprite') with timeout 5000ms
+      - waiting for locator('.sprite')
+        14 × locator resolved to <div role="img" data-pose="neutral" data-expression="0" class="sprite romance" aria-label="서유나 · 편안히 바라본다"></div>
+           - unexpected value "url("http://127.0.0.1:3061/assets/yuna-expressions.png")"
+
+
+      34 |   await page.locator('#reply').fill(index%2?'빗길로 함께 가요.':'옥상으로 함께 가요.');await page.locator('#reply').press('Enter');
+      35 |   const sprite=page.locator('.sprite');await expect(sprite).toHaveAttribute('data-pose',pose);
+    > 36 |   await expect(sprite).toHaveCSS('background-image',`url("http://127.0.0.1:3034${asset.sheet}")`);
+         |                        ^
+      37 |   await expect(page.locator('.action-beat')).toHaveText(asset.label);
+      38 |   await expect(page.locator('.stage')).toHaveCSS('background-image',`url("http://127.0.0.1:3034${backgroundAsset(g.narrative!.location)}")`);
+      39 |   await page.evaluate(async()=>{for(const e of document.querySelectorAll('.stage,.sprite')){const url=getComputedStyle(e).backgroundImage.match(/url\("?(.*?)"?\)/)?.[1];if(url){const image=new Image();image.src=url;await image.decode();}}});
+        at C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\tests\v2-art.spec.ts:36:24
+
+    Error Context: test-results-v2-final\v2-art-romance-1440-real-s-fc22c-e-action-and-reduced-motion\error-context.md
+
+  4) tests\v2-art.spec.ts:13:79 › romance 390: real sheets, validated move, action and reduced motion 
+
+    Error: expect(locator).toHaveCSS(expected) failed
+
+    Locator:  locator('.sprite')
+    Expected: "url(\"http://127.0.0.1:3034/assets/yuna-expressions.png\")"
+    Received: "url(\"http://127.0.0.1:3061/assets/yuna-expressions.png\")"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCSS" locator('.sprite') with timeout 5000ms
+      - waiting for locator('.sprite')
+        14 × locator resolved to <div role="img" data-pose="neutral" data-expression="0" class="sprite romance" aria-label="서유나 · 편안히 바라본다"></div>
+           - unexpected value "url("http://127.0.0.1:3061/assets/yuna-expressions.png")"
+
+
+      34 |   await page.locator('#reply').fill(index%2?'빗길로 함께 가요.':'옥상으로 함께 가요.');await page.locator('#reply').press('Enter');
+      35 |   const sprite=page.locator('.sprite');await expect(sprite).toHaveAttribute('data-pose',pose);
+    > 36 |   await expect(sprite).toHaveCSS('background-image',`url("http://127.0.0.1:3034${asset.sheet}")`);
+         |                        ^
+      37 |   await expect(page.locator('.action-beat')).toHaveText(asset.label);
+      38 |   await expect(page.locator('.stage')).toHaveCSS('background-image',`url("http://127.0.0.1:3034${backgroundAsset(g.narrative!.location)}")`);
+      39 |   await page.evaluate(async()=>{for(const e of document.querySelectorAll('.stage,.sprite')){const url=getComputedStyle(e).backgroundImage.match(/url\("?(.*?)"?\)/)?.[1];if(url){const image=new Image();image.src=url;await image.decode();}}});
+        at C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\tests\v2-art.spec.ts:36:24
+
+    Error Context: test-results-v2-final\v2-art-romance-390-real-sh-27dff-e-action-and-reduced-motion\error-context.md
+
+  4 failed
+    tests\v2-art.spec.ts:13:79 › office 1440: real sheets, validated move, action and reduced motion 
+    tests\v2-art.spec.ts:13:79 › office 390: real sheets, validated move, action and reduced motion 
+    tests\v2-art.spec.ts:13:79 › romance 1440: real sheets, validated move, action and reduced motion 
+    tests\v2-art.spec.ts:13:79 › romance 390: real sheets, validated move, action and reduced motion 
+  16 passed (1.7m)

@@ -1,0 +1,7 @@
+{
+  "finishedAt": "2026-11-21T03:59:26.9388431Z",
+  "exitCode": 0,
+  "startedAt": "2026-11-21T03:58:43.1381372Z",
+  "log": "docs/v2-ac7-current/package-final.txt",
+  "command": "powershell -File scripts/package-local.ps1"
+}

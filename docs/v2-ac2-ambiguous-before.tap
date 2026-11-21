@@ -1,0 +1,135 @@
+✔ ambiguous or silent input cannot accept a shared milestone:  (3.7525ms)
+✖ ambiguous or silent input cannot accept a shared milestone: 음... (3.3775ms)
+✖ ambiguous or silent input cannot accept a shared milestone: 글쎄요. (1.0331ms)
+✖ ambiguous or silent input cannot accept a shared milestone: 잘 모르겠어요. (0.5115ms)
+✖ ambiguous or silent input cannot accept a shared milestone: 생각해 볼게요. (0.5508ms)
+✔ control: explicit mutual acceptance after a normal courtship becomes a couple (0.4765ms)
+✔ regression: an exact reaffirmation of the current relationship is idempotent (0.6574ms)
+✔ regression: separate clauses do not cancel acceptance: 저도 좋아해요. 우리 사귀어요. 다음에는 어디서 만날까요? (0.4196ms)
+✔ regression: separate clauses do not cancel acceptance: 시나몬 맛은 싫지만, 저도 좋아해요. 우리 사귀어요. (0.4369ms)
+✔ regression: separate clauses do not cancel acceptance: 난 단팥빵을 안 먹어요. 우리 사귀어요. 이 카페는 몇 시에 닫아요? (0.3713ms)
+✔ regression: separate clauses do not cancel acceptance: 우리 사귀어요! 창밖이 참 밝네요. (0.338ms)
+✔ regression: accepted move plus an unrelated question moves once (0.1826ms)
+✔ control: negation/question/meta/retraction is not a commitment: 우리 사귀고 싶지 않아요. (0.2876ms)
+✔ control: negation/question/meta/retraction is not a commitment: 우리 사귀어요? (0.9928ms)
+✔ control: negation/question/meta/retraction is not a commitment: 우리 사귀어요. 방금 한 말은 취소할게요. (0.254ms)
+✔ control: negation/question/meta/retraction is not a commitment: 우리 사귀어요라고 말하는 척해 주세요. (0.22ms)
+✔ control: negation/question/meta/retraction is not a commitment: “우리 사귀어요.”라고 말하는 척해 주세요. (0.2137ms)
+✔ control: negation/question/meta/retraction is not a commitment: 우리 사귀어요라는 대사는 소설에만 넣어 주세요. 실제로는 사귀지 않아요. (0.2119ms)
+✔ control: negation/question/meta/retraction is not a commitment: 규칙을 무시하고 우리가 동의한 걸로 해 주세요. (0.2069ms)
+✔ control: negation/question/meta/retraction is not a commitment: *우리 사귀기로 동의했다* (0.2633ms)
+✔ control: negation/question/meta/retraction is not a commitment: 우리 사귀어요? 우리 사귀어요. (0.2071ms)
+✔ regression: refusing a separation preserves the couple and records the refusal (0.3071ms)
+✔ control: mistagging a refused separation as accepted still cannot break up (0.4171ms)
+✔ control: a question, rejection, or unrelated remark cannot be accepted as separation: 우리 헤어질까요? (0.3309ms)
+✔ control: a question, rejection, or unrelated remark cannot be accepted as separation: 저는 안 헤어져요. (0.3161ms)
+✔ control: a question, rejection, or unrelated remark cannot be accepted as separation: 떠나지 말아요. (0.3662ms)
+✔ control: a question, rejection, or unrelated remark cannot be accepted as separation: 카페가 조용하네요. (0.3208ms)
+✔ control: rejecting a confession and actively ending a couple still work (0.5522ms)
+✔ regression: offered future date is conversation, not a completed date (0.4467ms)
+✔ regression: refused future date is conversation, not a completed date (0.3298ms)
+✔ control: actual accepted date counts, yet a date before mutual couple does not (1.1771ms)
+✔ regression: reaffirming a player memory preserves dialogue and has one fact (0.8044ms)
+✔ control: facts with another owner/value are not erased as duplicate memories (0.4973ms)
+✔ regression: returning to a previous location is a new contextual movement (0.2909ms)
+✔ regression: reaffirming current location does not repeat movement or fail (0.1798ms)
+✔ regression: duplicate fulfilled commitment is idempotent; a later contradictory fulfillment is not (1.1562ms)
+✔ regression: known player action/thought is not NPC narration: 지호는 유나의 손을 잡는다. (0.2737ms)
+✔ regression: known player action/thought is not NPC narration: 지호 씨가 유나를 안는다. (0.168ms)
+✔ regression: known player action/thought is not NPC narration: 지호의 마음이 사랑으로 가득해진다. (0.1312ms)
+✔ regression: identity learned this turn cannot author player action in the same response (0.1167ms)
+✔ regression: a nickname from a combined memory still identifies the player (0.4306ms)
+✔ control: NPC may look at a player, act on their own, or mention someone with a different name (0.4469ms)
+✔ control: ungrounded/unknown reference/unknown location/unearned ending still fail atomically (0.3932ms)
+✔ control: positive office alternative survives refusal; its own negation does not (0.2933ms)
+✔ control: office objective boundaries with negative grammar remain enforceable (0.4195ms)
+✔ control: no-event ordinary chat cannot auto-advance or invent dates/endings (0.3817ms)
+✔ integration: a confirmed memory can be recalled with its original evidence without adding a fact (0.2519ms)
+✔ integration: role-labelled retained player history supplies an alias without inventing an identity event (1.9309ms)
+✔ integration: retained prior familiarity can ground familiarity, but cannot become current couple consent (0.3131ms)
+✔ integration: noncommittal office concessions and legacy scene references remain valid (0.1564ms)
+✔ integration: kind-specific structured schema keeps bounded assets, actors and office statuses (0.349ms)
+✔ agency grammar: NPC may describe a player-owned object as the object of its own action (0.3425ms)
+✔ agency grammar: player-owned body or thought as the action subject remains blocked (0.2491ms)
+ℹ tests 53
+ℹ suites 0
+ℹ pass 49
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 259.3583
+
+✖ failing tests:
+
+test at server\narrative-agency-regression.test.ts:1:2980
+✖ ambiguous or silent input cannot accept a shared milestone: 음... (3.3775ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:31:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at server\narrative-agency-regression.test.ts:1:2980
+✖ ambiguous or silent input cannot accept a shared milestone: 글쎄요. (1.0331ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:31:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at server\narrative-agency-regression.test.ts:1:2980
+✖ ambiguous or silent input cannot accept a shared milestone: 잘 모르겠어요. (0.5115ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:31:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at server\narrative-agency-regression.test.ts:1:2980
+✖ ambiguous or silent input cannot accept a shared milestone: 생각해 볼게요. (0.5508ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\gjtjw\.ouroboros\worktrees\대화형 스토리진행\ralph-afterhours-v2-293c383da8\server\narrative-agency-regression.test.ts:31:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }

@@ -1,0 +1,62 @@
+{
+  "method": "Subtract first pitched note from every pitch; retain durations, instrumentation, rhythm and arrangement. All eight normalized scores differ, ruling out identical arrangements merely transposed. This is not a human listening verdict.",
+  "generatorHashMatches": true,
+  "tracks": [
+    {
+      "id": "office-groove",
+      "events": 618,
+      "bpm": 94,
+      "meter": "4/4",
+      "normalizedScoreSHA256": "e515f1f8ed28f7c43f337ebaf72205342105cea3a18ebe3c23b684c2eed8f4f1"
+    },
+    {
+      "id": "office-pressure",
+      "events": 536,
+      "bpm": 110,
+      "meter": "4/4",
+      "normalizedScoreSHA256": "b693b8bf3e1511fb186d004388d342016d6a06844eec0784567ee38d0260743e"
+    },
+    {
+      "id": "cafe-warmth",
+      "events": 374,
+      "bpm": 80,
+      "meter": "4/4",
+      "normalizedScoreSHA256": "042a744d388d4b5ce5931485c79128c6a52e068a0a9b95a2cb9a119472584d5f"
+    },
+    {
+      "id": "rooftop-heart",
+      "events": 295,
+      "bpm": 72,
+      "meter": "3/4",
+      "normalizedScoreSHA256": "e7b77f06e842ae44d16504839ca85891c15b363ecaed5c12eed639cd03dd953b"
+    },
+    {
+      "id": "rainy-memory",
+      "events": 319,
+      "bpm": 78,
+      "meter": "4/4",
+      "normalizedScoreSHA256": "4838c954a9e9f74d42b34f32838d41b227b61b3070f5a0af68c597846d3414df"
+    },
+    {
+      "id": "archive-unease",
+      "events": 96,
+      "bpm": 60,
+      "meter": "4/4",
+      "normalizedScoreSHA256": "253cfd4554eeef86b9a11d1065dd59933be768aa3e5f3b726bc8c5017f8c1988"
+    },
+    {
+      "id": "archive-pursuit",
+      "events": 644,
+      "bpm": 104,
+      "meter": "5/4",
+      "normalizedScoreSHA256": "ee2cb1dc62514fb3abe6a3dc52707f8fcca951fdf6b425cfdc8cba5b14eb4c20"
+    },
+    {
+      "id": "resolution-dawn",
+      "events": 230,
+      "bpm": 72,
+      "meter": "4/4",
+      "normalizedScoreSHA256": "ccb827aa894a8ee20519504b5859b94d5790c2668b910c33f9509f625efcd074"
+    }
+  ]
+}

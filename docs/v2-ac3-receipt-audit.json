@@ -1,0 +1,450 @@
+{
+  "scope": "Captured replies replayed independently against their historical starting saves, not new generation or a continuous current-code conversation. Historical date counters remain readable; they do not prove current scene lifecycle.",
+  "hashes": {
+    "server/narrative.ts": "a5abec4c7ef351c548048887b82cf403295ac35eb7e36028730aef56a85709ef",
+    "server/provider.ts": "d42f3f53111f385b981dc522188f8bdef24e7e925ab361a7d1cf71d41c9718b4",
+    "server/storage.ts": "6d80fdec35b99205f30d5f1270060b4a00bee8520d4258ec0c5afea591e8d9da",
+    "server/dialogue.ts": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+    "server/v2-ac3-lifecycle.test.ts": "8f87cdbb2cda3bcd4e03fbbabde59f58102e9fb820363f0cebc9e4615e2e2e44",
+    "tests/v2-ac3-receipt-audit.ts": "b5cc1d2b3d1320388f71a76c977a27db615be2b369a4737a129df55fb45473d0"
+  },
+  "paidAttempts": 32,
+  "additionalCalls": 0,
+  "rows": [
+    {
+      "id": 1,
+      "file": "docs/v2-live-01.json",
+      "mode": "office",
+      "mission": "clockout",
+      "originalCommitted": false,
+      "replay": {
+        "status": "rejected",
+        "error": "사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요."
+      }
+    },
+    {
+      "id": 2,
+      "file": "docs/v2-live-02.json",
+      "mode": "office",
+      "mission": "clockout",
+      "originalCommitted": false,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "office"
+      }
+    },
+    {
+      "id": 3,
+      "file": "docs/v2-live-03.json",
+      "mode": "office",
+      "mission": "clockout",
+      "originalCommitted": false,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "office"
+      }
+    },
+    {
+      "id": 4,
+      "file": "docs/v2-live-04.json",
+      "mode": "office",
+      "mission": "clockout",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "office"
+      }
+    },
+    {
+      "id": 5,
+      "file": "docs/v2-live-05.json",
+      "mode": "office",
+      "mission": "clockout",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "office"
+      }
+    },
+    {
+      "id": 6,
+      "file": "docs/v2-live-06.json",
+      "mode": "office",
+      "mission": "clockout",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "office"
+      }
+    },
+    {
+      "id": 7,
+      "file": "docs/v2-live-07.json",
+      "mode": "office",
+      "mission": "clockout",
+      "originalCommitted": false,
+      "replay": {
+        "status": "rejected",
+        "error": "사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요."
+      }
+    },
+    {
+      "id": 8,
+      "file": "docs/v2-live-08.json",
+      "mode": "office",
+      "mission": "clockout",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "office"
+      }
+    },
+    {
+      "id": 9,
+      "file": "docs/v2-live-09.json",
+      "mode": "office",
+      "mission": "clockout",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "office"
+      }
+    },
+    {
+      "id": 10,
+      "file": "docs/v2-live-10.json",
+      "mode": "romance",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "cafe"
+      }
+    },
+    {
+      "id": 11,
+      "file": "docs/v2-live-11.json",
+      "mode": "romance",
+      "originalCommitted": false,
+      "replay": {
+        "status": "rejected",
+        "error": "사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요."
+      }
+    },
+    {
+      "id": 12,
+      "file": "docs/v2-live-12.json",
+      "mode": "romance",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "cafe"
+      }
+    },
+    {
+      "id": 13,
+      "file": "docs/v2-live-13.json",
+      "mode": "romance",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "cafe"
+      }
+    },
+    {
+      "id": 14,
+      "file": "docs/v2-live-14.json",
+      "mode": "romance",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "cafe"
+      }
+    },
+    {
+      "id": 15,
+      "file": "docs/v2-live-15.json",
+      "mode": "romance",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "cafe"
+      }
+    },
+    {
+      "id": 16,
+      "file": "docs/v2-live-16.json",
+      "mode": "romance",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "cafe"
+      }
+    },
+    {
+      "id": 17,
+      "file": "docs/v2-live-17.json",
+      "mode": "romance",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "cafe"
+      }
+    },
+    {
+      "id": 18,
+      "file": "docs/v2-live-18.json",
+      "mode": "romance",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "cafe"
+      }
+    },
+    {
+      "id": 19,
+      "file": "docs/v2-live-19.json",
+      "mode": "romance",
+      "originalCommitted": false,
+      "replay": {
+        "status": "rejected",
+        "error": "사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요."
+      }
+    },
+    {
+      "id": 20,
+      "file": "docs/v2-live-20.json",
+      "mode": "romance",
+      "originalCommitted": false,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "cafe"
+      }
+    },
+    {
+      "id": 21,
+      "file": "docs/v2-live-21.json",
+      "mode": "romance",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "cafe"
+      }
+    },
+    {
+      "id": 22,
+      "file": "docs/v2-live-22.json",
+      "mode": "romance",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "cafe"
+      }
+    },
+    {
+      "id": 23,
+      "file": "docs/v2-live-23.json",
+      "mode": "romance",
+      "originalCommitted": false,
+      "replay": {
+        "status": "rejected",
+        "error": "사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요."
+      }
+    },
+    {
+      "id": 24,
+      "file": "docs/v2-live-24.json",
+      "mode": "romance",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "cafe"
+      }
+    },
+    {
+      "id": 25,
+      "file": "docs/v2-live-25.json",
+      "mode": "romance",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "cafe"
+      }
+    },
+    {
+      "id": 26,
+      "file": "docs/v2-live-26.json",
+      "mode": "romance",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "cafe"
+      }
+    },
+    {
+      "id": 27,
+      "file": "docs/v2-live-27.json",
+      "mode": "romance",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "cafe"
+      }
+    },
+    {
+      "id": 28,
+      "file": "docs/v2-live-28.json",
+      "mode": "romance",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "cafe"
+      }
+    },
+    {
+      "id": 29,
+      "file": "docs/v2-live-29.json",
+      "mode": "romance",
+      "originalCommitted": true,
+      "originalDates": 1,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "rooftop"
+      }
+    },
+    {
+      "id": 30,
+      "file": "docs/v2-live-30.json",
+      "mode": "office",
+      "mission": "clockout",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": "office-clockout-success",
+        "location": "office"
+      }
+    },
+    {
+      "id": 31,
+      "file": "docs/v2-live-31.json",
+      "mode": "romance",
+      "originalCommitted": true,
+      "originalDates": 1,
+      "replay": {
+        "status": "committed",
+        "dates": 1,
+        "activeDate": null,
+        "ending": null,
+        "location": "rooftop"
+      }
+    },
+    {
+      "id": 32,
+      "file": "docs/v2-live-32.json",
+      "mode": "romance",
+      "originalCommitted": true,
+      "originalDates": 0,
+      "replay": {
+        "status": "committed",
+        "dates": 0,
+        "activeDate": null,
+        "ending": null,
+        "location": "cafe"
+      }
+    }
+  ]
+}

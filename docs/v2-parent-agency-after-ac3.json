@@ -1,0 +1,75 @@
+{
+  "createdAt": "2026-11-21T02:58:43.771Z",
+  "sourceRoot": "C:/Users/gjtjw/.ouroboros/worktrees/대화형 스토리진행/ralph-afterhours-v2-293c383da8",
+  "beforeHash": "b22323aa2cf5fe2d23729e4b026c9982d03865ad07964051f4a3d383821361b1",
+  "afterHash": "b22323aa2cf5fe2d23729e4b026c9982d03865ad07964051f4a3d383821361b1",
+  "sourceUnchangedDuringProbe": true,
+  "method": "Pure in-memory reducer/schema calls, no provider/network/API/test suite or production writes.",
+  "observation": {
+    "schemaValid": true,
+    "returned": true,
+    "input": "오늘 카페가 조용하네요.",
+    "actionBeats": [
+      "지호는 유나의 손을 잡는다."
+    ],
+    "expected": "No player hand-holding was stated by the user; no such action should be committed.",
+    "before": {
+      "format": 2,
+      "turn": 1,
+      "location": "cafe",
+      "relationship": "strangers",
+      "dates": 0,
+      "events": [
+        {
+          "kind": "detail",
+          "subject": "player",
+          "text": "플레이어의 이름은 지호다.",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "저는 지호예요.",
+          "value": "name",
+          "id": "1f6d337c-a8d1-4c2c-b9ea-8378263af1dd",
+          "turn": 1
+        }
+      ],
+      "pose": "listen",
+      "emotion": "차분함",
+      "musicMood": "cafe-warmth"
+    },
+    "after": {
+      "format": 2,
+      "turn": 2,
+      "location": "cafe",
+      "relationship": "strangers",
+      "dates": 0,
+      "events": [
+        {
+          "kind": "detail",
+          "subject": "player",
+          "text": "플레이어의 이름은 지호다.",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "저는 지호예요.",
+          "value": "name",
+          "id": "1f6d337c-a8d1-4c2c-b9ea-8378263af1dd",
+          "turn": 1
+        },
+        {
+          "id": "f7514919-b783-4507-91e2-6373c00d5eb3",
+          "turn": 2,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "지호는 유나의 손을 잡는다.",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "pose": "listen",
+      "emotion": "차분함",
+      "musicMood": "cafe-warmth"
+    },
+    "unsupportedPlayerActionCommitted": true
+  }
+}

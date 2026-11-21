@@ -1,0 +1,105 @@
+{
+  "scope": "Mock model replies through real reconcile and UI; no paid API calls",
+  "distinctCells": 12,
+  "evidence": [
+    {
+      "pose": "neutral",
+      "sheet": "/assets/boss-expressions.png",
+      "column": 0,
+      "label": "서류철을 품에 든다",
+      "location": "rooftop"
+    },
+    {
+      "pose": "firm",
+      "sheet": "/assets/boss-expressions.png",
+      "column": 1,
+      "label": "팔짱을 끼고 반론을 기다린다",
+      "location": "rainstreet"
+    },
+    {
+      "pose": "turn",
+      "sheet": "/assets/boss-expressions.png",
+      "column": 2,
+      "label": "안경을 고쳐 쓴다",
+      "location": "rainstreet"
+    },
+    {
+      "pose": "smile",
+      "sheet": "/assets/boss-expressions.png",
+      "column": 3,
+      "label": "작게 웃으며 손을 편다",
+      "location": "rainstreet"
+    },
+    {
+      "pose": "listen",
+      "sheet": "/assets/v2/boss-actions-a.png",
+      "column": 0,
+      "label": "팔을 모으고 귀를 기울인다",
+      "location": "rainstreet"
+    },
+    {
+      "pose": "laugh",
+      "sheet": "/assets/v2/boss-actions-a.png",
+      "column": 1,
+      "label": "허리에 손을 얹고 웃는다",
+      "location": "rainstreet"
+    },
+    {
+      "pose": "shy",
+      "sheet": "/assets/v2/boss-actions-b.png",
+      "column": 2,
+      "label": "머쓱하게 이마를 짚는다",
+      "location": "rainstreet"
+    },
+    {
+      "pose": "watch",
+      "sheet": "/assets/v2/boss-actions-a.png",
+      "column": 2,
+      "label": "손목시계를 가리킨다",
+      "location": "rainstreet"
+    },
+    {
+      "pose": "intense",
+      "sheet": "/assets/boss-expressions.png",
+      "column": 1,
+      "label": "팔짱을 끼고 단호하게 바라본다",
+      "location": "rainstreet"
+    },
+    {
+      "pose": "offer",
+      "sheet": "/assets/v2/boss-actions-a.png",
+      "column": 3,
+      "label": "서류를 펼쳐 보인다",
+      "location": "rainstreet"
+    },
+    {
+      "pose": "thinking",
+      "sheet": "/assets/v2/boss-actions-b.png",
+      "column": 0,
+      "label": "턱에 손을 대고 생각한다",
+      "location": "rainstreet"
+    },
+    {
+      "pose": "surprised",
+      "sheet": "/assets/v2/boss-actions-b.png",
+      "column": 1,
+      "label": "놀라 안경에 손을 댄다",
+      "location": "rainstreet"
+    },
+    {
+      "pose": "concern",
+      "sheet": "/assets/v2/boss-actions-b.png",
+      "column": 2,
+      "label": "지친 듯 이마를 짚는다",
+      "location": "rainstreet"
+    },
+    {
+      "pose": "farewell",
+      "sheet": "/assets/v2/boss-actions-b.png",
+      "column": 3,
+      "label": "손바닥을 펴며 양보한다",
+      "location": "rainstreet"
+    }
+  ],
+  "errors": []
+}

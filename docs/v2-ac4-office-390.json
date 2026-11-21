@@ -1,0 +1,575 @@
+{
+  "scope": "Mock model replies through real reconcile and UI; no paid API calls",
+  "distinctCells": 12,
+  "evidence": [
+    {
+      "pose": "neutral",
+      "sheet": "/assets/boss-expressions.png",
+      "column": 0,
+      "label": "서류철을 품에 든다",
+      "sourceRegion": {
+        "x": 0,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/office-390-neutral.png",
+      "location": "rooftop",
+      "committedEvents": [
+        {
+          "kind": "move",
+          "subject": "mutual",
+          "text": "함께 rooftop에서 대화를 이어간다.",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "옥상으로 함께 가요.",
+          "value": "rooftop",
+          "id": "232b160d-7721-4440-bec9-2ea1555367ea",
+          "turn": 1
+        },
+        {
+          "id": "0de6829e-6c4d-4fd2-be71-2098bb89995d",
+          "turn": 1,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "서류철을 품에 든다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 49.4140625,
+        "y": 118.15625,
+        "width": 291.171875,
+        "height": 388.234375
+      },
+      "panel": {
+        "x": 10,
+        "y": 506.171875,
+        "width": 370,
+        "height": 303.828125
+      }
+    },
+    {
+      "pose": "firm",
+      "sheet": "/assets/boss-expressions.png",
+      "column": 1,
+      "label": "팔짱을 끼고 반론을 기다린다",
+      "sourceRegion": {
+        "x": 543,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/office-390-firm.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "kind": "move",
+          "subject": "mutual",
+          "text": "함께 rainstreet에서 대화를 이어간다.",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "빗길로 함께 가요.",
+          "value": "rainstreet",
+          "id": "93154d3e-54b9-49f4-b966-41a559a730cb",
+          "turn": 2
+        },
+        {
+          "id": "77626b57-62e3-4495-93cd-516ee6ee99af",
+          "turn": 2,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "팔짱을 끼고 반론을 기다린다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 49.4140625,
+        "y": 118.15625,
+        "width": 291.171875,
+        "height": 388.234375
+      },
+      "panel": {
+        "x": 10,
+        "y": 506.171875,
+        "width": 370,
+        "height": 303.828125
+      }
+    },
+    {
+      "pose": "turn",
+      "sheet": "/assets/boss-expressions.png",
+      "column": 2,
+      "label": "안경을 고쳐 쓴다",
+      "sourceRegion": {
+        "x": 1086,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/office-390-turn.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "9584fb23-3623-4c53-9189-99ad4a2d6288",
+          "turn": 3,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "안경을 고쳐 쓴다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 49.4140625,
+        "y": 118.15625,
+        "width": 291.171875,
+        "height": 388.234375
+      },
+      "panel": {
+        "x": 10,
+        "y": 506.171875,
+        "width": 370,
+        "height": 303.828125
+      }
+    },
+    {
+      "pose": "smile",
+      "sheet": "/assets/boss-expressions.png",
+      "column": 3,
+      "label": "작게 웃으며 손을 편다",
+      "sourceRegion": {
+        "x": 1629,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/office-390-smile.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "38b515f7-0f00-4c31-8647-e9150df563c5",
+          "turn": 4,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "작게 웃으며 손을 편다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 49.4140625,
+        "y": 118.15625,
+        "width": 291.171875,
+        "height": 388.234375
+      },
+      "panel": {
+        "x": 10,
+        "y": 506.171875,
+        "width": 370,
+        "height": 303.828125
+      }
+    },
+    {
+      "pose": "listen",
+      "sheet": "/assets/v2/boss-actions-a.png",
+      "column": 0,
+      "label": "팔을 모으고 귀를 기울인다",
+      "sourceRegion": {
+        "x": 0,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/office-390-listen.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "2d0ad822-b15b-4251-af13-436f13eb11b0",
+          "turn": 5,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "팔을 모으고 귀를 기울인다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 31.943756103515625,
+        "y": 94.08572387695312,
+        "width": 326.11248779296875,
+        "height": 434.8224792480469
+      },
+      "panel": {
+        "x": 10,
+        "y": 506.171875,
+        "width": 370,
+        "height": 303.828125
+      }
+    },
+    {
+      "pose": "laugh",
+      "sheet": "/assets/v2/boss-actions-a.png",
+      "column": 1,
+      "label": "허리에 손을 얹고 웃는다",
+      "sourceRegion": {
+        "x": 543,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/office-390-laugh.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "a70a6645-f78e-434f-8d1f-268ff3203cb3",
+          "turn": 6,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "허리에 손을 얹고 웃는다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 31.943756103515625,
+        "y": 94.08572387695312,
+        "width": 326.11248779296875,
+        "height": 434.8224792480469
+      },
+      "panel": {
+        "x": 10,
+        "y": 506.171875,
+        "width": 370,
+        "height": 303.828125
+      }
+    },
+    {
+      "pose": "shy",
+      "sheet": "/assets/v2/boss-actions-b.png",
+      "column": 2,
+      "label": "머쓱하게 이마를 짚는다",
+      "sourceRegion": {
+        "x": 1086,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/office-390-shy.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "46f9bec3-779b-4554-8798-52fc5f6cf2df",
+          "turn": 7,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "머쓱하게 이마를 짚는다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 49.4140625,
+        "y": 118.15625,
+        "width": 291.171875,
+        "height": 388.234375
+      },
+      "panel": {
+        "x": 10,
+        "y": 506.171875,
+        "width": 370,
+        "height": 303.828125
+      }
+    },
+    {
+      "pose": "watch",
+      "sheet": "/assets/v2/boss-actions-a.png",
+      "column": 2,
+      "label": "손목시계를 가리킨다",
+      "sourceRegion": {
+        "x": 1086,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/office-390-watch.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "8b44da82-08f6-4932-a6c9-375f3c565c06",
+          "turn": 8,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "손목시계를 가리킨다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 31.943756103515625,
+        "y": 94.08572387695312,
+        "width": 326.11248779296875,
+        "height": 434.8224792480469
+      },
+      "panel": {
+        "x": 10,
+        "y": 506.171875,
+        "width": 370,
+        "height": 303.828125
+      }
+    },
+    {
+      "pose": "intense",
+      "sheet": "/assets/boss-expressions.png",
+      "column": 1,
+      "label": "팔짱을 끼고 단호하게 바라본다",
+      "sourceRegion": {
+        "x": 543,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/office-390-intense.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "d6b8bd46-912e-4107-a6f0-2dd26162b909",
+          "turn": 9,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "팔짱을 끼고 단호하게 바라본다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 49.4140625,
+        "y": 118.15625,
+        "width": 291.171875,
+        "height": 388.234375
+      },
+      "panel": {
+        "x": 10,
+        "y": 506.171875,
+        "width": 370,
+        "height": 303.828125
+      }
+    },
+    {
+      "pose": "offer",
+      "sheet": "/assets/v2/boss-actions-a.png",
+      "column": 3,
+      "label": "서류를 펼쳐 보인다",
+      "sourceRegion": {
+        "x": 1629,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/office-390-offer.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "fb39cce7-e624-4566-91c3-b31a7c79eb75",
+          "turn": 10,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "서류를 펼쳐 보인다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 31.943756103515625,
+        "y": 94.08572387695312,
+        "width": 326.11248779296875,
+        "height": 434.8224792480469
+      },
+      "panel": {
+        "x": 10,
+        "y": 506.171875,
+        "width": 370,
+        "height": 303.828125
+      }
+    },
+    {
+      "pose": "thinking",
+      "sheet": "/assets/v2/boss-actions-b.png",
+      "column": 0,
+      "label": "턱에 손을 대고 생각한다",
+      "sourceRegion": {
+        "x": 0,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/office-390-thinking.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "83c8f208-e572-4d2f-b084-82ff9fbf87b6",
+          "turn": 11,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "턱에 손을 대고 생각한다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 49.4140625,
+        "y": 118.15625,
+        "width": 291.171875,
+        "height": 388.234375
+      },
+      "panel": {
+        "x": 10,
+        "y": 506.171875,
+        "width": 370,
+        "height": 303.828125
+      }
+    },
+    {
+      "pose": "surprised",
+      "sheet": "/assets/v2/boss-actions-b.png",
+      "column": 1,
+      "label": "놀라 안경에 손을 댄다",
+      "sourceRegion": {
+        "x": 543,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/office-390-surprised.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "2302fb05-0eaf-46b8-9cd8-ed59d0b9ae1c",
+          "turn": 12,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "놀라 안경에 손을 댄다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 49.4140625,
+        "y": 118.15625,
+        "width": 291.171875,
+        "height": 388.234375
+      },
+      "panel": {
+        "x": 10,
+        "y": 506.171875,
+        "width": 370,
+        "height": 303.828125
+      }
+    },
+    {
+      "pose": "concern",
+      "sheet": "/assets/v2/boss-actions-b.png",
+      "column": 2,
+      "label": "지친 듯 이마를 짚는다",
+      "sourceRegion": {
+        "x": 1086,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/office-390-concern.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "4c38899a-72aa-4779-8224-0b9bdb7d0248",
+          "turn": 13,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "지친 듯 이마를 짚는다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 49.4140625,
+        "y": 118.15625,
+        "width": 291.171875,
+        "height": 388.234375
+      },
+      "panel": {
+        "x": 10,
+        "y": 506.171875,
+        "width": 370,
+        "height": 303.828125
+      }
+    },
+    {
+      "pose": "farewell",
+      "sheet": "/assets/v2/boss-actions-b.png",
+      "column": 3,
+      "label": "손바닥을 펴며 양보한다",
+      "sourceRegion": {
+        "x": 1629,
+        "y": 0,
+        "width": 543,
+        "height": 724
+      },
+      "screenshot": "docs/qa-screenshots/v2-ac4-recheck/office-390-farewell.png",
+      "location": "rainstreet",
+      "committedEvents": [
+        {
+          "id": "0a4fbe3b-e39b-4a5e-9343-72a060d7f9c9",
+          "turn": 14,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "손바닥을 펴며 양보한다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ],
+      "bounds": {
+        "x": 49.4140625,
+        "y": 118.15625,
+        "width": 291.171875,
+        "height": 388.234375
+      },
+      "panel": {
+        "x": 10,
+        "y": 506.171875,
+        "width": 370,
+        "height": 303.828125
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,381 @@
+{
+  "createdDate": "2026-11-21",
+  "provenance": "Original project-bound illustrations generated with built-in image_gen, using only this project's original assets as identity/style references. No third-party character or art copied.",
+  "spriteLayout": "Four equal-width columns, one row, 0-based left to right. Keep original PNG alpha and crop individual cells via CSS at runtime.",
+  "assets": [
+    {
+      "file": "yuna-actions-a.png",
+      "source": "C:/Users/gjtjw/.codex/generated_images/01a1fbeb-add6-7020-ae74-a157612e4d63/exec-b87fd3c4-e3ab-4c42-b734-fd1cac117bbb.png",
+      "prompt": "Use case: identity-preserve. Production asset for an ORIGINAL Korean 2D visual novel: one horizontal TRANSPARENT PNG sprite sheet with FOUR equally sized columns in ONE row. Input image is identity and rendering reference only: preserve exactly the same adult woman Seo Yuna age 27, mauve shoulder-length wavy hair, silver crescent hair clip, warm mauve eyes, lavender dress, cream knit cardigan, delicate silver pendant, mature elegant anime illustration and soft detailed shading. Each of the four figures is the SAME character at equal scale, full head to mid-thigh, facing the viewer in 3/4 frontal composition, all heads at same height, all hem/bottoms at same height. Every figure wholly contained within its own quarter with transparent margins at left/right/top, no hands crossing between columns. FOUR different clearly readable poses left to right: 1 attentive listening, head tilted slightly, one open hand cupped near her ear; 2 warm spontaneous laugh with eyes softly closed and hand near mouth; 3 bashful, looking slightly aside with flushed cheeks and hands clasped low in front; 4 gently offers a single over-ear headphone earcup toward viewer, relaxed warm smile. Preserve facial identity, outfit colors and cardigan details. No text, labels, grid lines, backgrounds, drop shadows, floor, props except the fourth pose's headphones. Transparent means true alpha, no checkerboard painting. Keep clean separation between the four cells. Wide 3:1 composition, high resolution, polished commercial visual novel character art.",
+      "columns": 4,
+      "poses": [
+        "listen",
+        "laugh",
+        "bashful",
+        "offer-headphone"
+      ],
+      "reference": "public/assets/yuna-expressions.png",
+      "generator": "built-in image_gen",
+      "transparent": true,
+      "dimensions": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "bytes": 1723819,
+      "sha256": "ad4a35ffb0070f3ba704f389c7d7ee84a03e7563247972ca773053b7ac6d5c6c",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "cellWidth": 543,
+      "cells": [
+        {
+          "index": 0,
+          "pose": "listen",
+          "opaqueBoundingBox": [
+            94,
+            10,
+            469,
+            724
+          ],
+          "leftEdgeOpaquePixels": 0,
+          "rightEdgeOpaquePixels": 0
+        },
+        {
+          "index": 1,
+          "pose": "laugh",
+          "opaqueBoundingBox": [
+            98,
+            5,
+            465,
+            724
+          ],
+          "leftEdgeOpaquePixels": 0,
+          "rightEdgeOpaquePixels": 0
+        },
+        {
+          "index": 2,
+          "pose": "bashful",
+          "opaqueBoundingBox": [
+            100,
+            9,
+            443,
+            724
+          ],
+          "leftEdgeOpaquePixels": 0,
+          "rightEdgeOpaquePixels": 0
+        },
+        {
+          "index": 3,
+          "pose": "offer-headphone",
+          "opaqueBoundingBox": [
+            90,
+            6,
+            460,
+            724
+          ],
+          "leftEdgeOpaquePixels": 0,
+          "rightEdgeOpaquePixels": 0
+        }
+      ],
+      "visuallyInspected": true,
+      "visualReview": "Identity/style consistent with source. Four readable actions in separate cells, no labels or UI, preserved alpha."
+    },
+    {
+      "file": "yuna-actions-b.png",
+      "source": "C:/Users/gjtjw/.codex/generated_images/01a1fbeb-add6-7020-ae74-a157612e4d63/exec-e1e33eb7-76c1-4d73-960f-7797182b9478.png",
+      "prompt": "Use case: identity-preserve. ORIGINAL Korean 2D visual novel game sprite asset. Input image is identity/rendering reference for adult Seo Yuna age 27: same mauve shoulder-length wavy hair, silver crescent clip, warm mauve eyes, lavender dress, cream knit cardigan, tiny silver pendant. Create ONE wide 3:1 TRANSPARENT PNG sheet of FOUR equally sized columns in ONE row, same character shown four times, same consistent front three-quarter viewpoint and scale. Full head including all hair, shoulders and both hands visible down to mid-thigh. Leave visible transparent breathing room above every head and beside every figure; each figure entirely within its quarter, no overlaps. LEFT TO RIGHT four clear emotionally distinct action poses: 1 playful knowing smile, one index finger raised near chest as if teasing a joke, other arm relaxed; 2 distressed and vulnerable, eyebrows drawn slightly together, both hands cradling a small portable audio recorder at her sternum; 3 quietly possessive intense eye contact, body leaning slightly forward, one hand gripping her own cardigan edge, controlled almost-smile, subtle psychological thriller without monstrous anatomy; 4 honest resolve and gentle sadness, holding an ordinary small audio cassette in an open palm toward viewer, other hand resting over heart. Refined adult anime visual-novel illustration with soft detailed shaded fabrics, careful anatomy and expressive faces matching reference. No text/labels/grid/background/drop shadow/floor; genuine alpha transparency, do not paint checkerboard. Keep all heads at same level with enough top margin, consistent bottom baseline; props contained within each cell.",
+      "columns": 4,
+      "poses": [
+        "tease",
+        "distress",
+        "possessive",
+        "resolve"
+      ],
+      "reference": "public/assets/yuna-expressions.png",
+      "generator": "built-in image_gen",
+      "transparent": true,
+      "dimensions": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "bytes": 1723201,
+      "sha256": "b14c4daa745797c3995eb961f446c0d9b45751744430248d95580b6755e4f049",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "cellWidth": 543,
+      "cells": [
+        {
+          "index": 0,
+          "pose": "tease",
+          "opaqueBoundingBox": [
+            109,
+            15,
+            483,
+            724
+          ],
+          "leftEdgeOpaquePixels": 0,
+          "rightEdgeOpaquePixels": 0
+        },
+        {
+          "index": 1,
+          "pose": "distress",
+          "opaqueBoundingBox": [
+            112,
+            14,
+            455,
+            724
+          ],
+          "leftEdgeOpaquePixels": 0,
+          "rightEdgeOpaquePixels": 0
+        },
+        {
+          "index": 2,
+          "pose": "possessive",
+          "opaqueBoundingBox": [
+            101,
+            23,
+            450,
+            724
+          ],
+          "leftEdgeOpaquePixels": 0,
+          "rightEdgeOpaquePixels": 0
+        },
+        {
+          "index": 3,
+          "pose": "resolve",
+          "opaqueBoundingBox": [
+            91,
+            14,
+            476,
+            724
+          ],
+          "leftEdgeOpaquePixels": 0,
+          "rightEdgeOpaquePixels": 0
+        }
+      ],
+      "visuallyInspected": true,
+      "visualReview": "Identity/style consistent with source. Four readable actions in separate cells, no labels or UI, preserved alpha."
+    },
+    {
+      "file": "boss-actions-a.png",
+      "source": "C:/Users/gjtjw/.codex/generated_images/01a1fbeb-add6-7020-ae74-a157612e4d63/exec-f7545f75-eadf-4de8-815f-23033645c726.png",
+      "prompt": "Edit this exact transparent 4-pose original character sprite sheet ONLY to fix sprite-sheet spacing and size. Preserve the same man, faces, poses, clothing, props, linework, shading, and four-column order (arms crossed / amused hand on waist / pointing at watch / presenting paper). The second figure's left elbow currently spills outside its quarter. Make all FOUR figures slightly narrower/smaller, about 85 percent of current scale, equally scaled, centered at exactly 12.5%, 37.5%, 62.5%, 87.5% of image width. Ensure each complete figure including both hands is wholly INSIDE its own exact equal-width quarter with at least 5% of that cell width of completely transparent space on BOTH sides. All heads aligned at 8% image height with transparent margin above hair; all mid-thigh cutoffs aligned near bottom, no head or hand cutoffs. Keep one row of four full head-to-mid-thigh characters on a wide 3:1 transparent sheet. Do NOT alter character identity or gestures, add text, grid lines, background, border, shadow, or checkerboard. True alpha transparency outside figures.",
+      "columns": 4,
+      "poses": [
+        "listen",
+        "amused",
+        "watch",
+        "document"
+      ],
+      "reference": ".ralph/v2-media/boss-actions-a-draft.png",
+      "generator": "built-in image_gen",
+      "transparent": true,
+      "dimensions": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "bytes": 1127544,
+      "sha256": "18176790fe162b6b65519c50a89dc9fc4cf5ab571a8f819204b6074bb9d12f40",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "cellWidth": 543,
+      "cells": [
+        {
+          "index": 0,
+          "pose": "listen",
+          "opaqueBoundingBox": [
+            127,
+            60,
+            445,
+            687
+          ],
+          "leftEdgeOpaquePixels": 0,
+          "rightEdgeOpaquePixels": 0
+        },
+        {
+          "index": 1,
+          "pose": "amused",
+          "opaqueBoundingBox": [
+            55,
+            61,
+            457,
+            687
+          ],
+          "leftEdgeOpaquePixels": 0,
+          "rightEdgeOpaquePixels": 0
+        },
+        {
+          "index": 2,
+          "pose": "watch",
+          "opaqueBoundingBox": [
+            86,
+            61,
+            462,
+            687
+          ],
+          "leftEdgeOpaquePixels": 0,
+          "rightEdgeOpaquePixels": 0
+        },
+        {
+          "index": 3,
+          "pose": "document",
+          "opaqueBoundingBox": [
+            82,
+            58,
+            462,
+            687
+          ],
+          "leftEdgeOpaquePixels": 0,
+          "rightEdgeOpaquePixels": 0
+        }
+      ],
+      "visuallyInspected": true,
+      "visualReview": "Identity/style consistent with source. Four readable actions in separate cells, no labels or UI, preserved alpha.",
+      "revisionHistory": [
+        {
+          "source": "C:/Users/gjtjw/.codex/generated_images/01a1fbeb-add6-7020-ae74-a157612e4d63/exec-7a4e5094-6ebe-45cc-bda4-d3617d309991.png",
+          "prompt": "Use case: identity-preserve. Production sprite sheet for ORIGINAL Korean 2D visual novel. Match adult office manager Park Dohyun age 46 in supplied reference: same short swept dark charcoal hair with subtle gray, thick eyebrows, rectangular thin dark glasses, white rolled-sleeve business shirt, dark slate tailored waistcoat and trousers, loose burgundy tie, clipped staff badge, steel wristwatch, mature angular face and dry humor. Create ONE horizontal 3:1 TRANSPARENT PNG with FOUR equal-width columns, one row, same figure same scale/front three-quarter perspective, full head through mid-thigh. Heads and bottom baseline aligned, generous transparent top and side margins, each pose entirely within own quarter, no intercell overlap. Left to right poses: 1 calmly listening arms folded, attentive neutral eyebrows, closed mouth; 2 amused relaxed smile, one hand on his waist, other loosely down; 3 firm businesslike expression, holds watch-bearing wrist at chest and points at wristwatch with opposite index finger; 4 presents one pale paper document toward viewer with an open supporting hand, matter-of-fact expression. All heads, hair and hands fully visible. Same polished mature anime illustration, detailed clothing shadows, natural anatomically correct hands. No words on document or badge, no labels, text, grid, background, floor, drop shadows; genuine alpha not checkerboard. Character identity/outfit must stay consistent with original reference.",
+          "status": "rejected for cross-cell elbow",
+          "draftFile": "boss-actions-a-draft.png"
+        }
+      ],
+      "revisionReason": "Second pose elbow crossed first 543px cell boundary in first generated sheet. Revised with true transparent side margins."
+    },
+    {
+      "file": "boss-actions-b.png",
+      "source": "C:/Users/gjtjw/.codex/generated_images/01a1fbeb-add6-7020-ae74-a157612e4d63/exec-42a27f1f-2641-458e-ba7a-a6b29fa4b3eb.png",
+      "prompt": "Use case: identity-preserve. ORIGINAL premium Korean visual novel production character art. Create ONE horizontal 3:1 TRANSPARENT PNG sprite sheet, FOUR equal-width columns in ONE row. Input reference shows the exact adult office manager Park Dohyun age 46 to preserve: swept dark charcoal hair touched gray, rectangular glasses, strong eyebrows, white rolled-sleeve shirt, dark slate waistcoat and trousers, loose burgundy tie, staff badge, wristwatch. Preserve his mature face, proportions and painterly anime rendering. Each figure is centered completely within own quarter, equal scale, aligned head height and mid-thigh baseline. Visible transparent margins above ALL hair and alongside every hand, no overlap between cells. LEFT TO RIGHT: 1 thoughtful, slight frown, hand touching chin and other forearm supporting elbow; 2 startled, eyebrows raised and lips parted, fingers adjusting glasses at temple, other hand half-raised; 3 tired, eyes closed, head slightly bowed with one hand lightly pressing forehead and other arm hanging relaxed; 4 conceding with a faint rueful smile and one open palm toward viewer, body relaxed, other hand resting on waist. Clear natural hand anatomy and expressive posture, enough room for all gestures. Entire head and both hands visible. No text/labels/grid lines, no surroundings/floor/drop shadow. True alpha transparency, do not draw checkerboard. Same identity and costume in all four columns.",
+      "columns": 4,
+      "poses": [
+        "think",
+        "startled",
+        "tired",
+        "concede"
+      ],
+      "reference": "public/assets/boss-expressions.png",
+      "generator": "built-in image_gen",
+      "transparent": true,
+      "dimensions": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "bytes": 1502562,
+      "sha256": "debd7febc1fd485aae4c4734cb18076a90fc735ec705e545296016daf615b7dd",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "cellWidth": 543,
+      "cells": [
+        {
+          "index": 0,
+          "pose": "think",
+          "opaqueBoundingBox": [
+            93,
+            19,
+            470,
+            719
+          ],
+          "leftEdgeOpaquePixels": 0,
+          "rightEdgeOpaquePixels": 0
+        },
+        {
+          "index": 1,
+          "pose": "startled",
+          "opaqueBoundingBox": [
+            19,
+            21,
+            500,
+            719
+          ],
+          "leftEdgeOpaquePixels": 0,
+          "rightEdgeOpaquePixels": 0
+        },
+        {
+          "index": 2,
+          "pose": "tired",
+          "opaqueBoundingBox": [
+            44,
+            27,
+            475,
+            719
+          ],
+          "leftEdgeOpaquePixels": 0,
+          "rightEdgeOpaquePixels": 0
+        },
+        {
+          "index": 3,
+          "pose": "concede",
+          "opaqueBoundingBox": [
+            2,
+            22,
+            506,
+            719
+          ],
+          "leftEdgeOpaquePixels": 0,
+          "rightEdgeOpaquePixels": 0
+        }
+      ],
+      "visuallyInspected": true,
+      "visualReview": "Identity/style consistent with source. Four readable actions in separate cells, no labels or UI, preserved alpha."
+    },
+    {
+      "file": "rooftop.png",
+      "source": "C:/Users/gjtjw/.codex/generated_images/01a1fbeb-add6-7020-ae74-a157612e4d63/exec-57f583fd-5b6f-4de8-9e51-bb617700b196.png",
+      "prompt": "Use case: illustration-story. Create an ORIGINAL high-resolution 16:9 background painting for a Korean romance visual novel. No characters, no text, no branding or watermark. A small lovingly maintained rooftop garden above an older Seoul neighborhood at golden hour: brick parapet, a wooden bench at the left third, small olive-green plants and flowers in weathered terracotta planters, a little round table with two ceramic cups, a few delicate string lights beginning to glow. Wide distant city skyline and low mountains fading into peach/lavender haze, tiny communications tower far away, soft clouds. Eye-level camera, believable perspective, tranquil foreground floor and generous uncluttered central area for an overlaid waist-up character, open sky behind the head. Warm intimate but not saccharine mood suited to an honest confession, cinematic painterly anime environment with detailed warm textures, golden sun reflecting gently on stone, same sophistication as the supplied cafe/office references. The reference images are art-direction/color/rendering guides ONLY; create a new rooftop location, not a composite or duplicate. No people or silhouettes anywhere. Full-bleed landscape illustration, never a UI mockup.",
+      "reference": [
+        "public/assets/cafe.png",
+        "public/assets/office.png"
+      ],
+      "generator": "built-in image_gen",
+      "transparent": false,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 2782229,
+      "sha256": "6061e8b6712faa827cdf6c29e504c274a3997fb211aba44dd36bbdb983fa8cc4",
+      "visuallyInspected": true,
+      "visualReview": "Coherent painterly city environment, no characters/text/UI; clear foreground for character overlay."
+    },
+    {
+      "file": "rainstreet.png",
+      "source": "C:/Users/gjtjw/.codex/generated_images/01a1fbeb-add6-7020-ae74-a157612e4d63/exec-29125d7c-4d3e-4aba-89e3-256753db959e.png",
+      "prompt": "Use case: illustration-story. ORIGINAL 16:9 high-resolution full-bleed background illustration for a mature Korean romance/psychological-thriller visual novel. Input cafe image is visual-style and neighborhood reference, NOT an edit target: create the quiet rainy pedestrian street outside this sort of intimate listening cafe at night in Seoul. Eye-level view down a narrow gently curving street, warm amber light from large cafe windows on the left, potted plants under a striped muted awning, a small hanging brass bell by the closed wooden cafe door. Wet dark paving with soft amber and violet reflections, gentle visible rain streaks, cool blue-lavender evening buildings beyond, distant hill silhouette and tiny city lights. Small round exterior table to one side, empty benches, cozy but faintly uncanny stillness. Sophisticated detailed painterly anime environmental art, richly textured architecture, physically coherent perspective and reflected light. Keep central foreground uncluttered so a waist-up character can be overlaid. No people, no silhouettes, no readable signs, no text, no logos, no watermark, no UI. Not photoreal, not cyberpunk, not horror gore. It must feel connected in palette and visual quality to the supplied interior cafe but be a clearly new outdoor location.",
+      "reference": [
+        "public/assets/cafe.png"
+      ],
+      "generator": "built-in image_gen",
+      "transparent": false,
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "bytes": 3235355,
+      "sha256": "44eda0f37410a72ab8939fab268e41c0ca65de2cc212696d34815d407fac60d4",
+      "visuallyInspected": true,
+      "visualReview": "Coherent painterly city environment, no characters/text/UI; clear foreground for character overlay."
+    }
+  ],
+  "verification": {
+    "actualFiles": 6,
+    "spriteSheets": 4,
+    "newCharacterPoses": 16,
+    "newBackgrounds": 2,
+    "allSpritesTrueAlpha": true,
+    "allSpriteQuarterEdgesOpaquePixels": 0,
+    "inspection": "Each generated result visually inspected; identity retained, clear gestures and separate cells. Backgrounds coherent with original palette. Boss A spacing corrected by image_gen edit, no pixel-processing edits used."
+  },
+  "integrationNote": "Sprite frames are 543 x 724 (2172 x 724 sheet). Boss A final figures have roughly 56px top/34px bottom alpha margins, and are slightly smaller than other sheets. Align rendered face/baseline using per-sheet scale/offset if necessary; do not crop another cell. Draft/revision JSON are audit-only, not game assets."
+}

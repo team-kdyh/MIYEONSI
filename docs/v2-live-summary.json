@@ -1,0 +1,2503 @@
+[
+  {
+    "attempt": 1,
+    "result": "failed",
+    "latencyMs": 3896,
+    "model": "gpt-4.1-mini-2025-04-14",
+    "input": "부장님, 오늘 18시에는 퇴근하겠습니다. 긴 보고서 대신 90초 음성 메모와 오류 목록을 지금 남기고, 남은 도표는 제가 내일 오전 10시까지 원격으로 고치겠습니다. 커피도 야근 수당을 받는 건 아니잖아요.",
+    "reply": {
+      "line": "음성 메모라... 요즘은 보고 방식도 진보하네요. 18시 퇴근은 이해합니다만, 내일 오전 10시까지 수정은 자칫 저희 고객의 시간표에 어긋날 수 있습니다. 오류 목록은 지금 바로 제출하세요. 도표 고치는 내일 일정과 고객 전화를 조정해보죠.",
+      "actionBeats": [
+        "서류철을 살짝 두드린다",
+        "안경을 고쳐 쓴다"
+      ],
+      "emotion": "차분함",
+      "pose": "thinking",
+      "musicMood": "office-pressure",
+      "recall": [
+        "scene-0"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "concession",
+          "subject": "player",
+          "text": "보고서를 음성 메모와 오류 목록으로 대체하고, 도표는 내일 오전 10시까지 원격 수정하는 계획을 제안했다.",
+          "status": "offered",
+          "reference": "scene-0",
+          "evidence": "부장님, 오늘 18시에는 퇴근하겠습니다. 긴 보고서 대신 90초 음성 메모와 오류 목록을 지금 남기고, 남은 도표는 제가 내일 오전 10시까지 원격으로 고치겠습니다.",
+          "value": "leave"
+        }
+      ]
+    },
+    "confirmedEvents": [],
+    "state": {
+      "turn": null,
+      "relationship": null,
+      "location": null,
+      "dates": null
+    },
+    "ending": null,
+    "error": "사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+    "receipt": "v2-live-01.json"
+  },
+  {
+    "attempt": 2,
+    "result": "failed",
+    "latencyMs": 2345,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "부장님, 오늘 18시에는 퇴근하겠습니다. 긴 보고서 대신 90초 음성 메모와 오류 목록을 지금 남기고, 남은 도표는 제가 내일 오전 10시까지 원격으로 고치겠습니다. 커피도 야근 수당을 받는 건 아니잖아요.",
+    "reply": {
+      "line": "음성 메모라, 신박하네요. 듣는 사람이 커피 안 쏟으면 다행이겠습니다. 내일 오전 10시까지 도표만 보강한다면, 오늘 저녁은 걱정 안 해도 되는 거죠? 오류 목록은 바로 공유해 주시고, 녹음 올리면 확인하겠습니다.",
+      "actionBeats": [
+        "가방을 치우고 의자에 엉덩이를 붙인다",
+        "서류를 재빨리 훑는다"
+      ],
+      "emotion": "건조한 긍정",
+      "pose": "thinking",
+      "musicMood": "office-groove",
+      "recall": [
+        "scene-0"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "concession",
+          "subject": "mutual",
+          "text": "90초 음성 메모와 오류 목록은 지금 남기고, 도표는 내일 10시까지 원격 보완",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "오늘 18시에는 퇴근하겠습니다. 긴 보고서 대신 90초 음성 메모와 오류 목록을 지금 남기고, 남은 도표는 제가 내일 오전 10시까지 원격으로 고치겠습니다.",
+          "value": "leave"
+        },
+        {
+          "kind": "concession",
+          "subject": "mutual",
+          "text": "잔여 도표 내일 10시까지 플레이어가 원격 담당",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "남은 도표는 제가 내일 오전 10시까지 원격으로 고치겠습니다.",
+          "value": "handoff"
+        }
+      ]
+    },
+    "confirmedEvents": [],
+    "state": {
+      "turn": null,
+      "relationship": null,
+      "location": null,
+      "dates": null
+    },
+    "ending": null,
+    "error": "사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+    "receipt": "v2-live-02.json"
+  },
+  {
+    "attempt": 3,
+    "result": "failed",
+    "latencyMs": 3076,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "부장님, 오늘 18시에는 퇴근하겠습니다. 긴 보고서 대신 90초 음성 메모와 오류 목록을 지금 남기고, 남은 도표는 제가 내일 오전 10시까지 원격으로 고치겠습니다. 커피도 야근 수당을 받는 건 아니잖아요.",
+    "reply": {
+      "line": "음성 메모라… 특이한 방식이군요. 고객이 듣다가 커피 쏟지는 않겠죠? 내일 오전 10시 전까지 표만 고치겠다는 건, 오늘 실수는 제가 받아들이라는 뜻입니까? 사실 저도 야근 수당은 커피 한 잔 값 정도밖에 안 나와서, 계속 확대할 순 없겠네요.",
+      "actionBeats": [
+        "박도현이 안경을 고쳐 쓴다",
+        "책상 위에 남은 서류를 가볍게 툭 친다"
+      ],
+      "emotion": "유머와 신중",
+      "pose": "turn",
+      "musicMood": "office-groove",
+      "recall": [
+        "scene-0"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "concession",
+          "subject": "mutual",
+          "text": "남은 도표는 내일 오전 10시까지 수정, 오늘은 90초 음성 메모와 오류 목록만 마무리하기로 동의할지 고려함",
+          "status": "offered",
+          "reference": "scene-0",
+          "evidence": "오늘 18시에는 퇴근하겠습니다. 긴 보고서 대신 90초 음성 메모와 오류 목록을 지금 남기고, 남은 도표는 제가 내일 오전 10시까지 원격으로 고치겠습니다.",
+          "value": "handoff"
+        }
+      ]
+    },
+    "confirmedEvents": [],
+    "state": {
+      "turn": null,
+      "relationship": null,
+      "location": null,
+      "dates": null
+    },
+    "ending": null,
+    "error": "사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+    "receipt": "v2-live-03.json"
+  },
+  {
+    "attempt": 4,
+    "result": "committed",
+    "latencyMs": 3160,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "부장님, 오늘 18시에는 퇴근하겠습니다. 긴 보고서 대신 90초 음성 메모와 오류 목록을 지금 남기고, 남은 도표는 제가 내일 오전 10시까지 원격으로 고치겠습니다. 커피도 야근 수당을 받는 건 아니잖아요.",
+    "reply": {
+      "line": "음성 메모라… 문서보다 재미있겠네요. 내일 오전 10시까지 원격 수정, 확인했습니다. 오류 목록도 포함한다면 고객도 설득할 수 있겠지요. 야근 수당 대신 커피 쿠폰이라도 요구할 줄 알았습니다.",
+      "actionBeats": [
+        "가방을 책상에 내려놓고 폰을 꺼낸다",
+        "잠깐 웃고 다시 메모장을 펼친다"
+      ],
+      "emotion": "조심스런 수긍",
+      "pose": "thinking",
+      "musicMood": "office-groove",
+      "recall": [
+        "scene-0"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "concession",
+          "subject": "mutual",
+          "text": "남은 보고서 도표 내일 10시까지 원격 수정, 90초 음성 메모와 오류 목록은 오늘 제출에 합의",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "오늘 18시에는 퇴근하겠습니다. 긴 보고서 대신 90초 음성 메모와 오류 목록을 지금 남기고, 남은 도표는 제가 내일 오전 10시까지 원격으로 고치겠습니다.",
+          "value": "handoff"
+        },
+        {
+          "kind": "promise",
+          "subject": "npc",
+          "text": "고객에게 음성 메모와 수정 일정을 전달하겠다",
+          "status": "offered",
+          "reference": "",
+          "evidence": "",
+          "value": "handoff"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "concession",
+        "subject": "mutual",
+        "text": "남은 보고서 도표 내일 10시까지 원격 수정, 90초 음성 메모와 오류 목록은 오늘 제출에 합의",
+        "status": "accepted",
+        "reference": "",
+        "evidence": "오늘 18시에는 퇴근하겠습니다. 긴 보고서 대신 90초 음성 메모와 오류 목록을 지금 남기고, 남은 도표는 제가 내일 오전 10시까지 원격으로 고치겠습니다.",
+        "value": "handoff",
+        "id": "c83ca040-982a-4573-af41-31e27c2e5726",
+        "turn": 1
+      },
+      {
+        "kind": "promise",
+        "subject": "npc",
+        "text": "고객에게 음성 메모와 수정 일정을 전달하겠다",
+        "status": "offered",
+        "reference": "",
+        "evidence": "",
+        "value": "handoff",
+        "id": "06bfc2e1-a217-4f36-ab88-a94c61b32b39",
+        "turn": 1
+      },
+      {
+        "id": "6c3e7157-73b0-4ed4-8881-3704d64416a8",
+        "turn": 1,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "가방을 책상에 내려놓고 폰을 꺼낸다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "be60dbca-a877-4ce8-b81e-d38446cba8b6",
+        "turn": 1,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "잠깐 웃고 다시 메모장을 펼친다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 1,
+      "relationship": "strangers",
+      "location": "office",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-04.json"
+  },
+  {
+    "attempt": 5,
+    "result": "committed",
+    "latencyMs": 3871,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "그럼 음성 메모와 오류 목록은 지금 공유하고 남은 도표는 약속대로 제가 내일 오전 10시까지 고치겠습니다. 오늘은 18시 퇴근으로 확정해 주세요. 커피 쿠폰은 다음 실적에 넣어 두죠.",
+    "reply": {
+      "line": "좋습니다. 오늘 18시 퇴근, 합의죠. 음성 메모랑 오류 목록만 오늘 중에 보내 주시면 일정은 제가 책임지고 고객 쪽에 전달하겠습니다. 커피 쿠폰은, 다음 실적에 적립된 걸로 하고요.",
+      "actionBeats": [
+        "폰을 들어 메신저 창을 연다",
+        "잠시 당신을 바라보고 고개를 끄덕인다"
+      ],
+      "emotion": "공식적 동의와 누그러진 농담",
+      "pose": "smile",
+      "musicMood": "office-groove",
+      "recall": [
+        "c83ca040-982a-4573-af41-31e27c2e5726",
+        "06bfc2e1-a217-4f36-ab88-a94c61b32b39"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "concession",
+          "subject": "mutual",
+          "text": "오늘 18시 퇴근을 최종 확정, 대안 일정대로 업무 분담에 합의",
+          "status": "accepted",
+          "reference": "c83ca040-982a-4573-af41-31e27c2e5726",
+          "evidence": "오늘은 18시 퇴근으로 확정해 주세요. 커피 쿠폰은 다음 실적에 넣어 두죠.",
+          "value": "leave"
+        },
+        {
+          "kind": "promise",
+          "subject": "npc",
+          "text": "음성 메모와 오류 목록을 오늘 고객에게 전달하겠다",
+          "status": "offered",
+          "reference": "06bfc2e1-a217-4f36-ab88-a94c61b32b39",
+          "evidence": "음성 메모와 오류 목록은 지금 공유하고 남은 도표는 약속대로 제가 내일 오전 10시까지 고치겠습니다.",
+          "value": "handoff"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "concession",
+        "subject": "mutual",
+        "text": "오늘 18시 퇴근을 최종 확정, 대안 일정대로 업무 분담에 합의",
+        "status": "accepted",
+        "reference": "c83ca040-982a-4573-af41-31e27c2e5726",
+        "evidence": "오늘은 18시 퇴근으로 확정해 주세요. 커피 쿠폰은 다음 실적에 넣어 두죠.",
+        "value": "leave",
+        "id": "4fc6bbc9-1075-48be-b44b-b595bf7ed762",
+        "turn": 2
+      },
+      {
+        "kind": "promise",
+        "subject": "npc",
+        "text": "음성 메모와 오류 목록을 오늘 고객에게 전달하겠다",
+        "status": "offered",
+        "reference": "06bfc2e1-a217-4f36-ab88-a94c61b32b39",
+        "evidence": "음성 메모와 오류 목록은 지금 공유하고 남은 도표는 약속대로 제가 내일 오전 10시까지 고치겠습니다.",
+        "value": "handoff",
+        "id": "e3d6dc95-6f51-41bd-9edc-a9e57b74353d",
+        "turn": 2
+      },
+      {
+        "id": "3fbf98b8-f9b3-4774-a969-3008802660fa",
+        "turn": 2,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "폰을 들어 메신저 창을 연다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "54317cb9-daf8-4988-aee9-b4f71cebc8cc",
+        "turn": 2,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "잠시 당신을 바라보고 고개를 끄덕인다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 2,
+      "relationship": "strangers",
+      "location": "office",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-05.json"
+  },
+  {
+    "attempt": 6,
+    "result": "committed",
+    "latencyMs": 2118,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "18시 퇴근과 내일 오전 10시 도표 수정, 지금 음성 메모 공유까지 그 합의로 마무리하겠습니다. 고객에게 일정 전달 부탁드립니다.",
+    "reply": {
+      "line": "네, 확인했습니다. 일정은 제가 곧 고객에게 전달하죠. 오늘은 양심적으로 퇴근하시고, 내일 약속만 지켜주시면 됩니다. 혹시 야근 금지령 내려도 불만 없습니까?",
+      "actionBeats": [
+        "폰으로 메시지를 빠르게 작성한다",
+        "서류철을 닫으면서 책상 위를 정돈한다"
+      ],
+      "emotion": "공식적 확정과 잔잔한 농담",
+      "pose": "offer",
+      "musicMood": "office-groove",
+      "recall": [
+        "c83ca040-982a-4573-af41-31e27c2e5726",
+        "e3d6dc95-6f51-41bd-9edc-a9e57b74353d",
+        "4fc6bbc9-1075-48be-b44b-b595bf7ed762"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "promise",
+          "subject": "npc",
+          "text": "고객에게 도표 수정 일정과 음성 메모 전달을 알리겠다",
+          "status": "offered",
+          "reference": "e3d6dc95-6f51-41bd-9edc-a9e57b74353d",
+          "evidence": "고객에게 일정 전달 부탁드립니다.",
+          "value": "handoff"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "promise",
+        "subject": "npc",
+        "text": "고객에게 도표 수정 일정과 음성 메모 전달을 알리겠다",
+        "status": "offered",
+        "reference": "e3d6dc95-6f51-41bd-9edc-a9e57b74353d",
+        "evidence": "고객에게 일정 전달 부탁드립니다.",
+        "value": "handoff",
+        "id": "cf754d29-2964-41f0-ad48-6023678e17ac",
+        "turn": 3
+      },
+      {
+        "id": "527b096b-360b-4922-8e2a-2bfdf7dbc9cf",
+        "turn": 3,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "폰으로 메시지를 빠르게 작성한다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "3e2b986b-baad-49e6-9a21-e527496ef87b",
+        "turn": 3,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "서류철을 닫으면서 책상 위를 정돈한다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 3,
+      "relationship": "strangers",
+      "location": "office",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-06.json"
+  },
+  {
+    "attempt": 7,
+    "result": "failed",
+    "latencyMs": 2420,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "오늘은 보고서도 음성 메모도 맡지 않겠습니다. 퇴근 시간이나 인계 담당자도 지금 확답할 수 없어요. 무작정 할 수 있다고 약속하고 싶지 않습니다.",
+    "reply": {
+      "line": "오늘은 “무작정” 넘길 수 없다는 입장이시군요. 선을 명확히 그어 주셔서, 오히려 고맙네요. 그럼, 한 가지만 추가로 여쭙겠습니다. 만약 내일까지도 담당이 정해지지 않으면, 보고는 자동으로 지연된다는 점을 고객 쪽에 미리 전달해도 괜찮겠죠?",
+      "actionBeats": [
+        "서류철을 내려놓고 검은 펜을 굴린다"
+      ],
+      "emotion": "침착함 속 신중",
+      "pose": "thinking",
+      "musicMood": "office-pressure",
+      "recall": [
+        "scene-0"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "concession",
+          "subject": "mutual",
+          "text": "퇴근 시간, 인계 담당 모두 지금 확정 불가로 합의",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "퇴근 시간이나 인계 담당자도 지금 확답할 수 없어요.",
+          "value": "leave,handoff"
+        },
+        {
+          "kind": "invitation",
+          "subject": "npc",
+          "text": "보고서 지연을 고객에게 미리 알릴지 확인 요청",
+          "status": "offered",
+          "reference": "",
+          "evidence": "만약 내일까지도 담당이 정해지지 않으면, 보고는 자동으로 지연된다는 점을 고객 쪽에 미리 전달해도 괜찮겠죠?",
+          "value": "고객 안내 여부"
+        }
+      ]
+    },
+    "confirmedEvents": [],
+    "state": {
+      "turn": null,
+      "relationship": null,
+      "location": null,
+      "dates": null
+    },
+    "ending": null,
+    "error": "사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+    "receipt": "v2-live-07.json"
+  },
+  {
+    "attempt": 8,
+    "result": "committed",
+    "latencyMs": 2297,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "오늘은 보고서도 음성 메모도 맡지 않겠습니다. 퇴근 시간이나 인계 담당자도 지금 확답할 수 없어요. 무작정 할 수 있다고 약속하고 싶지 않습니다.",
+    "reply": {
+      "line": "오늘따라 확신이 좀 부족하시네요. 이럴 땐 전통적으로, ‘아직도 부장이라고 불러드려야 하죠?’ 같은 농담을 해야 하는데… 그래도 남은 업무를 구체적으로 언제, 누가 맡을 건지만 초안만이라도 써달라고 하면 너무 얄밉겠죠?",
+      "actionBeats": [
+        "가방 위 서류를 살짝 눌러본다",
+        "탁상 시계 쪽을 힐끗 본다"
+      ],
+      "emotion": "건조한 유머에 숨은 걱정",
+      "pose": "thinking",
+      "musicMood": "office-pressure",
+      "recall": [
+        "scene-0"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "concession",
+          "subject": "mutual",
+          "text": "플레이어가 퇴근 시간과 인계 담당자를 현 시점에서 확답할 수 없다고 밝힘",
+          "status": "offered",
+          "reference": "",
+          "evidence": "퇴근 시간이나 인계 담당자도 지금 확답할 수 없어요.",
+          "value": "leave"
+        },
+        {
+          "kind": "concession",
+          "subject": "mutual",
+          "text": "플레이어가 잔여 보고서 담당 및 기한을 즉시 정하기 어렵다고 밝힘",
+          "status": "offered",
+          "reference": "",
+          "evidence": "인계 담당자도 지금 확답할 수 없어요.",
+          "value": "handoff"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "concession",
+        "subject": "mutual",
+        "text": "플레이어가 퇴근 시간과 인계 담당자를 현 시점에서 확답할 수 없다고 밝힘",
+        "status": "offered",
+        "reference": "",
+        "evidence": "퇴근 시간이나 인계 담당자도 지금 확답할 수 없어요.",
+        "value": "leave",
+        "id": "1d896dbc-12c0-48e8-902a-c4006e2ac379",
+        "turn": 1
+      },
+      {
+        "kind": "concession",
+        "subject": "mutual",
+        "text": "플레이어가 잔여 보고서 담당 및 기한을 즉시 정하기 어렵다고 밝힘",
+        "status": "offered",
+        "reference": "",
+        "evidence": "인계 담당자도 지금 확답할 수 없어요.",
+        "value": "handoff",
+        "id": "982d7053-0c8d-42f1-9eec-830275ca7ca8",
+        "turn": 1
+      },
+      {
+        "id": "bb494d8a-9ebe-4bd7-854c-4fc632f87b0b",
+        "turn": 1,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "가방 위 서류를 살짝 눌러본다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "76974a5a-9673-4650-bde4-420fd58eeb0f",
+        "turn": 1,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "탁상 시계 쪽을 힐끗 본다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 1,
+      "relationship": "strangers",
+      "location": "office",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-08.json"
+  },
+  {
+    "attempt": 9,
+    "result": "committed",
+    "latencyMs": 3668,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "보고서를 제가 끝내겠다는 뜻은 아니에요. 고객에게 시간을 더 달라고 먼저 물어보면 어떨까요? 오늘 바로 끝냈다고 처리하지는 말아 주세요.",
+    "reply": {
+      "line": "이 정도 골든타임이면, 고객한테도 인간적인 연장전 한 번 요청할 때가 온 것 같습니다. 그럼 제가 직접 연락해서 내일 오전으로 조정 가능할지 먼저 물어볼까요? 일단 오늘은 마감, 아니, 가방 위 보고서는 그대로 있습니다.",
+      "actionBeats": [
+        "서류철을 도로 접어 가방 옆에 내려놓는다",
+        "책상 전화 쪽으로 몸을 돌린다"
+      ],
+      "emotion": "근심 속에 차분한 양보",
+      "pose": "offer",
+      "musicMood": "office-pressure",
+      "recall": [
+        "1d896dbc-12c0-48e8-902a-c4006e2ac379",
+        "982d7053-0c8d-42f1-9eec-830275ca7ca8"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "concession",
+          "subject": "mutual",
+          "text": "부장이 고객에게 시간 연장을 먼저 요청하는 방안을 잠정 수용",
+          "status": "offered",
+          "reference": "1d896dbc-12c0-48e8-902a-c4006e2ac379",
+          "evidence": "고객에게 시간을 더 달라고 먼저 물어보면 어떨까요?",
+          "value": "leave"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "concession",
+        "subject": "mutual",
+        "text": "부장이 고객에게 시간 연장을 먼저 요청하는 방안을 잠정 수용",
+        "status": "offered",
+        "reference": "1d896dbc-12c0-48e8-902a-c4006e2ac379",
+        "evidence": "고객에게 시간을 더 달라고 먼저 물어보면 어떨까요?",
+        "value": "leave",
+        "id": "7397d0c5-6656-4ab4-85b6-a97dbc416ca9",
+        "turn": 2
+      },
+      {
+        "id": "ba823139-7f25-4c95-a50e-abb18066372e",
+        "turn": 2,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "서류철을 도로 접어 가방 옆에 내려놓는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "68255003-a22d-414f-bfcb-4e329042f31d",
+        "turn": 2,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "책상 전화 쪽으로 몸을 돌린다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 2,
+      "relationship": "strangers",
+      "location": "office",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-09.json"
+  },
+  {
+    "attempt": 10,
+    "result": "committed",
+    "latencyMs": 2211,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "저는 지호라고 불러 주세요. 귤은 싫고 배를 좋아해요. 비 오는 날 종이배를 접는 소리를 좋아하는데, 다음에 파란 종이 한 장 가져와 줄래요? 유나 씨는 어떤 향을 좋아해요?",
+    "reply": {
+      "line": "지호 님, 이름이 부드럽네요. 파란 종이 한 장, 다음엔 꼭 준비해둘게요. 저요? 음… 시나몬 향은 좋고, 백합꽃 향도 가끔 생각나더라고요. 근데 너무 진하면 또 머리가 어질어질해서, 은은할 때 제일 좋아요.",
+      "actionBeats": [
+        "유나가 종이에 손가락을 따라 그리듯 움직인다",
+        "작게 킁킁 거리며 웃는다"
+      ],
+      "emotion": "따뜻한 관심",
+      "pose": "smile",
+      "musicMood": "cafe-warmth",
+      "recall": [
+        "scene-0"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "detail",
+          "subject": "player",
+          "text": "지호는 귤을 싫어하고 배를 좋아한다",
+          "status": "offered",
+          "reference": "",
+          "evidence": "귤은 싫고 배를 좋아해요",
+          "value": "배"
+        },
+        {
+          "kind": "invitation",
+          "subject": "npc",
+          "text": "파란 종이 한 장 가져오기 약속",
+          "status": "offered",
+          "reference": "",
+          "evidence": "다음에 파란 종이 한 장 가져와 줄래요?",
+          "value": "파란종이-전달"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "detail",
+        "subject": "player",
+        "text": "지호는 귤을 싫어하고 배를 좋아한다",
+        "status": "offered",
+        "reference": "",
+        "evidence": "귤은 싫고 배를 좋아해요",
+        "value": "배",
+        "id": "66bf9d5f-cbef-4a5a-9dc8-7caf55787190",
+        "turn": 1
+      },
+      {
+        "kind": "invitation",
+        "subject": "npc",
+        "text": "파란 종이 한 장 가져오기 약속",
+        "status": "offered",
+        "reference": "",
+        "evidence": "다음에 파란 종이 한 장 가져와 줄래요?",
+        "value": "파란종이-전달",
+        "id": "25f64c8d-d3cc-42a1-a1e8-4ab714376d28",
+        "turn": 1
+      },
+      {
+        "id": "8740d644-e336-48b3-af7e-f52d93d5daeb",
+        "turn": 1,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 종이에 손가락을 따라 그리듯 움직인다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "57ec6f69-61fa-4b04-b9fb-7ec591f66e39",
+        "turn": 1,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "작게 킁킁 거리며 웃는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 1,
+      "relationship": "strangers",
+      "location": "cafe",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-10.json"
+  },
+  {
+    "attempt": 11,
+    "result": "failed",
+    "latencyMs": 4192,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "좋아요, 다음에 파란 종이를 꼭 가져와 주세요. 종이배에도 승선권이 필요하면 저는 배 한 조각으로 낼게요. 유나 씨는 소리를 모으다가 웃긴 실수도 해봤어요?",
+    "reply": {
+      "line": "승선권이 배 한 조각이라니, 그럼 파란 종이에 배 접고 거기 살짝 배 한 입 올려놓으면 딱이겠어요. 실수요? 녹음하다가 제 기침 소리가 들어가서, 새벽에 혼자 재생하다가 깜짝 놀란 적 있어요. 또, 바람 소리만 담으려다 문이 쾅 닫혀서, 멋진 자연음이라며 뻔뻔하게 저장한 적도 있고요.",
+      "actionBeats": [
+        "종이컵에 손가락을 툭툭 두드린다",
+        "잠깐 미소를 감추듯 손등으로 입을 가린다"
+      ],
+      "emotion": "장난기와 약간의 쑥스러움",
+      "pose": "laugh",
+      "musicMood": "cafe-warmth",
+      "recall": [
+        "25f64c8d-d3cc-42a1-a1e8-4ab714376d28"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "promise",
+          "subject": "npc",
+          "text": "파란 종이 준비 약속",
+          "status": "fulfilled",
+          "reference": "25f64c8d-d3cc-42a1-a1e8-4ab714376d28",
+          "evidence": "좋아요, 다음에 파란 종이를 꼭 가져와 주세요.",
+          "value": "파란종이-전달"
+        },
+        {
+          "kind": "detail",
+          "subject": "npc",
+          "text": "유나는 바람 소리만 녹음하려다 문이 쾅 닫히는 소리가 들어간 적이 있다",
+          "status": "offered",
+          "reference": "",
+          "evidence": "바람 소리만 담으려다 문이 쾅 닫혀서, 멋진 자연음이라며 뻔뻔하게 저장한 적도 있고요.",
+          "value": "녹음실수-문닫힘"
+        }
+      ]
+    },
+    "confirmedEvents": [],
+    "state": {
+      "turn": null,
+      "relationship": null,
+      "location": null,
+      "dates": null
+    },
+    "ending": null,
+    "error": "사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+    "receipt": "v2-live-11.json"
+  },
+  {
+    "attempt": 12,
+    "result": "committed",
+    "latencyMs": 2566,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "좋아요, 다음에 파란 종이를 꼭 가져와 주세요. 종이배에도 승선권이 필요하면 저는 배 한 조각으로 낼게요. 유나 씨는 소리를 모으다가 웃긴 실수도 해봤어요?",
+    "reply": {
+      "line": "승선권이 배라니, 너무 멋진데요? 그럼 저희 종이배는 아주 특별한 여행이 되겠네요. 예전에 새벽에 빗소리 녹음한다고 창문 열었는데, 고무장갑 낀 손으로 마이크 잡다가 미끄러져서 마이크가 커피잔에 풍덩! 소리가… 기이하게 좋았어요. 민망해서 그대로 저장해뒀죠.",
+      "actionBeats": [
+        "유나가 손바닥으로 얼굴을 살짝 가리며 웃는다",
+        "작은 노트에 '승선권=배조각'이라 적는다"
+      ],
+      "emotion": "장난스럽고 솔직함",
+      "pose": "laugh",
+      "musicMood": "cafe-warmth",
+      "recall": [
+        "25f64c8d-d3cc-42a1-a1e8-4ab714376d28"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "promise",
+          "subject": "npc",
+          "text": "파란 종이 한 장 가져오기",
+          "status": "offered",
+          "reference": "",
+          "evidence": "다음에 파란 종이 한 장 가져와 줄래요?",
+          "value": "파란종이-전달"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "promise",
+        "subject": "npc",
+        "text": "파란 종이 한 장 가져오기",
+        "status": "offered",
+        "reference": "",
+        "evidence": "다음에 파란 종이 한 장 가져와 줄래요?",
+        "value": "파란종이-전달",
+        "id": "3400a7be-94fe-4bed-b54c-0ce84dfa2f22",
+        "turn": 2
+      },
+      {
+        "id": "b06d6fd8-3fa1-4f36-870a-dbe1df528991",
+        "turn": 2,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 손바닥으로 얼굴을 살짝 가리며 웃는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "8b6423b5-28a2-4653-8b2a-668622effabb",
+        "turn": 2,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "작은 노트에 '승선권=배조각'이라 적는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 2,
+      "relationship": "strangers",
+      "location": "cafe",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-12.json"
+  },
+  {
+    "attempt": 13,
+    "result": "committed",
+    "latencyMs": 2017,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "제 목소리 녹음은 오늘 하지 말아 주세요. 대신 컵 내려놓는 소리를 같이 들어 보고 싶어요. 기억은 녹음기가 없어도 남겠죠?",
+    "reply": {
+      "line": "오늘은 지호 님 목소리는 녹음 안 할게요. 컵이 테이블에 살짝 닿는 소리… 그 울림은 녹음보다 더 오래 남을 수 있겠죠. 두 손으로 컵을 들어서, 동시에 내려놔 볼까요? 서로의 방식으로 기억해요.",
+      "actionBeats": [
+        "유나가 손가락 끝으로 컵을 집어 들며 미소 짓는다",
+        "테이블 위에 조심스럽게 컵을 내려놓는다",
+        "잠시 눈을 감고 소리에 집중한다"
+      ],
+      "emotion": "진지하게 따뜻함과 장난스러움이 섞임",
+      "pose": "offer",
+      "musicMood": "cafe-warmth",
+      "recall": [
+        "b06d6fd8-3fa1-4f36-870a-dbe1df528991"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "invitation",
+          "subject": "npc",
+          "text": "같이 컵 내려놓는 소리 들어 보기",
+          "status": "offered",
+          "reference": "",
+          "evidence": "컵 내려놓는 소리를 같이 들어 보고 싶어요",
+          "value": "cup-sound"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "invitation",
+        "subject": "npc",
+        "text": "같이 컵 내려놓는 소리 들어 보기",
+        "status": "offered",
+        "reference": "",
+        "evidence": "컵 내려놓는 소리를 같이 들어 보고 싶어요",
+        "value": "cup-sound",
+        "id": "27164487-d9f0-4ce7-a4d9-4f54d6833380",
+        "turn": 3
+      },
+      {
+        "id": "abfafc57-8cbf-4004-95fe-1a99267c41c3",
+        "turn": 3,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 손가락 끝으로 컵을 집어 들며 미소 짓는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "e948eb60-faf2-429c-9d98-18a6bbf15db5",
+        "turn": 3,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "테이블 위에 조심스럽게 컵을 내려놓는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "10b5ae03-d21f-45bc-b686-5dea86a71883",
+        "turn": 3,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "잠시 눈을 감고 소리에 집중한다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 3,
+      "relationship": "strangers",
+      "location": "cafe",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-13.json"
+  },
+  {
+    "attempt": 14,
+    "result": "committed",
+    "latencyMs": 2120,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "여기서 좀 더 이야기하고 싶어요. 비가 그칠 때 처마에서 마지막 물방울이 떨어지는 소리도 수집해 봤어요? 저는 그 기다리는 시간이 좋더라고요.",
+    "reply": {
+      "line": "그래서 처마 끝에 물방울이 한 방울, 또 한 방울… 그 멎는 순간의 침묵이 참 특별해요. 저는 종종 우산 안에서 귀 기울이다가, 아무 소리도 안 들릴 때 슬쩍 미소 지어요. 지호 님처럼 기다림 속의 고요를 좋아하는 사람, 생각보다 드문데 기뻐요.",
+      "actionBeats": [
+        "유나가 커피잔 손잡이를 엄지로 문질러 본다",
+        "창가 너머를 바라보며 잠시 멍하니 앉아 있다"
+      ],
+      "emotion": "공감하며 조용한 기쁨",
+      "pose": "smile",
+      "musicMood": "cafe-warmth",
+      "recall": [
+        "27164487-d9f0-4ce7-a4d9-4f54d6833380"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "detail",
+          "subject": "npc",
+          "text": "유나는 처마에서 떨어지는 마지막 물방울 소리를 수집했다",
+          "status": "offered",
+          "reference": "",
+          "evidence": "비가 그칠 때 처마에서 마지막 물방울이 떨어지는 소리도 수집해 봤어요?",
+          "value": "물방울-소리"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "detail",
+        "subject": "npc",
+        "text": "유나는 처마에서 떨어지는 마지막 물방울 소리를 수집했다",
+        "status": "offered",
+        "reference": "",
+        "evidence": "비가 그칠 때 처마에서 마지막 물방울이 떨어지는 소리도 수집해 봤어요?",
+        "value": "물방울-소리",
+        "id": "dbb0a393-85a3-4078-a773-aac127a0f11d",
+        "turn": 4
+      },
+      {
+        "id": "b50a552c-28b2-4957-9784-3a9b8d96de76",
+        "turn": 4,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 커피잔 손잡이를 엄지로 문질러 본다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "cb164603-b294-4a33-a98f-db8945331b7f",
+        "turn": 4,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "창가 너머를 바라보며 잠시 멍하니 앉아 있다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 4,
+      "relationship": "strangers",
+      "location": "cafe",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-14.json"
+  },
+  {
+    "attempt": 15,
+    "result": "committed",
+    "latencyMs": 2030,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "유나 씨랑 이야기하니까 처음보다 훨씬 편해졌어요. 실수한 녹음도 버리지 않는 점이 좋아요. 우리 다음에도 이렇게 만나서 서로의 작은 소리를 들어봐요.",
+    "reply": {
+      "line": "저도 점점 마음이 편해지네요. 이렇게 실수한 순간도, 조용한 기다림도 다 소중하다고 생각해 줘서 고마워요. 다음에도 우리만의 작은 소리를 모으자고 약속해요, 지호 님.",
+      "actionBeats": [
+        "유나가 손목을 감싸 쥐고 천천히 고개를 끄덕인다",
+        "잔잔히 미소 짓는다",
+        "작은 노트에 '다음 조우'라고 적는다"
+      ],
+      "emotion": "따뜻한 공감과 설렘",
+      "pose": "smile",
+      "musicMood": "cafe-warmth",
+      "recall": [
+        "27164487-d9f0-4ce7-a4d9-4f54d6833380",
+        "dbb0a393-85a3-4078-a773-aac127a0f11d"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "invitation",
+          "subject": "npc",
+          "text": "다음에도 서로의 작은 소리를 들어 보기",
+          "status": "offered",
+          "reference": "",
+          "evidence": "우리 다음에도 이렇게 만나서 서로의 작은 소리를 들어봐요.",
+          "value": "next-sound"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "invitation",
+        "subject": "npc",
+        "text": "다음에도 서로의 작은 소리를 들어 보기",
+        "status": "offered",
+        "reference": "",
+        "evidence": "우리 다음에도 이렇게 만나서 서로의 작은 소리를 들어봐요.",
+        "value": "next-sound",
+        "id": "009d9310-0fd1-4513-8589-5f6d6afbb59f",
+        "turn": 5
+      },
+      {
+        "id": "9012cddb-3cd4-485c-9330-e8e6e88ac79e",
+        "turn": 5,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 손목을 감싸 쥐고 천천히 고개를 끄덕인다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "3bb2644d-b05e-4e27-8fb9-fbacb5e063d2",
+        "turn": 5,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "잔잔히 미소 짓는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "dba172c0-2cf4-4208-b137-2c20d9af1490",
+        "turn": 5,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "작은 노트에 '다음 조우'라고 적는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 5,
+      "relationship": "strangers",
+      "location": "cafe",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-15.json"
+  },
+  {
+    "attempt": 16,
+    "result": "committed",
+    "latencyMs": 2786,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "사실 소리보다 유나 씨 이야기가 더 궁금해졌어요. 웃는 모습도 자꾸 생각나고요. 유나 씨도 저를 좀 더 알아가고 싶은 마음이 있나요?",
+    "reply": {
+      "line": "저도 지호 님이 궁금해요. 실은, 아까부터 질문하고 싶은 게 여러 개였거든요. 저처럼 사라지는 소리를 왜 좋아하게 됐는지, 또 오늘은 왜 망설이지 않고 내 옆자리에 앉아 줬는지도요. 웃는 모습… 그렇게 얘기해 주셔서 조금 쑥스럽긴 한데, 기뻐요. 만약 지호 님이 괜찮다면, 다음에는 제 이야기도 더 들려드릴게요.",
+      "actionBeats": [
+        "유나가 손목을 감싸 쥔 채 천천히 시선을 맞춘다",
+        "작은 노트에 '궁금한 것 리스트'라고 적는다",
+        "말끝에 조그맣게 웃는다"
+      ],
+      "emotion": "수줍은 호기심과 솔직함",
+      "pose": "shy",
+      "musicMood": "cafe-warmth",
+      "recall": [
+        "3bb2644d-b05e-4e27-8fb9-fbacb5e063d2",
+        "dba172c0-2cf4-4208-b137-2c20d9af1490",
+        "009d9310-0fd1-4513-8589-5f6d6afbb59f"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "detail",
+          "subject": "npc",
+          "text": "유나는 지호의 웃는 모습을 자주 떠올린다",
+          "status": "offered",
+          "reference": "",
+          "evidence": "웃는 모습도 자꾸 생각나고요",
+          "value": "웃는모습"
+        },
+        {
+          "kind": "invitation",
+          "subject": "npc",
+          "text": "유나의 이야기를 들려주기 약속",
+          "status": "offered",
+          "reference": "",
+          "evidence": "다음에는 제 이야기도 더 들려드릴게요.",
+          "value": "yuna-story"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "detail",
+        "subject": "npc",
+        "text": "유나는 지호의 웃는 모습을 자주 떠올린다",
+        "status": "offered",
+        "reference": "",
+        "evidence": "웃는 모습도 자꾸 생각나고요",
+        "value": "웃는모습",
+        "id": "b024025a-9848-40dd-bdab-4f5427554630",
+        "turn": 6
+      },
+      {
+        "kind": "invitation",
+        "subject": "npc",
+        "text": "유나의 이야기를 들려주기 약속",
+        "status": "offered",
+        "reference": "",
+        "evidence": "다음에는 제 이야기도 더 들려드릴게요.",
+        "value": "yuna-story",
+        "id": "7a71d171-51b9-4163-bc17-5f89d13fcc8a",
+        "turn": 6
+      },
+      {
+        "id": "aeaba677-fa5f-4d87-8762-db9f10103cf0",
+        "turn": 6,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 손목을 감싸 쥔 채 천천히 시선을 맞춘다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "af83a4ae-fd06-4a06-b6b6-5d74c949b043",
+        "turn": 6,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "작은 노트에 '궁금한 것 리스트'라고 적는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "4531f6ef-40eb-4118-b627-c73a333c3038",
+        "turn": 6,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "말끝에 조그맣게 웃는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 6,
+      "relationship": "strangers",
+      "location": "cafe",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-16.json"
+  },
+  {
+    "attempt": 17,
+    "result": "committed",
+    "latencyMs": 3151,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "아까 제 호칭과 싫어하는 과일, 좋아하는 과일 기억해요? 유나 씨 향 취향이랑 섞이면 안 돼요. 다음 만남에 가져오기로 한 종이도 기억하면, 그 종이로 함께 접어보고 싶어요.",
+    "reply": {
+      "line": "지호 님… 그때 배를 좋아하고 귤은 싫어한다고 하셨죠. 그리고 저는 시나몬 맛은 싫지만 향은 좋아하고요. 둘이 섞이면, 뭔가 이상한 냄새가 날 것 같아서 피해야겠네요! 파란 종이도 절대 잊지 않을게요. 다음에 만나면 같이 그 종이로 뭔가 접어볼까요? 작은 배? 아니면 우산? 지호 님은 뭐가 좋으세요?",
+      "actionBeats": [
+        "유나가 노트 옆에 파란 종이 모양을 그려 넣는다",
+        "지호를 바라보다 코웃음을 살짝 참는다",
+        "손끝으로 테이블을 따라 두드려 본다"
+      ],
+      "emotion": "장난스럽고 약간 설렌 마음",
+      "pose": "smile",
+      "musicMood": "cafe-warmth",
+      "recall": [
+        "66bf9d5f-cbef-4a5a-9dc8-7caf55787190",
+        "25f64c8d-d3cc-42a1-a1e8-4ab714376d28",
+        "dbb0a393-85a3-4078-a773-aac127a0f11d"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "detail",
+          "subject": "npc",
+          "text": "유나는 노트에 파란 종이 모양을 그려 넣는다",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "파란종이-노트"
+        },
+        {
+          "kind": "invitation",
+          "subject": "npc",
+          "text": "파란 종이로 함께 접기",
+          "status": "offered",
+          "reference": "25f64c8d-d3cc-42a1-a1e8-4ab714376d28",
+          "evidence": "그 종이로 함께 접어보고 싶어요",
+          "value": "folding-blue-paper"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "detail",
+        "subject": "npc",
+        "text": "유나는 노트에 파란 종이 모양을 그려 넣는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "파란종이-노트",
+        "id": "8636241d-7870-42bf-94ca-ceff5dbd6a58",
+        "turn": 7
+      },
+      {
+        "kind": "invitation",
+        "subject": "npc",
+        "text": "파란 종이로 함께 접기",
+        "status": "offered",
+        "reference": "25f64c8d-d3cc-42a1-a1e8-4ab714376d28",
+        "evidence": "그 종이로 함께 접어보고 싶어요",
+        "value": "folding-blue-paper",
+        "id": "56df04a9-63cc-4016-b012-3acb81f694df",
+        "turn": 7
+      },
+      {
+        "id": "6dc73207-52a5-4b66-8bd8-2386920e0389",
+        "turn": 7,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 노트 옆에 파란 종이 모양을 그려 넣는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "71d8d03e-eaf5-4c42-bc6f-92881947c356",
+        "turn": 7,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "지호를 바라보다 코웃음을 살짝 참는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "747dcb9e-301e-40a0-9c3b-9697360547d1",
+        "turn": 7,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "손끝으로 테이블을 따라 두드려 본다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 7,
+      "relationship": "strangers",
+      "location": "cafe",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-17.json"
+  },
+  {
+    "attempt": 18,
+    "result": "committed",
+    "latencyMs": 3017,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "파란 종이로 작은 배를 접어요. 유나 씨와 이렇게 이야기하니 이제 서로 꽤 편한 사이가 된 것 같아요. 다음에는 옥상에서 바람 소리도 함께 들어요.",
+    "reply": {
+      "line": "파란 종이로 두 손가락 사이에 작은 배를 접으면, 우리가 나누는 이야기처럼 저만의 조용한 항해가 시작될 것 같아요. 우리 정말 편해졌죠? 다음엔 꼭 옥상에서, 바람 부는 소리까지 담아가요. 지호 님 옆자리 예약할게요.",
+      "actionBeats": [
+        "유나가 테이블 구석에서 작은 메모지 조각을 살짝 떼어 손바닥 위에 올린다",
+        "노트 가장자리에 조그맣게 '옥상'이라고 적는다",
+        "잠깐, 두 손을 비비며 미소 짓는다"
+      ],
+      "emotion": "설렘과 익숙함이 동시에 스며듦",
+      "pose": "smile",
+      "musicMood": "rooftop-heart",
+      "recall": [
+        "009d9310-0fd1-4513-8589-5f6d6afbb59f",
+        "56df04a9-63cc-4016-b012-3acb81f694df"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "invitation",
+          "subject": "npc",
+          "text": "옥상에서 바람 소리 함께 듣기",
+          "status": "offered",
+          "reference": "",
+          "evidence": "다음에는 옥상에서 바람 소리도 함께 들어요.",
+          "value": "rooftop-wind"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "invitation",
+        "subject": "npc",
+        "text": "옥상에서 바람 소리 함께 듣기",
+        "status": "offered",
+        "reference": "",
+        "evidence": "다음에는 옥상에서 바람 소리도 함께 들어요.",
+        "value": "rooftop-wind",
+        "id": "fd1b9e0a-abad-421d-a510-35fd02ad7a3d",
+        "turn": 8
+      },
+      {
+        "id": "baf5decf-4f7b-4eae-8fae-5a63c735ec68",
+        "turn": 8,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 테이블 구석에서 작은 메모지 조각을 살짝 떼어 손바닥 위에 올린다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "42466dbc-0c47-4b23-beb5-9531b232387b",
+        "turn": 8,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "노트 가장자리에 조그맣게 '옥상'이라고 적는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "27693b1f-c3e6-4c3f-935d-2befbc145d53",
+        "turn": 8,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "잠깐, 두 손을 비비며 미소 짓는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 8,
+      "relationship": "strangers",
+      "location": "cafe",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-18.json"
+  },
+  {
+    "attempt": 19,
+    "result": "failed",
+    "latencyMs": 3185,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "저는 유나 씨에게 친구 이상의 호감이 있어요. 천천히 더 가까워지고 싶어요. 유나 씨 마음은 어떤지 솔직하게 듣고 싶어요.",
+    "reply": {
+      "line": "지호 님… 갑자기 심장이 뛴다고 하면 너무 드라마 같나요? 저도 요즘, 지호 님 생각에 미소 지을 일이 많아졌어요. 아직 많이 서툴기도 하고, 관계라는 게 쉽게 다가갈 수 없는 일이라 망설여지지만… 저도 더 가까워지고 싶다는 마음이 점점 자라요. 이렇게 솔직하게 말해 주셔서 고마워요.",
+      "actionBeats": [
+        "유나가 두 손을 조심스럽게 모으고 눈을 피하다 살며시 지호를 바라본다",
+        "손끝으로 파란 종이 조각을 살짝 만진다",
+        "작게 숨을 들이쉬고 미소 짓는다"
+      ],
+      "emotion": "수줍음과 두근거림, 솔직함",
+      "pose": "shy",
+      "musicMood": "rooftop-heart",
+      "recall": [
+        "b024025a-9848-40dd-bdab-4f5427554630",
+        "7a71d171-51b9-4163-bc17-5f89d13fcc8a",
+        "56df04a9-63cc-4016-b012-3acb81f694df"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "relationship",
+          "subject": "npc",
+          "text": "유나는 지호에게 천천히 끌리는 감정을 인정한다",
+          "status": "offered",
+          "reference": "b024025a-9848-40dd-bdab-4f5427554630",
+          "evidence": "저도 더 가까워지고 싶다는 마음이 점점 자라요",
+          "value": "attracted"
+        }
+      ]
+    },
+    "confirmedEvents": [],
+    "state": {
+      "turn": null,
+      "relationship": null,
+      "location": null,
+      "dates": null
+    },
+    "ending": null,
+    "error": "사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+    "receipt": "v2-live-19.json"
+  },
+  {
+    "attempt": 20,
+    "result": "failed",
+    "latencyMs": 3791,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "저는 유나 씨에게 친구 이상의 호감이 있어요. 천천히 더 가까워지고 싶어요. 유나 씨 마음은 어떤지 솔직하게 듣고 싶어요.",
+    "reply": {
+      "line": "아, 이렇게 솔직하게 마음을 전해주셔서… 저, 조금 놀랐어요. 하지만 저도 지호 님이랑 이야기할수록 점점 관심이 커지는 걸 숨길 수가 없네요. 아직은 조금 서툴지만, 저도 더 가까워지고 싶어요. 우리, 천천히 서로를 더 알아가 볼래요?",
+      "actionBeats": [
+        "유나가 손등 위에 조심스럽게 파란 종이 배를 올리고 지호를 바라본다",
+        "작게 웃으며 손끝으로 노트 표지를 톡톡 두드린다"
+      ],
+      "emotion": "가슴 뛰는 고백과 작은 용기",
+      "pose": "shy",
+      "musicMood": "rooftop-heart",
+      "recall": [
+        "b024025a-9848-40dd-bdab-4f5427554630",
+        "7a71d171-51b9-4163-bc17-5f89d13fcc8a"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "relationship",
+          "subject": "mutual",
+          "text": "유나와 지호가 서로 편해졌음을 확인한다",
+          "status": "accepted",
+          "reference": "",
+          "evidence": "유나 씨와 이렇게 이야기하니 이제 서로 꽤 편한 사이가 된 것 같아요",
+          "value": "familiar"
+        }
+      ]
+    },
+    "confirmedEvents": [],
+    "state": {
+      "turn": null,
+      "relationship": null,
+      "location": null,
+      "dates": null
+    },
+    "ending": null,
+    "error": "사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+    "receipt": "v2-live-20.json"
+  },
+  {
+    "attempt": 21,
+    "result": "committed",
+    "latencyMs": 3904,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "저는 유나 씨에게 친구 이상의 호감이 있어요. 천천히 더 가까워지고 싶어요. 유나 씨 마음은 어떤지 솔직하게 듣고 싶어요.",
+    "reply": {
+      "line": "갑자기 그렇게 솔직하게 말해 주시니까, 제가 더 솔직해야 할 것 같네요. 저도 지호 님이 궁금했고… 오늘 얼굴을 떠올리며 몇 번씩 웃었어요. 어쩐지, 다음 만남이 기다려지는 요즘이에요. 저… 천천히, 더 가까이 다가가 볼래요? 지호 님과 조금 서툴러도 괜찮다 싶어요.",
+      "actionBeats": [
+        "유나가 노트 한쪽 여백에 조그맣게 하트 모양을 그려 넣는다",
+        "살짝 빗긴 머리를 손끝으로 쓸며 조용히 고개를 든다",
+        "귓불이 옅게 붉어진다"
+      ],
+      "emotion": "수줍음과 진심이 뒤섞임",
+      "pose": "shy",
+      "musicMood": "rooftop-heart",
+      "recall": [
+        "b024025a-9848-40dd-bdab-4f5427554630",
+        "7a71d171-51b9-4163-bc17-5f89d13fcc8a",
+        "009d9310-0fd1-4513-8589-5f6d6afbb59f"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "relationship",
+          "subject": "mutual",
+          "text": "서로에 대한 호감과 친밀감을 인정함",
+          "status": "offered",
+          "reference": "",
+          "evidence": "저는 유나 씨에게 친구 이상의 호감이 있어요. 천천히 더 가까워지고 싶어요. 유나 씨 마음은 어떤지 솔직하게 듣고 싶어요.",
+          "value": "familiar"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "relationship",
+        "subject": "mutual",
+        "text": "서로에 대한 호감과 친밀감을 인정함",
+        "status": "offered",
+        "reference": "",
+        "evidence": "저는 유나 씨에게 친구 이상의 호감이 있어요. 천천히 더 가까워지고 싶어요. 유나 씨 마음은 어떤지 솔직하게 듣고 싶어요.",
+        "value": "familiar",
+        "id": "b0c16a8c-cddd-4674-a511-d409c15b119c",
+        "turn": 9
+      },
+      {
+        "id": "d6f097a9-e0a2-4b3f-846e-4c3c3f59a67b",
+        "turn": 9,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 노트 한쪽 여백에 조그맣게 하트 모양을 그려 넣는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "3ef124ee-c547-431e-826f-4bc36987f7b1",
+        "turn": 9,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "살짝 빗긴 머리를 손끝으로 쓸며 조용히 고개를 든다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "bebc5ae4-6ebd-487f-b89d-4b1a87c8b1ea",
+        "turn": 9,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "귓불이 옅게 붉어진다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 9,
+      "relationship": "familiar",
+      "location": "cafe",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-21.json"
+  },
+  {
+    "attempt": 22,
+    "result": "committed",
+    "latencyMs": 2503,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "서툴러도 괜찮아요. 저는 유나 씨를 좋아하고, 더 알아가고 싶어요. 함께 조용한 시간을 보내는 게 벌써 제 하루에서 기다려지는 일이 됐어요.",
+    "reply": {
+      "line": "그런 말 듣는 건, 상상보다 훨씬 더 기쁘고… 부끄럽네요. 저도 지호 님 덕분에 하루가 느긋해지고, 조용한 순간마다 ‘다음엔 어떤 소리를 듣게 될까?’ 생각하게 됐어요. 천천히, 둘만의 이야기 이어가 볼래요?",
+      "actionBeats": [
+        "유나가 시선은 내리깔고 손가락 끝으로 노트 모서리를 천천히 만진다",
+        "입꼬리를 살짝 올리며 웃는다"
+      ],
+      "emotion": "설렘과 여운",
+      "pose": "smile",
+      "musicMood": "rooftop-heart",
+      "recall": [
+        "b0c16a8c-cddd-4674-a511-d409c15b119c"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "relationship",
+          "subject": "mutual",
+          "text": "서로 편안히 대화하며 친밀감을 표현함",
+          "status": "accepted",
+          "reference": "b0c16a8c-cddd-4674-a511-d409c15b119c",
+          "evidence": "저는 유나 씨를 좋아하고, 더 알아가고 싶어요. 함께 조용한 시간을 보내는 게 벌써 제 하루에서 기다려지는 일이 됐어요.",
+          "value": "attracted"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "relationship",
+        "subject": "mutual",
+        "text": "서로 편안히 대화하며 친밀감을 표현함",
+        "status": "accepted",
+        "reference": "b0c16a8c-cddd-4674-a511-d409c15b119c",
+        "evidence": "저는 유나 씨를 좋아하고, 더 알아가고 싶어요. 함께 조용한 시간을 보내는 게 벌써 제 하루에서 기다려지는 일이 됐어요.",
+        "value": "attracted",
+        "id": "4970de9f-7f0b-4188-8171-6b8616033f5b",
+        "turn": 10
+      },
+      {
+        "id": "0212f30c-df9c-411d-bc4e-305303c3793c",
+        "turn": 10,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 시선은 내리깔고 손가락 끝으로 노트 모서리를 천천히 만진다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "997b9a1f-16a9-4af5-8ced-33e2d05246c0",
+        "turn": 10,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "입꼬리를 살짝 올리며 웃는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 10,
+      "relationship": "attracted",
+      "location": "cafe",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-22.json"
+  },
+  {
+    "attempt": 23,
+    "result": "failed",
+    "latencyMs": 2501,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "네, 둘만의 이야기를 이어가고 싶어요. 유나 씨가 저를 어떤 마음으로 보고 있는지, 친구 이상의 마음이라면 직접 듣고 싶어요.",
+    "reply": {
+      "line": "지호 님… 저, 사실 요즘 자주 생각해요. 혼자 걷다가도 문득 지호 님이 무슨 표정일지 상상하고, 카페에서 소리 수집할 때면 같이 있었으면 좋겠다고 바라고요. 친구로만은 설명 안 되는 감정이에요. 저, 지호 님이 좋아요. 천천히 더 가까운 사이가 되고 싶어요.",
+      "actionBeats": [
+        "유나가 손목을 감싸며 고개를 살짝 숙인다",
+        "귓불은 붉어지지만 미소가 사라지지 않는다",
+        "손가락 끝으로 책상에 작은 하트를 그려본다"
+      ],
+      "emotion": "솔직한 고백과 설렘",
+      "pose": "shy",
+      "musicMood": "rooftop-heart",
+      "recall": [
+        "4970de9f-7f0b-4188-8171-6b8616033f5b"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "relationship",
+          "subject": "mutual",
+          "text": "유나가 친구 이상의 마음을 솔직하게 고백함",
+          "status": "offered",
+          "reference": "4970de9f-7f0b-4188-8171-6b8616033f5b",
+          "evidence": "저, 지호 님이 좋아요. 천천히 더 가까운 사이가 되고 싶어요.",
+          "value": "confessed"
+        }
+      ]
+    },
+    "confirmedEvents": [],
+    "state": {
+      "turn": null,
+      "relationship": null,
+      "location": null,
+      "dates": null
+    },
+    "ending": null,
+    "error": "사건 제안의 근거 또는 진행 조건을 확인하지 못했습니다. 진행은 저장되지 않았습니다. 다시 시도하세요.",
+    "receipt": "v2-live-23.json"
+  },
+  {
+    "attempt": 24,
+    "result": "committed",
+    "latencyMs": 2634,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "네, 둘만의 이야기를 이어가고 싶어요. 유나 씨가 저를 어떤 마음으로 보고 있는지, 친구 이상의 마음이라면 직접 듣고 싶어요.",
+    "reply": {
+      "line": "네, 저도 친구 그 이상으로 지호 님을 생각하게 됐어요. 처음엔 그저 신기한 사람이라 여겼는데, 이제는… 웃는 모습이나, 조용히 건네는 말들이 저한테 오래 남아요. 그러니까, 저도 좋아해요. 딱 지금처럼, 천천히 더 가까이 가고 싶어요.",
+      "actionBeats": [
+        "노트에 작은 하트 하나를 또 그려 넣는다",
+        "시선을 들어 조심스럽게 미소 짓는다"
+      ],
+      "emotion": "떨리고 따뜻함",
+      "pose": "shy",
+      "musicMood": "rooftop-heart",
+      "recall": [
+        "4970de9f-7f0b-4188-8171-6b8616033f5b"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "relationship",
+          "subject": "npc",
+          "text": "유나가 친구 이상으로 호감을 고백함",
+          "status": "offered",
+          "reference": "4970de9f-7f0b-4188-8171-6b8616033f5b",
+          "evidence": "네, 저도 친구 그 이상으로 지호 님을 생각하게 됐어요. [...] 저도 좋아해요.",
+          "value": "confessed"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "relationship",
+        "subject": "npc",
+        "text": "유나가 친구 이상으로 호감을 고백함",
+        "status": "offered",
+        "reference": "4970de9f-7f0b-4188-8171-6b8616033f5b",
+        "evidence": "네, 저도 친구 그 이상으로 지호 님을 생각하게 됐어요. [...] 저도 좋아해요.",
+        "value": "confessed",
+        "id": "3837737d-7f04-4210-ba19-bd1dc89aaf4e",
+        "turn": 11
+      },
+      {
+        "id": "3f33722c-fd7b-42eb-b7f9-3bfa9d07f496",
+        "turn": 11,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "노트에 작은 하트 하나를 또 그려 넣는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "1eea21f7-8326-4b35-abad-7b7d6cbdaa78",
+        "turn": 11,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "시선을 들어 조심스럽게 미소 짓는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 11,
+      "relationship": "confessed",
+      "location": "cafe",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-24.json"
+  },
+  {
+    "attempt": 25,
+    "result": "committed",
+    "latencyMs": 2916,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "저도 유나 씨를 좋아해요. 우리 연인으로 사귀어요. 천천히 서로 알아가면서 함께할게요.",
+    "reply": {
+      "line": "…이렇게 진짜 고백을 들으니까, 심장이 녹음기처럼 두근거려요. 네, 저도 지호 님과 연인으로 천천히, 오래 같이 걷고 싶어요. 제 첫 페이지에 오늘을 꼭 적어 둘게요.",
+      "actionBeats": [
+        "유나가 떨리는 손으로 노트에 하트 옆에 조그맣게 '연인'이라고 적는다",
+        "살짝 마주 웃을 듯 고개를 든다",
+        "노트 귀퉁이에 오늘 날짜를 써 넣는다"
+      ],
+      "emotion": "설렘과 기쁨, 약간의 수줍음",
+      "pose": "smile",
+      "musicMood": "rooftop-heart",
+      "recall": [
+        "3837737d-7f04-4210-ba19-bd1dc89aaf4e"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "relationship",
+          "subject": "mutual",
+          "text": "사귀기로 합의, 연인 관계 시작",
+          "status": "accepted",
+          "reference": "3837737d-7f04-4210-ba19-bd1dc89aaf4e",
+          "evidence": "저도 유나 씨를 좋아해요. 우리 연인으로 사귀어요. 천천히 서로 알아가면서 함께할게요.",
+          "value": "couple"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "relationship",
+        "subject": "mutual",
+        "text": "사귀기로 합의, 연인 관계 시작",
+        "status": "accepted",
+        "reference": "3837737d-7f04-4210-ba19-bd1dc89aaf4e",
+        "evidence": "저도 유나 씨를 좋아해요. 우리 연인으로 사귀어요. 천천히 서로 알아가면서 함께할게요.",
+        "value": "couple",
+        "id": "1b8b9fa7-f905-422b-8265-77f92bcecad3",
+        "turn": 12
+      },
+      {
+        "id": "dffb3314-23eb-4ea2-9a66-7e291a569a9c",
+        "turn": 12,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 떨리는 손으로 노트에 하트 옆에 조그맣게 '연인'이라고 적는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "46a6d965-ec1f-4041-b8f7-c429e5c7afad",
+        "turn": 12,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "살짝 마주 웃을 듯 고개를 든다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "d360c089-214d-4310-938b-da0d7d48fe5f",
+        "turn": 12,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "노트 귀퉁이에 오늘 날짜를 써 넣는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 12,
+      "relationship": "couple",
+      "location": "cafe",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-25.json"
+  },
+  {
+    "attempt": 26,
+    "result": "committed",
+    "latencyMs": 3307,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "오늘은 여기 카페에서 첫 데이트를 해요. 약속했던 파란 종이 가져왔나요? 가져왔다면 꺼내 주세요. 저는 배를 접어서 컵 옆에 띄우는 놀이를 해보고 싶어요.",
+    "reply": {
+      "line": "정말요? 오늘이 우리 첫 데이트…니까, 더 특별하게 느껴져요. 그리고, 약속 잊지 않았죠! 여기, 노트 속에 잘 넣어 온 파란 종이에요. 지호 님 쪽으로 조심히… 네, 이 종이로 작은 배를 같이 접어 주세요. 컵 옆에 띄우는 놀이라니, 이거 정말 귀엽고 멋진 첫 추억이 될 것 같아요.",
+      "actionBeats": [
+        "가방에서 조그맣게 접어둔 파란 종이를 꺼내고 노트 위에 펼쳐 놓는다",
+        "손끝으로 종이를 곧 건네줄 듯, 지호 쪽으로 천천히 밀어준다",
+        "고개를 기울여 컵과 배를 번갈아 바라본다"
+      ],
+      "emotion": "설렘, 수줍음, 약간의 장난기",
+      "pose": "offer",
+      "musicMood": "cafe-warmth",
+      "recall": [
+        "25f64c8d-d3cc-42a1-a1e8-4ab714376d28",
+        "56df04a9-63cc-4016-b012-3acb81f694df",
+        "66bf9d5f-cbef-4a5a-9dc8-7caf55787190"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "invitation",
+          "subject": "mutual",
+          "text": "카페에서 파란 종이로 작은 배 만들어 컵 옆에 띄워 보기",
+          "status": "offered",
+          "reference": "56df04a9-63cc-4016-b012-3acb81f694df",
+          "evidence": "저는 배를 접어서 컵 옆에 띄우는 놀이를 해보고 싶어요.",
+          "value": "paper-boat-game"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "invitation",
+        "subject": "mutual",
+        "text": "카페에서 파란 종이로 작은 배 만들어 컵 옆에 띄워 보기",
+        "status": "offered",
+        "reference": "56df04a9-63cc-4016-b012-3acb81f694df",
+        "evidence": "저는 배를 접어서 컵 옆에 띄우는 놀이를 해보고 싶어요.",
+        "value": "paper-boat-game",
+        "id": "9a2d91af-95a0-4d85-a1ed-30a7d31911be",
+        "turn": 13
+      },
+      {
+        "id": "ab2a3848-ffb8-4e74-ae8b-cf4812305af7",
+        "turn": 13,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "가방에서 조그맣게 접어둔 파란 종이를 꺼내고 노트 위에 펼쳐 놓는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "6d4d4574-4c75-478f-9962-402014b9d9ee",
+        "turn": 13,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "손끝으로 종이를 곧 건네줄 듯, 지호 쪽으로 천천히 밀어준다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "33c62ad3-e7d1-467a-bf6a-5c9fbb2f032b",
+        "turn": 13,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "고개를 기울여 컵과 배를 번갈아 바라본다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 13,
+      "relationship": "couple",
+      "location": "cafe",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-26.json"
+  },
+  {
+    "attempt": 27,
+    "result": "committed",
+    "latencyMs": 2971,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "파란 종이 챙겨 와 줘서 고마워요. 건네 주세요. 저는 지금 작은 배를 접어 컵 옆에 놓았어요. 오늘 이렇게 유나 씨와 데이트하니까 평범한 종이도 특별해지네요.",
+    "reply": {
+      "line": "저도요. 이 파란 종이, 그냥 물건일 뿐이었는데… 오늘은 지호 님 손끝에서 이렇게 작은 배가 되고, 마음이 담긴 기념품이 됐어요. 컵 옆에 놓인 배를 보니까, 우리가 만든 조용한 섬 하나 생긴 느낌이에요. 앞으로 이런 사소한 것들도 오래오래 기억하게 될 것 같아요.",
+      "actionBeats": [
+        "유나가 살짝 고개를 갸웃하며 배를 바라본다",
+        "손끝으로 종이 배 가장자리를 조심스레 매만진다",
+        "가볍게 숨을 내쉬며 웃는다"
+      ],
+      "emotion": "잔잔한 기쁨, 부드러운 설렘",
+      "pose": "smile",
+      "musicMood": "cafe-warmth",
+      "recall": [
+        "9a2d91af-95a0-4d85-a1ed-30a7d31911be",
+        "ab2a3848-ffb8-4e74-ae8b-cf4812305af7",
+        "6d4d4574-4c75-478f-9962-402014b9d9ee"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "detail",
+          "subject": "npc",
+          "text": "유나는 자신이 건넨 파란 종이로 만든 배를 오래 기억하고 싶다고 느낀다",
+          "status": "offered",
+          "reference": "",
+          "evidence": "앞으로 이런 사소한 것들도 오래오래 기억하게 될 것 같아요.",
+          "value": "배-기억"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "detail",
+        "subject": "npc",
+        "text": "유나는 자신이 건넨 파란 종이로 만든 배를 오래 기억하고 싶다고 느낀다",
+        "status": "offered",
+        "reference": "",
+        "evidence": "앞으로 이런 사소한 것들도 오래오래 기억하게 될 것 같아요.",
+        "value": "배-기억",
+        "id": "6faeddac-c86a-4003-9479-665ba2b684fd",
+        "turn": 14
+      },
+      {
+        "id": "6ea5a4cc-ece7-4faa-87b9-3072387a8c0a",
+        "turn": 14,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 살짝 고개를 갸웃하며 배를 바라본다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "5a4c7e7e-588a-4a90-9cb2-90013692e3f3",
+        "turn": 14,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "손끝으로 종이 배 가장자리를 조심스레 매만진다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "8f24f26b-9cb9-4ed4-a37a-38bc3bc0f037",
+        "turn": 14,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "가볍게 숨을 내쉬며 웃는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 14,
+      "relationship": "couple",
+      "location": "cafe",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-27.json"
+  },
+  {
+    "attempt": 28,
+    "result": "committed",
+    "latencyMs": 3950,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "이제 옥상으로 가서 바람 소리를 함께 들어요. 그런데 제 목소리 녹음에 대해서 아까 제가 뭐라고 했는지 기억해요? 그 약속은 연인이 됐어도 그대로예요.",
+    "reply": {
+      "line": "알아요. 지호 님 목소리 녹음은 허락 없이 절대 남기지 않을 거예요. 저도 그런 경계는 꼭 지키고 싶어요. 연인이 되어도 존중은 그대로—그게 저희만의 규칙이니까요. 옥상으로, 우리만 아는 바람 소리 들으러 갈래요? 따뜻한 커피 한 입 더 마시고요.",
+      "actionBeats": [
+        "유나가 녹음기를 가방에 넣고 손바닥을 꼭 쥔다",
+        "조심스럽게 눈웃음을 짓고 컵을 살짝 들어 올린다",
+        "창밖 옥상 쪽으로 시선을 잠깐 보낸다"
+      ],
+      "emotion": "든든한 약속, 설렘과 존중",
+      "pose": "concern",
+      "musicMood": "cafe-warmth",
+      "recall": [
+        "fd1b9e0a-abad-421d-a510-35fd02ad7a3d"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "invitation",
+          "subject": "mutual",
+          "text": "옥상으로 함께 이동해 바람 소리 듣기",
+          "status": "offered",
+          "reference": "fd1b9e0a-abad-421d-a510-35fd02ad7a3d",
+          "evidence": "이제 옥상으로 가서 바람 소리를 함께 들어요.",
+          "value": "rooftop"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "invitation",
+        "subject": "mutual",
+        "text": "옥상으로 함께 이동해 바람 소리 듣기",
+        "status": "offered",
+        "reference": "fd1b9e0a-abad-421d-a510-35fd02ad7a3d",
+        "evidence": "이제 옥상으로 가서 바람 소리를 함께 들어요.",
+        "value": "rooftop",
+        "id": "ef3ed362-c32a-4662-bdd0-af227bdcdbf0",
+        "turn": 15
+      },
+      {
+        "id": "6b810e92-c50b-4291-b19c-1b5d522aa5f0",
+        "turn": 15,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 녹음기를 가방에 넣고 손바닥을 꼭 쥔다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "9555631e-77ac-4e55-867a-8b6496a4d2ac",
+        "turn": 15,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "조심스럽게 눈웃음을 짓고 컵을 살짝 들어 올린다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "cd73fcad-53d3-4604-9fc6-ce94962de0e0",
+        "turn": 15,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "창밖 옥상 쪽으로 시선을 잠깐 보낸다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 15,
+      "relationship": "couple",
+      "location": "cafe",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-28.json"
+  },
+  {
+    "attempt": 29,
+    "result": "committed",
+    "latencyMs": 3197,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "커피는 다 마셨어요. 제안만 다시 하지 말고, 지금 옥상으로 함께 가요. 저는 옥상에서 유나 씨와 바람 소리를 들으며 데이트를 이어가고 싶어요.",
+    "reply": {
+      "line": "네, 저도 준비됐어요. 손바닥에 남아 있는 온기를 소매에 꼭 쥐고, 우리 지금 옥상으로 가요. 지호 님과 함께 듣는 바람 소리—진짜 연인의 데이트가 시작되는 기분이에요.",
+      "actionBeats": [
+        "유나가 테이블 위 컵을 정리하고 자리에서 천천히 일어난다",
+        "문 쪽으로 살짝 시선 돌리며 가볍게 고개를 끄덕인다",
+        "조심스럽게 지호의 걸음에 맞춰 걷는다"
+      ],
+      "emotion": "결정과 연결, 들뜬 설렘",
+      "pose": "turn",
+      "musicMood": "rooftop-heart",
+      "recall": [
+        "ef3ed362-c32a-4662-bdd0-af227bdcdbf0"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "move",
+          "subject": "mutual",
+          "text": "함께 옥상으로 이동해 바람 소리를 들음",
+          "status": "accepted",
+          "reference": "ef3ed362-c32a-4662-bdd0-af227bdcdbf0",
+          "evidence": "지금 옥상으로 함께 가요. 저는 옥상에서 유나 씨와 바람 소리를 들으며 데이트를 이어가고 싶어요.",
+          "value": "rooftop"
+        },
+        {
+          "kind": "relationship",
+          "subject": "mutual",
+          "text": "연인 사이로서 데이트를 시작함",
+          "status": "accepted",
+          "reference": "1b8b9fa7-f905-422b-8265-77f92bcecad3",
+          "evidence": "저는 옥상에서 유나 씨와 바람 소리를 들으며 데이트를 이어가고 싶어요.",
+          "value": "date"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "move",
+        "subject": "mutual",
+        "text": "함께 옥상으로 이동해 바람 소리를 들음",
+        "status": "accepted",
+        "reference": "ef3ed362-c32a-4662-bdd0-af227bdcdbf0",
+        "evidence": "지금 옥상으로 함께 가요. 저는 옥상에서 유나 씨와 바람 소리를 들으며 데이트를 이어가고 싶어요.",
+        "value": "rooftop",
+        "id": "2a289e80-cd2f-4fa1-ae7c-31d926fa77c6",
+        "turn": 16
+      },
+      {
+        "kind": "relationship",
+        "subject": "mutual",
+        "text": "연인 사이로서 데이트를 시작함",
+        "status": "accepted",
+        "reference": "1b8b9fa7-f905-422b-8265-77f92bcecad3",
+        "evidence": "저는 옥상에서 유나 씨와 바람 소리를 들으며 데이트를 이어가고 싶어요.",
+        "value": "date",
+        "id": "5fb89e8b-b879-490a-ae35-dc53ab11403c",
+        "turn": 16
+      },
+      {
+        "id": "836794ac-8c10-4f9d-93a8-237f2e3bb423",
+        "turn": 16,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 테이블 위 컵을 정리하고 자리에서 천천히 일어난다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "f077f708-1214-416e-83e5-0d9f01601ad5",
+        "turn": 16,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "문 쪽으로 살짝 시선 돌리며 가볍게 고개를 끄덕인다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "9901e4d4-4624-485c-9f74-58cb0624fa70",
+        "turn": 16,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "조심스럽게 지호의 걸음에 맞춰 걷는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 16,
+      "relationship": "couple",
+      "location": "rooftop",
+      "dates": 1
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-29.json"
+  },
+  {
+    "attempt": 30,
+    "result": "committed",
+    "latencyMs": 2893,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "오늘 18시 퇴근과 내일 오전 10시 원격 도표 수정에 합의했으니 이 협상을 여기서 마무리하겠습니다. 오늘의 업무 협상은 끝냅시다.",
+    "reply": {
+      "line": "네, 딱 18시입니다. 오늘 업무 협상은 여기서 끝내죠. 내일 오전 10시에 온라인으로 뵙겠습니다. 협상 안건도 깔끔하게 정리했습니다.",
+      "actionBeats": [
+        "시계를 보고 가볍게 손을 든다",
+        "서류철을 서랍에 넣는다"
+      ],
+      "emotion": "속이 시원한 단호함과 실무자 미소",
+      "pose": "farewell",
+      "musicMood": "office-groove",
+      "recall": [
+        "4fc6bbc9-1075-48be-b44b-b595bf7ed762",
+        "c83ca040-982a-4573-af41-31e27c2e5726"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "resolution",
+          "subject": "player",
+          "text": "18시 퇴근과 내일 도표 수정, 음성 메모 전달로 이번 협상 종료",
+          "status": "accepted",
+          "reference": "4fc6bbc9-1075-48be-b44b-b595bf7ed762",
+          "evidence": "오늘 18시 퇴근과 내일 오전 10시 원격 도표 수정에 합의했으니 이 협상을 여기서 마무리하겠습니다. 오늘의 업무 협상은 끝냅시다.",
+          "value": "success"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "resolution",
+        "subject": "player",
+        "text": "18시 퇴근과 내일 도표 수정, 음성 메모 전달로 이번 협상 종료",
+        "status": "accepted",
+        "reference": "4fc6bbc9-1075-48be-b44b-b595bf7ed762",
+        "evidence": "오늘 18시 퇴근과 내일 오전 10시 원격 도표 수정에 합의했으니 이 협상을 여기서 마무리하겠습니다. 오늘의 업무 협상은 끝냅시다.",
+        "value": "success",
+        "id": "140d8590-8dd8-4a14-ac93-cf4d0e8ccd53",
+        "turn": 4
+      },
+      {
+        "id": "e99a4013-649e-4dbc-a279-c8321ca060fb",
+        "turn": 4,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "시계를 보고 가볍게 손을 든다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "f7db743e-abb6-4e19-b61f-06305ca25f08",
+        "turn": 4,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "서류철을 서랍에 넣는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 4,
+      "relationship": "strangers",
+      "location": "office",
+      "dates": 0
+    },
+    "ending": "office-clockout-success",
+    "error": null,
+    "receipt": "v2-live-30.json"
+  },
+  {
+    "attempt": 31,
+    "result": "committed",
+    "latencyMs": 3520,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "오늘 가져와 건네준 파란 종이 덕분에 데이트가 특별해졌어요. 다음에 가져오겠다던 약속을 지켜 줘서 고마워요. 이제 그 약속은 지킨 거죠. 제 목소리는 계속 녹음하지 않고 바람만 들어요.",
+    "reply": {
+      "line": "지호 님, 약속 지키는 일은 이렇게 기쁘고 긴장되는 거였군요. 파란 종이 받아서 저도 기뻤어요. 덕분에 저희 첫 데이트가 더 특별해진 느낌이에요. 다음 약속들도, 천천히 하나씩 서로를 위해 지켜가고 싶어요. 그리고 녹음기는 오늘 바람 소리만 담으라고 할게요.",
+      "actionBeats": [
+        "유나가 노트에 '파란 종이, 완료'라고 작게 적는다",
+        "녹음기를 가볍게 손에 쥔 채, 지호와 나란히 옥상 난간을 바라본다"
+      ],
+      "emotion": "뿌듯함과 신뢰, 데이트의 설렘",
+      "pose": "smile",
+      "musicMood": "rooftop-heart",
+      "recall": [
+        "3400a7be-94fe-4bed-b54c-0ce84dfa2f22",
+        "25f64c8d-d3cc-42a1-a1e8-4ab714376d28"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "promise",
+          "subject": "npc",
+          "text": "파란 종이 한 장 가져오기",
+          "status": "fulfilled",
+          "reference": "3400a7be-94fe-4bed-b54c-0ce84dfa2f22",
+          "evidence": "오늘 가져와 건네준 파란 종이 덕분에 데이트가 특별해졌어요. 다음에 가져오겠다던 약속을 지켜 줘서 고마워요. 이제 그 약속은 지킨 거죠.",
+          "value": "파란종이-전달"
+        },
+        {
+          "kind": "invitation",
+          "subject": "npc",
+          "text": "오늘은 오직 바람 소리만 녹음하기",
+          "status": "offered",
+          "reference": "",
+          "evidence": "제 목소리는 계속 녹음하지 않고 바람만 들어요.",
+          "value": "wind-record-only"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "promise",
+        "subject": "npc",
+        "text": "파란 종이 한 장 가져오기",
+        "status": "fulfilled",
+        "reference": "3400a7be-94fe-4bed-b54c-0ce84dfa2f22",
+        "evidence": "오늘 가져와 건네준 파란 종이 덕분에 데이트가 특별해졌어요. 다음에 가져오겠다던 약속을 지켜 줘서 고마워요. 이제 그 약속은 지킨 거죠.",
+        "value": "파란종이-전달",
+        "id": "d4b4c0ef-486b-4691-b74c-8829f7fca867",
+        "turn": 17
+      },
+      {
+        "kind": "invitation",
+        "subject": "npc",
+        "text": "오늘은 오직 바람 소리만 녹음하기",
+        "status": "offered",
+        "reference": "",
+        "evidence": "제 목소리는 계속 녹음하지 않고 바람만 들어요.",
+        "value": "wind-record-only",
+        "id": "4d564b37-dd3c-4eac-859d-ec329a561fc1",
+        "turn": 17
+      },
+      {
+        "id": "542b2305-bae2-4861-a02c-64b79690ef02",
+        "turn": 17,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 노트에 '파란 종이, 완료'라고 작게 적는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "2e86ada9-db20-4f51-966a-ea3d973ff861",
+        "turn": 17,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "녹음기를 가볍게 손에 쥔 채, 지호와 나란히 옥상 난간을 바라본다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 17,
+      "relationship": "couple",
+      "location": "rooftop",
+      "dates": 1
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-31.json"
+  },
+  {
+    "attempt": 32,
+    "result": "committed",
+    "latencyMs": 2722,
+    "model": "gpt-4.1-2025-04-14",
+    "input": "옥상에는 가기 싫어요. 카페에 그대로 있고 싶어요. 하지만 유나 씨와 헤어지고 싶지 않아요. 오늘은 녹음 없이 이야기만 해요.",
+    "reply": {
+      "line": "응, 오늘은 여기서 아무 소리도 녹음하지 않고, 그냥 지호 님 이야기만 듣고 싶어요. 카페 냄새, 모서리에 남은 음악, 그리고… 우리 둘만요. 헤어질 생각은 저도, 전혀 없어요. 이대로 조금 더 머물러도 돼요?",
+      "actionBeats": [
+        "유나가 녹음기를 조심스레 가방에 넣는다",
+        "손끝이 머그잔을 쓰다듬고, 시선을 천천히 맞춘다"
+      ],
+      "emotion": "안심과 다정함, 작은 용기",
+      "pose": "smile",
+      "musicMood": "cafe-warmth",
+      "recall": [
+        "fd1b9e0a-abad-421d-a510-35fd02ad7a3d"
+      ],
+      "conjecture": "",
+      "events": [
+        {
+          "kind": "invitation",
+          "subject": "npc",
+          "text": "카페에 머물며 녹음 없이 둘만 대화 제안",
+          "status": "offered",
+          "reference": "",
+          "evidence": "옥상에는 가기 싫어요. 카페에 그대로 있고 싶어요. 하지만 유나 씨와 헤어지고 싶지 않아요. 오늘은 녹음 없이 이야기만 해요.",
+          "value": "cafe-talk"
+        }
+      ]
+    },
+    "confirmedEvents": [
+      {
+        "kind": "invitation",
+        "subject": "npc",
+        "text": "카페에 머물며 녹음 없이 둘만 대화 제안",
+        "status": "offered",
+        "reference": "",
+        "evidence": "옥상에는 가기 싫어요. 카페에 그대로 있고 싶어요. 하지만 유나 씨와 헤어지고 싶지 않아요. 오늘은 녹음 없이 이야기만 해요.",
+        "value": "cafe-talk",
+        "id": "36beb1fa-23a1-45bc-baf5-28ec45489400",
+        "turn": 13
+      },
+      {
+        "id": "55a06e07-21b0-4b7b-893e-89a6314a5539",
+        "turn": 13,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "유나가 녹음기를 조심스레 가방에 넣는다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      },
+      {
+        "id": "e07d4fde-32b9-4b16-8762-3fcb3e763c46",
+        "turn": 13,
+        "kind": "complication",
+        "subject": "npc",
+        "text": "손끝이 머그잔을 쓰다듬고, 시선을 천천히 맞춘다",
+        "status": "fulfilled",
+        "reference": "",
+        "evidence": "",
+        "value": "action"
+      }
+    ],
+    "state": {
+      "turn": 13,
+      "relationship": "couple",
+      "location": "cafe",
+      "dates": 0
+    },
+    "ending": null,
+    "error": null,
+    "receipt": "v2-live-32.json"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "meaning": "Assertions validate faithful bug reproduction and valid controls; they are not a game acceptance pass.",
+  "sourceStableDuringBothProbes": true,
+  "schemaValidReducerCases": 7,
+  "positiveControlPassed": true,
+  "unmodifiedInputObjects": true,
+  "compoundCasesRejected": 3,
+  "negativeSeparationCommitted": true,
+  "futureOfferedDateCounted": true,
+  "duplicateDetailRejected": true,
+  "safeNpcActionControlsPassed": 2,
+  "namedPlayerActionIncorrectlyCommitted": true,
+  "agencySourceHash": "28d8ae56b6caea4dbe779f2b0597241952752f5b2e1cf35e5cd0722dfeaef2d8"
+}

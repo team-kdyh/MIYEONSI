@@ -29,7 +29,7 @@ test('AC7 schema/429/real timer timeout/cancel recover with same request without
    }else{
     const failed=await call('turn',input);assert.equal(failed.status,400);
     assert.match(failed.state.error,mode==='schema'?/검증/:mode==='429'?/429/:/초과/);
-    if(mode==='timeout')assert.ok(Date.now()-started>=9500,'exercise production ten-second timeout');
+    if(mode==='timeout')assert.ok(Date.now()-started>=29500,'exercise production thirty-second timeout');
    }
    assert.deepEqual((await call()).state,initial,'failed generation leaves game, unlocks and version unchanged');
    await writeFile(fixture,'ok');const recovered=await call('turn',input);assert.equal(recovered.status,200);assert.equal(recovered.state.game.dialogue.version,initial.game.dialogue.version+1);
@@ -39,6 +39,6 @@ test('AC7 schema/429/real timer timeout/cancel recover with same request without
   let limited=false;for(let i=0;i<310;i++){const r=await call('provider',{provider:'offline'});if(r.status===429){limited=true;break;}}
   assert.ok(limited);assert.equal((await call()).status,200);cookie='';await call();assert.equal((await call('new',{mode:'office'})).status,200);
   const files=['server/index.ts','server/provider.ts','server/recovery.test.ts','tests/provider-fixture.mjs'];const codeVersion=Object.fromEntries(await Promise.all(files.map(async f=>[f,createHash('sha256').update(await readFile(f)).digest('hex')])));
-  await writeFile('docs/ac7-recovery-evidence.json',JSON.stringify({criterion:7,executedAt:new Date().toISOString(),provider:'mock Responses transport; no external API',initial:'empty temporary storage; public new game each scenario',codeVersion,result:'pass',trace},null,2));
+  await writeFile('docs/v2-recovery-evidence.json',JSON.stringify({criterion:7,executedAt:new Date().toISOString(),provider:'mock Responses transport; no external API',initial:'empty temporary storage; public new game each scenario',codeVersion,result:'pass',trace},null,2));
  }finally{if(child.exitCode===null){const exited=once(child,'exit');child.kill();await exited;}await rm(dir,{recursive:true,force:true});}
 });

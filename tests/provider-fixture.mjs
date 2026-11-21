@@ -9,6 +9,6 @@ globalThis.fetch=async(url,options)=>{
   const abort=()=>reject(new DOMException('Aborted','AbortError'));
   if(options.signal.aborted)abort();else options.signal.addEventListener('abort',abort,{once:true});
  });
- const reply=mode==='schema'?{line:'잘못된 응답',recall:['forged-fact'],conjecture:'',ending:'romance-3'}:{line:'말씀을 들었습니다. 지금 조건을 확인하겠습니다.',recall:[],conjecture:'',intent:'none'};
+ const reply=mode==='schema'?{line:'잘못된 응답',recall:['forged-fact'],conjecture:'',ending:'romance-3'}:{line:'말씀을 들었습니다. 지금 조건을 확인하겠습니다.',recall:[],conjecture:'',actionBeats:['박도현이 서류를 살핀다.'],emotion:'차분함',pose:'listen',musicMood:'office-groove',events:[]};
  return Response.json({status:'completed',output:[{content:[{type:'output_text',text:JSON.stringify(reply)}]}]});
 };

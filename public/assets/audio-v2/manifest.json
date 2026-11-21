@@ -1,0 +1,520 @@
+{
+  "project": "AFTER HOURS v2",
+  "created": "2026-11-21",
+  "provenance": "Original melodies, chord arrangements, rhythms, and synthesis authored for this project. No samples, existing melodies, external recordings, downloaded audio, Fal or OpenAI calls.",
+  "method": "Deterministic NumPy/SciPy additive and FM instrument synthesis; score-specific note/rhythm/harmony arrangements; circular tail placement and room reflections; Vorbis quality 5 encoding.",
+  "generator": "compose.py",
+  "generatorSHA256": "a8d82b56e665a8c54ecabce040fb7abbf7d0a9e51de55808711908ebec1e1a84",
+  "reproducibleCommand": "python compose.py",
+  "requirements": [
+    "Python 3.10+",
+    "numpy",
+    "scipy",
+    "ffmpeg with libvorbis"
+  ],
+  "looping": "OGG files are intended for whole-file looping. Exact musical lengths are derived from the documented bars/meter/tempo. Tails and reverberation wrap across the boundary. Fifteen-millisecond cosine ramps prevent codec-boundary clicks; no separate silent gap is inserted.",
+  "mix": "Stereo, 44100 Hz. Gain-only normalization limits RMS to -20 dBFS (-23 for archive-unease) and peak to -3 dBFS, whichever is quieter. No clipped samples. Suggested game playback volume 30–50%, crossfade 1.5–2.5 sec, mood dwell time >= 8 sec.",
+  "listeningStatus": "Objective waveform/export/structure checks only. No claim of human listening approval, live acoustic performance, or commercial mastering.",
+  "tracks": [
+    {
+      "id": "office-groove",
+      "file": "office-groove.ogg",
+      "master": "masters/office-groove.wav",
+      "score": "office-groove.score.json",
+      "bpm": 94,
+      "meter": "4/4",
+      "key": "D major",
+      "bars": 24,
+      "durationSeconds": 61.276599,
+      "sampleRate": 44100,
+      "channels": 2,
+      "sections": "A 1–8 / B 9–16 / A varied 17–24",
+      "composition": "Dry, lightly swung electric keys, acoustic-style walking bass and brushes. A playful rising question answered by a clipped descent; B moves through G–F#–Bm.",
+      "eventCount": 618,
+      "instruments": [
+        "bass",
+        "brush",
+        "epiano",
+        "kick",
+        "marimba",
+        "shaker"
+      ],
+      "sha256": "ed29e9ee5af160f5021c6816c211d232df59301b947edc971499fa4ff3f64fb1",
+      "bytes": 940967,
+      "masterPeakDbFS": -7.64,
+      "masterRmsDbFS": -20.0,
+      "masterDC": [
+        -5.1418058655269215e-06,
+        -4.7974962976591575e-06
+      ],
+      "masterClippedSamples": 0,
+      "masterLoopSeamAbsolute": [
+        0.0,
+        0.0
+      ],
+      "masterAdjacentDifferenceP99": [
+        0.04567886140093864,
+        0.03757362351349034
+      ],
+      "fourBarRmsDbFS": [
+        -19.9,
+        -19.94,
+        -19.87,
+        -19.98,
+        -20.13,
+        -20.19
+      ],
+      "decodedDurationSeconds": 61.293424,
+      "decodedPeakDbFS": -7.663,
+      "decodedRmsDbFS": -19.968,
+      "decodedLoopSeamAbsolute": [
+        1.973549478861969e-05,
+        4.343802356743254e-05
+      ],
+      "passedChecks": {
+        "duration48to90": true,
+        "noMasterClipping": true,
+        "masterSeamBelowPoint01": true,
+        "exportDecodes": true,
+        "exportSeamBelowPoint01": true,
+        "exportPeakBelowMinus1dB": true
+      }
+    },
+    {
+      "id": "office-pressure",
+      "file": "office-pressure.ogg",
+      "master": "masters/office-pressure.wav",
+      "score": "office-pressure.score.json",
+      "bpm": 110,
+      "meter": "4/4",
+      "key": "E minor",
+      "bars": 24,
+      "durationSeconds": 52.363628,
+      "sampleRate": 44100,
+      "channels": 2,
+      "sections": "A 1–8 / B 9–16 / A intensified 17–24",
+      "composition": "Muted piano/marimba ostinato over low strings; measured ticks and restrained kick. B changes the bass progression and introduces a held upper counterline.",
+      "eventCount": 536,
+      "instruments": [
+        "bass",
+        "felt",
+        "hat",
+        "kick",
+        "marimba",
+        "strings",
+        "tap"
+      ],
+      "sha256": "a03d29cb48c6d8075625b37e0d1113146f758aae7061b9abb389aed2f26c4078",
+      "bytes": 690644,
+      "masterPeakDbFS": -8.225,
+      "masterRmsDbFS": -20.0,
+      "masterDC": [
+        -6.241171500107785e-06,
+        -6.080968651315347e-06
+      ],
+      "masterClippedSamples": 0,
+      "masterLoopSeamAbsolute": [
+        0.0,
+        0.0
+      ],
+      "masterAdjacentDifferenceP99": [
+        0.022724495754502777,
+        0.0279705438375016
+      ],
+      "fourBarRmsDbFS": [
+        -20.05,
+        -20.06,
+        -19.94,
+        -19.93,
+        -19.97,
+        -20.06
+      ],
+      "decodedDurationSeconds": 52.385669,
+      "decodedPeakDbFS": -8.047,
+      "decodedRmsDbFS": -19.974,
+      "decodedLoopSeamAbsolute": [
+        2.7743970349547453e-05,
+        3.447126437094994e-05
+      ],
+      "passedChecks": {
+        "duration48to90": true,
+        "noMasterClipping": true,
+        "masterSeamBelowPoint01": true,
+        "exportDecodes": true,
+        "exportSeamBelowPoint01": true,
+        "exportPeakBelowMinus1dB": true
+      }
+    },
+    {
+      "id": "cafe-warmth",
+      "file": "cafe-warmth.ogg",
+      "master": "masters/cafe-warmth.wav",
+      "score": "cafe-warmth.score.json",
+      "bpm": 80,
+      "meter": "4/4",
+      "key": "G major",
+      "bars": 24,
+      "durationSeconds": 72.0,
+      "sampleRate": 44100,
+      "channels": 2,
+      "sections": "A 1–8 / B 9–16 / A varied 17–24",
+      "composition": "Fingerpicked acoustic-style plucks, a gentle piano melody and soft shaker. A lilting two-bar question; B opens to C and A minor with bell answers.",
+      "eventCount": 374,
+      "instruments": [
+        "bell",
+        "piano",
+        "pluck",
+        "shaker",
+        "tap"
+      ],
+      "sha256": "6e36898828d76fa9a46577384f3e42da3475ecfb6952af408b832891ffa94acb",
+      "bytes": 1041629,
+      "masterPeakDbFS": -5.203,
+      "masterRmsDbFS": -20.0,
+      "masterDC": [
+        -4.833063684374226e-07,
+        -3.6095689884285506e-07
+      ],
+      "masterClippedSamples": 0,
+      "masterLoopSeamAbsolute": [
+        0.0,
+        0.0
+      ],
+      "masterAdjacentDifferenceP99": [
+        0.03669449110408501,
+        0.034414218640390036
+      ],
+      "fourBarRmsDbFS": [
+        -19.86,
+        -20.15,
+        -19.95,
+        -20.05,
+        -19.83,
+        -20.17
+      ],
+      "decodedDurationSeconds": 72.012336,
+      "decodedPeakDbFS": -5.104,
+      "decodedRmsDbFS": -19.966,
+      "decodedLoopSeamAbsolute": [
+        4.1660296119516715e-05,
+        6.913761171745136e-05
+      ],
+      "passedChecks": {
+        "duration48to90": true,
+        "noMasterClipping": true,
+        "masterSeamBelowPoint01": true,
+        "exportDecodes": true,
+        "exportSeamBelowPoint01": true,
+        "exportPeakBelowMinus1dB": true
+      }
+    },
+    {
+      "id": "rooftop-heart",
+      "file": "rooftop-heart.ogg",
+      "master": "masters/rooftop-heart.wav",
+      "score": "rooftop-heart.score.json",
+      "bpm": 72,
+      "meter": "3/4",
+      "key": "B-flat major",
+      "bars": 24,
+      "durationSeconds": 60.0,
+      "sampleRate": 44100,
+      "channels": 2,
+      "sections": "A 1–8 / B 9–16 / A with answering strings 17–24",
+      "composition": "Slow three-beat piano waltz with a soft string response. The B section climbs and then leaves space for a confession; no drum kit.",
+      "eventCount": 295,
+      "instruments": [
+        "piano",
+        "strings"
+      ],
+      "sha256": "a4516c6187507bb7175f735eeb76fd47a8da3cfb999c9ed570bff02feb4c1c99",
+      "bytes": 697245,
+      "masterPeakDbFS": -6.669,
+      "masterRmsDbFS": -20.0,
+      "masterDC": [
+        -4.797839421963666e-07,
+        -3.7716821480589215e-07
+      ],
+      "masterClippedSamples": 0,
+      "masterLoopSeamAbsolute": [
+        0.0,
+        0.0
+      ],
+      "masterAdjacentDifferenceP99": [
+        0.026511442383214803,
+        0.028187553715425574
+      ],
+      "fourBarRmsDbFS": [
+        -19.76,
+        -19.96,
+        -19.93,
+        -19.91,
+        -20.17,
+        -20.29
+      ],
+      "decodedDurationSeconds": 60.019229,
+      "decodedPeakDbFS": -6.672,
+      "decodedRmsDbFS": -19.984,
+      "decodedLoopSeamAbsolute": [
+        9.609925655240659e-07,
+        8.354139572475106e-05
+      ],
+      "passedChecks": {
+        "duration48to90": true,
+        "noMasterClipping": true,
+        "masterSeamBelowPoint01": true,
+        "exportDecodes": true,
+        "exportSeamBelowPoint01": true,
+        "exportPeakBelowMinus1dB": true
+      }
+    },
+    {
+      "id": "rainy-memory",
+      "file": "rainy-memory.ogg",
+      "master": "masters/rainy-memory.wav",
+      "score": "rainy-memory.score.json",
+      "bpm": 78,
+      "meter": "4/4",
+      "key": "F-sharp minor",
+      "bars": 24,
+      "durationSeconds": 73.846145,
+      "sampleRate": 44100,
+      "channels": 2,
+      "sections": "A 1–8 / B 9–16 / A sparse 17–24",
+      "composition": "Wistful tremolo electric piano, widely spaced upper notes and a quiet filtered synthetic rain bed. Syncopated chord answers contrast a more continuous B melody.",
+      "eventCount": 319,
+      "instruments": [
+        "bass",
+        "bell",
+        "epiano",
+        "pad",
+        "shaker"
+      ],
+      "sha256": "156b725a24ba5e71bdb4fc75107e658563d23ab454637a969065d5f84512f2b2",
+      "bytes": 1224481,
+      "masterPeakDbFS": -4.491,
+      "masterRmsDbFS": -20.0,
+      "masterDC": [
+        -6.18708443936375e-07,
+        -5.044844366048792e-07
+      ],
+      "masterClippedSamples": 0,
+      "masterLoopSeamAbsolute": [
+        0.0,
+        0.0
+      ],
+      "masterAdjacentDifferenceP99": [
+        0.03166973405402638,
+        0.032634559108053386
+      ],
+      "fourBarRmsDbFS": [
+        -20.16,
+        -20.11,
+        -19.69,
+        -19.61,
+        -20.36,
+        -20.13
+      ],
+      "decodedDurationSeconds": 73.846712,
+      "decodedPeakDbFS": -4.565,
+      "decodedRmsDbFS": -19.976,
+      "decodedLoopSeamAbsolute": [
+        0.0003027567872777581,
+        0.00030809719464741647
+      ],
+      "passedChecks": {
+        "duration48to90": true,
+        "noMasterClipping": true,
+        "masterSeamBelowPoint01": true,
+        "exportDecodes": true,
+        "exportSeamBelowPoint01": true,
+        "exportPeakBelowMinus1dB": true
+      }
+    },
+    {
+      "id": "archive-unease",
+      "file": "archive-unease.ogg",
+      "master": "masters/archive-unease.wav",
+      "score": "archive-unease.score.json",
+      "bpm": 60,
+      "meter": "4/4",
+      "key": "D minor with suspended ninths",
+      "bars": 16,
+      "durationSeconds": 64.0,
+      "sampleRate": 44100,
+      "channels": 2,
+      "sections": "A 1–8 / B 9–16",
+      "composition": "Sparse felt piano, distant glass over slow minor pads and synthetic tape flutter. The B section introduces a quiet heartbeat and descending unanswered notes.",
+      "eventCount": 96,
+      "instruments": [
+        "bell",
+        "felt",
+        "kick",
+        "pad"
+      ],
+      "sha256": "15009a89a11c82293e1691bb16646321fdf0c63910cfdf7c2211f59b8fb2f709",
+      "bytes": 1022495,
+      "masterPeakDbFS": -8.033,
+      "masterRmsDbFS": -23.0,
+      "masterDC": [
+        -8.910341535929219e-07,
+        -7.253346179309183e-07
+      ],
+      "masterClippedSamples": 0,
+      "masterLoopSeamAbsolute": [
+        0.0,
+        0.0
+      ],
+      "masterAdjacentDifferenceP99": [
+        0.014910052116872248,
+        0.015888412574668723
+      ],
+      "fourBarRmsDbFS": [
+        -23.5,
+        -23.48,
+        -22.65,
+        -22.47
+      ],
+      "decodedDurationSeconds": 64.010159,
+      "decodedPeakDbFS": -7.901,
+      "decodedRmsDbFS": -22.974,
+      "decodedLoopSeamAbsolute": [
+        0.00011420834925957024,
+        0.00011019227531505749
+      ],
+      "passedChecks": {
+        "duration48to90": true,
+        "noMasterClipping": true,
+        "masterSeamBelowPoint01": true,
+        "exportDecodes": true,
+        "exportSeamBelowPoint01": true,
+        "exportPeakBelowMinus1dB": true
+      }
+    },
+    {
+      "id": "archive-pursuit",
+      "file": "archive-pursuit.ogg",
+      "master": "masters/archive-pursuit.wav",
+      "score": "archive-pursuit.score.json",
+      "bpm": 104,
+      "meter": "5/4",
+      "key": "C minor",
+      "bars": 24,
+      "durationSeconds": 69.230771,
+      "sampleRate": 44100,
+      "channels": 2,
+      "sections": "A 1–8 / B 9–16 / A with counterline 17–24",
+      "composition": "Restrained five-beat thriller pulse grouped 3+2: low piano/bass and short string swells, with a higher marimba reply in B. No loud stingers.",
+      "eventCount": 644,
+      "instruments": [
+        "bass",
+        "hat",
+        "kick",
+        "marimba",
+        "piano",
+        "strings",
+        "tap"
+      ],
+      "sha256": "9affe22de8b8125ad6709fdf4acde2e107e91483642fdee70397b81c3da2b311",
+      "bytes": 920512,
+      "masterPeakDbFS": -8.131,
+      "masterRmsDbFS": -20.0,
+      "masterDC": [
+        -8.583045408353868e-06,
+        -8.069068287222384e-06
+      ],
+      "masterClippedSamples": 0,
+      "masterLoopSeamAbsolute": [
+        0.0,
+        0.0
+      ],
+      "masterAdjacentDifferenceP99": [
+        0.011323659993832818,
+        0.013768044175486969
+      ],
+      "fourBarRmsDbFS": [
+        -19.99,
+        -20.0,
+        -20.01,
+        -20.01,
+        -19.99,
+        -20.0
+      ],
+      "decodedDurationSeconds": 69.240454,
+      "decodedPeakDbFS": -8.051,
+      "decodedRmsDbFS": -19.983,
+      "decodedLoopSeamAbsolute": [
+        6.483202014351264e-05,
+        0.00023741976474411786
+      ],
+      "passedChecks": {
+        "duration48to90": true,
+        "noMasterClipping": true,
+        "masterSeamBelowPoint01": true,
+        "exportDecodes": true,
+        "exportSeamBelowPoint01": true,
+        "exportPeakBelowMinus1dB": true
+      }
+    },
+    {
+      "id": "resolution-dawn",
+      "file": "resolution-dawn.ogg",
+      "master": "masters/resolution-dawn.wav",
+      "score": "resolution-dawn.score.json",
+      "bpm": 72,
+      "meter": "4/4",
+      "key": "E major",
+      "bars": 20,
+      "durationSeconds": 66.666667,
+      "sampleRate": 44100,
+      "channels": 2,
+      "sections": "A 1–8 / B 9–16 / cadence and loop turnaround 17–20",
+      "composition": "Warm resolved piano theme with a slow string halo; an eight-bar melody opens into a brighter B section and a four-bar cadence. Spacious, no drums.",
+      "eventCount": 230,
+      "instruments": [
+        "bell",
+        "piano",
+        "strings"
+      ],
+      "sha256": "eb75c8ab798eea7cd9b4a4c0640e95a35225f5c142c5fafe6d3ae7342fadfe26",
+      "bytes": 763935,
+      "masterPeakDbFS": -7.549,
+      "masterRmsDbFS": -20.0,
+      "masterDC": [
+        -1.043768323779931e-06,
+        -7.68960133120647e-07
+      ],
+      "masterClippedSamples": 0,
+      "masterLoopSeamAbsolute": [
+        0.0,
+        0.0
+      ],
+      "masterAdjacentDifferenceP99": [
+        0.03359412259939106,
+        0.035255323150705266
+      ],
+      "fourBarRmsDbFS": [
+        -19.94,
+        -20.26,
+        -19.89,
+        -20.06,
+        -19.85
+      ],
+      "decodedDurationSeconds": 66.686259,
+      "decodedPeakDbFS": -7.327,
+      "decodedRmsDbFS": -19.969,
+      "decodedLoopSeamAbsolute": [
+        5.8374269428895786e-05,
+        1.4193803508533165e-05
+      ],
+      "passedChecks": {
+        "duration48to90": true,
+        "noMasterClipping": true,
+        "masterSeamBelowPoint01": true,
+        "exportDecodes": true,
+        "exportSeamBelowPoint01": true,
+        "exportPeakBelowMinus1dB": true
+      }
+    }
+  ]
+}

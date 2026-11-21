@@ -1,0 +1,1026 @@
+{
+  "transport": "deterministic mock, not live dialogue quality",
+  "observations": [
+    {
+      "input": "옥상으로 가요.",
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "어디가 좋을까요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "invitation",
+              "text": "옥상에서 병뚜껑 바람 소리 듣기",
+              "subject": "npc",
+              "status": "offered",
+              "reference": "",
+              "evidence": "",
+              "value": "",
+              "id": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "turn": 1
+            },
+            {
+              "id": "7daf9b34-ef4c-474c-9cbb-82c4e996a453",
+              "turn": 1,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 종이 봉투를 접는다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "offer",
+          "emotion": "호기심",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.589Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "eventId": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.589Z",
+              "kind": "scene",
+              "text": "옥상에서 병뚜껑 바람 소리 듣기"
+            },
+            {
+              "id": "7daf9b34-ef4c-474c-9cbb-82c4e996a453",
+              "eventId": "7daf9b34-ef4c-474c-9cbb-82c4e996a453",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.589Z",
+              "kind": "scene",
+              "text": "유나가 종이 봉투를 접는다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "어디가 좋을까요?",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "옥상에서 병뚜껑 바람 소리 듣기",
+              "version": 1,
+              "eventId": "81e2711f-acf6-4240-b68a-6b87d2459cc0"
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 종이 봉투를 접는다.",
+              "version": 1,
+              "eventId": "7daf9b34-ef4c-474c-9cbb-82c4e996a453"
+            }
+          ],
+          "reply": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "어디가 좋을까요?"
+            }
+          ],
+          "actionBeats": [
+            "유나가 종이 봉투를 접는다."
+          ]
+        }
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "어디가 좋을까요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?"
+          },
+          {
+            "speaker": "당신",
+            "text": "옥상으로 가요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "rooftop",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "invitation",
+              "text": "옥상에서 병뚜껑 바람 소리 듣기",
+              "subject": "npc",
+              "status": "offered",
+              "reference": "",
+              "evidence": "",
+              "value": "",
+              "id": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "turn": 1
+            },
+            {
+              "id": "7daf9b34-ef4c-474c-9cbb-82c4e996a453",
+              "turn": 1,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 종이 봉투를 접는다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            },
+            {
+              "kind": "invitation",
+              "text": "옥상 초대 수락",
+              "subject": "player",
+              "status": "accepted",
+              "reference": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "evidence": "옥상으로 가요",
+              "value": "",
+              "id": "1cecb262-aa91-4834-9b68-3a3c7ee383a1",
+              "turn": 2
+            },
+            {
+              "kind": "move",
+              "text": "옥상으로 이동",
+              "subject": "mutual",
+              "status": "accepted",
+              "reference": "",
+              "evidence": "옥상으로 가요",
+              "value": "rooftop",
+              "id": "6b1b3478-8b3f-4b06-9ec6-98c2eb944b30",
+              "turn": 2
+            },
+            {
+              "id": "08c156d8-6322-4ac9-909b-52012e068f3f",
+              "turn": 2,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 종이 봉투를 접는다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "offer",
+          "emotion": "호기심",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.589Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "eventId": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.589Z",
+              "kind": "scene",
+              "text": "옥상에서 병뚜껑 바람 소리 듣기"
+            },
+            {
+              "id": "7daf9b34-ef4c-474c-9cbb-82c4e996a453",
+              "eventId": "7daf9b34-ef4c-474c-9cbb-82c4e996a453",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.589Z",
+              "kind": "scene",
+              "text": "유나가 종이 봉투를 접는다."
+            },
+            {
+              "id": "1cecb262-aa91-4834-9b68-3a3c7ee383a1",
+              "eventId": "1cecb262-aa91-4834-9b68-3a3c7ee383a1",
+              "version": 2,
+              "confirmedAt": "2026-11-21T04:13:16.590Z",
+              "kind": "scene",
+              "text": "옥상 초대 수락"
+            },
+            {
+              "id": "6b1b3478-8b3f-4b06-9ec6-98c2eb944b30",
+              "eventId": "6b1b3478-8b3f-4b06-9ec6-98c2eb944b30",
+              "version": 2,
+              "confirmedAt": "2026-11-21T04:13:16.590Z",
+              "kind": "scene",
+              "text": "옥상으로 이동"
+            },
+            {
+              "id": "08c156d8-6322-4ac9-909b-52012e068f3f",
+              "eventId": "08c156d8-6322-4ac9-909b-52012e068f3f",
+              "version": 2,
+              "confirmedAt": "2026-11-21T04:13:16.590Z",
+              "kind": "scene",
+              "text": "유나가 종이 봉투를 접는다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "어디가 좋을까요?",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "옥상에서 병뚜껑 바람 소리 듣기",
+              "version": 1,
+              "eventId": "81e2711f-acf6-4240-b68a-6b87d2459cc0"
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 종이 봉투를 접는다.",
+              "version": 1,
+              "eventId": "7daf9b34-ef4c-474c-9cbb-82c4e996a453"
+            },
+            {
+              "kind": "user_claim",
+              "text": "옥상으로 가요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "옥상 초대 수락",
+              "version": 2,
+              "eventId": "1cecb262-aa91-4834-9b68-3a3c7ee383a1"
+            },
+            {
+              "kind": "verified_event",
+              "text": "옥상으로 이동",
+              "version": 2,
+              "eventId": "6b1b3478-8b3f-4b06-9ec6-98c2eb944b30"
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 종이 봉투를 접는다.",
+              "version": 2,
+              "eventId": "08c156d8-6322-4ac9-909b-52012e068f3f"
+            }
+          ],
+          "reply": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "어디가 좋을까요?"
+            },
+            {
+              "turn": 2,
+              "text": "옥상으로 가요."
+            }
+          ],
+          "actionBeats": [
+            "유나가 종이 봉투를 접는다."
+          ]
+        }
+      }
+    },
+    {
+      "input": "대신 카페에서 종이배 소리를 들어요.",
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "어디가 좋을까요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "invitation",
+              "text": "옥상에서 병뚜껑 바람 소리 듣기",
+              "subject": "npc",
+              "status": "offered",
+              "reference": "",
+              "evidence": "",
+              "value": "",
+              "id": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "turn": 1
+            },
+            {
+              "id": "7daf9b34-ef4c-474c-9cbb-82c4e996a453",
+              "turn": 1,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 종이 봉투를 접는다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "offer",
+          "emotion": "호기심",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.589Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "eventId": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.589Z",
+              "kind": "scene",
+              "text": "옥상에서 병뚜껑 바람 소리 듣기"
+            },
+            {
+              "id": "7daf9b34-ef4c-474c-9cbb-82c4e996a453",
+              "eventId": "7daf9b34-ef4c-474c-9cbb-82c4e996a453",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.589Z",
+              "kind": "scene",
+              "text": "유나가 종이 봉투를 접는다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "어디가 좋을까요?",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "옥상에서 병뚜껑 바람 소리 듣기",
+              "version": 1,
+              "eventId": "81e2711f-acf6-4240-b68a-6b87d2459cc0"
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 종이 봉투를 접는다.",
+              "version": 1,
+              "eventId": "7daf9b34-ef4c-474c-9cbb-82c4e996a453"
+            }
+          ],
+          "reply": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "어디가 좋을까요?"
+            }
+          ],
+          "actionBeats": [
+            "유나가 종이 봉투를 접는다."
+          ]
+        }
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "어디가 좋을까요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?"
+          },
+          {
+            "speaker": "당신",
+            "text": "대신 카페에서 종이배 소리를 들어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "invitation",
+              "text": "옥상에서 병뚜껑 바람 소리 듣기",
+              "subject": "npc",
+              "status": "offered",
+              "reference": "",
+              "evidence": "",
+              "value": "",
+              "id": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "turn": 1
+            },
+            {
+              "id": "7daf9b34-ef4c-474c-9cbb-82c4e996a453",
+              "turn": 1,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 종이 봉투를 접는다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            },
+            {
+              "kind": "promise",
+              "text": "카페 종이배 소리 계획",
+              "subject": "mutual",
+              "status": "offered",
+              "reference": "",
+              "evidence": "카페에서 종이배 소리를 들어요",
+              "value": "",
+              "id": "645f0467-a7fc-4e96-92a4-b116511212b7",
+              "turn": 2
+            },
+            {
+              "id": "24c389b3-1a81-4b3b-89fd-8884650ae65a",
+              "turn": 2,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 종이 봉투를 접는다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "offer",
+          "emotion": "호기심",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.589Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "eventId": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.589Z",
+              "kind": "scene",
+              "text": "옥상에서 병뚜껑 바람 소리 듣기"
+            },
+            {
+              "id": "7daf9b34-ef4c-474c-9cbb-82c4e996a453",
+              "eventId": "7daf9b34-ef4c-474c-9cbb-82c4e996a453",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.589Z",
+              "kind": "scene",
+              "text": "유나가 종이 봉투를 접는다."
+            },
+            {
+              "id": "645f0467-a7fc-4e96-92a4-b116511212b7",
+              "eventId": "645f0467-a7fc-4e96-92a4-b116511212b7",
+              "version": 2,
+              "confirmedAt": "2026-11-21T04:13:16.590Z",
+              "kind": "scene",
+              "text": "카페 종이배 소리 계획"
+            },
+            {
+              "id": "24c389b3-1a81-4b3b-89fd-8884650ae65a",
+              "eventId": "24c389b3-1a81-4b3b-89fd-8884650ae65a",
+              "version": 2,
+              "confirmedAt": "2026-11-21T04:13:16.590Z",
+              "kind": "scene",
+              "text": "유나가 종이 봉투를 접는다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "어디가 좋을까요?",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "옥상에서 병뚜껑 바람 소리 듣기",
+              "version": 1,
+              "eventId": "81e2711f-acf6-4240-b68a-6b87d2459cc0"
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 종이 봉투를 접는다.",
+              "version": 1,
+              "eventId": "7daf9b34-ef4c-474c-9cbb-82c4e996a453"
+            },
+            {
+              "kind": "user_claim",
+              "text": "대신 카페에서 종이배 소리를 들어요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "카페 종이배 소리 계획",
+              "version": 2,
+              "eventId": "645f0467-a7fc-4e96-92a4-b116511212b7"
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 종이 봉투를 접는다.",
+              "version": 2,
+              "eventId": "24c389b3-1a81-4b3b-89fd-8884650ae65a"
+            }
+          ],
+          "reply": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "어디가 좋을까요?"
+            },
+            {
+              "turn": 2,
+              "text": "대신 카페에서 종이배 소리를 들어요."
+            }
+          ],
+          "actionBeats": [
+            "유나가 종이 봉투를 접는다."
+          ]
+        }
+      }
+    },
+    {
+      "input": "옥상은 싫어요.",
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "어디가 좋을까요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "invitation",
+              "text": "옥상에서 병뚜껑 바람 소리 듣기",
+              "subject": "npc",
+              "status": "offered",
+              "reference": "",
+              "evidence": "",
+              "value": "",
+              "id": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "turn": 1
+            },
+            {
+              "id": "7daf9b34-ef4c-474c-9cbb-82c4e996a453",
+              "turn": 1,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 종이 봉투를 접는다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "offer",
+          "emotion": "호기심",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.589Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "eventId": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.589Z",
+              "kind": "scene",
+              "text": "옥상에서 병뚜껑 바람 소리 듣기"
+            },
+            {
+              "id": "7daf9b34-ef4c-474c-9cbb-82c4e996a453",
+              "eventId": "7daf9b34-ef4c-474c-9cbb-82c4e996a453",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.589Z",
+              "kind": "scene",
+              "text": "유나가 종이 봉투를 접는다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "어디가 좋을까요?",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "옥상에서 병뚜껑 바람 소리 듣기",
+              "version": 1,
+              "eventId": "81e2711f-acf6-4240-b68a-6b87d2459cc0"
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 종이 봉투를 접는다.",
+              "version": 1,
+              "eventId": "7daf9b34-ef4c-474c-9cbb-82c4e996a453"
+            }
+          ],
+          "reply": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "어디가 좋을까요?"
+            }
+          ],
+          "actionBeats": [
+            "유나가 종이 봉투를 접는다."
+          ]
+        }
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "어디가 좋을까요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?"
+          },
+          {
+            "speaker": "당신",
+            "text": "옥상은 싫어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "invitation",
+              "text": "옥상에서 병뚜껑 바람 소리 듣기",
+              "subject": "npc",
+              "status": "offered",
+              "reference": "",
+              "evidence": "",
+              "value": "",
+              "id": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "turn": 1
+            },
+            {
+              "id": "7daf9b34-ef4c-474c-9cbb-82c4e996a453",
+              "turn": 1,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 종이 봉투를 접는다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            },
+            {
+              "kind": "invitation",
+              "text": "옥상 초대 거절",
+              "subject": "player",
+              "status": "refused",
+              "reference": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "evidence": "옥상은 싫어요",
+              "value": "",
+              "id": "c21c23f0-e8b0-4d4a-9c49-07440a1f04d7",
+              "turn": 2
+            },
+            {
+              "id": "8b409d22-0553-4c4d-b58d-0b0fc3a77db7",
+              "turn": 2,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 종이 봉투를 접는다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "offer",
+          "emotion": "호기심",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T04:13:16.589Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "eventId": "81e2711f-acf6-4240-b68a-6b87d2459cc0",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.589Z",
+              "kind": "scene",
+              "text": "옥상에서 병뚜껑 바람 소리 듣기"
+            },
+            {
+              "id": "7daf9b34-ef4c-474c-9cbb-82c4e996a453",
+              "eventId": "7daf9b34-ef4c-474c-9cbb-82c4e996a453",
+              "version": 1,
+              "confirmedAt": "2026-11-21T04:13:16.589Z",
+              "kind": "scene",
+              "text": "유나가 종이 봉투를 접는다."
+            },
+            {
+              "id": "c21c23f0-e8b0-4d4a-9c49-07440a1f04d7",
+              "eventId": "c21c23f0-e8b0-4d4a-9c49-07440a1f04d7",
+              "version": 2,
+              "confirmedAt": "2026-11-21T04:13:16.590Z",
+              "kind": "scene",
+              "text": "옥상 초대 거절"
+            },
+            {
+              "id": "8b409d22-0553-4c4d-b58d-0b0fc3a77db7",
+              "eventId": "8b409d22-0553-4c4d-b58d-0b0fc3a77db7",
+              "version": 2,
+              "confirmedAt": "2026-11-21T04:13:16.590Z",
+              "kind": "scene",
+              "text": "유나가 종이 봉투를 접는다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "어디가 좋을까요?",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "옥상에서 병뚜껑 바람 소리 듣기",
+              "version": 1,
+              "eventId": "81e2711f-acf6-4240-b68a-6b87d2459cc0"
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 종이 봉투를 접는다.",
+              "version": 1,
+              "eventId": "7daf9b34-ef4c-474c-9cbb-82c4e996a453"
+            },
+            {
+              "kind": "user_claim",
+              "text": "옥상은 싫어요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "옥상 초대 거절",
+              "version": 2,
+              "eventId": "c21c23f0-e8b0-4d4a-9c49-07440a1f04d7"
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 종이 봉투를 접는다.",
+              "version": 2,
+              "eventId": "8b409d22-0553-4c4d-b58d-0b0fc3a77db7"
+            }
+          ],
+          "reply": "귤 대신 배를 가져갈게요. 종이 봉투 소리도 녹음해 볼까요?",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "어디가 좋을까요?"
+            },
+            {
+              "turn": 2,
+              "text": "옥상은 싫어요."
+            }
+          ],
+          "actionBeats": [
+            "유나가 종이 봉투를 접는다."
+          ]
+        }
+      }
+    }
+  ]
+}

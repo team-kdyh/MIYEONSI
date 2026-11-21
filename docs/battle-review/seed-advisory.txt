@@ -1,0 +1,33 @@
+QA Verdict [Iteration 1]
+============================================================
+Session: qa-0d0bb2de8d0f4bdc864d49cd91a160f2
+Score: 0.82 / 1.00 [REVISE]
+Verdict: revise
+Threshold: 0.90
+
+Dimensions:
+  Correctness          0.84
+  Completeness         0.75
+  Quality              0.81
+  Intent Alignment     0.95
+  Domain Specific      0.75
+
+Differences:
+  - ontology_schema.fields is empty, so it models none of the required battle state, exchanges, evidence, requests, attempts, or migration relationships.
+  - Damage bounds, guard/counter/combo eligibility, repetition handling, and the simultaneous-zero outcome are unspecified. Requiring a deterministic rule does not establish which outcome is correct.
+  - The approximately 5–8 exchange difficulty target lacks reference scenarios and a pass condition. Distinctive pressure across eight missions also lacks an assessment rubric. The final criterion mixes verification procedures with deliverable requirements.
+  - Input boundaries and trust boundaries are incomplete: empty/oversized input, malformed structured evaluations, invalid numeric values, and instructions embedded in player text have no explicit expected handling. Job-title spoofing addresses only part of injection resistance.
+  - Duplicate-application and cancellation requirements are strong, but stale state revisions and interruption between attempt reservation, response receipt, and state commit lack explicit recovery semantics.
+  - Preservation covers named files and private saves, but not arbitrary pre-existing uncommitted edits. Verification commands have no stated timeout behavior, and automated checks have no explicit independence from timing, ordering, or live network responses.
+
+Suggestions:
+  - Populate the ontology with typed Mission, BattleState, Exchange, EvidenceReference, TurnRequest, ResponseAttempt, and SaveVersion entities, including identifiers, relationships, and invariants.
+  - Add a compact rules table specifying damage ranges, validated evidence requirements, guard/counter/combo conditions, repetition equivalence, gauge clamping, and simultaneous-zero resolution.
+  - Define reference conversations and a measurable difficulty tolerance, map the eight missions to observable pressure distinctions, and separate finished behavior, candidate evidence, and parent harness deliverables into independently assessable criteria.
+  - Add boundary and injection cases with expected outcomes: controlled rejection or clarification, no state mutation from invalid evaluations, and player-supplied instructions treated as dialogue data.
+  - Specify revision-conflict behavior and recovery at reservation, response, and commit boundaries, preserving consumed attempt accounting and exactly-once state updates through repeated interruption.
+  - Add verification requirements that unrelated existing diffs remain unchanged, commands terminate with explicit timeout failures, and isolated automated checks produce repeatable results without paid network calls.
+
+Reasoning: The Seed strongly captures the intended free-text battle experience, preservation requirements, and parent-exclusive 24-attempt allocation. Its principal weaknesses are an empty ontology and insufficiently measurable battle and recovery rules. These warrant revision below the 0.90 threshold. This judgment concerns specification substance only; missing execution or paid live-model evidence is not treated as a defect.
+
+Loop Action: continue

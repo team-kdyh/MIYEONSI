@@ -52,7 +52,7 @@ for(const width of [1440,390])test(`polish ${width}: title discovery and next re
 test('collection keeps a legacy unlock without advertising retired routes or inventing current epilogue',async({page})=>{
  await page.setViewportSize({width:390,height:844});await prepare(page);
  let game:any=scene('romance'),collection:string[]=[];
- const legacy=endings.office.find(ending=>ending.id.endsWith('-failure'))!;
+ const legacy=endings.office.find(ending=>ending.id.endsWith('-partial'))!;
  const romance=endings.romance.find(ending=>ending.id==='romance-0')!;
  await page.route('**/api/**',route=>route.fulfill({json:{game,provider:'openai',slots:[null,null,null],collection,endings}}));
  const openCollection=async()=>{await page.reload();await page.getByRole('button',{name:'컬렉션',exact:true}).click();};
@@ -93,14 +93,14 @@ test('a controlled thirteen-second reply stays pending and then reaches the play
   const started=Date.now();
   // Real controlled delay protects against reintroducing the old 12-second client abort.
   await new Promise(resolve=>setTimeout(resolve,13000));
-  await expect(page.getByRole('status')).toContainText('답장을 기다리는 중');
+  await expect(page.locator('.thinking[role=status]')).toContainText('답장을 기다리는 중');
   await expect(page.getByRole('button',{name:'응답 취소',exact:true})).toBeVisible();
   await expect(page.getByRole('alert')).toHaveCount(0);
   await expect(page.locator('#reply')).toHaveValue('핵심 세 항목부터 정리하겠습니다.');
   await page.screenshot({path:`${screenshots}/pending-13s-390.png`});release();
   await expect(page.locator('.text-ink')).toContainText('오래 기다려 주셨네요.');
   expect(Date.now()-started).toBeGreaterThanOrEqual(13000);
-  await expect(page.getByRole('status')).toHaveCount(0);await expect(page.getByRole('alert')).toHaveCount(0);
+  await expect(page.locator('.thinking[role=status]')).toHaveCount(0);await expect(page.getByRole('alert')).toHaveCount(0);
   await expect(page.locator('.action-beat')).toHaveText('서류를 살핀다. · 고개를 끄덕인다.');
   await expect(page.locator('#reply')).toHaveValue('');expect(failures).toEqual([]);
   await page.screenshot({path:`${screenshots}/reply-after-13s-390.png`});

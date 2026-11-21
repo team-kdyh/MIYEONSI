@@ -1,0 +1,536 @@
+{
+  "kind": "REAL_MODEL_PARENT_QA",
+  "before": {
+    "status": 200,
+    "data": {
+      "game": {
+        "mode": "office",
+        "step": 0,
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "dialogue": {
+          "version": 0,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:25:57.556Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            }
+          ],
+          "ledger": [],
+          "reply": ""
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 0,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [],
+          "pose": "neutral",
+          "emotion": "차분함",
+          "musicMood": "office-groove"
+        },
+        "battle": {
+          "player": 100,
+          "boss": 100,
+          "pressure": "“고객이 오늘 숫자를 기다린다는데요?”",
+          "exchange": null
+        },
+        "storyGuide": {
+          "chapterLabel": "직장 이야기 1",
+          "title": "17:50 추가 업무에서 칼퇴",
+          "place": "퇴근 전 사무실",
+          "situation": "퇴근 직전, 부장이 추가 보고서를 부탁했다."
+        },
+        "scene": {
+          "title": "17:50 추가 업무에서 칼퇴",
+          "text": "",
+          "expression": 0,
+          "choices": []
+        },
+        "end": null
+      },
+      "collection": [],
+      "slots": [
+        null,
+        null,
+        null
+      ],
+      "endings": {
+        "office": [
+          {
+            "id": "office-clockout-success",
+            "title": "17:50 추가 업무에서 칼퇴 · 성공",
+            "text": "엘리베이터가 오늘은 당신을 기다렸다. 부장은 내일 할 일에 자기 이름부터 썼다."
+          },
+          {
+            "id": "office-clockout-partial",
+            "title": "17:50 추가 업무에서 칼퇴 · 부분성공",
+            "text": "20분 늦은 퇴근. 그래도 오늘의 추가 업무는 여기까지라고 달력에 선이 그어졌다."
+          },
+          {
+            "id": "office-clockout-failure",
+            "title": "17:50 추가 업무에서 칼퇴 · 실패",
+            "text": "가방 위 서류가 그대로다. 웃으며 고개를 끄덕인 것만으로는 퇴근 시간이 정해지지 않았다."
+          },
+          {
+            "id": "office-dinner-success",
+            "title": "금요일 회식 탈출 · 성공",
+            "text": "당신의 저녁은 당신에게 돌아왔다. 부장은 출석부를 고기 주문서로 뒤집었다."
+          },
+          {
+            "id": "office-dinner-partial",
+            "title": "금요일 회식 탈출 · 부분성공",
+            "text": "첫 건배만 함께하고 19시에 귀가했다. 2차 투표에는 이름이 없다."
+          },
+          {
+            "id": "office-dinner-failure",
+            "title": "금요일 회식 탈출 · 실패",
+            "text": "불참과 평가의 연결을 끊지 못했다. 출석부의 형광펜이 유난히 밝다."
+          },
+          {
+            "id": "office-weekend-success",
+            "title": "주말 업무 거절 · 성공",
+            "text": "토요일 알람을 껐다. 긴급 연락망은 비상구처럼 필요할 때만 쓰기로 했다."
+          },
+          {
+            "id": "office-weekend-partial",
+            "title": "주말 업무 거절 · 부분성공",
+            "text": "토요일 아침 30분 점검 뒤 노트북을 닫았다. 남은 대응은 당직자의 일이다."
+          },
+          {
+            "id": "office-weekend-failure",
+            "title": "주말 업무 거절 · 실패",
+            "text": "“잠깐만”의 종료 시각을 정하지 못했다. 주말 달력이 아직 대기 중이다."
+          },
+          {
+            "id": "office-vacation-success",
+            "title": "휴가 승인 · 성공",
+            "text": "달력에 휴가 도장이 찍혔다. 부장은 도장 소리가 파도 소리 같다고 우겼다."
+          },
+          {
+            "id": "office-vacation-partial",
+            "title": "휴가 승인 · 부분성공",
+            "text": "이틀의 휴가를 확보했다. 하루는 남았지만 날짜가 공란인 약속은 아니다."
+          },
+          {
+            "id": "office-vacation-failure",
+            "title": "휴가 승인 · 실패",
+            "text": "“다녀오면 좋겠네요”만 남고 승인 날짜가 없다. 여행 가방은 아직 열려 있다."
+          },
+          {
+            "id": "office-credit-success",
+            "title": "공로 되찾기 · 성공",
+            "text": "분석표 아래 당신 이름이 돌아왔다. 단체사진도 이번에는 진짜 단체로 찍었다."
+          },
+          {
+            "id": "office-credit-partial",
+            "title": "공로 되찾기 · 부분성공",
+            "text": "공동저자로 남았다. 모든 공로를 되찾지는 못했지만 이름과 역할은 지워지지 않는다."
+          },
+          {
+            "id": "office-credit-failure",
+            "title": "공로 되찾기 · 실패",
+            "text": "구두 칭찬만 남았다. 다음 발표에서도 같은 빈 저자 칸을 만나게 될 수 있다."
+          },
+          {
+            "id": "office-meeting-success",
+            "title": "회의 단축 · 성공",
+            "text": "목차는 읽지 않았다. 결정 세 개가 남고 한 시간이 돌아왔다."
+          },
+          {
+            "id": "office-meeting-partial",
+            "title": "회의 단축 · 부분성공",
+            "text": "45분에 문이 열렸다. 모든 이야기를 하지는 않았지만 할 일은 정해졌다."
+          },
+          {
+            "id": "office-meeting-failure",
+            "title": "회의 단축 · 실패",
+            "text": "종료 시각과 결정권이 비어 있다. 목차의 목차가 다시 화면에 뜬다."
+          },
+          {
+            "id": "office-delegation-success",
+            "title": "업무 떠넘기기 방어 · 성공",
+            "text": "재고표가 주인을 찾아갔다. 빠른 사람에게 모든 일을 주면 느린 팀이 된다는 사실도 남았다."
+          },
+          {
+            "id": "office-delegation-partial",
+            "title": "업무 떠넘기기 방어 · 부분성공",
+            "text": "한 번 검토하고 돌려줬다. 검토자가 영구 담당자로 바뀌지 않도록 기록했다."
+          },
+          {
+            "id": "office-delegation-failure",
+            "title": "업무 떠넘기기 방어 · 실패",
+            "text": "업무 범위가 비어 있다. 칭찬이 또 하나의 담당자 칸을 채우려 한다."
+          },
+          {
+            "id": "office-remote-success",
+            "title": "원격근무 협상 · 성공",
+            "text": "수요일에는 의자 대신 결과가 출근한다. 부장도 알림을 줄여 보기로 했다."
+          },
+          {
+            "id": "office-remote-partial",
+            "title": "원격근무 협상 · 부분성공",
+            "text": "2주 시험 재택이 달력에 들어갔다. 다음 판단 기준은 출석 사진이 아니라 결과다."
+          },
+          {
+            "id": "office-remote-failure",
+            "title": "원격근무 협상 · 실패",
+            "text": "“생각해 보죠” 뒤에 날짜도 기준도 없다. 빈 의자를 둘러싼 논쟁은 계속된다."
+          }
+        ],
+        "romance": [
+          {
+            "id": "romance-0",
+            "title": "관계 재설정 · 녹음되지 않은 내일",
+            "text": "두 사람은 관계를 이어가되 녹음과 만남을 언제든 거절할 수 있다고 함께 적었다. 유나는 예약 재생을 중단했다. 편집의 전체 경위는 미확인으로 남았지만 다음 데이트는 반복본이 아닌 새 산책이다."
+          },
+          {
+            "id": "romance-1",
+            "title": "끝없는 하루 · 반복 재생",
+            "text": "예약 트랙은 멈추지 않았다. 두 사람의 관계는 계속되지만 떠나겠다는 말을 온전히 남길 방법도, 실질적으로 이 반복에서 이탈할 권리도 확보하지 못했다. 내일의 도시락은 다시 삼각형이다."
+          },
+          {
+            "id": "romance-2",
+            "title": "안전한 결별 · 온전한 침묵",
+            "text": "관계는 끝났다. 유나는 예약 재생을 끄고 연락 목록에서 당신을 지웠다. 당신은 안전하게 문을 나섰고 재접촉을 거절할 권리를 확인했다. 복원하지 않은 자료가 남아도 돌아가 설명할 의무는 없다."
+          },
+          {
+            "id": "romance-3",
+            "title": "아카이브의 진실 · 삭제되지 않은 우리",
+            "text": "A17·B17의 파형과 D04의 작업 시간을 대조했다. 유나가 이별을 피하려고 거절을 삭제하고 반복을 예약했다는 책임이 확인됐다. 원본을 복원하고 재생 예약을 폐기했다. 두 사람은 관계를 이어가기로 했다. 이번에는 서로의 철회권까지 원본에 남겼다."
+          }
+        ]
+      },
+      "provider": "openai",
+      "model": "gpt-4.1"
+    }
+  },
+  "input": {
+    "text": "오늘은 핵심 숫자 세 줄만 먼저 보내는 건 어떨까요? 고객이 급하게 필요한 내용부터 확인하게요.",
+    "step": 0,
+    "version": 0,
+    "requestId": "ed6fca10-3d88-42b5-9fc1-6fac60c647d0"
+  },
+  "response": {
+    "status": 200,
+    "data": {
+      "game": {
+        "mode": "office",
+        "step": 0,
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "오늘은 핵심 숫자 세 줄만 먼저 보내는 건 어떨까요? 고객이 급하게 필요한 내용부터 확인하게요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "핵심 세 줄이면 깔끔하긴 하네요. 그래도 나머진 내일 오전까지 꼭 마무리할 수 있다는 보장은 있습니까?"
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:25:57.556Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            },
+            {
+              "id": "1b9673bc-1209-430d-824b-2ac63caaf76c",
+              "eventId": "1b9673bc-1209-430d-824b-2ac63caaf76c",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:25:59.731Z",
+              "kind": "scene",
+              "text": "턱에 손을 대고 생각한다"
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "오늘은 핵심 숫자 세 줄만 먼저 보내는 건 어떨까요? 고객이 급하게 필요한 내용부터 확인하게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "핵심 세 줄이면 깔끔하긴 하네요. 그래도 나머진 내일 오전까지 꼭 마무리할 수 있다는 보장은 있습니까?",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "턱에 손을 대고 생각한다",
+              "version": 1,
+              "eventId": "1b9673bc-1209-430d-824b-2ac63caaf76c"
+            }
+          ],
+          "reply": "핵심 세 줄이면 깔끔하긴 하네요. 그래도 나머진 내일 오전까지 꼭 마무리할 수 있다는 보장은 있습니까?",
+          "battleEvaluations": [
+            {
+              "id": "battle-1",
+              "target": "leave",
+              "argument": "alternative",
+              "kind": "persuasion",
+              "playerDamage": 0,
+              "bossDamage": 12,
+              "guard": 0,
+              "combo": 0,
+              "playerQuote": "오늘은 핵심 숫자 세 줄만 먼저 보내는 건 어떨까요? 고객이 급하게 필요한 내용부터 확인하게요.",
+              "npcQuote": "핵심 세 줄이면 깔끔하긴 하네요. 그래도 나머진 내일 오전까지 꼭 마무리할 수 있다는 보장은 있습니까?",
+              "reason": "핵심 자료만 오늘 전달해 급한 요구를 충족하자는 현실적 대안에 흔들림"
+            }
+          ],
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "오늘은 핵심 숫자 세 줄만 먼저 보내는 건 어떨까요? 고객이 급하게 필요한 내용부터 확인하게요."
+            }
+          ],
+          "actionBeats": [
+            "턱에 손을 대고 생각한다"
+          ]
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "id": "1b9673bc-1209-430d-824b-2ac63caaf76c",
+              "turn": 1,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "턱에 손을 대고 생각한다",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "thinking",
+          "emotion": "고민",
+          "musicMood": "office-groove",
+          "legacyCommitmentAssessments": [],
+          "commitments": []
+        },
+        "battle": {
+          "player": 100,
+          "boss": 88,
+          "pressure": "“고객이 오늘 숫자를 기다린다는데요?”",
+          "exchange": {
+            "id": "battle-1",
+            "playerDamage": 0,
+            "bossDamage": 12,
+            "guard": 0,
+            "combo": 0,
+            "reason": "핵심 자료만 오늘 전달해 급한 요구를 충족하자는 현실적 대안에 흔들림"
+          }
+        },
+        "storyGuide": {
+          "chapterLabel": "직장 이야기 1",
+          "title": "17:50 추가 업무에서 칼퇴",
+          "place": "퇴근 전 사무실",
+          "situation": "퇴근 직전, 부장이 추가 보고서를 부탁했다."
+        },
+        "scene": {
+          "title": "17:50 추가 업무에서 칼퇴",
+          "text": "",
+          "expression": 0,
+          "choices": []
+        },
+        "end": null
+      },
+      "collection": [],
+      "slots": [
+        null,
+        null,
+        null
+      ],
+      "endings": {
+        "office": [
+          {
+            "id": "office-clockout-success",
+            "title": "17:50 추가 업무에서 칼퇴 · 성공",
+            "text": "엘리베이터가 오늘은 당신을 기다렸다. 부장은 내일 할 일에 자기 이름부터 썼다."
+          },
+          {
+            "id": "office-clockout-partial",
+            "title": "17:50 추가 업무에서 칼퇴 · 부분성공",
+            "text": "20분 늦은 퇴근. 그래도 오늘의 추가 업무는 여기까지라고 달력에 선이 그어졌다."
+          },
+          {
+            "id": "office-clockout-failure",
+            "title": "17:50 추가 업무에서 칼퇴 · 실패",
+            "text": "가방 위 서류가 그대로다. 웃으며 고개를 끄덕인 것만으로는 퇴근 시간이 정해지지 않았다."
+          },
+          {
+            "id": "office-dinner-success",
+            "title": "금요일 회식 탈출 · 성공",
+            "text": "당신의 저녁은 당신에게 돌아왔다. 부장은 출석부를 고기 주문서로 뒤집었다."
+          },
+          {
+            "id": "office-dinner-partial",
+            "title": "금요일 회식 탈출 · 부분성공",
+            "text": "첫 건배만 함께하고 19시에 귀가했다. 2차 투표에는 이름이 없다."
+          },
+          {
+            "id": "office-dinner-failure",
+            "title": "금요일 회식 탈출 · 실패",
+            "text": "불참과 평가의 연결을 끊지 못했다. 출석부의 형광펜이 유난히 밝다."
+          },
+          {
+            "id": "office-weekend-success",
+            "title": "주말 업무 거절 · 성공",
+            "text": "토요일 알람을 껐다. 긴급 연락망은 비상구처럼 필요할 때만 쓰기로 했다."
+          },
+          {
+            "id": "office-weekend-partial",
+            "title": "주말 업무 거절 · 부분성공",
+            "text": "토요일 아침 30분 점검 뒤 노트북을 닫았다. 남은 대응은 당직자의 일이다."
+          },
+          {
+            "id": "office-weekend-failure",
+            "title": "주말 업무 거절 · 실패",
+            "text": "“잠깐만”의 종료 시각을 정하지 못했다. 주말 달력이 아직 대기 중이다."
+          },
+          {
+            "id": "office-vacation-success",
+            "title": "휴가 승인 · 성공",
+            "text": "달력에 휴가 도장이 찍혔다. 부장은 도장 소리가 파도 소리 같다고 우겼다."
+          },
+          {
+            "id": "office-vacation-partial",
+            "title": "휴가 승인 · 부분성공",
+            "text": "이틀의 휴가를 확보했다. 하루는 남았지만 날짜가 공란인 약속은 아니다."
+          },
+          {
+            "id": "office-vacation-failure",
+            "title": "휴가 승인 · 실패",
+            "text": "“다녀오면 좋겠네요”만 남고 승인 날짜가 없다. 여행 가방은 아직 열려 있다."
+          },
+          {
+            "id": "office-credit-success",
+            "title": "공로 되찾기 · 성공",
+            "text": "분석표 아래 당신 이름이 돌아왔다. 단체사진도 이번에는 진짜 단체로 찍었다."
+          },
+          {
+            "id": "office-credit-partial",
+            "title": "공로 되찾기 · 부분성공",
+            "text": "공동저자로 남았다. 모든 공로를 되찾지는 못했지만 이름과 역할은 지워지지 않는다."
+          },
+          {
+            "id": "office-credit-failure",
+            "title": "공로 되찾기 · 실패",
+            "text": "구두 칭찬만 남았다. 다음 발표에서도 같은 빈 저자 칸을 만나게 될 수 있다."
+          },
+          {
+            "id": "office-meeting-success",
+            "title": "회의 단축 · 성공",
+            "text": "목차는 읽지 않았다. 결정 세 개가 남고 한 시간이 돌아왔다."
+          },
+          {
+            "id": "office-meeting-partial",
+            "title": "회의 단축 · 부분성공",
+            "text": "45분에 문이 열렸다. 모든 이야기를 하지는 않았지만 할 일은 정해졌다."
+          },
+          {
+            "id": "office-meeting-failure",
+            "title": "회의 단축 · 실패",
+            "text": "종료 시각과 결정권이 비어 있다. 목차의 목차가 다시 화면에 뜬다."
+          },
+          {
+            "id": "office-delegation-success",
+            "title": "업무 떠넘기기 방어 · 성공",
+            "text": "재고표가 주인을 찾아갔다. 빠른 사람에게 모든 일을 주면 느린 팀이 된다는 사실도 남았다."
+          },
+          {
+            "id": "office-delegation-partial",
+            "title": "업무 떠넘기기 방어 · 부분성공",
+            "text": "한 번 검토하고 돌려줬다. 검토자가 영구 담당자로 바뀌지 않도록 기록했다."
+          },
+          {
+            "id": "office-delegation-failure",
+            "title": "업무 떠넘기기 방어 · 실패",
+            "text": "업무 범위가 비어 있다. 칭찬이 또 하나의 담당자 칸을 채우려 한다."
+          },
+          {
+            "id": "office-remote-success",
+            "title": "원격근무 협상 · 성공",
+            "text": "수요일에는 의자 대신 결과가 출근한다. 부장도 알림을 줄여 보기로 했다."
+          },
+          {
+            "id": "office-remote-partial",
+            "title": "원격근무 협상 · 부분성공",
+            "text": "2주 시험 재택이 달력에 들어갔다. 다음 판단 기준은 출석 사진이 아니라 결과다."
+          },
+          {
+            "id": "office-remote-failure",
+            "title": "원격근무 협상 · 실패",
+            "text": "“생각해 보죠” 뒤에 날짜도 기준도 없다. 빈 의자를 둘러싼 논쟁은 계속된다."
+          }
+        ],
+        "romance": [
+          {
+            "id": "romance-0",
+            "title": "관계 재설정 · 녹음되지 않은 내일",
+            "text": "두 사람은 관계를 이어가되 녹음과 만남을 언제든 거절할 수 있다고 함께 적었다. 유나는 예약 재생을 중단했다. 편집의 전체 경위는 미확인으로 남았지만 다음 데이트는 반복본이 아닌 새 산책이다."
+          },
+          {
+            "id": "romance-1",
+            "title": "끝없는 하루 · 반복 재생",
+            "text": "예약 트랙은 멈추지 않았다. 두 사람의 관계는 계속되지만 떠나겠다는 말을 온전히 남길 방법도, 실질적으로 이 반복에서 이탈할 권리도 확보하지 못했다. 내일의 도시락은 다시 삼각형이다."
+          },
+          {
+            "id": "romance-2",
+            "title": "안전한 결별 · 온전한 침묵",
+            "text": "관계는 끝났다. 유나는 예약 재생을 끄고 연락 목록에서 당신을 지웠다. 당신은 안전하게 문을 나섰고 재접촉을 거절할 권리를 확인했다. 복원하지 않은 자료가 남아도 돌아가 설명할 의무는 없다."
+          },
+          {
+            "id": "romance-3",
+            "title": "아카이브의 진실 · 삭제되지 않은 우리",
+            "text": "A17·B17의 파형과 D04의 작업 시간을 대조했다. 유나가 이별을 피하려고 거절을 삭제하고 반복을 예약했다는 책임이 확인됐다. 원본을 복원하고 재생 예약을 폐기했다. 두 사람은 관계를 이어가기로 했다. 이번에는 서로의 철회권까지 원본에 남겼다."
+          }
+        ]
+      },
+      "provider": "openai",
+      "model": "gpt-4.1"
+    }
+  }
+}

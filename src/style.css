@@ -255,3 +255,27 @@ footer{font-size:8px;flex-wrap:wrap;padding:6px}
  .input-row input{padding:8px;font-size:16px}.input-row button{padding:8px}
  .reply-notice{font-size:10px;padding:4px 6px}.reply-notice button{font-size:10px;padding:3px 7px}
 }
+/* Committed battle state occupies its own compact top band. */
+.battle-hud{position:absolute;z-index:5;top:106px;left:4%;width:92%;padding:10px 16px;border:1px solid #bda2c54d;border-radius:10px;background:linear-gradient(110deg,#14101fe8,#261a2bd9);color:#f7ecf8}
+.battle-gauges{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.battle-gauge{position:relative;padding-bottom:18px}
+.battle-label{display:flex;justify-content:space-between;font-size:12px;margin-bottom:6px}
+.battle-label span{font-variant-numeric:tabular-nums;color:#e4d4e8}
+.battle-track{height:10px;overflow:hidden;border-radius:3px;background:#49364d}
+.battle-fill{height:100%;background:#75d7c1;transition:width .55s ease-out}
+.boss .battle-fill{background:#efad78}
+.battle-damage{position:absolute;right:0;bottom:0;font-size:11px;color:#deccdf}
+.battle-damage.is-hit{color:#ffbdab;font-weight:700;animation:battle-impact .55s ease-out}
+.battle-pressure,.battle-exchange{font-size:12px;line-height:1.5;margin:4px 0 0;overflow-wrap:anywhere}
+.battle-hud b{color:#e6bded;margin-right:6px}
+.battle-exchange{overflow-wrap:anywhere}
+.office .scene-label{top:260px}
+.office .sprite{top:31%;height:60%}
+.office .dialogue{max-height:calc(var(--game-height,100dvh) * .48 - 42px)}
+@keyframes battle-impact{from{transform:translateY(-5px);opacity:.3}to{transform:translateY(0);opacity:1}}
+@media(max-width:700px){
+ .battle-hud{top:104px;left:10px;width:calc(100% - 20px);padding:10px 12px}
+ .battle-gauges{gap:18px}.battle-label{font-size:10px}.battle-pressure,.battle-exchange{font-size:11px}
+ .office .scene-label{top:242px}.office .sprite{top:29%;height:47%}
+ .office .dialogue{max-height:calc(var(--game-height,100dvh) * .54 - 34px)}
+}

@@ -1,0 +1,1931 @@
+{
+  "scope": "Deterministic mocked proposals through production reducer and disk store; not new model generation or live conversational proof",
+  "rows": [
+    {
+      "label": "accept",
+      "startHash": "925a8169b63514d6a7e7805249327d8844ec774042264bf3a982a71c7e27d87a",
+      "before": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "dialogue": {
+          "version": 0,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:08:50.592Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            }
+          ],
+          "ledger": [],
+          "reply": ""
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 0,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [],
+          "pose": "neutral",
+          "emotion": "차분함",
+          "musicMood": "office-groove"
+        }
+      },
+      "input": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+      "generated": {
+        "line": "말씀하신 계획을 확인했어요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [
+          {
+            "kind": "concession",
+            "value": "leave",
+            "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+            "status": "accepted",
+            "subject": "mutual",
+            "reference": "",
+            "evidence": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+          },
+          {
+            "kind": "concession",
+            "value": "handoff",
+            "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+            "status": "accepted",
+            "subject": "mutual",
+            "reference": "",
+            "evidence": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+          }
+        ],
+        "recall": [],
+        "conjecture": ""
+      },
+      "after": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:08:50.592Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            },
+            {
+              "id": "96bc0797-df20-4ac1-a407-7961fa665c9e",
+              "eventId": "96bc0797-df20-4ac1-a407-7961fa665c9e",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:50.640Z",
+              "kind": "scene",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+            },
+            {
+              "id": "bff0f314-5909-4297-afa4-121e095eca22",
+              "eventId": "bff0f314-5909-4297-afa4-121e095eca22",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:50.640Z",
+              "kind": "scene",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "version": 1,
+              "eventId": "96bc0797-df20-4ac1-a407-7961fa665c9e"
+            },
+            {
+              "kind": "verified_event",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "version": 1,
+              "eventId": "bff0f314-5909-4297-afa4-121e095eca22"
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "value": "leave",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "id": "96bc0797-df20-4ac1-a407-7961fa665c9e",
+              "turn": 1
+            },
+            {
+              "kind": "concession",
+              "value": "handoff",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "id": "bff0f314-5909-4297-afa4-121e095eca22",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "legacyCommitmentAssessments": [],
+          "commitments": []
+        }
+      },
+      "commonInput": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+      "continued": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:08:50.592Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            },
+            {
+              "id": "96bc0797-df20-4ac1-a407-7961fa665c9e",
+              "eventId": "96bc0797-df20-4ac1-a407-7961fa665c9e",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:50.640Z",
+              "kind": "scene",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+            },
+            {
+              "id": "bff0f314-5909-4297-afa4-121e095eca22",
+              "eventId": "bff0f314-5909-4297-afa4-121e095eca22",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:50.640Z",
+              "kind": "scene",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "version": 1,
+              "eventId": "96bc0797-df20-4ac1-a407-7961fa665c9e"
+            },
+            {
+              "kind": "verified_event",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "version": 1,
+              "eventId": "bff0f314-5909-4297-afa4-121e095eca22"
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 2,
+              "recallIds": []
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+            },
+            {
+              "turn": 2,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "value": "leave",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "id": "96bc0797-df20-4ac1-a407-7961fa665c9e",
+              "turn": 1
+            },
+            {
+              "kind": "concession",
+              "value": "handoff",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "id": "bff0f314-5909-4297-afa4-121e095eca22",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "legacyCommitmentAssessments": [],
+          "commitments": []
+        }
+      },
+      "restored": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:08:50.592Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            },
+            {
+              "id": "96bc0797-df20-4ac1-a407-7961fa665c9e",
+              "eventId": "96bc0797-df20-4ac1-a407-7961fa665c9e",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:50.640Z",
+              "kind": "scene",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+            },
+            {
+              "id": "bff0f314-5909-4297-afa4-121e095eca22",
+              "eventId": "bff0f314-5909-4297-afa4-121e095eca22",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:50.640Z",
+              "kind": "scene",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "version": 1,
+              "eventId": "96bc0797-df20-4ac1-a407-7961fa665c9e"
+            },
+            {
+              "kind": "verified_event",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "version": 1,
+              "eventId": "bff0f314-5909-4297-afa4-121e095eca22"
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 2,
+              "recallIds": []
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+            },
+            {
+              "turn": 2,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "value": "leave",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "id": "96bc0797-df20-4ac1-a407-7961fa665c9e",
+              "turn": 1
+            },
+            {
+              "kind": "concession",
+              "value": "handoff",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "id": "bff0f314-5909-4297-afa4-121e095eca22",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "legacyCommitmentAssessments": [],
+          "commitments": []
+        }
+      },
+      "following": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:08:50.592Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            },
+            {
+              "id": "96bc0797-df20-4ac1-a407-7961fa665c9e",
+              "eventId": "96bc0797-df20-4ac1-a407-7961fa665c9e",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:50.640Z",
+              "kind": "scene",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+            },
+            {
+              "id": "bff0f314-5909-4297-afa4-121e095eca22",
+              "eventId": "bff0f314-5909-4297-afa4-121e095eca22",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:50.640Z",
+              "kind": "scene",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "version": 1,
+              "eventId": "96bc0797-df20-4ac1-a407-7961fa665c9e"
+            },
+            {
+              "kind": "verified_event",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "version": 1,
+              "eventId": "bff0f314-5909-4297-afa4-121e095eca22"
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 3,
+              "recallIds": []
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+            },
+            {
+              "turn": 2,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            },
+            {
+              "turn": 3,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "value": "leave",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "id": "96bc0797-df20-4ac1-a407-7961fa665c9e",
+              "turn": 1
+            },
+            {
+              "kind": "concession",
+              "value": "handoff",
+              "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다.",
+              "id": "bff0f314-5909-4297-afa4-121e095eca22",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "legacyCommitmentAssessments": [],
+          "commitments": []
+        }
+      },
+      "consequence": {
+        "location": "office",
+        "relationship": "strangers",
+        "dates": 0,
+        "ending": null,
+        "agreements": [
+          {
+            "value": "leave",
+            "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+          },
+          {
+            "value": "handoff",
+            "text": "오늘 18시 퇴근하고 민지가 내일 10시까지 표를 맡습니다."
+          }
+        ]
+      },
+      "resolution": "accepted"
+    },
+    {
+      "label": "creative",
+      "startHash": "925a8169b63514d6a7e7805249327d8844ec774042264bf3a982a71c7e27d87a",
+      "before": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "dialogue": {
+          "version": 0,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:08:50.592Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            }
+          ],
+          "ledger": [],
+          "reply": ""
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 0,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [],
+          "pose": "neutral",
+          "emotion": "차분함",
+          "musicMood": "office-groove"
+        }
+      },
+      "input": "대신 제가 화면 공유로 오류 두 개만 수정합니다.",
+      "generated": {
+        "line": "말씀하신 계획을 확인했어요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [
+          {
+            "kind": "concession",
+            "value": "scope",
+            "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다.",
+            "status": "accepted",
+            "subject": "mutual",
+            "reference": "",
+            "evidence": "대신 제가 화면 공유로 오류 두 개만 수정합니다."
+          }
+        ],
+        "recall": [],
+        "conjecture": ""
+      },
+      "after": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:08:50.592Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            },
+            {
+              "id": "0df5c3e9-7760-4eaa-af3c-c5b2168313b3",
+              "eventId": "0df5c3e9-7760-4eaa-af3c-c5b2168313b3",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:50.708Z",
+              "kind": "scene",
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다.",
+              "version": 1,
+              "eventId": "0df5c3e9-7760-4eaa-af3c-c5b2168313b3"
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "value": "scope",
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "대신 제가 화면 공유로 오류 두 개만 수정합니다.",
+              "id": "0df5c3e9-7760-4eaa-af3c-c5b2168313b3",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "legacyCommitmentAssessments": [],
+          "commitments": []
+        }
+      },
+      "commonInput": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+      "continued": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:08:50.592Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            },
+            {
+              "id": "0df5c3e9-7760-4eaa-af3c-c5b2168313b3",
+              "eventId": "0df5c3e9-7760-4eaa-af3c-c5b2168313b3",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:50.708Z",
+              "kind": "scene",
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다.",
+              "version": 1,
+              "eventId": "0df5c3e9-7760-4eaa-af3c-c5b2168313b3"
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 2,
+              "recallIds": []
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다."
+            },
+            {
+              "turn": 2,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "value": "scope",
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "대신 제가 화면 공유로 오류 두 개만 수정합니다.",
+              "id": "0df5c3e9-7760-4eaa-af3c-c5b2168313b3",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "legacyCommitmentAssessments": [],
+          "commitments": []
+        }
+      },
+      "restored": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:08:50.592Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            },
+            {
+              "id": "0df5c3e9-7760-4eaa-af3c-c5b2168313b3",
+              "eventId": "0df5c3e9-7760-4eaa-af3c-c5b2168313b3",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:50.708Z",
+              "kind": "scene",
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다.",
+              "version": 1,
+              "eventId": "0df5c3e9-7760-4eaa-af3c-c5b2168313b3"
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 2,
+              "recallIds": []
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다."
+            },
+            {
+              "turn": 2,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "value": "scope",
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "대신 제가 화면 공유로 오류 두 개만 수정합니다.",
+              "id": "0df5c3e9-7760-4eaa-af3c-c5b2168313b3",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "legacyCommitmentAssessments": [],
+          "commitments": []
+        }
+      },
+      "following": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:08:50.592Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            },
+            {
+              "id": "0df5c3e9-7760-4eaa-af3c-c5b2168313b3",
+              "eventId": "0df5c3e9-7760-4eaa-af3c-c5b2168313b3",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:50.708Z",
+              "kind": "scene",
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다.",
+              "version": 1,
+              "eventId": "0df5c3e9-7760-4eaa-af3c-c5b2168313b3"
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 3,
+              "recallIds": []
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다."
+            },
+            {
+              "turn": 2,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            },
+            {
+              "turn": 3,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "value": "scope",
+              "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다.",
+              "status": "accepted",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "대신 제가 화면 공유로 오류 두 개만 수정합니다.",
+              "id": "0df5c3e9-7760-4eaa-af3c-c5b2168313b3",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "legacyCommitmentAssessments": [],
+          "commitments": []
+        }
+      },
+      "consequence": {
+        "location": "office",
+        "relationship": "strangers",
+        "dates": 0,
+        "ending": null,
+        "agreements": [
+          {
+            "value": "scope",
+            "text": "대신 제가 화면 공유로 오류 두 개만 수정합니다."
+          }
+        ]
+      },
+      "resolution": "rejected"
+    },
+    {
+      "label": "refuse",
+      "startHash": "925a8169b63514d6a7e7805249327d8844ec774042264bf3a982a71c7e27d87a",
+      "before": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "dialogue": {
+          "version": 0,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:08:50.592Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            }
+          ],
+          "ledger": [],
+          "reply": ""
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 0,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [],
+          "pose": "neutral",
+          "emotion": "차분함",
+          "musicMood": "office-groove"
+        }
+      },
+      "input": "오늘 인계는 거절합니다.",
+      "generated": {
+        "line": "말씀하신 계획을 확인했어요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [
+          {
+            "kind": "concession",
+            "value": "handoff",
+            "text": "오늘 인계는 거절합니다.",
+            "status": "refused",
+            "subject": "mutual",
+            "reference": "",
+            "evidence": "오늘 인계는 거절합니다."
+          }
+        ],
+        "recall": [],
+        "conjecture": ""
+      },
+      "after": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "오늘 인계는 거절합니다."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:08:50.592Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            },
+            {
+              "id": "f711fdeb-b489-4492-8300-c77a479a1195",
+              "eventId": "f711fdeb-b489-4492-8300-c77a479a1195",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:50.761Z",
+              "kind": "scene",
+              "text": "오늘 인계는 거절합니다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "오늘 인계는 거절합니다.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "오늘 인계는 거절합니다.",
+              "version": 1,
+              "eventId": "f711fdeb-b489-4492-8300-c77a479a1195"
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "오늘 인계는 거절합니다."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "value": "handoff",
+              "text": "오늘 인계는 거절합니다.",
+              "status": "refused",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "오늘 인계는 거절합니다.",
+              "id": "f711fdeb-b489-4492-8300-c77a479a1195",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "legacyCommitmentAssessments": [],
+          "commitments": []
+        }
+      },
+      "commonInput": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+      "continued": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "오늘 인계는 거절합니다."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:08:50.592Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            },
+            {
+              "id": "f711fdeb-b489-4492-8300-c77a479a1195",
+              "eventId": "f711fdeb-b489-4492-8300-c77a479a1195",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:50.761Z",
+              "kind": "scene",
+              "text": "오늘 인계는 거절합니다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "오늘 인계는 거절합니다.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "오늘 인계는 거절합니다.",
+              "version": 1,
+              "eventId": "f711fdeb-b489-4492-8300-c77a479a1195"
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 2,
+              "recallIds": []
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "오늘 인계는 거절합니다."
+            },
+            {
+              "turn": 2,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "value": "handoff",
+              "text": "오늘 인계는 거절합니다.",
+              "status": "refused",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "오늘 인계는 거절합니다.",
+              "id": "f711fdeb-b489-4492-8300-c77a479a1195",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "legacyCommitmentAssessments": [],
+          "commitments": []
+        }
+      },
+      "restored": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "오늘 인계는 거절합니다."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:08:50.592Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            },
+            {
+              "id": "f711fdeb-b489-4492-8300-c77a479a1195",
+              "eventId": "f711fdeb-b489-4492-8300-c77a479a1195",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:50.761Z",
+              "kind": "scene",
+              "text": "오늘 인계는 거절합니다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "오늘 인계는 거절합니다.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "오늘 인계는 거절합니다.",
+              "version": 1,
+              "eventId": "f711fdeb-b489-4492-8300-c77a479a1195"
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 2,
+              "recallIds": []
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "오늘 인계는 거절합니다."
+            },
+            {
+              "turn": 2,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "value": "handoff",
+              "text": "오늘 인계는 거절합니다.",
+              "status": "refused",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "오늘 인계는 거절합니다.",
+              "id": "f711fdeb-b489-4492-8300-c77a479a1195",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "legacyCommitmentAssessments": [],
+          "commitments": []
+        }
+      },
+      "following": {
+        "mode": "office",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "오늘 인계는 거절합니다."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "말씀하신 계획을 확인했어요."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "clockout",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:08:50.592Z",
+              "kind": "scene",
+              "text": "17:50. 박도현 부장이 가방 위에 보고서를 올려놓는다. “가방이 서류 받침으로 딱이네요. 오늘 안에 끝낼 수 있죠?” 엘리베이터는 당신 없이 예행연습 중이다.\n\n현재 반론: “고객이 오늘 숫자를 기다린다는데요?”\n\n협상 0 / 6턴 · 18:00 퇴근 또는 18:20 제한 연장과 잔여 업무 담당·기한을 모두 합의하지 못하면 실패."
+            },
+            {
+              "id": "f711fdeb-b489-4492-8300-c77a479a1195",
+              "eventId": "f711fdeb-b489-4492-8300-c77a479a1195",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:50.761Z",
+              "kind": "scene",
+              "text": "오늘 인계는 거절합니다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "오늘 인계는 거절합니다.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "오늘 인계는 거절합니다.",
+              "version": 1,
+              "eventId": "f711fdeb-b489-4492-8300-c77a479a1195"
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "말씀하신 계획을 확인했어요.",
+              "version": 3,
+              "recallIds": []
+            }
+          ],
+          "reply": "말씀하신 계획을 확인했어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "오늘 인계는 거절합니다."
+            },
+            {
+              "turn": 2,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            },
+            {
+              "turn": 3,
+              "text": "방금 이야기한 내용을 기억하며 조금 더 이야기해요."
+            }
+          ],
+          "actionBeats": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "office",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "value": "handoff",
+              "text": "오늘 인계는 거절합니다.",
+              "status": "refused",
+              "subject": "mutual",
+              "reference": "",
+              "evidence": "오늘 인계는 거절합니다.",
+              "id": "f711fdeb-b489-4492-8300-c77a479a1195",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "legacyCommitmentAssessments": [],
+          "commitments": []
+        }
+      },
+      "consequence": {
+        "location": "office",
+        "relationship": "strangers",
+        "dates": 0,
+        "ending": null,
+        "agreements": []
+      },
+      "resolution": "rejected"
+    }
+  ]
+}

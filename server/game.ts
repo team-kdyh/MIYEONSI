@@ -1,3 +1,4 @@
+import {battleView} from './battle-view.ts';
 import type {NarrativeState} from './narrative.ts';
 import {storyGuide} from './story-guide.ts';
 import {chapters, romanceEndings, startRomance, romanceScene, advanceRomance, type RomanceState} from './romance.ts';
@@ -17,11 +18,12 @@ export type Game = {narrative?:NarrativeState;mode:Mode; step:number; scores:num
 export function start(mode:Mode,mission=0):Game {
  const g:Game={mode,step:mode==='office'?mission:0,scores:[0,0,0],log:[],ending:null};
  if(mode==='office')g.office=startOffice(mission);else g.romance=startRomance();
- g.log.push({speaker:mode==='office'?'박도현 · 46':'서유나 · 27',text:sceneFor(g).text});return g;
+ const opening=sceneFor(g).text;
+ g.log.push({speaker:mode==='office'?'박도현 · 46':'서유나 · 27',text:mode==='office'?opening.split('\n\n협상 ')[0]:opening});return g;
 }
 export function sceneFor(g:Game):Scene {if(g.narrative)return {title:g.mode==='office'?missions[g.step].title:({office:'늦은 사무실',cafe:'소리가 머무는 카페',riverside:'강가의 저녁',archive:'소리 보관실',rooftop:'옥상의 바람',rainstreet:'비 내리는 거리'}[g.narrative.location]),text:'',expression:0,choices:[]};return g.mode==='office'?officeScene(g):romanceScene(g);}
 export function advance(game:Game, choice:number, text=''):Game {
  if(game.mode==='office')return advanceOffice(game,choice,text);
  return advanceRomance(game,choice,text);
 }
-export function view(game:Game|null){if(!game)return null;return {...game,scores:undefined,storyGuide:storyGuide(game),scene:game.ending?null:sceneFor(game),end:game.narrative&&game.ending?{id:game.ending,title:endings[game.mode].find(e=>e.id===game.ending)?.title??'이야기의 끝',text:game.log.at(-1)?.text??''}:game.mode==='office'?officeEnd(game):game.ending?endings[game.mode].find(e=>e.id===game.ending):null};}
+export function view(game:Game|null){if(!game)return null;return {...game,scores:undefined,battle:battleView(game),storyGuide:storyGuide(game),scene:game.ending?null:sceneFor(game),end:game.narrative&&game.ending?{id:game.ending,title:endings[game.mode].find(e=>e.id===game.ending)?.title??'이야기의 끝',text:game.log.at(-1)?.text??''}:game.mode==='office'?officeEnd(game):game.ending?endings[game.mode].find(e=>e.id===game.ending):null};}

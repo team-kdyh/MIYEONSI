@@ -12,7 +12,7 @@ import {ReplyRejectedError,rejectedReplyMessage} from './reply-error.ts';
 import {createHash} from 'node:crypto';
 import {loadEnvFile} from 'node:process';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-try{loadEnvFile(path.join(root,'.env'));}catch(e){if((e as NodeJS.ErrnoException).code!=='ENOENT')throw Error('환경설정 파일을 읽지 못했습니다.');}
+if(process.env.AFTERHOURS_SKIP_ENV_FILE!=='1')try{loadEnvFile(path.join(root,'.env'));}catch(e){if((e as NodeJS.ErrnoException).code!=='ENOENT')throw Error('환경설정 파일을 읽지 못했습니다.');}
 const port=Number(process.env.PORT||3001);
 const store=new ProfileStore(process.env.AFTERHOURS_DATA_DIR||path.join(root,'.local-data'));
 function selectedProvider(p:Profile):Provider{return p.providerSelectionVersion===2&&p.provider?p.provider:(process.env.OPENAI_API_KEY?'openai':'offline');}

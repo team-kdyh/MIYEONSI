@@ -13,7 +13,7 @@ test('free text UI cancels and retries one request, earns an office ending, and 
  await expect(page.locator('.choices button')).toHaveCount(0);
  const initial=await (await page.request.get('/api/state')).json();
  expect(initial.provider).toBe('openai');
- await expect(page.getByRole('complementary',{name:'현재 이야기'})).toContainText('추가 보고서를 부탁했다');
+ await expect(page.getByRole('complementary',{name:'설득 배틀'})).toContainText('고객이 오늘 숫자를 기다린다');
 
  // Cancel before the first request reaches the server, then click the real retry UI.
  let release!:()=>void;
@@ -34,20 +34,20 @@ test('free text UI cancels and retries one request, earns an office ending, and 
  expect(state.game.dialogue.version).toBe(initial.game.dialogue.version+1);
  expect(state.game.ending).toBeNull();
  expect(state.game.narrative.events.some((event:any)=>event.kind==='concession'&&event.value==='leave')).toBe(true);
- await expect(page.getByRole('complementary',{name:'현재 이야기'})).toContainText('오늘 18시 퇴근에 합의함');
+ await expect(page.getByRole('meter',{name:'부장 버티기'})).toHaveAttribute('aria-valuenow','88');
  await expect(page.locator('#reply')).toHaveValue('');
  expect(await page.evaluate(()=>sessionStorage.getItem('afterhours-pending'))).toBeNull();
 
- for(const text of ['남은 도표는 부장님이 내일 10시까지 맡아 주세요.','이 합의로 마무리해요.']){
+ for(const text of ['남은 도표는 부장님이 내일 10시까지 맡아 주세요.','확인되지 않은 숫자는 빈칸과 확인 시간을 표시해요.','이번 업무 범위는 검토된 숫자의 요약까지로 정해요.','출처 링크를 붙여서 다음 담당자의 검토 시간을 줄여요.']){
   await page.locator('#reply').fill(text);
   const response=page.waitForResponse(result=>result.url().endsWith('/api/turn'));
   await page.getByRole('button',{name:/전송/}).click();
   const result=await response;expect(result.status()).toBe(200);state=await result.json();
-  await expect(page.getByRole('complementary',{name:'현재 이야기'})).toContainText(state.game.ending?'이번 만남의 마지막 장면':'남은 도표를 내일 10시까지 맡기로');
+  await expect(page.getByRole('meter',{name:'부장 버티기'})).toHaveAttribute('aria-valuenow',String(state.game.battle.boss));
  }
- expect(requests).toHaveLength(4);expect(requests.every(body=>!('choice' in body))).toBe(true);
+ expect(requests).toHaveLength(6);expect(requests.every(body=>!('choice' in body))).toBe(true);
  expect(state.game.ending).toBe('office-clockout-success');
- expect(state.game.narrative.turn).toBe(3);
+ expect(state.game.narrative.turn).toBe(5);
  expect(state.collection).toContain('office-clockout-success');
  await expect(page.locator('.ending-actions')).toBeVisible();
  await expect(page.locator('#reply')).toHaveCount(0);
@@ -70,5 +70,5 @@ test('free text UI cancels and retries one request, earns an office ending, and 
  expect(restarted.game.ending).toBeNull();expect(restarted.game.narrative.turn).toBe(0);
  expect(restarted.collection).toContain('office-clockout-success');
  expect(pageErrors).toEqual([]);
- await testInfo.attach('scope',{body:JSON.stringify({transport:'fake Responses; real UI and public HTTP; no paid calls',committedTurns:3,requests:4,cancelledBeforeDelivery:1,ending:state.game.ending}),contentType:'application/json'});
+ await testInfo.attach('scope',{body:JSON.stringify({transport:'fake Responses; real UI and public HTTP; no paid calls',committedTurns:5,requests:6,cancelledBeforeDelivery:1,ending:state.game.ending}),contentType:'application/json'});
 });

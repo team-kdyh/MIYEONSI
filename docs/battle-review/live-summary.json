@@ -1,0 +1,292 @@
+{
+  "kind": "ACTUAL_GENERATION_AND_HTTP_OBSERVATIONS",
+  "attempts": 24,
+  "turnReceipts": [
+    {
+      "receipt": "live-receipts/2187720d-f1a1-496c-9fce-5768dcd54de8/turn-1.json",
+      "status": 200,
+      "input": "오늘은 핵심 숫자 세 줄만 먼저 보내는 건 어떨까요? 고객이 급하게 필요한 내용부터 확인하게요.",
+      "gauges": {
+        "player": 100,
+        "boss": 88,
+        "pressure": "“고객이 오늘 숫자를 기다린다는데요?”",
+        "exchange": {
+          "id": "battle-1",
+          "playerDamage": 0,
+          "bossDamage": 12,
+          "guard": 0,
+          "combo": 0,
+          "reason": "핵심 자료만 오늘 전달해 급한 요구를 충족하자는 현실적 대안에 흔들림"
+        }
+      },
+      "ending": null
+    },
+    {
+      "receipt": "live-receipts/2187720d-f1a1-496c-9fce-5768dcd54de8/turn-2.json",
+      "status": 200,
+      "input": "그러니까 핵심 수치 세 줄을 우선 전달하자는 말이에요. 급한 내용부터 보내죠.",
+      "gauges": {
+        "player": 100,
+        "boss": 88,
+        "pressure": "“고객이 오늘 숫자를 기다린다는데요?”",
+        "exchange": null
+      },
+      "ending": null
+    },
+    {
+      "receipt": "live-receipts/2187720d-f1a1-496c-9fce-5768dcd54de8/turn-3.json",
+      "status": 200,
+      "input": "확인 못 한 항목은 빈칸으로 두고 담당자와 확인 시간을 옆에 적어 보내죠. 숫자를 추측해서 채우는 위험도 줄일 수 있어요.",
+      "gauges": {
+        "player": 100,
+        "boss": 76,
+        "pressure": "“고객이 오늘 숫자를 기다린다는데요?”",
+        "exchange": {
+          "id": "battle-3",
+          "playerDamage": 0,
+          "bossDamage": 12,
+          "guard": 0,
+          "combo": 0,
+          "reason": "아직 확인 안 된 항목을 임시로 명확히 구분해 고객 혼동을 막는 방안 제시"
+        }
+      },
+      "ending": null
+    },
+    {
+      "receipt": "live-receipts/2187720d-f1a1-496c-9fce-5768dcd54de8/turn-4.json",
+      "status": 200,
+      "input": "오늘 제가 맡는 범위는 확인된 숫자의 요약까지로 정하고 싶어요. 새 표까지 추가하면 검토 시간이 부족하니 범위를 줄여서 정확도를 지키죠.",
+      "gauges": {
+        "player": 100,
+        "boss": 52,
+        "pressure": "“고객이 오늘 숫자를 기다린다는데요?”",
+        "exchange": {
+          "id": "battle-4",
+          "playerDamage": 0,
+          "bossDamage": 24,
+          "guard": 0,
+          "combo": 1,
+          "reason": "업무 범위와 시간 압박을 분명히 줄여 정확도를 확보하자는 현실적 방안 제안"
+        }
+      },
+      "ending": null
+    },
+    {
+      "receipt": "live-receipts/2187720d-f1a1-496c-9fce-5768dcd54de8/turn-5.json",
+      "status": 200,
+      "input": "틀리면 고객의 결정이 바뀌는 큰 금액 항목부터 먼저 검토해보면 어떨까요? 사소한 형식 수정은 뒤로 미루면 지금 검토할 양이 줄어요.",
+      "gauges": {
+        "player": 100,
+        "boss": 28,
+        "pressure": "“고객이 오늘 숫자를 기다린다는데요?”",
+        "exchange": {
+          "id": "battle-5",
+          "playerDamage": 0,
+          "bossDamage": 24,
+          "guard": 0,
+          "combo": 1,
+          "reason": "고객이 중시할 항목을 우선 검토해 전달률과 정확도를 높인다는 현실 대안"
+        }
+      },
+      "ending": null
+    },
+    {
+      "receipt": "live-receipts/2187720d-f1a1-496c-9fce-5768dcd54de8/turn-6.json",
+      "status": 200,
+      "input": "출처 링크를 표 옆에 붙여두는 방법도 있어요. 다음 담당자가 원본을 찾느라 시간을 쓰지 않게 하면 인수인계가 훨씬 빨라질 거예요.",
+      "gauges": {
+        "player": 100,
+        "boss": 8,
+        "pressure": "“남은 표는 누가 언제 맡죠?”",
+        "exchange": {
+          "id": "battle-6",
+          "playerDamage": 0,
+          "bossDamage": 20,
+          "guard": 0,
+          "combo": 0,
+          "reason": "원본 자료 경로를 직접 제공해 후임자의 확인·인수 시간을 단축시키자는 실질적 대안"
+        }
+      },
+      "ending": null
+    },
+    {
+      "receipt": "live-receipts/2187720d-f1a1-496c-9fce-5768dcd54de8/turn-7.json",
+      "status": 400,
+      "input": "최종 발송 승인과 고객에게 보강 일정을 알리는 일은 부장님이 맡아주실 수 있을까요? 결정권이 있는 분이 한 번에 설명하면 확인 연락이 여러 사람을 거치지 않아도 되잖아요.",
+      "gauges": null,
+      "ending": null
+    },
+    {
+      "receipt": "live-receipts/2810884a-9c02-4610-834a-7ba47cac0919/turn-1.json",
+      "status": 200,
+      "input": "오늘 꼭 끝내야 하는 부분이 뭔가요? 부장님이 제일 걱정하는 걸 먼저 듣고 싶어요.",
+      "gauges": {
+        "player": 100,
+        "boss": 100,
+        "pressure": "“고객이 오늘 숫자를 기다린다는데요?”",
+        "exchange": null
+      },
+      "ending": null
+    },
+    {
+      "receipt": "live-receipts/2810884a-9c02-4610-834a-7ba47cac0919/turn-2.json",
+      "status": 200,
+      "input": "그럼 오늘은 핵심 숫자 세 줄만 먼저 보내는 건 어떨까요? 자세한 표를 급히 붙이는 것보다 고객이 필요한 내용부터 확인하게요.",
+      "gauges": {
+        "player": 100,
+        "boss": 88,
+        "pressure": "“고객이 오늘 숫자를 기다린다는데요?”",
+        "exchange": {
+          "id": "battle-2",
+          "playerDamage": 0,
+          "bossDamage": 12,
+          "guard": 0,
+          "combo": 0,
+          "reason": "세부 표 작업을 뒤로 미루고, 핵심 정보를 우선 전달하자는 새로운 실행 방안을 제시함."
+        }
+      },
+      "ending": null
+    },
+    {
+      "receipt": "live-receipts/2810884a-9c02-4610-834a-7ba47cac0919/turn-3.json",
+      "status": 200,
+      "input": "다른 방법도 있어요. 아직 확인 못 한 항목은 빈칸으로 두고 담당자와 확인 시간을 옆에 적어 보내죠. 숫자를 추측해서 채우는 위험도 줄일 수 있고요.",
+      "gauges": {
+        "player": 100,
+        "boss": 76,
+        "pressure": "“고객이 오늘 숫자를 기다린다는데요?”",
+        "exchange": {
+          "id": "battle-3",
+          "playerDamage": 0,
+          "bossDamage": 12,
+          "guard": 0,
+          "combo": 0,
+          "reason": "잔여 표를 추정하지 않고 공란에 담당자와 확인 시각을 명시하는 안전한 대안을 제시함."
+        }
+      },
+      "ending": null
+    },
+    {
+      "receipt": "live-receipts/3c103106-37a4-4e0b-a335-9f8aaeb3f5ee/turn-1.json",
+      "status": 200,
+      "input": "오늘 꼭 끝내야 하는 부분이 뭔가요? 부장님이 제일 걱정하는 걸 먼저 듣고 싶어요.",
+      "gauges": {
+        "player": 100,
+        "boss": 100,
+        "pressure": "“고객이 오늘 숫자를 기다린다는데요?”",
+        "exchange": null
+      },
+      "ending": null
+    },
+    {
+      "receipt": "live-receipts/3c103106-37a4-4e0b-a335-9f8aaeb3f5ee/turn-2.json",
+      "status": 400,
+      "input": "그럼 오늘은 핵심 숫자 세 줄만 먼저 보내는 건 어떨까요? 자세한 표를 급히 붙이는 것보다 고객이 필요한 내용부터 확인하게요.",
+      "gauges": null,
+      "ending": null
+    },
+    {
+      "receipt": "live-receipts/440b96f1-388e-4673-8e9e-e7351849a839/turn-1.json",
+      "status": 400,
+      "input": "최종 발송 승인과 고객에게 보강 일정을 알리는 일은 부장님이 맡아주실 수 있을까요? 결정권이 있는 분이 한 번에 설명하면 확인 연락이 여러 사람을 거치지 않아도 되잖아요.",
+      "gauges": null,
+      "ending": null
+    },
+    {
+      "receipt": "live-receipts/61554735-577e-4ee8-bbff-06a121b12e6c/turn-1.json",
+      "status": 200,
+      "input": "최종 발송 승인과 고객에게 보강 일정을 알리는 일은 부장님이 맡아주실 수 있을까요? 결정권이 있는 분이 한 번에 설명하면 확인 연락이 여러 사람을 거치지 않아도 되잖아요.",
+      "gauges": {
+        "player": 100,
+        "boss": 0,
+        "pressure": "“남은 표는 누가 언제 맡죠?”",
+        "exchange": {
+          "id": "battle-7",
+          "playerDamage": 0,
+          "bossDamage": 20,
+          "guard": 0,
+          "combo": 0,
+          "reason": "결정권자가 한 번에 안내하면 중복 확인과 커뮤니케이션 오류를 줄일 수 있음"
+        }
+      },
+      "ending": "office-clockout-success"
+    },
+    {
+      "receipt": "live-receipts/736784cb-1bd8-409a-a6e1-7a98d0e3617a/turn-1.json",
+      "status": 200,
+      "input": "대안은 없습니다. 보고서도 오늘은 아예 손대기 싫습니다. 그냥 다른 사람한테 시키세요.",
+      "gauges": {
+        "player": 100,
+        "boss": 88,
+        "pressure": "“고객이 오늘 숫자를 기다린다는데요?”",
+        "exchange": {
+          "id": "battle-1",
+          "playerDamage": 0,
+          "bossDamage": 12,
+          "guard": 0,
+          "combo": 0,
+          "reason": "오늘 즉시가 어렵다면 내일 오전 중 착수로라도 실질적 업무 계획을 유도한다."
+        }
+      },
+      "ending": null
+    },
+    {
+      "receipt": "live-receipts/736784cb-1bd8-409a-a6e1-7a98d0e3617a/turn-2.json",
+      "status": 200,
+      "input": "업무를 무조건 추가하시면 기존 일의 정확도가 떨어져요. 우선순위와 책임 범위를 먼저 정해야 합니다. 추가 작업을 맡기려면 기존 작업 하나는 빼주세요.",
+      "gauges": {
+        "player": 100,
+        "boss": 72,
+        "pressure": "“남은 표는 누가 언제 맡죠?”",
+        "exchange": {
+          "id": "battle-2",
+          "playerDamage": 0,
+          "bossDamage": 16,
+          "guard": 0,
+          "combo": 1,
+          "reason": "업무 책임 범위 조정에 공감하며 구체적인 우선순위 논의를 유도한다."
+        }
+      },
+      "ending": null
+    },
+    {
+      "receipt": "live-receipts/736784cb-1bd8-409a-a6e1-7a98d0e3617a/turn-3.json",
+      "status": 200,
+      "input": "부장님 커피도 야근 수당 받나요? 제 커피는 벌써 식어서 퇴근한 것 같은데요.",
+      "gauges": {
+        "player": 100,
+        "boss": 72,
+        "pressure": "“남은 표는 누가 언제 맡죠?”",
+        "exchange": null
+      },
+      "ending": null
+    },
+    {
+      "receipt": "live-receipts/94978dcd-a28b-408a-83cd-6ef6d4282b16/turn-1.json",
+      "status": 200,
+      "input": "오늘은 핵심 숫자 세 줄만 먼저 보내는 건 어떨까요? 고객이 급하게 필요한 내용부터 확인하게요.",
+      "gauges": {
+        "player": 100,
+        "boss": 88,
+        "pressure": "“남은 표는 누가 언제 맡죠?”",
+        "exchange": {
+          "id": "battle-1",
+          "playerDamage": 0,
+          "bossDamage": 12,
+          "guard": 0,
+          "combo": 0,
+          "reason": "일을 분리해서 급한 것부터 처리하는 대안을 인정하고, 단 남는 리스크를 조건부로 제시함."
+        }
+      },
+      "ending": null
+    },
+    {
+      "receipt": "live-receipts/94978dcd-a28b-408a-83cd-6ef6d4282b16/turn-2.json",
+      "status": 400,
+      "input": "그러니까 핵심 수치 세 줄을 우선 전달하자는 말이에요. 급한 내용부터 보내죠.",
+      "gauges": null,
+      "ending": null
+    }
+  ],
+  "limitation": "Final office-director difficulty prompt and unsupported-refusal guard were changed after last paid call. Their new-generation behavior is unverified; recorded replay is separately labelled."
+}

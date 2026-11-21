@@ -1,0 +1,19 @@
+{
+  "rowid": 13716,
+  "id": "4bd0d2fb-8b75-4b78-b563-b31891cdaa9c",
+  "event_type": "mcp.job.failed",
+  "timestamp": "2026-11-21 09:19:14.256562",
+  "payload": {
+    "status": "failed",
+    "message": "Job failed: Lost durable lineage advancement claim before completion",
+    "error": "Lost durable lineage advancement claim before completion",
+    "is_error": true,
+    "result_meta": {
+      "failure_reason_code": "unknown",
+      "recovery_action": "inspect_logs",
+      "next_step": "Inspect the server logs before retrying the workflow."
+    },
+    "timestamp": "2026-11-21T09:19:14.256562+00:00",
+    "event_version": 1
+  }
+}

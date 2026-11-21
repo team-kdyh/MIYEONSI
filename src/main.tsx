@@ -1,3 +1,5 @@
+import {BattleHud} from './BattleHud';
+import type {BattleView} from '../server/battle-view';
 import {CharacterSprite} from './CharacterSprite';
 import {ConversationViewport} from './ConversationViewport';
 import {collectionCatalogue,collectionSummary} from './collection';
@@ -12,7 +14,7 @@ import type {Game,Scene,Mode} from '../server/game';
 import type {StoryGuide} from '../server/story-guide';
 import './style.css';
 type End={id:string;title:string;text:string};
-type State={game:(Game&{storyGuide?:StoryGuide;dialogue?:{version:number;reply:string;actionBeats?:string[]}}&{scene:Scene|null;end:End|null})|null;collection:string[];slots:({mode:Mode;step:number;ending:string|null}|null)[];endings:Record<Mode,End[]>;provider:string};
+type State={game:(Game&{battle?:BattleView|null;storyGuide?:StoryGuide;dialogue?:{version:number;reply:string;actionBeats?:string[]}}&{scene:Scene|null;end:End|null})|null;collection:string[];slots:({mode:Mode;step:number;ending:string|null}|null)[];endings:Record<Mode,End[]>;provider:string};
 type Panel='settings'|'collection'|'save'|'log'|'tutorial'|null;
 const modeName=(mode:Mode)=>mode==='office'?'직장 미션':'로맨스 스릴러';
 function App(){
@@ -64,8 +66,9 @@ function App(){
  {g&&<button className="continue" onClick={()=>{setPlaying(true);}}>이어하기 · {modeName(g.mode)} · {g.ending?'에필로그':g.mode==='office'?missions[g.step]?.title:g.storyGuide?.chapterLabel||'이야기 진행 중'} →</button>}
  <p className="fine">성인 인물의 비노골적 로맨스 · 심리적 긴장 포함<br/>직장 8개 미션 · 서로 다른 협상과 결말</p></div>
  </section>:<section className={`play ${mode} ${mode==='romance'&&g.step>=4?'tense':''}`}>
+ {mode==='office'&&g.battle&&<BattleHud battle={g.battle}/>}
  <div className="scene-top"><span>{modeName(mode)}</span><button onClick={()=>setPanel('log')}>대화 로그</button></div>
- <div className="stage" data-cue={cue?.id} style={{backgroundImage:`url(${backgroundAsset(cue?.background||"office")})`}}><BackgroundTransition background={cue?.background||"office"}/>{g.storyGuide?<aside className="story-guide" aria-label="현재 이야기"><p className="chapter-label">{g.storyGuide.chapterLabel} · {g.storyGuide.place}</p><h2>{g.ending?g.end?.title:g.storyGuide.title}</h2><p className="stage-situation">{g.storyGuide.situation}</p></aside>:<div className="scene-label"><h2>{g.ending?g.end?.title:g.scene?.title}</h2></div>}<CharacterSprite mode={mode} pose={cue?.pose||"neutral"} expression={cue?.expression||0} turn={cue?.id||"arrival"} actionBeats={g.dialogue?.actionBeats}/></div>
+ <div className="stage" data-cue={cue?.id} style={{backgroundImage:`url(${backgroundAsset(cue?.background||"office")})`}}><BackgroundTransition background={cue?.background||"office"}/>{g.storyGuide&&mode!=='office'?<aside className="story-guide" aria-label="현재 이야기"><p className="chapter-label">{g.storyGuide.chapterLabel} · {g.storyGuide.place}</p><h2>{g.ending?g.end?.title:g.storyGuide.title}</h2><p className="stage-situation">{g.storyGuide.situation}</p></aside>:<div className="scene-label"><h2>{g.ending?g.end?.title:g.scene?.title}</h2></div>}<CharacterSprite mode={mode} pose={cue?.pose||"neutral"} expression={cue?.expression||0} turn={cue?.id||"arrival"} actionBeats={g.dialogue?.actionBeats}/></div>
  <div className="dialogue"><div className="speaker">{g.ending?'EPILOGUE':mode==='office'?'박도현':'서유나'}<span>{g.ending?'당신이 남긴 이야기':mode==='office'?'기획팀 부장':'사운드 아키비스트'}</span>{busy&&<span className="thinking" role="status">답장을 기다리는 중…</span>}</div>
  <ConversationViewport resetKey={`${g.step}-${g.dialogue?.version}-${g.ending}`} action={g.dialogue?.actionBeats?.join(' · ')||spriteCell(mode,cue?.pose||"neutral",cue?.expression).label} text={g.ending?(g.end?.text||g.dialogue?.reply||''):g.dialogue?.reply||(mode==='office'?'잠깐, 퇴근 전에 이 일 이야기 좀 할까요?':'여기 앉아도 돼요? 방금 컵 내려놓는 소리가 참 좋았거든요.')} speed={settings.speed} reduced={settings.reduced}/>
  {!panel&&recoveryNotice}

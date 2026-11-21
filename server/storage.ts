@@ -6,6 +6,7 @@ import path from 'node:path';
 import {view,endings} from './game.ts';
 import type {DialogueGame,Reply} from './dialogue.ts';
 import type {Provider} from './provider.ts';
+import {missions} from './office.ts';
 
 export type CommittedTurn={id:string;hash:string;beforeVersion:number;afterVersion:number;response:Reply;events:unknown[];log:DialogueGame['log'];unlocks:string[];result:unknown};
 export type Profile={game:DialogueGame|null;collection:string[];slots:(DialogueGame|null)[];provider?:Provider;providerSelectionVersion?:2;requests?:number;committed:CommittedTurn[];epoch:number};
@@ -16,6 +17,16 @@ function validGame(g:unknown):boolean {
  const v=g as DialogueGame;
  if(!v||!['office','romance'].includes(v.mode)||!Number.isInteger(v.step)||v.step<0||v.step> (v.mode==='office'?7:5)||!Array.isArray(v.scores)||v.scores.some(n=>!Number.isFinite(n))||!Array.isArray(v.log)||v.log.some(e=>typeof e?.speaker!=='string'||typeof e?.text!=='string')||!(v.ending===null||endings[v.mode].some(e=>e.id===v.ending)))return false;
  if(!v.dialogue||!Number.isSafeInteger(v.dialogue.version)||v.dialogue.version<0||!Array.isArray(v.dialogue.facts)||!Array.isArray(v.dialogue.ledger)||typeof v.dialogue.reply!=='string')return false;
+ const history=v.dialogue.battleEvaluations;
+ if(history!==undefined){
+  if(!Array.isArray(history)||v.mode!=='office'&&history.length)return false;
+  let previous=0;
+  for(const h of history){
+   const version=Number(/^battle-(\d+)$/.exec(h?.id)?.[1]);
+   if(!Number.isSafeInteger(version)||version<=previous||version>v.dialogue.version||!missions[v.step]?.terms.some(t=>t.id===h.target)||!['pressure','persuasion','guard','counter'].includes(h.kind)||!['alternative','evidence','boundary'].includes(h.argument)||!['playerQuote','npcQuote','reason'].every(k=>typeof h[k as keyof typeof h]==='string')||![0,8,24].includes(h.playerDamage)||![0,12,16,20,24,28].includes(h.bossDamage)||![0,8].includes(h.guard)||![0,1].includes(h.combo)||h.kind==='pressure'&&(h.bossDamage!==0||h.guard!==0||h.combo!==0)||h.kind!=='pressure'&&h.playerDamage!==0||h.kind==='guard'&&h.bossDamage!==0)return false;
+   previous=version;
+  }
+ }
  if(v.mode==='office'&&(!v.office||!Number.isInteger(v.office.turn)||!Array.isArray(v.office.evidence)||!v.office.secured))return false;
  if(v.mode==='romance'&&(!v.romance||!Number.isInteger(v.romance.turn)||!Array.isArray(v.romance.facts)||!Array.isArray(v.romance.details)))return false;
  if(v.narrative){const n=v.narrative;if(n.format!==2||!Number.isSafeInteger(n.turn)||n.turn<0||!locations.includes(n.location)||!poses.includes(n.pose)||!moods.includes(n.musicMood)||!['strangers','familiar','attracted','confessed','couple','apart'].includes(n.relationship)||!Number.isSafeInteger(n.dates)||n.dates<0||!Array.isArray(n.events)||n.events.some(e=>typeof e.id!=='string'||!kinds.includes(e.kind)||typeof e.text!=='string'||typeof e.evidence!=='string'||typeof e.reference!=='string'||!Number.isSafeInteger(e.turn)||e.turn>n.turn||!['npc','player','mutual','world'].includes(e.subject)||!['offered','accepted','refused','fulfilled'].includes(e.status)))return false;}
@@ -34,7 +45,11 @@ export class ProfileStore {
   try{await copyFile(file,file+'.preserved-'+randomUUID());}catch(e){if((e as NodeJS.ErrnoException).code!=='ENOENT')throw e;}
  }
  private file(id:string){if(!/^[a-f0-9]{48}$/.test(id))throw Error('잘못된 세션');return path.join(this.directory,id+'.json');}
- private async read(file:string){const e=JSON.parse(await readFile(file,'utf8'));if(e.format!==1||e.checksum!==digest(e.profile))throw Error('저장 형식 또는 체크섬 불일치');validateProfile(e.profile);return e.profile as Profile;}
+ private async read(file:string){const e=JSON.parse(await readFile(file,'utf8'));if(e.format!==1||e.checksum!==digest(e.profile))throw Error('저장 형식 또는 체크섬 불일치');validateProfile(e.profile);
+  // Absent history is the neutral baseline in battleView/battleTotals.
+  // Do not rewrite old endings, logs, versions, slots or request journals.
+  return e.profile as Profile;
+ }
  private async atomic(file:string,p:Profile){
   validateProfile(p);await mkdir(this.directory,{recursive:true});const tmp=file+'.'+randomUUID()+'.tmp';
   try{const f=await open(tmp,'wx');try{await f.writeFile(JSON.stringify({format:1,checksum:digest(p),profile:p}),'utf8');await f.sync();}finally{await f.close();}await rename(tmp,file);}finally{await unlink(tmp).catch(()=>{});}

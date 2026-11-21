@@ -1,0 +1,20 @@
+✔ new office introductions do not advertise the retired turn deadline (0.8495ms)
+✔ wire derives exact quotes from real input and authored speech after generating utterance first (4.5547ms)
+✔ two materially different alternatives on one issue both score before agreement; exact and semantic repeats do not (1.416ms)
+✔ a source excerpt supports naturally paraphrased evidence without copying the source into user speech (0.2622ms)
+✔ guard restores pressure loss exactly once without forced agreement and survives the public view (1.0901ms)
+✔ refusal speech, basic questions, rank spoof and invented past approval cannot create battle impact (0.9494ms)
+✔ changing argument category cannot farm a near-identical timed proposal (0.3857ms)
+✔ a new delegation question mentioning decision authority is not a claim of past approval (0.1723ms)
+✔ NPC-invented tomorrow plan cannot score an explicit unsupported work refusal (0.3436ms)
+✔ office repair rewrites speech as discussion, cannot retain the rejected claim merely by keeping battle metadata (16.9299ms)
+✔ captured natural six-turn game and real repaired seventh response replay to victory without injected gains (25.2512ms)
+✔ captured over-generous live judgment is rejected atomically; recorded failure is not relabelled as a live pass (0.705ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 344.1122

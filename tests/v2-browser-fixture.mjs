@@ -14,9 +14,13 @@ globalThis.fetch=async(url,options)=>{
   return Response.json({status:'completed',output:[{content:[{type:'output_text',text:JSON.stringify(output)}]}]});
  }
  let event;
+ const battlePlans=['확인되지 않은 숫자는 빈칸과 확인 시간을 표시해요.','이번 업무 범위는 검토된 숫자의 요약까지로 정해요.','출처 링크를 붙여서 다음 담당자의 검토 시간을 줄여요.'];
+ const planIndex=battlePlans.indexOf(text);
+ if(planIndex>=0)return Response.json({status:'completed',output:[{content:[{type:'output_text',text:JSON.stringify({utterance:{line:'그 제안이면 검토 부담이 줄겠군요. 그 방법의 장점은 이해합니다.',actionBeats:['박도현이 고개를 끄덕인다.'],emotion:'납득',pose:'thinking',musicMood:'office-groove',recall:[],conjecture:''},changes:null,battle:{kind:'persuasion',target:'handoff',argument:planIndex===1?'boundary':'alternative',repeatOf:'',reason:'새로운 업무 방법으로 검토 부담을 줄였다.',concessionIndex:-1,pressureId:'',premises:[]}})}]}]});
  if(text.startsWith('오늘 18시에 퇴근하겠습니다.'))event={kind:'concession',value:'leave',subject:'mutual',status:'accepted',text:'오늘 18시 퇴근에 합의함',evidence:'오늘 18시에 퇴근하겠습니다.',reference:''};
  if(text==='남은 도표는 부장님이 내일 10시까지 맡아 주세요.')event={kind:'concession',value:'handoff',subject:'mutual',status:'accepted',text:'부장님이 남은 도표를 내일 10시까지 맡기로 함',evidence:text,reference:''};
  if(text==='이 합의로 마무리해요.')event={kind:'resolution',value:'success',subject:'player',status:'accepted',text:'합의한 퇴근과 인계로 협상을 마무리함',evidence:text,reference:''};
  if(!event)return persistenceFixture(url,options);
- return Response.json({status:'completed',output:[{content:[{type:'output_text',text:JSON.stringify({line:event.kind==='resolution'?'좋습니다. 오늘은 여기까지 하죠. 남은 도표는 약속대로 제가 맡겠습니다.':'그 조건에 합의하겠습니다. 남은 일도 하나씩 정리하죠.',actionBeats:['박도현이 서류를 덮고 고개를 끄덕인다.'],emotion:'차분함',pose:'offer',musicMood:'office-groove',events:[event],recall:[],conjecture:''})}]}]});
+ const line=event.kind==='resolution'?'좋습니다. 오늘은 여기까지 하죠. 남은 도표는 약속대로 제가 맡겠습니다.':'그 조건에 합의하겠습니다. 남은 일도 하나씩 정리하죠.';
+ return Response.json({status:'completed',output:[{content:[{type:'output_text',text:JSON.stringify({line,actionBeats:['박도현이 서류를 덮고 고개를 끄덕인다.'],emotion:'차분함',pose:'offer',musicMood:'office-groove',events:[event],recall:[],conjecture:'',...(event.kind==='concession'?{battle:{kind:'persuasion',target:event.value,argument:event.value==='leave'?'alternative':'boundary',playerQuote:text,npcQuote:line,repeatOf:'',reason:'제안한 업무 조정을 받아들인다.',concessionIndex:0,pressureId:'',premises:[]}}:{})})}]}]});
 };

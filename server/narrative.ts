@@ -1,3 +1,4 @@
+import {validateBattle,type BattleEvaluation} from './battle-evaluation.ts';
 import type {RevisionNegotiation,RevisionProposalInput,RevisionResponseInput} from './revision-negotiation.ts';
 import type {PerformanceInterpretation} from './performance-interpretation.ts';
 import type {RevisionInput} from './commitment-revisions.ts';
@@ -13,7 +14,7 @@ export const moods=['office-groove','office-pressure','cafe-warmth','rooftop-hea
 export const kinds=['detail','promise','invitation','move','relationship','complication','clue','concession','resolution'] as const;
 export type EventProposal={kind:typeof kinds[number];subject:'npc'|'player'|'mutual'|'world';text:string;status:'offered'|'accepted'|'refused'|'fulfilled';reference:string;evidence:string;value:string};
 export type StoryEvent=EventProposal&{id:string;turn:number;performanceSource?:'action'|'statement';performanceVersion?:number};
-export type NarrativeReply={revisionProposals?:RevisionProposalInput[];revisionResponses?:RevisionResponseInput[];commitmentRevisions?:RevisionInput[];commitmentOffers?:CommitmentOffer[];commitmentProgress?:ProgressInput[];commitmentAmendments?:AmendmentInput[];line:string;actionBeats:string[];emotion:string;pose:typeof poses[number];musicMood:typeof moods[number];events:EventProposal[];recall:string[];conjecture:string};
+export type NarrativeReply={battle?:BattleEvaluation|null;revisionProposals?:RevisionProposalInput[];revisionResponses?:RevisionResponseInput[];commitmentRevisions?:RevisionInput[];commitmentOffers?:CommitmentOffer[];commitmentProgress?:ProgressInput[];commitmentAmendments?:AmendmentInput[];line:string;actionBeats:string[];emotion:string;pose:typeof poses[number];musicMood:typeof moods[number];events:EventProposal[];recall:string[];conjecture:string};
 export type NarrativeState={revisionNegotiations?:RevisionNegotiation[];performanceInterpretations?:PerformanceInterpretation[];legacyCommitmentAssessments?:{eventId:string;result:'insufficient';reason:string}[];commitments?:Commitment[];format:2;turn:number;location:typeof locations[number];relationship:'strangers'|'familiar'|'attracted'|'confessed'|'couple'|'apart';dates:number;activeDate?:{eventId:string;location:typeof locations[number];turn:number};events:StoryEvent[];pose:typeof poses[number];emotion:string;musicMood:typeof moods[number]};
 export function narrative(g:Game):NarrativeState {
  if(g.narrative){
@@ -50,8 +51,9 @@ export function narrativeSchema(game?:Game){const schema={type:'object',addition
 const bounded=(s:unknown,n:number)=>typeof s==='string'&&s.length<=n;
 export function validateNarrative(r:unknown):NarrativeReply {
  const v=r as NarrativeReply;
- if(!v||typeof v!=='object'||Object.keys(v).filter(k=>!['revisionProposals','revisionResponses','commitmentOffers','commitmentProgress','commitmentAmendments','commitmentRevisions'].includes(k)).sort().join(',')!=='actionBeats,conjecture,emotion,events,line,musicMood,pose,recall'||!bounded(v.line,600)||!v.line.trim()||!bounded(v.emotion,40)||!poses.includes(v.pose)||!moods.includes(v.musicMood)||v.conjecture!==''||!Array.isArray(v.actionBeats)||v.actionBeats.length>3||v.actionBeats.some(a=>!bounded(a,120))||!Array.isArray(v.recall)||v.recall.length>3||v.recall.some(a=>!bounded(a,100))||!Array.isArray(v.events)||v.events.length>5)throw Error('잘못된 이야기 응답');
+ if(!v||typeof v!=='object'||Object.keys(v).filter(k=>!['battle','revisionProposals','revisionResponses','commitmentOffers','commitmentProgress','commitmentAmendments','commitmentRevisions'].includes(k)).sort().join(',')!=='actionBeats,conjecture,emotion,events,line,musicMood,pose,recall'||!bounded(v.line,600)||!v.line.trim()||!bounded(v.emotion,40)||!poses.includes(v.pose)||!moods.includes(v.musicMood)||v.conjecture!==''||!Array.isArray(v.actionBeats)||v.actionBeats.length>3||v.actionBeats.some(a=>!bounded(a,120))||!Array.isArray(v.recall)||v.recall.length>3||v.recall.some(a=>!bounded(a,100))||!Array.isArray(v.events)||v.events.length>5)throw Error('잘못된 이야기 응답');
  for(const e of v.events)if(!e||Object.keys(e).sort().join(',')!=='evidence,kind,reference,status,subject,text,value'||!kinds.includes(e.kind)||!['npc','player','mutual','world'].includes(e.subject)||!['offered','accepted','refused','fulfilled'].includes(e.status)||!bounded(e.text,180)||!e.text.trim()||!bounded(e.reference,100)||!bounded(e.evidence,500)||!bounded(e.value,100))throw Error('잘못된 사건 제안');
+ if(v.battle!==undefined)validateBattle(v.battle);
  validateCommitmentReply(v);
  // Actions are NPC/world narration, never a second channel for writing the player's actions.
  if(v.actionBeats.some(a=>writesPlayer(a,[])))throw Error('플레이어 행동을 대신 작성할 수 없습니다.');

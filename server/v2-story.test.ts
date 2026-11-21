@@ -20,8 +20,8 @@ const plans=[
 for(const [index,m] of missions.entries())test(`AC3 v2 ${m.id}: novel complete plan resolves its own objectives only`,()=>{
  let g:DialogueGame=start('office',index);
  const ctx=JSON.parse(messages(g,'다른 방법이 있어요.')[0].content);
- assert.deepEqual(ctx.premise.objectives.map((o:any)=>o.id),m.terms.map(t=>t.id));
- assert.ok(ctx.premise.objectives.every((o:any)=>o.resistance.length>0));
+ assert.deepEqual(ctx.mission.issues.map((o:any)=>o.id),m.terms.map(t=>t.id));
+ assert.ok(ctx.mission.issues.every((o:any)=>o.concern.length>0));
  for(let i=0;i<5;i++)g=turn(g,'커피도 출근 기록이 있나요?');
  assert.equal(g.ending,null);assert.equal(g.step,index);
  const close=()=>turn(g,'이 합의로 마무리해요.',[ev('resolution','success','이 합의로 마무리해요.',{subject:'player'})]);

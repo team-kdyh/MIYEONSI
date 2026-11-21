@@ -1,0 +1,891 @@
+{
+  "scope": "Mocked proposals, real reducer and disk storage; not model conversation quality",
+  "mission": "meeting",
+  "problem": {
+    "title": "회의 단축",
+    "intro": "회의 제목은 “짧게 싱크”인데 예약은 두 시간이다. 부장은 두꺼운 자료를 들며 “일단 처음부터 읽죠”라고 한다. 첫 장은 목차의 목차다.",
+    "objectives": [
+      {
+        "id": "duration",
+        "goal": "회의 종료",
+        "resistance": "“안건이 많은데 30분으로 되나요?”"
+      },
+      {
+        "id": "decision",
+        "goal": "결정권자·미결 항목 기한",
+        "resistance": "“회의가 끝나면 나머지는 누가 결정하나요?”"
+      }
+    ],
+    "direction": "제시된 목표를 달성하는 새로운 담당자·시간·방법을 협상할 수 있다. 부장은 현재 미해결 문제에 구체적으로 반론하고, 타당한 대안에는 양보한다. 농담에도 고유한 건조한 유머로 답한다."
+  },
+  "rows": [
+    {
+      "status": "accepted",
+      "inputs": [
+        "회의 대신 문서 댓글로 논의해요.",
+        "오후 네 시에 부장님이 미결 안건을 결정해요."
+      ],
+      "beforeRestore": {
+        "mode": "office",
+        "step": 5,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "회의 제목은 “짧게 싱크”인데 예약은 두 시간이다. 부장은 두꺼운 자료를 들며 “일단 처음부터 읽죠”라고 한다. 첫 장은 목차의 목차다.\n\n현재 반론: “안건이 많은데 30분으로 되나요?”\n\n협상 0 / 5턴 · 30분 또는 45분 종료와 결정권자·미결 항목 처리 기한이 함께 없으면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "회의 대신 문서 댓글로 논의해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "그 이야기를 이어가 볼까요."
+          },
+          {
+            "speaker": "당신",
+            "text": "오후 네 시에 부장님이 미결 안건을 결정해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "그 이야기를 이어가 볼까요."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "meeting",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "office",
+          "relationship": "familiar",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "value": "duration",
+              "text": "회의 대신 문서 댓글로 논의해요.",
+              "subject": "mutual",
+              "status": "accepted",
+              "reference": "",
+              "evidence": "회의 대신 문서 댓글로 논의해요.",
+              "id": "8d85eca7-8e1a-4702-ac12-cb288bb90dcc",
+              "turn": 1
+            },
+            {
+              "kind": "concession",
+              "value": "decision",
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "subject": "mutual",
+              "status": "accepted",
+              "reference": "",
+              "evidence": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "id": "c9d6408e-f0ff-4ece-8169-b0f181f83d6c",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분",
+          "musicMood": "cafe-warmth",
+          "commitments": [],
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:08:55.143Z",
+              "kind": "scene",
+              "text": "회의 제목은 “짧게 싱크”인데 예약은 두 시간이다. 부장은 두꺼운 자료를 들며 “일단 처음부터 읽죠”라고 한다. 첫 장은 목차의 목차다.\n\n현재 반론: “안건이 많은데 30분으로 되나요?”\n\n협상 0 / 5턴 · 30분 또는 45분 종료와 결정권자·미결 항목 처리 기한이 함께 없으면 실패."
+            },
+            {
+              "id": "8d85eca7-8e1a-4702-ac12-cb288bb90dcc",
+              "eventId": "8d85eca7-8e1a-4702-ac12-cb288bb90dcc",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:55.143Z",
+              "kind": "scene",
+              "text": "회의 대신 문서 댓글로 논의해요."
+            },
+            {
+              "id": "c9d6408e-f0ff-4ece-8169-b0f181f83d6c",
+              "eventId": "c9d6408e-f0ff-4ece-8169-b0f181f83d6c",
+              "version": 2,
+              "confirmedAt": "2026-11-21T09:08:55.143Z",
+              "kind": "scene",
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "회의 대신 문서 댓글로 논의해요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "그 이야기를 이어가 볼까요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "회의 대신 문서 댓글로 논의해요.",
+              "version": 1,
+              "eventId": "8d85eca7-8e1a-4702-ac12-cb288bb90dcc"
+            },
+            {
+              "kind": "user_claim",
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "그 이야기를 이어가 볼까요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "version": 2,
+              "eventId": "c9d6408e-f0ff-4ece-8169-b0f181f83d6c"
+            }
+          ],
+          "reply": "그 이야기를 이어가 볼까요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "회의 대신 문서 댓글로 논의해요."
+            },
+            {
+              "turn": 2,
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "restored": {
+        "mode": "office",
+        "step": 5,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "회의 제목은 “짧게 싱크”인데 예약은 두 시간이다. 부장은 두꺼운 자료를 들며 “일단 처음부터 읽죠”라고 한다. 첫 장은 목차의 목차다.\n\n현재 반론: “안건이 많은데 30분으로 되나요?”\n\n협상 0 / 5턴 · 30분 또는 45분 종료와 결정권자·미결 항목 처리 기한이 함께 없으면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "회의 대신 문서 댓글로 논의해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "그 이야기를 이어가 볼까요."
+          },
+          {
+            "speaker": "당신",
+            "text": "오후 네 시에 부장님이 미결 안건을 결정해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "그 이야기를 이어가 볼까요."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "meeting",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "office",
+          "relationship": "familiar",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "value": "duration",
+              "text": "회의 대신 문서 댓글로 논의해요.",
+              "subject": "mutual",
+              "status": "accepted",
+              "reference": "",
+              "evidence": "회의 대신 문서 댓글로 논의해요.",
+              "id": "8d85eca7-8e1a-4702-ac12-cb288bb90dcc",
+              "turn": 1
+            },
+            {
+              "kind": "concession",
+              "value": "decision",
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "subject": "mutual",
+              "status": "accepted",
+              "reference": "",
+              "evidence": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "id": "c9d6408e-f0ff-4ece-8169-b0f181f83d6c",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분",
+          "musicMood": "cafe-warmth",
+          "commitments": [],
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:08:55.143Z",
+              "kind": "scene",
+              "text": "회의 제목은 “짧게 싱크”인데 예약은 두 시간이다. 부장은 두꺼운 자료를 들며 “일단 처음부터 읽죠”라고 한다. 첫 장은 목차의 목차다.\n\n현재 반론: “안건이 많은데 30분으로 되나요?”\n\n협상 0 / 5턴 · 30분 또는 45분 종료와 결정권자·미결 항목 처리 기한이 함께 없으면 실패."
+            },
+            {
+              "id": "8d85eca7-8e1a-4702-ac12-cb288bb90dcc",
+              "eventId": "8d85eca7-8e1a-4702-ac12-cb288bb90dcc",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:55.143Z",
+              "kind": "scene",
+              "text": "회의 대신 문서 댓글로 논의해요."
+            },
+            {
+              "id": "c9d6408e-f0ff-4ece-8169-b0f181f83d6c",
+              "eventId": "c9d6408e-f0ff-4ece-8169-b0f181f83d6c",
+              "version": 2,
+              "confirmedAt": "2026-11-21T09:08:55.143Z",
+              "kind": "scene",
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "회의 대신 문서 댓글로 논의해요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "그 이야기를 이어가 볼까요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "회의 대신 문서 댓글로 논의해요.",
+              "version": 1,
+              "eventId": "8d85eca7-8e1a-4702-ac12-cb288bb90dcc"
+            },
+            {
+              "kind": "user_claim",
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "그 이야기를 이어가 볼까요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "version": 2,
+              "eventId": "c9d6408e-f0ff-4ece-8169-b0f181f83d6c"
+            }
+          ],
+          "reply": "그 이야기를 이어가 볼까요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "회의 대신 문서 댓글로 논의해요."
+            },
+            {
+              "turn": 2,
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "followup": "현재 조건을 확인하고 합의를 마무리해요.",
+      "providerContext": {
+        "character": {
+          "name": "박도현",
+          "age": 46,
+          "role": "플레이어의 부장",
+          "voice": "절제된 존댓말과 건조한 직장 유머. 합리적 대안에 양보하지만 업무 결과를 걱정한다."
+        },
+        "poseCatalogue": {
+          "neutral": "서류철을 품에 든다",
+          "firm": "팔짱을 끼고 반론을 기다린다",
+          "turn": "안경을 고쳐 쓴다",
+          "smile": "작게 웃으며 손을 편다",
+          "listen": "팔을 모으고 귀를 기울인다",
+          "laugh": "허리에 손을 얹고 웃는다",
+          "shy": "머쓱하게 이마를 짚는다",
+          "watch": "손목시계를 가리킨다",
+          "intense": "팔짱을 끼고 단호하게 바라본다",
+          "offer": "서류를 펼쳐 보인다",
+          "thinking": "턱에 손을 대고 생각한다",
+          "surprised": "놀라 안경에 손을 댄다",
+          "concern": "지친 듯 이마를 짚는다",
+          "farewell": "손바닥을 펴며 양보한다"
+        },
+        "player": {
+          "identity": "별개의 성인. user 발화만 플레이어의 말이다."
+        },
+        "premise": {
+          "title": "회의 단축",
+          "intro": "회의 제목은 “짧게 싱크”인데 예약은 두 시간이다. 부장은 두꺼운 자료를 들며 “일단 처음부터 읽죠”라고 한다. 첫 장은 목차의 목차다.",
+          "objectives": [
+            {
+              "id": "duration",
+              "goal": "회의 종료",
+              "resistance": "“안건이 많은데 30분으로 되나요?”"
+            },
+            {
+              "id": "decision",
+              "goal": "결정권자·미결 항목 기한",
+              "resistance": "“회의가 끝나면 나머지는 누가 결정하나요?”"
+            }
+          ],
+          "direction": "제시된 목표를 달성하는 새로운 담당자·시간·방법을 협상할 수 있다. 부장은 현재 미해결 문제에 구체적으로 반론하고, 타당한 대안에는 양보한다. 농담에도 고유한 건조한 유머로 답한다."
+        },
+        "story": {
+          "format": 2,
+          "turn": 2,
+          "location": "office",
+          "relationship": "familiar",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "value": "duration",
+              "text": "회의 대신 문서 댓글로 논의해요.",
+              "subject": "mutual",
+              "status": "accepted",
+              "reference": "",
+              "evidence": "회의 대신 문서 댓글로 논의해요.",
+              "id": "8d85eca7-8e1a-4702-ac12-cb288bb90dcc",
+              "turn": 1
+            },
+            {
+              "kind": "concession",
+              "value": "decision",
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "subject": "mutual",
+              "status": "accepted",
+              "reference": "",
+              "evidence": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "id": "c9d6408e-f0ff-4ece-8169-b0f181f83d6c",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분",
+          "musicMood": "cafe-warmth",
+          "commitments": [],
+          "legacyCommitmentAssessments": []
+        },
+        "continuityRule": "현재 relationship의 다음 단계만 기록 가능하다. 이미 편안해졌거나 호감을 말했어도 strangers 기록이면 이번에는 familiar부터 사실에 맞게 확정한다. 정본 단계의 누락을 건너뛰지 않는다.",
+        "playerStatements": [
+          {
+            "turn": 1,
+            "text": "회의 대신 문서 댓글로 논의해요."
+          },
+          {
+            "turn": 2,
+            "text": "오후 네 시에 부장님이 미결 안건을 결정해요."
+          }
+        ],
+        "confirmedEvents": [
+          {
+            "id": "scene-0",
+            "eventId": "start",
+            "version": 0,
+            "confirmedAt": "2026-11-21T09:08:55.143Z",
+            "kind": "scene",
+            "text": "회의 제목은 “짧게 싱크”인데 예약은 두 시간이다. 부장은 두꺼운 자료를 들며 “일단 처음부터 읽죠”라고 한다. 첫 장은 목차의 목차다.\n\n현재 반론: “안건이 많은데 30분으로 되나요?”\n\n협상 0 / 5턴 · 30분 또는 45분 종료와 결정권자·미결 항목 처리 기한이 함께 없으면 실패."
+          },
+          {
+            "id": "8d85eca7-8e1a-4702-ac12-cb288bb90dcc",
+            "eventId": "8d85eca7-8e1a-4702-ac12-cb288bb90dcc",
+            "version": 1,
+            "confirmedAt": "2026-11-21T09:08:55.143Z",
+            "kind": "scene",
+            "text": "회의 대신 문서 댓글로 논의해요."
+          },
+          {
+            "id": "c9d6408e-f0ff-4ece-8169-b0f181f83d6c",
+            "eventId": "c9d6408e-f0ff-4ece-8169-b0f181f83d6c",
+            "version": 2,
+            "confirmedAt": "2026-11-21T09:08:55.143Z",
+            "kind": "scene",
+            "text": "오후 네 시에 부장님이 미결 안건을 결정해요."
+          }
+        ]
+      },
+      "canResolve": true
+    },
+    {
+      "status": "refused",
+      "inputs": [
+        "회의 대신 문서 댓글로 논의해요.",
+        "오후 네 시에 부장님이 미결 안건을 결정해요."
+      ],
+      "beforeRestore": {
+        "mode": "office",
+        "step": 5,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "회의 제목은 “짧게 싱크”인데 예약은 두 시간이다. 부장은 두꺼운 자료를 들며 “일단 처음부터 읽죠”라고 한다. 첫 장은 목차의 목차다.\n\n현재 반론: “안건이 많은데 30분으로 되나요?”\n\n협상 0 / 5턴 · 30분 또는 45분 종료와 결정권자·미결 항목 처리 기한이 함께 없으면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "회의 대신 문서 댓글로 논의해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "그 이야기를 이어가 볼까요."
+          },
+          {
+            "speaker": "당신",
+            "text": "오후 네 시에 부장님이 미결 안건을 결정해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "그 이야기를 이어가 볼까요."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "meeting",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "office",
+          "relationship": "familiar",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "value": "duration",
+              "text": "회의 대신 문서 댓글로 논의해요.",
+              "subject": "mutual",
+              "status": "refused",
+              "reference": "",
+              "evidence": "회의 대신 문서 댓글로 논의해요.",
+              "id": "b0c85c8c-c0d0-480f-bb90-e8992d0d885b",
+              "turn": 1
+            },
+            {
+              "kind": "concession",
+              "value": "decision",
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "subject": "mutual",
+              "status": "refused",
+              "reference": "",
+              "evidence": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "id": "0c6cf81b-3a2e-4aa1-86a8-1a8ee9623ec8",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분",
+          "musicMood": "cafe-warmth",
+          "commitments": [],
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:08:55.157Z",
+              "kind": "scene",
+              "text": "회의 제목은 “짧게 싱크”인데 예약은 두 시간이다. 부장은 두꺼운 자료를 들며 “일단 처음부터 읽죠”라고 한다. 첫 장은 목차의 목차다.\n\n현재 반론: “안건이 많은데 30분으로 되나요?”\n\n협상 0 / 5턴 · 30분 또는 45분 종료와 결정권자·미결 항목 처리 기한이 함께 없으면 실패."
+            },
+            {
+              "id": "b0c85c8c-c0d0-480f-bb90-e8992d0d885b",
+              "eventId": "b0c85c8c-c0d0-480f-bb90-e8992d0d885b",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:55.157Z",
+              "kind": "scene",
+              "text": "회의 대신 문서 댓글로 논의해요."
+            },
+            {
+              "id": "0c6cf81b-3a2e-4aa1-86a8-1a8ee9623ec8",
+              "eventId": "0c6cf81b-3a2e-4aa1-86a8-1a8ee9623ec8",
+              "version": 2,
+              "confirmedAt": "2026-11-21T09:08:55.157Z",
+              "kind": "scene",
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "회의 대신 문서 댓글로 논의해요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "그 이야기를 이어가 볼까요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "회의 대신 문서 댓글로 논의해요.",
+              "version": 1,
+              "eventId": "b0c85c8c-c0d0-480f-bb90-e8992d0d885b"
+            },
+            {
+              "kind": "user_claim",
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "그 이야기를 이어가 볼까요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "version": 2,
+              "eventId": "0c6cf81b-3a2e-4aa1-86a8-1a8ee9623ec8"
+            }
+          ],
+          "reply": "그 이야기를 이어가 볼까요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "회의 대신 문서 댓글로 논의해요."
+            },
+            {
+              "turn": 2,
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "restored": {
+        "mode": "office",
+        "step": 5,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "박도현 · 46",
+            "text": "회의 제목은 “짧게 싱크”인데 예약은 두 시간이다. 부장은 두꺼운 자료를 들며 “일단 처음부터 읽죠”라고 한다. 첫 장은 목차의 목차다.\n\n현재 반론: “안건이 많은데 30분으로 되나요?”\n\n협상 0 / 5턴 · 30분 또는 45분 종료와 결정권자·미결 항목 처리 기한이 함께 없으면 실패."
+          },
+          {
+            "speaker": "당신",
+            "text": "회의 대신 문서 댓글로 논의해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "그 이야기를 이어가 볼까요."
+          },
+          {
+            "speaker": "당신",
+            "text": "오후 네 시에 부장님이 미결 안건을 결정해요."
+          },
+          {
+            "speaker": "박도현",
+            "text": "그 이야기를 이어가 볼까요."
+          }
+        ],
+        "ending": null,
+        "office": {
+          "missionId": "meeting",
+          "turn": 0,
+          "version": 0,
+          "secured": {},
+          "evidence": [],
+          "outcome": null,
+          "feedback": ""
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "office",
+          "relationship": "familiar",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "value": "duration",
+              "text": "회의 대신 문서 댓글로 논의해요.",
+              "subject": "mutual",
+              "status": "refused",
+              "reference": "",
+              "evidence": "회의 대신 문서 댓글로 논의해요.",
+              "id": "b0c85c8c-c0d0-480f-bb90-e8992d0d885b",
+              "turn": 1
+            },
+            {
+              "kind": "concession",
+              "value": "decision",
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "subject": "mutual",
+              "status": "refused",
+              "reference": "",
+              "evidence": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "id": "0c6cf81b-3a2e-4aa1-86a8-1a8ee9623ec8",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분",
+          "musicMood": "cafe-warmth",
+          "commitments": [],
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T09:08:55.157Z",
+              "kind": "scene",
+              "text": "회의 제목은 “짧게 싱크”인데 예약은 두 시간이다. 부장은 두꺼운 자료를 들며 “일단 처음부터 읽죠”라고 한다. 첫 장은 목차의 목차다.\n\n현재 반론: “안건이 많은데 30분으로 되나요?”\n\n협상 0 / 5턴 · 30분 또는 45분 종료와 결정권자·미결 항목 처리 기한이 함께 없으면 실패."
+            },
+            {
+              "id": "b0c85c8c-c0d0-480f-bb90-e8992d0d885b",
+              "eventId": "b0c85c8c-c0d0-480f-bb90-e8992d0d885b",
+              "version": 1,
+              "confirmedAt": "2026-11-21T09:08:55.157Z",
+              "kind": "scene",
+              "text": "회의 대신 문서 댓글로 논의해요."
+            },
+            {
+              "id": "0c6cf81b-3a2e-4aa1-86a8-1a8ee9623ec8",
+              "eventId": "0c6cf81b-3a2e-4aa1-86a8-1a8ee9623ec8",
+              "version": 2,
+              "confirmedAt": "2026-11-21T09:08:55.157Z",
+              "kind": "scene",
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "회의 대신 문서 댓글로 논의해요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "그 이야기를 이어가 볼까요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "회의 대신 문서 댓글로 논의해요.",
+              "version": 1,
+              "eventId": "b0c85c8c-c0d0-480f-bb90-e8992d0d885b"
+            },
+            {
+              "kind": "user_claim",
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "그 이야기를 이어가 볼까요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "version": 2,
+              "eventId": "0c6cf81b-3a2e-4aa1-86a8-1a8ee9623ec8"
+            }
+          ],
+          "reply": "그 이야기를 이어가 볼까요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "회의 대신 문서 댓글로 논의해요."
+            },
+            {
+              "turn": 2,
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "followup": "현재 조건을 확인하고 합의를 마무리해요.",
+      "providerContext": {
+        "character": {
+          "name": "박도현",
+          "age": 46,
+          "role": "플레이어의 부장",
+          "voice": "절제된 존댓말과 건조한 직장 유머. 합리적 대안에 양보하지만 업무 결과를 걱정한다."
+        },
+        "poseCatalogue": {
+          "neutral": "서류철을 품에 든다",
+          "firm": "팔짱을 끼고 반론을 기다린다",
+          "turn": "안경을 고쳐 쓴다",
+          "smile": "작게 웃으며 손을 편다",
+          "listen": "팔을 모으고 귀를 기울인다",
+          "laugh": "허리에 손을 얹고 웃는다",
+          "shy": "머쓱하게 이마를 짚는다",
+          "watch": "손목시계를 가리킨다",
+          "intense": "팔짱을 끼고 단호하게 바라본다",
+          "offer": "서류를 펼쳐 보인다",
+          "thinking": "턱에 손을 대고 생각한다",
+          "surprised": "놀라 안경에 손을 댄다",
+          "concern": "지친 듯 이마를 짚는다",
+          "farewell": "손바닥을 펴며 양보한다"
+        },
+        "player": {
+          "identity": "별개의 성인. user 발화만 플레이어의 말이다."
+        },
+        "premise": {
+          "title": "회의 단축",
+          "intro": "회의 제목은 “짧게 싱크”인데 예약은 두 시간이다. 부장은 두꺼운 자료를 들며 “일단 처음부터 읽죠”라고 한다. 첫 장은 목차의 목차다.",
+          "objectives": [
+            {
+              "id": "duration",
+              "goal": "회의 종료",
+              "resistance": "“안건이 많은데 30분으로 되나요?”"
+            },
+            {
+              "id": "decision",
+              "goal": "결정권자·미결 항목 기한",
+              "resistance": "“회의가 끝나면 나머지는 누가 결정하나요?”"
+            }
+          ],
+          "direction": "제시된 목표를 달성하는 새로운 담당자·시간·방법을 협상할 수 있다. 부장은 현재 미해결 문제에 구체적으로 반론하고, 타당한 대안에는 양보한다. 농담에도 고유한 건조한 유머로 답한다."
+        },
+        "story": {
+          "format": 2,
+          "turn": 2,
+          "location": "office",
+          "relationship": "familiar",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "concession",
+              "value": "duration",
+              "text": "회의 대신 문서 댓글로 논의해요.",
+              "subject": "mutual",
+              "status": "refused",
+              "reference": "",
+              "evidence": "회의 대신 문서 댓글로 논의해요.",
+              "id": "b0c85c8c-c0d0-480f-bb90-e8992d0d885b",
+              "turn": 1
+            },
+            {
+              "kind": "concession",
+              "value": "decision",
+              "text": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "subject": "mutual",
+              "status": "refused",
+              "reference": "",
+              "evidence": "오후 네 시에 부장님이 미결 안건을 결정해요.",
+              "id": "0c6cf81b-3a2e-4aa1-86a8-1a8ee9623ec8",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분",
+          "musicMood": "cafe-warmth",
+          "commitments": [],
+          "legacyCommitmentAssessments": []
+        },
+        "continuityRule": "현재 relationship의 다음 단계만 기록 가능하다. 이미 편안해졌거나 호감을 말했어도 strangers 기록이면 이번에는 familiar부터 사실에 맞게 확정한다. 정본 단계의 누락을 건너뛰지 않는다.",
+        "playerStatements": [
+          {
+            "turn": 1,
+            "text": "회의 대신 문서 댓글로 논의해요."
+          },
+          {
+            "turn": 2,
+            "text": "오후 네 시에 부장님이 미결 안건을 결정해요."
+          }
+        ],
+        "confirmedEvents": [
+          {
+            "id": "scene-0",
+            "eventId": "start",
+            "version": 0,
+            "confirmedAt": "2026-11-21T09:08:55.157Z",
+            "kind": "scene",
+            "text": "회의 제목은 “짧게 싱크”인데 예약은 두 시간이다. 부장은 두꺼운 자료를 들며 “일단 처음부터 읽죠”라고 한다. 첫 장은 목차의 목차다.\n\n현재 반론: “안건이 많은데 30분으로 되나요?”\n\n협상 0 / 5턴 · 30분 또는 45분 종료와 결정권자·미결 항목 처리 기한이 함께 없으면 실패."
+          },
+          {
+            "id": "b0c85c8c-c0d0-480f-bb90-e8992d0d885b",
+            "eventId": "b0c85c8c-c0d0-480f-bb90-e8992d0d885b",
+            "version": 1,
+            "confirmedAt": "2026-11-21T09:08:55.157Z",
+            "kind": "scene",
+            "text": "회의 대신 문서 댓글로 논의해요."
+          },
+          {
+            "id": "0c6cf81b-3a2e-4aa1-86a8-1a8ee9623ec8",
+            "eventId": "0c6cf81b-3a2e-4aa1-86a8-1a8ee9623ec8",
+            "version": 2,
+            "confirmedAt": "2026-11-21T09:08:55.157Z",
+            "kind": "scene",
+            "text": "오후 네 시에 부장님이 미결 안건을 결정해요."
+          }
+        ]
+      },
+      "canResolve": false
+    }
+  ]
+}

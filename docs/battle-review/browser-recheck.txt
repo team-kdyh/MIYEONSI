@@ -1,0 +1,57 @@
+[WebServer] (node:19132) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 16 tests using 1 worker
+
+(node:36956) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\flexible-conversation.spec.ts:5:31 › flexible 1440: one player submission survives invalid generation, then a joke continues without a checklist (3.1s)
+  ok  2 tests\flexible-conversation.spec.ts:5:31 › flexible 390: one player submission survives invalid generation, then a joke continues without a checklist (1.7s)
+  ok  3 tests\v2-art.spec.ts:8:1 › staged provenance hashes match shipped originals (46ms)
+  ok  4 tests\v2-art.spec.ts:13:79 › office 1440: real sheets, validated move, action and reduced motion (28.4s)
+  ok  5 tests\v2-art.spec.ts:13:79 › office 390: real sheets, validated move, action and reduced motion (17.0s)
+  ok  6 tests\v2-art.spec.ts:13:79 › romance 1440: real sheets, validated move, action and reduced motion (24.5s)
+  ok  7 tests\v2-art.spec.ts:13:79 › romance 390: real sheets, validated move, action and reduced motion (17.0s)
+  ok  8 tests\v2-journey.spec.ts:3:1 › free text UI cancels and retries one request, earns an office ending, and restarts the same mission (2.2s)
+  ok  9 tests\v2-ui-polish.spec.ts:22:31 › polish 1440: title discovery and next reply returns to its first line (1.4s)
+  ok 10 tests\v2-ui-polish.spec.ts:22:31 › polish 390: title discovery and next reply returns to its first line (1.0s)
+  ok 11 tests\v2-ui-polish.spec.ts:52:1 › collection keeps a legacy unlock without advertising retired routes or inventing current epilogue (801ms)
+  x  12 tests\v2-ui-polish.spec.ts:77:1 › a controlled thirteen-second reply stays pending and then reaches the player (18.8s)
+(node:7644) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 13 tests\v2-ui.spec.ts:6:2 › office: viewport 1440, free text, reading pages, keyboard and settings (7.2s)
+  ok 14 tests\v2-ui.spec.ts:6:2 › romance: viewport 1440, free text, reading pages, keyboard and settings (5.9s)
+  ok 15 tests\v2-ui.spec.ts:6:2 › office: viewport 390, free text, reading pages, keyboard and settings (3.8s)
+  ok 16 tests\v2-ui.spec.ts:6:2 › romance: viewport 390, free text, reading pages, keyboard and settings (4.0s)
+
+
+  1) tests\v2-ui-polish.spec.ts:77:1 › a controlled thirteen-second reply stays pending and then reaches the player 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByRole('status')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" getByRole('status') with timeout 5000ms
+      - waiting for getByRole('status')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      101 |   await expect(page.locator('.text-ink')).toContainText('오래 기다려 주셨네요.');
+      102 |   expect(Date.now()-started).toBeGreaterThanOrEqual(13000);
+    > 103 |   await expect(page.getByRole('status')).toHaveCount(0);await expect(page.getByRole('alert')).toHaveCount(0);
+          |                                          ^
+      104 |   await expect(page.locator('.action-beat')).toHaveText('서류를 살핀다. · 고개를 끄덕인다.');
+      105 |   await expect(page.locator('#reply')).toHaveValue('');expect(failures).toEqual([]);
+      106 |   await page.screenshot({path:`${screenshots}/reply-after-13s-390.png`});
+        at C:\Users\gjtjw\Desktop\대화형 스토리진행\.ralph\battle-parent\candidate\tests\v2-ui-polish.spec.ts:103:42
+
+    Error Context: test-results-v2-final\v2-ui-polish-a-controlled--64692-and-then-reaches-the-player\error-context.md
+
+  1 failed
+    tests\v2-ui-polish.spec.ts:77:1 › a controlled thirteen-second reply stays pending and then reaches the player 
+  15 passed (2.4m)

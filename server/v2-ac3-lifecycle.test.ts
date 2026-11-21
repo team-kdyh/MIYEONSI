@@ -71,7 +71,7 @@ const alternatives=[
 ];
 for(const [index,mission] of missions.entries())test(`AC3 ${mission.id}: accepted/refused alternative changes restored negotiation outcome`,async()=>{
  const initial=start('office',index),ctx=JSON.parse(messages(initial,'다른 방법을 제안해요.')[0].content);
- assert.ok(ctx.premise.intro);assert.ok(ctx.premise.objectives.every((t:any)=>t.goal&&t.resistance));
+ assert.ok(ctx.mission.intro);assert.ok(ctx.mission.issues.every((t:any)=>t.topic&&t.concern));
  const rows=[];
  for(const status of ['accepted','refused'] as const){
   let g:DialogueGame=initial;

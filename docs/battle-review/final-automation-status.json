@@ -1,0 +1,15 @@
+{
+  "session_id": "orch_50deac2e4dfa",
+  "execution_id": "exec_4c6ec130ca53",
+  "observed_by": "ouroboros_session_status",
+  "implementation_status": "completed",
+  "terminal": true,
+  "implementation_completed_count": 5,
+  "implementation_total_count": 5,
+  "formal_evaluation_approved": false,
+  "formal_evaluation_passed_count": 2,
+  "formal_evaluation_total_count": 5,
+  "chained_ralph_job": "job_62f5b061d5f7",
+  "chained_ralph_result": "failed: Lost durable lineage advancement claim before completion",
+  "parent_changes": "independently integrated and tested; not formally re-approved"
+}

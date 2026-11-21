@@ -1,3 +1,5 @@
+import {finishBattle,validateBattleSpeech} from './battle-rules.ts';
+import {judgeBattle,type BattleJudgment} from './battle-evaluation.ts';
 import {reconcile,validateNarrative,type NarrativeReply} from './narrative.ts';
 import {allowedIntents,manipulation} from './interpretation.ts';
 import {advanceRomance} from './romance.ts';
@@ -8,7 +10,7 @@ import {advance, stories, sceneFor, type Game} from './game.ts';
 export const HISTORY_LIMIT=12;
 export type Fact={id:string;eventId:string;version:number;confirmedAt:string;kind:'scene'|'agreement'|'relationship'|'clue'|'boundary'|'ending';text:string};
 export type LedgerEntry={kind:'user_claim'|'character_conjecture'|'model_dialogue'|'verified_event';text:string;version:number;eventId?:string;recallIds?:string[]};
-export type DialogueState={playerStatements?:{turn:number;text:string}[];version:number;facts:Fact[];ledger:LedgerEntry[];reply:string;actionBeats?:string[]};
+export type DialogueState={battleEvaluations?:BattleJudgment[];playerStatements?:{turn:number;text:string}[];version:number;facts:Fact[];ledger:LedgerEntry[];reply:string;actionBeats?:string[]};
 export type DialogueGame=Game&{dialogue?:DialogueState};
 export function canonical(g:DialogueGame):DialogueState {
  return g.dialogue??{version:0,facts:[{id:'scene-0',eventId:'start',version:0,confirmedAt:new Date().toISOString(),kind:'scene',text:sceneFor(g)?.text??'이야기가 끝났습니다.'}],ledger:[],reply:''};
@@ -33,14 +35,18 @@ export function validateReply(value:unknown,g:DialogueGame):Reply {
  return r;
 }
 export function commitDialogue(game:DialogueGame,choice:number|null,text:string,response:Reply,requestId?:string):DialogueGame {
+ if(game.ending)throw Error('이미 끝난 미션입니다.');
  if('events' in response){
+  validateBattleSpeech(game,response);
   const before=canonical(game),version=before.version+1;
   const {game:next,accepted}=reconcile(game,text,response,requestId);const g:DialogueGame=next;
-  const d=structuredClone(before);d.version=version;d.playerStatements=[...(before.playerStatements??before.ledger.filter(e=>e.kind==='user_claim').map(e=>({turn:e.version,text:e.text}))),{turn:version,text}].slice(-100);d.reply=response.line;d.actionBeats=response.actionBeats;
+  const judgment=judgeBattle(game,text,response,accepted);
+  const d=structuredClone(before);if(judgment)d.battleEvaluations=[...(before.battleEvaluations??[]),judgment];d.version=version;d.playerStatements=[...(before.playerStatements??before.ledger.filter(e=>e.kind==='user_claim').map(e=>({turn:e.version,text:e.text}))),{turn:version,text}].slice(-100);d.reply=response.line;d.actionBeats=response.actionBeats;
   d.ledger.push({kind:'user_claim',text,version},{kind:'model_dialogue',text:response.line,version,recallIds:response.recall});
   for(const e of accepted){const fact:Fact={id:e.id,eventId:e.id,version,confirmedAt:new Date().toISOString(),kind:e.kind==='clue'?'clue':e.kind==='relationship'?'relationship':e.kind==='resolution'?'ending':'scene',text:e.text};d.facts.push(fact);d.ledger.push({kind:'verified_event',text:e.text,version,eventId:e.id});}
   d.ledger=d.ledger.slice(-HISTORY_LIMIT*2);g.dialogue=d;
   g.log.push({speaker:'당신',text},{speaker:g.mode==='office'?'박도현':'서유나',text:response.line});g.log=g.log.slice(-HISTORY_LIMIT);
+  finishBattle(g);
   return g;
  }
  validateReply(response,game);

@@ -1,0 +1,78 @@
+goal: '일단 미션으로 하는건(부장님 ver) 그니까 스트리트 파이트 처럼 게이지를 차서 하는 걸로 하자 그니까 내가 부장님을 잘 설득해서 넘어오고
+  있다면 부장님 게이지가 달고 부장님이 강제로 밀어붙이면 내 게이지가 닳는 걸로 해서
+
+  이거 좀더 재미있게 구체해서 만들어줘 그리고 API좀더 많이 써도 돼, 좀 잘활용해봐'
+task_type: code
+brownfield_context:
+  project_type: brownfield
+  context_references: []
+  existing_patterns: []
+  existing_dependencies: []
+constraints:
+- 현재 프로젝트 C:\Users\gjtjw\Desktop\대화형 스토리진행 root commit551bd4a. React/Vite/Express/TypeScript
+  Windows PowerShell. AGENTS.md의 과거 기록은 보존하되 이번 사용자 승인으로 OFFICE 설득배틀과 추가 API가 우선한다.
+  새 범위만 구현하며 옛 paused global goal/diagnostic run은 재개하지 않는다.
+- Parent가 공개한 추가24회 운영 한도이며 사용자 지정 금액 예산 아님. historical12+32=44 원장 불변, 새 docs/battle-api-smoke-ledger.json으로
+  기록. parent 최종 conversational QA owner만 mock/build후 real API를 호출한다. worker는 root.env를
+  읽거나 복사하거나 출력하지 말고 유료 호출0회. 기존 서버환경 key만 사용. 일반 runtime은 한 턴최대2시도와 기존 공통deadline·취소·durable
+  accounting 유지.
+- 100/100 시작, 실제 의미에 기반한 bounded 피해·guard/counter/variedcombo. 임의 시간/대화수 자동승패 금지.
+  허위 사건을 지우고 동일 거짓 대사를 보여주지 않는다. 유효 입력을 고치라고 강요하지 않으며 최대1회 내부 재작성. AI결과/클라이언트 숫자가
+  직접 상태를 결정하지 않는다.
+- 자유텍스트만 입력. 메인화면 목표 체크리스트/스토리답버튼 금지, 재도전/메뉴/세이브는 허용. 기존 연애·에셋·상황음악·reading과 다중2D포즈
+  유지. 배틀 HUD는 기존 어두운 full-screen에 적합, 타격 가독성·감소 연출·모션감소 지원.
+- 프리뷰 root3001 유지, 테스트는 격리 포트/데이터. 기존 개인저장·old evidence·unrelated .ralph/v2-playable-audit.py,
+  v2-diagnostic-finalize.py,v2-diagnostic-integrate.py 및 격리 진단은 수정하지 않는다. worker 구현
+  종료후 parent가 통합/실제QA/재실행한다. launcher와 package 보존. 출판품질/실제모델 통과를 mock만으로 주장하지 않는다.
+- 실행 후보를 실제로 구현하고 exact workspace/hash/test/evidence와 parent 실행용 harness 지침을 반환한다.
+  parent가 새24회내 실제 대화를 검증할 때까지 유료 검증을 자동 수행하거나 필요승인을 재요청하지 않는다. 새로운 dependency/service는
+  필요 없으면 추가하지 않는다.
+acceptance_criteria:
+- description: 부장님 모드에 플레이어 여유100/부장 버티기100 게이지, 현재 압박과 직전 교환의 피해·이유가 표시되고 실제 자유 대화에
+    따라 변한다. PC1440x720 및 모바일390x844에서 배경/캐릭터/대화/입력이 화면 안에 맞고 읽기·reduced-motion을 보존한다.
+    로맨스에는 배틀 HUD가 나타나지 않는다.
+  semantic_ac_key: ac_cf34de5550d590a8
+- description: OpenAI가 현 대사·확정 사실·이전 논의를 보고 새로운 대사/2D동작과 구조화된 배틀 평가를 생성한다. 서버는 평가
+    근거와 수치 범위를 검증하여 설득/압박/방어/반격/서로 다른 논거의 연계를 판정한다. 반복·근거 없는 사실·직함 사칭으로 무료 피해나 승리를
+    얻지 못하고, 질문·농담·주제 전환은 유효한 대화로 이어지며 말한 횟수만으로 피해를 주지 않는다. 고정 답안 키워드 분류나 추가 선택 버튼을
+    쓰지 않는다.
+  semantic_ac_key: ac_aa8002a54767f9e9
+- description: 기존8개 직장 미션에 구별되는 압박과 맥락이 적용되며 좋은 새로운 근거/실행 가능한 대안이 쌓이면 대략5~8교환의 기본
+    난도를 목표로 한다. 부장0이면 옛 합의 체크리스트 없이 실제 미션 승리, 플레이어0이면 이유가 드러나는 패배와 같은 미션 재도전이 된다.
+    동시0은 결정적 규칙으로 처리한다. 결과 대사는 게이지와 일치하고 플레이어의 동의/행동/생각을 날조하지 않는다.
+  semantic_ac_key: ac_732153472a998da4
+- description: 새 배틀 상태와 이력은 저장·슬롯·재접속에서 보존된다. 이전 office저장은 과거 피해를 날조하지 않는 중립 baseline으로
+    이주하고 완료 저장은 유지한다. 같은 요청 재시도/중복·내부 재작성·취소·검증 실패는 피해나 턴을 중복 적용하지 않는다. 로맨스 진행과 기존
+    의미 있는 persistence/agency 테스트를 보존한다.
+  semantic_ac_key: ac_334742b8984133b5
+- description: npm build와 의미 있는 단위/HTTP/PC·모바일 브라우저 검사로 승패/방어/반복/중립/악성평가/이주/재작성/취소를
+    증명하고 실패·수정·최종 근거를 보존한다. worker는 유료0회로 검증하며 parent용 격리 live harness를 제공한다. harness는
+    호출전 새로운 별도 원장에 실패·repair포함 모든 실제 Responses 시도를 예약해24회 상한과 출력1600tokens를 강제하고 root사용자
+    저장/키를 노출하지 않는다. mock을 실제모델 증거로 표시하지 않는다.
+  semantic_ac_key: ac_3c38096565b77f5d
+ontology_schema:
+  name: SessionSettledContract
+  description: Requirements the session already settled, crystallized without an interview.
+    Every entry is verbatim host-supplied material — no LLM composed any part of this
+    Seed.
+  fields: []
+evaluation_principles:
+- name: settled_requirements
+  description: Evaluate only the session-settled requirements.
+  weight: 1.0
+exit_conditions:
+- name: settled_requirements_met
+  description: All session-settled requirements are satisfied.
+  criteria: Every listed acceptance criterion passes.
+metadata:
+  seed_id: seed_88c1403acddc
+  version: 1.0.0
+  created_at: '2026-11-21T08:36:23.532726Z'
+  ambiguity_score: 0.2
+  interview_id: session-context
+  parent_seed_id: null
+  generation_mode: normal
+  degraded: false
+  unresolved_slots: []
+  recovery_reason: null
+

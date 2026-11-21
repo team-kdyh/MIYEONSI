@@ -3,10 +3,11 @@ import {respond,type Provider,type RepairContext} from './provider.ts';
 import {ReplyRejectedError} from './reply-error.ts';
 
 export const MAX_GENERATION_ATTEMPTS=2;
-const hasChanges=(v:any)=>Array.isArray(v?.events)&&v.events.some((e:any)=>!['detail','complication'].includes(e.kind))||['commitmentOffers','commitmentProgress','commitmentAmendments','commitmentRevisions','revisionProposals','revisionResponses'].some(k=>v?.[k]?.length);
+const hasChanges=(v:any)=>v?.battle!=null||Array.isArray(v?.events)&&v.events.some((e:any)=>!['detail','complication'].includes(e.kind))||['commitmentOffers','commitmentProgress','commitmentAmendments','commitmentRevisions','revisionProposals','revisionResponses'].some(k=>v?.[k]?.length);
 function droppedChangesWithoutRewriting(draft:any,reply:Reply){
  const changes=draft?.changes??draft,utterance=draft?.utterance??draft;
- return hasChanges(changes)&&!hasChanges(reply)&&typeof utterance?.line==='string'&&utterance.line.trim()===reply.line.trim();
+ const eventsDropped=Array.isArray(changes?.events)&&changes.events.some((e:any)=>!['detail','complication'].includes(e.kind))&&(!('events' in reply)||!reply.events.some(e=>!['detail','complication'].includes(e.kind)));
+ return (eventsDropped||(hasChanges(changes)||draft?.battle!=null)&&!hasChanges(reply))&&typeof utterance?.line==='string'&&utterance.line.trim()===reply.line.trim();
 }
 /** A rejected draft is never a turn. Re-author once from the original input and unchanged state. */
 export async function conversationTurn(game:DialogueGame,text:string,requestId:string,provider:Provider,signal:AbortSignal,reserve:(attempt:number)=>Promise<void>,fetcher:typeof fetch=fetch){

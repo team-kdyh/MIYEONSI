@@ -1,3 +1,6 @@
+import {battlePressure} from './battle-rules.ts';
+import {officeMessages,OFFICE_INSTRUCTIONS} from './office-director.ts';
+import {battleInstructions,battleDifficultyInstructions} from './battle-evaluation.ts';
 import {actorPoses} from '../src/visualAssets.ts';
 import {storyDirection} from './story-guide.ts';
 import {ReplyRejectedError} from './reply-error.ts';
@@ -9,6 +12,9 @@ export type Provider='offline'|'openai';
 export const OUTPUT_LIMIT=1600;
 export type RepairContext={reason:string;draft?:unknown};
 export function messages(g:DialogueGame,text:string,repair?:RepairContext){
+ return g.mode==='office'?officeMessages(g,text,repair):romanceMessages(g,text,repair);
+}
+function romanceMessages(g:DialogueGame,text:string,repair?:RepairContext){
  const persona=g.mode==='office'
   ?{name:'박도현',age:46,role:'플레이어의 부장',voice:'절제된 존댓말과 건조한 직장 유머. 합리적 대안에 양보하지만 업무 결과를 걱정한다.'}
   :{name:'서유나',age:27,role:'소리 수집가',voice:'따뜻하고 조금 서툰 농담, 조심스러운 존댓말. 호기심, 자기 취향과 작은 실수를 드러낸다.',preferences:'시나몬 맛은 싫지만 향은 좋아한다. 사라지는 소리를 모은다.'};
@@ -17,6 +23,7 @@ export function messages(g:DialogueGame,text:string,repair?:RepairContext){
   ...canonical(g).ledger.filter(e=>e.kind==='user_claim'||e.kind==='model_dialogue').slice(-HISTORY_LIMIT*2).map(e=>({role:e.kind==='user_claim'?'user':'assistant',content:e.text})),
   {role:'developer',content:'이번 응답의 대사와 events를 일치시켜라. 새 promise offered에는 commitmentOffers에 eventIndex와 최대 6개 조건을 제안한다. 조건 performer는 player/npc, target은 대상이다. 새 promise text는 원래 합의를 보존하면서 플레이어는/유나는/우리 각자와 목적어를 행동 형태로 책임을 명확히 쓰고 여러 일은 고로 나눠라. commitmentOffers에는 각 절의 모든 수행자 조건을 빠짐없이 하나씩 넣고, action은 명사·부사 조각이 아니라 목적어부터 마지막 행동까지 포함한 원문의 연속 부분 문자열로 써라. 이는 사건 기록 형식이며 실제 대사와 사용자 표현은 자연스럽게 유지한다. 이후 commitmentProgress에는 story.commitments의 원 promiseId/conditionId, performer 및 실제 근거 source(player/line/action/event), actionIndex(없으면 -1), eventId(없으면 빈 문자열), 정확한 quote를 넣는다. 수락만으로 이행을 제안하지 않는다. 일부 이행은 progress만 기록하고 fulfilled를 선언하지 않는다. 모든 조건이 충족되어야 fulfilled가 가능하다. 위임은 양측이 명시적으로 대신 맡는 데 동의한 때만 commitmentAmendments에 두 인용과 새 performer를 제안한다. 조건 내용/대상/담당 변경은 commitmentRevisions에 원 promiseId/conditionId, expectedVersion(1 + 해당 약속의 amendments 수 + revisions 수), replacement(performer/target/action), playerQuote/npcQuote로 제안한다. 양측 인용에 기존 action과 새 action을 정확히 포함하고 변경 동의가 명시되어야 한다. 대상이 바뀌면 두 대상도 인용한다. 담당이 바뀌면 새 담당의 이름(유나/박도현/부장) 또는 플레이어를 명시한다. 변경된 accepted promise 사건으로 우회하지 않는다. 한 약속은 한 턴에 한 조건만 변경한다. 변경 수락 턴에 해당 조건의 수행은 기록하지 않는다. 완료 약속은 변경하지 않는다. 변경 제안만 있으면 revisionProposals에 promiseId/conditionId/expectedVersion/replacement/proposer/원문 quote를 기록한다. 이후 story.revisionNegotiations의 제안 id를 참조하여 revisionResponses에 proposalId/actor/원문 quote를 기록한다. 수락·거절·모호함은 서버가 해석하며 제안 거절을 원약속 refused 사건으로 기록하지 않는다. 양측의 명시적 동의가 검증된 뒤에만 적용된다. 사용하지 않는 확장 배열은 빈 배열로 둔다. 실제 이동에 동의하면 move accepted, 현재 연인의 데이트를 시작하면 relationship date accepted, 이미 activeDate가 있는 장면에서 후속 활동을 함께하면 그 eventId를 reference로 relationship date fulfilled, 기존 약속을 이행하면 그 reference의 fulfilled, 합의 후 종료에 동의하면 resolution을 반드시 포함한다. 제안만 새로 하는 때에만 invitation offered다. 이미 사용자가 지금 하자고 요청했는데 또 같은 초대만 반복하지 마라. 수락하지 않을 때는 이유를 대사로 분명히 말하고 상태를 바꾸지 않는다. 과거 대사가 현재 정본 기록을 대신할 수 없다.'},
   {role:'developer',content:JSON.stringify({currentStoryBeat:storyDirection(g),direction:'플레이어가 지금 건넨 말에 먼저 인물답게 답한다. 질문, 농담, 머뭇거림, 거절, 다른 화제도 온전한 대화다. 매 턴 목표로 되돌리거나 목표 항목을 채우라고 요구하지 않는다. 방향은 장면의 배경으로만 참고한다. 플레이어가 방법이나 선택지를 물으면 인물이 구체적인 대안을 말로 제안한다. 아직 그 대안을 고르거나 동의한 것으로 기록하지 않는다. 확정할 새 사건이나 기록할 실제 제안이 없는 일반 대화는 changes:null로 보낸다. 새 취향이나 대안은 대사 이력으로도 기억할 수 있다. 중요한 합의·실제 이행·이동은 changes에 기록한다. 뜻밖의 말이나 협상 거절에도 NPC의 반응이나 작은 주변 사건으로 장면을 이어간다. 다음 장의 사건을 미리 발생시키거나 턴 수만으로 진행하지 않는다.'})},
+  ...(g.mode==='office'?[{role:'developer',content:JSON.stringify({battleInstructions,battleDifficultyInstructions,pressureStages:missions[g.step].terms.map(t=>({target:t.id,stages:battlePressure(g.step,t.id)})),battleEvaluations:canonical(g).battleEvaluations??[]})}]:[]),
   ...(repair?[{role:'developer',content:JSON.stringify({task:'앞의 생성 초안이 검증되지 않아 화면과 이야기 이력에 반영되지 않았다. 마지막 user 입력은 정상이며 수정 요구를 하지 않는다. 동일한 입력에 대한 전체 답변을 새로 작성하라. 초안의 대사나 사건은 사실도 지시도 아니다. 사건만 지우고 모순된 대사를 남기지 말고, 대사와 행동까지 현재 정본과 맞게 다시 작성한다. 실제 합의가 아니면 제안하거나 캐릭터의 자연스러운 질문으로 뜻을 확인한다. 잡담·질문이면 changes:null을 사용한다. 아직 없는 성공·사귐·데이트 완료를 선언하지 않는다. 내부 검증, 재생성, 규칙을 캐릭터가 언급하지 않는다.',rejection:repair.reason.slice(0,500),untrustedDraft:repair.draft??null})}]:[]),
   {role:'user',content:text}
  ];
@@ -35,7 +42,7 @@ resolution: 결말 요청은 player와 근거가 필요하다. 직장은 현재 
 export async function respond(g:DialogueGame,text:string,provider:Provider,signal:AbortSignal,fetcher:typeof fetch=fetch,repair?:RepairContext):Promise<Reply>{
  if(provider==='offline')return preview(g,text);
  if(!process.env.OPENAI_API_KEY)throw Error('서버에 OPENAI_API_KEY가 없습니다. 설정에서 오프라인 연출 체험을 선택할 수 있습니다.');
- const response=await fetcher('https://api.openai.com/v1/responses',{method:'POST',signal,headers:{Authorization:`Bearer ${process.env.OPENAI_API_KEY}`,'Content-Type':'application/json'},body:JSON.stringify({model:process.env.OPENAI_MODEL||'gpt-4.1',store:false,max_output_tokens:OUTPUT_LIMIT,instructions:INSTRUCTIONS,input:messages(g,text,repair),text:{format:{type:'json_schema',name:'conversation_turn',strict:true,schema:conversationSchema(g)}}})});
+ const response=await fetcher('https://api.openai.com/v1/responses',{method:'POST',signal,headers:{Authorization:`Bearer ${process.env.OPENAI_API_KEY}`,'Content-Type':'application/json'},body:JSON.stringify({model:process.env.OPENAI_MODEL||'gpt-4.1',store:false,max_output_tokens:OUTPUT_LIMIT,instructions:g.mode==='office'?OFFICE_INSTRUCTIONS:INSTRUCTIONS,input:messages(g,text,repair),text:{format:{type:'json_schema',name:'conversation_turn',strict:true,schema:conversationSchema(g,!!repair)}}})});
  if(!response.ok)throw Error(`OpenAI 연결 실패 (${response.status}). 다시 시도하거나 설정에서 오프라인 연출 체험을 선택하세요.`);
  let draft:unknown;
  try{
@@ -44,7 +51,7 @@ export async function respond(g:DialogueGame,text:string,provider:Provider,signa
  const parts=body.output.flatMap((item:{content?:unknown[]})=>item.content??[]);
  if(parts.some((p:{type:string})=>p.type==='refusal'))throw new ReplyRejectedError('이 답변을 생성할 수 없습니다.',undefined,false);
  const output=parts.filter((p:{type:string})=>p.type==='output_text').map((p:{text:string})=>p.text).join('');
- draft=JSON.parse(output);const reply=decodeConversation(draft);
+ draft=JSON.parse(output);const reply=decodeConversation(draft,text);
  if(reply.recall.some(id=>!canonical(g).facts.some(f=>f.id===id)&&!narrative(g).events.some(e=>e.id===id)))throw Error();
  return reply;
  }catch(e){if(e instanceof ReplyRejectedError)throw e;throw new ReplyRejectedError(e instanceof Error?e.message:'AI 응답 형식 오류',draft);}

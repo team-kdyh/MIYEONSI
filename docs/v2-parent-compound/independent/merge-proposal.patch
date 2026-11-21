@@ -1,0 +1,123 @@
+--- a/server/narrative.ts
++++ b/server/narrative.ts
+@@ -121,7 +121,7 @@
+ };
+ // Compare a predicate from the original commitment, never a replacement invented
+ // by the fulfillment proposal. NFD tolerates inflection (그려/그린, 접어/접는다).
+-const predicateKey=(word:string)=>word.normalize('NFD').slice(0,3);
++const predicateKey=(word:string)=>word.replace(/^(?:쓰|써|쓴)/,'썼').normalize('NFD').slice(0,3);
+ const commitmentPredicate=(text:string)=>text.match(/(?:을|를)\s+([가-힣]+)/u)?.[1];
+ // Normalize a bounded set of Korean endings, preserving whole stems rather
+ // than enumerating every conjugated delivery phrase. Not a general analyzer.
+@@ -149,7 +149,11 @@
+ const delivered=(text:string)=>!/(?:놓|두)고\s*왔/u.test(text)&&(text.match(/[가-힣]+/gu)??[]).flatMap(deliveryForms)
+  .some(stem=>/^(?:가져오|갖다주|갖고오|건네|내밀|전하|전달하|드리|꺼내|보이|놓|내려놓)$/u.test(stem));
+ const temporalTopic=(word:string)=>/^(?:오늘|어제|내일|지금|방금|아까|나중(?:에)?|(?:이번|지난|다음)(?:번|주|달|해)?(?:에)?)$/u.test(word);
+-const performedCommitment=(offer:StoryEvent,sources:{text:string;action:boolean}[],names:string[],singlePending:boolean)=>{
++const performedCommitment=(offer:StoryEvent,sources:{text:string;action:boolean}[],names:string[],singlePending:boolean):boolean=>{
++ // Explicitly coordinated object/action pairs are all required. Keep source
++ // clauses intact so another actor cannot disappear when testing a later task.
++ const components=offer.text.split(/(?<=[가-힣]고)\s+(?=[가-힣\s]+(?:을|를)\s)/u);
++ if(components.length>1&&components.every(part=>commitmentPredicate(part)))return components.every(part=>performedCommitment({...offer,text:part},sources,names,false));
+  // New activities may introduce new objects ("draw a picture" -> "draw a cat").
+  // Match the grounded visible consequence as well as the original offer; do not
+  // enumerate permissible verbs or require the original noun to be repeated.
+@@ -158,13 +162,14 @@
+  return sources.some(source=>sentences(source.text).some(part=>{
+   const clause=consentClause(source.text,part.trim());
+   const demonstrative=singlePending&&/(?:그걸|그것|그거|그\s*약속|이\s*약속)|^\s*다\s*했/.test(clause);
+-  const performed=commitmentPredicate(clause);
+-  const samePredicate=!!predicate&&!!performed&&predicateKey(predicate)===predicateKey(performed);
++  const performed=[...clause.matchAll(/(?:을|를)\s+([가-힣]+)/gu)].map(m=>m[1]);
++  const samePredicate=!!predicate&&performed.some(word=>predicateKey(predicate)===predicateKey(word));
+   const verbalAnswer=/알려|들려|말해|설명/.test(offer.text)&&terms.some(term=>new RegExp(term+'(?:은|는|이란)\\s*.+(?:입니다|이에요|예요|[이]다)[.!。]?$').test(clause.trim()));
+   if(!(demonstrative||terms.some(term=>clause.includes(term))||samePredicate)||!consent(clause)||/못|안\s|겠|(?:다면|으면)|(?:예정|계획|려고|듯)|(?:할|갈|올|줄|볼|둘|낼|릴|을)\s*(?:게|거)|수\s*(?:있|없)/.test(clause))return false;
+   if(predicate&&!delivery&&!samePredicate&&!demonstrative&&!verbalAnswer)return false;
+   // Delivery requires a transfer/display consequence, not merely inspecting or
+   // searching for the object. Other novel activities remain open vocabulary.
++  if(delivery&&!demonstrative&&!terms.some(term=>clause.includes(term)))return false;
+   if(delivery&&!/^\s*다\s*했/.test(clause)&&!delivered(clause))return false;
+   // Explicit grammatical actors must agree with the original performer. Object
+   // particles and recipients are deliberately excluded ("친구에게 리본을…").
+--- /dev/null
++++ b/server/narrative-compound-promise.test.ts
+@@ -0,0 +1,27 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import {start} from './game.ts';
++import {reconcile,type EventProposal,type NarrativeReply} from './narrative.ts';
++
++const reply=(event:EventProposal):NarrativeReply=>({line:'알겠어요.',events:[event],actionBeats:[],emotion:'차분함',pose:'listen',musicMood:'cafe-warmth',recall:[],conjecture:''});
++function setup(writing=false){
++ const text=writing?'제가 노란 리본을 가져오고 편지를 쓸게요.':'제가 노란 리본을 가져오고 편지를 접을게요.';
++ const offer:EventProposal={kind:'promise',subject:'player',status:'offered',text:writing?'노란 리본을 가져오고 편지를 쓰는 약속':'노란 리본을 가져오고 편지를 접는 약속',value:'ribbon-letter',reference:'',evidence:text};
++ const game=reconcile(start('romance'),text,reply(offer)).game;
++ return {game,event:{...offer,status:'fulfilled' as const,reference:game.narrative!.events[0].id}};
++}
++for(const text of ['노란 리본 가져왔어요.','편지를 접었어요.','노란 리본 가져왔어요. 친구가 편지를 접었어요.'])test(`compound promise rejects incomplete performance: ${text}`,()=>{
++ const {game,event}=setup(),before=structuredClone(game);
++ assert.throws(()=>reconcile(game,text,reply({...event,evidence:text})));
++ assert.deepEqual(game,before);
++});
++test('compound promise retains writing with its contracted past inflection',()=>{
++ const {game,event}=setup(true),text='노란 리본 가져왔어요. 편지를 썼어요.';
++ assert.throws(()=>reconcile(game,'노란 리본 가져왔어요.',reply({...event,evidence:'노란 리본 가져왔어요.'})));
++ assert.equal(reconcile(game,text,reply({...event,evidence:text})).game.narrative!.events.filter(e=>e.kind==='promise'&&e.status==='fulfilled').length,1);
++});
++test('compound promise permits both grounded performances',()=>{
++ const {game,event}=setup(),text='노란 리본 가져왔어요. 편지를 접었어요.';
++ const after=reconcile(game,text,reply({...event,evidence:text})).game;
++ assert.equal(after.narrative!.events.filter(e=>e.status==='fulfilled'&&e.kind==='promise').length,1);
++});
+--- /dev/null
++++ b/server/narrative-compound-natural.test.ts
+@@ -0,0 +1,49 @@
++import {describe,test} from 'node:test';
++import assert from 'node:assert/strict';
++import {start} from './game.ts';
++import {reconcile,type EventProposal,type NarrativeReply} from './narrative.ts';
++
++type Probe={name:string;owner:'npc'|'player';input:string;actions?:string[];offer?:string};
++const response=(event:EventProposal,actionBeats:string[]=[]):NarrativeReply=>({line:'알겠어요.',events:[event],actionBeats,emotion:'차분함',pose:'listen',musicMood:'cafe-warmth',recall:[],conjecture:''});
++function check(p:Probe,expected:'commit'|'reject'){
++ const offerText=p.offer??'노란 리본을 가져오고 편지를 접는 약속';
++ const offerInput=offerText==='편지를 쓰는 약속'?(p.owner==='player'?'제가 편지를 쓸게요.':'편지를 써 줄래요?'):
++  offerText.includes('파란 종이')?'제가 노란 리본을 가져오고 파란 종이도 가져올게요.':
++  offerText==='노란 리본을 가져오는 약속'?'제가 노란 리본을 가져올게요.':
++  p.owner==='player'?'제가 노란 리본을 가져오고 편지를 접을게요.':'노란 리본을 가져오고 편지도 접어 줄래요?';
++ const offer:EventProposal={kind:'promise',subject:p.owner,status:'offered',text:offerText,value:'compound-natural',reference:'',evidence:p.owner==='player'?offerInput:''};
++ const game=reconcile(start('romance'),offerInput,response(offer)).game,before=structuredClone(game);
++ const fulfilled:EventProposal={...offer,status:'fulfilled',text:'약속을 이행했다.',reference:game.narrative!.events.find(e=>e.kind==='promise')!.id,evidence:p.owner==='player'?p.input:''};
++ try{
++  if(expected==='reject')assert.throws(()=>reconcile(game,p.input,response(fulfilled,p.actions)),/사건 제안의 근거 또는 진행 조건/);
++  else assert.equal(reconcile(game,p.input,response(fulfilled,p.actions)).game.narrative!.events.filter(e=>e.kind==='promise'&&e.status==='fulfilled').length,1);
++ }finally{assert.deepEqual(game,before);}
++}
++describe('Coordinated completion retains natural sentences and actor boundaries',()=>{
++ const positives:Probe[]=[
++  {name:'both tasks in one player sentence',owner:'player',input:'노란 리본을 가져왔고 편지를 접었어요.'},
++  {name:'both tasks with explicit player subject',owner:'player',input:'제가 노란 리본을 가져왔고 편지를 접었어요.'},
++  {name:'both tasks in separate sentences',owner:'player',input:'노란 리본 가져왔어요. 편지를 접었어요.'},
++  {name:'both tasks in one NPC beat',owner:'npc',input:'약속은요?',actions:['유나가 노란 리본을 건네고 편지를 접는다.']},
++  {name:'both tasks in separate NPC beats',owner:'npc',input:'약속은요?',actions:['유나가 노란 리본을 건네준다.','유나가 편지를 접는다.']},
++ ];
++ for(const p of positives)test(p.name,()=>check(p,'commit'));
++ const negatives:Probe[]=[
++  {name:'player first task alone',owner:'player',input:'노란 리본 가져왔어요.'},
++  {name:'NPC first task alone',owner:'npc',input:'약속은요?',actions:['유나가 노란 리본을 건네준다.']},
++  {name:'friend second task in a separate sentence',owner:'player',input:'노란 리본 가져왔어요. 친구가 편지를 접었어요.'},
++  {name:'friend second task in the same sentence',owner:'player',input:'제가 노란 리본을 가져왔고 친구가 편지를 접었어요.'},
++  {name:'friend first task in the same sentence',owner:'player',input:'친구가 노란 리본을 가져왔고 제가 편지를 접었어요.'},
++  {name:'friend subject cannot disappear after conjunction',owner:'player',input:'제가 노란 리본을 가져왔어요. 친구가 노란 리본을 가져왔고 편지를 접었어요.'},
++  {name:'NPC and friend within one beat',owner:'npc',input:'약속은요?',actions:['유나가 노란 리본을 건네고 친구가 편지를 접는다.']},
++ ];
++ for(const p of negatives)test(p.name,()=>check(p,'reject'));
++});
++describe('Delivery binds to its object while writing inflections remain usable',()=>{
++ const twoObjects='노란 리본을 가져오고 파란 종이를 가져오는 약속';
++ test('same delivery verb does not prove delivery of the second object',()=>check({name:'one object',owner:'player',offer:twoObjects,input:'노란 리본을 가져왔어요.'},'reject'));
++ test('both named delivery objects are sufficient',()=>check({name:'both objects',owner:'player',offer:twoObjects,input:'노란 리본을 가져왔어요. 파란 종이를 가져왔어요.'},'commit'));
++ test('a single delivery promise also keeps its object',()=>check({name:'different object',owner:'player',offer:'노란 리본을 가져오는 약속',input:'파란 종이를 가져왔어요.'},'reject'));
++ for(const action of ['유나가 편지를 쓴다.','유나가 편지를 써요.'])test(action,()=>check({name:action,owner:'npc',offer:'편지를 쓰는 약속',input:'편지는요?',actions:[action]},'commit'));
++ test('player contracted writing past',()=>check({name:'writing past',owner:'player',offer:'편지를 쓰는 약속',input:'편지를 썼어요.'},'commit'));
++});

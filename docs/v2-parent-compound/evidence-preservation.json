@@ -1,0 +1,126 @@
+{
+  "at": "2026-11-21T05:00:10.642769+00:00",
+  "sourceSha256": "5aa03219df2bcf3bb2794f604f66d3ebfde55bee13b8cee671face35de42b0f1",
+  "changed": [
+    {
+      "path": "docs/lifecycle-observations.json",
+      "before": "94e7d52dc88d720c85135b8440d62aecf1b3f40dce4b02946aa49bf516493fd6",
+      "after": "aa1f44541fdb77d394dfe0b605b11f2638146024f5e58e4fb36804bea7586304",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/lifecycle-observations.json"
+    },
+    {
+      "path": "docs/v2-ac2-office-counterfactual.json",
+      "before": "a96632b83d53f8f2c256be71c1102c5726edd3e40f17addbf679c3e2dcde5170",
+      "after": "1edb059f5208dae9c0c771172b0d0b359f89acaea499a7058482a1a5e077b42a",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/v2-ac2-office-counterfactual.json"
+    },
+    {
+      "path": "docs/v2-ac2-office-durable-counterfactual.json",
+      "before": "2e2b78e6e63826509cccd29e01487ffd54edf31579c99b041090e955f19866c3",
+      "after": "9a35729b08bce2b461a8abe97078737a2f7b24232adf86d55cab8409015ca573",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/v2-ac2-office-durable-counterfactual.json"
+    },
+    {
+      "path": "docs/v2-ac2-romance-counterfactual.json",
+      "before": "d086b28af9db41ab1a09f9e1abe979d7ed06a4bd4dcbffe58f833321a874249a",
+      "after": "cd6f4a19d5146db536fb897f2600154e982f718e3d35192d8146d102ae6eeca2",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/v2-ac2-romance-counterfactual.json"
+    },
+    {
+      "path": "docs/v2-ac2-romance-durable-counterfactual.json",
+      "before": "9e817db4fa6bfc6b12410913ed8c563970e37926ce8b442b36b3a30cf59e64dd",
+      "after": "c1e6a42c7427ad52770ec2c4c7c8f84a0d3581c87a6f9e5cf300f3086cd663c0",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/v2-ac2-romance-durable-counterfactual.json"
+    },
+    {
+      "path": "docs/v2-ac3-clockout-state-trace.json",
+      "before": "29d3969602328bffb8f1c2c7ab811072bfa805cd1cc77cc2f589c72133c7586c",
+      "after": "65d975b026287dea2c60086e6a9ef13f6c6b624e87f8928e00f3302ea55fd388",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/v2-ac3-clockout-state-trace.json"
+    },
+    {
+      "path": "docs/v2-ac3-credit-state-trace.json",
+      "before": "2274fe4aa58e56342d5b94d76b01401f02c1b93f4b4e03bc6e5d20e13ce4d8fb",
+      "after": "f800042c113904f93c79f6b6b3d1bdf2a4f2c043911ceea60ec98e00301603e6",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/v2-ac3-credit-state-trace.json"
+    },
+    {
+      "path": "docs/v2-ac3-delegation-state-trace.json",
+      "before": "341f4705cf0eeae0da1fb809f6866392f76ec61442b5c9fd5589169ce0b8b699",
+      "after": "454abaebe77802bae69d44c036be125ece999555cc3d70195169c203cbb54501",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/v2-ac3-delegation-state-trace.json"
+    },
+    {
+      "path": "docs/v2-ac3-dinner-state-trace.json",
+      "before": "d3efa28bea521161bdf9a297190938a24fbd34466a7e2aec320764140f09b29f",
+      "after": "3a9e0cbbe65c05e1b4fe06af36b6d24467184bccc43a39a34bf9d6cf2a29a585",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/v2-ac3-dinner-state-trace.json"
+    },
+    {
+      "path": "docs/v2-ac3-meeting-state-trace.json",
+      "before": "0a9900178e638101fc7b68523ed37bbd54de6411ccc935a1169bb3b1ec6a00a5",
+      "after": "7248444a430e09743e5a4a6d067b5c06fc39dfd2342eac5440d6abac04db2c0d",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/v2-ac3-meeting-state-trace.json"
+    },
+    {
+      "path": "docs/v2-ac3-memory-trace.json",
+      "before": "c1c978b3c84c552760787d01a2f5ac194745597f07d2ad46ea94021ed2232a74",
+      "after": "21e180b703ac1c3b2eb8a938e72f0eedcb1de6341c22a9436a5d8273ec39e18e",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/v2-ac3-memory-trace.json"
+    },
+    {
+      "path": "docs/v2-ac3-remote-state-trace.json",
+      "before": "5b7c8094612d440599edfaa7ce17ca745d84aed64bf4ac681e40ab7b0cf9eb54",
+      "after": "84b7dac65a31604f8f0fe885e733d51b5bb4885618d0503111b5d09d7fb6ff42",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/v2-ac3-remote-state-trace.json"
+    },
+    {
+      "path": "docs/v2-ac3-vacation-state-trace.json",
+      "before": "483a906f445a2fe5057f076ac09e2587b07d4374d0b5d2ef7df772904a982ee6",
+      "after": "9ddc389a46bd020d7c3091df13236f2b20c12c272b63831e8121d5b09bde9946",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/v2-ac3-vacation-state-trace.json"
+    },
+    {
+      "path": "docs/v2-ac3-weekend-state-trace.json",
+      "before": "ddc655294beeb646f40b135dd38f347b7819bbcd6c3b3c35945e7091bd9d9518",
+      "after": "1ed57046d387104d70896d094674d40ae6a2d9c03ee043dc9f9a7cfd5386ce17",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/v2-ac3-weekend-state-trace.json"
+    },
+    {
+      "path": "docs/v2-input-evidence.json",
+      "before": "ed4ba732e6f6333a6c867188919b19ca3020e94f434df9bcce84254afd95f9f9",
+      "after": "bd46c24fdfa26da49beb52f67e88816571d542e9962104dd60194ffe58031591",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/v2-input-evidence.json"
+    },
+    {
+      "path": "docs/v2-interruption-evidence.json",
+      "before": "9b5bf4d8e923e6cd6d022a693681151d30908967ff6cd85ce4c2aa43bebe4565",
+      "after": "a7f9e0cc512404345ad45c87c58c360f265e0e280cb6bb066a59c99b5d9ba875",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/v2-interruption-evidence.json"
+    },
+    {
+      "path": "docs/v2-legacy-save-evidence.json",
+      "before": "5b9f4feb6a8a633c18a868fb28e82cdf3985ba222b3879c1e14508ead2fea3d1",
+      "after": "56dfc7ef1b93e683364d1eef999fe6c6e558d55e1f44e9ba0d390a3107b79cc5",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/v2-legacy-save-evidence.json"
+    },
+    {
+      "path": "docs/v2-persistence-evidence.json",
+      "before": "3084356570ea79483ef718fc2499f19639ad15b2fc55ff2d10dc9ebfb89b4f87",
+      "after": "ff70f2a09134977af6651c5721725eafefdf93a405bf9fe6d27332959cf2e2b8",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/v2-persistence-evidence.json"
+    },
+    {
+      "path": "docs/v2-recovery-evidence.json",
+      "before": "0b562413cda4ee6f1d2ec1ffdaef957d637736929e4472f53ade5828c59fa2e2",
+      "after": "cbaa1243df67408a1578035d67f356e8fd02fcdd575cbf67471c7b20ae082829",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/v2-recovery-evidence.json"
+    },
+    {
+      "path": "docs/v2-security-evidence.json",
+      "before": "d02c3089b577baf851fb54f2d98e3c4f2e30c06c0086b6e27aa9b49183441793",
+      "after": "b221767dd83a5ca722b52365218e18cb3960e42cf38237d8463a60c7acef5766",
+      "evidence": "docs/v2-parent-compound/artifacts/docs/v2-security-evidence.json"
+    }
+  ]
+}

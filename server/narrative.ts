@@ -121,7 +121,7 @@ const commitmentTerms=(text:string)=>{
 };
 // Compare a predicate from the original commitment, never a replacement invented
 // by the fulfillment proposal. NFD tolerates inflection (그려/그린, 접어/접는다).
-const predicateKey=(word:string)=>word.normalize('NFD').slice(0,3);
+const predicateKey=(word:string)=>word.replace(/^(?:쓰|써|쓴)/,'썼').normalize('NFD').slice(0,3);
 const commitmentPredicate=(text:string)=>text.match(/(?:을|를)\s+([가-힣]+)/u)?.[1];
 // Normalize a bounded set of Korean endings, preserving whole stems rather
 // than enumerating every conjugated delivery phrase. Not a general analyzer.
@@ -149,7 +149,11 @@ const deliveryForms=(word:string)=>{
 const delivered=(text:string)=>!/(?:놓|두)고\s*왔/u.test(text)&&(text.match(/[가-힣]+/gu)??[]).flatMap(deliveryForms)
  .some(stem=>/^(?:가져오|갖다주|갖고오|건네|내밀|전하|전달하|드리|꺼내|보이|놓|내려놓)$/u.test(stem));
 const temporalTopic=(word:string)=>/^(?:오늘|어제|내일|지금|방금|아까|나중(?:에)?|(?:이번|지난|다음)(?:번|주|달|해)?(?:에)?)$/u.test(word);
-const performedCommitment=(offer:StoryEvent,sources:{text:string;action:boolean}[],names:string[],singlePending:boolean)=>{
+const performedCommitment=(offer:StoryEvent,sources:{text:string;action:boolean}[],names:string[],singlePending:boolean):boolean=>{
+ // Explicitly coordinated object/action pairs are all required. Keep source
+ // clauses intact so another actor cannot disappear when testing a later task.
+ const components=offer.text.split(/(?<=[가-힣]고)\s+(?=[가-힣\s]+(?:을|를)\s)/u);
+ if(components.length>1&&components.every(part=>commitmentPredicate(part)))return components.every(part=>performedCommitment({...offer,text:part},sources,names,false));
  // New activities may introduce new objects ("draw a picture" -> "draw a cat").
  // Match the grounded visible consequence as well as the original offer; do not
  // enumerate permissible verbs or require the original noun to be repeated.
@@ -158,13 +162,14 @@ const performedCommitment=(offer:StoryEvent,sources:{text:string;action:boolean}
  return sources.some(source=>sentences(source.text).some(part=>{
   const clause=consentClause(source.text,part.trim());
   const demonstrative=singlePending&&/(?:그걸|그것|그거|그\s*약속|이\s*약속)|^\s*다\s*했/.test(clause);
-  const performed=commitmentPredicate(clause);
-  const samePredicate=!!predicate&&!!performed&&predicateKey(predicate)===predicateKey(performed);
+  const performed=[...clause.matchAll(/(?:을|를)\s+([가-힣]+)/gu)].map(m=>m[1]);
+  const samePredicate=!!predicate&&performed.some(word=>predicateKey(predicate)===predicateKey(word));
   const verbalAnswer=/알려|들려|말해|설명/.test(offer.text)&&terms.some(term=>new RegExp(term+'(?:은|는|이란)\\s*.+(?:입니다|이에요|예요|[이]다)[.!。]?$').test(clause.trim()));
   if(!(demonstrative||terms.some(term=>clause.includes(term))||samePredicate)||!consent(clause)||/못|안\s|겠|(?:다면|으면)|(?:예정|계획|려고|듯)|(?:할|갈|올|줄|볼|둘|낼|릴|을)\s*(?:게|거)|수\s*(?:있|없)/.test(clause))return false;
   if(predicate&&!delivery&&!samePredicate&&!demonstrative&&!verbalAnswer)return false;
   // Delivery requires a transfer/display consequence, not merely inspecting or
   // searching for the object. Other novel activities remain open vocabulary.
+  if(delivery&&!demonstrative&&!terms.some(term=>clause.includes(term)))return false;
   if(delivery&&!/^\s*다\s*했/.test(clause)&&!delivered(clause))return false;
   // Explicit grammatical actors must agree with the original performer. Object
   // particles and recipients are deliberately excluded ("친구에게 리본을…").

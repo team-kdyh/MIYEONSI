@@ -1,6 +1,14 @@
 # AFTER HOURS — project direction
 
-## Latest parent free-verification checkpoint
+## Current continuation: persistent joint and partial commitments
+
+The root's current narrative SHA is `5aa03219df2bcf3bb2794f604f66d3ebfde55bee13b8cee671face35de42b0f1`; build and325 unit tests pass. Read `docs/v2-parent-compound/review.md`, then `docs/v2-mutual-state-review/README.md` and `minimal-design.md`. The exact active validated Seed is `verification/v2-sequential-generation2.seed.json` (`seed_84d0c8a7a66d`). The previous sequential Ralph ended grade_regressing after2 generations (official0/7, QA0.55); its exact terminal and per-generation results are preserved in `docs/v2-sequential-ralph/`.
+
+Two structural defects remain reproduced on this exact root: one participant can complete a joint promise despite the other's explicit non-performance; and a condition already performed/saved cannot combine with the next turn's remaining condition. Implement the existing Seed's bounded condition/performer/evidence/progress records and server-derived completion, with explicitly grounded amendments/delegation and persistence/migration. The design is an implementation recommendation, not a replacement Seed. Keep AI-authored free speech/actions, creative descriptions, original contract identity, current UI/assets/audio and all existing meaningful negative/positive controls. Do not add a task-editor UI or a second model service, and do not replace evidence records with an expanding verb list. Preserve private saves and never invent missing legacy evidence. Add normal-turn semantic persistence tests, not injected success states. Any changed provider/schema remains unverified in fresh generation until the parent receives the pending paid approval and performs final QA.
+
+Paid allocation is unchanged:12+32 consumed, proposed24 unanswered, no active approval ledger. Workers make zero paid calls and must not copy the root .env. Root port3001 is the user's preview; verification uses a separate scoped port/storage. Preserve the following older checkpoints as history, not as current verdicts.
+
+## Earlier parent free-verification checkpoint
 
 Read `docs/v2-parent-final/review.md` first. Original root now integrates the immutable sequential generation1 promise fix plus independent delivery/route guards; narrative SHA256 `fcb42511a5ad93a7be77dc4e436a1bb3a12d770ee9b958c9c9bece3441d9e673`. Build,302 unit tests,25 browser tests and5/5 old promise diagnostic passed. The older four-failure checkpoint below is preserved history, not proof those bugs remain. New evidence is versioned; old evidence bytes and private saves remain intact. This is NOT live-model verification or release approval. The active separate Ralph worktree may have later changes: compare sources, do not blindly overwrite either checkout.
 

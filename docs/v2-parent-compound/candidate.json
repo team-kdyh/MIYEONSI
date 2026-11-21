@@ -1,0 +1,54 @@
+{
+  "at": "2026-11-21T05:02:01.839098+00:00",
+  "candidate": "v2-parent-compound-5aa03219",
+  "unit": "325/325",
+  "build": "passed",
+  "browser": "previous fcb42511 observation, not a fresh full run on5aa",
+  "knownFailures": [
+    "M1 mutual participant incomplete",
+    "M2 cross-turn partial progress not linked"
+  ],
+  "newPaidCalls": 0,
+  "files": [
+    {
+      "path": "server/narrative.ts",
+      "sha256": "5aa03219df2bcf3bb2794f604f66d3ebfde55bee13b8cee671face35de42b0f1"
+    },
+    {
+      "path": "server/provider.ts",
+      "sha256": "d42f3f53111f385b981dc522188f8bdef24e7e925ab361a7d1cf71d41c9718b4"
+    },
+    {
+      "path": "server/storage.ts",
+      "sha256": "6d80fdec35b99205f30d5f1270060b4a00bee8520d4258ec0c5afea591e8d9da"
+    },
+    {
+      "path": "server/narrative-compound-natural.test.ts",
+      "sha256": "5e2502a7219a3622ba5b8b1fc58cff3e9f41d01a981314cce66641ab20c0886f"
+    },
+    {
+      "path": "server/narrative-compound-promise.test.ts",
+      "sha256": "8c5cd8116c45aae46e74f16b31b10f720bf19ddacb323c517d92a51345a7c876"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "e847d4063b65d9fa1f91d85199452c1d6fc4da428f27ea929a6e3cd32898e307"
+    },
+    {
+      "path": "verification/v2-sequential-generation2.seed.json",
+      "sha256": "e08445986d8c0e44730ea197a6d113f36a0a146d18df6ee9d9369fe8b590299e"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "d92fd79bc233b3326940cea090a02a554c0b677de81b56f34b984956eb83409d"
+    },
+    {
+      "path": "docs/v2-mutual-state-review/README.md",
+      "sha256": "5ab2e7196219fe3fb51c67ee94e58adc4c4703116cc2ad560e0c12cf19dddca1"
+    },
+    {
+      "path": "docs/v2-mutual-state-review/minimal-design.md",
+      "sha256": "d6ff861c3c098e4309bcb1243b6c329377d446e4bb3a4bfd88d4923a1db8a200"
+    }
+  ]
+}

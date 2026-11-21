@@ -1,0 +1,251 @@
+{
+  "capturedAt": "2026-11-21T04:50:29.026967+00:00",
+  "scope": "Frozen read-only G2 and integrated root module snapshots; tests are copied compatibility inputs; no API or active edits",
+  "worker": "C:\\Users\\gjtjw\\.ouroboros\\worktrees\\대화형 스토리진행\\ralph-afterhours-v2-seq-7b46bae",
+  "root": "C:\\Users\\gjtjw\\Desktop\\대화형 스토리진행",
+  "g1Sha256": "1053990da5c64c51e902cd81321714ea0e90a73c6584ceeddce23e6464896971",
+  "files": [
+    {
+      "snapshot": "root-base",
+      "file": "server/narrative.ts",
+      "before": "fcb42511a5ad93a7be77dc4e436a1bb3a12d770ee9b958c9c9bece3441d9e673",
+      "copied": "fcb42511a5ad93a7be77dc4e436a1bb3a12d770ee9b958c9c9bece3441d9e673",
+      "after": "fcb42511a5ad93a7be77dc4e436a1bb3a12d770ee9b958c9c9bece3441d9e673",
+      "stable": true
+    },
+    {
+      "snapshot": "root-base",
+      "file": "server/game.ts",
+      "before": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "copied": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "after": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "stable": true
+    },
+    {
+      "snapshot": "root-base",
+      "file": "server/office.ts",
+      "before": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+      "copied": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+      "after": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+      "stable": true
+    },
+    {
+      "snapshot": "root-base",
+      "file": "server/romance.ts",
+      "before": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+      "copied": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+      "after": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+      "stable": true
+    },
+    {
+      "snapshot": "root-base",
+      "file": "server/interpretation.ts",
+      "before": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+      "copied": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+      "after": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+      "stable": true
+    },
+    {
+      "snapshot": "root-base",
+      "file": "server/dialogue.ts",
+      "before": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+      "copied": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+      "after": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+      "stable": true
+    },
+    {
+      "snapshot": "root-base",
+      "file": "server/storage.ts",
+      "before": "6d80fdec35b99205f30d5f1270060b4a00bee8520d4258ec0c5afea591e8d9da",
+      "copied": "6d80fdec35b99205f30d5f1270060b4a00bee8520d4258ec0c5afea591e8d9da",
+      "after": "6d80fdec35b99205f30d5f1270060b4a00bee8520d4258ec0c5afea591e8d9da",
+      "stable": true
+    },
+    {
+      "snapshot": "root-base",
+      "file": "server/provider.ts",
+      "before": "d42f3f53111f385b981dc522188f8bdef24e7e925ab361a7d1cf71d41c9718b4",
+      "copied": "d42f3f53111f385b981dc522188f8bdef24e7e925ab361a7d1cf71d41c9718b4",
+      "after": "d42f3f53111f385b981dc522188f8bdef24e7e925ab361a7d1cf71d41c9718b4",
+      "stable": true
+    },
+    {
+      "snapshot": "root-base",
+      "file": "src/visualAssets.ts",
+      "before": "74bf10d9ed51214c21576d540c1d62e249f599f3e163260e76d384e3c1c46a45",
+      "copied": "74bf10d9ed51214c21576d540c1d62e249f599f3e163260e76d384e3c1c46a45",
+      "after": "74bf10d9ed51214c21576d540c1d62e249f599f3e163260e76d384e3c1c46a45",
+      "stable": true
+    },
+    {
+      "snapshot": "root-base",
+      "file": "server/narrative-natural-delivery.test.ts",
+      "source": "original root compatibility test",
+      "copied": "2a99b42f99e038791983a2a7b6a79e7e4208b5c7a965644c2b45896e6ded6b3d",
+      "stable": true
+    },
+    {
+      "snapshot": "root-base",
+      "file": "server/narrative-route-agency.test.ts",
+      "source": "original root compatibility test",
+      "copied": "f3c970fbfe7a701318ae68a57b927409004a2dab0ad69a8f603141d5c731279b",
+      "stable": true
+    },
+    {
+      "snapshot": "root-base",
+      "file": "server/narrative-promise-edge.test.ts",
+      "source": "original root compatibility test",
+      "copied": "a7151e1dc0c3b1965d79412bb85ba3b57d4fc1785cde1fca3ce5a245b79fad41",
+      "stable": true
+    },
+    {
+      "snapshot": "root-base",
+      "file": "server/narrative-lifecycle-regression.test.ts",
+      "source": "original root compatibility test",
+      "copied": "41947c5680523474b182f6ce7c60cfe4010538f70ce07888afd1200205332fdc",
+      "stable": true
+    },
+    {
+      "snapshot": "root-base",
+      "file": "server/narrative-short-reply.test.ts",
+      "source": "original root compatibility test",
+      "copied": "a196a934f62366ce34dda8a3d8c44c94b8229dddf6abd19431c2883bdc6d5ab7",
+      "stable": true
+    },
+    {
+      "snapshot": "root-base",
+      "file": "server/narrative-agency-regression.test.ts",
+      "source": "original root compatibility test",
+      "copied": "19eec66a693dc72c02b62f39d5738823be84fa6d084f900f773317f8a280964f",
+      "stable": true
+    },
+    {
+      "snapshot": "root-base",
+      "file": "server/narrative-compound-promise.test.ts",
+      "source": "worker G2 regression",
+      "copied": "ac2cb3c8c82de7356e1f9d279a5c8b2e5872812b61add935ce37698ee0d22109",
+      "stable": true
+    },
+    {
+      "snapshot": "worker-g2",
+      "file": "server/narrative.ts",
+      "before": "f4580644c8f46fbeef99b356a46757dd0d2b089a1a0da76da6755c468766c49a",
+      "copied": "f4580644c8f46fbeef99b356a46757dd0d2b089a1a0da76da6755c468766c49a",
+      "after": "f4580644c8f46fbeef99b356a46757dd0d2b089a1a0da76da6755c468766c49a",
+      "stable": true
+    },
+    {
+      "snapshot": "worker-g2",
+      "file": "server/game.ts",
+      "before": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "copied": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "after": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "stable": true
+    },
+    {
+      "snapshot": "worker-g2",
+      "file": "server/office.ts",
+      "before": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+      "copied": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+      "after": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+      "stable": true
+    },
+    {
+      "snapshot": "worker-g2",
+      "file": "server/romance.ts",
+      "before": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+      "copied": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+      "after": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+      "stable": true
+    },
+    {
+      "snapshot": "worker-g2",
+      "file": "server/interpretation.ts",
+      "before": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+      "copied": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+      "after": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+      "stable": true
+    },
+    {
+      "snapshot": "worker-g2",
+      "file": "server/dialogue.ts",
+      "before": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+      "copied": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+      "after": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+      "stable": true
+    },
+    {
+      "snapshot": "worker-g2",
+      "file": "server/storage.ts",
+      "before": "6d80fdec35b99205f30d5f1270060b4a00bee8520d4258ec0c5afea591e8d9da",
+      "copied": "6d80fdec35b99205f30d5f1270060b4a00bee8520d4258ec0c5afea591e8d9da",
+      "after": "6d80fdec35b99205f30d5f1270060b4a00bee8520d4258ec0c5afea591e8d9da",
+      "stable": true
+    },
+    {
+      "snapshot": "worker-g2",
+      "file": "server/provider.ts",
+      "before": "d42f3f53111f385b981dc522188f8bdef24e7e925ab361a7d1cf71d41c9718b4",
+      "copied": "d42f3f53111f385b981dc522188f8bdef24e7e925ab361a7d1cf71d41c9718b4",
+      "after": "d42f3f53111f385b981dc522188f8bdef24e7e925ab361a7d1cf71d41c9718b4",
+      "stable": true
+    },
+    {
+      "snapshot": "worker-g2",
+      "file": "src/visualAssets.ts",
+      "before": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179",
+      "copied": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179",
+      "after": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179",
+      "stable": true
+    },
+    {
+      "snapshot": "worker-g2",
+      "file": "server/narrative-natural-delivery.test.ts",
+      "source": "original root compatibility test",
+      "copied": "2a99b42f99e038791983a2a7b6a79e7e4208b5c7a965644c2b45896e6ded6b3d",
+      "stable": true
+    },
+    {
+      "snapshot": "worker-g2",
+      "file": "server/narrative-route-agency.test.ts",
+      "source": "original root compatibility test",
+      "copied": "f3c970fbfe7a701318ae68a57b927409004a2dab0ad69a8f603141d5c731279b",
+      "stable": true
+    },
+    {
+      "snapshot": "worker-g2",
+      "file": "server/narrative-promise-edge.test.ts",
+      "source": "original root compatibility test",
+      "copied": "a7151e1dc0c3b1965d79412bb85ba3b57d4fc1785cde1fca3ce5a245b79fad41",
+      "stable": true
+    },
+    {
+      "snapshot": "worker-g2",
+      "file": "server/narrative-lifecycle-regression.test.ts",
+      "source": "original root compatibility test",
+      "copied": "41947c5680523474b182f6ce7c60cfe4010538f70ce07888afd1200205332fdc",
+      "stable": true
+    },
+    {
+      "snapshot": "worker-g2",
+      "file": "server/narrative-short-reply.test.ts",
+      "source": "original root compatibility test",
+      "copied": "a196a934f62366ce34dda8a3d8c44c94b8229dddf6abd19431c2883bdc6d5ab7",
+      "stable": true
+    },
+    {
+      "snapshot": "worker-g2",
+      "file": "server/narrative-agency-regression.test.ts",
+      "source": "original root compatibility test",
+      "copied": "19eec66a693dc72c02b62f39d5738823be84fa6d084f900f773317f8a280964f",
+      "stable": true
+    },
+    {
+      "snapshot": "worker-g2",
+      "file": "server/narrative-compound-promise.test.ts",
+      "source": "worker G2 regression",
+      "copied": "ac2cb3c8c82de7356e1f9d279a5c8b2e5872812b61add935ce37698ee0d22109",
+      "stable": true
+    }
+  ]
+}

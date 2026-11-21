@@ -1,6 +1,10 @@
 # AFTER HOURS v2 — direction and delivery contract
 
-## Latest original-root checkpoint
+## Current continuation: bounded commitment state
+
+Read `docs/v2-parent-compound/review.md` and `docs/v2-mutual-state-review/README.md` first. The root is now narrative5aa03219…, build/325 tests pass, but participant-specific and cross-turn partial completion still fail two exact normal-turn probes. Implement the existing validated Seed84d0c8a7a66d AC2/6 using bounded condition/performer IDs, accumulated provenance, explicit amendments, server-derived completion and preserved saves. Keep the current free dialogue and presentation; the design document is guidance, not new criteria. No new paid calls/ledger approval, no runtime signals or grader modifications. Earlier snapshots below are chronological evidence.
+
+## Earlier original-root checkpoint
 
 The parent has integrated the frozen sequential generation1 patch and independent natural-delivery/route fixes into the original root. Read `docs/v2-parent-final/review.md` first:302 unit tests,25 browser tests,5/5 old promise diagnostics passed on narrative SHA `fcb42511a5ad93a7be77dc4e436a1bb3a12d770ee9b958c9c9bece3441d9e673`. This corrects the old four-defect checkpoint below without deleting it. Separate active Ralph worktree changes must be compared before integration. No new paid calls or approval were received;12+32 consumed and24 proposed remain unchanged. Do not equate this free checkpoint with fresh model quality or release approval.
 

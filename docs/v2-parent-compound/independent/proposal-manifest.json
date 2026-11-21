@@ -1,0 +1,143 @@
+{
+  "scope": "Minimal isolated proposal on original integrated root fcb42511; no production or active worker changes",
+  "rootBaseSha256": "fcb42511a5ad93a7be77dc4e436a1bb3a12d770ee9b958c9c9bece3441d9e673",
+  "workerG2Sha256": "f4580644c8f46fbeef99b356a46757dd0d2b089a1a0da76da6755c468766c49a",
+  "rawMergeSha256": "127fc04de883af8d01f02cbf986f66e7b4a30e9cbdf8e6aa3433cc64341835b1",
+  "proposalSha256": "5aa03219df2bcf3bb2794f604f66d3ebfde55bee13b8cee671face35de42b0f1",
+  "patchSha256": "12b474d2dbeb26e297fb414d7fa1b751fe690fd2b295769c43d167bdb6019a52",
+  "preservedRootTestBytes": {
+    "narrative-natural-delivery.test.ts": true,
+    "narrative-route-agency.test.ts": true,
+    "narrative-promise-edge.test.ts": true
+  },
+  "compatibility": [
+    {
+      "version": "root-base",
+      "exitCode": 1,
+      "tests": "167",
+      "pass": "155",
+      "fail": "12",
+      "failedTests": [
+        "not ok 6 - player first task alone",
+        "not ok 7 - NPC first task alone",
+        "not ok 8 - friend second task in a separate sentence",
+        "not ok 11 - friend subject cannot disappear after conjunction",
+        "not ok 54 - Coordinated completion retains natural sentences and actor boundaries",
+        "not ok 1 - same delivery verb does not prove delivery of the second object",
+        "not ok 3 - a single delivery promise also keeps its object",
+        "not ok 4 - 유나가 편지를 쓴다.",
+        "not ok 5 - 유나가 편지를 써요.",
+        "not ok 6 - player contracted writing past",
+        "not ok 55 - Delivery binds to its object while writing inflections remain usable",
+        "not ok 56 - compound promise rejects incomplete performance: 노란 리본 가져왔어요.",
+        "not ok 58 - compound promise rejects incomplete performance: 노란 리본 가져왔어요. 친구가 편지를 접었어요.",
+        "not ok 59 - compound promise retains writing with its contracted past inflection"
+      ]
+    },
+    {
+      "version": "worker-g2",
+      "exitCode": 1,
+      "tests": "167",
+      "pass": "145",
+      "fail": "22",
+      "failedTests": [
+        "not ok 1 - both tasks in one player sentence",
+        "not ok 2 - both tasks with explicit player subject",
+        "not ok 4 - both tasks in one NPC beat",
+        "not ok 54 - Coordinated completion retains natural sentences and actor boundaries",
+        "not ok 1 - same delivery verb does not prove delivery of the second object",
+        "not ok 3 - a single delivery promise also keeps its object",
+        "not ok 4 - 유나가 편지를 쓴다.",
+        "not ok 55 - Delivery binds to its object while writing inflections remain usable",
+        "not ok 2 - 유나가 노란 리본을 건넨다.",
+        "not ok 3 - 유나가 노란 리본을 건넸다.",
+        "not ok 4 - 유나가 노란 리본을 내민다.",
+        "not ok 5 - 유나가 노란 리본을 꺼내 보여준다.",
+        "not ok 6 - 유나가 노란 리본을 드려요.",
+        "not ok 7 - 유나가 노란 리본을 전해요.",
+        "not ok 8 - 유나가 노란 리본을 건넸어요.",
+        "not ok 9 - 유나가 노란 리본을 내밀어요.",
+        "not ok 90 - NPC visible delivery accepts ordinary Korean inflection",
+        "not ok 4 - 오늘은 노란 리본 가져왔어요.",
+        "not ok 5 - 이번에는 노란 리본 가져왔어요.",
+        "not ok 8 - 오늘은 유나가 노란 리본을 건네준다.",
+        "not ok 9 - 이번에는 유나가 노란 리본을 건네준다.",
+        "not ok 91 - Temporal topics and recipients do not change the real performer",
+        "not ok 105 - route R1: a short refusal cannot finalize a separated relationship; explicit departure can",
+        "not ok 106 - route R2: future-only location plans cannot move now; present movement remains valid",
+        "not ok 107 - route R3: postponed or future-only activity cannot complete an entered date",
+        "not ok 111 - route controls: short consent cannot execute a referenced future invitation as movement"
+      ]
+    },
+    {
+      "version": "merge-raw",
+      "exitCode": 1,
+      "tests": "167",
+      "pass": "161",
+      "fail": "6",
+      "failedTests": [
+        "not ok 1 - both tasks in one player sentence",
+        "not ok 2 - both tasks with explicit player subject",
+        "not ok 4 - both tasks in one NPC beat",
+        "not ok 54 - Coordinated completion retains natural sentences and actor boundaries",
+        "not ok 1 - same delivery verb does not prove delivery of the second object",
+        "not ok 3 - a single delivery promise also keeps its object",
+        "not ok 4 - 유나가 편지를 쓴다.",
+        "not ok 55 - Delivery binds to its object while writing inflections remain usable"
+      ]
+    },
+    {
+      "version": "merge-proposal",
+      "exitCode": 0,
+      "tests": "167",
+      "pass": "167",
+      "fail": "0",
+      "failedTests": []
+    }
+  ],
+  "strictTypecheckExit": 0,
+  "sourceDiffLines": 41,
+  "originalRootStillSameHash": true,
+  "initialCRLFPatchApply": {
+    "checkExit": 0,
+    "applyExit": 0,
+    "files": {
+      "narrative.ts": {
+        "appliedSha256": "5aa03219df2bcf3bb2794f604f66d3ebfde55bee13b8cee671face35de42b0f1",
+        "proposalSha256": "5aa03219df2bcf3bb2794f604f66d3ebfde55bee13b8cee671face35de42b0f1",
+        "normalizedTextMatches": true
+      },
+      "narrative-compound-promise.test.ts": {
+        "appliedSha256": "8c5cd8116c45aae46e74f16b31b10f720bf19ddacb323c517d92a51345a7c876",
+        "proposalSha256": "ac2cb3c8c82de7356e1f9d279a5c8b2e5872812b61add935ce37698ee0d22109",
+        "normalizedTextMatches": true
+      },
+      "narrative-compound-natural.test.ts": {
+        "appliedSha256": "5e2502a7219a3622ba5b8b1fc58cff3e9f41d01a981314cce66641ab20c0886f",
+        "proposalSha256": "a22129d0ea80c826f6ecb9b2730ffc46eb7908e617b863a4352ef63ab96b1af0",
+        "normalizedTextMatches": true
+      }
+    }
+  },
+  "isolatedGitApplyCheck": {
+    "checkExit": 0,
+    "applyExit": 0,
+    "files": {
+      "narrative.ts": {
+        "appliedSha256": "5aa03219df2bcf3bb2794f604f66d3ebfde55bee13b8cee671face35de42b0f1",
+        "proposalSha256": "5aa03219df2bcf3bb2794f604f66d3ebfde55bee13b8cee671face35de42b0f1",
+        "normalizedTextMatches": true
+      },
+      "narrative-compound-promise.test.ts": {
+        "appliedSha256": "8c5cd8116c45aae46e74f16b31b10f720bf19ddacb323c517d92a51345a7c876",
+        "proposalSha256": "ac2cb3c8c82de7356e1f9d279a5c8b2e5872812b61add935ce37698ee0d22109",
+        "normalizedTextMatches": true
+      },
+      "narrative-compound-natural.test.ts": {
+        "appliedSha256": "5e2502a7219a3622ba5b8b1fc58cff3e9f41d01a981314cce66641ab20c0886f",
+        "proposalSha256": "a22129d0ea80c826f6ecb9b2730ffc46eb7908e617b863a4352ef63ab96b1af0",
+        "normalizedTextMatches": true
+      }
+    }
+  }
+}

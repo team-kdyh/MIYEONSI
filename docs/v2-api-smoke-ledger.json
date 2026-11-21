@@ -1,0 +1,11 @@
+{
+  "phase": "v2 choice-free character-chat redesign",
+  "authorization": "User explicitly requested stronger OpenAI-driven branching chat and continued Ralph redesign on 2026-11-21. Parent disclosed a bounded allocation of 32 additional calls for this phase; this is not a user-specified monetary budget.",
+  "previousLedger": "docs/api-smoke-ledger.json",
+  "previousAttempts": 12,
+  "phaseLimit": 32,
+  "cumulativeLimit": 44,
+  "maxOutputTokensPerCall": 1600,
+  "reservationPolicy": "Only final conversational-QA owner reserves each attempt before network request. Include failures. No live calls from general tests, passive loads, or concurrent workers.",
+  "attempts": []
+}

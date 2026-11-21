@@ -1,0 +1,2508 @@
+{
+  "scope": "Independent normal-turn mock diagnostic, no paid call or active worktree mutation",
+  "hashes": {
+    "revision-negotiation.ts": "22c6bc8d35aad926c6493b5788451c4eaa6795e5f8b11c8ea14dc478112a49d4",
+    "commitment-revisions.ts": "d4b3466cdad38d54b2409ef5b129324110161e7865cc21401c8e670739078336",
+    "commitments.ts": "b7a6076d435af203a46aa4cd705588d8dea4e0b9a52822ffc9b04d45de63cf80",
+    "narrative.ts": "24a02b0c19145cf3e2f7befca39c2abe21033f48813cd61069b822fdb7d6c251",
+    "dialogue.ts": "f8b807ab006845414eaad0f8f81c2c9d5f4efffbf1cd184bd302b35b1e22fdd6"
+  },
+  "rows": [
+    {
+      "id": "bilateral-control",
+      "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+      "line": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+      "applied": true,
+      "actual": true,
+      "pass": true,
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "b0f763da-1ed8-4095-8203-b7f419d05ca5",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "b0f763da-1ed8-4095-8203-b7f419d05ca5",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "580b9b36-8c36-4493-8d43-18e73a228970",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "b0f763da-1ed8-4095-8203-b7f419d05ca5",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "580b9b36-8c36-4493-8d43-18e73a228970"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "9a593f69-d3f4-47b8-86a7-b972bb8f39e4",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "81972159-6568-43f0-8a1e-dc5ed34bcb60",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [],
+              "status": "pending"
+            }
+          ],
+          "legacyCommitmentAssessments": [],
+          "revisionNegotiations": [
+            {
+              "promiseId": "b0f763da-1ed8-4095-8203-b7f419d05ca5",
+              "conditionId": "81972159-6568-43f0-8a1e-dc5ed34bcb60",
+              "expectedVersion": 1,
+              "replacement": {
+                "performer": "player",
+                "target": "유나",
+                "action": "그림을 그리는"
+              },
+              "proposer": "player",
+              "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "id": "99f19004-e8da-45cc-a339-20b6817609de",
+              "turn": 3,
+              "requestId": null,
+              "source": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "status": "pending",
+              "responses": [],
+              "attempts": []
+            }
+          ],
+          "performanceInterpretations": [
+            {
+              "id": "3a3581be-1e91-47b8-97eb-d1fcb6f9cdaa",
+              "conditionId": "81972159-6568-43f0-8a1e-dc5ed34bcb60",
+              "promiseId": "b0f763da-1ed8-4095-8203-b7f419d05ca5",
+              "turn": 3,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "span": {
+                "start": 0,
+                "end": 31
+              },
+              "componentHash": "7601b2008a9081e2ea67a45b7ccc6ca395d5d8211e5d2750461852a4b5393edc",
+              "previousId": null,
+              "meaning": "uninterpreted",
+              "matching": "unresolved",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "predicate/object not established",
+                "tense": "no established completed tense",
+                "polarity": "no recognized negative statement"
+              }
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T06:53:45.043Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "b0f763da-1ed8-4095-8203-b7f419d05ca5",
+              "eventId": "b0f763da-1ed8-4095-8203-b7f419d05ca5",
+              "version": 1,
+              "confirmedAt": "2026-11-21T06:53:45.047Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "580b9b36-8c36-4493-8d43-18e73a228970",
+              "eventId": "580b9b36-8c36-4493-8d43-18e73a228970",
+              "version": 2,
+              "confirmedAt": "2026-11-21T06:53:45.048Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "b0f763da-1ed8-4095-8203-b7f419d05ca5"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "580b9b36-8c36-4493-8d43-18e73a228970"
+            },
+            {
+              "kind": "user_claim",
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 3,
+              "recallIds": []
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?"
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "response": {
+        "line": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [],
+        "recall": [],
+        "conjecture": "",
+        "revisionResponses": [
+          {
+            "proposalId": "99f19004-e8da-45cc-a339-20b6817609de",
+            "actor": "player",
+            "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요."
+          },
+          {
+            "proposalId": "99f19004-e8da-45cc-a339-20b6817609de",
+            "actor": "npc",
+            "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요."
+          }
+        ]
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 4,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "b0f763da-1ed8-4095-8203-b7f419d05ca5",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "b0f763da-1ed8-4095-8203-b7f419d05ca5",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "580b9b36-8c36-4493-8d43-18e73a228970",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "b0f763da-1ed8-4095-8203-b7f419d05ca5",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "580b9b36-8c36-4493-8d43-18e73a228970"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "9a593f69-d3f4-47b8-86a7-b972bb8f39e4",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "그림을 그리는",
+                  "id": "81972159-6568-43f0-8a1e-dc5ed34bcb60",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [
+                {
+                  "turn": 4,
+                  "result": "pending",
+                  "conditions": [
+                    {
+                      "id": "9a593f69-d3f4-47b8-86a7-b972bb8f39e4",
+                      "evidenceIds": []
+                    },
+                    {
+                      "id": "81972159-6568-43f0-8a1e-dc5ed34bcb60",
+                      "evidenceIds": []
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                }
+              ],
+              "status": "pending",
+              "revisions": [
+                {
+                  "promiseId": "b0f763da-1ed8-4095-8203-b7f419d05ca5",
+                  "conditionId": "81972159-6568-43f0-8a1e-dc5ed34bcb60",
+                  "expectedVersion": 1,
+                  "replacement": {
+                    "performer": "player",
+                    "target": "유나",
+                    "action": "그림을 그리는"
+                  },
+                  "playerQuote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+                  "npcQuote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+                  "id": "3ceec198-5e29-48b5-855b-62237ea150db",
+                  "status": "accepted",
+                  "turn": 4,
+                  "version": 2,
+                  "before": {
+                    "performer": "player",
+                    "target": "유나",
+                    "action": "편지를 접는",
+                    "evidenceIds": []
+                  },
+                  "applicability": []
+                }
+              ],
+              "revisionVersion": 2
+            }
+          ],
+          "legacyCommitmentAssessments": [],
+          "revisionNegotiations": [
+            {
+              "promiseId": "b0f763da-1ed8-4095-8203-b7f419d05ca5",
+              "conditionId": "81972159-6568-43f0-8a1e-dc5ed34bcb60",
+              "expectedVersion": 1,
+              "replacement": {
+                "performer": "player",
+                "target": "유나",
+                "action": "그림을 그리는"
+              },
+              "proposer": "player",
+              "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "id": "99f19004-e8da-45cc-a339-20b6817609de",
+              "turn": 3,
+              "requestId": null,
+              "source": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "status": "applied",
+              "responses": [
+                {
+                  "id": "88628db4-819b-4c83-b879-577d5a58acca",
+                  "actor": "player",
+                  "turn": 4,
+                  "requestId": null,
+                  "source": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+                  "span": {
+                    "start": 0,
+                    "end": 33
+                  },
+                  "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+                  "interpretation": "accepted"
+                },
+                {
+                  "id": "1c305c94-fa44-4101-b81a-722f2812e176",
+                  "actor": "npc",
+                  "turn": 4,
+                  "requestId": null,
+                  "source": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+                  "span": {
+                    "start": 0,
+                    "end": 33
+                  },
+                  "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+                  "interpretation": "accepted"
+                }
+              ],
+              "attempts": [
+                {
+                  "id": "084596f2-d9bf-4b67-a4f4-f3a0f8273fca",
+                  "turn": 4,
+                  "requestId": null,
+                  "expectedVersion": 1,
+                  "result": "applied",
+                  "reason": "both grounded responses validated atomically",
+                  "revisionId": "3ceec198-5e29-48b5-855b-62237ea150db"
+                }
+              ]
+            }
+          ],
+          "performanceInterpretations": [
+            {
+              "id": "3a3581be-1e91-47b8-97eb-d1fcb6f9cdaa",
+              "conditionId": "81972159-6568-43f0-8a1e-dc5ed34bcb60",
+              "promiseId": "b0f763da-1ed8-4095-8203-b7f419d05ca5",
+              "turn": 3,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "span": {
+                "start": 0,
+                "end": 31
+              },
+              "componentHash": "7601b2008a9081e2ea67a45b7ccc6ca395d5d8211e5d2750461852a4b5393edc",
+              "previousId": null,
+              "meaning": "uninterpreted",
+              "matching": "unresolved",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "predicate/object not established",
+                "tense": "no established completed tense",
+                "polarity": "no recognized negative statement"
+              }
+            },
+            {
+              "id": "48ee0821-0277-4999-a021-163bc8c1c8d2",
+              "conditionId": "81972159-6568-43f0-8a1e-dc5ed34bcb60",
+              "promiseId": "b0f763da-1ed8-4095-8203-b7f419d05ca5",
+              "turn": 4,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+              "span": {
+                "start": 0,
+                "end": 33
+              },
+              "componentHash": "7601b2008a9081e2ea67a45b7ccc6ca395d5d8211e5d2750461852a4b5393edc",
+              "previousId": null,
+              "meaning": "acceptance",
+              "matching": "mismatch",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "predicate/object not established",
+                "tense": "no established completed tense",
+                "polarity": "no recognized negative statement"
+              }
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 4,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T06:53:45.043Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "b0f763da-1ed8-4095-8203-b7f419d05ca5",
+              "eventId": "b0f763da-1ed8-4095-8203-b7f419d05ca5",
+              "version": 1,
+              "confirmedAt": "2026-11-21T06:53:45.047Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "580b9b36-8c36-4493-8d43-18e73a228970",
+              "eventId": "580b9b36-8c36-4493-8d43-18e73a228970",
+              "version": 2,
+              "confirmedAt": "2026-11-21T06:53:45.048Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "b0f763da-1ed8-4095-8203-b7f419d05ca5"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "580b9b36-8c36-4493-8d43-18e73a228970"
+            },
+            {
+              "kind": "user_claim",
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+              "version": 4
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+              "version": 4,
+              "recallIds": []
+            }
+          ],
+          "reply": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?"
+            },
+            {
+              "turn": 4,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요."
+            }
+          ],
+          "actionBeats": []
+        }
+      }
+    },
+    {
+      "id": "player-later-withdrawal",
+      "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요. 하지만 그 변경 제안은 철회할게요.",
+      "line": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+      "applied": false,
+      "actual": false,
+      "pass": true,
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "fea1b2a7-46df-466f-80b0-9535be1651d9",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "fea1b2a7-46df-466f-80b0-9535be1651d9",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "78d0c020-c43a-4ea3-95aa-97d80cfc1cc7",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "fea1b2a7-46df-466f-80b0-9535be1651d9",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "78d0c020-c43a-4ea3-95aa-97d80cfc1cc7"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "b5ee7387-d1a7-4a22-85a4-23815c807f9d",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "1234e75a-4bb7-4c54-aeec-8bbbfc53a68e",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [],
+              "status": "pending"
+            }
+          ],
+          "legacyCommitmentAssessments": [],
+          "revisionNegotiations": [
+            {
+              "promiseId": "fea1b2a7-46df-466f-80b0-9535be1651d9",
+              "conditionId": "1234e75a-4bb7-4c54-aeec-8bbbfc53a68e",
+              "expectedVersion": 1,
+              "replacement": {
+                "performer": "player",
+                "target": "유나",
+                "action": "그림을 그리는"
+              },
+              "proposer": "player",
+              "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "id": "e176b06a-4ecc-4cb7-ad6a-d15777812b08",
+              "turn": 3,
+              "requestId": null,
+              "source": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "status": "pending",
+              "responses": [],
+              "attempts": []
+            }
+          ],
+          "performanceInterpretations": [
+            {
+              "id": "c9e6ad5a-0fa8-4e19-9311-93593c2e39e7",
+              "conditionId": "1234e75a-4bb7-4c54-aeec-8bbbfc53a68e",
+              "promiseId": "fea1b2a7-46df-466f-80b0-9535be1651d9",
+              "turn": 3,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "span": {
+                "start": 0,
+                "end": 31
+              },
+              "componentHash": "7601b2008a9081e2ea67a45b7ccc6ca395d5d8211e5d2750461852a4b5393edc",
+              "previousId": null,
+              "meaning": "uninterpreted",
+              "matching": "unresolved",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "predicate/object not established",
+                "tense": "no established completed tense",
+                "polarity": "no recognized negative statement"
+              }
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T06:53:45.050Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "fea1b2a7-46df-466f-80b0-9535be1651d9",
+              "eventId": "fea1b2a7-46df-466f-80b0-9535be1651d9",
+              "version": 1,
+              "confirmedAt": "2026-11-21T06:53:45.050Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "78d0c020-c43a-4ea3-95aa-97d80cfc1cc7",
+              "eventId": "78d0c020-c43a-4ea3-95aa-97d80cfc1cc7",
+              "version": 2,
+              "confirmedAt": "2026-11-21T06:53:45.051Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "fea1b2a7-46df-466f-80b0-9535be1651d9"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "78d0c020-c43a-4ea3-95aa-97d80cfc1cc7"
+            },
+            {
+              "kind": "user_claim",
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 3,
+              "recallIds": []
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?"
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "response": {
+        "line": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [],
+        "recall": [],
+        "conjecture": "",
+        "revisionResponses": [
+          {
+            "proposalId": "e176b06a-4ecc-4cb7-ad6a-d15777812b08",
+            "actor": "player",
+            "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요."
+          },
+          {
+            "proposalId": "e176b06a-4ecc-4cb7-ad6a-d15777812b08",
+            "actor": "npc",
+            "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요."
+          }
+        ]
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요. 하지만 그 변경 제안은 철회할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 4,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "fea1b2a7-46df-466f-80b0-9535be1651d9",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "fea1b2a7-46df-466f-80b0-9535be1651d9",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "78d0c020-c43a-4ea3-95aa-97d80cfc1cc7",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "fea1b2a7-46df-466f-80b0-9535be1651d9",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "78d0c020-c43a-4ea3-95aa-97d80cfc1cc7"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "b5ee7387-d1a7-4a22-85a4-23815c807f9d",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "1234e75a-4bb7-4c54-aeec-8bbbfc53a68e",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [],
+              "status": "pending"
+            }
+          ],
+          "legacyCommitmentAssessments": [],
+          "revisionNegotiations": [
+            {
+              "promiseId": "fea1b2a7-46df-466f-80b0-9535be1651d9",
+              "conditionId": "1234e75a-4bb7-4c54-aeec-8bbbfc53a68e",
+              "expectedVersion": 1,
+              "replacement": {
+                "performer": "player",
+                "target": "유나",
+                "action": "그림을 그리는"
+              },
+              "proposer": "player",
+              "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "id": "e176b06a-4ecc-4cb7-ad6a-d15777812b08",
+              "turn": 3,
+              "requestId": null,
+              "source": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "status": "withdrawn",
+              "responses": [
+                {
+                  "id": "bfd09755-b093-40f3-8b0d-650d9323aba1",
+                  "actor": "player",
+                  "turn": 4,
+                  "requestId": null,
+                  "source": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요. 하지만 그 변경 제안은 철회할게요.",
+                  "span": {
+                    "start": 0,
+                    "end": 33
+                  },
+                  "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+                  "interpretation": "withdrawn"
+                },
+                {
+                  "id": "084b6e92-759e-46c7-8178-1c645168dac2",
+                  "actor": "npc",
+                  "turn": 4,
+                  "requestId": null,
+                  "source": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+                  "span": {
+                    "start": 0,
+                    "end": 33
+                  },
+                  "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+                  "interpretation": "accepted"
+                }
+              ],
+              "attempts": []
+            }
+          ],
+          "performanceInterpretations": [
+            {
+              "id": "c9e6ad5a-0fa8-4e19-9311-93593c2e39e7",
+              "conditionId": "1234e75a-4bb7-4c54-aeec-8bbbfc53a68e",
+              "promiseId": "fea1b2a7-46df-466f-80b0-9535be1651d9",
+              "turn": 3,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "span": {
+                "start": 0,
+                "end": 31
+              },
+              "componentHash": "7601b2008a9081e2ea67a45b7ccc6ca395d5d8211e5d2750461852a4b5393edc",
+              "previousId": null,
+              "meaning": "uninterpreted",
+              "matching": "unresolved",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "predicate/object not established",
+                "tense": "no established completed tense",
+                "polarity": "no recognized negative statement"
+              }
+            },
+            {
+              "id": "02572b25-ad8e-42b2-a86a-cd3cc6522917",
+              "conditionId": "1234e75a-4bb7-4c54-aeec-8bbbfc53a68e",
+              "promiseId": "fea1b2a7-46df-466f-80b0-9535be1651d9",
+              "turn": 4,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요. 하지만 그 변경 제안은 철회할게요.",
+              "span": {
+                "start": 0,
+                "end": 53
+              },
+              "componentHash": "7601b2008a9081e2ea67a45b7ccc6ca395d5d8211e5d2750461852a4b5393edc",
+              "previousId": null,
+              "meaning": "future",
+              "matching": "mismatch",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "predicate/object not established",
+                "tense": "future intention",
+                "polarity": "no recognized negative statement"
+              }
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 4,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T06:53:45.050Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "fea1b2a7-46df-466f-80b0-9535be1651d9",
+              "eventId": "fea1b2a7-46df-466f-80b0-9535be1651d9",
+              "version": 1,
+              "confirmedAt": "2026-11-21T06:53:45.050Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "78d0c020-c43a-4ea3-95aa-97d80cfc1cc7",
+              "eventId": "78d0c020-c43a-4ea3-95aa-97d80cfc1cc7",
+              "version": 2,
+              "confirmedAt": "2026-11-21T06:53:45.051Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "fea1b2a7-46df-466f-80b0-9535be1651d9"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "78d0c020-c43a-4ea3-95aa-97d80cfc1cc7"
+            },
+            {
+              "kind": "user_claim",
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요. 하지만 그 변경 제안은 철회할게요.",
+              "version": 4
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+              "version": 4,
+              "recallIds": []
+            }
+          ],
+          "reply": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?"
+            },
+            {
+              "turn": 4,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요. 하지만 그 변경 제안은 철회할게요."
+            }
+          ],
+          "actionBeats": []
+        }
+      }
+    },
+    {
+      "id": "npc-later-withdrawal",
+      "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+      "line": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요. 하지만 그 변경 제안은 철회할게요.",
+      "applied": false,
+      "actual": false,
+      "pass": true,
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "fa93cc2d-900d-4c3e-81e2-c1e37516d520",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "fa93cc2d-900d-4c3e-81e2-c1e37516d520",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "5e04f806-fee7-4d07-aeaf-9cd157fd603d",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "fa93cc2d-900d-4c3e-81e2-c1e37516d520",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "5e04f806-fee7-4d07-aeaf-9cd157fd603d"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "08f45bad-420d-4773-b06c-5ea673e635e3",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "dbb89333-f8b2-4c8e-9d07-090580de4584",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [],
+              "status": "pending"
+            }
+          ],
+          "legacyCommitmentAssessments": [],
+          "revisionNegotiations": [
+            {
+              "promiseId": "fa93cc2d-900d-4c3e-81e2-c1e37516d520",
+              "conditionId": "dbb89333-f8b2-4c8e-9d07-090580de4584",
+              "expectedVersion": 1,
+              "replacement": {
+                "performer": "player",
+                "target": "유나",
+                "action": "그림을 그리는"
+              },
+              "proposer": "player",
+              "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "id": "804aac2a-9fbc-4cc9-8bbf-642f69966a30",
+              "turn": 3,
+              "requestId": null,
+              "source": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "status": "pending",
+              "responses": [],
+              "attempts": []
+            }
+          ],
+          "performanceInterpretations": [
+            {
+              "id": "f4593146-ae43-4696-a0ce-ec2d1b075971",
+              "conditionId": "dbb89333-f8b2-4c8e-9d07-090580de4584",
+              "promiseId": "fa93cc2d-900d-4c3e-81e2-c1e37516d520",
+              "turn": 3,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "span": {
+                "start": 0,
+                "end": 31
+              },
+              "componentHash": "7601b2008a9081e2ea67a45b7ccc6ca395d5d8211e5d2750461852a4b5393edc",
+              "previousId": null,
+              "meaning": "uninterpreted",
+              "matching": "unresolved",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "predicate/object not established",
+                "tense": "no established completed tense",
+                "polarity": "no recognized negative statement"
+              }
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T06:53:45.051Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "fa93cc2d-900d-4c3e-81e2-c1e37516d520",
+              "eventId": "fa93cc2d-900d-4c3e-81e2-c1e37516d520",
+              "version": 1,
+              "confirmedAt": "2026-11-21T06:53:45.051Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "5e04f806-fee7-4d07-aeaf-9cd157fd603d",
+              "eventId": "5e04f806-fee7-4d07-aeaf-9cd157fd603d",
+              "version": 2,
+              "confirmedAt": "2026-11-21T06:53:45.052Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "fa93cc2d-900d-4c3e-81e2-c1e37516d520"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "5e04f806-fee7-4d07-aeaf-9cd157fd603d"
+            },
+            {
+              "kind": "user_claim",
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 3,
+              "recallIds": []
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?"
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "response": {
+        "line": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요. 하지만 그 변경 제안은 철회할게요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [],
+        "recall": [],
+        "conjecture": "",
+        "revisionResponses": [
+          {
+            "proposalId": "804aac2a-9fbc-4cc9-8bbf-642f69966a30",
+            "actor": "player",
+            "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요."
+          },
+          {
+            "proposalId": "804aac2a-9fbc-4cc9-8bbf-642f69966a30",
+            "actor": "npc",
+            "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요."
+          }
+        ]
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요. 하지만 그 변경 제안은 철회할게요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 4,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "fa93cc2d-900d-4c3e-81e2-c1e37516d520",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "fa93cc2d-900d-4c3e-81e2-c1e37516d520",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "5e04f806-fee7-4d07-aeaf-9cd157fd603d",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "fa93cc2d-900d-4c3e-81e2-c1e37516d520",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "5e04f806-fee7-4d07-aeaf-9cd157fd603d"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "08f45bad-420d-4773-b06c-5ea673e635e3",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "dbb89333-f8b2-4c8e-9d07-090580de4584",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [],
+              "status": "pending"
+            }
+          ],
+          "legacyCommitmentAssessments": [],
+          "revisionNegotiations": [
+            {
+              "promiseId": "fa93cc2d-900d-4c3e-81e2-c1e37516d520",
+              "conditionId": "dbb89333-f8b2-4c8e-9d07-090580de4584",
+              "expectedVersion": 1,
+              "replacement": {
+                "performer": "player",
+                "target": "유나",
+                "action": "그림을 그리는"
+              },
+              "proposer": "player",
+              "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "id": "804aac2a-9fbc-4cc9-8bbf-642f69966a30",
+              "turn": 3,
+              "requestId": null,
+              "source": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "status": "withdrawn",
+              "responses": [
+                {
+                  "id": "adc10657-9abc-4a9c-b6bb-536d19623739",
+                  "actor": "player",
+                  "turn": 4,
+                  "requestId": null,
+                  "source": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+                  "span": {
+                    "start": 0,
+                    "end": 33
+                  },
+                  "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+                  "interpretation": "accepted"
+                },
+                {
+                  "id": "3d506e75-01f7-4903-b64d-77d05d9280f3",
+                  "actor": "npc",
+                  "turn": 4,
+                  "requestId": null,
+                  "source": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요. 하지만 그 변경 제안은 철회할게요.",
+                  "span": {
+                    "start": 0,
+                    "end": 33
+                  },
+                  "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+                  "interpretation": "withdrawn"
+                }
+              ],
+              "attempts": []
+            }
+          ],
+          "performanceInterpretations": [
+            {
+              "id": "f4593146-ae43-4696-a0ce-ec2d1b075971",
+              "conditionId": "dbb89333-f8b2-4c8e-9d07-090580de4584",
+              "promiseId": "fa93cc2d-900d-4c3e-81e2-c1e37516d520",
+              "turn": 3,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "span": {
+                "start": 0,
+                "end": 31
+              },
+              "componentHash": "7601b2008a9081e2ea67a45b7ccc6ca395d5d8211e5d2750461852a4b5393edc",
+              "previousId": null,
+              "meaning": "uninterpreted",
+              "matching": "unresolved",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "predicate/object not established",
+                "tense": "no established completed tense",
+                "polarity": "no recognized negative statement"
+              }
+            },
+            {
+              "id": "984eaa75-94af-40ee-af45-d1e63bd838bd",
+              "conditionId": "dbb89333-f8b2-4c8e-9d07-090580de4584",
+              "promiseId": "fa93cc2d-900d-4c3e-81e2-c1e37516d520",
+              "turn": 4,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+              "span": {
+                "start": 0,
+                "end": 33
+              },
+              "componentHash": "7601b2008a9081e2ea67a45b7ccc6ca395d5d8211e5d2750461852a4b5393edc",
+              "previousId": null,
+              "meaning": "acceptance",
+              "matching": "mismatch",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "predicate/object not established",
+                "tense": "no established completed tense",
+                "polarity": "no recognized negative statement"
+              }
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 4,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T06:53:45.051Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "fa93cc2d-900d-4c3e-81e2-c1e37516d520",
+              "eventId": "fa93cc2d-900d-4c3e-81e2-c1e37516d520",
+              "version": 1,
+              "confirmedAt": "2026-11-21T06:53:45.051Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "5e04f806-fee7-4d07-aeaf-9cd157fd603d",
+              "eventId": "5e04f806-fee7-4d07-aeaf-9cd157fd603d",
+              "version": 2,
+              "confirmedAt": "2026-11-21T06:53:45.052Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "fa93cc2d-900d-4c3e-81e2-c1e37516d520"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "5e04f806-fee7-4d07-aeaf-9cd157fd603d"
+            },
+            {
+              "kind": "user_claim",
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+              "version": 4
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요. 하지만 그 변경 제안은 철회할게요.",
+              "version": 4,
+              "recallIds": []
+            }
+          ],
+          "reply": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요. 하지만 그 변경 제안은 철회할게요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?"
+            },
+            {
+              "turn": 4,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요."
+            }
+          ],
+          "actionBeats": []
+        }
+      }
+    },
+    {
+      "id": "unrelated-coffee-refusal",
+      "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요. 커피는 마시지 않을게요.",
+      "line": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+      "applied": true,
+      "actual": true,
+      "pass": true,
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "e7454767-1a6e-4765-b1d5-41da44749781",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "e7454767-1a6e-4765-b1d5-41da44749781",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "9c9b54ac-8fd5-4175-87bc-f597062e682e",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "e7454767-1a6e-4765-b1d5-41da44749781",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "9c9b54ac-8fd5-4175-87bc-f597062e682e"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "5fa0ceb7-6752-45b4-8ece-c09ff355d962",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "778e5d20-0b54-4ef1-8eef-09c7bab7a669",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [],
+              "status": "pending"
+            }
+          ],
+          "legacyCommitmentAssessments": [],
+          "revisionNegotiations": [
+            {
+              "promiseId": "e7454767-1a6e-4765-b1d5-41da44749781",
+              "conditionId": "778e5d20-0b54-4ef1-8eef-09c7bab7a669",
+              "expectedVersion": 1,
+              "replacement": {
+                "performer": "player",
+                "target": "유나",
+                "action": "그림을 그리는"
+              },
+              "proposer": "player",
+              "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "id": "ac9b4e3a-e10e-4b41-9f24-0c4acad2c35b",
+              "turn": 3,
+              "requestId": null,
+              "source": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "status": "pending",
+              "responses": [],
+              "attempts": []
+            }
+          ],
+          "performanceInterpretations": [
+            {
+              "id": "0f811def-79e3-4f40-9f8c-058320644553",
+              "conditionId": "778e5d20-0b54-4ef1-8eef-09c7bab7a669",
+              "promiseId": "e7454767-1a6e-4765-b1d5-41da44749781",
+              "turn": 3,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "span": {
+                "start": 0,
+                "end": 31
+              },
+              "componentHash": "7601b2008a9081e2ea67a45b7ccc6ca395d5d8211e5d2750461852a4b5393edc",
+              "previousId": null,
+              "meaning": "uninterpreted",
+              "matching": "unresolved",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "predicate/object not established",
+                "tense": "no established completed tense",
+                "polarity": "no recognized negative statement"
+              }
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T06:53:45.052Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "e7454767-1a6e-4765-b1d5-41da44749781",
+              "eventId": "e7454767-1a6e-4765-b1d5-41da44749781",
+              "version": 1,
+              "confirmedAt": "2026-11-21T06:53:45.052Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "9c9b54ac-8fd5-4175-87bc-f597062e682e",
+              "eventId": "9c9b54ac-8fd5-4175-87bc-f597062e682e",
+              "version": 2,
+              "confirmedAt": "2026-11-21T06:53:45.052Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "e7454767-1a6e-4765-b1d5-41da44749781"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "9c9b54ac-8fd5-4175-87bc-f597062e682e"
+            },
+            {
+              "kind": "user_claim",
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 3,
+              "recallIds": []
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?"
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "response": {
+        "line": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [],
+        "recall": [],
+        "conjecture": "",
+        "revisionResponses": [
+          {
+            "proposalId": "ac9b4e3a-e10e-4b41-9f24-0c4acad2c35b",
+            "actor": "player",
+            "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요."
+          },
+          {
+            "proposalId": "ac9b4e3a-e10e-4b41-9f24-0c4acad2c35b",
+            "actor": "npc",
+            "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요."
+          }
+        ]
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요. 커피는 마시지 않을게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 4,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "e7454767-1a6e-4765-b1d5-41da44749781",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "e7454767-1a6e-4765-b1d5-41da44749781",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "9c9b54ac-8fd5-4175-87bc-f597062e682e",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "e7454767-1a6e-4765-b1d5-41da44749781",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "9c9b54ac-8fd5-4175-87bc-f597062e682e"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "5fa0ceb7-6752-45b4-8ece-c09ff355d962",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "그림을 그리는",
+                  "id": "778e5d20-0b54-4ef1-8eef-09c7bab7a669",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [
+                {
+                  "turn": 4,
+                  "result": "pending",
+                  "conditions": [
+                    {
+                      "id": "5fa0ceb7-6752-45b4-8ece-c09ff355d962",
+                      "evidenceIds": []
+                    },
+                    {
+                      "id": "778e5d20-0b54-4ef1-8eef-09c7bab7a669",
+                      "evidenceIds": []
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                }
+              ],
+              "status": "pending",
+              "revisions": [
+                {
+                  "promiseId": "e7454767-1a6e-4765-b1d5-41da44749781",
+                  "conditionId": "778e5d20-0b54-4ef1-8eef-09c7bab7a669",
+                  "expectedVersion": 1,
+                  "replacement": {
+                    "performer": "player",
+                    "target": "유나",
+                    "action": "그림을 그리는"
+                  },
+                  "playerQuote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+                  "npcQuote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+                  "id": "3169d9c2-f2cb-4645-81b3-caf6d1b416f0",
+                  "status": "accepted",
+                  "turn": 4,
+                  "version": 2,
+                  "before": {
+                    "performer": "player",
+                    "target": "유나",
+                    "action": "편지를 접는",
+                    "evidenceIds": []
+                  },
+                  "applicability": []
+                }
+              ],
+              "revisionVersion": 2
+            }
+          ],
+          "legacyCommitmentAssessments": [],
+          "revisionNegotiations": [
+            {
+              "promiseId": "e7454767-1a6e-4765-b1d5-41da44749781",
+              "conditionId": "778e5d20-0b54-4ef1-8eef-09c7bab7a669",
+              "expectedVersion": 1,
+              "replacement": {
+                "performer": "player",
+                "target": "유나",
+                "action": "그림을 그리는"
+              },
+              "proposer": "player",
+              "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "id": "ac9b4e3a-e10e-4b41-9f24-0c4acad2c35b",
+              "turn": 3,
+              "requestId": null,
+              "source": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "status": "applied",
+              "responses": [
+                {
+                  "id": "f9685053-aa95-4c10-a05c-77e2375bcf64",
+                  "actor": "player",
+                  "turn": 4,
+                  "requestId": null,
+                  "source": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요. 커피는 마시지 않을게요.",
+                  "span": {
+                    "start": 0,
+                    "end": 33
+                  },
+                  "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+                  "interpretation": "accepted"
+                },
+                {
+                  "id": "815e9267-157b-4791-82ec-be107e36d1f4",
+                  "actor": "npc",
+                  "turn": 4,
+                  "requestId": null,
+                  "source": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+                  "span": {
+                    "start": 0,
+                    "end": 33
+                  },
+                  "quote": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+                  "interpretation": "accepted"
+                }
+              ],
+              "attempts": [
+                {
+                  "id": "a09261d9-2370-4d62-9cb6-ec1bd08c9642",
+                  "turn": 4,
+                  "requestId": null,
+                  "expectedVersion": 1,
+                  "result": "applied",
+                  "reason": "both grounded responses validated atomically",
+                  "revisionId": "3169d9c2-f2cb-4645-81b3-caf6d1b416f0"
+                }
+              ]
+            }
+          ],
+          "performanceInterpretations": [
+            {
+              "id": "0f811def-79e3-4f40-9f8c-058320644553",
+              "conditionId": "778e5d20-0b54-4ef1-8eef-09c7bab7a669",
+              "promiseId": "e7454767-1a6e-4765-b1d5-41da44749781",
+              "turn": 3,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "span": {
+                "start": 0,
+                "end": 31
+              },
+              "componentHash": "7601b2008a9081e2ea67a45b7ccc6ca395d5d8211e5d2750461852a4b5393edc",
+              "previousId": null,
+              "meaning": "uninterpreted",
+              "matching": "unresolved",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "predicate/object not established",
+                "tense": "no established completed tense",
+                "polarity": "no recognized negative statement"
+              }
+            },
+            {
+              "id": "8838bd01-6915-4d28-a976-77832694720b",
+              "conditionId": "778e5d20-0b54-4ef1-8eef-09c7bab7a669",
+              "promiseId": "e7454767-1a6e-4765-b1d5-41da44749781",
+              "turn": 4,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요. 커피는 마시지 않을게요.",
+              "span": {
+                "start": 0,
+                "end": 47
+              },
+              "componentHash": "7601b2008a9081e2ea67a45b7ccc6ca395d5d8211e5d2750461852a4b5393edc",
+              "previousId": null,
+              "meaning": "future",
+              "matching": "mismatch",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "predicate/object not established",
+                "tense": "future intention",
+                "polarity": "no recognized negative statement"
+              }
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 4,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T06:53:45.052Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "e7454767-1a6e-4765-b1d5-41da44749781",
+              "eventId": "e7454767-1a6e-4765-b1d5-41da44749781",
+              "version": 1,
+              "confirmedAt": "2026-11-21T06:53:45.052Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "9c9b54ac-8fd5-4175-87bc-f597062e682e",
+              "eventId": "9c9b54ac-8fd5-4175-87bc-f597062e682e",
+              "version": 2,
+              "confirmedAt": "2026-11-21T06:53:45.052Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "e7454767-1a6e-4765-b1d5-41da44749781"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "9c9b54ac-8fd5-4175-87bc-f597062e682e"
+            },
+            {
+              "kind": "user_claim",
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "user_claim",
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요. 커피는 마시지 않을게요.",
+              "version": 4
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+              "version": 4,
+              "recallIds": []
+            }
+          ],
+          "reply": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸면 어떨까요?"
+            },
+            {
+              "turn": 4,
+              "text": "편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요. 커피는 마시지 않을게요."
+            }
+          ],
+          "actionBeats": []
+        }
+      }
+    }
+  ]
+}

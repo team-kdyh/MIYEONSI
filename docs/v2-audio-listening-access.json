@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-21T05:04:19.812456+00:00",
+  "scope": "Local audio perception capability check, not listening approval or full-track QA",
+  "source": "public/assets/audio-v2/office-groove.ogg",
+  "sourceSha256": "ed29e9ee5af160f5021c6816c211d232df59301b947edc971499fa4ff3f64fb1",
+  "excerptSeconds": [
+    8,
+    16
+  ],
+  "transcode": "ffmpeg: mono22050Hz MP3 48k, memory only; original untouched",
+  "emission": "functions.audio with local excerpt",
+  "observedToolResult": "audio content omitted because you do not support audio input",
+  "assistantHeardAudio": false,
+  "status": "access_unavailable",
+  "newApiCalls": 0,
+  "conclusion": "Do not infer musical quality or audible output from this attempt. Existing decoded/playback/waveform checks remain technical observations only."
+}

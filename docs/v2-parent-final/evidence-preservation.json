@@ -236,5 +236,248 @@
       "after": "5c4dc128af1068eb9da182f49795bd40946c37f6929c8b9649773ddcec6e781e",
       "currentEvidence": "docs/v2-parent-final/artifacts/docs/v2-security-evidence.json"
     }
+  ],
+  "provenanceCorrection": "The copied v2-art folder is historical; it was not written by this browser run. Actual current v2-art.spec.ts outputs are v2-ac4-recheck and are listed below. Unchanged bytes were copied only for paths the executed test actually wrote; changed captures had already been archived before historical restoration.",
+  "currentArtCaptures": [
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-concern.png",
+      "sha256": "232d8f8d167fa895ffd8f40134dc6319bde7618feb57f01bbc9bc4399ee82d26"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-farewell.png",
+      "sha256": "e1af9acb60f49ae11f8a4c37d283e911484e4d94fd49e5c1122668965b88d3a1"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-firm.png",
+      "sha256": "679cd1bce3f46c1cc4d003f2c4a49672c10be58dea7153c8d919cef119671c0e"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-intense.png",
+      "sha256": "0682522ec09b5f957137a8bf51a2605396ea0f5df50c7cd435e82e7cd9853132"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-laugh.png",
+      "sha256": "4296faa9d3ddec657bda1df7538a78b33f3a90f1d81e0c425dbd1891ec8c4e75"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-listen.png",
+      "sha256": "94798f01a523557defba9847cd54f57076e66e4b718893fb82290c3dc34c4198"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-neutral.png",
+      "sha256": "dddb9f435d0dc1967a2c578bf97141e6f062b71a9cd1ac5b41f375d320f1ca30"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-offer.png",
+      "sha256": "09d56e46209ab99aa52b0ee5f517ea9c96e739a0bc1ce6ce8caa14f07ac0d87f"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-reduced.png",
+      "sha256": "770aabcfb618f56e723bee09ae7d9ce6e57cb78e52c903979cce550152fa1948"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-shy.png",
+      "sha256": "73161140e493d933dad13d7e479261e62e2b3f28bbce3e9b67a15a1773f82534"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-smile.png",
+      "sha256": "dc4829521264ff5aa89b65a99d767cc8d73dbcf2ca8ac65e24488fc22dd80da4"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-surprised.png",
+      "sha256": "081a85eff930b19e24a78a7cdb568730a4176be9751f05de6c9c8222a4ea0d11"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-thinking.png",
+      "sha256": "82ff11f1dc6f4a167d0d62870b68a6b6a699b11c6a10cb383e26de3a9b3fa6d3"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-turn.png",
+      "sha256": "f975cb6a9da3e532edf3791856cfca639478d683f7dd1a0374663b9cf56ca26a"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-1440-watch.png",
+      "sha256": "c80d8bd0f34ae5e82f15371a262d3dcfadcf0d656b49fda4f822aac5b08b74eb"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-concern.png",
+      "sha256": "31b4f4fb5dcc027f392974039fbd76ad18296b5c142067518069086d85b42880"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-farewell.png",
+      "sha256": "4efb07247b11f7cb385da4a92bbc6819f377d5ad6c740857e37154d9a9c70b03"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-firm.png",
+      "sha256": "67ea73113075f28105dd0c499e67c46b6bbd272a30722768debcd988ea002b6d"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-intense.png",
+      "sha256": "355a919cd71f4d05e8bc2b1d56d043c58a711485f3a33ddf361c0ea69674a0d3"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-laugh.png",
+      "sha256": "7e9d011665b0cf0383ddb2e7ae20c22d32b7d22066c19ebf28e806114ed55147"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-listen.png",
+      "sha256": "9f5d83907723ede25fb93b5c2f50457e11b8ed92efc9397eb6c3f10dbf89ef5c"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-neutral.png",
+      "sha256": "7bbab48b5ab99d4214ef6ccf110f6c4452d2a85923a98613435fcbbb05769a66"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-offer.png",
+      "sha256": "138b4054a1f2fdde8a2d25da8cb7de3b85d6848aeec3b5e9bc515c9b7865f315"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-reduced.png",
+      "sha256": "81c83096af77ff7b7e8dc81cdb5544aa98799679719beed716696c7d4ffc7fb2"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-shy.png",
+      "sha256": "ae3e22ee668f94b1584c8f227d237a3a99c5d8ef87a6829a9d626f42359be37f"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-smile.png",
+      "sha256": "60f535e9b86b65bf6c0436c5d5d012bbfc664fa551f4d69d83dca9ee719aca9b"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-surprised.png",
+      "sha256": "a7f853d4780df263186012a160897ed39630ec461b939499d040ad0dfaf62a8d"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-thinking.png",
+      "sha256": "1a6208e65ccbd5f3a8a77baf9341b3538810cd44e9c45bf7f587c160376fb497"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-turn.png",
+      "sha256": "6d68fcfea9e0cfc1be4feceb621b74fc231e6d624c241f9f0e7148288a609417"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/office-390-watch.png",
+      "sha256": "b8ba8b3241aab3c586b7f514c6859a018c7298d3d8e1a2137f3a200e4511d075"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-concern.png",
+      "sha256": "8ef64c75dd27b0f34f9cda6ed5641f8b9f91f12df28bfda796eebdfec51e94c4"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-farewell.png",
+      "sha256": "a937c2aef6c81e2051627d70083cf131d69d52414ba5e4ba136f04ca61bc2c99"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-firm.png",
+      "sha256": "aa135c4cbbe722212e3d9322f316abd68363e0960fb9481882d2d95ac9ca0590"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-intense.png",
+      "sha256": "41a0455ce8c01bb1373ff3025efaa4761d9ac641a04f86bc1e0596d7513c7e78"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-laugh.png",
+      "sha256": "bb616a6584734d4092225d72f4f57fbe0e46317a100f1d905afa04dc8eb5863a"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-listen.png",
+      "sha256": "91fecf8b15d25f8af163c29d1a8fad479c330b4e95529b4e6a6d93cdcb94517b"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-neutral.png",
+      "sha256": "4d022993662a8e2bef8be894677870461cb3c4e75e97ea9dc376b42a8dba7f58"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-offer.png",
+      "sha256": "dcf7b26a7121e9fe30e38c630e2b5e80c91abec2dd12d1f0c72079d3fc4aba7a"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-reduced.png",
+      "sha256": "7928f99ed675b50f69124900b7a5399706925750a8b41d368b788ef4ddd9b712"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-shy.png",
+      "sha256": "177f6a0bf1dd42b82a4798548c472db70fa5696e88bae237abb67683d13ac446"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-smile.png",
+      "sha256": "930f2cbab11d1fc9816057019db4d953ada11fa4ae56533d458e3cca413a8878"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-surprised.png",
+      "sha256": "d44a10438e9593990889aabdd93f266bcbf2b4c460c2ad23b770943a2b3deb25"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-thinking.png",
+      "sha256": "06ee161ea927aecb8b54253d55de559953f2d091b800397d8d3a14ebeb211e75"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-turn.png",
+      "sha256": "56eefe4b2bc51fdbf6e84c1631735d38e1ee3ce741c7c6f761c7472a61f8904e"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-1440-watch.png",
+      "sha256": "c8b4c88f8485bd734ef3df3260be97fa598b1f4998f2f27177aac1eb43351644"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-concern.png",
+      "sha256": "8310330e237d34a102011580d910ed41c2b855f4393718bbfbbf203bdbb56d77"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-farewell.png",
+      "sha256": "4e2067a1e7ebfa2fd5797cefe8fa6fa0ee80c41003a43636aed10d44d4aa9d45"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-firm.png",
+      "sha256": "16f4fa409daffe90059bcad957cf33785514d08a954508de17df1e013e1872c9"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-intense.png",
+      "sha256": "7f30760eaea2850bb0d157398272365bf26b24b0a394a8c710de62d677453ab2"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-laugh.png",
+      "sha256": "8a64379e3758e3a9319dc4b1ca097ccb251707b9481bf5092b031b90738ef2a6"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-listen.png",
+      "sha256": "38ff1ecaa4c194ce1f3b4e1f36a786500f6e0345175d7941d5a967b8f6eac446"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-neutral.png",
+      "sha256": "43c835789c5b4eee04515b9b5c857f5c6c111c25b3c95f7dcc7bc9157562344e"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-offer.png",
+      "sha256": "bb98c9f84e0741fdfe55db313fd89715374178a168091e2f29c1f4c9c71296dd"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-reduced.png",
+      "sha256": "4c5503b366d4b52e5853eeff72c649ccea7668a4d2771270cf9cac81107add12"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-shy.png",
+      "sha256": "6a1f31abefa6c3446b5c6d1b7e596b221e64b14dc11f80f7ed28304cbb2ea6d9"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-smile.png",
+      "sha256": "9fc57cd4eaedb1c56d49e9e28062417a9bb177d0e3894a95fa6cf06c6311c2c3"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-surprised.png",
+      "sha256": "6a7aef1efe944c660bf7c8d828994e17c2a6849e1257b4dca233b78b9ec7c2aa"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-thinking.png",
+      "sha256": "e68ed6d649f28f57957c88dee8489c4d1b41e56b89a70af3f6190989c7a2bddf"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-turn.png",
+      "sha256": "1639f62400fc1c79b99fb2d0d4e7cb7819e40fa943688ca7188438aae6fea0bc"
+    },
+    {
+      "path": "docs/v2-parent-final/artifacts/docs/qa-screenshots/v2-ac4-recheck/romance-390-watch.png",
+      "sha256": "f893d7528283bfeef8e8511290996540e10f5ff63e62da0ee5f16d0823e4d402"
+    }
   ]
 }

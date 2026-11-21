@@ -1,0 +1,157 @@
+{
+  "reviewedAt": "2026-11-21T05:04:28.4303974Z",
+  "checkpoint": "v2-parent-20261121-fcb42511",
+  "checkpointFile": "docs/v2-parent-final/candidate.json",
+  "dependencies": [
+    {
+      "path": "public/assets/archive.png",
+      "checkpoint": "52d1a0e2ec3731f8934ff75e2fd25fcace71528ea082946a87c46ef40d4ba711",
+      "current": "52d1a0e2ec3731f8934ff75e2fd25fcace71528ea082946a87c46ef40d4ba711",
+      "match": true
+    },
+    {
+      "path": "public/assets/boss-expressions.png",
+      "checkpoint": "e072f4d0c56c11349093c379303cacd2509b3a8610612a343b7f7fae96bda51a",
+      "current": "e072f4d0c56c11349093c379303cacd2509b3a8610612a343b7f7fae96bda51a",
+      "match": true
+    },
+    {
+      "path": "public/assets/cafe.png",
+      "checkpoint": "9d546aca64cdbe9bb57aae91df908b59b36d747397175fe2004cddffdd6666c4",
+      "current": "9d546aca64cdbe9bb57aae91df908b59b36d747397175fe2004cddffdd6666c4",
+      "match": true
+    },
+    {
+      "path": "public/assets/office.png",
+      "checkpoint": "bf3a39649b5920bc286a82b9db93c3d6d9a2490708b445c5607ea95d016d7751",
+      "current": "bf3a39649b5920bc286a82b9db93c3d6d9a2490708b445c5607ea95d016d7751",
+      "match": true
+    },
+    {
+      "path": "public/assets/riverside.png",
+      "checkpoint": "393bda947f29056c417ab302924c8a4fb107a21d7d8f9053187bb3950f45aa9a",
+      "current": "393bda947f29056c417ab302924c8a4fb107a21d7d8f9053187bb3950f45aa9a",
+      "match": true
+    },
+    {
+      "path": "public/assets/v2/boss-actions-a.png",
+      "checkpoint": "18176790fe162b6b65519c50a89dc9fc4cf5ab571a8f819204b6074bb9d12f40",
+      "current": "18176790fe162b6b65519c50a89dc9fc4cf5ab571a8f819204b6074bb9d12f40",
+      "match": true
+    },
+    {
+      "path": "public/assets/v2/boss-actions-b.png",
+      "checkpoint": "debd7febc1fd485aae4c4734cb18076a90fc735ec705e545296016daf615b7dd",
+      "current": "debd7febc1fd485aae4c4734cb18076a90fc735ec705e545296016daf615b7dd",
+      "match": true
+    },
+    {
+      "path": "public/assets/v2/rainstreet.png",
+      "checkpoint": "44eda0f37410a72ab8939fab268e41c0ca65de2cc212696d34815d407fac60d4",
+      "current": "44eda0f37410a72ab8939fab268e41c0ca65de2cc212696d34815d407fac60d4",
+      "match": true
+    },
+    {
+      "path": "public/assets/v2/rooftop.png",
+      "checkpoint": "6061e8b6712faa827cdf6c29e504c274a3997fb211aba44dd36bbdb983fa8cc4",
+      "current": "6061e8b6712faa827cdf6c29e504c274a3997fb211aba44dd36bbdb983fa8cc4",
+      "match": true
+    },
+    {
+      "path": "public/assets/v2/yuna-actions-a.png",
+      "checkpoint": "ad4a35ffb0070f3ba704f389c7d7ee84a03e7563247972ca773053b7ac6d5c6c",
+      "current": "ad4a35ffb0070f3ba704f389c7d7ee84a03e7563247972ca773053b7ac6d5c6c",
+      "match": true
+    },
+    {
+      "path": "public/assets/v2/yuna-actions-b.png",
+      "checkpoint": "b14c4daa745797c3995eb961f446c0d9b45751744430248d95580b6755e4f049",
+      "current": "b14c4daa745797c3995eb961f446c0d9b45751744430248d95580b6755e4f049",
+      "match": true
+    },
+    {
+      "path": "public/assets/yuna-expressions.png",
+      "checkpoint": "09109a8eba18c5e8cd8e591583770e8da26658c5541c7e913dbc79846037ec80",
+      "current": "09109a8eba18c5e8cd8e591583770e8da26658c5541c7e913dbc79846037ec80",
+      "match": true
+    },
+    {
+      "path": "server/dialogue.ts",
+      "checkpoint": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+      "current": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+      "match": true
+    },
+    {
+      "path": "server/game.ts",
+      "checkpoint": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "current": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "match": true
+    },
+    {
+      "path": "server/narrative.ts",
+      "checkpoint": "fcb42511a5ad93a7be77dc4e436a1bb3a12d770ee9b958c9c9bece3441d9e673",
+      "current": "5aa03219df2bcf3bb2794f604f66d3ebfde55bee13b8cee671face35de42b0f1",
+      "match": false
+    },
+    {
+      "path": "src/CharacterSprite.tsx",
+      "checkpoint": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+      "current": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+      "match": true
+    },
+    {
+      "path": "src/ConversationViewport.tsx",
+      "checkpoint": "77b6b56d5e255fcec0773604e738b5ace2867adc220067a1a33c6120120f3171",
+      "current": "77b6b56d5e255fcec0773604e738b5ace2867adc220067a1a33c6120120f3171",
+      "match": true
+    },
+    {
+      "path": "src/StageEffects.tsx",
+      "checkpoint": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+      "current": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+      "match": true
+    },
+    {
+      "path": "src/main.tsx",
+      "checkpoint": "7fe72805c7fdc5ac1341beea45cc99d2c27e09eac5912f93467a339a663eadae",
+      "current": "7fe72805c7fdc5ac1341beea45cc99d2c27e09eac5912f93467a339a663eadae",
+      "match": true
+    },
+    {
+      "path": "src/presentation.ts",
+      "checkpoint": "ad53276bd1d890422d865915fa5896271e39c59678355ac09af2a9bc85f6faa9",
+      "current": "ad53276bd1d890422d865915fa5896271e39c59678355ac09af2a9bc85f6faa9",
+      "match": true
+    },
+    {
+      "path": "src/style.css",
+      "checkpoint": "aacea413940c9eefd6893e4999da024b3b085c3a28bcf5487c73315196056dcf",
+      "current": "aacea413940c9eefd6893e4999da024b3b085c3a28bcf5487c73315196056dcf",
+      "match": true
+    },
+    {
+      "path": "src/visualAssets.ts",
+      "checkpoint": "74bf10d9ed51214c21576d540c1d62e249f599f3e163260e76d384e3c1c46a45",
+      "current": "74bf10d9ed51214c21576d540c1d62e249f599f3e163260e76d384e3c1c46a45",
+      "match": true
+    },
+    {
+      "path": "tests/v2-ac4-boundaries.spec.ts",
+      "checkpoint": "accd495815245f7fe6e8f5781ba0a68160b5dd1949b0306add2acc82517101af",
+      "current": "accd495815245f7fe6e8f5781ba0a68160b5dd1949b0306add2acc82517101af",
+      "match": true
+    },
+    {
+      "path": "tests/v2-art.spec.ts",
+      "checkpoint": "c7878e7cad5542f8d879fc067dd76cb90b89caf5d2905759e7c22bee4973042d",
+      "current": "c7878e7cad5542f8d879fc067dd76cb90b89caf5d2905759e7c22bee4973042d",
+      "match": true
+    },
+    {
+      "path": "tests/v2-ui.spec.ts",
+      "checkpoint": "c2092085aeaf3accb1dbe2dbf3016276bff6265ab3c7866385e5133e52230a05",
+      "current": "c2092085aeaf3accb1dbe2dbf3016276bff6265ab3c7866385e5133e52230a05",
+      "match": true
+    }
+  ]
+}

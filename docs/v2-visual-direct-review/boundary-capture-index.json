@@ -1,0 +1,221 @@
+{
+  "scope": "Historical controlled boundary capture IDs; renderer unchanged, current reducer changed, current semantic pass NOT inferred",
+  "source": "docs/v2-ac4-boundaries-390-true.json",
+  "sourceSha256": "4b0f353c4e17505e5339d331c49358560f28c69c30ad8a72a8c290ef105a6024",
+  "trace": [
+    {
+      "id": "move-offered",
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-move-offered.png",
+      "screenshotSha256": "01e94cf1c9a3fefdab6f75e8845930bce0d2e101ebef79ff0c0e7397b5502e2a",
+      "input": "바람 소리를 듣고 싶어요.",
+      "location": "cafe",
+      "relationship": "strangers",
+      "dates": 0,
+      "activeDate": null,
+      "turn": 1,
+      "events": [
+        {
+          "kind": "invitation",
+          "subject": "npc",
+          "status": "offered",
+          "text": "유나가 옥상에서 바람 소리를 듣자고 제안한다.",
+          "reference": "",
+          "evidence": "",
+          "value": "rooftop",
+          "id": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+          "turn": 1
+        },
+        {
+          "id": "bc87c217-c8df-4962-bc10-f7540d4aa84e",
+          "turn": 1,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "유나가 헤드폰 한쪽을 내민다.",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ]
+    },
+    {
+      "id": "move-refused",
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-move-refused.png",
+      "screenshotSha256": "958fdd4b41d7317b7c383921b65404c84c732a4241f4cbb1f259433ec9ccda50",
+      "input": "옥상에는 안 갈래요.",
+      "location": "cafe",
+      "relationship": "strangers",
+      "dates": 0,
+      "activeDate": null,
+      "turn": 2,
+      "events": [
+        {
+          "kind": "invitation",
+          "subject": "player",
+          "status": "refused",
+          "text": "플레이어가 옥상 초대를 거절했다.",
+          "reference": "bf70c98e-ebb2-4819-94a5-2622b080fd84",
+          "evidence": "옥상에는 안 갈래요.",
+          "value": "rooftop",
+          "id": "8c404ff8-3e26-4250-802b-657d2ce4c3d9",
+          "turn": 2
+        },
+        {
+          "id": "fa297073-4fa3-4fb7-b33f-11f4d96bcd88",
+          "turn": 2,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "유나가 귀 가까이 손을 대고 듣는다.",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ]
+    },
+    {
+      "id": "move-accepted",
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-move-accepted.png",
+      "screenshotSha256": "212d67ddc782453f19b13f061ff0c40727737b466338ea1248b607184a459e62",
+      "input": "지금 옥상으로 가요.",
+      "location": "rooftop",
+      "relationship": "strangers",
+      "dates": 0,
+      "activeDate": null,
+      "turn": 3,
+      "events": [
+        {
+          "kind": "move",
+          "subject": "mutual",
+          "status": "accepted",
+          "text": "두 사람이 옥상으로 이동한다.",
+          "reference": "",
+          "evidence": "지금 옥상으로 가요.",
+          "value": "rooftop",
+          "id": "e0455c99-fa9a-4614-bc97-57277f4bb46f",
+          "turn": 3
+        },
+        {
+          "id": "399eb895-992f-41ec-8e0f-0b6ea524ee55",
+          "turn": 3,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "유나가 두 손을 모으고 미소 짓는다.",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ]
+    },
+    {
+      "id": "date-future-accepted",
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-date-future-accepted.png",
+      "screenshotSha256": "212d67ddc782453f19b13f061ff0c40727737b466338ea1248b607184a459e62",
+      "input": "내일 같이 데이트해요.",
+      "location": "rooftop",
+      "relationship": "couple",
+      "dates": 0,
+      "activeDate": null,
+      "turn": 12,
+      "events": [
+        {
+          "kind": "relationship",
+          "subject": "mutual",
+          "status": "accepted",
+          "text": "내일 데이트하기로 약속했다.",
+          "reference": "",
+          "evidence": "내일 같이 데이트해요.",
+          "value": "date",
+          "id": "2e553703-06d2-4e8d-8db2-eb2650899f0e",
+          "turn": 12
+        },
+        {
+          "id": "1e561e1d-e2f4-4592-8fd9-e970a7c36a0b",
+          "turn": 12,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "유나가 두 손을 모으고 미소 짓는다.",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ]
+    },
+    {
+      "id": "date-started",
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-date-started.png",
+      "screenshotSha256": "517ec51818e657bc1fc7f32b4860ffdf2ec345bb5204340bd42bc93105e1c182",
+      "input": "오늘 여기서 같이 데이트해요.",
+      "location": "rooftop",
+      "relationship": "couple",
+      "dates": 0,
+      "activeDate": {
+        "eventId": "f1464788-1771-40eb-a08f-d48775a78030",
+        "location": "rooftop",
+        "turn": 13
+      },
+      "turn": 13,
+      "events": [
+        {
+          "kind": "relationship",
+          "subject": "mutual",
+          "status": "accepted",
+          "text": "옥상에서 데이트를 시작했다.",
+          "reference": "",
+          "evidence": "오늘 여기서 같이 데이트해요.",
+          "value": "date",
+          "id": "f1464788-1771-40eb-a08f-d48775a78030",
+          "turn": 13
+        },
+        {
+          "id": "489ab717-8dda-44cd-9f00-aff3bb2ff0e1",
+          "turn": 13,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "유나가 입가에 손을 대고 웃는다.",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ]
+    },
+    {
+      "id": "date-participated",
+      "screenshot": "docs/qa-screenshots/v2-ac4-boundaries/390-reduced-date-participated.png",
+      "screenshotSha256": "23e955e046572cd85be242ea1a395aee5a3d3492c395cdb16449c2582b96d537",
+      "input": "지금 같이 종이배를 접고 있어요.",
+      "location": "rooftop",
+      "relationship": "couple",
+      "dates": 1,
+      "activeDate": null,
+      "turn": 14,
+      "events": [
+        {
+          "kind": "relationship",
+          "subject": "mutual",
+          "status": "fulfilled",
+          "text": "옥상 데이트에서 종이배를 함께 접었다.",
+          "reference": "f1464788-1771-40eb-a08f-d48775a78030",
+          "evidence": "지금 같이 종이배를 접고 있어요.",
+          "value": "date",
+          "id": "681dd823-4b06-446c-a2a9-b923f6551b74",
+          "turn": 14
+        },
+        {
+          "id": "d662efbd-d2cb-47cd-a1ee-608911c623f9",
+          "turn": 14,
+          "kind": "complication",
+          "subject": "npc",
+          "text": "유나가 종이배를 나란히 놓는다.",
+          "status": "fulfilled",
+          "reference": "",
+          "evidence": "",
+          "value": "action"
+        }
+      ]
+    }
+  ]
+}

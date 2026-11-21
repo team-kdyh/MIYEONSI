@@ -1,0 +1,1819 @@
+{
+  "scope": "Authored mock NPC dialogue; normal commitDialogue; no paid requests; logical viewport, no physical mobile keyboard.",
+  "width": 390,
+  "expected": [
+    "offer",
+    "smile",
+    "offer",
+    "farewell",
+    "neutral"
+  ],
+  "actual": [
+    "offer",
+    "offer",
+    "offer",
+    "farewell",
+    "farewell"
+  ],
+  "trace": [
+    {
+      "text": "어떤 소리를 녹음했어요?",
+      "response": {
+        "line": "카페 문에 달린 종이요. 한번 들어 볼래요?",
+        "actionBeats": [
+          "유나가 헤드폰 한쪽을 내민다."
+        ],
+        "pose": "offer",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "events": []
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        }
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "어떤 소리를 녹음했어요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "카페 문에 달린 종이요. 한번 들어 볼래요?"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "id": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "turn": 1,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰 한쪽을 내민다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "offer",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T06:45:46.644Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "eventId": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "version": 1,
+              "confirmedAt": "2026-11-21T06:45:46.646Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰 한쪽을 내민다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "어떤 소리를 녹음했어요?",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "카페 문에 달린 종이요. 한번 들어 볼래요?",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰 한쪽을 내민다.",
+              "version": 1,
+              "eventId": "50646f1e-64dc-44d9-9fcc-6fadfd02336e"
+            }
+          ],
+          "reply": "카페 문에 달린 종이요. 한번 들어 볼래요?",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "어떤 소리를 녹음했어요?"
+            }
+          ],
+          "actionBeats": [
+            "유나가 헤드폰 한쪽을 내민다."
+          ]
+        }
+      }
+    },
+    {
+      "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요.",
+      "response": {
+        "line": "좋아요. 그럼 잠깐 넣어 둘게요.",
+        "actionBeats": [
+          "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다."
+        ],
+        "pose": "offer",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "events": []
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "어떤 소리를 녹음했어요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "카페 문에 달린 종이요. 한번 들어 볼래요?"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "id": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "turn": 1,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰 한쪽을 내민다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "offer",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth"
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T06:45:46.644Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "eventId": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "version": 1,
+              "confirmedAt": "2026-11-21T06:45:46.646Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰 한쪽을 내민다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "어떤 소리를 녹음했어요?",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "카페 문에 달린 종이요. 한번 들어 볼래요?",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰 한쪽을 내민다.",
+              "version": 1,
+              "eventId": "50646f1e-64dc-44d9-9fcc-6fadfd02336e"
+            }
+          ],
+          "reply": "카페 문에 달린 종이요. 한번 들어 볼래요?",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "어떤 소리를 녹음했어요?"
+            }
+          ],
+          "actionBeats": [
+            "유나가 헤드폰 한쪽을 내민다."
+          ]
+        }
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "어떤 소리를 녹음했어요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "카페 문에 달린 종이요. 한번 들어 볼래요?"
+          },
+          {
+            "speaker": "당신",
+            "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요. 그럼 잠깐 넣어 둘게요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "id": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "turn": 1,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰 한쪽을 내민다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            },
+            {
+              "id": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "turn": 2,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "offer",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T06:45:46.644Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "eventId": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "version": 1,
+              "confirmedAt": "2026-11-21T06:45:46.646Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰 한쪽을 내민다."
+            },
+            {
+              "id": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "eventId": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "version": 2,
+              "confirmedAt": "2026-11-21T06:45:46.813Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "어떤 소리를 녹음했어요?",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "카페 문에 달린 종이요. 한번 들어 볼래요?",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰 한쪽을 내민다.",
+              "version": 1,
+              "eventId": "50646f1e-64dc-44d9-9fcc-6fadfd02336e"
+            },
+            {
+              "kind": "user_claim",
+              "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요. 그럼 잠깐 넣어 둘게요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다.",
+              "version": 2,
+              "eventId": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b"
+            }
+          ],
+          "reply": "좋아요. 그럼 잠깐 넣어 둘게요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "어떤 소리를 녹음했어요?"
+            },
+            {
+              "turn": 2,
+              "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요."
+            }
+          ],
+          "actionBeats": [
+            "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다."
+          ]
+        }
+      }
+    },
+    {
+      "text": "아, 그 종소리는 궁금하네요. 다시 들려줄래요?",
+      "response": {
+        "line": "그럼요. 아까 마지막에 바람 소리도 들어갔어요.",
+        "actionBeats": [
+          "유나가 헤드폰을 꺼내 한쪽을 다시 내민다."
+        ],
+        "pose": "offer",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "events": []
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "어떤 소리를 녹음했어요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "카페 문에 달린 종이요. 한번 들어 볼래요?"
+          },
+          {
+            "speaker": "당신",
+            "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요. 그럼 잠깐 넣어 둘게요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "id": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "turn": 1,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰 한쪽을 내민다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            },
+            {
+              "id": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "turn": 2,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "offer",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T06:45:46.644Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "eventId": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "version": 1,
+              "confirmedAt": "2026-11-21T06:45:46.646Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰 한쪽을 내민다."
+            },
+            {
+              "id": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "eventId": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "version": 2,
+              "confirmedAt": "2026-11-21T06:45:46.813Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "어떤 소리를 녹음했어요?",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "카페 문에 달린 종이요. 한번 들어 볼래요?",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰 한쪽을 내민다.",
+              "version": 1,
+              "eventId": "50646f1e-64dc-44d9-9fcc-6fadfd02336e"
+            },
+            {
+              "kind": "user_claim",
+              "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요. 그럼 잠깐 넣어 둘게요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다.",
+              "version": 2,
+              "eventId": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b"
+            }
+          ],
+          "reply": "좋아요. 그럼 잠깐 넣어 둘게요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "어떤 소리를 녹음했어요?"
+            },
+            {
+              "turn": 2,
+              "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요."
+            }
+          ],
+          "actionBeats": [
+            "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다."
+          ]
+        }
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "어떤 소리를 녹음했어요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "카페 문에 달린 종이요. 한번 들어 볼래요?"
+          },
+          {
+            "speaker": "당신",
+            "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요. 그럼 잠깐 넣어 둘게요."
+          },
+          {
+            "speaker": "당신",
+            "text": "아, 그 종소리는 궁금하네요. 다시 들려줄래요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "그럼요. 아까 마지막에 바람 소리도 들어갔어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "id": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "turn": 1,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰 한쪽을 내민다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            },
+            {
+              "id": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "turn": 2,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            },
+            {
+              "id": "2b0eb6c2-830a-4b74-9472-fd2be71926cc",
+              "turn": 3,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰을 꺼내 한쪽을 다시 내민다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "offer",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T06:45:46.644Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "eventId": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "version": 1,
+              "confirmedAt": "2026-11-21T06:45:46.646Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰 한쪽을 내민다."
+            },
+            {
+              "id": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "eventId": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "version": 2,
+              "confirmedAt": "2026-11-21T06:45:46.813Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다."
+            },
+            {
+              "id": "2b0eb6c2-830a-4b74-9472-fd2be71926cc",
+              "eventId": "2b0eb6c2-830a-4b74-9472-fd2be71926cc",
+              "version": 3,
+              "confirmedAt": "2026-11-21T06:45:46.973Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰을 꺼내 한쪽을 다시 내민다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "어떤 소리를 녹음했어요?",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "카페 문에 달린 종이요. 한번 들어 볼래요?",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰 한쪽을 내민다.",
+              "version": 1,
+              "eventId": "50646f1e-64dc-44d9-9fcc-6fadfd02336e"
+            },
+            {
+              "kind": "user_claim",
+              "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요. 그럼 잠깐 넣어 둘게요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다.",
+              "version": 2,
+              "eventId": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b"
+            },
+            {
+              "kind": "user_claim",
+              "text": "아, 그 종소리는 궁금하네요. 다시 들려줄래요?",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "그럼요. 아까 마지막에 바람 소리도 들어갔어요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰을 꺼내 한쪽을 다시 내민다.",
+              "version": 3,
+              "eventId": "2b0eb6c2-830a-4b74-9472-fd2be71926cc"
+            }
+          ],
+          "reply": "그럼요. 아까 마지막에 바람 소리도 들어갔어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "어떤 소리를 녹음했어요?"
+            },
+            {
+              "turn": 2,
+              "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요."
+            },
+            {
+              "turn": 3,
+              "text": "아, 그 종소리는 궁금하네요. 다시 들려줄래요?"
+            }
+          ],
+          "actionBeats": [
+            "유나가 헤드폰을 꺼내 한쪽을 다시 내민다."
+          ]
+        }
+      }
+    },
+    {
+      "text": "그 테이프는 뭐예요?",
+      "response": {
+        "line": "예전에 녹음한 골목 소리예요. 잠깐 볼래요?",
+        "actionBeats": [
+          "유나가 테이프를 손바닥에 올려 내민다."
+        ],
+        "pose": "farewell",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "events": []
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "어떤 소리를 녹음했어요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "카페 문에 달린 종이요. 한번 들어 볼래요?"
+          },
+          {
+            "speaker": "당신",
+            "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요. 그럼 잠깐 넣어 둘게요."
+          },
+          {
+            "speaker": "당신",
+            "text": "아, 그 종소리는 궁금하네요. 다시 들려줄래요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "그럼요. 아까 마지막에 바람 소리도 들어갔어요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "id": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "turn": 1,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰 한쪽을 내민다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            },
+            {
+              "id": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "turn": 2,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            },
+            {
+              "id": "2b0eb6c2-830a-4b74-9472-fd2be71926cc",
+              "turn": 3,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰을 꺼내 한쪽을 다시 내민다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "offer",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T06:45:46.644Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "eventId": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "version": 1,
+              "confirmedAt": "2026-11-21T06:45:46.646Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰 한쪽을 내민다."
+            },
+            {
+              "id": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "eventId": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "version": 2,
+              "confirmedAt": "2026-11-21T06:45:46.813Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다."
+            },
+            {
+              "id": "2b0eb6c2-830a-4b74-9472-fd2be71926cc",
+              "eventId": "2b0eb6c2-830a-4b74-9472-fd2be71926cc",
+              "version": 3,
+              "confirmedAt": "2026-11-21T06:45:46.973Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰을 꺼내 한쪽을 다시 내민다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "어떤 소리를 녹음했어요?",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "카페 문에 달린 종이요. 한번 들어 볼래요?",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰 한쪽을 내민다.",
+              "version": 1,
+              "eventId": "50646f1e-64dc-44d9-9fcc-6fadfd02336e"
+            },
+            {
+              "kind": "user_claim",
+              "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요. 그럼 잠깐 넣어 둘게요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다.",
+              "version": 2,
+              "eventId": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b"
+            },
+            {
+              "kind": "user_claim",
+              "text": "아, 그 종소리는 궁금하네요. 다시 들려줄래요?",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "그럼요. 아까 마지막에 바람 소리도 들어갔어요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰을 꺼내 한쪽을 다시 내민다.",
+              "version": 3,
+              "eventId": "2b0eb6c2-830a-4b74-9472-fd2be71926cc"
+            }
+          ],
+          "reply": "그럼요. 아까 마지막에 바람 소리도 들어갔어요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "어떤 소리를 녹음했어요?"
+            },
+            {
+              "turn": 2,
+              "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요."
+            },
+            {
+              "turn": 3,
+              "text": "아, 그 종소리는 궁금하네요. 다시 들려줄래요?"
+            }
+          ],
+          "actionBeats": [
+            "유나가 헤드폰을 꺼내 한쪽을 다시 내민다."
+          ]
+        }
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "어떤 소리를 녹음했어요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "카페 문에 달린 종이요. 한번 들어 볼래요?"
+          },
+          {
+            "speaker": "당신",
+            "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요. 그럼 잠깐 넣어 둘게요."
+          },
+          {
+            "speaker": "당신",
+            "text": "아, 그 종소리는 궁금하네요. 다시 들려줄래요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "그럼요. 아까 마지막에 바람 소리도 들어갔어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "그 테이프는 뭐예요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "예전에 녹음한 골목 소리예요. 잠깐 볼래요?"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 4,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "id": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "turn": 1,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰 한쪽을 내민다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            },
+            {
+              "id": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "turn": 2,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            },
+            {
+              "id": "2b0eb6c2-830a-4b74-9472-fd2be71926cc",
+              "turn": 3,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰을 꺼내 한쪽을 다시 내민다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            },
+            {
+              "id": "d38ee114-9152-47fa-9e22-0346d74d4277",
+              "turn": 4,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 테이프를 손바닥에 올려 내민다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "farewell",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 4,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T06:45:46.644Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "eventId": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "version": 1,
+              "confirmedAt": "2026-11-21T06:45:46.646Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰 한쪽을 내민다."
+            },
+            {
+              "id": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "eventId": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "version": 2,
+              "confirmedAt": "2026-11-21T06:45:46.813Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다."
+            },
+            {
+              "id": "2b0eb6c2-830a-4b74-9472-fd2be71926cc",
+              "eventId": "2b0eb6c2-830a-4b74-9472-fd2be71926cc",
+              "version": 3,
+              "confirmedAt": "2026-11-21T06:45:46.973Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰을 꺼내 한쪽을 다시 내민다."
+            },
+            {
+              "id": "d38ee114-9152-47fa-9e22-0346d74d4277",
+              "eventId": "d38ee114-9152-47fa-9e22-0346d74d4277",
+              "version": 4,
+              "confirmedAt": "2026-11-21T06:45:47.121Z",
+              "kind": "scene",
+              "text": "유나가 테이프를 손바닥에 올려 내민다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "어떤 소리를 녹음했어요?",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "카페 문에 달린 종이요. 한번 들어 볼래요?",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰 한쪽을 내민다.",
+              "version": 1,
+              "eventId": "50646f1e-64dc-44d9-9fcc-6fadfd02336e"
+            },
+            {
+              "kind": "user_claim",
+              "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요. 그럼 잠깐 넣어 둘게요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다.",
+              "version": 2,
+              "eventId": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b"
+            },
+            {
+              "kind": "user_claim",
+              "text": "아, 그 종소리는 궁금하네요. 다시 들려줄래요?",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "그럼요. 아까 마지막에 바람 소리도 들어갔어요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰을 꺼내 한쪽을 다시 내민다.",
+              "version": 3,
+              "eventId": "2b0eb6c2-830a-4b74-9472-fd2be71926cc"
+            },
+            {
+              "kind": "user_claim",
+              "text": "그 테이프는 뭐예요?",
+              "version": 4
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "예전에 녹음한 골목 소리예요. 잠깐 볼래요?",
+              "version": 4,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 테이프를 손바닥에 올려 내민다.",
+              "version": 4,
+              "eventId": "d38ee114-9152-47fa-9e22-0346d74d4277"
+            }
+          ],
+          "reply": "예전에 녹음한 골목 소리예요. 잠깐 볼래요?",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "어떤 소리를 녹음했어요?"
+            },
+            {
+              "turn": 2,
+              "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요."
+            },
+            {
+              "turn": 3,
+              "text": "아, 그 종소리는 궁금하네요. 다시 들려줄래요?"
+            },
+            {
+              "turn": 4,
+              "text": "그 테이프는 뭐예요?"
+            }
+          ],
+          "actionBeats": [
+            "유나가 테이프를 손바닥에 올려 내민다."
+          ]
+        }
+      }
+    },
+    {
+      "text": "테이프는 괜찮아요. 가방에 넣어 둬요.",
+      "response": {
+        "line": "알겠어요. 잃어버리기 전에 넣어 둬야겠네요.",
+        "actionBeats": [
+          "유나가 테이프를 가방에 넣고 손을 내려놓는다."
+        ],
+        "pose": "farewell",
+        "emotion": "차분함",
+        "musicMood": "cafe-warmth",
+        "recall": [],
+        "conjecture": "",
+        "events": []
+      },
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "어떤 소리를 녹음했어요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "카페 문에 달린 종이요. 한번 들어 볼래요?"
+          },
+          {
+            "speaker": "당신",
+            "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요. 그럼 잠깐 넣어 둘게요."
+          },
+          {
+            "speaker": "당신",
+            "text": "아, 그 종소리는 궁금하네요. 다시 들려줄래요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "그럼요. 아까 마지막에 바람 소리도 들어갔어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "그 테이프는 뭐예요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "예전에 녹음한 골목 소리예요. 잠깐 볼래요?"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 4,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "id": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "turn": 1,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰 한쪽을 내민다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            },
+            {
+              "id": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "turn": 2,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            },
+            {
+              "id": "2b0eb6c2-830a-4b74-9472-fd2be71926cc",
+              "turn": 3,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰을 꺼내 한쪽을 다시 내민다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            },
+            {
+              "id": "d38ee114-9152-47fa-9e22-0346d74d4277",
+              "turn": 4,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 테이프를 손바닥에 올려 내민다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "farewell",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 4,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T06:45:46.644Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "eventId": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "version": 1,
+              "confirmedAt": "2026-11-21T06:45:46.646Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰 한쪽을 내민다."
+            },
+            {
+              "id": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "eventId": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "version": 2,
+              "confirmedAt": "2026-11-21T06:45:46.813Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다."
+            },
+            {
+              "id": "2b0eb6c2-830a-4b74-9472-fd2be71926cc",
+              "eventId": "2b0eb6c2-830a-4b74-9472-fd2be71926cc",
+              "version": 3,
+              "confirmedAt": "2026-11-21T06:45:46.973Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰을 꺼내 한쪽을 다시 내민다."
+            },
+            {
+              "id": "d38ee114-9152-47fa-9e22-0346d74d4277",
+              "eventId": "d38ee114-9152-47fa-9e22-0346d74d4277",
+              "version": 4,
+              "confirmedAt": "2026-11-21T06:45:47.121Z",
+              "kind": "scene",
+              "text": "유나가 테이프를 손바닥에 올려 내민다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "어떤 소리를 녹음했어요?",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "카페 문에 달린 종이요. 한번 들어 볼래요?",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰 한쪽을 내민다.",
+              "version": 1,
+              "eventId": "50646f1e-64dc-44d9-9fcc-6fadfd02336e"
+            },
+            {
+              "kind": "user_claim",
+              "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요. 그럼 잠깐 넣어 둘게요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다.",
+              "version": 2,
+              "eventId": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b"
+            },
+            {
+              "kind": "user_claim",
+              "text": "아, 그 종소리는 궁금하네요. 다시 들려줄래요?",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "그럼요. 아까 마지막에 바람 소리도 들어갔어요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰을 꺼내 한쪽을 다시 내민다.",
+              "version": 3,
+              "eventId": "2b0eb6c2-830a-4b74-9472-fd2be71926cc"
+            },
+            {
+              "kind": "user_claim",
+              "text": "그 테이프는 뭐예요?",
+              "version": 4
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "예전에 녹음한 골목 소리예요. 잠깐 볼래요?",
+              "version": 4,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 테이프를 손바닥에 올려 내민다.",
+              "version": 4,
+              "eventId": "d38ee114-9152-47fa-9e22-0346d74d4277"
+            }
+          ],
+          "reply": "예전에 녹음한 골목 소리예요. 잠깐 볼래요?",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "어떤 소리를 녹음했어요?"
+            },
+            {
+              "turn": 2,
+              "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요."
+            },
+            {
+              "turn": 3,
+              "text": "아, 그 종소리는 궁금하네요. 다시 들려줄래요?"
+            },
+            {
+              "turn": 4,
+              "text": "그 테이프는 뭐예요?"
+            }
+          ],
+          "actionBeats": [
+            "유나가 테이프를 손바닥에 올려 내민다."
+          ]
+        }
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "어떤 소리를 녹음했어요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "카페 문에 달린 종이요. 한번 들어 볼래요?"
+          },
+          {
+            "speaker": "당신",
+            "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요. 그럼 잠깐 넣어 둘게요."
+          },
+          {
+            "speaker": "당신",
+            "text": "아, 그 종소리는 궁금하네요. 다시 들려줄래요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "그럼요. 아까 마지막에 바람 소리도 들어갔어요."
+          },
+          {
+            "speaker": "당신",
+            "text": "그 테이프는 뭐예요?"
+          },
+          {
+            "speaker": "서유나",
+            "text": "예전에 녹음한 골목 소리예요. 잠깐 볼래요?"
+          },
+          {
+            "speaker": "당신",
+            "text": "테이프는 괜찮아요. 가방에 넣어 둬요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "알겠어요. 잃어버리기 전에 넣어 둬야겠네요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 5,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "id": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "turn": 1,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰 한쪽을 내민다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            },
+            {
+              "id": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "turn": 2,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            },
+            {
+              "id": "2b0eb6c2-830a-4b74-9472-fd2be71926cc",
+              "turn": 3,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 헤드폰을 꺼내 한쪽을 다시 내민다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            },
+            {
+              "id": "d38ee114-9152-47fa-9e22-0346d74d4277",
+              "turn": 4,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 테이프를 손바닥에 올려 내민다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            },
+            {
+              "id": "d7f6acd1-4ff8-4358-9c0f-4ccac9118538",
+              "turn": 5,
+              "kind": "complication",
+              "subject": "npc",
+              "text": "유나가 테이프를 가방에 넣고 손을 내려놓는다.",
+              "status": "fulfilled",
+              "reference": "",
+              "evidence": "",
+              "value": "action"
+            }
+          ],
+          "pose": "farewell",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 5,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T06:45:46.644Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "eventId": "50646f1e-64dc-44d9-9fcc-6fadfd02336e",
+              "version": 1,
+              "confirmedAt": "2026-11-21T06:45:46.646Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰 한쪽을 내민다."
+            },
+            {
+              "id": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "eventId": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b",
+              "version": 2,
+              "confirmedAt": "2026-11-21T06:45:46.813Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다."
+            },
+            {
+              "id": "2b0eb6c2-830a-4b74-9472-fd2be71926cc",
+              "eventId": "2b0eb6c2-830a-4b74-9472-fd2be71926cc",
+              "version": 3,
+              "confirmedAt": "2026-11-21T06:45:46.973Z",
+              "kind": "scene",
+              "text": "유나가 헤드폰을 꺼내 한쪽을 다시 내민다."
+            },
+            {
+              "id": "d38ee114-9152-47fa-9e22-0346d74d4277",
+              "eventId": "d38ee114-9152-47fa-9e22-0346d74d4277",
+              "version": 4,
+              "confirmedAt": "2026-11-21T06:45:47.121Z",
+              "kind": "scene",
+              "text": "유나가 테이프를 손바닥에 올려 내민다."
+            },
+            {
+              "id": "d7f6acd1-4ff8-4358-9c0f-4ccac9118538",
+              "eventId": "d7f6acd1-4ff8-4358-9c0f-4ccac9118538",
+              "version": 5,
+              "confirmedAt": "2026-11-21T06:45:47.284Z",
+              "kind": "scene",
+              "text": "유나가 테이프를 가방에 넣고 손을 내려놓는다."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "어떤 소리를 녹음했어요?",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "카페 문에 달린 종이요. 한번 들어 볼래요?",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰 한쪽을 내민다.",
+              "version": 1,
+              "eventId": "50646f1e-64dc-44d9-9fcc-6fadfd02336e"
+            },
+            {
+              "kind": "user_claim",
+              "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요. 그럼 잠깐 넣어 둘게요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰을 가방에 넣고 고개를 끄덕인다.",
+              "version": 2,
+              "eventId": "b460c8c4-0ade-4d6e-b118-0cd5d0f6529b"
+            },
+            {
+              "kind": "user_claim",
+              "text": "아, 그 종소리는 궁금하네요. 다시 들려줄래요?",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "그럼요. 아까 마지막에 바람 소리도 들어갔어요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 헤드폰을 꺼내 한쪽을 다시 내민다.",
+              "version": 3,
+              "eventId": "2b0eb6c2-830a-4b74-9472-fd2be71926cc"
+            },
+            {
+              "kind": "user_claim",
+              "text": "그 테이프는 뭐예요?",
+              "version": 4
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "예전에 녹음한 골목 소리예요. 잠깐 볼래요?",
+              "version": 4,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 테이프를 손바닥에 올려 내민다.",
+              "version": 4,
+              "eventId": "d38ee114-9152-47fa-9e22-0346d74d4277"
+            },
+            {
+              "kind": "user_claim",
+              "text": "테이프는 괜찮아요. 가방에 넣어 둬요.",
+              "version": 5
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "알겠어요. 잃어버리기 전에 넣어 둬야겠네요.",
+              "version": 5,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "유나가 테이프를 가방에 넣고 손을 내려놓는다.",
+              "version": 5,
+              "eventId": "d7f6acd1-4ff8-4358-9c0f-4ccac9118538"
+            }
+          ],
+          "reply": "알겠어요. 잃어버리기 전에 넣어 둬야겠네요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "어떤 소리를 녹음했어요?"
+            },
+            {
+              "turn": 2,
+              "text": "지금은 헤드폰 안 쓸래요. 그냥 이야기해요."
+            },
+            {
+              "turn": 3,
+              "text": "아, 그 종소리는 궁금하네요. 다시 들려줄래요?"
+            },
+            {
+              "turn": 4,
+              "text": "그 테이프는 뭐예요?"
+            },
+            {
+              "turn": 5,
+              "text": "테이프는 괜찮아요. 가방에 넣어 둬요."
+            }
+          ],
+          "actionBeats": [
+            "유나가 테이프를 가방에 넣고 손을 내려놓는다."
+          ]
+        }
+      }
+    }
+  ]
+}

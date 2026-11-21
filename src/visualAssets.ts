@@ -44,13 +44,31 @@ export function spriteCell(mode:Mode,pose:string,legacyExpression=0):SpriteCell{
 }
 // Props in the art are literal. An abstract 'offer' must not conjure headphones
 // while the committed beat describes a paper boat or a cup instead.
+function withdrawnProp(action:string,prop:RegExp):boolean{
+ // Deliberately bounded Korean action matching, not an interpretation of consent.
+ // The latest named prop anchors the action so putting a different object away
+ // does not erase the offered one. A subsequent re-offer restores its illustration.
+ const names=[...action.matchAll(/헤드폰|이어컵|테이프|카세트|녹음기/g)];
+ let withdrawn=false;
+ for(let i=0;i<names.length;i++){
+  const name=names[i];if(!prop.test(name[0]))continue;
+  const phrase=action.slice(name.index!+name[0].length,names[i+1]?.index??action.length);
+  const moves=[...phrase.matchAll(/넣|내려놓|감추|감춘|거두|거둔|치우|치운|내민|내밀|건네|건넨|안는다|들어 보/g)];
+  for(const move of moves){
+   const tail=phrase.slice(move.index!+move[0].length);
+   if(/^(?:지\s*(?:않|못|말)|으?려|을까|을지)/.test(tail))continue;
+   withdrawn=/^(넣|내려놓|감추|감춘|거두|거둔|치우|치운)/.test(move[0]);
+  }
+ }
+ return withdrawn;
+}
 export function presentationPose(mode:Mode,pose:string,beats:readonly string[]=[]):string{
  if(!beats.length)return pose;
  const action=beats.join(' ');
  if(mode==='romance'){
-  if(pose==='offer'&&!/헤드폰|이어컵/.test(action))return 'smile';
-  if(pose==='farewell'&&!/테이프|카세트/.test(action))return 'neutral';
-  if(pose==='concern'&&(!/녹음기/.test(action)||/녹음기.{0,20}(넣|내려놓|감추)/.test(action)))return 'thinking';
+  if(pose==='offer'&&(!/헤드폰|이어컵/.test(action)||withdrawnProp(action,/헤드폰|이어컵/)))return 'smile';
+  if(pose==='farewell'&&(!/테이프|카세트/.test(action)||withdrawnProp(action,/테이프|카세트/)))return 'neutral';
+  if(pose==='concern'&&(!/녹음기/.test(action)||withdrawnProp(action,/녹음기/)))return 'thinking';
  }
  return pose;
 }

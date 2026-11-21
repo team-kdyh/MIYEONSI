@@ -1,0 +1,68 @@
+{
+  "at": "2026-11-21T06:17:14.348Z",
+  "scope": "Original integrated server and built frontend; existing server credential stays private; no API route mocks; no dialogue turn sent",
+  "summary": {
+    "title": "AFTER HOURS · 퇴근 후에",
+    "providerLabel": " OPENAI · 서버 연결 모드 AI 캐릭터 대화",
+    "inputVisible": true,
+    "choices": 0
+  },
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3001",
+      "path": "/"
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3001",
+      "path": "/assets/index-Mjy-n9FF.js"
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3001",
+      "path": "/assets/index-LjVWzUeO.css"
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3001",
+      "path": "/api/state"
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3001",
+      "path": "/assets/cafe.png"
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3001",
+      "path": "/assets/yuna-expressions.png"
+    },
+    {
+      "method": "POST",
+      "origin": "http://127.0.0.1:3001",
+      "path": "/api/new"
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3001",
+      "path": "/assets/audio-v2/cafe-warmth.ogg"
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3001",
+      "path": "/assets/chime.wav"
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3001",
+      "path": "/assets/audio-v2/cafe-warmth.ogg"
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3001",
+      "path": "/assets/audio-v2/cafe-warmth.ogg"
+    }
+  ]
+}

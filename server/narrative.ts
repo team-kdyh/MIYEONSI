@@ -1,3 +1,4 @@
+import type {RevisionInput} from './commitment-revisions.ts';
 import {applyProgress, registerCommitments, validateCommitmentReply, commitmentSchema, type Commitment, type CommitmentOffer, type ProgressInput, type AmendmentInput} from './commitments.ts';
 import {randomUUID} from 'node:crypto';
 import type {DialogueGame} from './dialogue.ts';
@@ -10,7 +11,7 @@ export const moods=['office-groove','office-pressure','cafe-warmth','rooftop-hea
 export const kinds=['detail','promise','invitation','move','relationship','complication','clue','concession','resolution'] as const;
 export type EventProposal={kind:typeof kinds[number];subject:'npc'|'player'|'mutual'|'world';text:string;status:'offered'|'accepted'|'refused'|'fulfilled';reference:string;evidence:string;value:string};
 export type StoryEvent=EventProposal&{id:string;turn:number};
-export type NarrativeReply={commitmentOffers?:CommitmentOffer[];commitmentProgress?:ProgressInput[];commitmentAmendments?:AmendmentInput[];line:string;actionBeats:string[];emotion:string;pose:typeof poses[number];musicMood:typeof moods[number];events:EventProposal[];recall:string[];conjecture:string};
+export type NarrativeReply={commitmentRevisions?:RevisionInput[];commitmentOffers?:CommitmentOffer[];commitmentProgress?:ProgressInput[];commitmentAmendments?:AmendmentInput[];line:string;actionBeats:string[];emotion:string;pose:typeof poses[number];musicMood:typeof moods[number];events:EventProposal[];recall:string[];conjecture:string};
 export type NarrativeState={legacyCommitmentAssessments?:{eventId:string;result:'insufficient';reason:string}[];commitments?:Commitment[];format:2;turn:number;location:typeof locations[number];relationship:'strangers'|'familiar'|'attracted'|'confessed'|'couple'|'apart';dates:number;activeDate?:{eventId:string;location:typeof locations[number];turn:number};events:StoryEvent[];pose:typeof poses[number];emotion:string;musicMood:typeof moods[number]};
 export function narrative(g:Game):NarrativeState {
  if(g.narrative){
@@ -47,7 +48,7 @@ export function narrativeSchema(game?:Game){const schema={type:'object',addition
 const bounded=(s:unknown,n:number)=>typeof s==='string'&&s.length<=n;
 export function validateNarrative(r:unknown):NarrativeReply {
  const v=r as NarrativeReply;
- if(!v||typeof v!=='object'||Object.keys(v).filter(k=>!['commitmentOffers','commitmentProgress','commitmentAmendments'].includes(k)).sort().join(',')!=='actionBeats,conjecture,emotion,events,line,musicMood,pose,recall'||!bounded(v.line,600)||!v.line.trim()||!bounded(v.emotion,40)||!poses.includes(v.pose)||!moods.includes(v.musicMood)||v.conjecture!==''||!Array.isArray(v.actionBeats)||v.actionBeats.length>3||v.actionBeats.some(a=>!bounded(a,120))||!Array.isArray(v.recall)||v.recall.length>3||v.recall.some(a=>!bounded(a,100))||!Array.isArray(v.events)||v.events.length>5)throw Error('잘못된 이야기 응답');
+ if(!v||typeof v!=='object'||Object.keys(v).filter(k=>!['commitmentOffers','commitmentProgress','commitmentAmendments','commitmentRevisions'].includes(k)).sort().join(',')!=='actionBeats,conjecture,emotion,events,line,musicMood,pose,recall'||!bounded(v.line,600)||!v.line.trim()||!bounded(v.emotion,40)||!poses.includes(v.pose)||!moods.includes(v.musicMood)||v.conjecture!==''||!Array.isArray(v.actionBeats)||v.actionBeats.length>3||v.actionBeats.some(a=>!bounded(a,120))||!Array.isArray(v.recall)||v.recall.length>3||v.recall.some(a=>!bounded(a,100))||!Array.isArray(v.events)||v.events.length>5)throw Error('잘못된 이야기 응답');
  for(const e of v.events)if(!e||Object.keys(e).sort().join(',')!=='evidence,kind,reference,status,subject,text,value'||!kinds.includes(e.kind)||!['npc','player','mutual','world'].includes(e.subject)||!['offered','accepted','refused','fulfilled'].includes(e.status)||!bounded(e.text,180)||!e.text.trim()||!bounded(e.reference,100)||!bounded(e.evidence,500)||!bounded(e.value,100))throw Error('잘못된 사건 제안');
  validateCommitmentReply(v);
  // Actions are NPC/world narration, never a second channel for writing the player's actions.
@@ -233,7 +234,7 @@ export function reconcile(game:Game,text:string,reply:NarrativeReply):{game:Game
  const statements=(game as DialogueGame).dialogue?.playerStatements?.map(p=>p.text)??(game as DialogueGame).dialogue?.ledger.filter(p=>p.kind==='user_claim').map(p=>p.text)??[];
  const accepted:StoryEvent[]=[],names=playerNames([...prior.events,...reply.events.filter(e=>e.evidence.trim().length>=2&&text.includes(e.evidence))],[...statements,text]);
  if(reply.actionBeats.some(beat=>writesPlayer(beat,names)))throw Error('플레이어 행동을 대신 작성할 수 없습니다.');
- if(injection(text)&&((reply.commitmentProgress?.length??0)+(reply.commitmentAmendments?.length??0)+(reply.commitmentOffers?.length??0)))throw Error('약속 근거가 유효하지 않습니다.');
+ if(injection(text)&&((reply.commitmentProgress?.length??0)+(reply.commitmentAmendments?.length??0)+(reply.commitmentOffers?.length??0)+(reply.commitmentRevisions?.length??0)))throw Error('약속 근거가 유효하지 않습니다.');
  // A delegation quote keeps its entire sentence, including same-sentence denial,
  // without treating an unrelated earlier refusal as refusal of this amendment.
  applyProgress(s,text,reply,accepted,names,performedCommitment,(source,quote)=>consent(consentClause(source,quote,true)));
@@ -255,6 +256,8 @@ export function reconcile(game:Game,text:string,reply:NarrativeReply):{game:Game
    if(prior.events.some(p=>sameEvent(p,e))){handled++;continue;}
    const origin=commitmentOrigin(ref,prior.events);
    if(!origin)continue;
+   const existingContract=prior.commitments?.find(c=>c.promiseId===origin.id);
+   if(e.kind==='promise'&&e.status==='accepted'&&existingContract&&e.text!==origin.text&&!prior.events.some(p=>existingContract.acceptanceIds.includes(p.id)&&p.text===e.text))throw Error('이미 수락한 약속의 다른 내용은 commitmentRevisions로 명시해야 합니다.');
    if(e.status==='accepted'&&s.commitments?.some(c=>c.promiseId===origin.id)&&(!grounded||!consent(clause)))continue;
    if(prior.events.some(p=>['fulfilled','refused'].includes(p.status)&&commitmentOrigin(p,prior.events)?.id===origin.id))continue;
    if(e.status==='fulfilled'){

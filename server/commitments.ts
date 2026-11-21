@@ -1,5 +1,6 @@
 import {randomUUID} from 'node:crypto';
 import type {StoryEvent, NarrativeReply, NarrativeState} from './narrative.ts';
+import {applyRevisions, validRevisions, originalConditions, contractVersion, type RevisionRecord} from './commitment-revisions.ts';
 
 type Actor='player'|'npc';
 // Fail atomically at capacity; never evict obligations or their evidence to fit.
@@ -8,13 +9,17 @@ export type ConditionInput={performer:Actor;target:string;action:string};
 export type CommitmentOffer={eventIndex:number;conditions:ConditionInput[]};
 export type ProgressInput={promiseId:string;conditionId:string;performer:Actor;source:'player'|'line'|'action'|'event';actionIndex:number;eventId:string;quote:string};
 export type AmendmentInput={promiseId:string;conditionId:string;performer:Actor;playerQuote:string;npcQuote:string};
-export type Commitment={promiseId:string;originalText:string;acceptanceIds:string[];conditions:(ConditionInput&{id:string;originalPerformer:Actor;evidenceIds:string[]})[];amendments:(AmendmentInput&{id:string;previousPerformer:Actor;turn:number})[];assessments:{turn:number;result:'pending'|'partial'|'completed'|'insufficient';conditions:{id:string;evidenceIds:string[]}[];reason:string}[];status:'pending'|'partial'|'completed'|'insufficient'};
+export type Commitment={revisionVersion?:number;revisions?:RevisionRecord[];promiseId:string;originalText:string;acceptanceIds:string[];conditions:(ConditionInput&{id:string;originalPerformer:Actor;evidenceIds:string[]})[];amendments:(AmendmentInput&{id:string;previousPerformer:Actor;turn:number})[];assessments:{turn:number;result:'pending'|'partial'|'completed'|'insufficient';conditions:{id:string;evidenceIds:string[]}[];reason:string}[];status:'pending'|'partial'|'completed'|'insufficient'};
 function fail():never {throw Error('약속 조건 또는 이행 근거를 확인하지 못했습니다.');}
 const actor=(v:unknown):v is Actor=>v==='player'||v==='npc';
 const short=(v:unknown,n=180):v is string=>typeof v==='string'&&v.trim().length>0&&v.length<=n;
 const keys=(v:object,names:string[])=>Object.keys(v).sort().join()===names.sort().join();
 export function validateCommitmentReply(r:NarrativeReply){
- for(const field of ['commitmentOffers','commitmentProgress','commitmentAmendments'] as const){const rows=r[field];if(rows!==undefined&&(!Array.isArray(rows)||rows.length>8))fail();}
+ for(const field of ['commitmentOffers','commitmentProgress','commitmentAmendments','commitmentRevisions'] as const){const rows=r[field];if(rows!==undefined&&(!Array.isArray(rows)||rows.length>8))fail();}
+ for(const a of r.commitmentRevisions??[]){
+  if(!a||!keys(a,['promiseId','conditionId','expectedVersion','replacement','playerQuote','npcQuote'])||!short(a.promiseId,100)||!short(a.conditionId,100)||!Number.isInteger(a.expectedVersion)||a.expectedVersion<1||!short(a.playerQuote,500)||!short(a.npcQuote,500))fail();
+  const c=a.replacement;if(!c||!keys(c,['performer','target','action'])||!actor(c.performer)||!short(c.target)||!short(c.action))fail();
+ }
  for(const o of r.commitmentOffers??[]){
   if(!o||!keys(o,['eventIndex','conditions'])||!Number.isInteger(o.eventIndex)||o.eventIndex<0||o.eventIndex>=r.events.length||!Array.isArray(o.conditions)||!o.conditions.length||o.conditions.length>6)fail();
   for(const c of o.conditions)if(!c||!keys(c,['performer','target','action'])||!actor(c.performer)||!short(c.target)||!short(c.action))fail();
@@ -30,6 +35,7 @@ const object=(properties:Record<string,unknown>)=>({type:'object',additionalProp
 const str=(maxLength=180)=>({type:'string',minLength:1,maxLength});
 const who={type:'string',enum:['player','npc']};
 export const commitmentSchema={
+ commitmentRevisions:{type:'array',maxItems:8,items:object({promiseId:str(100),conditionId:str(100),expectedVersion:{type:'integer',minimum:1,maximum:33},replacement:object({performer:who,target:str(),action:str()}),playerQuote:str(500),npcQuote:str(500)})},
  commitmentOffers:{type:'array',maxItems:5,items:object({eventIndex:{type:'integer',minimum:0,maximum:4},conditions:{type:'array',minItems:1,maxItems:6,items:object({performer:who,target:str(),action:str()})}})},
  commitmentProgress:{type:'array',maxItems:8,items:object({promiseId:str(100),conditionId:str(100),performer:who,source:{type:'string',enum:['player','line','action','event']},actionIndex:{type:'integer'},eventId:{type:'string',maxLength:100},quote:str(500)})},
  commitmentAmendments:{type:'array',maxItems:8,items:object({promiseId:str(100),conditionId:str(100),performer:who,playerQuote:str(500),npcQuote:str(500)})}
@@ -89,18 +95,18 @@ export function validCommitments(s:NarrativeState):boolean{
  try{for(const c of s.commitments){
   const origin=s.events.find(e=>e.id===c.promiseId&&e.kind==='promise'&&e.status==='offered');
   if(!origin||ids.has(c.promiseId)||c.originalText!==origin.text||!Array.isArray(c.conditions)||!c.conditions.length||c.conditions.length>6||!Array.isArray(c.acceptanceIds)||!Array.isArray(c.amendments)||!Array.isArray(c.assessments))return false;
-  if(!coversOriginal(origin,c.conditions.map(condition=>({...condition,performer:condition.originalPerformer}))))return false;
+  if(!validRevisions(c,s)||!coversOriginal(origin,originalConditions(c)))return false;
   ids.add(c.promiseId);
   if(c.acceptanceIds.length>commitmentLimits.acceptances||c.amendments.length>commitmentLimits.amendments||c.assessments.length>commitmentLimits.assessments)return false;
   if(c.acceptanceIds.some(id=>!s.events.some(e=>e.id===id&&e.kind==='promise'&&e.status==='accepted'&&(e.reference===c.promiseId||c.acceptanceIds.includes(e.reference)))))return false;
   const conditionIds=new Set<string>();
   for(const condition of c.conditions){
-   if(!short(condition.id,100)||conditionIds.has(condition.id)||!actor(condition.performer)||!short(condition.target)||!short(condition.action)||!origin.text.includes(condition.action)||!Array.isArray(condition.evidenceIds)||new Set(condition.evidenceIds).size!==condition.evidenceIds.length)return false;
+   if(!short(condition.id,100)||conditionIds.has(condition.id)||!actor(condition.performer)||!short(condition.target)||!short(condition.action)||!Array.isArray(condition.evidenceIds)||new Set(condition.evidenceIds).size!==condition.evidenceIds.length)return false;
    conditionIds.add(condition.id);
    if(condition.evidenceIds.length>commitmentLimits.evidencePerCondition)return false;
    if(!actor(condition.originalPerformer)||origin.subject!=='mutual'&&condition.originalPerformer!==origin.subject)return false;
    let owner=condition.originalPerformer;
-   for(const amendment of c.amendments.filter(a=>a.conditionId===condition.id)){if(amendment.previousPerformer!==owner)return false;owner=amendment.performer;}
+   for(const amendment of [...c.amendments.filter(a=>a.conditionId===condition.id),...(c.revisions??[]).filter(a=>a.conditionId===condition.id).map(a=>({turn:a.turn,previousPerformer:a.before.performer,performer:a.replacement.performer}))].sort((a,b)=>a.turn-b.turn)){if(amendment.previousPerformer!==owner)return false;owner=amendment.performer;}
    if(owner!==condition.performer)return false;
    if(condition.evidenceIds.some(id=>!s.events.some(e=>e.id===id&&e.subject===condition.performer&&e.turn>origin.turn&&e.kind==='complication'&&e.status==='fulfilled'&&['action','condition-evidence'].includes(e.value))))return false;
   }
@@ -115,16 +121,17 @@ type Performs=(offer:StoryEvent,sources:{text:string;action:boolean}[],names:str
 export function applyProgress(s:NarrativeState,text:string,r:NarrativeReply,events:StoryEvent[],names:string[],performs:Performs,consent:(s:string,quote:string)=>boolean){
  const touched=new Set<Commitment>();
  const refused=(c:Commitment)=>[...s.events,...r.events].some(e=>e.kind==='promise'&&e.status==='refused'&&(e.reference===c.promiseId||c.acceptanceIds.includes(e.reference)));
+ applyRevisions(s,text,r,touched,consent,refused);
  for(const a of r.commitmentAmendments??[]){
   const c=commitments(s).find(c=>c.promiseId===a.promiseId),condition=c?.conditions.find(c=>c.id===a.conditionId);
-  if(!c||!condition||!c.acceptanceIds.length||refused(c)||c.status==='completed'||condition.evidenceIds.length||condition.performer===a.performer||c.amendments.length>=commitmentLimits.amendments)fail();
+  if(!c||!condition||!c.acceptanceIds.length||refused(c)||c.status==='completed'||condition.evidenceIds.length||condition.performer===a.performer||c.amendments.length+(c.revisions?.length??0)>=commitmentLimits.amendments||r.commitmentRevisions?.some(v=>v.promiseId===a.promiseId))fail();
   if(!text.includes(a.playerQuote)||!r.line.includes(a.npcQuote)||!consent(text,a.playerQuote)||!consent(r.line,a.npcQuote)||![a.playerQuote,a.npcQuote].every(q=>/대신|맡/.test(q)))fail();
   const taking=a.performer==='npc'?a.npcQuote:a.playerQuote;
   if(!/(?:제가|내가|저는|나는)/.test(taking))fail();
   // Both parties must refer to this condition, not a simultaneous unrelated favour.
   const object=condition!.action.match(/([가-힣A-Za-z0-9]+)(?:을|를)\s/)?.[1];
   if(object&&![a.playerQuote,a.npcQuote].every(q=>q.includes(object)))fail();
-  c!.amendments.push({...a,id:randomUUID(),previousPerformer:condition!.performer,turn:s.turn});condition!.performer=a.performer;touched.add(c!);
+  c!.amendments.push({...a,id:randomUUID(),previousPerformer:condition!.performer,turn:s.turn});condition!.performer=a.performer;if(c.revisionVersion!==undefined)c.revisionVersion=contractVersion(c);touched.add(c!);
  }
  for(const p of r.commitmentProgress??[]){
   const c=commitments(s).find(c=>c.promiseId===p.promiseId),condition=c?.conditions.find(c=>c.id===p.conditionId),origin=s.events.find(e=>e.id===p.promiseId);
@@ -143,6 +150,8 @@ export function applyProgress(s:NarrativeState,text:string,r:NarrativeReply,even
    source=existing?.text??'';action=existing?.value==='action';
    const amendment=c!.amendments.filter(a=>a.conditionId===condition!.id).at(-1);
    if(amendment&&existing&&existing.turn<=amendment.turn)fail();
+   const revision=c.revisions?.filter(a=>a.conditionId===condition.id).at(-1);
+   if(revision&&existing&&existing.turn<=revision.turn)fail();
   }
   // Validate the entire source, not a convenient positive substring hiding a denial.
   if(!source.includes(p.quote)||!performs({...origin!,subject:p.performer,text:condition!.action},[{text:source,action}],names,false))fail();

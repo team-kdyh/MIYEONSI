@@ -1,0 +1,26 @@
+import {start} from '../server/game.ts';
+import {commitDialogue} from '../server/dialogue.ts';
+import {narrativeSchema,type NarrativeReply,type EventProposal} from '../server/narrative.ts';
+import {mkdirSync,writeFileSync,readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+const r=(events:EventProposal[]=[],extra:Partial<NarrativeReply>={}):NarrativeReply=>({line:'좋아요.',actionBeats:[],emotion:'차분함',pose:'listen',musicMood:'cafe-warmth',events,recall:[],conjecture:'',...extra});
+const original='제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.';
+const offer:EventProposal={kind:'promise',subject:'player',text:original,status:'offered',reference:'',evidence:original,value:'keepsake'};
+const trace:unknown[]=[];
+let g=start('romance');
+function turn(input:string,response:NarrativeReply){const before=structuredClone(g);try{g=commitDialogue(g,null,input,response);trace.push({input,response,before,after:g,result:'committed'});return true;}catch(error){trace.push({input,response,before,after:g,result:'rejected',error:String(error)});return false;}}
+turn(original,r([offer],{commitmentOffers:[{eventIndex:0,conditions:[{performer:'player',target:'유나',action:'노란 리본을 가져오고'},{performer:'player',target:'유나',action:'편지를 접는'}]}]}));
+const c=g.narrative!.commitments![0],id=c.promiseId;
+turn('좋아요.',r([{...offer,status:'accepted',reference:id,evidence:'좋아요.'}]));
+const ribbon='노란 리본 가져왔어요.';
+turn(ribbon,r([],{commitmentProgress:[{promiseId:id,conditionId:c.conditions[0].id,performer:'player',source:'player',actionIndex:-1,eventId:'',quote:ribbon}]}));
+const change='편지를 접는 대신 그림을 그리는 것으로 바꾸는 데 동의해요.';
+turn(change,r([{...offer,status:'accepted',reference:id,text:'플레이어는 노란 리본을 가져오고 그림을 그리는 약속으로 바꾸었다.',evidence:change}],{line:'좋아요. 편지는 빼고 그림을 그려 주세요. 가져온 리본은 그대로 쓸게요.'}));
+const afterAcceptedChange=structuredClone(g.narrative);
+const drawing='그림을 그렸어요.';
+turn(drawing,r([],{line:'그림을 잘 받았어요.',commitmentProgress:[{promiseId:id,conditionId:c.conditions[1].id,performer:'player',source:'player',actionIndex:-1,eventId:'',quote:drawing}]}));
+mkdirSync('docs/v2-condition-change-review',{recursive:true});
+const schema=narrativeSchema(g) as any;
+const record={capturedAt:new Date().toISOString(),scope:'Current exact reducer; authored mock replies from normal start/offer/accept/partial/change/performance; no API or injected success',sourceHashes:Object.fromEntries(['server/commitments.ts','server/narrative.ts','server/provider.ts','server/storage.ts'].map(f=>[f,createHash('sha256').update(readFileSync(f)).digest('hex')])),findings:{acceptedChangeStillRequiresLetter:afterAcceptedChange!.commitments![0].conditions[1].action==='편지를 접는',changedActionCannotComplete:trace.at(-1) instanceof Object&&(trace.at(-1) as any).result==='rejected',revisionSchemaFields:Object.keys(schema.properties.commitmentAmendments.items.properties)},trace};
+writeFileSync('docs/v2-condition-change-review/before.json',JSON.stringify(record,null,2));
+console.log(JSON.stringify(record.findings));

@@ -1,5 +1,9 @@
 # AFTER HOURS — project direction
 
+## Current continuation: negotiated content revisions
+
+The previous goal turn made concrete progress, but the goal remains incomplete. Read `docs/v2-condition-change-review/README.md`, its normal-turn `before.json`, and `.ralph/v2-condition-change-director.md`. An explicitly accepted letter→drawing change currently commits its acceptance text while leaving the letter obligation active; later drawing performance rejects. Implement bounded content revision/history/evidence applicability under the existing validated `verification/v2-state-generation2.seed.json`, preserving the parent combined source below and all meaningful controls. The old job is terminal; only a new meaningful scoped Ralph run is appropriate. Paid approval remains absent:12+32 consumed,24 proposed unanswered, no active approval ledger. Keep root3001/private saves and all original judgments intact.
+
 ## Current integrated bounded commitment candidate
 
 Read `docs/v2-state-parent-integrated/review.md` first. Root now contains frozen state-Ralph G1 plus independent contract coverage, recipient, sentence-scoped delegation, atomic acceptance fixes and G2 bounded history/refusal/deduplication fixes. Final commitments SHA is `d29ef52d07bae1e71f2e05e24f394c201bd666be0cc91e9d489c54aef83e9b4a`, narrative `80dc19e6b3aec1db26fc69a344fbce48c38a026ae03ceaa30e41f674833f7764`.358 unit tests and build pass; current browser result is recorded in that review. Root3001 was restarted and HTTP200 confirmed. The separate Ralph worktree may lack parent fixes: compare exact sources, never overwrite root wholesale. Preserve original FAIL verdicts. New real-model generation remains unverified;12+32 consumed, proposed24 unanswered and active approval ledger absent. Do not call any paid smoke runner without actual approval. Existing bounded Korean validation does not prove general entailment.

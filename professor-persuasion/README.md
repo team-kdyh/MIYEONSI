@@ -1,0 +1,9 @@
+# 교수님을 설득하라
+
+기능명세서의 핵심 흐름을 확인하는 브라우저 게임 시제품입니다. `index.html`을 열면 플레이할 수 있습니다.
+
+난이도 선택, 상황 제시, LOW/HIGH RISK 선택, 대화, 의심 단계, 시간에 따른 신뢰도 감소, 승패, Run 내 중복 확인을 포함합니다. 교수님 대사와 판정은 현재 규칙 기반입니다. 실제 AI API 및 서버 연결은 추후 작업입니다.
+
+검증: `node --test test.mjs`
+
+실행 중인 공개 시제품: https://professor-persuasion-20261121.team-huhustudio.chatgpt.site

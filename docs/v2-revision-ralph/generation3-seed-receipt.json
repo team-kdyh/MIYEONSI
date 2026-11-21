@@ -1,0 +1,14 @@
+{
+  "source_database": "C:/Users/gjtjw/.ouroboros/ouroboros.db",
+  "source_event_rowid": 12192,
+  "source_event_id": "3b4deffd-008e-492c-8047-03c8734c67c2",
+  "source_timestamp": "2026-11-21 06:38:44.692409",
+  "seed_id": "seed_70d1b62b8139",
+  "generation": 3,
+  "path": "verification\\v2-revision-generation3.seed.json",
+  "bytes": 102142,
+  "sha256": "0f61f221832490df4e82517d3b4d4f8462ac024f0d8f19c1fc1e84908071d364",
+  "serialization": "Exact UTF-8 encoding of stored event payload.seed_json string, no added newline.",
+  "acceptance_criteria_count": 7,
+  "constraints_count": 13
+}

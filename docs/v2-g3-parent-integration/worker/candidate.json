@@ -1,0 +1,1109 @@
+{
+  "at": "2026-11-21T07:01:43.895602+00:00",
+  "candidateId": "contract-followup-af3cb665b5a42fef",
+  "components": {
+    "server/adversarial.test.ts": "e996bb47c24b633f4af3c3cebbef0b4a6d33558a8de05191f244a2337a77bc2b",
+    "server/boundaries.test.ts": "5c337434b8571ece449239360016d1ae71eb026b8f3f52a40933df7c0563078b",
+    "server/commitment-evidence-binding.test.ts": "2a9ab1e5211a843949a1f9dbacf80e430fd6f228e3a6a756397b487f7b270a7e",
+    "server/commitment-revisions-http.test.ts": "33e24d9d4b3b0e639e234c4e22018031025ba716f9006ee001dd8dcf711c5a33",
+    "server/commitment-revisions.test.ts": "49305f304454a048ce8924aa22d17dbc558a38877647af9693cf594da8fdb047",
+    "server/commitment-revisions.ts": "d4b3466cdad38d54b2409ef5b129324110161e7865cc21401c8e670739078336",
+    "server/commitments-atomic.test.ts": "8bdb19d0a5684f1c0a29fe116b4ec5c82e7d3dc3dae9eba89b523968e509f9da",
+    "server/commitments-coverage.test.ts": "26dec4965a05003fc6c247efb25bfeb42ee9f1a6644abfa314a4dd1b5113bd73",
+    "server/commitments-followup.test.ts": "1fdf6f685f5e42400c153b99a5334cbc25e23ecba8583f9bc050d6506a4ab2f5",
+    "server/commitments-http.test.ts": "3c0a1b4c70bec34c73bd5874c137ea63c63c15e92ab26aeb741fb0a71d3af1d3",
+    "server/commitments-storage-review.test.ts": "8e11873f27d188bfda8baf410b465db0818151c6b0ee17be7f95034429a57419",
+    "server/commitments.test.ts": "d6a9dfa4d3de052082331b7bc8d4164c3cca985f270bf4d70e6d89f61057b184",
+    "server/commitments.ts": "b7a6076d435af203a46aa4cd705588d8dea4e0b9a52822ffc9b04d45de63cf80",
+    "server/dialogue.test.ts": "b1237b060052917274a489ef8fc2cea4cb2f166df725032b58185875af4c37c0",
+    "server/dialogue.ts": "f8b807ab006845414eaad0f8f81c2c9d5f4efffbf1cd184bd302b35b1e22fdd6",
+    "server/evidence-applicability.test.ts": "9ff48e1e1158a9c6c72a34bb6756f3c7339a2abce98da478cca6e446b7bdf50d",
+    "server/evidence-applicability.ts": "b4dbd937f4ceab629dc2a2536d0c518c4832fdbd6ddf447f4e33b52f29ac6d28",
+    "server/game.test.ts": "9fd4e4a93df045a9925f0f4b04ea453d2208476f02f8b223cca9199dcf26e9f5",
+    "server/game.ts": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+    "server/index.ts": "13837ef233590635b4687dd161d0adc4e6b5d673dfaddf09eb30c81540ce8f8d",
+    "server/interpretation.test.ts": "57814fca4693c08bb253a17349492460ff4bdb3c1ac319022324aead0c8d90ba",
+    "server/interpretation.ts": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+    "server/music.test.ts": "7d852867e9508110191ac1e73326b1f20ffaece325df4a4e4c205472f5a2574e",
+    "server/narrative-agency-regression.test.ts": "19eec66a693dc72c02b62f39d5738823be84fa6d084f900f773317f8a280964f",
+    "server/narrative-compound-natural.test.ts": "5e2502a7219a3622ba5b8b1fc58cff3e9f41d01a981314cce66641ab20c0886f",
+    "server/narrative-compound-promise.test.ts": "8c5cd8116c45aae46e74f16b31b10f720bf19ddacb323c517d92a51345a7c876",
+    "server/narrative-counterfactual.test.ts": "fdce8e99bf04a9c4b689ddf1e6a9327a1038597f8eaca060f374053139ddf3d1",
+    "server/narrative-lifecycle-regression.test.ts": "41947c5680523474b182f6ce7c60cfe4010538f70ce07888afd1200205332fdc",
+    "server/narrative-natural-delivery.test.ts": "92b63d6b0e1bb191905ad26242c4e19a705a53d41ed23e8b504ab3b0dc9b0ce5",
+    "server/narrative-promise-edge.test.ts": "efd0ed9a153f20d804e9d2d969f43738f1c042605782c4a9f86285f94356616c",
+    "server/narrative-route-agency.test.ts": "f3c970fbfe7a701318ae68a57b927409004a2dab0ad69a8f603141d5c731279b",
+    "server/narrative-short-reply.test.ts": "c5815acecd3557b49752ab14f7c32a6e88a9efcece2e38c939a16ed75f5dc103",
+    "server/narrative.test.ts": "1829c31f88bc676a8202baff2bebbb11974fb8aee9271baf1367ff59087a9724",
+    "server/narrative.ts": "2954e6eeb9d355b98b62a4bf3f28ddc6b134b75a37498004fe8b0abba4f3ea0c",
+    "server/office.test.ts": "c70cc186f6eb79c0494e9b0732c697a4bc33e4151ffeed87e790e16b0eea418f",
+    "server/office.ts": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+    "server/performance-interpretation.ts": "d62f917b233237ac847e9989c54b3338992237aa4af73c5800883204ec2412f8",
+    "server/persistence.test.ts": "3190e8f8d0c32758d13fbef7c5a072bdad05741b1653897195acb69d1cc973af",
+    "server/provider.ts": "3c9beb513ef57694c8252255199049965ceb6986ee11a50eb63d01856291755f",
+    "server/recovery.test.ts": "a0e865cced0e13a018cd50b4dface7367a0a2aba721759ce300b20d205d35d7e",
+    "server/revision-negotiation-http.test.ts": "eba678e4a64237f08be94f6d627359423aa3771b3a61a99e06a8eae034b75471",
+    "server/revision-negotiation.test.ts": "8589ca35f9d9f4f9c83aa8fa242d6bdf13af94bf009e6d3274cb9f112520d016",
+    "server/revision-negotiation.ts": "f390544880b2b23542cb59aa9273d9a9493c04031425bf7a7e15aa420433262d",
+    "server/romance.test.ts": "effbae28a210cb3e5da1636492ad71a317f786795e17a13af4e7ba5a65b2a577",
+    "server/romance.ts": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+    "server/storage.ts": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b",
+    "server/v2-ac3-lifecycle.test.ts": "01b4237cad47f53b84d80ac2512813d00e96a2f3427c9d7af27fd0b4daea2a5a",
+    "server/v2-security.test.ts": "9c0a05c6e7766c107d0c677cb2146bdfd49916ba2ffcd4e8b2825fa438c33711",
+    "server/v2-story.test.ts": "01dc2795d99e76b291df5e9dde548150a9f600512a9dd8993d4fbab487b897b5",
+    "server/visual-binding.test.ts": "6f6ae25b4eb34b8ba257eccc18b159195c37f59755d45851ce5e1b2a203515ca",
+    "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+    "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+    "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+    "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+    "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+    "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+    "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+    "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+    "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+    "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179",
+    "public/assets/archive-theme.wav": "3e9e63f5adcaa8a13125a072466ee914d90e6f8d97aca8d6c6db95ddf8d0e72e",
+    "public/assets/archive.png": "52d1a0e2ec3731f8934ff75e2fd25fcace71528ea082946a87c46ef40d4ba711",
+    "public/assets/audio-manifest.json": "7574e940c6bfe883db70cafdabc6a0d8b18e96989637263a465df55d6bf69fb8",
+    "public/assets/boss-expressions.png": "e072f4d0c56c11349093c379303cacd2509b3a8610612a343b7f7fae96bda51a",
+    "public/assets/cafe.png": "9d546aca64cdbe9bb57aae91df908b59b36d747397175fe2004cddffdd6666c4",
+    "public/assets/chime.wav": "8c54330c0df2b0fe06668597dc2e1245516a12a98856a2536046f32bf3cd4b1a",
+    "public/assets/evening.wav": "9fdf672d7feeeb062cae389da92372be163bb4cc27224c8cec74a2b8bde06125",
+    "public/assets/generation-manifest.json": "371bf60753f9fbfaf5b7991fc791bd51c2c4a59aed412714457c4a85b37fbf6e",
+    "public/assets/office.png": "bf3a39649b5920bc286a82b9db93c3d6d9a2490708b445c5607ea95d016d7751",
+    "public/assets/riverside.png": "393bda947f29056c417ab302924c8a4fb107a21d7d8f9053187bb3950f45aa9a",
+    "public/assets/supplemental-manifest.json": "2d0a394c52f48e100ac80dfad63e57c2c789d0478714bba2baeb2fb62d2975a3",
+    "public/assets/tape.wav": "2c009c381d505f6e71115f54fd816197cfe00312a890e67a9bf7c7688cc17318",
+    "public/assets/yuna-expressions.png": "09109a8eba18c5e8cd8e591583770e8da26658c5541c7e913dbc79846037ec80",
+    "public/assets/audio-v2/archive-pursuit.ogg": "9affe22de8b8125ad6709fdf4acde2e107e91483642fdee70397b81c3da2b311",
+    "public/assets/audio-v2/archive-pursuit.score.json": "8dbb473ebfb76c93bce8c207a5549e092d503389d74bc4f3b51cd965842aeb9e",
+    "public/assets/audio-v2/archive-unease.ogg": "15009a89a11c82293e1691bb16646321fdf0c63910cfdf7c2211f59b8fb2f709",
+    "public/assets/audio-v2/archive-unease.score.json": "f6b1a96db01beda7fe576f0d3c1319cdf3fc33820292b14b4d29e2f6fa3e0cff",
+    "public/assets/audio-v2/cafe-warmth.ogg": "6e36898828d76fa9a46577384f3e42da3475ecfb6952af408b832891ffa94acb",
+    "public/assets/audio-v2/cafe-warmth.score.json": "d69b7edd52e0a9b2bb01c1eabd989a43c7773a82e6f8579123e2ae0f8812ed96",
+    "public/assets/audio-v2/compose.py": "f993cb446bbfd3b13152eb2ff478a398d3f7eb2233d5d3ed0765a9bbae8fe452",
+    "public/assets/audio-v2/manifest.json": "b6a8b390b1634300d73b2b24ce655c1c44fd83c211562a502d930695cd19ee92",
+    "public/assets/audio-v2/office-groove.ogg": "ed29e9ee5af160f5021c6816c211d232df59301b947edc971499fa4ff3f64fb1",
+    "public/assets/audio-v2/office-groove.score.json": "9a60cd7ea3814a5efd91b2739a34ba05b0934c258637152f2d95981c9242f656",
+    "public/assets/audio-v2/office-pressure.ogg": "a03d29cb48c6d8075625b37e0d1113146f758aae7061b9abb389aed2f26c4078",
+    "public/assets/audio-v2/office-pressure.score.json": "05d6925b5af1261dac2530ab8c3fafaa2664ef90a60bd8b616dee1ed6f4e26bc",
+    "public/assets/audio-v2/rainy-memory.ogg": "156b725a24ba5e71bdb4fc75107e658563d23ab454637a969065d5f84512f2b2",
+    "public/assets/audio-v2/rainy-memory.score.json": "3e14088889f05b7eacc1531eb8f853450af0f1289a003c8fbdead070bac391ae",
+    "public/assets/audio-v2/README.md": "2115cf784638ecbeb4e8e45eb095853c813391b7ff406b6212fe1023dc43cc6c",
+    "public/assets/audio-v2/resolution-dawn.ogg": "eb75c8ab798eea7cd9b4a4c0640e95a35225f5c142c5fafe6d3ae7342fadfe26",
+    "public/assets/audio-v2/resolution-dawn.score.json": "597853e64121289b40498edb45ff1351352b5ce5e1280aa05f8ab0eebe4e3ff7",
+    "public/assets/audio-v2/rooftop-heart.ogg": "a4516c6187507bb7175f735eeb76fd47a8da3cfb999c9ed570bff02feb4c1c99",
+    "public/assets/audio-v2/rooftop-heart.score.json": "c9c3dc1e0e3109593cb7a2e909c223773ea104d8e19185b8403c5c8bc5ad3474",
+    "public/assets/audio-v2/verification.json": "48cb95be1debd8c581c453fdf348fcb33f2b83759d6626a89f93ea8c076e7768",
+    "public/assets/v2/boss-actions-a.png": "18176790fe162b6b65519c50a89dc9fc4cf5ab571a8f819204b6074bb9d12f40",
+    "public/assets/v2/boss-actions-b.png": "debd7febc1fd485aae4c4734cb18076a90fc735ec705e545296016daf615b7dd",
+    "public/assets/v2/generation-manifest.json": "acd768da058d599f6d5fdbc57729105afea68bf4505aeea57df8cda6da538075",
+    "public/assets/v2/rainstreet.png": "44eda0f37410a72ab8939fab268e41c0ca65de2cc212696d34815d407fac60d4",
+    "public/assets/v2/rooftop.png": "6061e8b6712faa827cdf6c29e504c274a3997fb211aba44dd36bbdb983fa8cc4",
+    "public/assets/v2/yuna-actions-a.png": "ad4a35ffb0070f3ba704f389c7d7ee84a03e7563247972ca773053b7ac6d5c6c",
+    "public/assets/v2/yuna-actions-b.png": "b14c4daa745797c3995eb961f446c0d9b45751744430248d95580b6755e4f049",
+    "scripts/audit-current-package.ps1": "4557e76014093e836bfe17e3c46a7abe85a77917ad59edefa26d20c7d7c6a223",
+    "scripts/audit-v2-package.ps1": "a6c84a16e5c90f0c9ba7e86ae4696c2c78fdce9b249a3a34cd494d6bff4c595f",
+    "scripts/generate-notices.mjs": "0047b175b56e76672668862c4ce444e97c86aa6a82793e25e4d17ba7a3f34d05",
+    "scripts/index-v2-candidate.mjs": "c91076f2ac610f75f2d8e9ab8504ebdcda769cca34eeb4654b9f92bfede4c943",
+    "scripts/package-contract-followup.py": "b41b629b9569f087c5f403764320ceb9519a9bc7405bc3bcf8af6be8ac7b3ec7",
+    "scripts/package-local.ps1": "22bdfbe3602fe7f1ef4de3dd307d4c6d56189370a140ed128f5fb59d2d357d89",
+    "scripts/package-seed-evidence.py": "72783b8650b375ec097046f172c78914c7906b62b25015abc0cae55754b612a1",
+    "scripts/start-local.ps1": "766b81d392afd7edada47a61141fb23b48d7d7423306c8c11f42d78094393cfd",
+    "scripts/stop-local.ps1": "14130f84e201acfeb334a88e9b58b341563c9ad3fbca78fc585126739cfde1d6",
+    "scripts/verify-v2-candidate.mjs": "99d611bd45bd8a8dfe11ff0134b9a89dbaa5cc773afc3c98f4f75a42a96cc261",
+    "scripts/verify-v2-launcher.ps1": "858df996f718638efd02d77864257dfbbcb64bcb1d10d35f66c1442e01e0fead",
+    "tests/ac7.spec.ts": "c492c766ec4e0c0e4bdce9b45f06cb2f2fc9e3ec5936c38866fbd3394c8e250f",
+    "tests/commitment-transport.mjs": "5fcaac386612a5e6a52ca89923560dd97bfa5481eb96a0d379c3366dea388f28",
+    "tests/final-live-smoke.ts": "7980eacdc75cd7f565b0ac70dccca8e7b927d2c7beab75c43ec93ea237a7d674",
+    "tests/live-smoke.ts": "b81f9af6d95046f26ec4f9fcfd1227812e2bc2b144f4eef4e7c00100ebad2b92",
+    "tests/office.spec.ts": "ffb52731108187876d0dbcde95c05acd930ce2d46ffdebf20c15d372d10d210f",
+    "tests/persistence.spec.ts": "07a122da9738ef95d7c196893177f641c75cefa11100995eeb9266157c46cba6",
+    "tests/play.spec.ts": "273a41ad05b989d6d1122f15b9a2ccd045a4566c97bcf2f450b43b09663054b5",
+    "tests/presentation.spec.ts": "73056c33f19be36c3d9e33d0442e551bedd9811eb4f21fe2c914d561f3e2dcb0",
+    "tests/provider-fixture.mjs": "5801bb1cb5fb383361655a83e170d309461dbaa466323ac81fd6e7594c3ef3da",
+    "tests/romance.spec.ts": "7fc1635aa937b253c4eaaf0e1ec3e796468a7c7ca51dfb2bc25d8e0780366ca7",
+    "tests/v2-ac2-receipt-replay.ts": "459cf63dc66bba32af1652a499586981cc309fe59a24ccbadea204ae5da5a654",
+    "tests/v2-ac3-receipt-audit.ts": "831855f7ac251422a4af810cbbdbf590ec4c5d3daea185dbc47dc3068e354427",
+    "tests/v2-ac4-boundaries.spec.ts": "ad8f9367a9af617bb04794aa96e65dc80277e9c3d82c364d75d9e6dcb65dfaf1",
+    "tests/v2-ac4-gallery.ts": "d9d1d922fe1a3c03e571c8d35e601bda546b25e5225e4030ae1956e828374d76",
+    "tests/v2-art.spec.ts": "c7878e7cad5542f8d879fc067dd76cb90b89caf5d2905759e7c22bee4973042d",
+    "tests/v2-audio.spec.ts": "b7a099ee780824d6af263fbf5d593dde30bd1a6b7abd4a7c91ddecb0849c211e",
+    "tests/v2-browser-fixture.mjs": "38719f39071c19d0eff38b86f90f6f2fad749ae39f48a3cd2e3c25a18ab55dce",
+    "tests/v2-journey.spec.ts": "d544bb6629a6008055fe6cea08c0073b29471948c5f07c16a7ca43a9de8e8f9b",
+    "tests/v2-live-screens.mjs": "0cba909fd8c8cf4584a3bef0b70145c8fd542cad650ae811897860c05f07dfab",
+    "tests/v2-live-server.ts": "f82ef81fbf6d9bb56fa8ba2f4b84d6c426855e2c3ec3cf2e6750f8a4b4d70c3f",
+    "tests/v2-live-smoke.ts": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21",
+    "tests/v2-participation.spec.ts": "7432e763396abf0ce1f986bad3123f2a612d347d228f988206a7a81f60919d42",
+    "tests/v2-persistence-fixture.mjs": "f01a8251115cbfcae79b76c60dca27e53318b6b98035708b458ec0f998327b67",
+    "tests/v2-promise-edge-probe.ts": "007a03c977fa30d62917ba7a0d4d15f5d6e90b9188b03dfdb28c85894a28eda4",
+    "tests/v2-receipt-replay.ts": "33a1eeadae8371cbca038fdf229580fa0796bf9df0f4c23a926d5d2148001b25",
+    "tests/v2-security-fixture.mjs": "3105e050717c602b00fed0c386db67e798599accdc1476c74d229a8aab177d0c",
+    "tests/v2-ui-polish.spec.ts": "81fe4c0b6a1b3fc840fa517c00f253995e9c6bff30e4c796ccd9321614726248",
+    "tests/v2-ui.spec.ts": "c2092085aeaf3accb1dbe2dbf3016276bff6265ab3c7866385e5133e52230a05",
+    "tests/v2-final-live/guard.mjs": "b095848b94d31091bb169595e1206df805e1f92815806417306280b3bff9fe0c",
+    "tests/v2-final-live/guard.test.mjs": "df8b4895304c5700013f8c6e458bb285f6b2003b6a3e9b17bf09e56b36930364",
+    "tests/v2-final-live/runner.mjs": "48c8ede7f4484ad6e7a9af2e70e5b1c0e7d513f2282903e8e76612313076b7db",
+    "tests/v2-final-live/server.mjs": "af47d2a0ae7ef7c8fe6df8f27b712b356520e3bc0638e4c1c556715f749d24fc",
+    "package.json": "248b48e0521529ad5756d4f0cb4c649db268a1be96e5171ad223840d73d78b67",
+    "package-lock.json": "e847d4063b65d9fa1f91d85199452c1d6fc4da428f27ea929a6e3cd32898e307",
+    "tsconfig.json": "d1e556b51e31d1b2e49ac3d052749c0003c9eef273e5389d3b365127ea4caa29",
+    "vite.config.ts": "31b239847ea277dbb06377722343de8a1643b78cbc9a2bed7592b09fe047902f",
+    "playwright.config.ts": "7500124da2b47dd242ccc9f8eb598638439cdaa8cc408fc4c9490f5b4f66c6a0",
+    "index.html": "173845c79d1f549bcfcfc44a2bac8609489f0cc47bc3d91daecdb0a3eb68b60a",
+    "play.cmd": "a73f7ecdee9f98e6d43325779811cc21b6589a47978d90ed785f6411503e793e",
+    "stop.cmd": "a1c2e93da917825eb80b318a1b28f1e7334d99eac43a2247b254d4555ca47c91",
+    "README.md": "540b51fe104d7e444b733743922f897ef68cb29bf2983e4d44281d4cce0207a8",
+    "THIRD_PARTY_NOTICES.txt": "e222f1044fa602c49c52ded5c71fbbdfec097a326acf43097d25c11077721200",
+    "docs/v2-QA.md": "3528627070ba7deedf13e709afe333ee4f9d2fed0d4cf4e2c596848fe55bc076"
+  },
+  "executedSourceComparison": {
+    "server/adversarial.test.ts": {
+      "candidate": "e996bb47c24b633f4af3c3cebbef0b4a6d33558a8de05191f244a2337a77bc2b",
+      "executed": "e996bb47c24b633f4af3c3cebbef0b4a6d33558a8de05191f244a2337a77bc2b"
+    },
+    "server/boundaries.test.ts": {
+      "candidate": "5c337434b8571ece449239360016d1ae71eb026b8f3f52a40933df7c0563078b",
+      "executed": "5c337434b8571ece449239360016d1ae71eb026b8f3f52a40933df7c0563078b"
+    },
+    "server/commitment-evidence-binding.test.ts": {
+      "candidate": "2a9ab1e5211a843949a1f9dbacf80e430fd6f228e3a6a756397b487f7b270a7e",
+      "executed": "2a9ab1e5211a843949a1f9dbacf80e430fd6f228e3a6a756397b487f7b270a7e"
+    },
+    "server/commitment-revisions-http.test.ts": {
+      "candidate": "33e24d9d4b3b0e639e234c4e22018031025ba716f9006ee001dd8dcf711c5a33",
+      "executed": "33e24d9d4b3b0e639e234c4e22018031025ba716f9006ee001dd8dcf711c5a33"
+    },
+    "server/commitment-revisions.test.ts": {
+      "candidate": "49305f304454a048ce8924aa22d17dbc558a38877647af9693cf594da8fdb047",
+      "executed": "49305f304454a048ce8924aa22d17dbc558a38877647af9693cf594da8fdb047"
+    },
+    "server/commitment-revisions.ts": {
+      "candidate": "d4b3466cdad38d54b2409ef5b129324110161e7865cc21401c8e670739078336",
+      "executed": "d4b3466cdad38d54b2409ef5b129324110161e7865cc21401c8e670739078336"
+    },
+    "server/commitments-atomic.test.ts": {
+      "candidate": "8bdb19d0a5684f1c0a29fe116b4ec5c82e7d3dc3dae9eba89b523968e509f9da",
+      "executed": "8bdb19d0a5684f1c0a29fe116b4ec5c82e7d3dc3dae9eba89b523968e509f9da"
+    },
+    "server/commitments-coverage.test.ts": {
+      "candidate": "26dec4965a05003fc6c247efb25bfeb42ee9f1a6644abfa314a4dd1b5113bd73",
+      "executed": "26dec4965a05003fc6c247efb25bfeb42ee9f1a6644abfa314a4dd1b5113bd73"
+    },
+    "server/commitments-followup.test.ts": {
+      "candidate": "1fdf6f685f5e42400c153b99a5334cbc25e23ecba8583f9bc050d6506a4ab2f5",
+      "executed": "1fdf6f685f5e42400c153b99a5334cbc25e23ecba8583f9bc050d6506a4ab2f5"
+    },
+    "server/commitments-http.test.ts": {
+      "candidate": "3c0a1b4c70bec34c73bd5874c137ea63c63c15e92ab26aeb741fb0a71d3af1d3",
+      "executed": "3c0a1b4c70bec34c73bd5874c137ea63c63c15e92ab26aeb741fb0a71d3af1d3"
+    },
+    "server/commitments-storage-review.test.ts": {
+      "candidate": "8e11873f27d188bfda8baf410b465db0818151c6b0ee17be7f95034429a57419",
+      "executed": "8e11873f27d188bfda8baf410b465db0818151c6b0ee17be7f95034429a57419"
+    },
+    "server/commitments.test.ts": {
+      "candidate": "d6a9dfa4d3de052082331b7bc8d4164c3cca985f270bf4d70e6d89f61057b184",
+      "executed": "d6a9dfa4d3de052082331b7bc8d4164c3cca985f270bf4d70e6d89f61057b184"
+    },
+    "server/commitments.ts": {
+      "candidate": "b7a6076d435af203a46aa4cd705588d8dea4e0b9a52822ffc9b04d45de63cf80",
+      "executed": "b7a6076d435af203a46aa4cd705588d8dea4e0b9a52822ffc9b04d45de63cf80"
+    },
+    "server/dialogue.test.ts": {
+      "candidate": "b1237b060052917274a489ef8fc2cea4cb2f166df725032b58185875af4c37c0",
+      "executed": "b1237b060052917274a489ef8fc2cea4cb2f166df725032b58185875af4c37c0"
+    },
+    "server/dialogue.ts": {
+      "candidate": "f8b807ab006845414eaad0f8f81c2c9d5f4efffbf1cd184bd302b35b1e22fdd6",
+      "executed": "f8b807ab006845414eaad0f8f81c2c9d5f4efffbf1cd184bd302b35b1e22fdd6"
+    },
+    "server/evidence-applicability.test.ts": {
+      "candidate": "9ff48e1e1158a9c6c72a34bb6756f3c7339a2abce98da478cca6e446b7bdf50d",
+      "executed": "9ff48e1e1158a9c6c72a34bb6756f3c7339a2abce98da478cca6e446b7bdf50d"
+    },
+    "server/evidence-applicability.ts": {
+      "candidate": "b4dbd937f4ceab629dc2a2536d0c518c4832fdbd6ddf447f4e33b52f29ac6d28",
+      "executed": "b4dbd937f4ceab629dc2a2536d0c518c4832fdbd6ddf447f4e33b52f29ac6d28"
+    },
+    "server/game.test.ts": {
+      "candidate": "9fd4e4a93df045a9925f0f4b04ea453d2208476f02f8b223cca9199dcf26e9f5",
+      "executed": "9fd4e4a93df045a9925f0f4b04ea453d2208476f02f8b223cca9199dcf26e9f5"
+    },
+    "server/game.ts": {
+      "candidate": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "executed": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0"
+    },
+    "server/index.ts": {
+      "candidate": "13837ef233590635b4687dd161d0adc4e6b5d673dfaddf09eb30c81540ce8f8d",
+      "executed": "13837ef233590635b4687dd161d0adc4e6b5d673dfaddf09eb30c81540ce8f8d"
+    },
+    "server/interpretation.test.ts": {
+      "candidate": "57814fca4693c08bb253a17349492460ff4bdb3c1ac319022324aead0c8d90ba",
+      "executed": "57814fca4693c08bb253a17349492460ff4bdb3c1ac319022324aead0c8d90ba"
+    },
+    "server/interpretation.ts": {
+      "candidate": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+      "executed": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0"
+    },
+    "server/music.test.ts": {
+      "candidate": "7d852867e9508110191ac1e73326b1f20ffaece325df4a4e4c205472f5a2574e",
+      "executed": "7d852867e9508110191ac1e73326b1f20ffaece325df4a4e4c205472f5a2574e"
+    },
+    "server/narrative-agency-regression.test.ts": {
+      "candidate": "19eec66a693dc72c02b62f39d5738823be84fa6d084f900f773317f8a280964f",
+      "executed": "19eec66a693dc72c02b62f39d5738823be84fa6d084f900f773317f8a280964f"
+    },
+    "server/narrative-compound-natural.test.ts": {
+      "candidate": "5e2502a7219a3622ba5b8b1fc58cff3e9f41d01a981314cce66641ab20c0886f",
+      "executed": "5e2502a7219a3622ba5b8b1fc58cff3e9f41d01a981314cce66641ab20c0886f"
+    },
+    "server/narrative-compound-promise.test.ts": {
+      "candidate": "8c5cd8116c45aae46e74f16b31b10f720bf19ddacb323c517d92a51345a7c876",
+      "executed": "8c5cd8116c45aae46e74f16b31b10f720bf19ddacb323c517d92a51345a7c876"
+    },
+    "server/narrative-counterfactual.test.ts": {
+      "candidate": "fdce8e99bf04a9c4b689ddf1e6a9327a1038597f8eaca060f374053139ddf3d1",
+      "executed": "fdce8e99bf04a9c4b689ddf1e6a9327a1038597f8eaca060f374053139ddf3d1"
+    },
+    "server/narrative-lifecycle-regression.test.ts": {
+      "candidate": "41947c5680523474b182f6ce7c60cfe4010538f70ce07888afd1200205332fdc",
+      "executed": "41947c5680523474b182f6ce7c60cfe4010538f70ce07888afd1200205332fdc"
+    },
+    "server/narrative-natural-delivery.test.ts": {
+      "candidate": "92b63d6b0e1bb191905ad26242c4e19a705a53d41ed23e8b504ab3b0dc9b0ce5",
+      "executed": "92b63d6b0e1bb191905ad26242c4e19a705a53d41ed23e8b504ab3b0dc9b0ce5"
+    },
+    "server/narrative-promise-edge.test.ts": {
+      "candidate": "efd0ed9a153f20d804e9d2d969f43738f1c042605782c4a9f86285f94356616c",
+      "executed": "efd0ed9a153f20d804e9d2d969f43738f1c042605782c4a9f86285f94356616c"
+    },
+    "server/narrative-route-agency.test.ts": {
+      "candidate": "f3c970fbfe7a701318ae68a57b927409004a2dab0ad69a8f603141d5c731279b",
+      "executed": "f3c970fbfe7a701318ae68a57b927409004a2dab0ad69a8f603141d5c731279b"
+    },
+    "server/narrative-short-reply.test.ts": {
+      "candidate": "c5815acecd3557b49752ab14f7c32a6e88a9efcece2e38c939a16ed75f5dc103",
+      "executed": "c5815acecd3557b49752ab14f7c32a6e88a9efcece2e38c939a16ed75f5dc103"
+    },
+    "server/narrative.test.ts": {
+      "candidate": "1829c31f88bc676a8202baff2bebbb11974fb8aee9271baf1367ff59087a9724",
+      "executed": "1829c31f88bc676a8202baff2bebbb11974fb8aee9271baf1367ff59087a9724"
+    },
+    "server/narrative.ts": {
+      "candidate": "2954e6eeb9d355b98b62a4bf3f28ddc6b134b75a37498004fe8b0abba4f3ea0c",
+      "executed": "2954e6eeb9d355b98b62a4bf3f28ddc6b134b75a37498004fe8b0abba4f3ea0c"
+    },
+    "server/office.test.ts": {
+      "candidate": "c70cc186f6eb79c0494e9b0732c697a4bc33e4151ffeed87e790e16b0eea418f",
+      "executed": "c70cc186f6eb79c0494e9b0732c697a4bc33e4151ffeed87e790e16b0eea418f"
+    },
+    "server/office.ts": {
+      "candidate": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+      "executed": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98"
+    },
+    "server/performance-interpretation.ts": {
+      "candidate": "d62f917b233237ac847e9989c54b3338992237aa4af73c5800883204ec2412f8",
+      "executed": "d62f917b233237ac847e9989c54b3338992237aa4af73c5800883204ec2412f8"
+    },
+    "server/persistence.test.ts": {
+      "candidate": "3190e8f8d0c32758d13fbef7c5a072bdad05741b1653897195acb69d1cc973af",
+      "executed": "3190e8f8d0c32758d13fbef7c5a072bdad05741b1653897195acb69d1cc973af"
+    },
+    "server/provider.ts": {
+      "candidate": "3c9beb513ef57694c8252255199049965ceb6986ee11a50eb63d01856291755f",
+      "executed": "3c9beb513ef57694c8252255199049965ceb6986ee11a50eb63d01856291755f"
+    },
+    "server/recovery.test.ts": {
+      "candidate": "a0e865cced0e13a018cd50b4dface7367a0a2aba721759ce300b20d205d35d7e",
+      "executed": "a0e865cced0e13a018cd50b4dface7367a0a2aba721759ce300b20d205d35d7e"
+    },
+    "server/revision-negotiation-http.test.ts": {
+      "candidate": "eba678e4a64237f08be94f6d627359423aa3771b3a61a99e06a8eae034b75471",
+      "executed": "eba678e4a64237f08be94f6d627359423aa3771b3a61a99e06a8eae034b75471"
+    },
+    "server/revision-negotiation.test.ts": {
+      "candidate": "8589ca35f9d9f4f9c83aa8fa242d6bdf13af94bf009e6d3274cb9f112520d016",
+      "executed": "8589ca35f9d9f4f9c83aa8fa242d6bdf13af94bf009e6d3274cb9f112520d016"
+    },
+    "server/revision-negotiation.ts": {
+      "candidate": "f390544880b2b23542cb59aa9273d9a9493c04031425bf7a7e15aa420433262d",
+      "executed": "f390544880b2b23542cb59aa9273d9a9493c04031425bf7a7e15aa420433262d"
+    },
+    "server/romance.test.ts": {
+      "candidate": "effbae28a210cb3e5da1636492ad71a317f786795e17a13af4e7ba5a65b2a577",
+      "executed": "effbae28a210cb3e5da1636492ad71a317f786795e17a13af4e7ba5a65b2a577"
+    },
+    "server/romance.ts": {
+      "candidate": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+      "executed": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df"
+    },
+    "server/storage.ts": {
+      "candidate": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b",
+      "executed": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b"
+    },
+    "server/v2-ac3-lifecycle.test.ts": {
+      "candidate": "01b4237cad47f53b84d80ac2512813d00e96a2f3427c9d7af27fd0b4daea2a5a",
+      "executed": "01b4237cad47f53b84d80ac2512813d00e96a2f3427c9d7af27fd0b4daea2a5a"
+    },
+    "server/v2-security.test.ts": {
+      "candidate": "9c0a05c6e7766c107d0c677cb2146bdfd49916ba2ffcd4e8b2825fa438c33711",
+      "executed": "9c0a05c6e7766c107d0c677cb2146bdfd49916ba2ffcd4e8b2825fa438c33711"
+    },
+    "server/v2-story.test.ts": {
+      "candidate": "01dc2795d99e76b291df5e9dde548150a9f600512a9dd8993d4fbab487b897b5",
+      "executed": "01dc2795d99e76b291df5e9dde548150a9f600512a9dd8993d4fbab487b897b5"
+    },
+    "server/visual-binding.test.ts": {
+      "candidate": "6f6ae25b4eb34b8ba257eccc18b159195c37f59755d45851ce5e1b2a203515ca",
+      "executed": "6f6ae25b4eb34b8ba257eccc18b159195c37f59755d45851ce5e1b2a203515ca"
+    },
+    "src/CharacterSprite.tsx": {
+      "candidate": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+      "executed": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c"
+    },
+    "src/collection.ts": {
+      "candidate": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+      "executed": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9"
+    },
+    "src/ConversationViewport.tsx": {
+      "candidate": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+      "executed": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10"
+    },
+    "src/main.tsx": {
+      "candidate": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+      "executed": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8"
+    },
+    "src/music.ts": {
+      "candidate": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+      "executed": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01"
+    },
+    "src/OfficeAgreement.tsx": {
+      "candidate": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+      "executed": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa"
+    },
+    "src/presentation.ts": {
+      "candidate": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+      "executed": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8"
+    },
+    "src/StageEffects.tsx": {
+      "candidate": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+      "executed": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9"
+    },
+    "src/style.css": {
+      "candidate": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+      "executed": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91"
+    },
+    "src/visualAssets.ts": {
+      "candidate": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179",
+      "executed": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+    }
+  },
+  "priorArchiveComparison": {
+    "server/adversarial.test.ts": {
+      "priorArchive": "e996bb47c24b633f4af3c3cebbef0b4a6d33558a8de05191f244a2337a77bc2b",
+      "current": "e996bb47c24b633f4af3c3cebbef0b4a6d33558a8de05191f244a2337a77bc2b",
+      "equal": true
+    },
+    "server/boundaries.test.ts": {
+      "priorArchive": "5c337434b8571ece449239360016d1ae71eb026b8f3f52a40933df7c0563078b",
+      "current": "5c337434b8571ece449239360016d1ae71eb026b8f3f52a40933df7c0563078b",
+      "equal": true
+    },
+    "server/commitment-evidence-binding.test.ts": {
+      "priorArchive": "2a9ab1e5211a843949a1f9dbacf80e430fd6f228e3a6a756397b487f7b270a7e",
+      "current": "2a9ab1e5211a843949a1f9dbacf80e430fd6f228e3a6a756397b487f7b270a7e",
+      "equal": true
+    },
+    "server/commitment-revisions-http.test.ts": {
+      "priorArchive": "33e24d9d4b3b0e639e234c4e22018031025ba716f9006ee001dd8dcf711c5a33",
+      "current": "33e24d9d4b3b0e639e234c4e22018031025ba716f9006ee001dd8dcf711c5a33",
+      "equal": true
+    },
+    "server/commitment-revisions.test.ts": {
+      "priorArchive": "49305f304454a048ce8924aa22d17dbc558a38877647af9693cf594da8fdb047",
+      "current": "49305f304454a048ce8924aa22d17dbc558a38877647af9693cf594da8fdb047",
+      "equal": true
+    },
+    "server/commitment-revisions.ts": {
+      "priorArchive": "9554f1f0efc88424c2b342868b1c83dabe2f91647e44cae67ec93415b8b871e1",
+      "current": "d4b3466cdad38d54b2409ef5b129324110161e7865cc21401c8e670739078336",
+      "equal": false
+    },
+    "server/commitments-atomic.test.ts": {
+      "priorArchive": "8bdb19d0a5684f1c0a29fe116b4ec5c82e7d3dc3dae9eba89b523968e509f9da",
+      "current": "8bdb19d0a5684f1c0a29fe116b4ec5c82e7d3dc3dae9eba89b523968e509f9da",
+      "equal": true
+    },
+    "server/commitments-coverage.test.ts": {
+      "priorArchive": "26dec4965a05003fc6c247efb25bfeb42ee9f1a6644abfa314a4dd1b5113bd73",
+      "current": "26dec4965a05003fc6c247efb25bfeb42ee9f1a6644abfa314a4dd1b5113bd73",
+      "equal": true
+    },
+    "server/commitments-followup.test.ts": {
+      "priorArchive": "1fdf6f685f5e42400c153b99a5334cbc25e23ecba8583f9bc050d6506a4ab2f5",
+      "current": "1fdf6f685f5e42400c153b99a5334cbc25e23ecba8583f9bc050d6506a4ab2f5",
+      "equal": true
+    },
+    "server/commitments-http.test.ts": {
+      "priorArchive": "3c0a1b4c70bec34c73bd5874c137ea63c63c15e92ab26aeb741fb0a71d3af1d3",
+      "current": "3c0a1b4c70bec34c73bd5874c137ea63c63c15e92ab26aeb741fb0a71d3af1d3",
+      "equal": true
+    },
+    "server/commitments-storage-review.test.ts": {
+      "priorArchive": "adf0de99c6e53f4a7668f26158c635471f4cb42a48a1a442f78c1b4be3443c24",
+      "current": "8e11873f27d188bfda8baf410b465db0818151c6b0ee17be7f95034429a57419",
+      "equal": false
+    },
+    "server/commitments.test.ts": {
+      "priorArchive": "d6a9dfa4d3de052082331b7bc8d4164c3cca985f270bf4d70e6d89f61057b184",
+      "current": "d6a9dfa4d3de052082331b7bc8d4164c3cca985f270bf4d70e6d89f61057b184",
+      "equal": true
+    },
+    "server/commitments.ts": {
+      "priorArchive": "1f577c84d25a76683e6909274e9a5919f7419d3cdd01293bb28d2f9d511b9fca",
+      "current": "b7a6076d435af203a46aa4cd705588d8dea4e0b9a52822ffc9b04d45de63cf80",
+      "equal": false
+    },
+    "server/dialogue.test.ts": {
+      "priorArchive": "b1237b060052917274a489ef8fc2cea4cb2f166df725032b58185875af4c37c0",
+      "current": "b1237b060052917274a489ef8fc2cea4cb2f166df725032b58185875af4c37c0",
+      "equal": true
+    },
+    "server/dialogue.ts": {
+      "priorArchive": "af85c5caf6ce3a032ea82bc144e0f38558999a8bb16631779538a4eea56b4be5",
+      "current": "f8b807ab006845414eaad0f8f81c2c9d5f4efffbf1cd184bd302b35b1e22fdd6",
+      "equal": false
+    },
+    "server/game.test.ts": {
+      "priorArchive": "9fd4e4a93df045a9925f0f4b04ea453d2208476f02f8b223cca9199dcf26e9f5",
+      "current": "9fd4e4a93df045a9925f0f4b04ea453d2208476f02f8b223cca9199dcf26e9f5",
+      "equal": true
+    },
+    "server/game.ts": {
+      "priorArchive": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "current": "f8b7619574b1181461e9cf22d1b073c220718dec704758780e226fc68ff3fbf0",
+      "equal": true
+    },
+    "server/index.ts": {
+      "priorArchive": "e4627fe5595e7f5ad877de761bb4b72e14574e037dee6ab83e183a83016ba2f4",
+      "current": "13837ef233590635b4687dd161d0adc4e6b5d673dfaddf09eb30c81540ce8f8d",
+      "equal": false
+    },
+    "server/interpretation.test.ts": {
+      "priorArchive": "57814fca4693c08bb253a17349492460ff4bdb3c1ac319022324aead0c8d90ba",
+      "current": "57814fca4693c08bb253a17349492460ff4bdb3c1ac319022324aead0c8d90ba",
+      "equal": true
+    },
+    "server/interpretation.ts": {
+      "priorArchive": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+      "current": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0",
+      "equal": true
+    },
+    "server/music.test.ts": {
+      "priorArchive": "7d852867e9508110191ac1e73326b1f20ffaece325df4a4e4c205472f5a2574e",
+      "current": "7d852867e9508110191ac1e73326b1f20ffaece325df4a4e4c205472f5a2574e",
+      "equal": true
+    },
+    "server/narrative-agency-regression.test.ts": {
+      "priorArchive": "19eec66a693dc72c02b62f39d5738823be84fa6d084f900f773317f8a280964f",
+      "current": "19eec66a693dc72c02b62f39d5738823be84fa6d084f900f773317f8a280964f",
+      "equal": true
+    },
+    "server/narrative-compound-natural.test.ts": {
+      "priorArchive": "5e2502a7219a3622ba5b8b1fc58cff3e9f41d01a981314cce66641ab20c0886f",
+      "current": "5e2502a7219a3622ba5b8b1fc58cff3e9f41d01a981314cce66641ab20c0886f",
+      "equal": true
+    },
+    "server/narrative-compound-promise.test.ts": {
+      "priorArchive": "8c5cd8116c45aae46e74f16b31b10f720bf19ddacb323c517d92a51345a7c876",
+      "current": "8c5cd8116c45aae46e74f16b31b10f720bf19ddacb323c517d92a51345a7c876",
+      "equal": true
+    },
+    "server/narrative-counterfactual.test.ts": {
+      "priorArchive": "fdce8e99bf04a9c4b689ddf1e6a9327a1038597f8eaca060f374053139ddf3d1",
+      "current": "fdce8e99bf04a9c4b689ddf1e6a9327a1038597f8eaca060f374053139ddf3d1",
+      "equal": true
+    },
+    "server/narrative-lifecycle-regression.test.ts": {
+      "priorArchive": "41947c5680523474b182f6ce7c60cfe4010538f70ce07888afd1200205332fdc",
+      "current": "41947c5680523474b182f6ce7c60cfe4010538f70ce07888afd1200205332fdc",
+      "equal": true
+    },
+    "server/narrative-natural-delivery.test.ts": {
+      "priorArchive": "92b63d6b0e1bb191905ad26242c4e19a705a53d41ed23e8b504ab3b0dc9b0ce5",
+      "current": "92b63d6b0e1bb191905ad26242c4e19a705a53d41ed23e8b504ab3b0dc9b0ce5",
+      "equal": true
+    },
+    "server/narrative-promise-edge.test.ts": {
+      "priorArchive": "efd0ed9a153f20d804e9d2d969f43738f1c042605782c4a9f86285f94356616c",
+      "current": "efd0ed9a153f20d804e9d2d969f43738f1c042605782c4a9f86285f94356616c",
+      "equal": true
+    },
+    "server/narrative-route-agency.test.ts": {
+      "priorArchive": "f3c970fbfe7a701318ae68a57b927409004a2dab0ad69a8f603141d5c731279b",
+      "current": "f3c970fbfe7a701318ae68a57b927409004a2dab0ad69a8f603141d5c731279b",
+      "equal": true
+    },
+    "server/narrative-short-reply.test.ts": {
+      "priorArchive": "c5815acecd3557b49752ab14f7c32a6e88a9efcece2e38c939a16ed75f5dc103",
+      "current": "c5815acecd3557b49752ab14f7c32a6e88a9efcece2e38c939a16ed75f5dc103",
+      "equal": true
+    },
+    "server/narrative.test.ts": {
+      "priorArchive": "1829c31f88bc676a8202baff2bebbb11974fb8aee9271baf1367ff59087a9724",
+      "current": "1829c31f88bc676a8202baff2bebbb11974fb8aee9271baf1367ff59087a9724",
+      "equal": true
+    },
+    "server/narrative.ts": {
+      "priorArchive": "97b425c577df83c5f89f9eab300228589d264685c5cad3ed15a4807fe4c7cc26",
+      "current": "2954e6eeb9d355b98b62a4bf3f28ddc6b134b75a37498004fe8b0abba4f3ea0c",
+      "equal": false
+    },
+    "server/office.test.ts": {
+      "priorArchive": "c70cc186f6eb79c0494e9b0732c697a4bc33e4151ffeed87e790e16b0eea418f",
+      "current": "c70cc186f6eb79c0494e9b0732c697a4bc33e4151ffeed87e790e16b0eea418f",
+      "equal": true
+    },
+    "server/office.ts": {
+      "priorArchive": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+      "current": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98",
+      "equal": true
+    },
+    "server/persistence.test.ts": {
+      "priorArchive": "3190e8f8d0c32758d13fbef7c5a072bdad05741b1653897195acb69d1cc973af",
+      "current": "3190e8f8d0c32758d13fbef7c5a072bdad05741b1653897195acb69d1cc973af",
+      "equal": true
+    },
+    "server/provider.ts": {
+      "priorArchive": "3ca5fa34fec91adb276070b86c1c8e972c411fb7d088d0242d8493068fff403d",
+      "current": "3c9beb513ef57694c8252255199049965ceb6986ee11a50eb63d01856291755f",
+      "equal": false
+    },
+    "server/recovery.test.ts": {
+      "priorArchive": "a0e865cced0e13a018cd50b4dface7367a0a2aba721759ce300b20d205d35d7e",
+      "current": "a0e865cced0e13a018cd50b4dface7367a0a2aba721759ce300b20d205d35d7e",
+      "equal": true
+    },
+    "server/romance.test.ts": {
+      "priorArchive": "effbae28a210cb3e5da1636492ad71a317f786795e17a13af4e7ba5a65b2a577",
+      "current": "effbae28a210cb3e5da1636492ad71a317f786795e17a13af4e7ba5a65b2a577",
+      "equal": true
+    },
+    "server/romance.ts": {
+      "priorArchive": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+      "current": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df",
+      "equal": true
+    },
+    "server/storage.ts": {
+      "priorArchive": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b",
+      "current": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b",
+      "equal": true
+    },
+    "server/v2-ac3-lifecycle.test.ts": {
+      "priorArchive": "01b4237cad47f53b84d80ac2512813d00e96a2f3427c9d7af27fd0b4daea2a5a",
+      "current": "01b4237cad47f53b84d80ac2512813d00e96a2f3427c9d7af27fd0b4daea2a5a",
+      "equal": true
+    },
+    "server/v2-security.test.ts": {
+      "priorArchive": "9c0a05c6e7766c107d0c677cb2146bdfd49916ba2ffcd4e8b2825fa438c33711",
+      "current": "9c0a05c6e7766c107d0c677cb2146bdfd49916ba2ffcd4e8b2825fa438c33711",
+      "equal": true
+    },
+    "server/v2-story.test.ts": {
+      "priorArchive": "01dc2795d99e76b291df5e9dde548150a9f600512a9dd8993d4fbab487b897b5",
+      "current": "01dc2795d99e76b291df5e9dde548150a9f600512a9dd8993d4fbab487b897b5",
+      "equal": true
+    },
+    "server/visual-binding.test.ts": {
+      "priorArchive": "6f6ae25b4eb34b8ba257eccc18b159195c37f59755d45851ce5e1b2a203515ca",
+      "current": "6f6ae25b4eb34b8ba257eccc18b159195c37f59755d45851ce5e1b2a203515ca",
+      "equal": true
+    },
+    "src/CharacterSprite.tsx": {
+      "priorArchive": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+      "current": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+      "equal": true
+    },
+    "src/collection.ts": {
+      "priorArchive": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+      "current": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+      "equal": true
+    },
+    "src/ConversationViewport.tsx": {
+      "priorArchive": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+      "current": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+      "equal": true
+    },
+    "src/main.tsx": {
+      "priorArchive": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+      "current": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+      "equal": true
+    },
+    "src/music.ts": {
+      "priorArchive": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+      "current": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+      "equal": true
+    },
+    "src/OfficeAgreement.tsx": {
+      "priorArchive": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+      "current": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+      "equal": true
+    },
+    "src/presentation.ts": {
+      "priorArchive": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+      "current": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+      "equal": true
+    },
+    "src/StageEffects.tsx": {
+      "priorArchive": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+      "current": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+      "equal": true
+    },
+    "src/style.css": {
+      "priorArchive": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+      "current": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+      "equal": true
+    },
+    "src/visualAssets.ts": {
+      "priorArchive": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179",
+      "current": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179",
+      "equal": true
+    },
+    "public/assets/archive-theme.wav": {
+      "priorArchive": "3e9e63f5adcaa8a13125a072466ee914d90e6f8d97aca8d6c6db95ddf8d0e72e",
+      "current": "3e9e63f5adcaa8a13125a072466ee914d90e6f8d97aca8d6c6db95ddf8d0e72e",
+      "equal": true
+    },
+    "public/assets/archive.png": {
+      "priorArchive": "52d1a0e2ec3731f8934ff75e2fd25fcace71528ea082946a87c46ef40d4ba711",
+      "current": "52d1a0e2ec3731f8934ff75e2fd25fcace71528ea082946a87c46ef40d4ba711",
+      "equal": true
+    },
+    "public/assets/audio-manifest.json": {
+      "priorArchive": "7574e940c6bfe883db70cafdabc6a0d8b18e96989637263a465df55d6bf69fb8",
+      "current": "7574e940c6bfe883db70cafdabc6a0d8b18e96989637263a465df55d6bf69fb8",
+      "equal": true
+    },
+    "public/assets/boss-expressions.png": {
+      "priorArchive": "e072f4d0c56c11349093c379303cacd2509b3a8610612a343b7f7fae96bda51a",
+      "current": "e072f4d0c56c11349093c379303cacd2509b3a8610612a343b7f7fae96bda51a",
+      "equal": true
+    },
+    "public/assets/cafe.png": {
+      "priorArchive": "9d546aca64cdbe9bb57aae91df908b59b36d747397175fe2004cddffdd6666c4",
+      "current": "9d546aca64cdbe9bb57aae91df908b59b36d747397175fe2004cddffdd6666c4",
+      "equal": true
+    },
+    "public/assets/chime.wav": {
+      "priorArchive": "8c54330c0df2b0fe06668597dc2e1245516a12a98856a2536046f32bf3cd4b1a",
+      "current": "8c54330c0df2b0fe06668597dc2e1245516a12a98856a2536046f32bf3cd4b1a",
+      "equal": true
+    },
+    "public/assets/evening.wav": {
+      "priorArchive": "9fdf672d7feeeb062cae389da92372be163bb4cc27224c8cec74a2b8bde06125",
+      "current": "9fdf672d7feeeb062cae389da92372be163bb4cc27224c8cec74a2b8bde06125",
+      "equal": true
+    },
+    "public/assets/generation-manifest.json": {
+      "priorArchive": "371bf60753f9fbfaf5b7991fc791bd51c2c4a59aed412714457c4a85b37fbf6e",
+      "current": "371bf60753f9fbfaf5b7991fc791bd51c2c4a59aed412714457c4a85b37fbf6e",
+      "equal": true
+    },
+    "public/assets/office.png": {
+      "priorArchive": "bf3a39649b5920bc286a82b9db93c3d6d9a2490708b445c5607ea95d016d7751",
+      "current": "bf3a39649b5920bc286a82b9db93c3d6d9a2490708b445c5607ea95d016d7751",
+      "equal": true
+    },
+    "public/assets/riverside.png": {
+      "priorArchive": "393bda947f29056c417ab302924c8a4fb107a21d7d8f9053187bb3950f45aa9a",
+      "current": "393bda947f29056c417ab302924c8a4fb107a21d7d8f9053187bb3950f45aa9a",
+      "equal": true
+    },
+    "public/assets/supplemental-manifest.json": {
+      "priorArchive": "2d0a394c52f48e100ac80dfad63e57c2c789d0478714bba2baeb2fb62d2975a3",
+      "current": "2d0a394c52f48e100ac80dfad63e57c2c789d0478714bba2baeb2fb62d2975a3",
+      "equal": true
+    },
+    "public/assets/tape.wav": {
+      "priorArchive": "2c009c381d505f6e71115f54fd816197cfe00312a890e67a9bf7c7688cc17318",
+      "current": "2c009c381d505f6e71115f54fd816197cfe00312a890e67a9bf7c7688cc17318",
+      "equal": true
+    },
+    "public/assets/yuna-expressions.png": {
+      "priorArchive": "09109a8eba18c5e8cd8e591583770e8da26658c5541c7e913dbc79846037ec80",
+      "current": "09109a8eba18c5e8cd8e591583770e8da26658c5541c7e913dbc79846037ec80",
+      "equal": true
+    },
+    "public/assets/audio-v2/archive-pursuit.ogg": {
+      "priorArchive": "9affe22de8b8125ad6709fdf4acde2e107e91483642fdee70397b81c3da2b311",
+      "current": "9affe22de8b8125ad6709fdf4acde2e107e91483642fdee70397b81c3da2b311",
+      "equal": true
+    },
+    "public/assets/audio-v2/archive-pursuit.score.json": {
+      "priorArchive": "8dbb473ebfb76c93bce8c207a5549e092d503389d74bc4f3b51cd965842aeb9e",
+      "current": "8dbb473ebfb76c93bce8c207a5549e092d503389d74bc4f3b51cd965842aeb9e",
+      "equal": true
+    },
+    "public/assets/audio-v2/archive-unease.ogg": {
+      "priorArchive": "15009a89a11c82293e1691bb16646321fdf0c63910cfdf7c2211f59b8fb2f709",
+      "current": "15009a89a11c82293e1691bb16646321fdf0c63910cfdf7c2211f59b8fb2f709",
+      "equal": true
+    },
+    "public/assets/audio-v2/archive-unease.score.json": {
+      "priorArchive": "f6b1a96db01beda7fe576f0d3c1319cdf3fc33820292b14b4d29e2f6fa3e0cff",
+      "current": "f6b1a96db01beda7fe576f0d3c1319cdf3fc33820292b14b4d29e2f6fa3e0cff",
+      "equal": true
+    },
+    "public/assets/audio-v2/cafe-warmth.ogg": {
+      "priorArchive": "6e36898828d76fa9a46577384f3e42da3475ecfb6952af408b832891ffa94acb",
+      "current": "6e36898828d76fa9a46577384f3e42da3475ecfb6952af408b832891ffa94acb",
+      "equal": true
+    },
+    "public/assets/audio-v2/cafe-warmth.score.json": {
+      "priorArchive": "d69b7edd52e0a9b2bb01c1eabd989a43c7773a82e6f8579123e2ae0f8812ed96",
+      "current": "d69b7edd52e0a9b2bb01c1eabd989a43c7773a82e6f8579123e2ae0f8812ed96",
+      "equal": true
+    },
+    "public/assets/audio-v2/compose.py": {
+      "priorArchive": "f993cb446bbfd3b13152eb2ff478a398d3f7eb2233d5d3ed0765a9bbae8fe452",
+      "current": "f993cb446bbfd3b13152eb2ff478a398d3f7eb2233d5d3ed0765a9bbae8fe452",
+      "equal": true
+    },
+    "public/assets/audio-v2/manifest.json": {
+      "priorArchive": "b6a8b390b1634300d73b2b24ce655c1c44fd83c211562a502d930695cd19ee92",
+      "current": "b6a8b390b1634300d73b2b24ce655c1c44fd83c211562a502d930695cd19ee92",
+      "equal": true
+    },
+    "public/assets/audio-v2/office-groove.ogg": {
+      "priorArchive": "ed29e9ee5af160f5021c6816c211d232df59301b947edc971499fa4ff3f64fb1",
+      "current": "ed29e9ee5af160f5021c6816c211d232df59301b947edc971499fa4ff3f64fb1",
+      "equal": true
+    },
+    "public/assets/audio-v2/office-groove.score.json": {
+      "priorArchive": "9a60cd7ea3814a5efd91b2739a34ba05b0934c258637152f2d95981c9242f656",
+      "current": "9a60cd7ea3814a5efd91b2739a34ba05b0934c258637152f2d95981c9242f656",
+      "equal": true
+    },
+    "public/assets/audio-v2/office-pressure.ogg": {
+      "priorArchive": "a03d29cb48c6d8075625b37e0d1113146f758aae7061b9abb389aed2f26c4078",
+      "current": "a03d29cb48c6d8075625b37e0d1113146f758aae7061b9abb389aed2f26c4078",
+      "equal": true
+    },
+    "public/assets/audio-v2/office-pressure.score.json": {
+      "priorArchive": "05d6925b5af1261dac2530ab8c3fafaa2664ef90a60bd8b616dee1ed6f4e26bc",
+      "current": "05d6925b5af1261dac2530ab8c3fafaa2664ef90a60bd8b616dee1ed6f4e26bc",
+      "equal": true
+    },
+    "public/assets/audio-v2/rainy-memory.ogg": {
+      "priorArchive": "156b725a24ba5e71bdb4fc75107e658563d23ab454637a969065d5f84512f2b2",
+      "current": "156b725a24ba5e71bdb4fc75107e658563d23ab454637a969065d5f84512f2b2",
+      "equal": true
+    },
+    "public/assets/audio-v2/rainy-memory.score.json": {
+      "priorArchive": "3e14088889f05b7eacc1531eb8f853450af0f1289a003c8fbdead070bac391ae",
+      "current": "3e14088889f05b7eacc1531eb8f853450af0f1289a003c8fbdead070bac391ae",
+      "equal": true
+    },
+    "public/assets/audio-v2/README.md": {
+      "priorArchive": "2115cf784638ecbeb4e8e45eb095853c813391b7ff406b6212fe1023dc43cc6c",
+      "current": "2115cf784638ecbeb4e8e45eb095853c813391b7ff406b6212fe1023dc43cc6c",
+      "equal": true
+    },
+    "public/assets/audio-v2/resolution-dawn.ogg": {
+      "priorArchive": "eb75c8ab798eea7cd9b4a4c0640e95a35225f5c142c5fafe6d3ae7342fadfe26",
+      "current": "eb75c8ab798eea7cd9b4a4c0640e95a35225f5c142c5fafe6d3ae7342fadfe26",
+      "equal": true
+    },
+    "public/assets/audio-v2/resolution-dawn.score.json": {
+      "priorArchive": "597853e64121289b40498edb45ff1351352b5ce5e1280aa05f8ab0eebe4e3ff7",
+      "current": "597853e64121289b40498edb45ff1351352b5ce5e1280aa05f8ab0eebe4e3ff7",
+      "equal": true
+    },
+    "public/assets/audio-v2/rooftop-heart.ogg": {
+      "priorArchive": "a4516c6187507bb7175f735eeb76fd47a8da3cfb999c9ed570bff02feb4c1c99",
+      "current": "a4516c6187507bb7175f735eeb76fd47a8da3cfb999c9ed570bff02feb4c1c99",
+      "equal": true
+    },
+    "public/assets/audio-v2/rooftop-heart.score.json": {
+      "priorArchive": "c9c3dc1e0e3109593cb7a2e909c223773ea104d8e19185b8403c5c8bc5ad3474",
+      "current": "c9c3dc1e0e3109593cb7a2e909c223773ea104d8e19185b8403c5c8bc5ad3474",
+      "equal": true
+    },
+    "public/assets/audio-v2/verification.json": {
+      "priorArchive": "48cb95be1debd8c581c453fdf348fcb33f2b83759d6626a89f93ea8c076e7768",
+      "current": "48cb95be1debd8c581c453fdf348fcb33f2b83759d6626a89f93ea8c076e7768",
+      "equal": true
+    },
+    "public/assets/v2/boss-actions-a.png": {
+      "priorArchive": "18176790fe162b6b65519c50a89dc9fc4cf5ab571a8f819204b6074bb9d12f40",
+      "current": "18176790fe162b6b65519c50a89dc9fc4cf5ab571a8f819204b6074bb9d12f40",
+      "equal": true
+    },
+    "public/assets/v2/boss-actions-b.png": {
+      "priorArchive": "debd7febc1fd485aae4c4734cb18076a90fc735ec705e545296016daf615b7dd",
+      "current": "debd7febc1fd485aae4c4734cb18076a90fc735ec705e545296016daf615b7dd",
+      "equal": true
+    },
+    "public/assets/v2/generation-manifest.json": {
+      "priorArchive": "acd768da058d599f6d5fdbc57729105afea68bf4505aeea57df8cda6da538075",
+      "current": "acd768da058d599f6d5fdbc57729105afea68bf4505aeea57df8cda6da538075",
+      "equal": true
+    },
+    "public/assets/v2/rainstreet.png": {
+      "priorArchive": "44eda0f37410a72ab8939fab268e41c0ca65de2cc212696d34815d407fac60d4",
+      "current": "44eda0f37410a72ab8939fab268e41c0ca65de2cc212696d34815d407fac60d4",
+      "equal": true
+    },
+    "public/assets/v2/rooftop.png": {
+      "priorArchive": "6061e8b6712faa827cdf6c29e504c274a3997fb211aba44dd36bbdb983fa8cc4",
+      "current": "6061e8b6712faa827cdf6c29e504c274a3997fb211aba44dd36bbdb983fa8cc4",
+      "equal": true
+    },
+    "public/assets/v2/yuna-actions-a.png": {
+      "priorArchive": "ad4a35ffb0070f3ba704f389c7d7ee84a03e7563247972ca773053b7ac6d5c6c",
+      "current": "ad4a35ffb0070f3ba704f389c7d7ee84a03e7563247972ca773053b7ac6d5c6c",
+      "equal": true
+    },
+    "public/assets/v2/yuna-actions-b.png": {
+      "priorArchive": "b14c4daa745797c3995eb961f446c0d9b45751744430248d95580b6755e4f049",
+      "current": "b14c4daa745797c3995eb961f446c0d9b45751744430248d95580b6755e4f049",
+      "equal": true
+    },
+    "scripts/audit-current-package.ps1": {
+      "priorArchive": "4557e76014093e836bfe17e3c46a7abe85a77917ad59edefa26d20c7d7c6a223",
+      "current": "4557e76014093e836bfe17e3c46a7abe85a77917ad59edefa26d20c7d7c6a223",
+      "equal": true
+    },
+    "scripts/audit-v2-package.ps1": {
+      "priorArchive": "a6c84a16e5c90f0c9ba7e86ae4696c2c78fdce9b249a3a34cd494d6bff4c595f",
+      "current": "a6c84a16e5c90f0c9ba7e86ae4696c2c78fdce9b249a3a34cd494d6bff4c595f",
+      "equal": true
+    },
+    "scripts/generate-notices.mjs": {
+      "priorArchive": "0047b175b56e76672668862c4ce444e97c86aa6a82793e25e4d17ba7a3f34d05",
+      "current": "0047b175b56e76672668862c4ce444e97c86aa6a82793e25e4d17ba7a3f34d05",
+      "equal": true
+    },
+    "scripts/index-v2-candidate.mjs": {
+      "priorArchive": "c91076f2ac610f75f2d8e9ab8504ebdcda769cca34eeb4654b9f92bfede4c943",
+      "current": "c91076f2ac610f75f2d8e9ab8504ebdcda769cca34eeb4654b9f92bfede4c943",
+      "equal": true
+    },
+    "scripts/package-local.ps1": {
+      "priorArchive": "22bdfbe3602fe7f1ef4de3dd307d4c6d56189370a140ed128f5fb59d2d357d89",
+      "current": "22bdfbe3602fe7f1ef4de3dd307d4c6d56189370a140ed128f5fb59d2d357d89",
+      "equal": true
+    },
+    "scripts/package-seed-evidence.py": {
+      "priorArchive": "72783b8650b375ec097046f172c78914c7906b62b25015abc0cae55754b612a1",
+      "current": "72783b8650b375ec097046f172c78914c7906b62b25015abc0cae55754b612a1",
+      "equal": true
+    },
+    "scripts/start-local.ps1": {
+      "priorArchive": "766b81d392afd7edada47a61141fb23b48d7d7423306c8c11f42d78094393cfd",
+      "current": "766b81d392afd7edada47a61141fb23b48d7d7423306c8c11f42d78094393cfd",
+      "equal": true
+    },
+    "scripts/stop-local.ps1": {
+      "priorArchive": "14130f84e201acfeb334a88e9b58b341563c9ad3fbca78fc585126739cfde1d6",
+      "current": "14130f84e201acfeb334a88e9b58b341563c9ad3fbca78fc585126739cfde1d6",
+      "equal": true
+    },
+    "scripts/verify-v2-candidate.mjs": {
+      "priorArchive": "99d611bd45bd8a8dfe11ff0134b9a89dbaa5cc773afc3c98f4f75a42a96cc261",
+      "current": "99d611bd45bd8a8dfe11ff0134b9a89dbaa5cc773afc3c98f4f75a42a96cc261",
+      "equal": true
+    },
+    "scripts/verify-v2-launcher.ps1": {
+      "priorArchive": "858df996f718638efd02d77864257dfbbcb64bcb1d10d35f66c1442e01e0fead",
+      "current": "858df996f718638efd02d77864257dfbbcb64bcb1d10d35f66c1442e01e0fead",
+      "equal": true
+    },
+    "tests/ac7.spec.ts": {
+      "priorArchive": "c492c766ec4e0c0e4bdce9b45f06cb2f2fc9e3ec5936c38866fbd3394c8e250f",
+      "current": "c492c766ec4e0c0e4bdce9b45f06cb2f2fc9e3ec5936c38866fbd3394c8e250f",
+      "equal": true
+    },
+    "tests/commitment-transport.mjs": {
+      "priorArchive": "ff1c6defb6b1531541429fe4b4d3f452dba47d5ed417c192daeca48978568555",
+      "current": "5fcaac386612a5e6a52ca89923560dd97bfa5481eb96a0d379c3366dea388f28",
+      "equal": false
+    },
+    "tests/final-live-smoke.ts": {
+      "priorArchive": "7980eacdc75cd7f565b0ac70dccca8e7b927d2c7beab75c43ec93ea237a7d674",
+      "current": "7980eacdc75cd7f565b0ac70dccca8e7b927d2c7beab75c43ec93ea237a7d674",
+      "equal": true
+    },
+    "tests/live-smoke.ts": {
+      "priorArchive": "b81f9af6d95046f26ec4f9fcfd1227812e2bc2b144f4eef4e7c00100ebad2b92",
+      "current": "b81f9af6d95046f26ec4f9fcfd1227812e2bc2b144f4eef4e7c00100ebad2b92",
+      "equal": true
+    },
+    "tests/office.spec.ts": {
+      "priorArchive": "ffb52731108187876d0dbcde95c05acd930ce2d46ffdebf20c15d372d10d210f",
+      "current": "ffb52731108187876d0dbcde95c05acd930ce2d46ffdebf20c15d372d10d210f",
+      "equal": true
+    },
+    "tests/persistence.spec.ts": {
+      "priorArchive": "07a122da9738ef95d7c196893177f641c75cefa11100995eeb9266157c46cba6",
+      "current": "07a122da9738ef95d7c196893177f641c75cefa11100995eeb9266157c46cba6",
+      "equal": true
+    },
+    "tests/play.spec.ts": {
+      "priorArchive": "273a41ad05b989d6d1122f15b9a2ccd045a4566c97bcf2f450b43b09663054b5",
+      "current": "273a41ad05b989d6d1122f15b9a2ccd045a4566c97bcf2f450b43b09663054b5",
+      "equal": true
+    },
+    "tests/presentation.spec.ts": {
+      "priorArchive": "73056c33f19be36c3d9e33d0442e551bedd9811eb4f21fe2c914d561f3e2dcb0",
+      "current": "73056c33f19be36c3d9e33d0442e551bedd9811eb4f21fe2c914d561f3e2dcb0",
+      "equal": true
+    },
+    "tests/provider-fixture.mjs": {
+      "priorArchive": "5801bb1cb5fb383361655a83e170d309461dbaa466323ac81fd6e7594c3ef3da",
+      "current": "5801bb1cb5fb383361655a83e170d309461dbaa466323ac81fd6e7594c3ef3da",
+      "equal": true
+    },
+    "tests/romance.spec.ts": {
+      "priorArchive": "7fc1635aa937b253c4eaaf0e1ec3e796468a7c7ca51dfb2bc25d8e0780366ca7",
+      "current": "7fc1635aa937b253c4eaaf0e1ec3e796468a7c7ca51dfb2bc25d8e0780366ca7",
+      "equal": true
+    },
+    "tests/v2-ac2-receipt-replay.ts": {
+      "priorArchive": "459cf63dc66bba32af1652a499586981cc309fe59a24ccbadea204ae5da5a654",
+      "current": "459cf63dc66bba32af1652a499586981cc309fe59a24ccbadea204ae5da5a654",
+      "equal": true
+    },
+    "tests/v2-ac3-receipt-audit.ts": {
+      "priorArchive": "831855f7ac251422a4af810cbbdbf590ec4c5d3daea185dbc47dc3068e354427",
+      "current": "831855f7ac251422a4af810cbbdbf590ec4c5d3daea185dbc47dc3068e354427",
+      "equal": true
+    },
+    "tests/v2-ac4-boundaries.spec.ts": {
+      "priorArchive": "ad8f9367a9af617bb04794aa96e65dc80277e9c3d82c364d75d9e6dcb65dfaf1",
+      "current": "ad8f9367a9af617bb04794aa96e65dc80277e9c3d82c364d75d9e6dcb65dfaf1",
+      "equal": true
+    },
+    "tests/v2-ac4-gallery.ts": {
+      "priorArchive": "d9d1d922fe1a3c03e571c8d35e601bda546b25e5225e4030ae1956e828374d76",
+      "current": "d9d1d922fe1a3c03e571c8d35e601bda546b25e5225e4030ae1956e828374d76",
+      "equal": true
+    },
+    "tests/v2-art.spec.ts": {
+      "priorArchive": "c7878e7cad5542f8d879fc067dd76cb90b89caf5d2905759e7c22bee4973042d",
+      "current": "c7878e7cad5542f8d879fc067dd76cb90b89caf5d2905759e7c22bee4973042d",
+      "equal": true
+    },
+    "tests/v2-audio.spec.ts": {
+      "priorArchive": "b7a099ee780824d6af263fbf5d593dde30bd1a6b7abd4a7c91ddecb0849c211e",
+      "current": "b7a099ee780824d6af263fbf5d593dde30bd1a6b7abd4a7c91ddecb0849c211e",
+      "equal": true
+    },
+    "tests/v2-browser-fixture.mjs": {
+      "priorArchive": "38719f39071c19d0eff38b86f90f6f2fad749ae39f48a3cd2e3c25a18ab55dce",
+      "current": "38719f39071c19d0eff38b86f90f6f2fad749ae39f48a3cd2e3c25a18ab55dce",
+      "equal": true
+    },
+    "tests/v2-journey.spec.ts": {
+      "priorArchive": "d544bb6629a6008055fe6cea08c0073b29471948c5f07c16a7ca43a9de8e8f9b",
+      "current": "d544bb6629a6008055fe6cea08c0073b29471948c5f07c16a7ca43a9de8e8f9b",
+      "equal": true
+    },
+    "tests/v2-live-screens.mjs": {
+      "priorArchive": "0cba909fd8c8cf4584a3bef0b70145c8fd542cad650ae811897860c05f07dfab",
+      "current": "0cba909fd8c8cf4584a3bef0b70145c8fd542cad650ae811897860c05f07dfab",
+      "equal": true
+    },
+    "tests/v2-live-server.ts": {
+      "priorArchive": "f82ef81fbf6d9bb56fa8ba2f4b84d6c426855e2c3ec3cf2e6750f8a4b4d70c3f",
+      "current": "f82ef81fbf6d9bb56fa8ba2f4b84d6c426855e2c3ec3cf2e6750f8a4b4d70c3f",
+      "equal": true
+    },
+    "tests/v2-live-smoke.ts": {
+      "priorArchive": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21",
+      "current": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21",
+      "equal": true
+    },
+    "tests/v2-persistence-fixture.mjs": {
+      "priorArchive": "f01a8251115cbfcae79b76c60dca27e53318b6b98035708b458ec0f998327b67",
+      "current": "f01a8251115cbfcae79b76c60dca27e53318b6b98035708b458ec0f998327b67",
+      "equal": true
+    },
+    "tests/v2-promise-edge-probe.ts": {
+      "priorArchive": "007a03c977fa30d62917ba7a0d4d15f5d6e90b9188b03dfdb28c85894a28eda4",
+      "current": "007a03c977fa30d62917ba7a0d4d15f5d6e90b9188b03dfdb28c85894a28eda4",
+      "equal": true
+    },
+    "tests/v2-receipt-replay.ts": {
+      "priorArchive": "33a1eeadae8371cbca038fdf229580fa0796bf9df0f4c23a926d5d2148001b25",
+      "current": "33a1eeadae8371cbca038fdf229580fa0796bf9df0f4c23a926d5d2148001b25",
+      "equal": true
+    },
+    "tests/v2-security-fixture.mjs": {
+      "priorArchive": "3105e050717c602b00fed0c386db67e798599accdc1476c74d229a8aab177d0c",
+      "current": "3105e050717c602b00fed0c386db67e798599accdc1476c74d229a8aab177d0c",
+      "equal": true
+    },
+    "tests/v2-ui-polish.spec.ts": {
+      "priorArchive": "81fe4c0b6a1b3fc840fa517c00f253995e9c6bff30e4c796ccd9321614726248",
+      "current": "81fe4c0b6a1b3fc840fa517c00f253995e9c6bff30e4c796ccd9321614726248",
+      "equal": true
+    },
+    "tests/v2-ui.spec.ts": {
+      "priorArchive": "c2092085aeaf3accb1dbe2dbf3016276bff6265ab3c7866385e5133e52230a05",
+      "current": "c2092085aeaf3accb1dbe2dbf3016276bff6265ab3c7866385e5133e52230a05",
+      "equal": true
+    },
+    "tests/v2-final-live/guard.mjs": {
+      "priorArchive": "b095848b94d31091bb169595e1206df805e1f92815806417306280b3bff9fe0c",
+      "current": "b095848b94d31091bb169595e1206df805e1f92815806417306280b3bff9fe0c",
+      "equal": true
+    },
+    "tests/v2-final-live/guard.test.mjs": {
+      "priorArchive": "df8b4895304c5700013f8c6e458bb285f6b2003b6a3e9b17bf09e56b36930364",
+      "current": "df8b4895304c5700013f8c6e458bb285f6b2003b6a3e9b17bf09e56b36930364",
+      "equal": true
+    },
+    "tests/v2-final-live/runner.mjs": {
+      "priorArchive": "48c8ede7f4484ad6e7a9af2e70e5b1c0e7d513f2282903e8e76612313076b7db",
+      "current": "48c8ede7f4484ad6e7a9af2e70e5b1c0e7d513f2282903e8e76612313076b7db",
+      "equal": true
+    },
+    "tests/v2-final-live/server.mjs": {
+      "priorArchive": "af47d2a0ae7ef7c8fe6df8f27b712b356520e3bc0638e4c1c556715f749d24fc",
+      "current": "af47d2a0ae7ef7c8fe6df8f27b712b356520e3bc0638e4c1c556715f749d24fc",
+      "equal": true
+    }
+  },
+  "parentComparison": {
+    "server/commitments.ts": {
+      "worktree": "b7a6076d435af203a46aa4cd705588d8dea4e0b9a52822ffc9b04d45de63cf80",
+      "parent": "1f577c84d25a76683e6909274e9a5919f7419d3cdd01293bb28d2f9d511b9fca",
+      "operation": "read-only; no integration"
+    },
+    "server/narrative.ts": {
+      "worktree": "2954e6eeb9d355b98b62a4bf3f28ddc6b134b75a37498004fe8b0abba4f3ea0c",
+      "parent": "4a62df967baf09c31c53ab02c88facfb738e8f343d08b2b5a1710952fa4273c3",
+      "operation": "read-only; no integration"
+    },
+    "server/provider.ts": {
+      "worktree": "3c9beb513ef57694c8252255199049965ceb6986ee11a50eb63d01856291755f",
+      "parent": "3ca5fa34fec91adb276070b86c1c8e972c411fb7d088d0242d8493068fff403d",
+      "operation": "read-only; no integration"
+    },
+    "server/storage.ts": {
+      "worktree": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b",
+      "parent": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b",
+      "operation": "read-only; no integration"
+    }
+  },
+  "priorArchive": {
+    "path": "docs\\v2-seed-evidence-audit-review.zip",
+    "sha256": "c7ed94478c002171a4ef4f86947b97d8ebbf3f8dbd8c8ee1d53c566aba3a0266",
+    "crc": "pass"
+  },
+  "paidCalls": 0,
+  "release": "incomplete",
+  "access": "This execution read selected sources/traces/images; no direct listening. Future evaluator access is not presumed."
+}

@@ -1,0 +1,21 @@
+✔ restoration rejects condition evidence reassigned to a different obligation (13.9166ms)
+✔ revision applicability rejects a historical evidence event with a broken obligation reference (3.2104ms)
+✔ Korean performance contrast records supported forms and unresolved paraphrases without inventing nonperformance (6.5944ms)
+✔ one normal source explicitly performs two obligations; independent applicability survives slots and disk reload (36.3148ms)
+✔ source omitting the second action or naming a different actor cannot be reused (2.5982ms)
+✔ proposal, refusal and ambiguity restore independently; refusal still permits original performance (57.5777ms)
+✔ agreement and application are separate; successful change retains ribbon and requires new drawing (31.3253ms)
+✔ actual storage write failure leaves last committed negotiation unchanged (10.6273ms)
+✔ interpretation and obligation matching remain distinct after restore without nonperformance events (62.3289ms)
+✔ late proposal response cannot resurrect an older contract; malformed lifecycle references reject restoration (2.5234ms)
+✔ response and diagnostic bounds reject atomically instead of truncating history (27.1188ms)
+✔ both refusal replies in one turn stay proposal-scoped and duplicate rows do not create transitions (1.1545ms)
+✔ a model cannot turn a change refusal into refusal of the original promise (1.3033ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 511.8153

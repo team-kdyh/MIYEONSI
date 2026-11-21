@@ -32,10 +32,10 @@ export function validateReply(value:unknown,g:DialogueGame):Reply {
  if(!r||typeof r!=='object'||!['conjecture,line,recall','conjecture,intent,line,recall'].includes(Object.keys(r).sort().join(','))||r.intent!==undefined&&!['none',...allowedIntents(g).map(i=>i.id)].includes(r.intent)||!(typeof r.line==='string'&&r.line.trim().length>0&&r.line.length<=600)||!Array.isArray(r.recall)||r.recall.length>2||r.recall.some(id=>!canonical(g).facts.some(f=>f.id===id))||!['','아직 당신의 뜻을 다 이해하지 못한 것 같습니다.'].includes(r.conjecture))throw Error('AI 응답이 장면 또는 정본 검증을 통과하지 못했습니다. 다시 시도하거나 오프라인으로 전환하세요.');
  return r;
 }
-export function commitDialogue(game:DialogueGame,choice:number|null,text:string,response:Reply):DialogueGame {
+export function commitDialogue(game:DialogueGame,choice:number|null,text:string,response:Reply,requestId?:string):DialogueGame {
  if('events' in response){
   const before=canonical(game),version=before.version+1;
-  const {game:next,accepted}=reconcile(game,text,response);const g:DialogueGame=next;
+  const {game:next,accepted}=reconcile(game,text,response,requestId);const g:DialogueGame=next;
   const d=structuredClone(before);d.version=version;d.playerStatements=[...(before.playerStatements??before.ledger.filter(e=>e.kind==='user_claim').map(e=>({turn:e.version,text:e.text}))),{turn:version,text}].slice(-100);d.reply=response.line;d.actionBeats=response.actionBeats;
   d.ledger.push({kind:'user_claim',text,version},{kind:'model_dialogue',text:response.line,version,recallIds:response.recall});
   for(const e of accepted){const fact:Fact={id:e.id,eventId:e.id,version,confirmedAt:new Date().toISOString(),kind:e.kind==='clue'?'clue':e.kind==='relationship'?'relationship':e.kind==='resolution'?'ending':'scene',text:e.text};d.facts.push(fact);d.ledger.push({kind:'verified_event',text:e.text,version,eventId:e.id});}

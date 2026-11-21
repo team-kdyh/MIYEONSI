@@ -1,0 +1,826 @@
+{
+  "at": "2026-11-21T06:55:31.564433+00:00",
+  "priorReview": "Previous reports remain attributed to their authors/candidates. Earlier four content-revision captures and both comparison boards were independently opened this turn; current images below were also opened.",
+  "sourceDependencies": {
+    "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+    "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+    "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+    "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+    "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+    "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+    "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+    "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+    "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+    "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+  },
+  "ui": [
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ui/long-focus-1440-office.png",
+      "sha256": "3df2ccf63fcfe19124d5bcdf9843da89f7bf67c024984b9721ea355089b12d85",
+      "reviewer": "current executing agent, image tool opened and read",
+      "mode": "office",
+      "resolution": [
+        1440,
+        900
+      ],
+      "settings": {
+        "speed": 40,
+        "reduced": true,
+        "largeText": true,
+        "mute": true,
+        "volume": 1
+      },
+      "face": "clear at upper centre, approximately y90–260 desktop / y130–270 mobile",
+      "text": "Visible Korean main text read. Dark translucent panel; top/bottom scroll-boundary clipping and bottom fade/hint overlap remain. Small supporting labels are less legible than main dialogue.",
+      "composer": "Input and send visible approximately y775–828 desktop / y733–786 mobile; no choice buttons or white document slab",
+      "observation": "direct visual, separate from test layout bounds",
+      "keyboardEvidence": "ui.log and browser-confirmed.log: Enter, End, focus, settings tests; not a physical phone keyboard observation"
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ui/long-focus-390-office.png",
+      "sha256": "0be669744af2af51c87d2f782aa7a5a7def69710053e7b000fbc526f3e4e61c3",
+      "reviewer": "current executing agent, image tool opened and read",
+      "mode": "office",
+      "resolution": [
+        390,
+        844
+      ],
+      "settings": {
+        "speed": 40,
+        "reduced": true,
+        "largeText": true,
+        "mute": true,
+        "volume": 1
+      },
+      "face": "clear at upper centre, approximately y90–260 desktop / y130–270 mobile",
+      "text": "Visible Korean main text read. Dark translucent panel; top/bottom scroll-boundary clipping and bottom fade/hint overlap remain. Small supporting labels are less legible than main dialogue.",
+      "composer": "Input and send visible approximately y775–828 desktop / y733–786 mobile; no choice buttons or white document slab",
+      "observation": "direct visual, separate from test layout bounds",
+      "keyboardEvidence": "ui.log and browser-confirmed.log: Enter, End, focus, settings tests; not a physical phone keyboard observation"
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ui/long-focus-1440-romance.png",
+      "sha256": "153ec1d13c57fe88b0a14352ee1d0ebb9f15c005756db5c3e9b89b1f37c70ce7",
+      "reviewer": "current executing agent, image tool opened and read",
+      "mode": "romance",
+      "resolution": [
+        1440,
+        900
+      ],
+      "settings": {
+        "speed": 40,
+        "reduced": true,
+        "largeText": true,
+        "mute": true,
+        "volume": 1
+      },
+      "face": "clear at upper centre, approximately y90–260 desktop / y130–270 mobile",
+      "text": "Visible Korean main text read. Dark translucent panel; top/bottom scroll-boundary clipping and bottom fade/hint overlap remain. Small supporting labels are less legible than main dialogue.",
+      "composer": "Input and send visible approximately y775–828 desktop / y733–786 mobile; no choice buttons or white document slab",
+      "observation": "direct visual, separate from test layout bounds",
+      "keyboardEvidence": "ui.log and browser-confirmed.log: Enter, End, focus, settings tests; not a physical phone keyboard observation"
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ui/long-focus-390-romance.png",
+      "sha256": "a08b879ff464275707377df249ffad1041f0053bf4e05178a027872eaecdbb3e",
+      "reviewer": "current executing agent, image tool opened and read",
+      "mode": "romance",
+      "resolution": [
+        390,
+        844
+      ],
+      "settings": {
+        "speed": 40,
+        "reduced": true,
+        "largeText": true,
+        "mute": true,
+        "volume": 1
+      },
+      "face": "clear at upper centre, approximately y90–260 desktop / y130–270 mobile",
+      "text": "Visible Korean main text read. Dark translucent panel; top/bottom scroll-boundary clipping and bottom fade/hint overlap remain. Small supporting labels are less legible than main dialogue.",
+      "composer": "Input and send visible approximately y775–828 desktop / y733–786 mobile; no choice buttons or white document slab",
+      "observation": "direct visual, separate from test layout bounds",
+      "keyboardEvidence": "ui.log and browser-confirmed.log: Enter, End, focus, settings tests; not a physical phone keyboard observation"
+    }
+  ],
+  "art": [
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/office-390-neutral.png",
+      "sha256": "7bbab48b5ab99d4214ef6ccf110f6c4452d2a85923a98613435fcbbb05769a66",
+      "actor": "office",
+      "pose": "neutral",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "folder held to chest; other hand at pocket",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/office-390-firm.png",
+      "sha256": "67ea73113075f28105dd0c499e67c46b6bbd272a30722768debcd988ea002b6d",
+      "actor": "office",
+      "pose": "firm",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "folded arms, chin raised, stern face",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/office-390-turn.png",
+      "sha256": "6d68fcfea9e0cfc1be4feceb621b74fc231e6d624c241f9f0e7148288a609417",
+      "actor": "office",
+      "pose": "turn",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "one hand to glasses, other at pocket, mouth open",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/office-390-smile.png",
+      "sha256": "60f535e9b86b65bf6c0436c5d5d012bbfc664fa551f4d69d83dca9ee719aca9b",
+      "actor": "office",
+      "pose": "smile",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "open palm, eyes closed, other arm lowered",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/office-390-listen.png",
+      "sha256": "9f5d83907723ede25fb93b5c2f50457e11b8ed92efc9397eb6c3f10dbf89ef5c",
+      "actor": "office",
+      "pose": "listen",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "folded arms with different lower placement and head tilt, eyes open",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/office-390-laugh.png",
+      "sha256": "7e9d011665b0cf0383ddb2e7ae20c22d32b7d22066c19ebf28e806114ed55147",
+      "actor": "office",
+      "pose": "laugh",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "hand on hip, smile",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/office-390-shy.png",
+      "sha256": "ae3e22ee668f94b1584c8f227d237a3a99c5d8ef87a6829a9d626f42359be37f",
+      "actor": "office",
+      "pose": "shy",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "hand to forehead, head down",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/office-390-watch.png",
+      "sha256": "b8ba8b3241aab3c586b7f514c6859a018c7298d3d8e1a2137f3a200e4511d075",
+      "actor": "office",
+      "pose": "watch",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "points at watch, opposite wrist raised",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/office-390-offer.png",
+      "sha256": "138b4054a1f2fdde8a2d25da8cb7de3b85d6848aeec3b5e9bc515c9b7865f315",
+      "actor": "office",
+      "pose": "offer",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "holds a document out above open palm",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/office-390-thinking.png",
+      "sha256": "1a6208e65ccbd5f3a8a77baf9341b3538810cd44e9c45bf7f587c160376fb497",
+      "actor": "office",
+      "pose": "thinking",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "hand at chin, opposite arm folded",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/office-390-surprised.png",
+      "sha256": "a7f853d4780df263186012a160897ed39630ec461b939499d040ad0dfaf62a8d",
+      "actor": "office",
+      "pose": "surprised",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "hand to glasses plus other hand raised",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/office-390-farewell.png",
+      "sha256": "4efb07247b11f7cb385da4a92bbc6819f377d5ad6c740857e37154d9a9c70b03",
+      "actor": "office",
+      "pose": "farewell",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "open palm plus opposite hand at hip",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/romance-390-neutral.png",
+      "sha256": "43c835789c5b4eee04515b9b5c857f5c6c111c25b3c95f7dcc7bc9157562344e",
+      "actor": "romance",
+      "pose": "neutral",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "arms down, frontal calm gaze",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/romance-390-smile.png",
+      "sha256": "9fc57cd4eaedb1c56d49e9e28062417a9bb177d0e3894a95fa6cf06c6311c2c3",
+      "actor": "romance",
+      "pose": "smile",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "hands clasped at chest, eyes closed smile",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/romance-390-thinking.png",
+      "sha256": "e68ed6d649f28f57957c88dee8489c4d1b41e56b89a70af3f6190989c7a2bddf",
+      "actor": "romance",
+      "pose": "thinking",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "one hand holds opposite wrist near chest",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/romance-390-intense.png",
+      "sha256": "7f30760eaea2850bb0d157398272365bf26b24b0a394a8c710de62d677453ab2",
+      "actor": "romance",
+      "pose": "intense",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "arms behind/lowered, leaning head and direct narrowed gaze",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/romance-390-watch.png",
+      "sha256": "f893d7528283bfeef8e8511290996540e10f5ff63e62da0ee5f16d0823e4d402",
+      "actor": "romance",
+      "pose": "watch",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "hand cupped beside ear",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/romance-390-laugh.png",
+      "sha256": "8a64379e3758e3a9319dc4b1ca097ccb251707b9481bf5092b031b90738ef2a6",
+      "actor": "romance",
+      "pose": "laugh",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "hand at mouth, laughing closed eyes",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/romance-390-shy.png",
+      "sha256": "6a1f31abefa6c3446b5c6d1b7e596b221e64b14dc11f80f7ed28304cbb2ea6d9",
+      "actor": "romance",
+      "pose": "shy",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "hands clasped low, shoulders inward",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/romance-390-offer.png",
+      "sha256": "bb98c9f84e0741fdfe55db313fd89715374178a168091e2f29c1f4c9c71296dd",
+      "actor": "romance",
+      "pose": "offer",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "headphone cup extended toward viewer",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/romance-390-turn.png",
+      "sha256": "1639f62400fc1c79b99fb2d0d4e7cb7819e40fa943688ca7188438aae6fea0bc",
+      "actor": "romance",
+      "pose": "turn",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "index finger raised beside face",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/romance-390-concern.png",
+      "sha256": "8310330e237d34a102011580d910ed41c2b855f4393718bbfbbf203bdbb56d77",
+      "actor": "romance",
+      "pose": "concern",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "recorder held to chest with both hands",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/romance-390-firm.png",
+      "sha256": "16f4fa409daffe90059bcad957cf33785514d08a954508de17df1e013e1872c9",
+      "actor": "romance",
+      "pose": "firm",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "leans forward gripping cardigan, intense gaze",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/v2-ac4-recheck/romance-390-farewell.png",
+      "sha256": "4e2067a1e7ebfa2fd5797cefe8fa6fa0ee80c41003a43636aed10d44d4aa9d45",
+      "actor": "romance",
+      "pose": "farewell",
+      "reviewer": "current executing agent; individually opened full 390x844 render",
+      "illustrationDifference": "cassette extended while other hand touches chest",
+      "scope": "controlled rendered pose, not proof of natural live generation; facial identity/clothing consistent",
+      "candidateDependency": {
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/collection.ts": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01",
+        "src/OfficeAgreement.tsx": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/StageEffects.tsx": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      }
+    }
+  ],
+  "participation": [
+    {
+      "path": "docs/v2-contract-followup/reviewed/participation/pending.png",
+      "sha256": "738a39db1cc5af839798ac56c9ba374e357a511ac6577032a1d4e98e94b454ef",
+      "reviewer": "current executing agent; opened image and corresponding trace",
+      "label": "pending",
+      "turn": 8,
+      "dialogueVersion": 8,
+      "eventIds": [
+        "9e8e2c3e-3d65-43e0-ab47-4af28fbe5e1c"
+      ],
+      "dateCount": 0,
+      "activeDate": null,
+      "reduced": false,
+      "judgment": "Cafe unchanged. Pending/future accepted/refused show the same solo neutral NPC gesture; no player action is depicted. Entered state still solo neutral. Completed state shows clasped hands/smile and the NPC boat action text; dates=1 only after actual player boat statement and next-turn interaction. Reduced-motion image retains the same person, pose, place and text, with settings focus outline.",
+      "limit": "No two-person illustration; generic normal-state response text is mock and is not narrative quality evidence."
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/participation/accepted.png",
+      "sha256": "738a39db1cc5af839798ac56c9ba374e357a511ac6577032a1d4e98e94b454ef",
+      "reviewer": "current executing agent; opened image and corresponding trace",
+      "label": "accepted",
+      "turn": 9,
+      "dialogueVersion": 9,
+      "eventIds": [
+        "9e8e2c3e-3d65-43e0-ab47-4af28fbe5e1c",
+        "92fe0c51-38a5-4eee-9b53-12546190589e"
+      ],
+      "dateCount": 0,
+      "activeDate": null,
+      "reduced": false,
+      "judgment": "Cafe unchanged. Pending/future accepted/refused show the same solo neutral NPC gesture; no player action is depicted. Entered state still solo neutral. Completed state shows clasped hands/smile and the NPC boat action text; dates=1 only after actual player boat statement and next-turn interaction. Reduced-motion image retains the same person, pose, place and text, with settings focus outline.",
+      "limit": "No two-person illustration; generic normal-state response text is mock and is not narrative quality evidence."
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/participation/refused.png",
+      "sha256": "738a39db1cc5af839798ac56c9ba374e357a511ac6577032a1d4e98e94b454ef",
+      "reviewer": "current executing agent; opened image and corresponding trace",
+      "label": "refused",
+      "turn": 9,
+      "dialogueVersion": 9,
+      "eventIds": [
+        "9e8e2c3e-3d65-43e0-ab47-4af28fbe5e1c",
+        "9f25cd43-0712-41d7-a380-76596dc2f595"
+      ],
+      "dateCount": 0,
+      "activeDate": null,
+      "reduced": false,
+      "judgment": "Cafe unchanged. Pending/future accepted/refused show the same solo neutral NPC gesture; no player action is depicted. Entered state still solo neutral. Completed state shows clasped hands/smile and the NPC boat action text; dates=1 only after actual player boat statement and next-turn interaction. Reduced-motion image retains the same person, pose, place and text, with settings focus outline.",
+      "limit": "No two-person illustration; generic normal-state response text is mock and is not narrative quality evidence."
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/participation/entered.png",
+      "sha256": "738a39db1cc5af839798ac56c9ba374e357a511ac6577032a1d4e98e94b454ef",
+      "reviewer": "current executing agent; opened image and corresponding trace",
+      "label": "entered",
+      "turn": 10,
+      "dialogueVersion": 10,
+      "eventIds": [
+        "9e8e2c3e-3d65-43e0-ab47-4af28fbe5e1c",
+        "92fe0c51-38a5-4eee-9b53-12546190589e",
+        "6b1e5c67-688d-4b7d-bc74-d306ceb8476c"
+      ],
+      "dateCount": 0,
+      "activeDate": {
+        "eventId": "6b1e5c67-688d-4b7d-bc74-d306ceb8476c",
+        "location": "cafe",
+        "turn": 10
+      },
+      "reduced": false,
+      "judgment": "Cafe unchanged. Pending/future accepted/refused show the same solo neutral NPC gesture; no player action is depicted. Entered state still solo neutral. Completed state shows clasped hands/smile and the NPC boat action text; dates=1 only after actual player boat statement and next-turn interaction. Reduced-motion image retains the same person, pose, place and text, with settings focus outline.",
+      "limit": "No two-person illustration; generic normal-state response text is mock and is not narrative quality evidence."
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/participation/completed.png",
+      "sha256": "58070a41e49d92b825d31d0e982a0beee69557570d948f348809250eb43050f6",
+      "reviewer": "current executing agent; opened image and corresponding trace",
+      "label": "completed",
+      "turn": 11,
+      "dialogueVersion": 11,
+      "eventIds": [
+        "9e8e2c3e-3d65-43e0-ab47-4af28fbe5e1c",
+        "92fe0c51-38a5-4eee-9b53-12546190589e",
+        "6b1e5c67-688d-4b7d-bc74-d306ceb8476c",
+        "024576a1-edb5-4e1c-836e-9e5c7903d15c"
+      ],
+      "dateCount": 1,
+      "activeDate": null,
+      "reduced": false,
+      "judgment": "Cafe unchanged. Pending/future accepted/refused show the same solo neutral NPC gesture; no player action is depicted. Entered state still solo neutral. Completed state shows clasped hands/smile and the NPC boat action text; dates=1 only after actual player boat statement and next-turn interaction. Reduced-motion image retains the same person, pose, place and text, with settings focus outline.",
+      "limit": "No two-person illustration; generic normal-state response text is mock and is not narrative quality evidence."
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/participation/completed-reduced.png",
+      "sha256": "3da20c7c25ace39906d5a34b2d47d71f56696dd162eb96b7a19ec97493b9de19",
+      "reviewer": "current executing agent; opened image and corresponding trace",
+      "label": "completed",
+      "turn": 11,
+      "dialogueVersion": 11,
+      "eventIds": [
+        "9e8e2c3e-3d65-43e0-ab47-4af28fbe5e1c",
+        "92fe0c51-38a5-4eee-9b53-12546190589e",
+        "6b1e5c67-688d-4b7d-bc74-d306ceb8476c",
+        "024576a1-edb5-4e1c-836e-9e5c7903d15c"
+      ],
+      "dateCount": 1,
+      "activeDate": null,
+      "reduced": true,
+      "judgment": "Cafe unchanged. Pending/future accepted/refused show the same solo neutral NPC gesture; no player action is depicted. Entered state still solo neutral. Completed state shows clasped hands/smile and the NPC boat action text; dates=1 only after actual player boat statement and next-turn interaction. Reduced-motion image retains the same person, pose, place and text, with settings focus outline.",
+      "limit": "No two-person illustration; generic normal-state response text is mock and is not narrative quality evidence."
+    }
+  ],
+  "audio": {
+    "sourceFilesDelivered": true,
+    "listenedTracks": 0,
+    "heardTransitions": 0,
+    "status": "no direct auditory review capability used; no inference from decoding or API playback"
+  },
+  "accessIncident": "An early attempt to open romance-firm while its browser test was still producing files failed. It was subsequently produced and opened; not reported as final missing artwork. Four images dropped by a tool output limit were emitted again and reviewed.",
+  "futureEvaluatorAccess": "not yet observed",
+  "finalFrozenUI": [
+    {
+      "path": "docs/v2-contract-followup/reviewed/final-ui/long-focus-1440-office.png",
+      "sha256": "6ee0706056fd4835a3224521b881c7202e4fc61dc040d739b3067932c65298b9",
+      "reviewer": "current executing agent; final image opened after final 26/26 run",
+      "mode": "office",
+      "resolution": [
+        1440,
+        900
+      ],
+      "settings": {
+        "speed": 40,
+        "reduced": true,
+        "largeText": true,
+        "mute": true,
+        "volume": 1
+      },
+      "face": "clear at upper centre, approximately y90–260 desktop / y130–270 mobile",
+      "text": "Visible Korean main text read. Dark translucent panel; top/bottom scroll-boundary clipping and bottom fade/hint overlap remain. Small supporting labels are less legible than main dialogue.",
+      "composer": "Input and send visible approximately y775–828 desktop / y733–786 mobile; no choice buttons or white document slab",
+      "observation": "direct visual, separate from test layout bounds",
+      "keyboardEvidence": "ui.log and browser-confirmed.log: Enter, End, focus, settings tests; not a physical phone keyboard observation",
+      "execution": "browser-release-candidate.log, frozen final source"
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/final-ui/long-focus-390-office.png",
+      "sha256": "574ff9669570666b4c05efac00d98ad6dc357fc72ff23622337c01231c79a556",
+      "reviewer": "current executing agent; final image opened after final 26/26 run",
+      "mode": "office",
+      "resolution": [
+        390,
+        844
+      ],
+      "settings": {
+        "speed": 40,
+        "reduced": true,
+        "largeText": true,
+        "mute": true,
+        "volume": 1
+      },
+      "face": "clear at upper centre, approximately y90–260 desktop / y130–270 mobile",
+      "text": "Visible Korean main text read. Dark translucent panel; top/bottom scroll-boundary clipping and bottom fade/hint overlap remain. Small supporting labels are less legible than main dialogue.",
+      "composer": "Input and send visible approximately y775–828 desktop / y733–786 mobile; no choice buttons or white document slab",
+      "observation": "direct visual, separate from test layout bounds",
+      "keyboardEvidence": "ui.log and browser-confirmed.log: Enter, End, focus, settings tests; not a physical phone keyboard observation",
+      "execution": "browser-release-candidate.log, frozen final source"
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/final-ui/long-focus-1440-romance.png",
+      "sha256": "a81e6e4875734650ba954e9377bda11f236d0b8df33be065726cbf3b462a2643",
+      "reviewer": "current executing agent; final image opened after final 26/26 run",
+      "mode": "romance",
+      "resolution": [
+        1440,
+        900
+      ],
+      "settings": {
+        "speed": 40,
+        "reduced": true,
+        "largeText": true,
+        "mute": true,
+        "volume": 1
+      },
+      "face": "clear at upper centre, approximately y90–260 desktop / y130–270 mobile",
+      "text": "Visible Korean main text read. Dark translucent panel; top/bottom scroll-boundary clipping and bottom fade/hint overlap remain. Small supporting labels are less legible than main dialogue.",
+      "composer": "Input and send visible approximately y775–828 desktop / y733–786 mobile; no choice buttons or white document slab",
+      "observation": "direct visual, separate from test layout bounds",
+      "keyboardEvidence": "ui.log and browser-confirmed.log: Enter, End, focus, settings tests; not a physical phone keyboard observation",
+      "execution": "browser-release-candidate.log, frozen final source"
+    },
+    {
+      "path": "docs/v2-contract-followup/reviewed/final-ui/long-focus-390-romance.png",
+      "sha256": "2606ae23f56fa1e47f4c5e00911d4fe984d2cd7add8b44f849df868d4340ba27",
+      "reviewer": "current executing agent; final image opened after final 26/26 run",
+      "mode": "romance",
+      "resolution": [
+        390,
+        844
+      ],
+      "settings": {
+        "speed": 40,
+        "reduced": true,
+        "largeText": true,
+        "mute": true,
+        "volume": 1
+      },
+      "face": "clear at upper centre, approximately y90–260 desktop / y130–270 mobile",
+      "text": "Visible Korean main text read. Dark translucent panel; top/bottom scroll-boundary clipping and bottom fade/hint overlap remain. Small supporting labels are less legible than main dialogue.",
+      "composer": "Input and send visible approximately y775–828 desktop / y733–786 mobile; no choice buttons or white document slab",
+      "observation": "direct visual, separate from test layout bounds",
+      "keyboardEvidence": "ui.log and browser-confirmed.log: Enter, End, focus, settings tests; not a physical phone keyboard observation",
+      "execution": "browser-release-candidate.log, frozen final source"
+    }
+  ]
+}

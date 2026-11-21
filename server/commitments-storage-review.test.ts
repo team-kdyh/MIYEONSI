@@ -93,7 +93,7 @@ test('missing legacy condition sidecar stays evidence-insufficient and read-only
   let {g,offer,id:promiseId}=setup();const text='유나에게 노란 리본을 건넸어요.';
   g=commitDialogue(g,null,text,reply([{...offer,status:'fulfilled',reference:promiseId,evidence:text}],{commitmentProgress:[progress(g,0,text)]}));
   // Migration-only fixture: represent the old format without inventing condition evidence.
-  delete g.narrative!.commitments;g.narrative!.events=g.narrative!.events.filter(e=>e.value!=='condition-evidence');
+  delete g.narrative!.commitments;delete g.narrative!.performanceInterpretations; // This historical format predates parser diagnostics.g.narrative!.events=g.narrative!.events.filter(e=>e.value!=='condition-evidence');
   const p=emptyProfile();p.game=g;await new ProfileStore(directory).save(id,p);
   const before=await readFile(path.join(directory,id+'.json'));
   const loaded=(await new ProfileStore(directory).load(id)).profile.game!;

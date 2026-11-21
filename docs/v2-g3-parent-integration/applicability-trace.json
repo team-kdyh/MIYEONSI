@@ -1,0 +1,5116 @@
+{
+  "source": "mock, normal new-game turns; no completed-state injection",
+  "hashes": {
+    "server/commitments.ts": "b7a6076d435af203a46aa4cd705588d8dea4e0b9a52822ffc9b04d45de63cf80",
+    "server/evidence-applicability.ts": "b4dbd937f4ceab629dc2a2536d0c518c4832fdbd6ddf447f4e33b52f29ac6d28",
+    "server/commitment-revisions.ts": "1edbf5b8eb658b5e4030e2b4d5f76e2a9d8836105978faefe7345e7c72bd0e33",
+    "server/narrative.ts": "de7837e51ee4dd94f08838d526dfdef2eaf530437d97a3e7be1a4ccf56203fda"
+  },
+  "trace": [
+    {
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        }
+      },
+      "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+      "response": {
+        "line": "좋아요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "keepsake"
+          }
+        ],
+        "recall": [],
+        "conjecture": "",
+        "commitmentOffers": [
+          {
+            "eventIndex": 0,
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고"
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "12add346-af08-4e78-886f-d8e904781b85",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "12add346-af08-4e78-886f-d8e904781b85",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "9c40a67f-f53e-42e4-9272-83f13ff597b4",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [],
+              "status": "pending"
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.830Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "12add346-af08-4e78-886f-d8e904781b85",
+              "eventId": "12add346-af08-4e78-886f-d8e904781b85",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.837Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "12add346-af08-4e78-886f-d8e904781b85"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "actionBeats": []
+        }
+      }
+    },
+    {
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "12add346-af08-4e78-886f-d8e904781b85",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "12add346-af08-4e78-886f-d8e904781b85",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "9c40a67f-f53e-42e4-9272-83f13ff597b4",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [],
+              "status": "pending"
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.830Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "12add346-af08-4e78-886f-d8e904781b85",
+              "eventId": "12add346-af08-4e78-886f-d8e904781b85",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.837Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "12add346-af08-4e78-886f-d8e904781b85"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "text": "좋아요.",
+      "response": {
+        "line": "좋아요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "12add346-af08-4e78-886f-d8e904781b85",
+            "evidence": "좋아요.",
+            "value": "keepsake"
+          }
+        ],
+        "recall": [],
+        "conjecture": ""
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "12add346-af08-4e78-886f-d8e904781b85",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "12add346-af08-4e78-886f-d8e904781b85",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "f6684615-d936-4059-ba33-b882db888256",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "12add346-af08-4e78-886f-d8e904781b85",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "f6684615-d936-4059-ba33-b882db888256"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "9c40a67f-f53e-42e4-9272-83f13ff597b4",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [],
+              "status": "pending"
+            }
+          ],
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.830Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "12add346-af08-4e78-886f-d8e904781b85",
+              "eventId": "12add346-af08-4e78-886f-d8e904781b85",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.837Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "f6684615-d936-4059-ba33-b882db888256",
+              "eventId": "f6684615-d936-4059-ba33-b882db888256",
+              "version": 2,
+              "confirmedAt": "2026-11-21T07:04:31.840Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "12add346-af08-4e78-886f-d8e904781b85"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "f6684615-d936-4059-ba33-b882db888256"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            }
+          ],
+          "actionBeats": []
+        }
+      }
+    },
+    {
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "12add346-af08-4e78-886f-d8e904781b85",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "12add346-af08-4e78-886f-d8e904781b85",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "f6684615-d936-4059-ba33-b882db888256",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "12add346-af08-4e78-886f-d8e904781b85",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "f6684615-d936-4059-ba33-b882db888256"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "9c40a67f-f53e-42e4-9272-83f13ff597b4",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [],
+              "status": "pending"
+            }
+          ],
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.830Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "12add346-af08-4e78-886f-d8e904781b85",
+              "eventId": "12add346-af08-4e78-886f-d8e904781b85",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.837Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "f6684615-d936-4059-ba33-b882db888256",
+              "eventId": "f6684615-d936-4059-ba33-b882db888256",
+              "version": 2,
+              "confirmedAt": "2026-11-21T07:04:31.840Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "12add346-af08-4e78-886f-d8e904781b85"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "f6684615-d936-4059-ba33-b882db888256"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+      "response": {
+        "line": "좋아요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [],
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "12add346-af08-4e78-886f-d8e904781b85",
+            "conditionId": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+            "performer": "player",
+            "source": "player",
+            "quote": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+            "eventId": "",
+            "actionIndex": -1
+          }
+        ]
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "12add346-af08-4e78-886f-d8e904781b85",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "12add346-af08-4e78-886f-d8e904781b85",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "f6684615-d936-4059-ba33-b882db888256",
+              "turn": 2
+            },
+            {
+              "id": "79da21d9-08c7-420f-9e21-aba9a690afd5",
+              "turn": 3,
+              "kind": "complication",
+              "subject": "player",
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+              "status": "fulfilled",
+              "reference": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+              "evidence": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+              "value": "condition-evidence",
+              "performanceSource": "statement",
+              "performanceVersion": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "12add346-af08-4e78-886f-d8e904781b85",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "f6684615-d936-4059-ba33-b882db888256"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+                  "originalPerformer": "player",
+                  "evidenceIds": [
+                    "79da21d9-08c7-420f-9e21-aba9a690afd5"
+                  ]
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "9c40a67f-f53e-42e4-9272-83f13ff597b4",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [
+                {
+                  "turn": 3,
+                  "result": "partial",
+                  "conditions": [
+                    {
+                      "id": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+                      "evidenceIds": [
+                        "79da21d9-08c7-420f-9e21-aba9a690afd5"
+                      ]
+                    },
+                    {
+                      "id": "9c40a67f-f53e-42e4-9272-83f13ff597b4",
+                      "evidenceIds": []
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                }
+              ],
+              "status": "partial",
+              "evidenceApplicability": [
+                {
+                  "evidenceId": "79da21d9-08c7-420f-9e21-aba9a690afd5",
+                  "originConditionId": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+                  "conditionId": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+                  "version": 1,
+                  "terms": {
+                    "performer": "player",
+                    "target": "유나",
+                    "action": "노란 리본을 가져오고"
+                  },
+                  "quote": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+                  "result": "applicable",
+                  "reasons": {
+                    "actor": "source actor matches required actor",
+                    "target": "explicit recipients match; omitted recipient uses linked obligation",
+                    "action": "bounded predicate and object validation",
+                    "completion": "grounded completed statement or NPC action; no acceptance/future/negative"
+                  }
+                }
+              ]
+            }
+          ],
+          "legacyCommitmentAssessments": [],
+          "performanceInterpretations": [
+            {
+              "id": "a90bb7db-44b7-4e8f-80ec-385d96f37735",
+              "conditionId": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+              "promiseId": "12add346-af08-4e78-886f-d8e904781b85",
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+              "span": {
+                "start": 0,
+                "end": 28
+              },
+              "componentHash": "ed1ae2f9ec99f575079db33a09115b10d7a29f4b5615d15bc69a81521a7466b9",
+              "previousId": null,
+              "meaning": "performance",
+              "matching": "match",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "bounded predicate/object matched",
+                "tense": "past inflection",
+                "polarity": "no recognized negative statement"
+              }
+            },
+            {
+              "id": "b44ac4ae-fe3c-4bc9-9163-843356a91d70",
+              "conditionId": "9c40a67f-f53e-42e4-9272-83f13ff597b4",
+              "promiseId": "12add346-af08-4e78-886f-d8e904781b85",
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+              "span": {
+                "start": 0,
+                "end": 28
+              },
+              "componentHash": "ed1ae2f9ec99f575079db33a09115b10d7a29f4b5615d15bc69a81521a7466b9",
+              "previousId": null,
+              "meaning": "performance",
+              "matching": "match",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "bounded predicate/object matched",
+                "tense": "past inflection",
+                "polarity": "no recognized negative statement"
+              }
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.830Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "12add346-af08-4e78-886f-d8e904781b85",
+              "eventId": "12add346-af08-4e78-886f-d8e904781b85",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.837Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "f6684615-d936-4059-ba33-b882db888256",
+              "eventId": "f6684615-d936-4059-ba33-b882db888256",
+              "version": 2,
+              "confirmedAt": "2026-11-21T07:04:31.840Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "79da21d9-08c7-420f-9e21-aba9a690afd5",
+              "eventId": "79da21d9-08c7-420f-9e21-aba9a690afd5",
+              "version": 3,
+              "confirmedAt": "2026-11-21T07:04:31.843Z",
+              "kind": "scene",
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "12add346-af08-4e78-886f-d8e904781b85"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "f6684615-d936-4059-ba33-b882db888256"
+            },
+            {
+              "kind": "user_claim",
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+              "version": 3,
+              "eventId": "79da21d9-08c7-420f-9e21-aba9a690afd5"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요."
+            }
+          ],
+          "actionBeats": []
+        }
+      }
+    },
+    {
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "12add346-af08-4e78-886f-d8e904781b85",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "12add346-af08-4e78-886f-d8e904781b85",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "f6684615-d936-4059-ba33-b882db888256",
+              "turn": 2
+            },
+            {
+              "id": "79da21d9-08c7-420f-9e21-aba9a690afd5",
+              "turn": 3,
+              "kind": "complication",
+              "subject": "player",
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+              "status": "fulfilled",
+              "reference": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+              "evidence": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+              "value": "condition-evidence",
+              "performanceSource": "statement",
+              "performanceVersion": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "12add346-af08-4e78-886f-d8e904781b85",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "f6684615-d936-4059-ba33-b882db888256"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+                  "originalPerformer": "player",
+                  "evidenceIds": [
+                    "79da21d9-08c7-420f-9e21-aba9a690afd5"
+                  ]
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "9c40a67f-f53e-42e4-9272-83f13ff597b4",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [
+                {
+                  "turn": 3,
+                  "result": "partial",
+                  "conditions": [
+                    {
+                      "id": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+                      "evidenceIds": [
+                        "79da21d9-08c7-420f-9e21-aba9a690afd5"
+                      ]
+                    },
+                    {
+                      "id": "9c40a67f-f53e-42e4-9272-83f13ff597b4",
+                      "evidenceIds": []
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                }
+              ],
+              "status": "partial",
+              "evidenceApplicability": [
+                {
+                  "evidenceId": "79da21d9-08c7-420f-9e21-aba9a690afd5",
+                  "originConditionId": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+                  "conditionId": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+                  "version": 1,
+                  "terms": {
+                    "performer": "player",
+                    "target": "유나",
+                    "action": "노란 리본을 가져오고"
+                  },
+                  "quote": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+                  "result": "applicable",
+                  "reasons": {
+                    "actor": "source actor matches required actor",
+                    "target": "explicit recipients match; omitted recipient uses linked obligation",
+                    "action": "bounded predicate and object validation",
+                    "completion": "grounded completed statement or NPC action; no acceptance/future/negative"
+                  }
+                }
+              ]
+            }
+          ],
+          "legacyCommitmentAssessments": [],
+          "performanceInterpretations": [
+            {
+              "id": "a90bb7db-44b7-4e8f-80ec-385d96f37735",
+              "conditionId": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+              "promiseId": "12add346-af08-4e78-886f-d8e904781b85",
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+              "span": {
+                "start": 0,
+                "end": 28
+              },
+              "componentHash": "ed1ae2f9ec99f575079db33a09115b10d7a29f4b5615d15bc69a81521a7466b9",
+              "previousId": null,
+              "meaning": "performance",
+              "matching": "match",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "bounded predicate/object matched",
+                "tense": "past inflection",
+                "polarity": "no recognized negative statement"
+              }
+            },
+            {
+              "id": "b44ac4ae-fe3c-4bc9-9163-843356a91d70",
+              "conditionId": "9c40a67f-f53e-42e4-9272-83f13ff597b4",
+              "promiseId": "12add346-af08-4e78-886f-d8e904781b85",
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+              "span": {
+                "start": 0,
+                "end": 28
+              },
+              "componentHash": "ed1ae2f9ec99f575079db33a09115b10d7a29f4b5615d15bc69a81521a7466b9",
+              "previousId": null,
+              "meaning": "performance",
+              "matching": "match",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "bounded predicate/object matched",
+                "tense": "past inflection",
+                "polarity": "no recognized negative statement"
+              }
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.830Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "12add346-af08-4e78-886f-d8e904781b85",
+              "eventId": "12add346-af08-4e78-886f-d8e904781b85",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.837Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "f6684615-d936-4059-ba33-b882db888256",
+              "eventId": "f6684615-d936-4059-ba33-b882db888256",
+              "version": 2,
+              "confirmedAt": "2026-11-21T07:04:31.840Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "79da21d9-08c7-420f-9e21-aba9a690afd5",
+              "eventId": "79da21d9-08c7-420f-9e21-aba9a690afd5",
+              "version": 3,
+              "confirmedAt": "2026-11-21T07:04:31.843Z",
+              "kind": "scene",
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "12add346-af08-4e78-886f-d8e904781b85"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "f6684615-d936-4059-ba33-b882db888256"
+            },
+            {
+              "kind": "user_claim",
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+              "version": 3,
+              "eventId": "79da21d9-08c7-420f-9e21-aba9a690afd5"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "text": "이전에 한 일도 확인해 주세요.",
+      "response": {
+        "line": "좋아요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [],
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "12add346-af08-4e78-886f-d8e904781b85",
+            "conditionId": "9c40a67f-f53e-42e4-9272-83f13ff597b4",
+            "performer": "player",
+            "source": "event",
+            "quote": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+            "eventId": "79da21d9-08c7-420f-9e21-aba9a690afd5",
+            "actionIndex": -1
+          }
+        ]
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "이전에 한 일도 확인해 주세요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 4,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "12add346-af08-4e78-886f-d8e904781b85",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "12add346-af08-4e78-886f-d8e904781b85",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "f6684615-d936-4059-ba33-b882db888256",
+              "turn": 2
+            },
+            {
+              "id": "79da21d9-08c7-420f-9e21-aba9a690afd5",
+              "turn": 3,
+              "kind": "complication",
+              "subject": "player",
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+              "status": "fulfilled",
+              "reference": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+              "evidence": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+              "value": "condition-evidence",
+              "performanceSource": "statement",
+              "performanceVersion": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "12add346-af08-4e78-886f-d8e904781b85",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "f6684615-d936-4059-ba33-b882db888256"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+                  "originalPerformer": "player",
+                  "evidenceIds": [
+                    "79da21d9-08c7-420f-9e21-aba9a690afd5"
+                  ]
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "9c40a67f-f53e-42e4-9272-83f13ff597b4",
+                  "originalPerformer": "player",
+                  "evidenceIds": [
+                    "79da21d9-08c7-420f-9e21-aba9a690afd5"
+                  ]
+                }
+              ],
+              "amendments": [],
+              "assessments": [
+                {
+                  "turn": 3,
+                  "result": "partial",
+                  "conditions": [
+                    {
+                      "id": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+                      "evidenceIds": [
+                        "79da21d9-08c7-420f-9e21-aba9a690afd5"
+                      ]
+                    },
+                    {
+                      "id": "9c40a67f-f53e-42e4-9272-83f13ff597b4",
+                      "evidenceIds": []
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                },
+                {
+                  "turn": 4,
+                  "result": "completed",
+                  "conditions": [
+                    {
+                      "id": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+                      "evidenceIds": [
+                        "79da21d9-08c7-420f-9e21-aba9a690afd5"
+                      ]
+                    },
+                    {
+                      "id": "9c40a67f-f53e-42e4-9272-83f13ff597b4",
+                      "evidenceIds": [
+                        "79da21d9-08c7-420f-9e21-aba9a690afd5"
+                      ]
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                }
+              ],
+              "status": "completed",
+              "evidenceApplicability": [
+                {
+                  "evidenceId": "79da21d9-08c7-420f-9e21-aba9a690afd5",
+                  "originConditionId": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+                  "conditionId": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+                  "version": 1,
+                  "terms": {
+                    "performer": "player",
+                    "target": "유나",
+                    "action": "노란 리본을 가져오고"
+                  },
+                  "quote": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+                  "result": "applicable",
+                  "reasons": {
+                    "actor": "source actor matches required actor",
+                    "target": "explicit recipients match; omitted recipient uses linked obligation",
+                    "action": "bounded predicate and object validation",
+                    "completion": "grounded completed statement or NPC action; no acceptance/future/negative"
+                  }
+                },
+                {
+                  "evidenceId": "79da21d9-08c7-420f-9e21-aba9a690afd5",
+                  "originConditionId": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+                  "conditionId": "9c40a67f-f53e-42e4-9272-83f13ff597b4",
+                  "version": 1,
+                  "terms": {
+                    "performer": "player",
+                    "target": "유나",
+                    "action": "편지를 접는"
+                  },
+                  "quote": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+                  "result": "applicable",
+                  "reasons": {
+                    "actor": "source actor matches required actor",
+                    "target": "explicit recipients match; omitted recipient uses linked obligation",
+                    "action": "bounded predicate and object validation",
+                    "completion": "grounded completed statement or NPC action; no acceptance/future/negative"
+                  }
+                }
+              ]
+            }
+          ],
+          "legacyCommitmentAssessments": [],
+          "performanceInterpretations": [
+            {
+              "id": "a90bb7db-44b7-4e8f-80ec-385d96f37735",
+              "conditionId": "5f446fc6-622d-4557-a55f-2816c10e9c17",
+              "promiseId": "12add346-af08-4e78-886f-d8e904781b85",
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+              "span": {
+                "start": 0,
+                "end": 28
+              },
+              "componentHash": "ed1ae2f9ec99f575079db33a09115b10d7a29f4b5615d15bc69a81521a7466b9",
+              "previousId": null,
+              "meaning": "performance",
+              "matching": "match",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "bounded predicate/object matched",
+                "tense": "past inflection",
+                "polarity": "no recognized negative statement"
+              }
+            },
+            {
+              "id": "b44ac4ae-fe3c-4bc9-9163-843356a91d70",
+              "conditionId": "9c40a67f-f53e-42e4-9272-83f13ff597b4",
+              "promiseId": "12add346-af08-4e78-886f-d8e904781b85",
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+              "span": {
+                "start": 0,
+                "end": 28
+              },
+              "componentHash": "ed1ae2f9ec99f575079db33a09115b10d7a29f4b5615d15bc69a81521a7466b9",
+              "previousId": null,
+              "meaning": "performance",
+              "matching": "match",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "bounded predicate/object matched",
+                "tense": "past inflection",
+                "polarity": "no recognized negative statement"
+              }
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 4,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.830Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "12add346-af08-4e78-886f-d8e904781b85",
+              "eventId": "12add346-af08-4e78-886f-d8e904781b85",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.837Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "f6684615-d936-4059-ba33-b882db888256",
+              "eventId": "f6684615-d936-4059-ba33-b882db888256",
+              "version": 2,
+              "confirmedAt": "2026-11-21T07:04:31.840Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "79da21d9-08c7-420f-9e21-aba9a690afd5",
+              "eventId": "79da21d9-08c7-420f-9e21-aba9a690afd5",
+              "version": 3,
+              "confirmedAt": "2026-11-21T07:04:31.843Z",
+              "kind": "scene",
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "12add346-af08-4e78-886f-d8e904781b85"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "f6684615-d936-4059-ba33-b882db888256"
+            },
+            {
+              "kind": "user_claim",
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요.",
+              "version": 3,
+              "eventId": "79da21d9-08c7-420f-9e21-aba9a690afd5"
+            },
+            {
+              "kind": "user_claim",
+              "text": "이전에 한 일도 확인해 주세요.",
+              "version": 4
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 4,
+              "recallIds": []
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요. 편지를 접었어요."
+            },
+            {
+              "turn": 4,
+              "text": "이전에 한 일도 확인해 주세요."
+            }
+          ],
+          "actionBeats": []
+        }
+      }
+    },
+    {
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        }
+      },
+      "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+      "response": {
+        "line": "좋아요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "keepsake"
+          }
+        ],
+        "recall": [],
+        "conjecture": "",
+        "commitmentOffers": [
+          {
+            "eventIndex": 0,
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고"
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "b4d77452-a052-407a-9151-6b0a27159558",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "b2b35490-0069-40a3-9dca-e1ad5d4c31fc",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [],
+              "status": "pending"
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.877Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "eventId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.877Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "actionBeats": []
+        }
+      }
+    },
+    {
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "b4d77452-a052-407a-9151-6b0a27159558",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "b2b35490-0069-40a3-9dca-e1ad5d4c31fc",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [],
+              "status": "pending"
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.877Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "eventId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.877Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "text": "좋아요.",
+      "response": {
+        "line": "좋아요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+            "evidence": "좋아요.",
+            "value": "keepsake"
+          }
+        ],
+        "recall": [],
+        "conjecture": ""
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "b4d77452-a052-407a-9151-6b0a27159558",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "b2b35490-0069-40a3-9dca-e1ad5d4c31fc",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [],
+              "status": "pending"
+            }
+          ],
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.877Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "eventId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.877Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab",
+              "eventId": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab",
+              "version": 2,
+              "confirmedAt": "2026-11-21T07:04:31.878Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            }
+          ],
+          "actionBeats": []
+        }
+      }
+    },
+    {
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "b4d77452-a052-407a-9151-6b0a27159558",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "b2b35490-0069-40a3-9dca-e1ad5d4c31fc",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [],
+              "status": "pending"
+            }
+          ],
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.877Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "eventId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.877Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab",
+              "eventId": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab",
+              "version": 2,
+              "confirmedAt": "2026-11-21T07:04:31.878Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "text": "노란 리본을 유나에게 가져왔어요.",
+      "response": {
+        "line": "좋아요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [],
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+            "conditionId": "b4d77452-a052-407a-9151-6b0a27159558",
+            "performer": "player",
+            "source": "player",
+            "quote": "노란 리본을 유나에게 가져왔어요.",
+            "eventId": "",
+            "actionIndex": -1
+          }
+        ]
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "노란 리본을 유나에게 가져왔어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab",
+              "turn": 2
+            },
+            {
+              "id": "bb1fedc1-718a-461d-9b22-d80b1cb8f33b",
+              "turn": 3,
+              "kind": "complication",
+              "subject": "player",
+              "text": "노란 리본을 유나에게 가져왔어요.",
+              "status": "fulfilled",
+              "reference": "b4d77452-a052-407a-9151-6b0a27159558",
+              "evidence": "노란 리본을 유나에게 가져왔어요.",
+              "value": "condition-evidence",
+              "performanceSource": "statement",
+              "performanceVersion": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "b4d77452-a052-407a-9151-6b0a27159558",
+                  "originalPerformer": "player",
+                  "evidenceIds": [
+                    "bb1fedc1-718a-461d-9b22-d80b1cb8f33b"
+                  ]
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "b2b35490-0069-40a3-9dca-e1ad5d4c31fc",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [
+                {
+                  "turn": 3,
+                  "result": "partial",
+                  "conditions": [
+                    {
+                      "id": "b4d77452-a052-407a-9151-6b0a27159558",
+                      "evidenceIds": [
+                        "bb1fedc1-718a-461d-9b22-d80b1cb8f33b"
+                      ]
+                    },
+                    {
+                      "id": "b2b35490-0069-40a3-9dca-e1ad5d4c31fc",
+                      "evidenceIds": []
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                }
+              ],
+              "status": "partial",
+              "evidenceApplicability": [
+                {
+                  "evidenceId": "bb1fedc1-718a-461d-9b22-d80b1cb8f33b",
+                  "originConditionId": "b4d77452-a052-407a-9151-6b0a27159558",
+                  "conditionId": "b4d77452-a052-407a-9151-6b0a27159558",
+                  "version": 1,
+                  "terms": {
+                    "performer": "player",
+                    "target": "유나",
+                    "action": "노란 리본을 가져오고"
+                  },
+                  "quote": "노란 리본을 유나에게 가져왔어요.",
+                  "result": "applicable",
+                  "reasons": {
+                    "actor": "source actor matches required actor",
+                    "target": "explicit recipients match; omitted recipient uses linked obligation",
+                    "action": "bounded predicate and object validation",
+                    "completion": "grounded completed statement or NPC action; no acceptance/future/negative"
+                  }
+                }
+              ]
+            }
+          ],
+          "legacyCommitmentAssessments": [],
+          "performanceInterpretations": [
+            {
+              "id": "2d54178f-7fee-41bc-b85e-08e6a6aaa89d",
+              "conditionId": "b4d77452-a052-407a-9151-6b0a27159558",
+              "promiseId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요.",
+              "span": {
+                "start": 0,
+                "end": 18
+              },
+              "componentHash": "ed1ae2f9ec99f575079db33a09115b10d7a29f4b5615d15bc69a81521a7466b9",
+              "previousId": null,
+              "meaning": "performance",
+              "matching": "match",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "bounded predicate/object matched",
+                "tense": "past inflection",
+                "polarity": "no recognized negative statement"
+              }
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.877Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "eventId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.877Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab",
+              "eventId": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab",
+              "version": 2,
+              "confirmedAt": "2026-11-21T07:04:31.878Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "bb1fedc1-718a-461d-9b22-d80b1cb8f33b",
+              "eventId": "bb1fedc1-718a-461d-9b22-d80b1cb8f33b",
+              "version": 3,
+              "confirmedAt": "2026-11-21T07:04:31.878Z",
+              "kind": "scene",
+              "text": "노란 리본을 유나에게 가져왔어요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab"
+            },
+            {
+              "kind": "user_claim",
+              "text": "노란 리본을 유나에게 가져왔어요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "노란 리본을 유나에게 가져왔어요.",
+              "version": 3,
+              "eventId": "bb1fedc1-718a-461d-9b22-d80b1cb8f33b"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요."
+            }
+          ],
+          "actionBeats": []
+        }
+      }
+    },
+    {
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "노란 리본을 유나에게 가져왔어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab",
+              "turn": 2
+            },
+            {
+              "id": "bb1fedc1-718a-461d-9b22-d80b1cb8f33b",
+              "turn": 3,
+              "kind": "complication",
+              "subject": "player",
+              "text": "노란 리본을 유나에게 가져왔어요.",
+              "status": "fulfilled",
+              "reference": "b4d77452-a052-407a-9151-6b0a27159558",
+              "evidence": "노란 리본을 유나에게 가져왔어요.",
+              "value": "condition-evidence",
+              "performanceSource": "statement",
+              "performanceVersion": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "b4d77452-a052-407a-9151-6b0a27159558",
+                  "originalPerformer": "player",
+                  "evidenceIds": [
+                    "bb1fedc1-718a-461d-9b22-d80b1cb8f33b"
+                  ]
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "b2b35490-0069-40a3-9dca-e1ad5d4c31fc",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [
+                {
+                  "turn": 3,
+                  "result": "partial",
+                  "conditions": [
+                    {
+                      "id": "b4d77452-a052-407a-9151-6b0a27159558",
+                      "evidenceIds": [
+                        "bb1fedc1-718a-461d-9b22-d80b1cb8f33b"
+                      ]
+                    },
+                    {
+                      "id": "b2b35490-0069-40a3-9dca-e1ad5d4c31fc",
+                      "evidenceIds": []
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                }
+              ],
+              "status": "partial",
+              "evidenceApplicability": [
+                {
+                  "evidenceId": "bb1fedc1-718a-461d-9b22-d80b1cb8f33b",
+                  "originConditionId": "b4d77452-a052-407a-9151-6b0a27159558",
+                  "conditionId": "b4d77452-a052-407a-9151-6b0a27159558",
+                  "version": 1,
+                  "terms": {
+                    "performer": "player",
+                    "target": "유나",
+                    "action": "노란 리본을 가져오고"
+                  },
+                  "quote": "노란 리본을 유나에게 가져왔어요.",
+                  "result": "applicable",
+                  "reasons": {
+                    "actor": "source actor matches required actor",
+                    "target": "explicit recipients match; omitted recipient uses linked obligation",
+                    "action": "bounded predicate and object validation",
+                    "completion": "grounded completed statement or NPC action; no acceptance/future/negative"
+                  }
+                }
+              ]
+            }
+          ],
+          "legacyCommitmentAssessments": [],
+          "performanceInterpretations": [
+            {
+              "id": "2d54178f-7fee-41bc-b85e-08e6a6aaa89d",
+              "conditionId": "b4d77452-a052-407a-9151-6b0a27159558",
+              "promiseId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요.",
+              "span": {
+                "start": 0,
+                "end": 18
+              },
+              "componentHash": "ed1ae2f9ec99f575079db33a09115b10d7a29f4b5615d15bc69a81521a7466b9",
+              "previousId": null,
+              "meaning": "performance",
+              "matching": "match",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "bounded predicate/object matched",
+                "tense": "past inflection",
+                "polarity": "no recognized negative statement"
+              }
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.877Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "eventId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.877Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab",
+              "eventId": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab",
+              "version": 2,
+              "confirmedAt": "2026-11-21T07:04:31.878Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "bb1fedc1-718a-461d-9b22-d80b1cb8f33b",
+              "eventId": "bb1fedc1-718a-461d-9b22-d80b1cb8f33b",
+              "version": 3,
+              "confirmedAt": "2026-11-21T07:04:31.878Z",
+              "kind": "scene",
+              "text": "노란 리본을 유나에게 가져왔어요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab"
+            },
+            {
+              "kind": "user_claim",
+              "text": "노란 리본을 유나에게 가져왔어요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "노란 리본을 유나에게 가져왔어요.",
+              "version": 3,
+              "eventId": "bb1fedc1-718a-461d-9b22-d80b1cb8f33b"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "text": "이전에 한 일도 확인해 주세요.",
+      "response": {
+        "line": "좋아요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [],
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+            "conditionId": "b2b35490-0069-40a3-9dca-e1ad5d4c31fc",
+            "performer": "player",
+            "source": "event",
+            "quote": "노란 리본을 유나에게 가져왔어요.",
+            "eventId": "bb1fedc1-718a-461d-9b22-d80b1cb8f33b",
+            "actionIndex": -1
+          }
+        ]
+      },
+      "error": "Error: 약속 조건 또는 이행 근거를 확인하지 못했습니다.",
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "노란 리본을 유나에게 가져왔어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab",
+              "turn": 2
+            },
+            {
+              "id": "bb1fedc1-718a-461d-9b22-d80b1cb8f33b",
+              "turn": 3,
+              "kind": "complication",
+              "subject": "player",
+              "text": "노란 리본을 유나에게 가져왔어요.",
+              "status": "fulfilled",
+              "reference": "b4d77452-a052-407a-9151-6b0a27159558",
+              "evidence": "노란 리본을 유나에게 가져왔어요.",
+              "value": "condition-evidence",
+              "performanceSource": "statement",
+              "performanceVersion": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "b4d77452-a052-407a-9151-6b0a27159558",
+                  "originalPerformer": "player",
+                  "evidenceIds": [
+                    "bb1fedc1-718a-461d-9b22-d80b1cb8f33b"
+                  ]
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "b2b35490-0069-40a3-9dca-e1ad5d4c31fc",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [
+                {
+                  "turn": 3,
+                  "result": "partial",
+                  "conditions": [
+                    {
+                      "id": "b4d77452-a052-407a-9151-6b0a27159558",
+                      "evidenceIds": [
+                        "bb1fedc1-718a-461d-9b22-d80b1cb8f33b"
+                      ]
+                    },
+                    {
+                      "id": "b2b35490-0069-40a3-9dca-e1ad5d4c31fc",
+                      "evidenceIds": []
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                }
+              ],
+              "status": "partial",
+              "evidenceApplicability": [
+                {
+                  "evidenceId": "bb1fedc1-718a-461d-9b22-d80b1cb8f33b",
+                  "originConditionId": "b4d77452-a052-407a-9151-6b0a27159558",
+                  "conditionId": "b4d77452-a052-407a-9151-6b0a27159558",
+                  "version": 1,
+                  "terms": {
+                    "performer": "player",
+                    "target": "유나",
+                    "action": "노란 리본을 가져오고"
+                  },
+                  "quote": "노란 리본을 유나에게 가져왔어요.",
+                  "result": "applicable",
+                  "reasons": {
+                    "actor": "source actor matches required actor",
+                    "target": "explicit recipients match; omitted recipient uses linked obligation",
+                    "action": "bounded predicate and object validation",
+                    "completion": "grounded completed statement or NPC action; no acceptance/future/negative"
+                  }
+                }
+              ]
+            }
+          ],
+          "legacyCommitmentAssessments": [],
+          "performanceInterpretations": [
+            {
+              "id": "2d54178f-7fee-41bc-b85e-08e6a6aaa89d",
+              "conditionId": "b4d77452-a052-407a-9151-6b0a27159558",
+              "promiseId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요.",
+              "span": {
+                "start": 0,
+                "end": 18
+              },
+              "componentHash": "ed1ae2f9ec99f575079db33a09115b10d7a29f4b5615d15bc69a81521a7466b9",
+              "previousId": null,
+              "meaning": "performance",
+              "matching": "match",
+              "reasons": {
+                "actor": "linked actor; no conflicting recognized actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "bounded predicate/object matched",
+                "tense": "past inflection",
+                "polarity": "no recognized negative statement"
+              }
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.877Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "eventId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.877Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab",
+              "eventId": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab",
+              "version": 2,
+              "confirmedAt": "2026-11-21T07:04:31.878Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "bb1fedc1-718a-461d-9b22-d80b1cb8f33b",
+              "eventId": "bb1fedc1-718a-461d-9b22-d80b1cb8f33b",
+              "version": 3,
+              "confirmedAt": "2026-11-21T07:04:31.878Z",
+              "kind": "scene",
+              "text": "노란 리본을 유나에게 가져왔어요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "7cf11c7f-a46f-46cc-ab3d-823ceb2dd325"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "0d088bec-f2a9-4b31-b33d-4f60bf7d77ab"
+            },
+            {
+              "kind": "user_claim",
+              "text": "노란 리본을 유나에게 가져왔어요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "노란 리본을 유나에게 가져왔어요.",
+              "version": 3,
+              "eventId": "bb1fedc1-718a-461d-9b22-d80b1cb8f33b"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요."
+            }
+          ],
+          "actionBeats": []
+        }
+      }
+    },
+    {
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        }
+      },
+      "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+      "response": {
+        "line": "좋아요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "offered",
+            "reference": "",
+            "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "value": "keepsake"
+          }
+        ],
+        "recall": [],
+        "conjecture": "",
+        "commitmentOffers": [
+          {
+            "eventIndex": 0,
+            "conditions": [
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "노란 리본을 가져오고"
+              },
+              {
+                "performer": "player",
+                "target": "유나",
+                "action": "편지를 접는"
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "5f01ca7f-b774-4ce4-8c5c-25d22a9d8c46",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [],
+              "status": "pending"
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.879Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "eventId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.879Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "actionBeats": []
+        }
+      }
+    },
+    {
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 1,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "turn": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "5f01ca7f-b774-4ce4-8c5c-25d22a9d8c46",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [],
+              "status": "pending"
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 1,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.879Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "eventId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.879Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "text": "좋아요.",
+      "response": {
+        "line": "좋아요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [
+          {
+            "kind": "promise",
+            "subject": "player",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+            "status": "accepted",
+            "reference": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+            "evidence": "좋아요.",
+            "value": "keepsake"
+          }
+        ],
+        "recall": [],
+        "conjecture": ""
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "4a642228-760c-451f-bd1c-d87a3167ca3d",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "4a642228-760c-451f-bd1c-d87a3167ca3d"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "5f01ca7f-b774-4ce4-8c5c-25d22a9d8c46",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [],
+              "status": "pending"
+            }
+          ],
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.879Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "eventId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.879Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "4a642228-760c-451f-bd1c-d87a3167ca3d",
+              "eventId": "4a642228-760c-451f-bd1c-d87a3167ca3d",
+              "version": 2,
+              "confirmedAt": "2026-11-21T07:04:31.879Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "4a642228-760c-451f-bd1c-d87a3167ca3d"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            }
+          ],
+          "actionBeats": []
+        }
+      }
+    },
+    {
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 2,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "4a642228-760c-451f-bd1c-d87a3167ca3d",
+              "turn": 2
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "4a642228-760c-451f-bd1c-d87a3167ca3d"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "5f01ca7f-b774-4ce4-8c5c-25d22a9d8c46",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [],
+              "status": "pending"
+            }
+          ],
+          "legacyCommitmentAssessments": []
+        },
+        "dialogue": {
+          "version": 2,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.879Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "eventId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.879Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "4a642228-760c-451f-bd1c-d87a3167ca3d",
+              "eventId": "4a642228-760c-451f-bd1c-d87a3167ca3d",
+              "version": 2,
+              "confirmedAt": "2026-11-21T07:04:31.879Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "4a642228-760c-451f-bd1c-d87a3167ca3d"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+      "response": {
+        "line": "좋아요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [],
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+            "conditionId": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+            "performer": "player",
+            "source": "player",
+            "quote": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+            "eventId": "",
+            "actionIndex": -1
+          }
+        ]
+      },
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "4a642228-760c-451f-bd1c-d87a3167ca3d",
+              "turn": 2
+            },
+            {
+              "id": "cfc0ac72-dd53-41e4-a649-442b96d6cbe1",
+              "turn": 3,
+              "kind": "complication",
+              "subject": "player",
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+              "status": "fulfilled",
+              "reference": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+              "evidence": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+              "value": "condition-evidence",
+              "performanceSource": "statement",
+              "performanceVersion": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "4a642228-760c-451f-bd1c-d87a3167ca3d"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+                  "originalPerformer": "player",
+                  "evidenceIds": [
+                    "cfc0ac72-dd53-41e4-a649-442b96d6cbe1"
+                  ]
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "5f01ca7f-b774-4ce4-8c5c-25d22a9d8c46",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [
+                {
+                  "turn": 3,
+                  "result": "partial",
+                  "conditions": [
+                    {
+                      "id": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+                      "evidenceIds": [
+                        "cfc0ac72-dd53-41e4-a649-442b96d6cbe1"
+                      ]
+                    },
+                    {
+                      "id": "5f01ca7f-b774-4ce4-8c5c-25d22a9d8c46",
+                      "evidenceIds": []
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                }
+              ],
+              "status": "partial",
+              "evidenceApplicability": [
+                {
+                  "evidenceId": "cfc0ac72-dd53-41e4-a649-442b96d6cbe1",
+                  "originConditionId": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+                  "conditionId": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+                  "version": 1,
+                  "terms": {
+                    "performer": "player",
+                    "target": "유나",
+                    "action": "노란 리본을 가져오고"
+                  },
+                  "quote": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+                  "result": "applicable",
+                  "reasons": {
+                    "actor": "source actor matches required actor",
+                    "target": "explicit recipients match; omitted recipient uses linked obligation",
+                    "action": "bounded predicate and object validation",
+                    "completion": "grounded completed statement or NPC action; no acceptance/future/negative"
+                  }
+                }
+              ]
+            }
+          ],
+          "legacyCommitmentAssessments": [],
+          "performanceInterpretations": [
+            {
+              "id": "14cc22aa-70a3-464a-9e5d-0f7ae07ea331",
+              "conditionId": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+              "promiseId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+              "span": {
+                "start": 0,
+                "end": 32
+              },
+              "componentHash": "ed1ae2f9ec99f575079db33a09115b10d7a29f4b5615d15bc69a81521a7466b9",
+              "previousId": null,
+              "meaning": "performance",
+              "matching": "match",
+              "reasons": {
+                "actor": "different explicit actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "bounded predicate/object matched",
+                "tense": "past inflection",
+                "polarity": "no recognized negative statement"
+              }
+            },
+            {
+              "id": "ceddc37f-fd41-44a8-b15d-6362a5073eeb",
+              "conditionId": "5f01ca7f-b774-4ce4-8c5c-25d22a9d8c46",
+              "promiseId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+              "span": {
+                "start": 0,
+                "end": 32
+              },
+              "componentHash": "ed1ae2f9ec99f575079db33a09115b10d7a29f4b5615d15bc69a81521a7466b9",
+              "previousId": null,
+              "meaning": "performance",
+              "matching": "mismatch",
+              "reasons": {
+                "actor": "different explicit actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "predicate/object not established",
+                "tense": "past inflection",
+                "polarity": "no recognized negative statement"
+              }
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.879Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "eventId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.879Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "4a642228-760c-451f-bd1c-d87a3167ca3d",
+              "eventId": "4a642228-760c-451f-bd1c-d87a3167ca3d",
+              "version": 2,
+              "confirmedAt": "2026-11-21T07:04:31.879Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "cfc0ac72-dd53-41e4-a649-442b96d6cbe1",
+              "eventId": "cfc0ac72-dd53-41e4-a649-442b96d6cbe1",
+              "version": 3,
+              "confirmedAt": "2026-11-21T07:04:31.880Z",
+              "kind": "scene",
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "4a642228-760c-451f-bd1c-d87a3167ca3d"
+            },
+            {
+              "kind": "user_claim",
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+              "version": 3,
+              "eventId": "cfc0ac72-dd53-41e4-a649-442b96d6cbe1"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요."
+            }
+          ],
+          "actionBeats": []
+        }
+      }
+    },
+    {
+      "before": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "4a642228-760c-451f-bd1c-d87a3167ca3d",
+              "turn": 2
+            },
+            {
+              "id": "cfc0ac72-dd53-41e4-a649-442b96d6cbe1",
+              "turn": 3,
+              "kind": "complication",
+              "subject": "player",
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+              "status": "fulfilled",
+              "reference": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+              "evidence": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+              "value": "condition-evidence",
+              "performanceSource": "statement",
+              "performanceVersion": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "4a642228-760c-451f-bd1c-d87a3167ca3d"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+                  "originalPerformer": "player",
+                  "evidenceIds": [
+                    "cfc0ac72-dd53-41e4-a649-442b96d6cbe1"
+                  ]
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "5f01ca7f-b774-4ce4-8c5c-25d22a9d8c46",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [
+                {
+                  "turn": 3,
+                  "result": "partial",
+                  "conditions": [
+                    {
+                      "id": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+                      "evidenceIds": [
+                        "cfc0ac72-dd53-41e4-a649-442b96d6cbe1"
+                      ]
+                    },
+                    {
+                      "id": "5f01ca7f-b774-4ce4-8c5c-25d22a9d8c46",
+                      "evidenceIds": []
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                }
+              ],
+              "status": "partial",
+              "evidenceApplicability": [
+                {
+                  "evidenceId": "cfc0ac72-dd53-41e4-a649-442b96d6cbe1",
+                  "originConditionId": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+                  "conditionId": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+                  "version": 1,
+                  "terms": {
+                    "performer": "player",
+                    "target": "유나",
+                    "action": "노란 리본을 가져오고"
+                  },
+                  "quote": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+                  "result": "applicable",
+                  "reasons": {
+                    "actor": "source actor matches required actor",
+                    "target": "explicit recipients match; omitted recipient uses linked obligation",
+                    "action": "bounded predicate and object validation",
+                    "completion": "grounded completed statement or NPC action; no acceptance/future/negative"
+                  }
+                }
+              ]
+            }
+          ],
+          "legacyCommitmentAssessments": [],
+          "performanceInterpretations": [
+            {
+              "id": "14cc22aa-70a3-464a-9e5d-0f7ae07ea331",
+              "conditionId": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+              "promiseId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+              "span": {
+                "start": 0,
+                "end": 32
+              },
+              "componentHash": "ed1ae2f9ec99f575079db33a09115b10d7a29f4b5615d15bc69a81521a7466b9",
+              "previousId": null,
+              "meaning": "performance",
+              "matching": "match",
+              "reasons": {
+                "actor": "different explicit actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "bounded predicate/object matched",
+                "tense": "past inflection",
+                "polarity": "no recognized negative statement"
+              }
+            },
+            {
+              "id": "ceddc37f-fd41-44a8-b15d-6362a5073eeb",
+              "conditionId": "5f01ca7f-b774-4ce4-8c5c-25d22a9d8c46",
+              "promiseId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+              "span": {
+                "start": 0,
+                "end": 32
+              },
+              "componentHash": "ed1ae2f9ec99f575079db33a09115b10d7a29f4b5615d15bc69a81521a7466b9",
+              "previousId": null,
+              "meaning": "performance",
+              "matching": "mismatch",
+              "reasons": {
+                "actor": "different explicit actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "predicate/object not established",
+                "tense": "past inflection",
+                "polarity": "no recognized negative statement"
+              }
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.879Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "eventId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.879Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "4a642228-760c-451f-bd1c-d87a3167ca3d",
+              "eventId": "4a642228-760c-451f-bd1c-d87a3167ca3d",
+              "version": 2,
+              "confirmedAt": "2026-11-21T07:04:31.879Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "cfc0ac72-dd53-41e4-a649-442b96d6cbe1",
+              "eventId": "cfc0ac72-dd53-41e4-a649-442b96d6cbe1",
+              "version": 3,
+              "confirmedAt": "2026-11-21T07:04:31.880Z",
+              "kind": "scene",
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "4a642228-760c-451f-bd1c-d87a3167ca3d"
+            },
+            {
+              "kind": "user_claim",
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+              "version": 3,
+              "eventId": "cfc0ac72-dd53-41e4-a649-442b96d6cbe1"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요."
+            }
+          ],
+          "actionBeats": []
+        }
+      },
+      "text": "이전에 한 일도 확인해 주세요.",
+      "response": {
+        "line": "좋아요.",
+        "actionBeats": [],
+        "emotion": "차분함",
+        "pose": "listen",
+        "musicMood": "cafe-warmth",
+        "events": [],
+        "recall": [],
+        "conjecture": "",
+        "commitmentProgress": [
+          {
+            "promiseId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+            "conditionId": "5f01ca7f-b774-4ce4-8c5c-25d22a9d8c46",
+            "performer": "player",
+            "source": "event",
+            "quote": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+            "eventId": "cfc0ac72-dd53-41e4-a649-442b96d6cbe1",
+            "actionIndex": -1
+          }
+        ]
+      },
+      "error": "Error: 약속 조건 또는 이행 근거를 확인하지 못했습니다.",
+      "after": {
+        "mode": "romance",
+        "step": 0,
+        "scores": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          {
+            "speaker": "서유나 · 27",
+            "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+          },
+          {
+            "speaker": "당신",
+            "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          },
+          {
+            "speaker": "당신",
+            "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요."
+          },
+          {
+            "speaker": "서유나",
+            "text": "좋아요."
+          }
+        ],
+        "ending": null,
+        "romance": {
+          "version": 0,
+          "turn": 0,
+          "facts": [],
+          "details": []
+        },
+        "narrative": {
+          "format": 2,
+          "turn": 3,
+          "location": "cafe",
+          "relationship": "strangers",
+          "dates": 0,
+          "events": [
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "offered",
+              "reference": "",
+              "evidence": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "value": "keepsake",
+              "id": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "turn": 1
+            },
+            {
+              "kind": "promise",
+              "subject": "player",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "status": "accepted",
+              "reference": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "evidence": "좋아요.",
+              "value": "keepsake",
+              "id": "4a642228-760c-451f-bd1c-d87a3167ca3d",
+              "turn": 2
+            },
+            {
+              "id": "cfc0ac72-dd53-41e4-a649-442b96d6cbe1",
+              "turn": 3,
+              "kind": "complication",
+              "subject": "player",
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+              "status": "fulfilled",
+              "reference": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+              "evidence": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+              "value": "condition-evidence",
+              "performanceSource": "statement",
+              "performanceVersion": 1
+            }
+          ],
+          "pose": "listen",
+          "emotion": "차분함",
+          "musicMood": "cafe-warmth",
+          "commitments": [
+            {
+              "promiseId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "originalText": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "acceptanceIds": [
+                "4a642228-760c-451f-bd1c-d87a3167ca3d"
+              ],
+              "conditions": [
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "노란 리본을 가져오고",
+                  "id": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+                  "originalPerformer": "player",
+                  "evidenceIds": [
+                    "cfc0ac72-dd53-41e4-a649-442b96d6cbe1"
+                  ]
+                },
+                {
+                  "performer": "player",
+                  "target": "유나",
+                  "action": "편지를 접는",
+                  "id": "5f01ca7f-b774-4ce4-8c5c-25d22a9d8c46",
+                  "originalPerformer": "player",
+                  "evidenceIds": []
+                }
+              ],
+              "amendments": [],
+              "assessments": [
+                {
+                  "turn": 3,
+                  "result": "partial",
+                  "conditions": [
+                    {
+                      "id": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+                      "evidenceIds": [
+                        "cfc0ac72-dd53-41e4-a649-442b96d6cbe1"
+                      ]
+                    },
+                    {
+                      "id": "5f01ca7f-b774-4ce4-8c5c-25d22a9d8c46",
+                      "evidenceIds": []
+                    }
+                  ],
+                  "reason": "Server-derived from accepted performer-specific evidence"
+                }
+              ],
+              "status": "partial",
+              "evidenceApplicability": [
+                {
+                  "evidenceId": "cfc0ac72-dd53-41e4-a649-442b96d6cbe1",
+                  "originConditionId": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+                  "conditionId": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+                  "version": 1,
+                  "terms": {
+                    "performer": "player",
+                    "target": "유나",
+                    "action": "노란 리본을 가져오고"
+                  },
+                  "quote": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+                  "result": "applicable",
+                  "reasons": {
+                    "actor": "source actor matches required actor",
+                    "target": "explicit recipients match; omitted recipient uses linked obligation",
+                    "action": "bounded predicate and object validation",
+                    "completion": "grounded completed statement or NPC action; no acceptance/future/negative"
+                  }
+                }
+              ]
+            }
+          ],
+          "legacyCommitmentAssessments": [],
+          "performanceInterpretations": [
+            {
+              "id": "14cc22aa-70a3-464a-9e5d-0f7ae07ea331",
+              "conditionId": "8c3a178d-75e2-4ca9-af89-6fcf37e48955",
+              "promiseId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+              "span": {
+                "start": 0,
+                "end": 32
+              },
+              "componentHash": "ed1ae2f9ec99f575079db33a09115b10d7a29f4b5615d15bc69a81521a7466b9",
+              "previousId": null,
+              "meaning": "performance",
+              "matching": "match",
+              "reasons": {
+                "actor": "different explicit actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "bounded predicate/object matched",
+                "tense": "past inflection",
+                "polarity": "no recognized negative statement"
+              }
+            },
+            {
+              "id": "ceddc37f-fd41-44a8-b15d-6362a5073eeb",
+              "conditionId": "5f01ca7f-b774-4ce4-8c5c-25d22a9d8c46",
+              "promiseId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+              "span": {
+                "start": 0,
+                "end": 32
+              },
+              "componentHash": "ed1ae2f9ec99f575079db33a09115b10d7a29f4b5615d15bc69a81521a7466b9",
+              "previousId": null,
+              "meaning": "performance",
+              "matching": "mismatch",
+              "reasons": {
+                "actor": "different explicit actor",
+                "target": "compatible explicit recipient or linked omitted recipient",
+                "action": "predicate/object not established",
+                "tense": "past inflection",
+                "polarity": "no recognized negative statement"
+              }
+            }
+          ]
+        },
+        "dialogue": {
+          "version": 3,
+          "facts": [
+            {
+              "id": "scene-0",
+              "eventId": "start",
+              "version": 0,
+              "confirmedAt": "2026-11-21T07:04:31.879Z",
+              "kind": "scene",
+              "text": "문 닫을 카페의 종을 녹음하던 유나가 의자를 내준다. “서유나예요. 없어지는 소리를 모아요. 계산할 때 나는 비명은 제외하고요.” 웃다가 헤드폰 줄을 컵 손잡이에 걸고 만다. 유나가 줄을 풀다가 귀끝을 붉힌다. “보답으로 커피요. 저는 시나몬을 싫어하는데 늘 시나몬 쿠키를 시켜요. 냄새는 좋거든요. 당신은 어떤 소리를 좋아해요?”"
+            },
+            {
+              "id": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "eventId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a",
+              "version": 1,
+              "confirmedAt": "2026-11-21T07:04:31.879Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "4a642228-760c-451f-bd1c-d87a3167ca3d",
+              "eventId": "4a642228-760c-451f-bd1c-d87a3167ca3d",
+              "version": 2,
+              "confirmedAt": "2026-11-21T07:04:31.879Z",
+              "kind": "scene",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "id": "cfc0ac72-dd53-41e4-a649-442b96d6cbe1",
+              "eventId": "cfc0ac72-dd53-41e4-a649-442b96d6cbe1",
+              "version": 3,
+              "confirmedAt": "2026-11-21T07:04:31.880Z",
+              "kind": "scene",
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요."
+            }
+          ],
+          "ledger": [
+            {
+              "kind": "user_claim",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 1,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 1,
+              "eventId": "c0f13f58-88b3-400d-92f6-0cdc26700a1a"
+            },
+            {
+              "kind": "user_claim",
+              "text": "좋아요.",
+              "version": 2
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 2,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요.",
+              "version": 2,
+              "eventId": "4a642228-760c-451f-bd1c-d87a3167ca3d"
+            },
+            {
+              "kind": "user_claim",
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+              "version": 3
+            },
+            {
+              "kind": "model_dialogue",
+              "text": "좋아요.",
+              "version": 3,
+              "recallIds": []
+            },
+            {
+              "kind": "verified_event",
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요.",
+              "version": 3,
+              "eventId": "cfc0ac72-dd53-41e4-a649-442b96d6cbe1"
+            }
+          ],
+          "reply": "좋아요.",
+          "playerStatements": [
+            {
+              "turn": 1,
+              "text": "제가 노란 리본을 가져오고 편지를 접는 약속을 할게요."
+            },
+            {
+              "turn": 2,
+              "text": "좋아요."
+            },
+            {
+              "turn": 3,
+              "text": "노란 리본을 유나에게 가져왔어요. 친구가 편지를 접었어요."
+            }
+          ],
+          "actionBeats": []
+        }
+      }
+    }
+  ]
+}

@@ -13,6 +13,11 @@ globalThis.fetch=async(url,options)=>{
  const offer={kind:'promise',subject:'player',text:original,status:'offered',reference:'',evidence:original,value:'keepsake'};
  const reply={line:'좋아요.',actionBeats:[],emotion:'차분함',pose:'listen',musicMood:'cafe-warmth',events:[],recall:[],conjecture:'',commitmentOffers:[],commitmentProgress:[],commitmentAmendments:[],commitmentRevisions:[]};
  if(text===original){reply.events=[offer];reply.commitmentOffers=[{eventIndex:0,conditions:[{performer:'player',target:'유나',action:'노란 리본을 가져오고'},{performer:'player',target:'유나',action:'편지를 접는'}]}];}
+ else if(process.env.COMMITMENT_NEGOTIATION==='1'&&text.includes('바꾸면 어떨까요'))reply.revisionProposals=[{promiseId:c.promiseId,conditionId:c.conditions[1].id,expectedVersion:1,replacement:{performer:'player',target:'유나',action:'그림을 그리는'},proposer:'player',quote:text}];
+ else if(process.env.COMMITMENT_NEGOTIATION==='1'&&(text.includes('변경은 거절')||text.includes('바꾸는 데 동의'))){
+  reply.line=text.includes('거절')?'원래 약속을 유지해요.':text;
+  reply.revisionResponses=[{proposalId:story.revisionNegotiations[0].id,actor:'player',quote:text},...(text.includes('거절')?[]:[{proposalId:story.revisionNegotiations[0].id,actor:'npc',quote:reply.line}])];
+ }
  else if(text==='좋아요.')reply.events=[{...offer,status:'accepted',reference:c.promiseId,evidence:text}];
  else if(text.includes('바꾸는 데 동의해요')){
   reply.line=`좋아요. ${text}`;

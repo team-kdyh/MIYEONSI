@@ -1,0 +1,407 @@
+{
+  "rowid": 12716,
+  "id": "9752e817-9e30-4df0-8c1e-72c9aa6c7343",
+  "aggregate_id": "job_cf649d75d0b2",
+  "event_type": "mcp.job.failed",
+  "payload": {
+    "status": "failed",
+    "message": "Job failed",
+    "result_text": "# Ralph Loop Result\n\nLineage ID: ralph-afterhours-v2-revision-14128a7\nStatus: failed\nStop reason: stagnated\nIterations: 3/10\n\n## Iterations\n- 1: generation=1, action=continue, qa=revise\n- 2: generation=2, action=continue, qa=revise\n- 3: generation=3, action=stagnated\n\n## Final generation output\n## Generation 3\n\n**Action**: stagnated\n**Phase**: completed\n**Convergence similarity**: 88.42%\n**Reason**: Stagnation detected: evaluation score plateau over 3 generations (scores=0.000, 0.000, 0.000)\n**Lineage**: ralph-afterhours-v2-revision-14128a7 (3 generations)\n**Next generation**: 4\n**Frugality proof**: insufficient_data\n**Frugality evidence**: matching isolated full-graph/focused receipt not found\n**Worktree**: C:\\Users\\gjtjw\\.ouroboros\\worktrees\\대화형 스토리진행\\ralph-afterhours-v2-revision-14128a7\n**Branch**: ooo/ralph-afterhours-v2-revision-14128a7\n\n### Execution output\n약속 변경 이력·수행 해석 진단·의무별 근거 적용을 보완했습니다. 변경 거절이 원약속까지 취소하던 결함도 수정했습니다.\n\n- 단위 **381/381**, 브라우저 **26/26**, 타입 검사·빌드 통과\n- Windows 실행·종료·재실행 확인\n- 유료 호출 **0회**, 원본 미리보기·개인 저장 보존\n\n[검토 보고서](<C:/Users/gjtjw/.ouroboros/worktrees/대화형 스토리진행/ralph-afterhours-v2-revision-14128a7/docs/v2-contract-followup/README.md>) · [소스·검증 자료 ZIP](<C:/Users/gjtjw/.ouroboros/worktrees/대화형 스토리진행/ralph-afterhours-v2-revision-14128a7/docs/v2-contract-followup-review.zip>)\n\n실제 모델 검증·직접 청취 등이 남아 **전체 완료나 출시 승인은 아닙니다.**\n\n### Evaluation\n- **Approved**: False\n- **Score**: 0.0\n- **Drift**: 0.16\n- **Failure**: AC 1 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.35 did not gate this); AC 2 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.54 did not gate this); AC 3 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.40 did not gate this); AC 4 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.25 did not gate this); AC 5 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.15 did not gate this); AC 6 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.53 did not gate this); AC 7 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.46 did not gate this)\n\n#### Per-AC Results\n- AC 1: [FAIL] 두 모드의 플레이 화면은 전체 뷰포트의 원본 배경과 큰 캐릭터, 반투명 하단 대사·행동 지문·자유 텍스트 입력으로 구성된다. 이야기 답변 선택지\n- AC 2: [FAIL] OpenAI가 기본 캐릭터 대화와 스토리 진행을 담당한다. 키가 있는 설치의 새/기존 브라우저에서 OpenAI 대화로 시작하고 오프라인은 명시적\n- AC 3: [FAIL] 박도현의 직장 8미션은 고유 문제와 저항·유머·반론을 유지하며 기존 정답에 없는 합리적인 업무 대안도 협상 결과를 바꾼다. 각 미션에서 고유 문\n- AC 4: [FAIL] 원본 캐릭터 둘은 각 최소12개 구별되는 2D 표정/자세(기존4+신규8)를 실제 일러스트로 사용한다. 동일 인물 정체성을 유지하고 새 자세·배경\n- AC 5: [FAIL] 최소8개의 서로 다른 오리지널 음악을 사용하며 단순 같은 멜로디의 이조가 아니라 선율/편성/템포/분위기가 구별된다. 각 곡은 최소48초이고 정상\n- AC 6: [FAIL] 자동 저장·수동3슬롯·대화/사건/약속·해금·설정과 중복 요청/취소/재시작 복구가 새 AI 스토리 상태에도 적용된다. 기존 플레이어 저장과 v1 \n- AC 7: [FAIL] 출시 후보는 Windows play.cmd/stop.cmd와 README로 실행되고 타입 검사·빌드 및 의미 있는 자동/브라우저 회귀 검증을 통\n\n### Wonder questions\n- 평가가 미완료로 지적한 변경 제안·거절 생명주기에서 narrative_proposal의 거절은 변경 제안만을 거절한 사실인가, 원래 약속까지 철회한 사실인가? 당사자의 거절, 모호한 응답, 서버의 변경 적용 실패가 구별되고, 저장·복원 후에도 원래 계약의 유효성과 별도로 유지되는가?\n- performance_interpretation_assessment에서 수행을 해석하지 못했다는 것은 서버 지식의 한계인가, 인물이 수행하지 않았다는 세계의 사실인가? 평가가 진단 구분을 미완료로 명시한 현재 후보에서, 명확한 동의어 수행의 미인식과 의무 불일치·명시적 미이행이 실제로 구별되는가?\n- promise_performance_evidence의 obligation_id는 근거가 발생한 원래 의무를 식별하는가, 그 근거가 충족할 수 있는 모든 의무를 제한하는가? 보고된 근거 재사용 복원 결함의 수정 이후, 잘못된 다른 의무로의 전용과 의무별 정당화가 있는 공동 적용, 변경되지 않은 의무의 근거 보존을 구별하는 의미적 경계는 확인되었는가?\n- counterfactual_effect_trace와 experience_coverage가 말하는 서사적 효과는 저장된 사실의 차이인가, 그 사실 때문에 실제 후속 경험이 달라진 것인가? 실제 모델 검증이 남아 있는 현재 후보에서 협상 조건의 후속 적용, 로맨스의 참여 경험, 복원된 기억의 올바른 사용 중 무엇이 관찰되었으며, 서버 상태만 맞고 생성 대사는 다른 사실을 주장하는 가능성은 어디까지 미확인인가?\n- visual_state_binding에서 수락했으나 아직 참여하지 않은 상태의 화면은 NPC 자신의 몸짓을 표현하는가, 플레이어가 참여한 공동 행동을 표현하는가? 전체 참여 상태 검토가 남았다는 평가를 고려할 때, 선행 관찰과 이번 미열람 자료가 각각 어느 화면·상태·가독성 주장까지 뒷받침하는지 구별되어 있는가?\n- audible_music_transition이 세는 전환은 음악 선택 상태의 변화인가, 정상 사건 경로에서 실제로 들린 음악의 변화인가? 직접 청취가 남아 있는 현재 평가에서 여덟 곡의 음악적 구별성, 여섯 회 이상의 가청 전환, 재생 기능 중 직접 관찰로 성립한 주장은 무엇이며 어떤 주장은 아직 측정이나 실행 보고에만 의존하는가?\n\n### Validation\nValidation: no fixable errors detected (exit code 1)\n\n### Ontology delta (similarity: 88.42%)\n- **Modified**: audible_music_transition: AudibleMusicTransition → AudibleMusicTransition\n- **Modified**: counterfactual_effect_trace: CounterfactualEffectTrace → CounterfactualEffectTrace\n- **Modified**: experience_coverage: ExperienceCoverage → ExperienceCoverage\n- **Modified**: narrative_proposal: NarrativeProposal → NarrativeProposal\n- **Modified**: performance_interpretation_assessment: PerformanceInterpretationAssessment → PerformanceInterpretationAssessment\n- **Modified**: promise_amendment: PromiseAmendment → PromiseAmendment\n- **Modified**: promise_evidence_applicability: PromiseEvidenceApplicability → PromiseEvidenceApplicability\n- **Modified**: promise_performance_evidence: PromisePerformanceEvidence → PromisePerformanceEvidence\n- **Modified**: release_candidate_evidence: ReleaseCandidateEvidence → ReleaseCandidateEvidence\n- **Modified**: semantic_persistence_trace: SemanticPersistenceTrace → SemanticPersistenceTrace\n- **Modified**: visual_state_binding: VisualStateBinding → VisualStateBinding",
+    "result_meta": {
+      "lineage_id": "ralph-afterhours-v2-revision-14128a7",
+      "generation": 3,
+      "action": "stagnated",
+      "similarity": 0.8842105263157896,
+      "next_generation": 4,
+      "executed": true,
+      "benchmark_control": false,
+      "qa_attempted": false,
+      "has_execution_output": true,
+      "active_ac_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "frozen_ac_indices": [],
+      "active_node_count": 7,
+      "frozen_node_count": 0,
+      "checkpoint_commits": [],
+      "checkpoint_attempted_ac_ids": [],
+      "worktree_path": "C:\\Users\\gjtjw\\.ouroboros\\worktrees\\대화형 스토리진행\\ralph-afterhours-v2-revision-14128a7",
+      "worktree_branch": "ooo/ralph-afterhours-v2-revision-14128a7",
+      "frugality": {
+        "observation": {
+          "schema_version": 2,
+          "receipt_id": "ralph-afterhours-v2-revision-14128a7:generation:3",
+          "comparison_key": "sha256:2e74b1bdcb2089b683d93101a576cd192d711168cf59604cdea870d417f5f302",
+          "lineage_id": "ralph-afterhours-v2-revision-14128a7",
+          "generation_number": 3,
+          "execution_id": "evolve:ralph-afterhours-v2-revision-14128a7:generation:3",
+          "arm": "focused",
+          "workspace_path": "C:/Users/gjtjw/.ouroboros/worktrees/대화형 스토리진행/ralph-afterhours-v2-revision-14128a7",
+          "baseline_commit": "14128a71332cf2afb052dd2c1e7b60b3781fcbe2",
+          "baseline_clean": false,
+          "active_ac_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "frozen_ac_indices": [],
+          "executed_ac_indices": [],
+          "total_node_count": 7,
+          "evaluated_seed_fingerprint": "sha256:c9e7aca468a9a41c627e386ee80a4f84b10c68189a2464caaf9b69cb06069ef3",
+          "token_spend": null,
+          "execution_token_spend": null,
+          "token_event_count": 0,
+          "expected_attempt_count": 0,
+          "attempt_identity_digest": null,
+          "execution_configuration_fingerprint": null,
+          "execution_configuration_assignments": [],
+          "token_evidence_complete": false,
+          "provider_token_spend": null,
+          "provider_call_count": 10,
+          "provider_identity_digest": "sha256:bfdeab39cd261349fc0ba17374f6a4bee1cf2944c7120c449d5ab81de56ab5f1",
+          "provider_configuration_fingerprint": "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a",
+          "provider_configuration_assignments": [
+            [
+              "reflect",
+              [
+                "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a"
+              ]
+            ],
+            [
+              "semantic_evaluation",
+              [
+                "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a",
+                "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a",
+                "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a",
+                "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a",
+                "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a",
+                "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a",
+                "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a",
+                "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a"
+              ]
+            ],
+            [
+              "wonder",
+              [
+                "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a"
+              ]
+            ]
+          ],
+          "provider_evidence_complete": false,
+          "generation_token_evidence_complete": false,
+          "wall_time_seconds": 1419.396815,
+          "runtime_calls": null,
+          "runtime_messages": 191,
+          "retry_calls": 0,
+          "final_approved": false,
+          "evaluation_score": 0.0,
+          "evaluation_drift_score": 0.16,
+          "evaluation_reward_hacking_risk": 0.12,
+          "highest_stage_passed": 2,
+          "passed_ac_indices": [],
+          "failed_ac_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "ac_score_assignments": [
+            [
+              0,
+              0.35
+            ],
+            [
+              1,
+              0.54
+            ],
+            [
+              2,
+              0.4
+            ],
+            [
+              3,
+              0.25
+            ],
+            [
+              4,
+              0.15
+            ],
+            [
+              5,
+              0.53
+            ],
+            [
+              6,
+              0.46
+            ]
+          ],
+          "regressed_ac_indices": [],
+          "grounding_observations": 0,
+          "grounding_regressions": null,
+          "grounding_evidence_complete": false,
+          "ac_evidence_complete": true,
+          "evidence_issues": [
+            "no authoritative primary attempt dispatches",
+            "runtime token/configuration attribution does not exactly cover expected attempts",
+            "TraceGuard evidence does not exactly cover expected attempts",
+            "primary dispatch roots do not exactly cover the active AC working set",
+            "generation provider-call instrumentation is incomplete"
+          ]
+        },
+        "proof": {
+          "schema_version": 2,
+          "status": "insufficient_data",
+          "comparison_key": "sha256:2e74b1bdcb2089b683d93101a576cd192d711168cf59604cdea870d417f5f302",
+          "control_receipt_id": null,
+          "treatment_receipt_id": "ralph-afterhours-v2-revision-14128a7:generation:3",
+          "token_reduction_pct": null,
+          "wall_time_reduction_pct": null,
+          "call_reduction_pct": null,
+          "quality_vetoes": [],
+          "reason": "matching isolated full-graph/focused receipt not found",
+          "thresholds": {
+            "minimum_token_reduction_pct": 10.0
+          }
+        }
+      },
+      "converged": false,
+      "status": "failed",
+      "stop_reason": "stagnated",
+      "iterations": 3,
+      "max_generations": 10,
+      "actions": [
+        "continue",
+        "continue",
+        "stagnated"
+      ],
+      "generations": [
+        1,
+        2,
+        3
+      ],
+      "failure_reason_code": "validation",
+      "recovery_action": "inspect_logs",
+      "next_step": "Inspect the validation output before retrying the workflow."
+    },
+    "result_payload": {
+      "content": [
+        {
+          "type": "text",
+          "text": "# Ralph Loop Result\n\nLineage ID: ralph-afterhours-v2-revision-14128a7\nStatus: failed\nStop reason: stagnated\nIterations: 3/10\n\n## Iterations\n- 1: generation=1, action=continue, qa=revise\n- 2: generation=2, action=continue, qa=revise\n- 3: generation=3, action=stagnated\n\n## Final generation output\n## Generation 3\n\n**Action**: stagnated\n**Phase**: completed\n**Convergence similarity**: 88.42%\n**Reason**: Stagnation detected: evaluation score plateau over 3 generations (scores=0.000, 0.000, 0.000)\n**Lineage**: ralph-afterhours-v2-revision-14128a7 (3 generations)\n**Next generation**: 4\n**Frugality proof**: insufficient_data\n**Frugality evidence**: matching isolated full-graph/focused receipt not found\n**Worktree**: C:\\Users\\gjtjw\\.ouroboros\\worktrees\\대화형 스토리진행\\ralph-afterhours-v2-revision-14128a7\n**Branch**: ooo/ralph-afterhours-v2-revision-14128a7\n\n### Execution output\n약속 변경 이력·수행 해석 진단·의무별 근거 적용을 보완했습니다. 변경 거절이 원약속까지 취소하던 결함도 수정했습니다.\n\n- 단위 **381/381**, 브라우저 **26/26**, 타입 검사·빌드 통과\n- Windows 실행·종료·재실행 확인\n- 유료 호출 **0회**, 원본 미리보기·개인 저장 보존\n\n[검토 보고서](<C:/Users/gjtjw/.ouroboros/worktrees/대화형 스토리진행/ralph-afterhours-v2-revision-14128a7/docs/v2-contract-followup/README.md>) · [소스·검증 자료 ZIP](<C:/Users/gjtjw/.ouroboros/worktrees/대화형 스토리진행/ralph-afterhours-v2-revision-14128a7/docs/v2-contract-followup-review.zip>)\n\n실제 모델 검증·직접 청취 등이 남아 **전체 완료나 출시 승인은 아닙니다.**\n\n### Evaluation\n- **Approved**: False\n- **Score**: 0.0\n- **Drift**: 0.16\n- **Failure**: AC 1 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.35 did not gate this); AC 2 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.54 did not gate this); AC 3 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.40 did not gate this); AC 4 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.25 did not gate this); AC 5 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.15 did not gate this); AC 6 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.53 did not gate this); AC 7 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.46 did not gate this)\n\n#### Per-AC Results\n- AC 1: [FAIL] 두 모드의 플레이 화면은 전체 뷰포트의 원본 배경과 큰 캐릭터, 반투명 하단 대사·행동 지문·자유 텍스트 입력으로 구성된다. 이야기 답변 선택지\n- AC 2: [FAIL] OpenAI가 기본 캐릭터 대화와 스토리 진행을 담당한다. 키가 있는 설치의 새/기존 브라우저에서 OpenAI 대화로 시작하고 오프라인은 명시적\n- AC 3: [FAIL] 박도현의 직장 8미션은 고유 문제와 저항·유머·반론을 유지하며 기존 정답에 없는 합리적인 업무 대안도 협상 결과를 바꾼다. 각 미션에서 고유 문\n- AC 4: [FAIL] 원본 캐릭터 둘은 각 최소12개 구별되는 2D 표정/자세(기존4+신규8)를 실제 일러스트로 사용한다. 동일 인물 정체성을 유지하고 새 자세·배경\n- AC 5: [FAIL] 최소8개의 서로 다른 오리지널 음악을 사용하며 단순 같은 멜로디의 이조가 아니라 선율/편성/템포/분위기가 구별된다. 각 곡은 최소48초이고 정상\n- AC 6: [FAIL] 자동 저장·수동3슬롯·대화/사건/약속·해금·설정과 중복 요청/취소/재시작 복구가 새 AI 스토리 상태에도 적용된다. 기존 플레이어 저장과 v1 \n- AC 7: [FAIL] 출시 후보는 Windows play.cmd/stop.cmd와 README로 실행되고 타입 검사·빌드 및 의미 있는 자동/브라우저 회귀 검증을 통\n\n### Wonder questions\n- 평가가 미완료로 지적한 변경 제안·거절 생명주기에서 narrative_proposal의 거절은 변경 제안만을 거절한 사실인가, 원래 약속까지 철회한 사실인가? 당사자의 거절, 모호한 응답, 서버의 변경 적용 실패가 구별되고, 저장·복원 후에도 원래 계약의 유효성과 별도로 유지되는가?\n- performance_interpretation_assessment에서 수행을 해석하지 못했다는 것은 서버 지식의 한계인가, 인물이 수행하지 않았다는 세계의 사실인가? 평가가 진단 구분을 미완료로 명시한 현재 후보에서, 명확한 동의어 수행의 미인식과 의무 불일치·명시적 미이행이 실제로 구별되는가?\n- promise_performance_evidence의 obligation_id는 근거가 발생한 원래 의무를 식별하는가, 그 근거가 충족할 수 있는 모든 의무를 제한하는가? 보고된 근거 재사용 복원 결함의 수정 이후, 잘못된 다른 의무로의 전용과 의무별 정당화가 있는 공동 적용, 변경되지 않은 의무의 근거 보존을 구별하는 의미적 경계는 확인되었는가?\n- counterfactual_effect_trace와 experience_coverage가 말하는 서사적 효과는 저장된 사실의 차이인가, 그 사실 때문에 실제 후속 경험이 달라진 것인가? 실제 모델 검증이 남아 있는 현재 후보에서 협상 조건의 후속 적용, 로맨스의 참여 경험, 복원된 기억의 올바른 사용 중 무엇이 관찰되었으며, 서버 상태만 맞고 생성 대사는 다른 사실을 주장하는 가능성은 어디까지 미확인인가?\n- visual_state_binding에서 수락했으나 아직 참여하지 않은 상태의 화면은 NPC 자신의 몸짓을 표현하는가, 플레이어가 참여한 공동 행동을 표현하는가? 전체 참여 상태 검토가 남았다는 평가를 고려할 때, 선행 관찰과 이번 미열람 자료가 각각 어느 화면·상태·가독성 주장까지 뒷받침하는지 구별되어 있는가?\n- audible_music_transition이 세는 전환은 음악 선택 상태의 변화인가, 정상 사건 경로에서 실제로 들린 음악의 변화인가? 직접 청취가 남아 있는 현재 평가에서 여덟 곡의 음악적 구별성, 여섯 회 이상의 가청 전환, 재생 기능 중 직접 관찰로 성립한 주장은 무엇이며 어떤 주장은 아직 측정이나 실행 보고에만 의존하는가?\n\n### Validation\nValidation: no fixable errors detected (exit code 1)\n\n### Ontology delta (similarity: 88.42%)\n- **Modified**: audible_music_transition: AudibleMusicTransition → AudibleMusicTransition\n- **Modified**: counterfactual_effect_trace: CounterfactualEffectTrace → CounterfactualEffectTrace\n- **Modified**: experience_coverage: ExperienceCoverage → ExperienceCoverage\n- **Modified**: narrative_proposal: NarrativeProposal → NarrativeProposal\n- **Modified**: performance_interpretation_assessment: PerformanceInterpretationAssessment → PerformanceInterpretationAssessment\n- **Modified**: promise_amendment: PromiseAmendment → PromiseAmendment\n- **Modified**: promise_evidence_applicability: PromiseEvidenceApplicability → PromiseEvidenceApplicability\n- **Modified**: promise_performance_evidence: PromisePerformanceEvidence → PromisePerformanceEvidence\n- **Modified**: release_candidate_evidence: ReleaseCandidateEvidence → ReleaseCandidateEvidence\n- **Modified**: semantic_persistence_trace: SemanticPersistenceTrace → SemanticPersistenceTrace\n- **Modified**: visual_state_binding: VisualStateBinding → VisualStateBinding",
+          "data": null,
+          "mime_type": null,
+          "uri": null
+        }
+      ],
+      "is_error": true,
+      "meta": {
+        "lineage_id": "ralph-afterhours-v2-revision-14128a7",
+        "generation": 3,
+        "action": "stagnated",
+        "similarity": 0.8842105263157896,
+        "next_generation": 4,
+        "executed": true,
+        "benchmark_control": false,
+        "qa_attempted": false,
+        "has_execution_output": true,
+        "active_ac_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "frozen_ac_indices": [],
+        "active_node_count": 7,
+        "frozen_node_count": 0,
+        "checkpoint_commits": [],
+        "checkpoint_attempted_ac_ids": [],
+        "worktree_path": "C:\\Users\\gjtjw\\.ouroboros\\worktrees\\대화형 스토리진행\\ralph-afterhours-v2-revision-14128a7",
+        "worktree_branch": "ooo/ralph-afterhours-v2-revision-14128a7",
+        "frugality": {
+          "observation": {
+            "schema_version": 2,
+            "receipt_id": "ralph-afterhours-v2-revision-14128a7:generation:3",
+            "comparison_key": "sha256:2e74b1bdcb2089b683d93101a576cd192d711168cf59604cdea870d417f5f302",
+            "lineage_id": "ralph-afterhours-v2-revision-14128a7",
+            "generation_number": 3,
+            "execution_id": "evolve:ralph-afterhours-v2-revision-14128a7:generation:3",
+            "arm": "focused",
+            "workspace_path": "C:/Users/gjtjw/.ouroboros/worktrees/대화형 스토리진행/ralph-afterhours-v2-revision-14128a7",
+            "baseline_commit": "14128a71332cf2afb052dd2c1e7b60b3781fcbe2",
+            "baseline_clean": false,
+            "active_ac_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "frozen_ac_indices": [],
+            "executed_ac_indices": [],
+            "total_node_count": 7,
+            "evaluated_seed_fingerprint": "sha256:c9e7aca468a9a41c627e386ee80a4f84b10c68189a2464caaf9b69cb06069ef3",
+            "token_spend": null,
+            "execution_token_spend": null,
+            "token_event_count": 0,
+            "expected_attempt_count": 0,
+            "attempt_identity_digest": null,
+            "execution_configuration_fingerprint": null,
+            "execution_configuration_assignments": [],
+            "token_evidence_complete": false,
+            "provider_token_spend": null,
+            "provider_call_count": 10,
+            "provider_identity_digest": "sha256:bfdeab39cd261349fc0ba17374f6a4bee1cf2944c7120c449d5ab81de56ab5f1",
+            "provider_configuration_fingerprint": "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a",
+            "provider_configuration_assignments": [
+              [
+                "reflect",
+                [
+                  "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a"
+                ]
+              ],
+              [
+                "semantic_evaluation",
+                [
+                  "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a",
+                  "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a",
+                  "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a",
+                  "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a",
+                  "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a",
+                  "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a",
+                  "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a",
+                  "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a"
+                ]
+              ],
+              [
+                "wonder",
+                [
+                  "sha256:daab63b34064b8127359da0cad4fc68af781f433304d9e2e9c6d9b539882e17a"
+                ]
+              ]
+            ],
+            "provider_evidence_complete": false,
+            "generation_token_evidence_complete": false,
+            "wall_time_seconds": 1419.396815,
+            "runtime_calls": null,
+            "runtime_messages": 191,
+            "retry_calls": 0,
+            "final_approved": false,
+            "evaluation_score": 0.0,
+            "evaluation_drift_score": 0.16,
+            "evaluation_reward_hacking_risk": 0.12,
+            "highest_stage_passed": 2,
+            "passed_ac_indices": [],
+            "failed_ac_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "ac_score_assignments": [
+              [
+                0,
+                0.35
+              ],
+              [
+                1,
+                0.54
+              ],
+              [
+                2,
+                0.4
+              ],
+              [
+                3,
+                0.25
+              ],
+              [
+                4,
+                0.15
+              ],
+              [
+                5,
+                0.53
+              ],
+              [
+                6,
+                0.46
+              ]
+            ],
+            "regressed_ac_indices": [],
+            "grounding_observations": 0,
+            "grounding_regressions": null,
+            "grounding_evidence_complete": false,
+            "ac_evidence_complete": true,
+            "evidence_issues": [
+              "no authoritative primary attempt dispatches",
+              "runtime token/configuration attribution does not exactly cover expected attempts",
+              "TraceGuard evidence does not exactly cover expected attempts",
+              "primary dispatch roots do not exactly cover the active AC working set",
+              "generation provider-call instrumentation is incomplete"
+            ]
+          },
+          "proof": {
+            "schema_version": 2,
+            "status": "insufficient_data",
+            "comparison_key": "sha256:2e74b1bdcb2089b683d93101a576cd192d711168cf59604cdea870d417f5f302",
+            "control_receipt_id": null,
+            "treatment_receipt_id": "ralph-afterhours-v2-revision-14128a7:generation:3",
+            "token_reduction_pct": null,
+            "wall_time_reduction_pct": null,
+            "call_reduction_pct": null,
+            "quality_vetoes": [],
+            "reason": "matching isolated full-graph/focused receipt not found",
+            "thresholds": {
+              "minimum_token_reduction_pct": 10.0
+            }
+          }
+        },
+        "converged": false,
+        "status": "failed",
+        "stop_reason": "stagnated",
+        "iterations": 3,
+        "max_generations": 10,
+        "actions": [
+          "continue",
+          "continue",
+          "stagnated"
+        ],
+        "generations": [
+          1,
+          2,
+          3
+        ],
+        "failure_reason_code": "validation",
+        "recovery_action": "inspect_logs",
+        "next_step": "Inspect the validation output before retrying the workflow."
+      },
+      "text_content": "# Ralph Loop Result\n\nLineage ID: ralph-afterhours-v2-revision-14128a7\nStatus: failed\nStop reason: stagnated\nIterations: 3/10\n\n## Iterations\n- 1: generation=1, action=continue, qa=revise\n- 2: generation=2, action=continue, qa=revise\n- 3: generation=3, action=stagnated\n\n## Final generation output\n## Generation 3\n\n**Action**: stagnated\n**Phase**: completed\n**Convergence similarity**: 88.42%\n**Reason**: Stagnation detected: evaluation score plateau over 3 generations (scores=0.000, 0.000, 0.000)\n**Lineage**: ralph-afterhours-v2-revision-14128a7 (3 generations)\n**Next generation**: 4\n**Frugality proof**: insufficient_data\n**Frugality evidence**: matching isolated full-graph/focused receipt not found\n**Worktree**: C:\\Users\\gjtjw\\.ouroboros\\worktrees\\대화형 스토리진행\\ralph-afterhours-v2-revision-14128a7\n**Branch**: ooo/ralph-afterhours-v2-revision-14128a7\n\n### Execution output\n약속 변경 이력·수행 해석 진단·의무별 근거 적용을 보완했습니다. 변경 거절이 원약속까지 취소하던 결함도 수정했습니다.\n\n- 단위 **381/381**, 브라우저 **26/26**, 타입 검사·빌드 통과\n- Windows 실행·종료·재실행 확인\n- 유료 호출 **0회**, 원본 미리보기·개인 저장 보존\n\n[검토 보고서](<C:/Users/gjtjw/.ouroboros/worktrees/대화형 스토리진행/ralph-afterhours-v2-revision-14128a7/docs/v2-contract-followup/README.md>) · [소스·검증 자료 ZIP](<C:/Users/gjtjw/.ouroboros/worktrees/대화형 스토리진행/ralph-afterhours-v2-revision-14128a7/docs/v2-contract-followup-review.zip>)\n\n실제 모델 검증·직접 청취 등이 남아 **전체 완료나 출시 승인은 아닙니다.**\n\n### Evaluation\n- **Approved**: False\n- **Score**: 0.0\n- **Drift**: 0.16\n- **Failure**: AC 1 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.35 did not gate this); AC 2 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.54 did not gate this); AC 3 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.40 did not gate this); AC 4 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.25 did not gate this); AC 5 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.15 did not gate this); AC 6 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.53 did not gate this); AC 7 FAIL: Stage 2 failed: AC non-compliance (ac_compliance=false; semantic score 0.46 did not gate this)\n\n#### Per-AC Results\n- AC 1: [FAIL] 두 모드의 플레이 화면은 전체 뷰포트의 원본 배경과 큰 캐릭터, 반투명 하단 대사·행동 지문·자유 텍스트 입력으로 구성된다. 이야기 답변 선택지\n- AC 2: [FAIL] OpenAI가 기본 캐릭터 대화와 스토리 진행을 담당한다. 키가 있는 설치의 새/기존 브라우저에서 OpenAI 대화로 시작하고 오프라인은 명시적\n- AC 3: [FAIL] 박도현의 직장 8미션은 고유 문제와 저항·유머·반론을 유지하며 기존 정답에 없는 합리적인 업무 대안도 협상 결과를 바꾼다. 각 미션에서 고유 문\n- AC 4: [FAIL] 원본 캐릭터 둘은 각 최소12개 구별되는 2D 표정/자세(기존4+신규8)를 실제 일러스트로 사용한다. 동일 인물 정체성을 유지하고 새 자세·배경\n- AC 5: [FAIL] 최소8개의 서로 다른 오리지널 음악을 사용하며 단순 같은 멜로디의 이조가 아니라 선율/편성/템포/분위기가 구별된다. 각 곡은 최소48초이고 정상\n- AC 6: [FAIL] 자동 저장·수동3슬롯·대화/사건/약속·해금·설정과 중복 요청/취소/재시작 복구가 새 AI 스토리 상태에도 적용된다. 기존 플레이어 저장과 v1 \n- AC 7: [FAIL] 출시 후보는 Windows play.cmd/stop.cmd와 README로 실행되고 타입 검사·빌드 및 의미 있는 자동/브라우저 회귀 검증을 통\n\n### Wonder questions\n- 평가가 미완료로 지적한 변경 제안·거절 생명주기에서 narrative_proposal의 거절은 변경 제안만을 거절한 사실인가, 원래 약속까지 철회한 사실인가? 당사자의 거절, 모호한 응답, 서버의 변경 적용 실패가 구별되고, 저장·복원 후에도 원래 계약의 유효성과 별도로 유지되는가?\n- performance_interpretation_assessment에서 수행을 해석하지 못했다는 것은 서버 지식의 한계인가, 인물이 수행하지 않았다는 세계의 사실인가? 평가가 진단 구분을 미완료로 명시한 현재 후보에서, 명확한 동의어 수행의 미인식과 의무 불일치·명시적 미이행이 실제로 구별되는가?\n- promise_performance_evidence의 obligation_id는 근거가 발생한 원래 의무를 식별하는가, 그 근거가 충족할 수 있는 모든 의무를 제한하는가? 보고된 근거 재사용 복원 결함의 수정 이후, 잘못된 다른 의무로의 전용과 의무별 정당화가 있는 공동 적용, 변경되지 않은 의무의 근거 보존을 구별하는 의미적 경계는 확인되었는가?\n- counterfactual_effect_trace와 experience_coverage가 말하는 서사적 효과는 저장된 사실의 차이인가, 그 사실 때문에 실제 후속 경험이 달라진 것인가? 실제 모델 검증이 남아 있는 현재 후보에서 협상 조건의 후속 적용, 로맨스의 참여 경험, 복원된 기억의 올바른 사용 중 무엇이 관찰되었으며, 서버 상태만 맞고 생성 대사는 다른 사실을 주장하는 가능성은 어디까지 미확인인가?\n- visual_state_binding에서 수락했으나 아직 참여하지 않은 상태의 화면은 NPC 자신의 몸짓을 표현하는가, 플레이어가 참여한 공동 행동을 표현하는가? 전체 참여 상태 검토가 남았다는 평가를 고려할 때, 선행 관찰과 이번 미열람 자료가 각각 어느 화면·상태·가독성 주장까지 뒷받침하는지 구별되어 있는가?\n- audible_music_transition이 세는 전환은 음악 선택 상태의 변화인가, 정상 사건 경로에서 실제로 들린 음악의 변화인가? 직접 청취가 남아 있는 현재 평가에서 여덟 곡의 음악적 구별성, 여섯 회 이상의 가청 전환, 재생 기능 중 직접 관찰로 성립한 주장은 무엇이며 어떤 주장은 아직 측정이나 실행 보고에만 의존하는가?\n\n### Validation\nValidation: no fixable errors detected (exit code 1)\n\n### Ontology delta (similarity: 88.42%)\n- **Modified**: audible_music_transition: AudibleMusicTransition → AudibleMusicTransition\n- **Modified**: counterfactual_effect_trace: CounterfactualEffectTrace → CounterfactualEffectTrace\n- **Modified**: experience_coverage: ExperienceCoverage → ExperienceCoverage\n- **Modified**: narrative_proposal: NarrativeProposal → NarrativeProposal\n- **Modified**: performance_interpretation_assessment: PerformanceInterpretationAssessment → PerformanceInterpretationAssessment\n- **Modified**: promise_amendment: PromiseAmendment → PromiseAmendment\n- **Modified**: promise_evidence_applicability: PromiseEvidenceApplicability → PromiseEvidenceApplicability\n- **Modified**: promise_performance_evidence: PromisePerformanceEvidence → PromisePerformanceEvidence\n- **Modified**: release_candidate_evidence: ReleaseCandidateEvidence → ReleaseCandidateEvidence\n- **Modified**: semantic_persistence_trace: SemanticPersistenceTrace → SemanticPersistenceTrace\n- **Modified**: visual_state_binding: VisualStateBinding → VisualStateBinding"
+    },
+    "is_error": true,
+    "timestamp": "2026-11-21T07:07:39.663980+00:00",
+    "event_version": 1
+  },
+  "timestamp": "2026-11-21 07:07:39.663980",
+  "source_database": "C:/Users/gjtjw/.ouroboros/ouroboros.db"
+}

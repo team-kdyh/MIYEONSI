@@ -1,0 +1,21 @@
+{
+  "scope": "explicit project-root delivery entries, not only provider files",
+  "files": {
+    "play.cmd": {
+      "exists": true,
+      "sha256": "a73f7ecdee9f98e6d43325779811cc21b6589a47978d90ed785f6411503e793e"
+    },
+    "stop.cmd": {
+      "exists": true,
+      "sha256": "a1c2e93da917825eb80b318a1b28f1e7334d99eac43a2247b254d4555ca47c91"
+    },
+    "README.md": {
+      "exists": true,
+      "sha256": "540b51fe104d7e444b733743922f897ef68cb29bf2983e4d44281d4cce0207a8"
+    },
+    "docs/v2-QA.md": {
+      "exists": true,
+      "sha256": "3528627070ba7deedf13e709afe333ee4f9d2fed0d4cf4e2c596848fe55bc076"
+    }
+  }
+}

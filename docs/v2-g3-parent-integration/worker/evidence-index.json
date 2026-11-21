@@ -1,0 +1,260 @@
+{
+  "at": "2026-11-21T06:59:13.533149+00:00",
+  "candidateReference": "candidate.json",
+  "rows": [
+    {
+      "id": "UI-4",
+      "ac": 1,
+      "kind": "direct visual plus mock browser execution",
+      "paths": [
+        "direct-review.json",
+        "reviewed/v2-ui",
+        "ui.log",
+        "browser-release-candidate.log"
+      ],
+      "status": "directly inspected; final browser receipt separate",
+      "components": [
+        "src/main.tsx",
+        "src/style.css",
+        "src/ConversationViewport.tsx",
+        "src/visualAssets.ts"
+      ],
+      "componentHashes": {
+        "src/main.tsx": "51393a746803aa8f810bb973cb67ada2aac39133c076fd18220b6acc2dd0c5b8",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91",
+        "src/ConversationViewport.tsx": "64608817f983d9cd201f2b1262d520005bc982c21abc4349608e9cb3fd278b10",
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179"
+      },
+      "generated": true,
+      "delivery": "review ZIP; actual paths/inventory verified by package script",
+      "futureEvaluatorAccess": "not observed",
+      "originalFailVerdicts": "unchanged"
+    },
+    {
+      "id": "APPLICABILITY",
+      "ac": 2,
+      "kind": "normal-turn mock and storage",
+      "paths": [
+        "applicability-before.log",
+        "executed/docs/v2-contract-followup/applicability-trace.json",
+        "applicability-trace-run.log"
+      ],
+      "status": "reproduced fail repaired; positive and negative source use verified",
+      "components": [
+        "server/commitments.ts",
+        "server/evidence-applicability.ts",
+        "server/commitment-revisions.ts",
+        "server/narrative.ts"
+      ],
+      "componentHashes": {
+        "server/commitments.ts": "b7a6076d435af203a46aa4cd705588d8dea4e0b9a52822ffc9b04d45de63cf80",
+        "server/evidence-applicability.ts": "b4dbd937f4ceab629dc2a2536d0c518c4832fdbd6ddf447f4e33b52f29ac6d28",
+        "server/commitment-revisions.ts": "d4b3466cdad38d54b2409ef5b129324110161e7865cc21401c8e670739078336",
+        "server/narrative.ts": "2954e6eeb9d355b98b62a4bf3f28ddc6b134b75a37498004fe8b0abba4f3ea0c"
+      },
+      "generated": true,
+      "delivery": "review ZIP; actual paths/inventory verified by package script",
+      "futureEvaluatorAccess": "not observed",
+      "originalFailVerdicts": "unchanged"
+    },
+    {
+      "id": "NORMAL",
+      "ac": 2,
+      "kind": "normal-turn mock lifecycle and interpretation",
+      "paths": [
+        "executed/docs/v2-contract-followup/normal-turn-trace.json",
+        "lifecycle-final-tests.log",
+        "refusal-scope-before.log"
+      ],
+      "status": "bounded implemented behavior observed",
+      "components": [
+        "server/revision-negotiation.ts",
+        "server/performance-interpretation.ts",
+        "server/narrative.ts"
+      ],
+      "componentHashes": {
+        "server/revision-negotiation.ts": "f390544880b2b23542cb59aa9273d9a9493c04031425bf7a7e15aa420433262d",
+        "server/performance-interpretation.ts": "d62f917b233237ac847e9989c54b3338992237aa4af73c5800883204ec2412f8",
+        "server/narrative.ts": "2954e6eeb9d355b98b62a4bf3f28ddc6b134b75a37498004fe8b0abba4f3ea0c"
+      },
+      "generated": true,
+      "delivery": "review ZIP; actual paths/inventory verified by package script",
+      "futureEvaluatorAccess": "not observed",
+      "originalFailVerdicts": "unchanged"
+    },
+    {
+      "id": "LIVE",
+      "ac": 2,
+      "kind": "actual model",
+      "paths": [],
+      "status": "not executed; no approval allocation",
+      "components": [
+        "server/provider.ts",
+        "server/narrative.ts",
+        "server/commitments.ts"
+      ],
+      "componentHashes": {
+        "server/provider.ts": "3c9beb513ef57694c8252255199049965ceb6986ee11a50eb63d01856291755f",
+        "server/narrative.ts": "2954e6eeb9d355b98b62a4bf3f28ddc6b134b75a37498004fe8b0abba4f3ea0c",
+        "server/commitments.ts": "b7a6076d435af203a46aa4cd705588d8dea4e0b9a52822ffc9b04d45de63cf80"
+      },
+      "generated": false,
+      "delivery": "review ZIP; actual paths/inventory verified by package script",
+      "futureEvaluatorAccess": "not observed",
+      "originalFailVerdicts": "unchanged"
+    },
+    {
+      "id": "EXPERIENCE",
+      "ac": 3,
+      "kind": "mock regression",
+      "paths": [
+        "unit-release-candidate.log",
+        "executed/docs"
+      ],
+      "status": "state tests observed; all latest real mission/romance/ending/memory-use experiences unexecuted",
+      "components": [
+        "server/provider.ts",
+        "server/narrative.ts",
+        "server/dialogue.ts"
+      ],
+      "componentHashes": {
+        "server/provider.ts": "3c9beb513ef57694c8252255199049965ceb6986ee11a50eb63d01856291755f",
+        "server/narrative.ts": "2954e6eeb9d355b98b62a4bf3f28ddc6b134b75a37498004fe8b0abba4f3ea0c",
+        "server/dialogue.ts": "f8b807ab006845414eaad0f8f81c2c9d5f4efffbf1cd184bd302b35b1e22fdd6"
+      },
+      "generated": true,
+      "delivery": "review ZIP; actual paths/inventory verified by package script",
+      "futureEvaluatorAccess": "not observed",
+      "originalFailVerdicts": "unchanged"
+    },
+    {
+      "id": "ART-24",
+      "ac": 4,
+      "kind": "direct visual",
+      "paths": [
+        "direct-review.json",
+        "reviewed/v2-ac4-recheck"
+      ],
+      "status": "24 illustrated states opened; unchanged renderer/assets reuse; live selection unobserved",
+      "components": [
+        "src/visualAssets.ts",
+        "src/CharacterSprite.tsx",
+        "src/style.css"
+      ],
+      "componentHashes": {
+        "src/visualAssets.ts": "2ef9ccc9f2c052cd37d375267e5990f0cc19f88cae05c3774d3a46ba50c38179",
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c",
+        "src/style.css": "ff03de3d23a23f3f4cb70a0b3bf816586d2e532c31783c17e48a88af3c455d91"
+      },
+      "generated": true,
+      "delivery": "review ZIP; actual paths/inventory verified by package script",
+      "futureEvaluatorAccess": "not observed",
+      "originalFailVerdicts": "unchanged"
+    },
+    {
+      "id": "PARTICIPATION",
+      "ac": 4,
+      "kind": "normal-turn mock snapshots and direct visual",
+      "paths": [
+        "reviewed/participation/trace.json",
+        "direct-review.json"
+      ],
+      "status": "pending/future accepted/refused/entered/completed/same-state reduced images reviewed; continuous animation-video review remains",
+      "components": [
+        "server/narrative.ts",
+        "src/presentation.ts",
+        "src/CharacterSprite.tsx"
+      ],
+      "componentHashes": {
+        "server/narrative.ts": "2954e6eeb9d355b98b62a4bf3f28ddc6b134b75a37498004fe8b0abba4f3ea0c",
+        "src/presentation.ts": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8",
+        "src/CharacterSprite.tsx": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c"
+      },
+      "generated": true,
+      "delivery": "review ZIP; actual paths/inventory verified by package script",
+      "futureEvaluatorAccess": "not observed",
+      "originalFailVerdicts": "unchanged"
+    },
+    {
+      "id": "AUDIO",
+      "ac": 5,
+      "kind": "mechanical browser playback",
+      "paths": [
+        "browser-release-candidate.log",
+        "executed/docs/v2-audio-office-path.json",
+        "executed/docs/v2-audio-romance-path.json"
+      ],
+      "status": "no direct listening; zero heard transitions; source files delivered, game-output clips missing",
+      "components": [
+        "src/music.ts"
+      ],
+      "componentHashes": {
+        "src/music.ts": "847118a170857429c573c4331d7cd0db36ec43ba252c2cfbeb8162b71f79ed01"
+      },
+      "generated": true,
+      "delivery": "review ZIP; actual paths/inventory verified by package script",
+      "futureEvaluatorAccess": "not observed",
+      "originalFailVerdicts": "unchanged"
+    },
+    {
+      "id": "LIFECYCLE-HTTP",
+      "ac": 6,
+      "kind": "mock transport, real HTTP/disk/processes",
+      "paths": [
+        "executed/docs/v2-contract-followup/lifecycle-http-trace.json",
+        "unit-release-candidate.log"
+      ],
+      "status": "executed request-ID/duplicate/cancel/timeout/restart/slots; not exhaustive Cartesian product",
+      "components": [
+        "server/index.ts",
+        "server/storage.ts",
+        "server/dialogue.ts",
+        "server/revision-negotiation.ts"
+      ],
+      "componentHashes": {
+        "server/index.ts": "13837ef233590635b4687dd161d0adc4e6b5d673dfaddf09eb30c81540ce8f8d",
+        "server/storage.ts": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b",
+        "server/dialogue.ts": "f8b807ab006845414eaad0f8f81c2c9d5f4efffbf1cd184bd302b35b1e22fdd6",
+        "server/revision-negotiation.ts": "f390544880b2b23542cb59aa9273d9a9493c04031425bf7a7e15aa420433262d"
+      },
+      "generated": true,
+      "delivery": "review ZIP; actual paths/inventory verified by package script",
+      "futureEvaluatorAccess": "not observed",
+      "originalFailVerdicts": "unchanged"
+    },
+    {
+      "id": "DELIVERY",
+      "ac": 7,
+      "kind": "build/test/launcher/hash/CRC",
+      "paths": [
+        "unit-release-candidate-run.json",
+        "build-release-final-run.json",
+        "browser-release-candidate-run.json",
+        "executed/docs/v2-ac7-current/launcher.json",
+        "candidate.json",
+        "package-receipt.json"
+      ],
+      "status": "local technical candidate; overall release incomplete",
+      "components": [
+        "server/index.ts",
+        "package-lock.json",
+        "play.cmd",
+        "stop.cmd",
+        "scripts/start-local.ps1",
+        "scripts/stop-local.ps1"
+      ],
+      "componentHashes": {
+        "server/index.ts": "13837ef233590635b4687dd161d0adc4e6b5d673dfaddf09eb30c81540ce8f8d",
+        "package-lock.json": "e847d4063b65d9fa1f91d85199452c1d6fc4da428f27ea929a6e3cd32898e307",
+        "play.cmd": "a73f7ecdee9f98e6d43325779811cc21b6589a47978d90ed785f6411503e793e",
+        "stop.cmd": "a1c2e93da917825eb80b318a1b28f1e7334d99eac43a2247b254d4555ca47c91",
+        "scripts/start-local.ps1": "766b81d392afd7edada47a61141fb23b48d7d7423306c8c11f42d78094393cfd",
+        "scripts/stop-local.ps1": "14130f84e201acfeb334a88e9b58b341563c9ad3fbca78fc585126739cfde1d6"
+      },
+      "generated": true,
+      "delivery": "review ZIP; actual paths/inventory verified by package script",
+      "futureEvaluatorAccess": "not observed",
+      "originalFailVerdicts": "unchanged"
+    }
+  ]
+}

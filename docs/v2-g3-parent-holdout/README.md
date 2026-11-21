@@ -1,5 +1,7 @@
 # Independent G3 review in progress
 
+Subsequent checkpoint: the final G3 worker source was frozen and this correction was integrated with all retained parent fixes. The resulting388/28 candidate, runtime and exact hashes are documented in [the integration report](../v2-g3-parent-integration/README.md). The observations below preserve their earlier probe timing and source hashes.
+
 The active worker worktree was only read. The parent copied its server source into a separate probe, blocked `fetch`, and used normal new-game/offer/acceptance/proposal/response turns. No private save, credential or paid call was used. This report does not claim G3 is finished or integrated into the root375/27 runtime.
 
 `before.json` preserves four tests against the copied G3 implementation and exact component hashes: the bilateral agreement control passed, but player and NPC later withdrawal both applied the change incorrectly when the model quoted only the preceding assent. An unrelated coffee refusal incorrectly prevented the otherwise valid change. Result:1/4 expected outcomes. These are actual reducer observations with authored NPC replies, not observations of how often the model emits these fields.

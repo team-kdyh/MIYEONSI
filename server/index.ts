@@ -66,7 +66,7 @@ app.all('/api/:action',async(req,res)=>{
  const reply=await respond(p.game,text.trim()||(choice!=null?sceneFor(p.game).choices[choice]:''),selectedProvider(p),controller.signal);
  if(controller.signal.aborted)throw Error('응답이 취소되었거나 시간이 초과되었습니다. 다시 시도하세요.');
  const beforeVersion=canonical(p.game).version;
- p.game=commitDialogue(p.game,choice??null,text.trim(),reply);
+ p.game=commitDialogue(p.game,choice??null,text.trim(),reply,requestId);
  p.epoch=canonical(p.game).version;
  const unlocks=p.game.ending&&!p.collection.includes(p.game.ending)?[p.game.ending]:[];
  if(p.game.ending&&!p.collection.includes(p.game.ending))p.collection.push(p.game.ending);

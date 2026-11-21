@@ -1,0 +1,9 @@
+{
+  "port": 3196,
+  "concurrentBuild": false,
+  "command": "npx playwright test",
+  "cwd": "C:\\Users\\gjtjw\\.ouroboros\\worktrees\\대화형 스토리진행\\ralph-afterhours-v2-revision-14128a7\\.ralph\\contract-followup",
+  "exitCode": 0,
+  "startedAt": "2026-11-21T06:58:04.2122031Z",
+  "finishedAt": "2026-11-21T07:01:08.1145753Z"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "file": "public/assets/boss-expressions.png",
+    "capture": "docs/v2-revision-parent-review/sprite-alpha-1.png",
+    "scope": "Browser opaque compositing of the original sheet on a dark solid background; no source editing",
+    "fileSha256": "e072f4d0c56c11349093c379303cacd2509b3a8610612a343b7f7fae96bda51a",
+    "captureSha256": "793ac46496a345471972a0f67a535cbf61dc796d65e0478a0988eaf3c5ca9d73",
+    "parentActuallyOpened": true
+  },
+  {
+    "file": "public/assets/v2/boss-actions-a.png",
+    "capture": "docs/v2-revision-parent-review/sprite-alpha-2.png",
+    "scope": "Browser opaque compositing of the original sheet on a dark solid background; no source editing",
+    "fileSha256": "18176790fe162b6b65519c50a89dc9fc4cf5ab571a8f819204b6074bb9d12f40",
+    "captureSha256": "938fe31cee3613fbf5f22bacfd3747d566c161a14478033ed1dc57c39047311e",
+    "parentActuallyOpened": true
+  },
+  {
+    "file": "public/assets/v2/boss-actions-b.png",
+    "capture": "docs/v2-revision-parent-review/sprite-alpha-3.png",
+    "scope": "Browser opaque compositing of the original sheet on a dark solid background; no source editing",
+    "fileSha256": "debd7febc1fd485aae4c4734cb18076a90fc735ec705e545296016daf615b7dd",
+    "captureSha256": "4da7dc7c7f391e62854a58ce8724bb5f2fde1bef5cea7f3e2b5d005b42ae8438",
+    "parentActuallyOpened": true
+  },
+  {
+    "file": "public/assets/yuna-expressions.png",
+    "capture": "docs/v2-revision-parent-review/sprite-alpha-4.png",
+    "scope": "Browser opaque compositing of the original sheet on a dark solid background; no source editing",
+    "fileSha256": "09109a8eba18c5e8cd8e591583770e8da26658c5541c7e913dbc79846037ec80",
+    "captureSha256": "1d3ca1ddc757d6a1c5a9f16d430f3e1648ca80d83d37a7ea8255bc7c01d44f3c",
+    "parentActuallyOpened": true
+  },
+  {
+    "file": "public/assets/v2/yuna-actions-a.png",
+    "capture": "docs/v2-revision-parent-review/sprite-alpha-5.png",
+    "scope": "Browser opaque compositing of the original sheet on a dark solid background; no source editing",
+    "fileSha256": "ad4a35ffb0070f3ba704f389c7d7ee84a03e7563247972ca773053b7ac6d5c6c",
+    "captureSha256": "6727d494725db328a07df9823214b16c7433ee8f2816ddd8ac4a6640daca7b9e",
+    "parentActuallyOpened": true
+  },
+  {
+    "file": "public/assets/v2/yuna-actions-b.png",
+    "capture": "docs/v2-revision-parent-review/sprite-alpha-6.png",
+    "scope": "Browser opaque compositing of the original sheet on a dark solid background; no source editing",
+    "fileSha256": "b14c4daa745797c3995eb961f446c0d9b45751744430248d95580b6755e4f049",
+    "captureSha256": "f40c2425c8ffea440329b2c0fa6a5c04afd4eb286b170bab35f2057539993729",
+    "parentActuallyOpened": true
+  }
+]

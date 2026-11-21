@@ -1,4 +1,5 @@
 import type {NarrativeState} from './narrative.ts';
+import {storyGuide} from './story-guide.ts';
 import {chapters, romanceEndings, startRomance, romanceScene, advanceRomance, type RomanceState} from './romance.ts';
 import {missions, startOffice, officeScene, officeEnd, officeEndings, advanceOffice, type MissionAgreement} from './office.ts';
 export type Mode = 'office' | 'romance';
@@ -23,4 +24,4 @@ export function advance(game:Game, choice:number, text=''):Game {
  if(game.mode==='office')return advanceOffice(game,choice,text);
  return advanceRomance(game,choice,text);
 }
-export function view(game:Game|null){if(!game)return null;return {...game,scores:undefined,scene:game.ending?null:sceneFor(game),end:game.narrative&&game.ending?{id:game.ending,title:endings[game.mode].find(e=>e.id===game.ending)?.title??'이야기의 끝',text:game.log.at(-1)?.text??''}:game.mode==='office'?officeEnd(game):game.ending?endings[game.mode].find(e=>e.id===game.ending):null};}
+export function view(game:Game|null){if(!game)return null;return {...game,scores:undefined,storyGuide:storyGuide(game),scene:game.ending?null:sceneFor(game),end:game.narrative&&game.ending?{id:game.ending,title:endings[game.mode].find(e=>e.id===game.ending)?.title??'이야기의 끝',text:game.log.at(-1)?.text??''}:game.mode==='office'?officeEnd(game):game.ending?endings[game.mode].find(e=>e.id===game.ending):null};}

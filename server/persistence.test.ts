@@ -8,6 +8,7 @@ import {createServer} from 'node:net';
 import {once} from 'node:events';
 import {createHash} from 'node:crypto';
 import {ProfileStore} from './storage.ts';
+import {storyGuide} from './story-guide.ts';
 
 test('AC6: atomic boundaries, process restarts, slots, endings, conflicts and corruption',async()=>{
  const dir=await mkdtemp(path.join(tmpdir(),'afterhours-ac6-'));
@@ -50,6 +51,7 @@ test('AC6: atomic boundaries, process restarts, slots, endings, conflicts and co
     const restored=(await call('load',{slot})).data;
     const expected=structuredClone(disk.slots[slot]) as any;delete expected.scores;
     const actual=structuredClone(restored.game);delete actual.scene;delete actual.end;
+    assert.deepEqual(actual.storyGuide,storyGuide(expected),'roadmap is derived from the restored save');delete actual.storyGuide;
     expected.dialogue.version=actual.dialogue.version;
     assert.deepEqual(actual,expected,'every story field restored; only concurrency version changes');
     await stop();await boot();assert.deepEqual((await call()).data,restored);

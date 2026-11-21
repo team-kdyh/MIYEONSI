@@ -18,7 +18,7 @@ test('AC7 schema/429/real timer timeout/cancel recover with same request without
  try{
   await new Promise<void>((resolve,reject)=>{const timer=setTimeout(()=>reject(Error('startup timeout')),10000);child.stdout!.once('data',()=>{clearTimeout(timer);resolve();});child.once('exit',()=>{clearTimeout(timer);reject(Error('startup exit'));});});
   await call();await call('provider',{provider:'openai'});
-  for(const mode of ['schema','429','timeout','cancel']){
+  for(const mode of ['schema','event','commitment','429','timeout','cancel']){
    const initial=(await call('new',{mode:'office'})).state;
    const input={text:'고객 마감 메일은 내일 오전 10시입니다. 오늘 18시에 퇴근하겠습니다.',choice:null,step:initial.game.step,version:initial.game.dialogue.version,requestId:`recovery-${++count}`};
    await writeFile(fixture,mode==='cancel'?'timeout':mode);const started=Date.now();
@@ -28,7 +28,7 @@ test('AC7 schema/429/real timer timeout/cancel recover with same request without
     await new Promise(r=>setTimeout(r,150));trace.push({failure:mode,result:'client abort observed'});
    }else{
     const failed=await call('turn',input);assert.equal(failed.status,400);
-    assert.match(failed.state.error,mode==='schema'?/검증/:mode==='429'?/429/:/초과/);
+    if(['schema','event','commitment'].includes(mode)){assert.equal(failed.state.code,'reply_rejected');assert.equal(failed.state.committed,false);assert.match(failed.state.error,/입력한 말과 이전 진행/);assert.doesNotMatch(failed.state.error,/근거|조건|정본|검증|확정/);}else assert.match(failed.state.error,mode==='429'?/429/:/초과/);
     if(mode==='timeout')assert.ok(Date.now()-started>=29500,'exercise production thirty-second timeout');
    }
    assert.deepEqual((await call()).state,initial,'failed generation leaves game, unlocks and version unchanged');

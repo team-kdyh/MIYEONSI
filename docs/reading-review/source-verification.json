@@ -1,0 +1,404 @@
+{
+  "at": "2026-11-21T07:38:46.147596+00:00",
+  "scope": "Isolated mock transport; no paid API; exact production/server/UI/test source comparison. Full browser run: 32 pass, one obsolete retry-label selector failed; updated selector and added live-state objective assertions, targeted journey passed. Production source unchanged between those runs.",
+  "unit": 391,
+  "browserCombined": 33,
+  "files": [
+    {
+      "file": "server/adversarial.test.ts",
+      "sha256": "e996bb47c24b633f4af3c3cebbef0b4a6d33558a8de05191f244a2337a77bc2b"
+    },
+    {
+      "file": "server/boundaries.test.ts",
+      "sha256": "5c337434b8571ece449239360016d1ae71eb026b8f3f52a40933df7c0563078b"
+    },
+    {
+      "file": "server/commitment-evidence-binding.test.ts",
+      "sha256": "2a9ab1e5211a843949a1f9dbacf80e430fd6f228e3a6a756397b487f7b270a7e"
+    },
+    {
+      "file": "server/commitment-revisions-http.test.ts",
+      "sha256": "33e24d9d4b3b0e639e234c4e22018031025ba716f9006ee001dd8dcf711c5a33"
+    },
+    {
+      "file": "server/commitment-revisions-retraction.test.ts",
+      "sha256": "00807f6fcaf5cab8ce1f2497133ceffcf7ef59de45db0b0d366462dd07a8005d"
+    },
+    {
+      "file": "server/commitment-revisions.test.ts",
+      "sha256": "49305f304454a048ce8924aa22d17dbc558a38877647af9693cf594da8fdb047"
+    },
+    {
+      "file": "server/commitment-revisions.ts",
+      "sha256": "1edbf5b8eb658b5e4030e2b4d5f76e2a9d8836105978faefe7345e7c72bd0e33"
+    },
+    {
+      "file": "server/commitments-atomic.test.ts",
+      "sha256": "8bdb19d0a5684f1c0a29fe116b4ec5c82e7d3dc3dae9eba89b523968e509f9da"
+    },
+    {
+      "file": "server/commitments-coverage.test.ts",
+      "sha256": "26dec4965a05003fc6c247efb25bfeb42ee9f1a6644abfa314a4dd1b5113bd73"
+    },
+    {
+      "file": "server/commitments-followup.test.ts",
+      "sha256": "1fdf6f685f5e42400c153b99a5334cbc25e23ecba8583f9bc050d6506a4ab2f5"
+    },
+    {
+      "file": "server/commitments-http.test.ts",
+      "sha256": "3c0a1b4c70bec34c73bd5874c137ea63c63c15e92ab26aeb741fb0a71d3af1d3"
+    },
+    {
+      "file": "server/commitments-storage-review.test.ts",
+      "sha256": "8e11873f27d188bfda8baf410b465db0818151c6b0ee17be7f95034429a57419"
+    },
+    {
+      "file": "server/commitments.test.ts",
+      "sha256": "d6a9dfa4d3de052082331b7bc8d4164c3cca985f270bf4d70e6d89f61057b184"
+    },
+    {
+      "file": "server/commitments.ts",
+      "sha256": "b7a6076d435af203a46aa4cd705588d8dea4e0b9a52822ffc9b04d45de63cf80"
+    },
+    {
+      "file": "server/dialogue.test.ts",
+      "sha256": "b1237b060052917274a489ef8fc2cea4cb2f166df725032b58185875af4c37c0"
+    },
+    {
+      "file": "server/dialogue.ts",
+      "sha256": "f8b807ab006845414eaad0f8f81c2c9d5f4efffbf1cd184bd302b35b1e22fdd6"
+    },
+    {
+      "file": "server/evidence-applicability.test.ts",
+      "sha256": "9ff48e1e1158a9c6c72a34bb6756f3c7339a2abce98da478cca6e446b7bdf50d"
+    },
+    {
+      "file": "server/evidence-applicability.ts",
+      "sha256": "b4dbd937f4ceab629dc2a2536d0c518c4832fdbd6ddf447f4e33b52f29ac6d28"
+    },
+    {
+      "file": "server/game.test.ts",
+      "sha256": "9fd4e4a93df045a9925f0f4b04ea453d2208476f02f8b223cca9199dcf26e9f5"
+    },
+    {
+      "file": "server/game.ts",
+      "sha256": "06fc3f3733653c94db76a72554c19c32e7fa5c0d334f79da76d4e6374e58c215"
+    },
+    {
+      "file": "server/index.ts",
+      "sha256": "a82b837a9aef0363aed72bcb1b9cc6be71df290773bed86658f5bc959fef4ab2"
+    },
+    {
+      "file": "server/interpretation.test.ts",
+      "sha256": "54d0262a51d875045a9609c25f0868f3961b4e8f4e475c489bf0a3dfa0dadfee"
+    },
+    {
+      "file": "server/interpretation.ts",
+      "sha256": "f4c15c029ed0aade2f083016de8ab4994a68c39eabdc39872ae3ada1d02407f0"
+    },
+    {
+      "file": "server/music.test.ts",
+      "sha256": "3b49e85fa9af4fe7ed0c4ff0230547074768bc19405d05efe7bc636fbe2a63fa"
+    },
+    {
+      "file": "server/narrative-agency-regression.test.ts",
+      "sha256": "19eec66a693dc72c02b62f39d5738823be84fa6d084f900f773317f8a280964f"
+    },
+    {
+      "file": "server/narrative-compound-natural.test.ts",
+      "sha256": "5e2502a7219a3622ba5b8b1fc58cff3e9f41d01a981314cce66641ab20c0886f"
+    },
+    {
+      "file": "server/narrative-compound-promise.test.ts",
+      "sha256": "8c5cd8116c45aae46e74f16b31b10f720bf19ddacb323c517d92a51345a7c876"
+    },
+    {
+      "file": "server/narrative-counterfactual.test.ts",
+      "sha256": "fdce8e99bf04a9c4b689ddf1e6a9327a1038597f8eaca060f374053139ddf3d1"
+    },
+    {
+      "file": "server/narrative-lifecycle-regression.test.ts",
+      "sha256": "41947c5680523474b182f6ce7c60cfe4010538f70ce07888afd1200205332fdc"
+    },
+    {
+      "file": "server/narrative-natural-delivery.test.ts",
+      "sha256": "92b63d6b0e1bb191905ad26242c4e19a705a53d41ed23e8b504ab3b0dc9b0ce5"
+    },
+    {
+      "file": "server/narrative-promise-edge.test.ts",
+      "sha256": "efd0ed9a153f20d804e9d2d969f43738f1c042605782c4a9f86285f94356616c"
+    },
+    {
+      "file": "server/narrative-route-agency.test.ts",
+      "sha256": "f3c970fbfe7a701318ae68a57b927409004a2dab0ad69a8f603141d5c731279b"
+    },
+    {
+      "file": "server/narrative-short-reply.test.ts",
+      "sha256": "c5815acecd3557b49752ab14f7c32a6e88a9efcece2e38c939a16ed75f5dc103"
+    },
+    {
+      "file": "server/narrative.test.ts",
+      "sha256": "1829c31f88bc676a8202baff2bebbb11974fb8aee9271baf1367ff59087a9724"
+    },
+    {
+      "file": "server/narrative.ts",
+      "sha256": "de7837e51ee4dd94f08838d526dfdef2eaf530437d97a3e7be1a4ccf56203fda"
+    },
+    {
+      "file": "server/office.test.ts",
+      "sha256": "c70cc186f6eb79c0494e9b0732c697a4bc33e4151ffeed87e790e16b0eea418f"
+    },
+    {
+      "file": "server/office.ts",
+      "sha256": "e3e6e9a17192843a83ba6c2ab6780176da9bde189327c18c0f19be5786175c98"
+    },
+    {
+      "file": "server/performance-interpretation.ts",
+      "sha256": "d62f917b233237ac847e9989c54b3338992237aa4af73c5800883204ec2412f8"
+    },
+    {
+      "file": "server/persistence.test.ts",
+      "sha256": "851c0c36392b45cc4a91ceed15e9577e26a59428994bd6884086056eadcd737f"
+    },
+    {
+      "file": "server/provider.ts",
+      "sha256": "72dac555852046e356eafd477bba2a64216e3c530155d9756681a13203e211e3"
+    },
+    {
+      "file": "server/recovery.test.ts",
+      "sha256": "f523afb6699f45a2bf3e1ce800a42e0a141f24e2996cb3e288a71636a4928ba6"
+    },
+    {
+      "file": "server/reply-error.ts",
+      "sha256": "6d26086fe13cefd7fe2f757311fa9b1946f5b46664024719461608bda21080a6"
+    },
+    {
+      "file": "server/revision-negotiation-http.test.ts",
+      "sha256": "eba678e4a64237f08be94f6d627359423aa3771b3a61a99e06a8eae034b75471"
+    },
+    {
+      "file": "server/revision-negotiation.test.ts",
+      "sha256": "8589ca35f9d9f4f9c83aa8fa242d6bdf13af94bf009e6d3274cb9f112520d016"
+    },
+    {
+      "file": "server/revision-negotiation.ts",
+      "sha256": "9cb73619eacc95f07d3aa752128a69827c9bef4858e66c151867fe80b645b7c7"
+    },
+    {
+      "file": "server/revision-response-scope.test.ts",
+      "sha256": "cae60a6ded5d9424d1fc2b033a761c6e487d7d51e3e62edbc97b584ec019bb69"
+    },
+    {
+      "file": "server/romance.test.ts",
+      "sha256": "effbae28a210cb3e5da1636492ad71a317f786795e17a13af4e7ba5a65b2a577"
+    },
+    {
+      "file": "server/romance.ts",
+      "sha256": "7705e8d60885641559ea97ee80e6482651827b6fd64ab33ecff1ced5784700df"
+    },
+    {
+      "file": "server/storage.ts",
+      "sha256": "dc866ea96e5af12d75622f5b534cefced07fb9c1141134e9da8f651e92c0226b"
+    },
+    {
+      "file": "server/story-guide.test.ts",
+      "sha256": "6b5fb3cf98d3d4b69ac1a7416a17356b3dbb298ae548035f2ce110fe9df1f500"
+    },
+    {
+      "file": "server/story-guide.ts",
+      "sha256": "023aace61b2218a4d7d5049979b80a4e687cc28603cfac62d312e4d401b06a21"
+    },
+    {
+      "file": "server/v2-ac3-lifecycle.test.ts",
+      "sha256": "01b4237cad47f53b84d80ac2512813d00e96a2f3427c9d7af27fd0b4daea2a5a"
+    },
+    {
+      "file": "server/v2-security.test.ts",
+      "sha256": "9c0a05c6e7766c107d0c677cb2146bdfd49916ba2ffcd4e8b2825fa438c33711"
+    },
+    {
+      "file": "server/v2-story.test.ts",
+      "sha256": "01dc2795d99e76b291df5e9dde548150a9f600512a9dd8993d4fbab487b897b5"
+    },
+    {
+      "file": "server/visual-binding.test.ts",
+      "sha256": "df0aa6ed26b7e94d8e2ec05d0cae61e4c591b159baa4dedd35cfbc73769255fd"
+    },
+    {
+      "file": "src/CharacterSprite.tsx",
+      "sha256": "7dc1bc8ce71097cc52c52cc4c78b02af9bfc03185ae13f9c48dc13d25e039a4c"
+    },
+    {
+      "file": "src/collection.ts",
+      "sha256": "8fd6ee012af16e0ca03efd2c4496e836d3ebd500516aae88a89d65b4eb5409f9"
+    },
+    {
+      "file": "src/ConversationViewport.tsx",
+      "sha256": "2d92ac26af1c75efa6b869cf2219b724a539b01a0f4d562f2f1381f1949d6c01"
+    },
+    {
+      "file": "src/main.tsx",
+      "sha256": "7ca0689dcc37e79f2ff4b0364f2025f94ca6f6c3e6ae77de7d86e560839daecc"
+    },
+    {
+      "file": "src/music.ts",
+      "sha256": "e07ecf46842e6663cb9ab6286d66dc5f0acc57c20fe05866e233f2f0060e07cb"
+    },
+    {
+      "file": "src/OfficeAgreement.tsx",
+      "sha256": "b73d156b934a27fc0c8e71a49493f3db11b27e65d8d33fcb1f4bbf75a18fd4fa"
+    },
+    {
+      "file": "src/presentation.ts",
+      "sha256": "11b8e13e21fa549426170fba162d2902000c1124822f756f48e23df8e5e7dae8"
+    },
+    {
+      "file": "src/StageEffects.tsx",
+      "sha256": "50ebccea3559364f4627ede64cbc51a8676544eb99113d8ebe2997adb055b9e9"
+    },
+    {
+      "file": "src/style.css",
+      "sha256": "111e61822ba3029a67dd6081cf94367544303029da877f67449577708c56feda"
+    },
+    {
+      "file": "src/visualAssets.ts",
+      "sha256": "6c8b9c14dcb21f84ea8ce16983f941aa5ffb07b1f8544c89731bc643516b5c00"
+    },
+    {
+      "file": "tests/ac7.spec.ts",
+      "sha256": "c492c766ec4e0c0e4bdce9b45f06cb2f2fc9e3ec5936c38866fbd3394c8e250f"
+    },
+    {
+      "file": "tests/commitment-transport.mjs",
+      "sha256": "5fcaac386612a5e6a52ca89923560dd97bfa5481eb96a0d379c3366dea388f28"
+    },
+    {
+      "file": "tests/final-live-smoke.ts",
+      "sha256": "117ee421af353cb85828ba2bc9a9da3f252eb675f8597080c1d010f7806c1b51"
+    },
+    {
+      "file": "tests/live-smoke.ts",
+      "sha256": "b81f9af6d95046f26ec4f9fcfd1227812e2bc2b144f4eef4e7c00100ebad2b92"
+    },
+    {
+      "file": "tests/office.spec.ts",
+      "sha256": "ffb52731108187876d0dbcde95c05acd930ce2d46ffdebf20c15d372d10d210f"
+    },
+    {
+      "file": "tests/persistence.spec.ts",
+      "sha256": "186b1dc2cc17b2f98d0553d5cf7e6837f332986cb9696a46864a98bb8a1a6c23"
+    },
+    {
+      "file": "tests/play.spec.ts",
+      "sha256": "273a41ad05b989d6d1122f15b9a2ccd045a4566c97bcf2f450b43b09663054b5"
+    },
+    {
+      "file": "tests/presentation.spec.ts",
+      "sha256": "73056c33f19be36c3d9e33d0442e551bedd9811eb4f21fe2c914d561f3e2dcb0"
+    },
+    {
+      "file": "tests/provider-fixture.mjs",
+      "sha256": "34921955a8791d4f7a148862cc5991fbe611a0cb319da4c846b42426723946fe"
+    },
+    {
+      "file": "tests/reading-recovery.spec.ts",
+      "sha256": "b7a8e6766e34c1467c22842790e4c3b55f1ee56afbb8ff625b070dfd510a24f4"
+    },
+    {
+      "file": "tests/romance.spec.ts",
+      "sha256": "7fc1635aa937b253c4eaaf0e1ec3e796468a7c7ca51dfb2bc25d8e0780366ca7"
+    },
+    {
+      "file": "tests/v2-ac2-receipt-replay.ts",
+      "sha256": "f2371f4371b49930056fe87ce38c992bd2809b7429c7e2e42deb5df6633d036b"
+    },
+    {
+      "file": "tests/v2-ac3-receipt-audit.ts",
+      "sha256": "b5cc1d2b3d1320388f71a76c977a27db615be2b369a4737a129df55fb45473d0"
+    },
+    {
+      "file": "tests/v2-ac4-boundaries.spec.ts",
+      "sha256": "accd495815245f7fe6e8f5781ba0a68160b5dd1949b0306add2acc82517101af"
+    },
+    {
+      "file": "tests/v2-ac4-gallery.ts",
+      "sha256": "df461be6d2010996ed8841e6560c2c0266b84f1f86e3b09ca7d92e14c52bf8e5"
+    },
+    {
+      "file": "tests/v2-art.spec.ts",
+      "sha256": "c7878e7cad5542f8d879fc067dd76cb90b89caf5d2905759e7c22bee4973042d"
+    },
+    {
+      "file": "tests/v2-audio.spec.ts",
+      "sha256": "e33dfc1d0494e5da6f76cd2f2904b31d95cf3e66ec49aa8de3d3f117a07501c2"
+    },
+    {
+      "file": "tests/v2-browser-fixture.mjs",
+      "sha256": "38719f39071c19d0eff38b86f90f6f2fad749ae39f48a3cd2e3c25a18ab55dce"
+    },
+    {
+      "file": "tests/v2-journey.spec.ts",
+      "sha256": "07fe3e503f237bc30d711093e4476e75d39f27895919af652c42437597fe1ed1"
+    },
+    {
+      "file": "tests/v2-live-screens.mjs",
+      "sha256": "867ba488b8968ae91ea3eb8c647149d22fa556f57927a41a5aa7e3660850783b"
+    },
+    {
+      "file": "tests/v2-live-server.ts",
+      "sha256": "71033d7bce7057635e9a97f7da7770dd8ebc75d05eafc963fb011bce0ae8f6ad"
+    },
+    {
+      "file": "tests/v2-live-smoke.ts",
+      "sha256": "7e35ee5bc689241720aacf49ea1c13eb6ba7e0a9baf9de2b81093adb97bd1b21"
+    },
+    {
+      "file": "tests/v2-participation.spec.ts",
+      "sha256": "7432e763396abf0ce1f986bad3123f2a612d347d228f988206a7a81f60919d42"
+    },
+    {
+      "file": "tests/v2-persistence-fixture.mjs",
+      "sha256": "dabb4b34ce8a0431c42fd0b47485260e02c9bc7fb07aa80f4c12734094e3630a"
+    },
+    {
+      "file": "tests/v2-promise-edge-probe.ts",
+      "sha256": "2fbcd07815acdbc80c0b6adb11ac683e0ff337fafd18d80f24029a67f3985330"
+    },
+    {
+      "file": "tests/v2-prop-withdrawal.spec.ts",
+      "sha256": "ba645f16396e264078ea3588879c6c3aaeef393f5e32f4c53d2660df5e3c0557"
+    },
+    {
+      "file": "tests/v2-receipt-replay.ts",
+      "sha256": "213b811a54032768e534e8fd5263c149557ee79b66b0223f6c8bd8b6f10db530"
+    },
+    {
+      "file": "tests/v2-security-fixture.mjs",
+      "sha256": "09c2e869d0d90aa6734c3652aebab5d93d597880d48abc297a57b175ee130f3b"
+    },
+    {
+      "file": "tests/v2-ui-polish.spec.ts",
+      "sha256": "c4a2204dbba0baa1977964bb10f974eda5a71c335270c0abb1253338444d9f91"
+    },
+    {
+      "file": "tests/v2-ui.spec.ts",
+      "sha256": "65d80e267f179a04f520eaf8fecfcd8e1acdf9d05084d075137a4522a8011752"
+    },
+    {
+      "file": "tests/v2-final-live/guard.mjs",
+      "sha256": "321ab2a9a798a904607ce2a7e5e376762fb2fa00bd9ad4d8f0dd28507682773c"
+    },
+    {
+      "file": "tests/v2-final-live/guard.test.mjs",
+      "sha256": "42d26af80fab7f7b62afaaec2a85c2f37b5f83acaf2b5a03ae76a8a5aaef5077"
+    },
+    {
+      "file": "tests/v2-final-live/runner.mjs",
+      "sha256": "5078d33115cef243f8792cbf352300c94c7235546feae54e1b63cb2245f94392"
+    },
+    {
+      "file": "tests/v2-final-live/server.mjs",
+      "sha256": "612b50f6f673eeab9d7f3b86fc1b141fc70188fab4a39550574917b54ce6fd96"
+    }
+  ]
+}

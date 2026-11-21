@@ -43,8 +43,9 @@ test('actual user/assistant history is separated from narration and persona, inc
  const m=messages(g,'제가 좋아하는 간식은?'),dev=JSON.parse(m[0].content);
  assert.equal(dev.character.name,'서유나');assert.match(dev.character.preferences,/시나몬/);
  assert.ok(!JSON.stringify(dev.character).includes('귤')); // Migrated player memory may appear in director context, never in NPC identity.
- assert.deepEqual(m.slice(1).map(x=>x.role),['user','assistant','user','assistant','developer','user']);
- assert.match(m.at(-2)!.content,/events/);assert.ok(!m.at(-2)!.content.includes('귤')); // Static reconciliation reminder stays out of character speech.
+ assert.deepEqual(m.slice(1).map(x=>x.role),['user','assistant','user','assistant','developer','developer','user']);
+ assert.match(m.at(-3)!.content,/events/);assert.ok(!m.at(-3)!.content.includes('귤')); // Static reconciliation reminder stays out of character speech.
+ assert.ok(JSON.parse(m.at(-2)!.content).currentStoryBeat); // Stage direction is a developer message, not invented dialogue.
  assert.match(m[1].content,/귤/);assert.match(m[3].content,/종소리/);
  assert.ok(!m.filter(x=>x.role==='assistant').some(x=>x.content.includes('의자를 내준다')));
  assert.equal(canonical(g).ledger.filter(e=>e.kind==='user_claim').length,2);

@@ -1,0 +1,21 @@
+[WebServer] (node:38372) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 12 tests using 1 worker
+
+(node:27348) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\reading-recovery.spec.ts:6:92 › reply grows without scrolling at 1440x623 (913ms)
+  ok  2 tests\reading-recovery.spec.ts:6:92 › reply grows without scrolling at 1280x720 (493ms)
+  ok  3 tests\reading-recovery.spec.ts:6:92 › reply grows without scrolling at 390x844 (367ms)
+  ok  4 tests\reading-recovery.spec.ts:19:1 › rejected reply preserves text, explains recovery in the dialogue, and retries the same turn (666ms)
+  ok  5 tests\v2-ui-polish.spec.ts:22:31 › polish 1440: title discovery and next reply returns to its first line (774ms)
+  ok  6 tests\v2-ui-polish.spec.ts:22:31 › polish 390: title discovery and next reply returns to its first line (605ms)
+  ok  7 tests\v2-ui-polish.spec.ts:52:1 › collection keeps a legacy unlock without advertising retired routes or inventing current epilogue (619ms)
+  ok  8 tests\v2-ui-polish.spec.ts:77:1 › a controlled thirteen-second reply stays pending and then reaches the player (13.6s)
+  ok  9 tests\v2-ui.spec.ts:6:2 › office: viewport 1440, free text, reading pages, keyboard and settings (3.6s)
+  ok 10 tests\v2-ui.spec.ts:6:2 › romance: viewport 1440, free text, reading pages, keyboard and settings (4.1s)
+  ok 11 tests\v2-ui.spec.ts:6:2 › office: viewport 390, free text, reading pages, keyboard and settings (2.6s)
+  ok 12 tests\v2-ui.spec.ts:6:2 › romance: viewport 390, free text, reading pages, keyboard and settings (2.5s)
+
+  12 passed (33.7s)

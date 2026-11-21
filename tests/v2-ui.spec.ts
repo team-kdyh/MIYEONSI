@@ -3,7 +3,7 @@ import {mkdir,writeFile} from 'node:fs/promises';
 import {start,view,endings} from '../server/game';
 
 for(const viewport of [{width:1440,height:900},{width:390,height:844}])for(const mode of ['office','romance'] as const){
- test(`${mode}: viewport ${viewport.width}, free text, scroll, keyboard and settings`,async({page})=>{
+ test(`${mode}: viewport ${viewport.width}, free text, reading pages, keyboard and settings`,async({page})=>{
   await page.setViewportSize(viewport);
   await mkdir('docs/qa-screenshots/v2-ui',{recursive:true});
   const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
@@ -58,10 +58,11 @@ for(const viewport of [{width:1440,height:900},{width:390,height:844}])for(const
   await page.keyboard.press('Escape');await expect(page.locator('.sprite-entry')).toHaveCSS('animation-name','none');
   game.dialogue.reply='긴 대화에서도 얼굴과 입력창은 이 자리에 남습니다. '.repeat(80);
   await page.reload();await page.getByRole('button',{name:/이어하기/}).click();
-  await expect(page.locator('.text-ink')).toHaveText(game.dialogue.reply);
+  await expect(page.getByRole('navigation',{name:'대사 읽기'})).toBeVisible();
   const long=await assertLayout();
-  const scroll=page.getByRole('region',{name:'현재 대화'});expect(await scroll.evaluate(e=>e.scrollHeight>e.clientHeight)).toBe(true);
-  await scroll.focus();await page.keyboard.press('End');await expect.poll(()=>scroll.evaluate(e=>e.scrollTop)).toBeGreaterThan(0);
+  const scroll=page.getByRole('region',{name:'현재 대화'});expect(await scroll.evaluate(e=>e.scrollHeight<=e.clientHeight+1)).toBe(true);
+  let joined='';for(let n=0;n<200;n++){joined+=await page.locator('.text-ink').textContent()||'';const next=page.getByRole('button',{name:'계속 읽기'});if(await next.isDisabled())break;await next.click();}expect(joined).toBe(game.dialogue.reply);
+  await scroll.focus();await page.keyboard.press('Home');await expect(page.getByRole('button',{name:'이전 부분'})).toBeDisabled();await page.keyboard.press('End');await expect(page.getByRole('button',{name:'계속 읽기'})).toBeDisabled();
   await page.locator('#reply').focus();await page.screenshot({path:`docs/qa-screenshots/v2-ui/long-focus-${viewport.width}-${mode}.png`});
   await page.getByRole('button',{name:'대화 로그'}).click();await expect(page.getByRole('dialog')).toContainText('귤 회의를');
   await page.screenshot({path:`docs/qa-screenshots/v2-ui/log-${viewport.width}-${mode}.png`});await page.keyboard.press('Escape');

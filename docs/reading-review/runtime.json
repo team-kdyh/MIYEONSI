@@ -1,0 +1,141 @@
+{
+  "at": "2026-11-21T07:39:07.280Z",
+  "scope": "Actual launcher server and compiled frontend; isolated fresh browser contexts; no mocked routes, no dialogue turn, no paid call; existing player cookies/saves untouched",
+  "hashes": {
+    "src/main.tsx": "7ca0689dcc37e79f2ff4b0364f2025f94ca6f6c3e6ae77de7d86e560839daecc",
+    "src/ConversationViewport.tsx": "2d92ac26af1c75efa6b869cf2219b724a539b01a0f4d562f2f1381f1949d6c01",
+    "src/style.css": "111e61822ba3029a67dd6081cf94367544303029da877f67449577708c56feda",
+    "server/provider.ts": "72dac555852046e356eafd477bba2a64216e3c530155d9756681a13203e211e3",
+    "server/story-guide.ts": "023aace61b2218a4d7d5049979b80a4e687cc28603cfac62d312e4d401b06a21",
+    "server/index.ts": "a82b837a9aef0363aed72bcb1b9cc6be71df290773bed86658f5bc959fef4ab2",
+    "server/reply-error.ts": "6d26086fe13cefd7fe2f757311fa9b1946f5b46664024719461608bda21080a6",
+    "dist/index.html": "ac1f839915c6cf8e36138b9f2b50b56e16ed95c9dde28bc56af61046f0fb41fc"
+  },
+  "rows": [
+    {
+      "mode": "office",
+      "guide": "직장 이야기 1 · 퇴근 전 사무실17:50 추가 업무에서 칼퇴지금의 목표실제 퇴근 시각 · 잔여 보고서 담당·기한을 함께 정하기0 / 2개 항목 합의",
+      "reply": "잠깐, 퇴근 전에 이 일 이야기 좀 할까요?",
+      "choices": 0,
+      "inputBottom": 548,
+      "height": 623,
+      "bodyFits": true,
+      "js": [
+        "http://127.0.0.1:3001/assets/index-DDrmdUT1.js"
+      ],
+      "errors": [],
+      "requests": [
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/index-DDrmdUT1.js"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/index-UMUcu7VZ.css"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/cafe.png"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/yuna-expressions.png"
+        },
+        {
+          "method": "POST",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/api/new"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/office.png"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/boss-expressions.png"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/audio-v2/office-groove.ogg"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/audio-v2/office-groove.ogg"
+        }
+      ]
+    },
+    {
+      "mode": "romance",
+      "guide": "1장 · 소리가 머무는 카페사라지는 소리지금의 목표서로의 이름과 좋아하는 소리를 알아가기카페에서의 첫 만남",
+      "reply": "여기 앉아도 돼요? 방금 컵 내려놓는 소리가 참 좋았거든요.",
+      "choices": 0,
+      "inputBottom": 548,
+      "height": 623,
+      "bodyFits": true,
+      "js": [
+        "http://127.0.0.1:3001/assets/index-DDrmdUT1.js"
+      ],
+      "errors": [],
+      "requests": [
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/index-DDrmdUT1.js"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/index-UMUcu7VZ.css"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/cafe.png"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/yuna-expressions.png"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/api/new"
+        },
+        {
+          "method": "GET",
+          "origin": "http://127.0.0.1:3001",
+          "path": "/assets/audio-v2/cafe-warmth.ogg"
+        }
+      ]
+    }
+  ]
+}

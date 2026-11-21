@@ -7,11 +7,11 @@ test('AC6 failed save delivery offers state recovery without replaying a mutatio
  await page.route('**/api/save',async route=>{await route.fetch();await route.abort('connectionreset');},{times:1});
  await page.getByRole('button',{name:'세이브',exact:true}).click();
  await page.locator('.save-slot').first().getByRole('button',{name:'저장',exact:true}).click();
- await expect(page.getByRole('alert')).toContainText('상태 다시 확인');
- await expect(page.getByRole('button',{name:'같은 요청 다시 시도'})).toHaveCount(0);
+ await expect(page.getByRole('alert')).toContainText('진행 불러오기');
+ await expect(page.getByRole('button',{name:'이어받기'})).toHaveCount(0);
  await page.getByRole('button',{name:'닫기',exact:true}).click();
  const recoveryResponse=page.waitForResponse(r=>r.url().endsWith('/api/state')&&r.request().method()==='GET');
- await page.getByRole('button',{name:'상태 다시 확인'}).click();
+ await page.getByRole('button',{name:'진행 불러오기'}).click();
  const recovered=await recoveryResponse;expect(recovered.status()).toBe(200);
  await expect(page.getByRole('alert')).toHaveCount(0);
  const saved=await recovered.json();
@@ -70,8 +70,8 @@ test('AC6 pending response from another timeline recovers current state',async({
  const current=await (await page.request.post('/api/new',{data:{mode:'office',mission:4}})).json();
  await page.evaluate(body=>sessionStorage.setItem('afterhours-pending',JSON.stringify({action:'turn',body})),body);
  await page.reload();
- await page.getByRole('button',{name:'같은 요청 다시 시도'}).click();
- await expect(page.getByRole('alert')).toContainText('현재 상태를 복구했습니다');
+ await page.getByRole('button',{name:'이어받기'}).click();
+ await expect(page.getByRole('alert')).toContainText('저장된 진행을 다시 불러왔어요');
  await expect(page.getByRole('button',{name:/이어하기/})).toContainText('직장 미션');
  expect((await (await page.request.get('/api/state')).json())).toEqual(current);
  expect(await page.evaluate(()=>sessionStorage.getItem('afterhours-pending'))).toBeNull();
@@ -90,12 +90,12 @@ test('AC6 delivered but not displayed turn survives reload and retries once',asy
  },{times:1});
  await page.locator('#reply').fill('귤 껍질 소리를 들어 본 적 있어요?');
  await page.getByRole('button',{name:/전송/}).click();
- await expect(page.getByRole('button',{name:'같은 요청 다시 시도'})).toBeVisible();
+ await expect(page.getByRole('button',{name:'이어받기'})).toBeVisible();
  expect(delivered.game.dialogue.version).toBe(1);
  await page.reload();
- await expect(page.getByRole('alert')).toContainText('표시가 확인되지 않은 대화');
+ await expect(page.getByRole('alert')).toContainText('아직 받지 못한 답변');
  const retryResponse=page.waitForResponse(r=>r.url().endsWith('/api/turn'));
- await page.getByRole('button',{name:'같은 요청 다시 시도'}).click();
+ await page.getByRole('button',{name:'이어받기'}).click();
  const replay=await retryResponse;expect(replay.request().postDataJSON().requestId).toBe(requestId);
  expect(await replay.json()).toEqual(delivered);
  await page.getByRole('button',{name:/이어하기/}).click();
@@ -111,10 +111,10 @@ test('AC6 conflicting stale tab recovers server state without advancing',async({
  const state=await (await page.request.get('/api/state')).json();
  const committed=await (await page.request.post('/api/turn',{data:{requestId:'other-tab-request',text:'오늘은 소리 이야기를 해요.',step:state.game.step,version:state.game.dialogue.version}})).json();
  await page.locator('#reply').fill('새로운 대사');await page.getByRole('button',{name:/전송/}).click();
- await expect(page.getByRole('alert')).toContainText('현재 상태를 복구했습니다');
+ await expect(page.getByRole('alert')).toContainText('저장된 진행을 다시 불러왔어요');
  await expect(page.locator('#reply')).toHaveValue('새로운 대사');
  expect((await (await page.request.get('/api/state')).json()).game).toEqual(committed.game);
- await expect(page.getByRole('button',{name:'같은 요청 다시 시도'})).toHaveCount(0);
+ await expect(page.getByRole('button',{name:'이어받기'})).toHaveCount(0);
 });
 
 test('v2 browser settings and explicit provider survive refresh and a new game',async({page})=>{

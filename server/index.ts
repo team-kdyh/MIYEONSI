@@ -7,6 +7,7 @@ import {fileURLToPath} from 'node:url';
 import {start,view,endings,stories,sceneFor,type Game} from './game.ts';
 import {canonical,commitDialogue,type DialogueGame} from './dialogue.ts';
 import {respond,type Provider} from './provider.ts';
+import {ReplyRejectedError,rejectedReplyMessage} from './reply-error.ts';
 import {createHash} from 'node:crypto';
 import {loadEnvFile} from 'node:process';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
@@ -66,7 +67,8 @@ app.all('/api/:action',async(req,res)=>{
  const reply=await respond(p.game,text.trim()||(choice!=null?sceneFor(p.game).choices[choice]:''),selectedProvider(p),controller.signal);
  if(controller.signal.aborted)throw Error('응답이 취소되었거나 시간이 초과되었습니다. 다시 시도하세요.');
  const beforeVersion=canonical(p.game).version;
- p.game=commitDialogue(p.game,choice??null,text.trim(),reply,requestId);
+ try{p.game=commitDialogue(p.game,choice??null,text.trim(),reply,requestId);}
+ catch(e){throw new ReplyRejectedError(e instanceof Error?e.message:'Invalid generated turn');}
  p.epoch=canonical(p.game).version;
  const unlocks=p.game.ending&&!p.collection.includes(p.game.ending)?[p.game.ending]:[];
  if(p.game.ending&&!p.collection.includes(p.game.ending))p.collection.push(p.game.ending);
@@ -84,7 +86,7 @@ app.all('/api/:action',async(req,res)=>{
  await store.save(id,p);
  }else if(req.method!=='GET'||a!=='state'){res.sendStatus(404);return;}
  res.json({...payload(p),...(loaded.recovery?{recovery:loaded.recovery}:{})});
- }catch(e){let message=e instanceof Error?e.message:'처리하지 못했습니다.';if(process.env.OPENAI_API_KEY&&message.includes(process.env.OPENAI_API_KEY))message='서버 요청에 실패했습니다. 다시 시도하세요.';res.status(e instanceof StorageError?503:400).json({error:message,canReset:e instanceof StorageError});}finally{locks.delete(id);}
+ }catch(e){if(e instanceof ReplyRejectedError){res.status(400).json({error:rejectedReplyMessage,code:'reply_rejected',committed:false,canReset:false});return;}let message=e instanceof Error?e.message:'처리하지 못했습니다.';if(process.env.OPENAI_API_KEY&&message.includes(process.env.OPENAI_API_KEY))message='서버 요청에 실패했습니다. 다시 시도하세요.';res.status(e instanceof StorageError?503:400).json({error:message,canReset:e instanceof StorageError});}finally{locks.delete(id);}
 });
 app.use(express.static(path.join(root,'dist')));
 app.use((err:unknown,_req:express.Request,res:express.Response,_next:express.NextFunction)=>{res.status(400).json({error:'요청 형식이 올바르지 않습니다.'});});

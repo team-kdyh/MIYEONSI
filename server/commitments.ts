@@ -108,7 +108,7 @@ export function validCommitments(s:NarrativeState):boolean{
    let owner=condition.originalPerformer;
    for(const amendment of [...c.amendments.filter(a=>a.conditionId===condition.id),...(c.revisions??[]).filter(a=>a.conditionId===condition.id).map(a=>({turn:a.turn,previousPerformer:a.before.performer,performer:a.replacement.performer}))].sort((a,b)=>a.turn-b.turn)){if(amendment.previousPerformer!==owner)return false;owner=amendment.performer;}
    if(owner!==condition.performer)return false;
-   if(condition.evidenceIds.some(id=>!s.events.some(e=>e.id===id&&e.subject===condition.performer&&e.turn>origin.turn&&e.kind==='complication'&&e.status==='fulfilled'&&['action','condition-evidence'].includes(e.value))))return false;
+   if(condition.evidenceIds.some(id=>!s.events.some(e=>e.id===id&&e.subject===condition.performer&&e.turn>origin.turn&&e.kind==='complication'&&e.status==='fulfilled'&&['action','condition-evidence'].includes(e.value)&&(e.value!=='condition-evidence'||e.reference===condition.id))))return false;
   }
   if(c.amendments.some(a=>!conditionIds.has(a.conditionId)||a.promiseId!==c.promiseId||!actor(a.performer)||!actor(a.previousPerformer)||a.performer===a.previousPerformer||!short(a.playerQuote,500)||!short(a.npcQuote,500)||!Number.isInteger(a.turn)||a.turn>s.turn))return false;
   const count=c.conditions.filter(c=>c.evidenceIds.length).length;
@@ -147,6 +147,7 @@ export function applyProgress(s:NarrativeState,text:string,r:NarrativeReply,even
   if(p.source==='action'&&p.performer==='npc'){source=r.actionBeats[p.actionIndex]??'';action=true;}
   if(p.source==='event'){
    existing=s.events.find(e=>e.id===p.eventId&&e.subject===p.performer&&e.turn>origin!.turn&&e.status==='fulfilled'&&e.kind==='complication'&&['action','condition-evidence'].includes(e.value));
+   if(existing?.value==='condition-evidence'&&existing.reference!==condition!.id)fail();
    source=existing?.text??'';action=existing?.value==='action';
    const amendment=c!.amendments.filter(a=>a.conditionId===condition!.id).at(-1);
    if(amendment&&existing&&existing.turn<=amendment.turn)fail();

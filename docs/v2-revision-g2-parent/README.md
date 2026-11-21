@@ -1,0 +1,18 @@
+# Latest parent integration — G2 evidence references
+
+The parent independently reproduced two G2 malformed-save failures against the earlier371-test parent candidate (`binding-before.log`). One reused a ribbon condition's evidence for the letter condition and incorrectly passed restoration as complete. The other changed a historical evidence event's condition reference and still passed revision-history validation. These were deliberately malformed storage negative controls, not newly observed normal-player completions.
+
+The parent applied only the three reference checks from G2 to `server/commitments.ts` and `server/commitment-revisions.ts`, retaining the parent's later-sentence withdrawal guard, audio request-order fix, player-facing error copy, and UTF-8 launcher repair. The new binding tests and existing withdrawal tests then passed5/5 (`binding-after.log`). The worker's own report remains separately attributed in `worker-report.md`; its worktree was not overwritten.
+
+## Current verification
+
+- **374/374 unit tests, typecheck/build,25/25 browser tests** passed in the isolated combined snapshot (`unit.log`, `build.log`, `browser.log`). Browser checks use intercepted/modelled responses and actual browser rendering/media. They are not fresh OpenAI observations.
+- `source-equivalence.json` matches all55 runtime/test source files and51 rendered files to the original workspace byte-for-byte, including the built frontend. Build/package inputs also match. Non-rendered support metadata/docs are outside that comparison.
+- Updated normal revision semantic/HTTP traces and Korean performance contrasts are under `evidence/`. The supported forms and unrecognized paraphrase are recorded honestly; a boolean rejection still does not expose separate uncertainty/actor/tense/polarity diagnosis.
+- The parent directly opened all four current long-focus captures at1440×900 and390×844. Both faces and input/send controls remain visible against full-screen backgrounds and dark lower panels. Long text is contained in a scroll region, with partial lines at scroll boundaries and a fade/hint overlap. Mobile supporting labels are small and the lower body can be behind the panel. These images do not show a physical phone keyboard or generated-speech quality.
+- The original Windows launcher rebuilt/restarted the integrated candidate, and passive HTTP on3001 returned200 (`runtime.json`). No paid dialogue call occurred.
+- Current `artifacts/AFTER-HOURS-playable.zip`: **116 payload files,65,837,365 bytes**, SHA-256 `0c56c1dfcf9e38319f834b344dd8eadbea767b2e6a05376f41e14e0457e74c4a`. Every payload matches current source and manifest, with no private paths or credential-shaped payloads (`playable-audit.json`). The prior package remains `artifacts/history/AFTER-HOURS-playable-d95528b.zip`. Fresh-install evidence still refers to the earlier14128a7 package; this rebuild has exact content verification and original-workspace startup.
+
+## Release remains incomplete
+
+Official Ralph G1 and G2 both returned0/7. Their original verdicts are preserved under `../v2-revision-ralph/` and are not replaced by parent test counts. The evaluator's missing direct image/audio/ZIP access is distinguished from a reproduced current UI defect. Current generated conversation, real counterfactuals/continuity/endings, listening, full participation timelines, persistent proposed/rejected revision history, and richer interpretation diagnosis remain open. Some are free implementation/review work; the actual-model allocation is exhausted (12+32), the proposed further24 is unanswered, and no active approval ledger exists. No commercial readiness is claimed.

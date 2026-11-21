@@ -75,6 +75,7 @@ export function validRevisions(c:Commitment,s:NarrativeState):boolean{
   for(const a of r.applicability){
    const obligation=c.conditions.find(v=>v.id===a.conditionId),event=s.events.find(e=>e.id===a.evidenceId);
    if(!obligation||!event||event.turn>=r.turn||event.kind!=='complication'||event.status!=='fulfilled'||!['action','condition-evidence'].includes(event.value)||evidenceIds.has(a.evidenceId))return false;
+   if(event.value==='condition-evidence'&&event.reference!==a.conditionId)return false;
    evidenceIds.add(a.evidenceId);
    if(a.conditionId===r.conditionId){if(a.decision!=='historical'||a.reason!=='changed terms require new performance'||!r.before.evidenceIds.includes(a.evidenceId)||event.subject!==r.before.performer)return false;}
    else if(a.decision!=='retained'||a.reason!=='unchanged obligation')return false;

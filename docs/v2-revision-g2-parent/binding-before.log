@@ -1,0 +1,47 @@
+✖ restoration rejects condition evidence reassigned to a different obligation (9.9803ms)
+✖ revision applicability rejects a historical evidence event with a broken obligation reference (2.7749ms)
+✔ Korean performance contrast records supported forms and unresolved paraphrases without inventing nonperformance (5.8304ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 1
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 265.0997
+
+✖ failing tests:
+
+test at server\commitment-evidence-binding.test.ts:1:1783
+✖ restoration rejects condition evidence reassigned to a different obligation (9.9803ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\gjtjw\Desktop\대화형 스토리진행\.ralph\v2-revision-parent-probe\server\commitment-evidence-binding.test.ts:28:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.start (node:internal/test_runner/test:1015:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:358:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at server\commitment-evidence-binding.test.ts:1:2698
+✖ revision applicability rejects a historical evidence event with a broken obligation reference (2.7749ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (C:\Users\gjtjw\Desktop\대화형 스토리진행\.ralph\v2-revision-parent-probe\server\commitment-evidence-binding.test.ts:40:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }

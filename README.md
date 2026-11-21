@@ -59,4 +59,6 @@ npx playwright test
 
 `THIRD_PARTY_NOTICES.txt`는 실행 의존성 68개의 라이선스 원문입니다. 의존성 변경 시 `node scripts/generate-notices.mjs`로 갱신하세요. 로컬 배포는 빌드 후 `powershell -File scripts/package-local.ps1`로 `artifacts/AFTER-HOURS-local.zip`을 만듭니다. 키·개인 저장·node_modules는 제외됩니다. 공개 배포·스토어 등록은 수행하지 않았습니다.
 
+플레이에 필요한 파일만 묶으려면 빌드 후 `powershell -File scripts/package-playable.ps1`를 실행하세요. `artifacts/AFTER-HOURS-playable.zip`에는 소스·그림·음악·실행 파일·사용 안내와 파일별 해시 목록이 들어갑니다. 전체 검증 기록은 개발본에 보존합니다. 약66MB의 첫 실행 패키지를 새 폴더에 설치해 빌드·시작·재시작·실제 화면·종료를 확인했습니다. [설치 검증의 정확한 버전과 범위](docs/v2-playable-install/README.md)를 참고하세요.
+
 패키지 생성 후 `& ./scripts/audit-current-package.ps1`로 전체 포함 파일과 현재 프로젝트의 바이트·해시, 누락과 개인 파일 제외를 대조할 수 있습니다. 감사 결과는 ZIP 입력 밖인 `artifacts/`에 새 JSON으로 보존합니다. 이 검사는 실제 설치·생성 대화 품질·출시 승인을 대신하지 않습니다.

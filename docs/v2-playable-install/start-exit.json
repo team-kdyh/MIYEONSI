@@ -1,0 +1,6 @@
+{
+  "scope": "Fresh extracted playable package; dependency install, typecheck/build and actual startup",
+  "command": "play.cmd -NoBrowser -Port 3197",
+  "exitCode": 0,
+  "apiKey": "empty"
+}

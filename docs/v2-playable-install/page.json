@@ -1,0 +1,68 @@
+{
+  "at": "2026-11-21T06:01:59.798Z",
+  "scope": "Real server and built frontend from fresh extracted package; blank key; no API route mocks; no dialogue turn sent",
+  "summary": {
+    "title": "AFTER HOURS · 퇴근 후에",
+    "providerLabel": " 오프라인 미리보기 원본 시나리오 · 외부 AI 호출 없음",
+    "inputVisible": true,
+    "choices": 0
+  },
+  "errors": [],
+  "requests": [
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3197",
+      "path": "/"
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3197",
+      "path": "/assets/index-Mjy-n9FF.js"
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3197",
+      "path": "/assets/index-LjVWzUeO.css"
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3197",
+      "path": "/assets/cafe.png"
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3197",
+      "path": "/assets/yuna-expressions.png"
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3197",
+      "path": "/api/state"
+    },
+    {
+      "method": "POST",
+      "origin": "http://127.0.0.1:3197",
+      "path": "/api/new"
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3197",
+      "path": "/assets/audio-v2/cafe-warmth.ogg"
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3197",
+      "path": "/assets/chime.wav"
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3197",
+      "path": "/assets/audio-v2/cafe-warmth.ogg"
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:3197",
+      "path": "/assets/audio-v2/cafe-warmth.ogg"
+    }
+  ]
+}

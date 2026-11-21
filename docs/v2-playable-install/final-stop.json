@@ -1,0 +1,34 @@
+{
+  "scope": "Fresh package scoped shutdown; no paid calls",
+  "stopExit": 0,
+  "original3001Status": 200,
+  "before": [
+    {
+      "path": "5ae88218551ac3842c33d67fc675fddc0034ca1d971f252b.json",
+      "bytes": 1587
+    },
+    {
+      "path": "8209201a5bbaa7fc209cb7811f4a27fdaf4d06841edf12d0.json",
+      "bytes": 1587
+    },
+    {
+      "path": "installed-lock.sha256",
+      "bytes": 66
+    }
+  ],
+  "port3197Stopped": true,
+  "after": [
+    {
+      "path": "5ae88218551ac3842c33d67fc675fddc0034ca1d971f252b.json",
+      "bytes": 1587
+    },
+    {
+      "path": "8209201a5bbaa7fc209cb7811f4a27fdaf4d06841edf12d0.json",
+      "bytes": 1587
+    },
+    {
+      "path": "installed-lock.sha256",
+      "bytes": 66
+    }
+  ]
+}

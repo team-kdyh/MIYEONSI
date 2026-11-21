@@ -1,0 +1,5 @@
+{
+  "scope": "Hidden separate process, no piped stdin; installed package restart",
+  "exitCode": 0,
+  "command": "cmd.exe /d /c play.cmd -NoBrowser -Port 3197"
+}

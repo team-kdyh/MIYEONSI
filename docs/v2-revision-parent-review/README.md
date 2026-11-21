@@ -1,0 +1,9 @@
+# Parent review of the revision worker snapshot
+
+The parent copied the active worker's `server` and `src` into an isolated probe folder. No active-worker files or session signals were changed. This is a focused code review, not a terminal Ralph verdict or actual OpenAI evaluation.
+
+`holdout-before.json` preserves normal initial offer, acceptance, partial performance, and six authored response variants with complete before/after states and source hashes. Three variants incorrectly changed the obligation after the player or NPC withdrew the agreement in a later sentence. The positive agreement, question, and unrelated coffee refusal behaved as expected. The initial revision implementation is preserved as `commitment-revisions.before.txt` (SHA-256 `456a039ac8adb824c07c1dd1e47ef89e46b142d0ed6b737a2a30e8a60f6f1784`).
+
+The parent isolated fix inspects subsequent clauses for an explicit reference to withdrawing the agreement or a direct retraction. It preserves unrelated coffee refusals and magazine-subscription cancellation. `holdout-after.json` records nine expected outcomes, all matched. `commitment-revisions.after.txt` has SHA-256 `5e3fbd10031d7bb13e3a7f6c35464ec1f3911422dbc528ee789e62c0af620c07`. The new two-test regression is preserved as `commitment-revisions-retraction.test.txt`. It also verifies that rejection leaves the original partial contract unchanged. These two tests plus the eight worker revision tests passed together in the isolated folder.
+
+This remains a bounded Korean literal agreement grammar. It is not general semantic entailment, and unusual paraphrases can be rejected. The extra guard does not establish arbitrary retraction understanding. No paid requests occurred. At this record's creation the parent fix is **not integrated into the original game**, the worker is still active, and its official checks/grade must be preserved separately. The earlier 358-test installation package remains the original preview checkpoint.

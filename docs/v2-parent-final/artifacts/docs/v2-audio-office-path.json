@@ -1,0 +1,56 @@
+{
+  "scope": "Mock model replies, real reconcile, UI and media playback. No paid API. No direct state injection or music-only UI control.",
+  "transitions": [
+    {
+      "from": "office-groove",
+      "to": "office-pressure",
+      "overlap": [
+        {
+          "id": "office-groove",
+          "time": 7.428018,
+          "volume": 0.3144924999996088,
+          "paused": false
+        },
+        {
+          "id": "office-pressure",
+          "time": 0,
+          "volume": 0.03550750000039116,
+          "paused": false
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "text": "보고서도 퇴근하고 싶대요.",
+      "reply": "보고서 연차는 제 결재로 안 됩니다. 커피 휴가는 가능하죠.",
+      "music": "office-groove",
+      "location": "office",
+      "relationship": "strangers",
+      "accepted": [],
+      "ending": null
+    },
+    {
+      "text": "오늘 수치 대신 내일 검증한 요약을 보내면 어때요?",
+      "reply": "고객은 오늘 기다립니다. 오늘 보낼 범위를 조금만 더 정해 봅시다.",
+      "music": "office-pressure",
+      "location": "office",
+      "relationship": "strangers",
+      "accepted": [
+        {
+          "kind": "complication",
+          "value": "deadline",
+          "subject": "npc",
+          "status": "offered",
+          "text": "deadline에 관한 대화 0",
+          "evidence": "",
+          "reference": "",
+          "id": "05ec4550-f7b7-451a-af8a-711ddca10bbf",
+          "turn": 2
+        }
+      ],
+      "ending": null
+    }
+  ],
+  "errors": []
+}

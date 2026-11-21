@@ -1,0 +1,97 @@
+{
+  "executedAt": "2026-11-21T04:42:56.943Z",
+  "provider": "offline",
+  "realHttpServer": true,
+  "paidCalls": 0,
+  "observations": [
+    {
+      "name": "empty",
+      "status": 400,
+      "before": "0cf76ddf260d6226141205ac2af9a2daf23d73d59268835d88bb9e87fcf59952",
+      "after": "0cf76ddf260d6226141205ac2af9a2daf23d73d59268835d88bb9e87fcf59952",
+      "unchanged": true
+    },
+    {
+      "name": "whitespace",
+      "status": 400,
+      "before": "0cf76ddf260d6226141205ac2af9a2daf23d73d59268835d88bb9e87fcf59952",
+      "after": "0cf76ddf260d6226141205ac2af9a2daf23d73d59268835d88bb9e87fcf59952",
+      "unchanged": true
+    },
+    {
+      "name": "null",
+      "status": 400,
+      "before": "0cf76ddf260d6226141205ac2af9a2daf23d73d59268835d88bb9e87fcf59952",
+      "after": "0cf76ddf260d6226141205ac2af9a2daf23d73d59268835d88bb9e87fcf59952",
+      "unchanged": true
+    },
+    {
+      "name": "number",
+      "status": 400,
+      "before": "0cf76ddf260d6226141205ac2af9a2daf23d73d59268835d88bb9e87fcf59952",
+      "after": "0cf76ddf260d6226141205ac2af9a2daf23d73d59268835d88bb9e87fcf59952",
+      "unchanged": true
+    },
+    {
+      "name": "boolean",
+      "status": 400,
+      "before": "0cf76ddf260d6226141205ac2af9a2daf23d73d59268835d88bb9e87fcf59952",
+      "after": "0cf76ddf260d6226141205ac2af9a2daf23d73d59268835d88bb9e87fcf59952",
+      "unchanged": true
+    },
+    {
+      "name": "array",
+      "status": 400,
+      "before": "0cf76ddf260d6226141205ac2af9a2daf23d73d59268835d88bb9e87fcf59952",
+      "after": "0cf76ddf260d6226141205ac2af9a2daf23d73d59268835d88bb9e87fcf59952",
+      "unchanged": true
+    },
+    {
+      "name": "object",
+      "status": 400,
+      "before": "0cf76ddf260d6226141205ac2af9a2daf23d73d59268835d88bb9e87fcf59952",
+      "after": "0cf76ddf260d6226141205ac2af9a2daf23d73d59268835d88bb9e87fcf59952",
+      "unchanged": true
+    },
+    {
+      "name": "501 characters",
+      "status": 400,
+      "before": "0cf76ddf260d6226141205ac2af9a2daf23d73d59268835d88bb9e87fcf59952",
+      "after": "0cf76ddf260d6226141205ac2af9a2daf23d73d59268835d88bb9e87fcf59952",
+      "unchanged": true
+    },
+    {
+      "name": "malformed JSON",
+      "raw": "{bad json",
+      "status": 400,
+      "unchanged": true
+    },
+    {
+      "name": "malformed JSON",
+      "raw": "\"primitive\"",
+      "status": 400,
+      "unchanged": true
+    },
+    {
+      "name": "500 characters",
+      "status": 200,
+      "versionDelta": 1
+    },
+    {
+      "name": "UTF-8 HTTP body boundary",
+      "bytes": 4096,
+      "status": 200,
+      "before": "96777d7fa157cd20a175991b22631128d7fd57b1dd58504a90850872d9813172",
+      "after": "09bc0544d1851bb70a1709681b0c2ef733162044ce54085ca9a258cfa3c61fec",
+      "versionDelta": 1
+    },
+    {
+      "name": "UTF-8 HTTP body boundary",
+      "bytes": 4097,
+      "status": 400,
+      "before": "09bc0544d1851bb70a1709681b0c2ef733162044ce54085ca9a258cfa3c61fec",
+      "after": "09bc0544d1851bb70a1709681b0c2ef733162044ce54085ca9a258cfa3c61fec",
+      "versionDelta": 0
+    }
+  ]
+}

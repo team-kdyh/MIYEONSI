@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>말빨 시뮬레이터</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand" id="homeBtn">💬 말빨 시뮬레이터</button>
+    <button class="ghost" id="settingsBtn">⚙️ AI 설정</button>
+  </header>
+
+  <main id="app"></main>
+
+  <!-- AI 설정 창 -->
+  <dialog id="settings">
+    <form method="dialog" class="settings-form">
+      <h2>AI 판정 설정 (선택)</h2>
+      <p class="muted">
+        OpenAI API 키를 넣으면 <b>직접 입력한 말</b>을 AI가 상대방 입장에서 판정해요.
+        키가 없으면 키워드 규칙으로 간단히 판정합니다.<br>
+        키는 <b>이 브라우저에만</b> 저장되고 코드나 파일에는 남지 않아요.
+      </p>
+      <label>API 키
+        <input type="password" id="apiKey" placeholder="sk-..." autocomplete="off">
+      </label>
+      <label>모델
+        <input type="text" id="apiModel" placeholder="gpt-4o-mini">
+      </label>
+      <div class="row">
+        <button value="cancel" class="ghost">닫기</button>
+        <button type="button" id="clearKey" class="ghost">키 삭제</button>
+        <button type="button" id="saveKey" class="primary">저장</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- 시나리오 데이터: 파일 하나 = 상황 하나 -->
+  <script src="scenarios/professor.js"></script>
+  <script src="scenarios/boss.js"></script>
+  <!-- 게임 엔진 -->
+  <script src="game.js"></script>
+</body>
+</html>

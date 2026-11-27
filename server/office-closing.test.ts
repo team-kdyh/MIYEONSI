@@ -45,6 +45,7 @@ test('quoted or conditional player farewells remain conversation, persisted conc
  const agreed=commitDialogue(g,null,text,{...npc('그 요약이면 되겠어요. 시간을 그렇게 정하죠.'),events:[{kind:'concession',subject:'mutual',status:'accepted',value:'leave',text:'오늘 18시에 퇴근하기로 했다.',reference:'',evidence:text}]});
  const end=view((await goodbye(agreed)).game);
  assert.equal(end?.review?.verdict,'합의로 마무리');assert.match(end!.review!.reason,/18시/);
+ assert.equal(end?.review?.score.total,55);
  const decision:NarrativeReply={...npc('그 시간으로 정하죠. 수고했어요.'),pose:'farewell',events:[{kind:'concession',subject:'mutual',status:'accepted',value:'leave',text:'오늘 18시에 퇴근하기로 했다.',reference:'',evidence:text}]};
  assert.equal(view(commitDialogue(g,null,text,decision))?.review?.verdict,'합의로 마무리');
  assert.equal(commitDialogue(g,null,text,{...decision,events:[]}).ending,null);

@@ -6,6 +6,9 @@ import type {OfficeReview} from '../server/office-review';
 export function timeLabel(seconds:number){
  return `${Math.floor(seconds/60)}:${String(seconds%60).padStart(2,'0')}`;
 }
+function MissionArt({id}:{id:string}){
+ return <img className="mission-art" src={`/assets/office/missions/${id}.webp`} alt="" width="622" height="310"/>;
+}
 export function OfficeSetupForm({mission,setup,onMission,onSetup}:{mission:number;setup:OfficeSetup;onMission:(n:number)=>void;onSetup:(s:OfficeSetup)=>void}){
  const change=<K extends keyof OfficeSetup>(key:K,value:OfficeSetup[K])=>onSetup({...setup,[key]:value});
  const m=missions[mission];
@@ -14,7 +17,7 @@ export function OfficeSetupForm({mission,setup,onMission,onSetup}:{mission:numbe
    {(['classic','rush'] as const).map(v=><label key={v} className={setup.style===v?'selected':''}><input type="radio" name="match-style" checked={setup.style===v} onChange={()=>change('style',v)}/><strong>{v==='classic'?'일반 협상':'타임어택'}</strong><small>{v==='classic'?'시간 제한 없이':`${RUSH_SECONDS/60}분 안에 설득`}</small></label>)}
   </div></fieldset>
   <label>직장 미션 선택<select id="office-mission" value={mission} onChange={e=>onMission(Number(e.target.value))}>{missions.map((v,i)=><option value={i} key={v.id}>{i+1}. {v.title}</option>)}</select></label>
-  <p className="mission-brief">{setup.style==='rush'?rushScenes[m.id].trigger:m.intro.replaceAll('박도현',bosses[setup.boss].name)}</p>
+  <div className="mission-preview"><MissionArt id={m.id}/><p className="mission-brief">{setup.style==='rush'?rushScenes[m.id].trigger:m.intro.replaceAll('박도현',bosses[setup.boss].name)}</p></div>
   <div className="setup-fields">
    <label>대화 상대<select value={setup.boss} onChange={e=>change('boss',e.target.value as OfficeSetup['boss'])}>{Object.entries(bosses).map(([id,v])=><option key={id} value={id}>{v.name} 부장</option>)}</select></label>
    <label>상대 성격<select value={setup.temperament} onChange={e=>change('temperament',e.target.value as OfficeSetup['temperament'])}>{Object.entries(temperaments).map(([id,v])=><option key={id} value={id}>{v.label}</option>)}</select></label>
@@ -58,8 +61,26 @@ export function StageThread({match,outgoing}:{match:OfficeMatch;outgoing?:string
   {outgoing&&<div className="thread-mine"><b>전송 중</b>{outgoing}</div>}
  </div>;
 }
-export function ReportDetail({review}:{review:OfficeReview}){
- return <div className="report-detail"><p>{review.reason}</p><p>{timeLabel(review.elapsedSeconds)} 진행 · {review.turns.length}번의 대화</p>
+export function ReportDetail({review,mission}:{review:OfficeReview;mission:number}){
+ const {score}=review,m=missions[mission];
+ return <div className="report-detail">
+ <div className="report-cover">
+  <MissionArt id={m.id}/>
+  <div className="report-cover-copy"><p>{m.title}</p><h2>협상 리포트 · {review.verdict}</h2>
+   <div className="report-total" role="group" aria-label={`협상 점수 100점 만점에 ${score.total}점`}><span>협상 점수</span><strong>{score.total}</strong><small>/ 100</small></div>
+  </div>
+ </div>
+ <dl className="score-breakdown">
+  <div><dt>협상 결과</dt><dd>{score.outcome}<small> / 70</small></dd></div>
+  <div><dt>설득 효과</dt><dd>{score.impact}<small> / 20</small></dd></div>
+  <div><dt>논거의 폭</dt><dd>{score.variety}<small> / 10</small></dd></div>
+ </dl>
+ <details className="score-rules"><summary>채점 기준 보기</summary>
+  <p>설득 성공은 70점, 합의로 마무리하면 55점, 부분 합의는 40점입니다. 그 밖의 결말은 대화에서 얻은 점수로 평가합니다.</p>
+  <p>상대를 설득하거나 압박에 대응한 발언은 {score.effectiveTurns}회입니다. 첫 발언에 12점, 두 번째까지 합해 최대 20점을 받습니다.</p>
+  <p>효과가 있었던 방법은 {score.approaches.length?score.approaches.join(' · '):'0가지'}입니다. 대안 제시, 근거 제시, 경계 설정 중 서로 다른 방법 한 가지당 5점씩 최대 10점을 받습니다.</p>
+ </details>
+ <p>{review.reason}</p><p className="report-meta">{timeLabel(review.elapsedSeconds)} 진행 · {review.turns.length}번의 대화</p>
  {review.best&&<section><h3>흐름을 바꾼 한마디</h3><blockquote>{review.best.player}</blockquote><p>{review.best.note}</p></section>}
  {review.pressured&&<section><h3>가장 거셌던 압박</h3><blockquote>{review.pressured.reply}</blockquote><p>{review.pressured.note}</p></section>}
  {!review.best&&!review.pressured&&<p>{review.turns.length?'주고받은 말은 아래 대화 기록에서 다시 읽을 수 있어요.':'마감 전에 주고받은 대사가 없습니다.'}</p>}

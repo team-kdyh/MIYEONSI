@@ -1,0 +1,13 @@
+{
+  "tool": "OpenAI built-in image generation",
+  "missions": {
+    "artDirection": "Eight original, unlettered prop close-ups for a Korean office-comedy visual novel. One two-column, four-row contact sheet with deep plum shadows, warm highlights and a distinct setting per negotiation.",
+    "rowMajor": ["clockout", "dinner", "weekend", "vacation", "credit", "meeting", "delegation", "remote"],
+    "exports": "Eight separate 622 by 310 WebP illustrations in missions/."
+  },
+  "yun-reactions.webp": {
+    "reference": "yun-seojin.webp",
+    "artDirection": "Keep Yun Seojin's mature face, short bob, gold earrings and teal blazer. Four separate mid-thigh portraits with matching head heights and a transparent background.",
+    "columns": ["watch", "surprised", "laugh", "farewell"]
+  }
+}

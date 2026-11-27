@@ -43,7 +43,9 @@ export function spriteCell(mode:Mode,pose:string,legacyExpression=0):SpriteCell{
  return actorPoses[mode][pose as Pose]??cell(`${mode==='office'?'boss':'yuna'}-expressions`,Math.max(0,Math.min(3,legacyExpression)),pose);
 }
 export function yunSprite(pose:string):SpriteCell{
- const column=['firm','watch','intense'].includes(pose)?1:['thinking','turn','shy','concern','surprised'].includes(pose)?2:['smile','offer','laugh','farewell'].includes(pose)?3:0;
+ const reaction=['watch','surprised','laugh','farewell'].indexOf(pose);
+ if(reaction>=0)return {sheet:'/assets/office/yun-reactions.webp',column:reaction,label:['손목시계를 내려다본다','눈썹을 올리며 가슴에 손을 얹는다','입가를 가리며 웃는다','한 손을 들어 인사한다'][reaction]};
+ const column=['firm','intense'].includes(pose)?1:['thinking','turn','shy','concern'].includes(pose)?2:['smile','offer'].includes(pose)?3:0;
  return {sheet:'/assets/office/yun-seojin.webp',column,label:['서류를 들고 귀를 기울인다','팔짱을 끼고 바라본다','턱에 손을 얹고 생각한다','웃으며 손을 편다'][column]};
 }
 // Props in the art are literal. An abstract 'offer' must not conjure headphones

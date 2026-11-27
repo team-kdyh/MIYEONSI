@@ -28,6 +28,9 @@ for(const width of [390,1366])test(`chat, profile, timeout report and retry on $
  await expect(page.locator('#reply')).toBeInViewport({ratio:1});
  expect(await page.evaluate(()=>document.documentElement.scrollHeight<=innerHeight)).toBeTruthy();
  await page.screenshot({path:test.info().outputPath('stage.png')});
+ await page.locator('#reply').fill('몇 시예요?');await page.locator('#reply').press('Enter');
+ await expect(page.locator('.sprite')).toHaveAttribute('data-pose','watch');
+ await expect(page.locator('.sprite')).toHaveCSS('background-image',`url("${new URL('/assets/office/yun-reactions.webp',page.url()).href}")`);
  const initial=await (await page.request.get('/api/state')).json(),deadline=initial.game.officeMatch.deadline;
  await page.getByRole('button',{name:'대화 로그'}).click();
  await expect(page.locator('.chat-history')).toContainText('급한 숫자');
@@ -40,6 +43,9 @@ for(const width of [390,1366])test(`chat, profile, timeout report and retry on $
  await page.getByRole('button',{name:'협상 리포트 보기'}).click();
  await expect(page.getByRole('heading',{name:/협상 리포트 · 시간 초과/})).toBeVisible();
  await expect(page.locator('.report-detail')).toContainText('셔틀 문이 닫혔다');
+ await expect(page.locator('.report-total strong')).toHaveText('0');
+ await page.getByText('채점 기준 보기',{exact:true}).click();
+ await expect(page.locator('.score-rules')).toContainText('발언은 0회');
  await page.getByText('대화별 피드백').click();await expect(page.locator('.chat-history')).toContainText('서로의 말을 듣고 상황을 살폈습니다');
  expect(calls().length).toBe(count);
  await page.getByRole('button',{name:'닫기'}).click();
@@ -70,6 +76,7 @@ test('clock survives loads, rejects late turns and honours an on-time winning re
  setTime(game.officeMatch.deadline-1);
  const final=turn(game,'마지막 교정은 내일 제가 일찍 와서 맡을게요.');
  const win=await post('turn',final);expect(win.game.review.verdict).toBe('설득 성공');expect(win.game.review.best.player).toBeTruthy();
+ expect(win.game.review.score).toMatchObject({total:95,outcome:70,impact:20,variety:5,effectiveTurns:6});
  expect(win.game.review.turns).toHaveLength(6);
  const n=calls().length;expect(await post('turn',final)).toEqual(win);expect(calls().length).toBe(n);
  const context=JSON.parse(calls().at(-1)!);
@@ -103,13 +110,38 @@ test('closing from chat or the stage opens a lasting report and never resends a 
  await expect(page.getByRole('heading',{name:'협상 리포트 · 대화 마침'})).toBeVisible();
  await page.getByRole('button',{name:'닫기'}).click();
  await page.getByRole('button',{name:'이 미션 다시 도전'}).click();
- await send('숫자는 보냈고 보고서는 내일 드릴게요.');
+ const won=await send('숫자는 보냈고 보고서는 내일 드릴게요.');
+ expect(won.game.review.score.total).toBe(87);
  await expect(page.locator('.text-ink')).toContainText('오늘은 퇴근하세요');
  await expect(page.locator('audio[data-track="office-homebound"]')).toHaveAttribute('src','/assets/office-score/green-light.ogg');
+ await page.getByRole('button',{name:'협상 리포트 보기'}).click();
+ await expect(page.locator('.report-total strong')).toHaveText('87');
+ await page.screenshot({path:test.info().outputPath('scored-report.png')});
+ await page.getByRole('button',{name:'닫기'}).click();
  await page.getByRole('button',{name:'이 미션 다시 도전'}).click();
  const finish=page.getByRole('button',{name:'대화 마치기'});await page.locator('#reply').fill('할 말이 남았어요.');
  page.once('dialog',d=>d.dismiss());await finish.click();
  await expect(page.locator('#reply')).toHaveValue('할 말이 남았어요.');
  page.once('dialog',d=>d.accept());await finish.click();
  await expect(page.getByRole('button',{name:'협상 리포트 보기'})).toBeVisible();
+});
+
+test('all eight illustrations follow the selected mission into a saved report',async({page})=>{
+ await page.setViewportSize({width:390,height:780});
+ const ids=['clockout','dinner','weekend','vacation','credit','meeting','delegation','remote'];
+ await page.goto('/');await page.getByRole('button',{name:/칼퇴의 기술/}).click();
+ const pick=page.locator('#office-mission'),art=page.locator('.mission-preview img');
+ for(const [i,id] of ids.entries()){
+  await pick.selectOption(String(i));await expect(art).toHaveAttribute('src',`/assets/office/missions/${id}.webp`);
+  await art.evaluate(async img=>{await (img as HTMLImageElement).decode();});
+  expect(await art.evaluate(img=>(img as HTMLImageElement).naturalWidth)).toBe(622);
+ }
+ await page.getByRole('button',{name:/이야기 시작/}).click();await page.locator('#reply').fill('그럼 가보겠습니다.');
+ await page.locator('#reply').press('Enter');await page.getByRole('button',{name:'협상 리포트 보기'}).click();
+ await expect(page.locator('.report-cover img')).toHaveAttribute('src','/assets/office/missions/remote.webp');
+ await expect(page.locator('.report-total strong')).toHaveText('0');
+ await page.screenshot({path:test.info().outputPath('mobile-report.png')});
+ await page.reload();await page.getByRole('button',{name:/이어하기/}).click();await page.getByRole('button',{name:'협상 리포트 보기'}).click();
+ await expect(page.locator('.report-total strong')).toHaveText('0');
+ await expect(page.locator('.report-cover img')).toHaveAttribute('src','/assets/office/missions/remote.webp');
 });

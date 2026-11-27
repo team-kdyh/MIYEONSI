@@ -10,6 +10,8 @@
 
 지난 발언은 무대 채팅창이나 대화 로그에서 읽을 수 있습니다. 결말의 **협상 리포트 보기**에서 결과, 소요 시간, 가장 효과가 컸던 발언, 압박을 받은 대화와 교환별 피드백을 확인할 수 있습니다.
 
+미션을 고를 때와 리포트를 열 때 해당 장면의 삽화가 표시됩니다. 협상 점수는 100점 만점입니다. 결말에 최대 70점, 설득이나 방어가 통했던 발언에 최대 20점, 효과가 있었던 논거의 종류에 최대 10점을 부여합니다. **채점 기준 보기**에서 이번 판의 근거를 확인할 수 있습니다.
+
 상대 성격·회사 설정과 발언별 리뷰는 ysb028의 [말빨 시뮬레이터](https://github.com/team-kdyh/MIYEONSI/tree/9ef505ed96d94e180b35b27b82ac54df14372be4)에서, 무대·포즈·자유 대화 판정과 저장은 [AFTER HOURS](https://github.com/team-kdyh/MIYEONSI/tree/fd91bd9183ad7f29460685a1ecaad737b38a0498)에서 이어 왔습니다.
 
 ## Windows 실행
@@ -79,7 +81,7 @@ npx playwright test
 
 ## 에셋·라이선스·배포
 
-전체 화면 원본 배경, 박도현·서유나 각 12개 그림 포즈와 8개 오리지널 음악을 사용합니다. 윤서진 부장의 네 가지 포즈와 생성 프롬프트는 [직장 캐릭터 에셋](public/assets/office/generation.json)에 있습니다. 원본과 출처·프롬프트는 `public/assets/generation-manifest.json`, `public/assets/v2/generation-manifest.json`, `public/assets/audio-v2/manifest.json`에 있습니다. v1 원본은 보존했습니다. 음악은 8초 최소 유지와 2초 크로스페이드를 적용합니다. 외부 폰트 요청 없이 시스템 글꼴을 사용합니다.
+전체 화면 원본 배경, 박도현·서유나 각 12개 그림 포즈와 8개 오리지널 음악을 사용합니다. 윤서진 부장은 기본 자세 네 장과 대화 반응 네 장을 사용합니다. 미션 삽화와 추가 포즈의 구성은 [직장 일러스트 제작 기록](public/assets/office/art-notes.json)에, 기존 캐릭터 원화의 프롬프트는 [캐릭터 제작 기록](public/assets/office/generation.json)에 있습니다. 원본과 출처·프롬프트는 `public/assets/generation-manifest.json`, `public/assets/v2/generation-manifest.json`, `public/assets/audio-v2/manifest.json`에 있습니다. v1 원본은 보존했습니다. 음악은 8초 최소 유지와 2초 크로스페이드를 적용합니다. 외부 폰트 요청 없이 시스템 글꼴을 사용합니다.
 
 `THIRD_PARTY_NOTICES.txt`는 실행 의존성 68개의 라이선스 원문입니다. 의존성 변경 시 `node scripts/generate-notices.mjs`로 갱신하세요. 로컬 배포는 빌드 후 `powershell -File scripts/package-local.ps1`로 `artifacts/AFTER-HOURS-local.zip`을 만듭니다. 키·개인 저장·node_modules는 제외됩니다. 공개 배포·스토어 등록은 수행하지 않았습니다.
 

@@ -52,8 +52,9 @@ test('free text UI cancels and retries one request, earns an office ending, and 
  await expect(page.locator('.ending-actions')).toBeVisible();
  await expect(page.locator('#reply')).toHaveCount(0);
  await page.getByRole('button',{name:'대화 로그'}).click();
- await expect(page.locator('.log').filter({hasText:first})).toHaveCount(1);
- await expect(page.locator('.log img')).toHaveCount(0);
+ const transcript=page.getByRole('dialog',{name:'대화 로그'});
+ await expect(transcript.getByText(first,{exact:true})).toHaveCount(1);
+ await expect(transcript.locator('img')).toHaveCount(0);
  expect(await page.evaluate(()=>('__v2Executed' in window))).toBe(false);
  await page.getByRole('button',{name:'닫기',exact:true}).click();
  await page.getByRole('button',{name:'타이틀로 돌아가기'}).click();

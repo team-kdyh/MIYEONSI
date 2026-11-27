@@ -1,4 +1,5 @@
 import {validCommitments} from './commitments.ts';
+import {validMatch} from './office-match.ts';
 import {locations,poses,moods,kinds} from './narrative.ts';
 import {createHash,randomUUID} from 'node:crypto';
 import {mkdir,readFile,open,rename,unlink,copyFile} from 'node:fs/promises';
@@ -17,6 +18,7 @@ function validGame(g:unknown):boolean {
  const v=g as DialogueGame;
  if(!v||!['office','romance'].includes(v.mode)||!Number.isInteger(v.step)||v.step<0||v.step> (v.mode==='office'?7:5)||!Array.isArray(v.scores)||v.scores.some(n=>!Number.isFinite(n))||!Array.isArray(v.log)||v.log.some(e=>typeof e?.speaker!=='string'||typeof e?.text!=='string')||!(v.ending===null||endings[v.mode].some(e=>e.id===v.ending)))return false;
  if(!v.dialogue||!Number.isSafeInteger(v.dialogue.version)||v.dialogue.version<0||!Array.isArray(v.dialogue.facts)||!Array.isArray(v.dialogue.ledger)||typeof v.dialogue.reply!=='string')return false;
+ if(v.officeMatch!==undefined&&(v.mode!=='office'||!v.officeMatch||!validMatch(v.officeMatch)))return false;
  const history=v.dialogue.battleEvaluations;
  if(history!==undefined){
   if(!Array.isArray(history)||v.mode!=='office'&&history.length)return false;

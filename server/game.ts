@@ -1,4 +1,6 @@
 import {battleView} from './battle-view.ts';
+import {officeReview} from './office-review.ts';
+import {bosses,newMatch,type OfficeMatch,type OfficeSetup} from './office-match.ts';
 import type {NarrativeState} from './narrative.ts';
 import {storyGuide} from './story-guide.ts';
 import {chapters, romanceEndings, startRomance, romanceScene, advanceRomance, type RomanceState} from './romance.ts';
@@ -14,10 +16,15 @@ export const endings = {
  office:officeEndings,
  romance:romanceEndings
 };
-export type Game = {narrative?:NarrativeState;mode:Mode; step:number; scores:number[]; log:{speaker:string;text:string}[]; ending:string|null; office?:MissionAgreement; romance?:RomanceState};
-export function start(mode:Mode,mission=0):Game {
+export type Game = {narrative?:NarrativeState;mode:Mode; step:number; scores:number[]; log:{speaker:string;text:string}[]; ending:string|null; office?:MissionAgreement; officeMatch?:OfficeMatch; romance?:RomanceState};
+export function start(mode:Mode,mission=0,setup?:OfficeSetup):Game {
  const g:Game={mode,step:mode==='office'?mission:0,scores:[0,0,0],log:[],ending:null};
  if(mode==='office')g.office=startOffice(mission);else g.romance=startRomance();
+ if(mode==='office'&&setup){
+  g.officeMatch=newMatch(mission,setup);
+  g.log.push({speaker:bosses[setup.boss].name,text:g.officeMatch.opening});
+  return g;
+ }
  const opening=sceneFor(g).text;
  g.log.push({speaker:mode==='office'?'박도현 · 46':'서유나 · 27',text:mode==='office'?opening.split('\n\n협상 ')[0]:opening});return g;
 }
@@ -26,4 +33,4 @@ export function advance(game:Game, choice:number, text=''):Game {
  if(game.mode==='office')return advanceOffice(game,choice,text);
  return advanceRomance(game,choice,text);
 }
-export function view(game:Game|null){if(!game)return null;return {...game,scores:undefined,battle:battleView(game),storyGuide:storyGuide(game),scene:game.ending?null:sceneFor(game),end:game.narrative&&game.ending?{id:game.ending,title:endings[game.mode].find(e=>e.id===game.ending)?.title??'이야기의 끝',text:game.log.at(-1)?.text??''}:game.mode==='office'?officeEnd(game):game.ending?endings[game.mode].find(e=>e.id===game.ending):null};}
+export function view(game:Game|null){if(!game)return null;return {...game,scores:undefined,battle:battleView(game),...(game.officeMatch&&game.ending?{review:officeReview(game)}:{}),storyGuide:storyGuide(game),scene:game.ending?null:sceneFor(game),end:game.narrative&&game.ending?{id:game.ending,title:endings[game.mode].find(e=>e.id===game.ending)?.title??'이야기의 끝',text:game.log.at(-1)?.text??''}:game.mode==='office'?officeEnd(game):game.ending?endings[game.mode].find(e=>e.id===game.ending):null};}

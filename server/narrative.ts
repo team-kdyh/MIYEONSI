@@ -352,6 +352,10 @@ export function reconcile(game:Game,text:string,reply:NarrativeReply,requestId?:
 /** Explicit offline staging preview, not a simulated AI director. */
 export function preview(g:Game,text:string):NarrativeReply {
  const office=g.mode==='office';
+ if(g.officeMatch){
+  const match=g.officeMatch,term=missions[g.step].terms[match.exchanges.length%missions[g.step].terms.length];
+  return {line:`[연출 체험] ${term.objection.replace(/[“”]/g,'')} ${match.setup.temperament==='warm'?'사정이 있으면 편하게 얘기해요.':match.setup.temperament==='exacting'?'결정에 필요한 것만 듣죠.':'지금 제일 마음에 걸리는 게 그거예요.'}`,actionBeats:['부장이 서류에서 눈을 든다.'],emotion:'차분함',pose:'listen',musicMood:'office-groove',events:[],recall:[],conjecture:''};
+ }
  return {line:office?'[연출 체험] 서류보다 커피가 먼저 식겠군요. 실제 자유 협상은 OpenAI 모드에서 이어집니다.':'[연출 체험] 컵 소리에도 성격이 있나 봐요. 실제 자유 대화는 OpenAI 모드에서 이어집니다.',actionBeats:[office?'박도현이 서류를 내려놓는다.':'유나가 컵 테두리를 가볍게 두드린다.'],emotion:'차분함',pose:'listen',musicMood:office?'office-groove':'cafe-warmth',events:[],recall:[],conjecture:''};
 }
 

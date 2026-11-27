@@ -1,4 +1,5 @@
 import {narrative} from './narrative.ts';
+import {readSetup,settleClock} from './office-match.ts';
 import express from 'express';
 import {randomBytes} from 'node:crypto';
 import {ProfileStore,StorageError,type Profile} from './storage.ts';
@@ -17,6 +18,11 @@ const port=Number(process.env.PORT||3001);
 const store=new ProfileStore(process.env.AFTERHOURS_DATA_DIR||path.join(root,'.local-data'));
 function selectedProvider(p:Profile):Provider{return p.providerSelectionVersion===2&&p.provider?p.provider:(process.env.OPENAI_API_KEY?'openai':'offline');}
 function payload(p:Profile){const provider=selectedProvider(p);return {game:view(p.game),collection:p.collection,slots:p.slots.map(g=>g?{mode:g.mode,step:g.step,ending:g.ending}:null),endings,provider,model:(provider==='openai'?process.env.OPENAI_MODEL||'gpt-4.1':null)};}
+function settleProfile(p:Profile,now=Date.now()){
+ if(!settleClock(p.game,now))return false;
+ if(p.game?.ending&&!p.collection.includes(p.game.ending))p.collection.push(p.game.ending);
+ return true;
+}
 const app=express();app.disable('x-powered-by');app.use(express.json({limit:'4kb'}));
 const locks=new Set<string>(); const rates=new Map<string,{count:number;until:number}>();
 app.use('/api',async(req,res,next)=>{
@@ -32,8 +38,9 @@ app.all('/api/:action',async(req,res)=>{
  const id:string=res.locals.id; if(locks.has(id)){res.status(409).json({error:'앞선 대화를 처리 중입니다.'});return;}locks.add(id);
  try{
  const a=req.params.action;
+ const receivedAt=Date.now();
  if(req.method==='POST'){
-  const fields:Record<string,string[]>={reset:[],new:['mode','mission'],provider:['provider'],turn:['text','choice','requestId','version','step'],save:['slot'],load:['slot']};
+  const fields:Record<string,string[]>={reset:[],new:['mode','mission','setup'],provider:['provider'],turn:['text','choice','requestId','version','step'],save:['slot'],load:['slot']};
   if(!req.body||Array.isArray(req.body)||typeof req.body!=='object'||fields[a]&&Object.keys(req.body).some(k=>!fields[a].includes(k)))throw Error('요청 필드가 올바르지 않습니다.');
  }
  if(req.method==='POST'&&a!=='turn'){
@@ -43,9 +50,16 @@ app.all('/api/:action',async(req,res)=>{
  }
  if(a==='reset'&&req.method==='POST'){res.json(payload(await store.reset(id)));return;}
  const loaded=await store.load(id);let p=loaded.profile;
+ if(settleProfile(p,receivedAt))await store.save(id,p);
  if(req.method==='POST'){
  const now=Date.now();let rate=rates.get(id);if(!rate||rate.until<now){rate={count:0,until:now+3600000};rates.set(id,rate);}
- if(a==='new'){if(!['office','romance'].includes(req.body.mode))throw Error('모드를 선택하세요.');const version=p.game?Math.max(p.epoch,canonical(p.game).version)+1:p.epoch;p.game=start(req.body.mode,req.body.mission??0);p.game.dialogue=canonical(p.game);p.game.narrative=narrative(p.game);p.game.dialogue.version=version;p.epoch=version;p.requests=0;}
+ if(a==='new'){
+  if(!['office','romance'].includes(req.body.mode)||req.body.mode==='romance'&&req.body.setup!==undefined)throw Error('모드를 확인해 주세요.');
+  const version=p.game?Math.max(p.epoch,canonical(p.game).version)+1:p.epoch;
+  const setup=req.body.mode==='office'?readSetup(req.body.setup):undefined;
+  p.game=start(req.body.mode,req.body.mission??0,setup);p.game.dialogue=canonical(p.game);
+  p.game.narrative=narrative(p.game);p.game.dialogue.version=version;p.epoch=version;p.requests=0;
+ }
  else if(a==='provider'){if(!['offline','openai'].includes(req.body.provider))throw Error('제공자를 선택하세요.');p.provider=req.body.provider;p.providerSelectionVersion=2;}
  else if(a==='turn'){
  if(!p.game)throw Error('진행 중인 게임이 필요합니다.');
@@ -56,6 +70,7 @@ app.all('/api/:action',async(req,res)=>{
  const hash=createHash('sha256').update(JSON.stringify({text,choice,version,step:req.body.step})).digest('hex');
  const old=p.committed?.find(t=>t.id===requestId);if(old){if(old.hash!==hash){res.status(409).json({error:'동일 요청의 내용이 다릅니다. 현재 상태를 복구했습니다.',state:payload(p)});return;}if(old.afterVersion!==canonical(p.game).version){res.status(409).json({error:'이미 처리한 대화 이후 이야기가 진행됐습니다. 현재 상태를 복구했습니다. 새 대사를 입력하세요.',state:payload(p)});return;}res.json(payload(p));return;}
  if(++rate.count>300){res.status(429).json({error:'시간당 요청 한도입니다. 잠시 후 다시 시도하세요.'});return;}
+ if(p.game.officeMatch?.timedOut&&version===canonical(p.game).version&&req.body.step===p.game.step){res.json(payload(p));return;}
  if(p.game.ending)throw Error('이미 끝난 이야기입니다.');
  if(version!==canonical(p.game).version||req.body.step!==p.game.step){res.status(409).json({error:'다른 화면에서 이야기가 진행됐습니다. 현재 상태를 복구했습니다. 새 대사를 입력하세요.',state:payload(p)});return;}
  const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),30000);
@@ -70,6 +85,7 @@ app.all('/api/:action',async(req,res)=>{
  });
  if(controller.signal.aborted)throw Error('응답이 취소되었거나 시간이 초과되었습니다. 다시 시도하세요.');
  const reply=generated.reply;p.game=generated.game;
+ settleClock(p.game);
  p.epoch=canonical(p.game).version;
  const unlocks=p.game.ending&&!p.collection.includes(p.game.ending)?[p.game.ending]:[];
  if(p.game.ending&&!p.collection.includes(p.game.ending))p.collection.push(p.game.ending);
@@ -84,7 +100,7 @@ app.all('/api/:action',async(req,res)=>{
  }
  else if(a==='save'||a==='load'){const slot=req.body.slot;if(!Number.isInteger(slot)||slot<0||slot>2)throw Error('저장 칸이 올바르지 않습니다.');if(a==='save'){if(!p.game)throw Error('진행 중인 게임이 없습니다.');p.slots[slot]=structuredClone(p.game);}else{if(!p.slots[slot])throw Error('빈 저장 칸입니다.');p.game=structuredClone(p.slots[slot]);if(p.game){const d=canonical(p.game);d.version=Math.max(d.version,p.epoch)+1;p.epoch=d.version;p.game.dialogue=d;}}}
  else {res.status(404).json({error:'없는 기능입니다.'});return;}
- await store.save(id,p);
+ settleProfile(p);await store.save(id,p);
  }else if(req.method!=='GET'||a!=='state'){res.sendStatus(404);return;}
  res.json({...payload(p),...(loaded.recovery?{recovery:loaded.recovery}:{})});
  }catch(e){if(e instanceof ReplyRejectedError){res.status(400).json({error:rejectedReplyMessage,code:'reply_rejected',committed:false,canReset:false});return;}let message=e instanceof Error?e.message:'처리하지 못했습니다.';if(process.env.OPENAI_API_KEY&&message.includes(process.env.OPENAI_API_KEY))message='서버 요청에 실패했습니다. 다시 시도하세요.';res.status(e instanceof StorageError?503:400).json({error:message,canReset:e instanceof StorageError});}finally{locks.delete(id);}

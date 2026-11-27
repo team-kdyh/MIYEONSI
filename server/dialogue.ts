@@ -1,5 +1,6 @@
 import {finishBattle,validateBattleSpeech} from './battle-rules.ts';
 import {judgeBattle,type BattleJudgment} from './battle-evaluation.ts';
+import {bosses,rushScenes} from './office-match.ts';
 import {reconcile,validateNarrative,type NarrativeReply} from './narrative.ts';
 import {allowedIntents,manipulation} from './interpretation.ts';
 import {advanceRomance} from './romance.ts';
@@ -13,7 +14,14 @@ export type LedgerEntry={kind:'user_claim'|'character_conjecture'|'model_dialogu
 export type DialogueState={battleEvaluations?:BattleJudgment[];playerStatements?:{turn:number;text:string}[];version:number;facts:Fact[];ledger:LedgerEntry[];reply:string;actionBeats?:string[]};
 export type DialogueGame=Game&{dialogue?:DialogueState};
 export function canonical(g:DialogueGame):DialogueState {
- return g.dialogue??{version:0,facts:[{id:'scene-0',eventId:'start',version:0,confirmedAt:new Date().toISOString(),kind:'scene',text:sceneFor(g)?.text??'이야기가 끝났습니다.'}],ledger:[],reply:''};
+ if(g.dialogue)return g.dialogue;
+ const match=g.officeMatch;
+ let text=sceneFor(g)?.text??'이야기가 끝났습니다.';
+ if(match){
+  const mission=missionOf(g);
+  text=[mission.intro.replaceAll('박도현',bosses[match.setup.boss].name),mission.terms[0].objection,match.deadline?rushScenes[mission.id].trigger:'',match.opening].filter(Boolean).join('\n');
+ }
+ return {version:0,facts:[{id:'scene-0',eventId:'start',version:0,confirmedAt:new Date().toISOString(),kind:'scene',text}],ledger:[],reply:match?.opening??''};
 }
 export function context(g:DialogueGame,text:string){return {mode:g.mode,scene:sceneFor(g),canonical:canonical(g).facts,version:canonical(g).version,mission:g.mode==='office'?missionOf(g):undefined,agreement:g.office,relationship:g.romance,history:g.log.slice(-HISTORY_LIMIT),userClaim:text};}
 // Offline fallback only. Generated speech is untrusted and never becomes an event.
@@ -45,7 +53,8 @@ export function commitDialogue(game:DialogueGame,choice:number|null,text:string,
   d.ledger.push({kind:'user_claim',text,version},{kind:'model_dialogue',text:response.line,version,recallIds:response.recall});
   for(const e of accepted){const fact:Fact={id:e.id,eventId:e.id,version,confirmedAt:new Date().toISOString(),kind:e.kind==='clue'?'clue':e.kind==='relationship'?'relationship':e.kind==='resolution'?'ending':'scene',text:e.text};d.facts.push(fact);d.ledger.push({kind:'verified_event',text:e.text,version,eventId:e.id});}
   d.ledger=d.ledger.slice(-HISTORY_LIMIT*2);g.dialogue=d;
-  g.log.push({speaker:'당신',text},{speaker:g.mode==='office'?'박도현':'서유나',text:response.line});g.log=g.log.slice(-HISTORY_LIMIT);
+  g.log.push({speaker:'당신',text},{speaker:g.mode==='office'?bosses[g.officeMatch?.setup.boss??'park'].name:'서유나',text:response.line});g.log=g.log.slice(-HISTORY_LIMIT);
+  g.officeMatch?.exchanges.push({version,player:text,reply:response.line});
   finishBattle(g);
   return g;
  }

@@ -42,6 +42,10 @@ export const actorPoses:Record<Mode,Record<Pose,SpriteCell>>={
 export function spriteCell(mode:Mode,pose:string,legacyExpression=0):SpriteCell{
  return actorPoses[mode][pose as Pose]??cell(`${mode==='office'?'boss':'yuna'}-expressions`,Math.max(0,Math.min(3,legacyExpression)),pose);
 }
+export function yunSprite(pose:string):SpriteCell{
+ const column=['firm','watch','intense'].includes(pose)?1:['thinking','turn','shy','concern','surprised'].includes(pose)?2:['smile','offer','laugh','farewell'].includes(pose)?3:0;
+ return {sheet:'/assets/office/yun-seojin.webp',column,label:['서류를 들고 귀를 기울인다','팔짱을 끼고 바라본다','턱에 손을 얹고 생각한다','웃으며 손을 편다'][column]};
+}
 // Props in the art are literal. An abstract 'offer' must not conjure headphones
 // while the committed beat describes a paper boat or a cup instead.
 function withdrawnProp(action:string,prop:RegExp):boolean{

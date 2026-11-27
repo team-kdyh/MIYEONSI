@@ -1,0 +1,15 @@
+{
+  "asset": "yun-seojin.webp",
+  "tool": "OpenAI built-in image generation",
+  "prompt": "Use case: illustration-story. A production Korean visual novel sprite sheet on genuine transparent alpha. Wide horizontal canvas, FOUR equally sized columns, each contains exactly one half-to-mid-thigh length view of the SAME 45-year-old Korean woman department head, Yun Seojin. Sharp mature eyes, dark short side-parted bob, small gold earrings, deep teal tailored blazer over cream blouse, dark slacks. Drawn refined 2D Korean webtoon linework with subtle watercolor/cel shadows and warm Seoul evening light. Same scale and eye height, eye contact with viewer, head and hands fully inside each respective cell. Left to right: 1 listening attentively with document folder held against hip; 2 firmly folding arms and frowning; 3 fingertips against chin thinking; 4 relaxed pleased expression offering open hand. No titles, text, rules, dividers, shadows on ground or scene. Fill each quarter from above head to thighs, separate with transparent margins.",
+  "columns": [
+    "listen",
+    "firm",
+    "thinking",
+    "offer"
+  ],
+  "cellSize": [
+    666,
+    888
+  ]
+}

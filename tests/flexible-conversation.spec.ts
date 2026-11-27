@@ -9,7 +9,7 @@ for(const width of [1440,390])test(`flexible ${width}: one player submission sur
  await page.goto('/');await page.getByRole('button',{name:/칼퇴의 기술/}).click();await page.getByRole('button',{name:'이야기 시작'}).click();
   await expect(page.locator('#reply')).toBeVisible();
   const initial=await page.request.get('/api/state');expect(initial.status()).toBe(200);const before=(await initial.json()).game,callsBefore=(await readCalls()).length;
- const guide=page.getByRole('complementary',{name:'설득 배틀'});await expect(guide).toContainText('고객이 오늘 숫자를 기다린다');await expect(guide).not.toContainText(/지금의 목표|항목 합의/);
+ const guide=page.locator('.scene-label');await expect(page.locator('.battle-hud')).toHaveCount(0);await expect(guide).toContainText('칼퇴');await expect(guide).not.toContainText(/지금의 목표|항목 합의/);
  const first='네 선택지를 주세요';await page.locator('#reply').fill(first);const response=page.waitForResponse(r=>r.url().endsWith('/api/turn'));await page.locator('#reply').press('Enter');expect((await response).status()).toBe(200);
  await expect(page.locator('.text-ink')).toContainText('남은 표를 제가 맡는 방법');await expect(page.locator('#reply')).toHaveValue('');await expect(page.getByRole('alert')).toHaveCount(0);await expect(page.locator('.choices')).toHaveCount(0);
  let current=(await (await page.request.get('/api/state')).json()).game;expect(current.dialogue.version).toBe(before.dialogue.version+1);expect(current.narrative.location).toBe('office');expect(current.narrative.events.filter((e:any)=>e.kind==='concession')).toHaveLength(0);expect(current.log.filter((e:any)=>e.text===first)).toHaveLength(1);expect(JSON.stringify(current)).not.toContain('이미 퇴근한');

@@ -44,7 +44,7 @@ for(const mode of ['office','romance'] as const)for(const width of [1440,390])te
   // The office battle uses a larger portrait behind the bottom dialogue panel.
   // Preserve an unobstructed head/face; romance retains its existing full figure.
   expect(bounds!.y+bounds!.height*(mode==='office'?.3:.92)).toBeLessThan(panel!.y);
-  if(mode==='office'){const hud=await page.locator('.battle-hud').boundingBox();expect(hud!.y+hud!.height).toBeLessThan(bounds!.y+bounds!.height*.12);}
+  if(mode==='office')await expect(page.locator('.battle-hud')).toHaveCount(0);
   expect(bounds!.x).toBeGreaterThanOrEqual(0);expect(bounds!.x+bounds!.width).toBeLessThanOrEqual(width);
   const png=await readFile(`public${asset.sheet}`),sheetWidth=png.readUInt32BE(16),sheetHeight=png.readUInt32BE(20);
   const screenshot=`docs/qa-screenshots/v2-ac4-recheck/${mode}-${width}-${pose}.png`;

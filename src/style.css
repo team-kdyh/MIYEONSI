@@ -255,30 +255,12 @@ footer{font-size:8px;flex-wrap:wrap;padding:6px}
  .input-row input{padding:8px;font-size:16px}.input-row button{padding:8px}
  .reply-notice{font-size:10px;padding:4px 6px}.reply-notice button{font-size:10px;padding:3px 7px}
 }
-/* Committed battle state occupies its own compact top band. */
-.battle-hud{position:absolute;z-index:5;top:106px;left:4%;width:92%;padding:10px 16px;border:1px solid #bda2c54d;border-radius:10px;background:linear-gradient(110deg,#14101fe8,#261a2bd9);color:#f7ecf8}
-.battle-gauges{display:grid;grid-template-columns:1fr 1fr;gap:32px}
-.battle-gauge{position:relative;padding-bottom:18px}
-.battle-label{display:flex;justify-content:space-between;font-size:12px;margin-bottom:6px}
-.battle-label span{font-variant-numeric:tabular-nums;color:#e4d4e8}
-.battle-track{height:10px;overflow:hidden;border-radius:3px;background:#49364d}
-.battle-fill{height:100%;background:#75d7c1;transition:width .55s ease-out}
-.boss .battle-fill{background:#efad78}
-.battle-damage{position:absolute;right:0;bottom:0;font-size:11px;color:#deccdf}
-.battle-damage.is-hit{color:#ffbdab;font-weight:700;animation:battle-impact .55s ease-out}
-.battle-pressure,.battle-exchange{font-size:12px;line-height:1.5;margin:4px 0 0;overflow-wrap:anywhere}
-.battle-hud b{color:#e6bded;margin-right:6px}
-.battle-exchange{overflow-wrap:anywhere}
-.office .scene-label{top:260px}
-.office .sprite{top:31%;height:60%}
-.office .dialogue{max-height:calc(var(--game-height,100dvh) * .48 - 42px)}
-@keyframes battle-impact{from{transform:translateY(-5px);opacity:.3}to{transform:translateY(0);opacity:1}}
-@media(max-width:700px){
- .battle-hud{top:104px;left:10px;width:calc(100% - 20px);padding:10px 12px}
- .battle-gauges{gap:18px}.battle-label{font-size:10px}.battle-pressure,.battle-exchange{font-size:11px}
- .office .scene-label{top:242px}.office .sprite{top:29%;height:47%}
- .office .dialogue{max-height:calc(var(--game-height,100dvh) * .54 - 34px)}
-}
+.composer-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:3px}
+.composer-foot small{margin:0}
+.composer-foot .close-chat{padding:3px 7px;font:inherit;font-size:12px;color:#dfcedd;background:transparent;border:0;text-decoration:underline;text-underline-offset:3px}
+.office .dialogue{max-height:calc(var(--game-height,100dvh) * .55)}
+.office .scene-label{top:110px}
+.office .sprite{top:15%;height:min(64%,112vw)}
 
 .office-setup{display:grid;gap:15px}
 .office-setup fieldset{border:0;margin:0;padding:0;min-width:0}
@@ -302,7 +284,7 @@ summary{cursor:pointer}
 .office-match .scene-label{top:115px;max-width:min(37%,480px)}
 .office-match .scene-label h2{margin:0;color:#fff6ec;text-shadow:0 2px 12px #171020}
 .office-match .scene-label p{margin:5px 0 0;font-size:12px;line-height:1.6;color:#fff1dc;text-shadow:0 1px 4px #000}
-.office-match .battle-hud{top:195px;left:4%;width:min(35%,475px);border-color:#e7c9a038;border-left:2px solid #e8c6a3;background:linear-gradient(110deg,#211c29eb,#302638d9);backdrop-filter:blur(6px)}
+
 .office-match .sprite{left:64%;top:12%;height:65%}
 .office-match .dialogue{max-height:calc(var(--game-height,100dvh) * .52);min-height:0;border-radius:13px;background:linear-gradient(115deg,#191722f5,#2c2532eb)}
 .stage-thread{max-height:clamp(42px,9dvh,86px);flex:none;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#907d88 transparent;display:flex;flex-direction:column;gap:5px;margin-bottom:9px;padding-right:4px;font-size:12px;line-height:1.5;overflow-wrap:anywhere}
@@ -329,19 +311,19 @@ summary{cursor:pointer}
  .office-match .match-clock{padding:4px 8px}.match-clock strong{font-size:15px}
  .office-match .scene-label{top:99px;left:12px;max-width:calc(100% - 24px)}
  .office-match .scene-label h2{font-size:14px}.office-match .scene-label p{font-size:10px}
- .office-match .battle-hud{top:150px;left:10px;width:calc(100% - 20px);padding:7px 10px}
- .office-match .battle-gauge{padding-bottom:12px}.office-match .battle-damage{font-size:9px}
- .office-match .battle-pressure,.office-match .battle-exchange{margin-top:2px;line-height:1.4}
- .office-match .sprite{left:52%;top:30%;height:46%}
+
+
+
+ .office-match .sprite{left:52%;top:19%;height:min(58%,110vw)}
  .office-match .dialogue{max-height:calc(var(--game-height,100dvh) * .48);padding:12px 14px}
  .style-picks,.setup-fields{gap:8px}
 }
 @media(max-height:620px) and (min-width:701px){
- .office-match .scene-label{display:none}.office-match .battle-hud{top:102px;width:34%}
+ .office-match .scene-label{display:none}
  .office-match .sprite{left:52%;top:20%;height:63%}
  .office-match .dialogue{max-height:calc(var(--game-height,100dvh) - 105px)}
 }
 @media(max-height:650px) and (max-width:700px){
- .office-match .scene-label{display:none}.office-match .battle-hud{top:95px}
- .office-match .sprite{top:28%}.office-match .dialogue{max-height:calc(var(--game-height,100dvh) - 225px)}
+ .office-match .scene-label{display:none}
+ .office-match .sprite{top:16%}.office-match .dialogue{max-height:calc(var(--game-height,100dvh) - 225px)}
 }

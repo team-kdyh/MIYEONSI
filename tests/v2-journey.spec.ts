@@ -13,7 +13,7 @@ test('free text UI cancels and retries one request, earns an office ending, and 
  await expect(page.locator('.choices button')).toHaveCount(0);
  const initial=await (await page.request.get('/api/state')).json();
  expect(initial.provider).toBe('openai');
- await expect(page.getByRole('complementary',{name:'설득 배틀'})).toContainText('고객이 오늘 숫자를 기다린다');
+ await expect(page.getByRole('meter')).toHaveCount(0);
 
  // Cancel before the first request reaches the server, then click the real retry UI.
  let release!:()=>void;
@@ -34,7 +34,7 @@ test('free text UI cancels and retries one request, earns an office ending, and 
  expect(state.game.dialogue.version).toBe(initial.game.dialogue.version+1);
  expect(state.game.ending).toBeNull();
  expect(state.game.narrative.events.some((event:any)=>event.kind==='concession'&&event.value==='leave')).toBe(true);
- await expect(page.getByRole('meter',{name:'부장 버티기'})).toHaveAttribute('aria-valuenow','88');
+ expect(state.game.battle.boss).toBe(88);
  await expect(page.locator('#reply')).toHaveValue('');
  expect(await page.evaluate(()=>sessionStorage.getItem('afterhours-pending'))).toBeNull();
 
@@ -43,7 +43,7 @@ test('free text UI cancels and retries one request, earns an office ending, and 
   const response=page.waitForResponse(result=>result.url().endsWith('/api/turn'));
   await page.getByRole('button',{name:/전송/}).click();
   const result=await response;expect(result.status()).toBe(200);state=await result.json();
-  await expect(page.getByRole('meter',{name:'부장 버티기'})).toHaveAttribute('aria-valuenow',String(state.game.battle.boss));
+  expect(state.game.battle.boss).toBeLessThan(88);
  }
  expect(requests).toHaveLength(6);expect(requests.every(body=>!('choice' in body))).toBe(true);
  expect(state.game.ending).toBe('office-clockout-success');

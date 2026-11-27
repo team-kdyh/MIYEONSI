@@ -33,12 +33,14 @@ for(const width of [390,1366])test(`chat, profile, timeout report and retry on $
  await expect(page.locator('.chat-history')).toContainText('급한 숫자');
  await page.getByRole('button',{name:'닫기'}).click();
  const count=calls().length;
- setTime(deadline+1);await page.clock.fastForward(181000);
+ await page.clock.fastForward(151000);
+ await expect(page.locator('audio[data-track="office-deadline"]')).toHaveAttribute('src','/assets/office-score/last-shuttle.ogg');
+ setTime(deadline+1);await page.clock.fastForward(30000);
  await expect(page.getByRole('button',{name:'협상 리포트 보기'})).toBeVisible();
  await page.getByRole('button',{name:'협상 리포트 보기'}).click();
  await expect(page.getByRole('heading',{name:/협상 리포트 · 시간 초과/})).toBeVisible();
  await expect(page.locator('.report-detail')).toContainText('셔틀 문이 닫혔다');
- await page.getByText('대화별 피드백').click();await expect(page.locator('.chat-history')).toContainText('게이지가 움직이지 않았습니다');
+ await page.getByText('대화별 피드백').click();await expect(page.locator('.chat-history')).toContainText('서로의 말을 듣고 상황을 살폈습니다');
  expect(calls().length).toBe(count);
  await page.getByRole('button',{name:'닫기'}).click();
  const [retry]=await Promise.all([page.waitForResponse('**/api/new'),page.getByRole('button',{name:'이 미션 다시 도전'}).click()]);
@@ -78,4 +80,36 @@ test('clock survives loads, rejects late turns and honours an on-time winning re
  const loss=await post('turn',unfinished);
  expect(loss.game.review.verdict).toBe('시간 초과');expect(loss.game.review.turns[0].player).toBe(unfinished.text);
  expect(loss.game.battle.boss).toBe(100);expect(await post('turn',unfinished)).toEqual(loss);
+});
+
+test('closing from chat or the stage opens a lasting report and never resends a goodbye',async({page})=>{
+ await page.goto('/');await page.getByRole('button',{name:/칼퇴의 기술/}).click();
+ await page.getByRole('button',{name:/이야기 시작/}).click();
+ await expect(page.locator('.battle-hud')).toHaveCount(0);
+ await expect(page.locator('audio[data-track="office-groove"]')).toHaveAttribute('src','/assets/office-score/corner-desk.ogg');
+ const send=async(text:string)=>{
+  await page.locator('#reply').fill(text);
+  const [response]=await Promise.all([page.waitForResponse('**/api/turn'),page.locator('#reply').press('Enter')]);
+  expect(response.ok()).toBeTruthy();
+  return {game:(await response.json()).game,body:response.request().postDataJSON()};
+ };
+ await send('어떤 방법이 있을까요?');const count=calls().length;
+ const finished=await send('그럼 가보겠습니다.');
+ expect(finished.game.review.verdict).toBe('대화 마침');expect(finished.game.review.turns).toHaveLength(2);
+ const replay=await (await page.request.post('/api/turn',{data:finished.body})).json();
+ expect(replay.game).toEqual(finished.game);expect(calls().length).toBe(count);
+ await expect(page.locator('audio[data-track="office-reflection"]')).toHaveAttribute('src','/assets/office-score/empty-platform.ogg');
+ await page.reload();await page.getByRole('button',{name:/이어하기/}).click();await page.getByRole('button',{name:'협상 리포트 보기'}).click();
+ await expect(page.getByRole('heading',{name:'협상 리포트 · 대화 마침'})).toBeVisible();
+ await page.getByRole('button',{name:'닫기'}).click();
+ await page.getByRole('button',{name:'이 미션 다시 도전'}).click();
+ await send('숫자는 보냈고 보고서는 내일 드릴게요.');
+ await expect(page.locator('.text-ink')).toContainText('오늘은 퇴근하세요');
+ await expect(page.locator('audio[data-track="office-homebound"]')).toHaveAttribute('src','/assets/office-score/green-light.ogg');
+ await page.getByRole('button',{name:'이 미션 다시 도전'}).click();
+ const finish=page.getByRole('button',{name:'대화 마치기'});await page.locator('#reply').fill('할 말이 남았어요.');
+ page.once('dialog',d=>d.dismiss());await finish.click();
+ await expect(page.locator('#reply')).toHaveValue('할 말이 남았어요.');
+ page.once('dialog',d=>d.accept());await finish.click();
+ await expect(page.getByRole('button',{name:'협상 리포트 보기'})).toBeVisible();
 });

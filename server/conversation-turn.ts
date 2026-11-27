@@ -1,4 +1,5 @@
-import {commitDialogue,type DialogueGame,type Reply} from './dialogue.ts';
+import {isOfficeFarewell} from './office-closing.ts';
+import {commitDialogue,commitOfficeFarewell,type DialogueGame,type Reply} from './dialogue.ts';
 import {respond,type Provider,type RepairContext} from './provider.ts';
 import {ReplyRejectedError} from './reply-error.ts';
 
@@ -11,6 +12,8 @@ function droppedChangesWithoutRewriting(draft:any,reply:Reply){
 }
 /** A rejected draft is never a turn. Re-author once from the original input and unchanged state. */
 export async function conversationTurn(game:DialogueGame,text:string,requestId:string,provider:Provider,signal:AbortSignal,reserve:(attempt:number)=>Promise<void>,fetcher:typeof fetch=fetch){
+ signal.throwIfAborted();
+ if(!game.ending&&game.mode==='office'&&isOfficeFarewell(text))return commitOfficeFarewell(game,text);
  let repair:RepairContext|undefined;
  for(let attempt=0;attempt<MAX_GENERATION_ATTEMPTS;attempt++){
   signal.throwIfAborted();

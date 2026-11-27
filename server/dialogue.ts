@@ -1,3 +1,4 @@
+import {finishOfficeReply,finishOfficeConversation} from './office-closing.ts';
 import {finishBattle,validateBattleSpeech} from './battle-rules.ts';
 import {judgeBattle,type BattleJudgment} from './battle-evaluation.ts';
 import {bosses,rushScenes} from './office-match.ts';
@@ -42,6 +43,20 @@ export function validateReply(value:unknown,g:DialogueGame):Reply {
  if(!r||typeof r!=='object'||!['conjecture,line,recall','conjecture,intent,line,recall'].includes(Object.keys(r).sort().join(','))||r.intent!==undefined&&!['none',...allowedIntents(g).map(i=>i.id)].includes(r.intent)||!(typeof r.line==='string'&&r.line.trim().length>0&&r.line.length<=600)||!Array.isArray(r.recall)||r.recall.length>2||r.recall.some(id=>!canonical(g).facts.some(f=>f.id===id))||!['','아직 당신의 뜻을 다 이해하지 못한 것 같습니다.'].includes(r.conjecture))throw Error('AI 응답이 장면 또는 정본 검증을 통과하지 못했습니다. 다시 시도하거나 오프라인으로 전환하세요.');
  return r;
 }
+function rememberPlayer(d:DialogueState,text:string,version:number){
+ const history=d.playerStatements??d.ledger.filter(e=>e.kind==='user_claim').map(e=>({turn:e.version,text:e.text}));
+ d.playerStatements=[...history,{turn:version,text}].slice(-100);
+}
+export function commitOfficeFarewell(game:DialogueGame,text:string){
+ const g=structuredClone(game),d=g.dialogue=structuredClone(canonical(g));
+ const version=++d.version;
+ rememberPlayer(d,text,version);
+ d.ledger.push({kind:'user_claim',text,version});d.ledger=d.ledger.slice(-HISTORY_LIMIT*2);
+ g.log.push({speaker:'당신',text});g.log=g.log.slice(-HISTORY_LIMIT);
+ g.officeMatch?.exchanges.push({player:text,reply:'',version});
+ finishOfficeConversation(g);
+ return {game:g,reply:{line:g.log.at(-1)!.text,recall:[],conjecture:''},attempts:0};
+}
 export function commitDialogue(game:DialogueGame,choice:number|null,text:string,response:Reply,requestId?:string):DialogueGame {
  if(game.ending)throw Error('이미 끝난 미션입니다.');
  if('events' in response){
@@ -49,13 +64,14 @@ export function commitDialogue(game:DialogueGame,choice:number|null,text:string,
   const before=canonical(game),version=before.version+1;
   const {game:next,accepted}=reconcile(game,text,response,requestId);const g:DialogueGame=next;
   const judgment=judgeBattle(game,text,response,accepted);
-  const d=structuredClone(before);if(judgment)d.battleEvaluations=[...(before.battleEvaluations??[]),judgment];d.version=version;d.playerStatements=[...(before.playerStatements??before.ledger.filter(e=>e.kind==='user_claim').map(e=>({turn:e.version,text:e.text}))),{turn:version,text}].slice(-100);d.reply=response.line;d.actionBeats=response.actionBeats;
+  const d=structuredClone(before);if(judgment)d.battleEvaluations=[...(before.battleEvaluations??[]),judgment];d.version=version;rememberPlayer(d,text,version);d.reply=response.line;d.actionBeats=response.actionBeats;
   d.ledger.push({kind:'user_claim',text,version},{kind:'model_dialogue',text:response.line,version,recallIds:response.recall});
   for(const e of accepted){const fact:Fact={id:e.id,eventId:e.id,version,confirmedAt:new Date().toISOString(),kind:e.kind==='clue'?'clue':e.kind==='relationship'?'relationship':e.kind==='resolution'?'ending':'scene',text:e.text};d.facts.push(fact);d.ledger.push({kind:'verified_event',text:e.text,version,eventId:e.id});}
   d.ledger=d.ledger.slice(-HISTORY_LIMIT*2);g.dialogue=d;
   g.log.push({speaker:'당신',text},{speaker:g.mode==='office'?bosses[g.officeMatch?.setup.boss??'park'].name:'서유나',text:response.line});g.log=g.log.slice(-HISTORY_LIMIT);
   g.officeMatch?.exchanges.push({version,player:text,reply:response.line});
   finishBattle(g);
+  finishOfficeReply(g,response,accepted);
   return g;
  }
  validateReply(response,game);

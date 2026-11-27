@@ -2,7 +2,7 @@ type Ending={id:string;title:string;text:string};
 
 /** Battle win/loss are discoverable; retain old partial endings only when unlocked. */
 export function collectionCatalogue<T extends Ending>(groups:Record<string,T[]>,unlocked:string[]){
- return Object.fromEntries(Object.entries(groups).map(([mode,items])=>[mode,items.filter(item=>!/^office-.+-partial$/.test(item.id)||unlocked.includes(item.id))]));
+ return Object.fromEntries(Object.entries(groups).map(([mode,items])=>[mode,items.filter(item=>!/^office-.+-(partial|closed|agreed)$/.test(item.id)||unlocked.includes(item.id))]));
 }
 
 /** Gallery themes must not invent the old script's specific events in a new AI story. */

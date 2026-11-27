@@ -24,7 +24,7 @@ export function OfficeSetupForm({mission,setup,onMission,onSetup}:{mission:numbe
    <label>내 직무<input maxLength={36} value={setup.role} onChange={e=>change('role',e.target.value)}/></label>
    <label>내 성별<select value={setup.gender} onChange={e=>change('gender',e.target.value as OfficeSetup['gender'])}>{['미설정','여성','남성','논바이너리'].map(s=><option key={s}>{s}</option>)}</select></label>
   </div></details>
-  <p className="setup-rules">새 근거나 대안으로 부장 버티기를 0까지 낮추세요. 압박을 받으면 내 여유가 줄고, 반박에 성공하면 회복할 수 있어요.{setup.style==='rush'&&' 시작부터 실제 시간이 흐릅니다. 종료 전에 보낸 마지막 대사까지 판정합니다.'}</p>
+  <p className="setup-rules">원하는 조건을 말하고 부장의 반응을 살펴보세요. 이야기를 마칠 때는 인사를 건네거나 ‘대화 마치기’를 누르세요.{setup.style==='rush'&&' 시작부터 실제 시간이 흐릅니다. 종료 전에 보낸 마지막 대사까지 판정합니다.'}</p>
  </div>;
 }
 
@@ -45,7 +45,7 @@ export function MatchClock({deadline,offset,busy,onExpiry}:{deadline:number;offs
 }
 export function OfficeTranscript({match,review}:{match:OfficeMatch;review?:OfficeReview|null}){
  const name=bosses[match.setup.boss].name;
- return <div className="chat-history"><div className="chat-post"><strong>{name}</strong><p>{match.opening}</p></div>{match.exchanges.map((t,i)=><div className="chat-pair" key={t.version}><div className="chat-post mine"><strong>나</strong><p>{t.player}</p></div><div className="chat-post"><strong>{name}</strong><p>{t.reply}</p></div>{review&&<small>{i+1}번째 대화 · {review.turns[i]?.note}</small>}</div>)}</div>;
+ return <div className="chat-history"><div className="chat-post"><strong>{name}</strong><p>{match.opening}</p></div>{match.exchanges.map((t,i)=><div className="chat-pair" key={t.version}><div className="chat-post mine"><strong>나</strong><p>{t.player}</p></div>{t.reply&&<div className="chat-post"><strong>{name}</strong><p>{t.reply}</p></div>}{review&&<small>{i+1}번째 대화 · {review.turns[i]?.note}</small>}</div>)}</div>;
 }
 /** Scrollback is optional. The current reply and composer stay outside it. */
 export function StageThread({match,outgoing}:{match:OfficeMatch;outgoing?:string}){
@@ -62,6 +62,6 @@ export function ReportDetail({review}:{review:OfficeReview}){
  return <div className="report-detail"><p>{review.reason}</p><p>{timeLabel(review.elapsedSeconds)} 진행 · {review.turns.length}번의 대화</p>
  {review.best&&<section><h3>흐름을 바꾼 한마디</h3><blockquote>{review.best.player}</blockquote><p>{review.best.note}</p></section>}
  {review.pressured&&<section><h3>가장 거셌던 압박</h3><blockquote>{review.pressured.reply}</blockquote><p>{review.pressured.note}</p></section>}
- {!review.best&&!review.pressured&&<p>{review.turns.length?'이번 대화에서는 서로의 게이지가 움직이지 않았습니다.':'마감 전에 주고받은 대사가 없습니다.'}</p>}
+ {!review.best&&!review.pressured&&<p>{review.turns.length?'주고받은 말은 아래 대화 기록에서 다시 읽을 수 있어요.':'마감 전에 주고받은 대사가 없습니다.'}</p>}
  </div>;
 }

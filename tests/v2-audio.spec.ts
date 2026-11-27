@@ -3,12 +3,13 @@ import {readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {start,view,endings} from '../server/game';
 import {narrative,reconcile,type EventProposal,type NarrativeReply} from '../server/narrative';
-import {musicIds} from '../src/music';
+import {moods} from '../server/narrative';
+import {musicAsset} from '../src/music';
 
 test('all eight shipped compositions decode, match provenance and have non-silent distinct waveforms',async({page})=>{
  await page.goto('/');
  const manifest=JSON.parse(await readFile('public/assets/audio-v2/manifest.json','utf8'));
- expect(manifest.tracks.map((t:any)=>t.id).sort()).toEqual([...musicIds].sort());
+ expect(manifest.tracks.map((t:any)=>t.id).sort()).toEqual([...moods].sort());
  const rows=[];
  for(const track of manifest.tracks){
   expect(createHash('sha256').update(await readFile(`public/assets/audio-v2/${track.file}`)).digest('hex')).toBe(track.sha256);
@@ -25,6 +26,24 @@ test('all eight shipped compositions decode, match provenance and have non-silen
  await writeFile('docs/v2-audio-waveforms.json',JSON.stringify({scope:'Chromium decoded shipped OGG; not human listening approval',tracks:rows},null,2));
  const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="760" viewBox="0 0 1000 760"><rect width="1000" height="760" fill="#111827"/><text x="24" y="30" fill="white" font-size="20">AFTER HOURS — decoded RMS envelopes (64 blocks per track)</text>${rows.map((r,j)=>`<text x="24" y="${70+j*85}" fill="white" font-size="16">${r.id} · ${r.duration.toFixed(2)}s · ${r.bpm} BPM · ${r.meter}</text>${r.blocks.map((v:number,i:number)=>`<rect x="${24+i*14.7}" y="${112+j*85-v*220}" width="12" height="${v*220}" fill="#c4b5fd"/>`).join('')}`).join('')}</svg>`;
  await writeFile('docs/v2-audio-waveforms.svg',svg);
+});
+
+test('all five new office selections load distinct stereo music with audible headroom',async({page})=>{
+ await page.goto('/');
+ const files=(['office-groove','office-pressure','office-deadline','office-homebound','office-reflection'] as const).map(musicAsset);
+ expect(new Set(files).size).toBe(5);
+ for(const file of files){
+  const stats=await page.evaluate(async url=>{
+   const ctx=new AudioContext();
+   try{
+    const asset=await fetch(url);if(!asset.ok)throw Error(url);
+    const audio=await ctx.decodeAudioData(await asset.arrayBuffer()),samples=audio.getChannelData(0);
+    let sum=0,peak=0;for(const s of samples){sum+=s*s;peak=Math.max(peak,Math.abs(s));}
+    return {seconds:audio.duration,channels:audio.numberOfChannels,rms:Math.sqrt(sum/samples.length),peak};
+   }finally{await ctx.close();}
+  },file);
+  expect(stats.seconds).toBeGreaterThan(28);expect(stats.channels).toBe(2);expect(stats.rms).toBeGreaterThan(.07);expect(stats.peak).toBeLessThan(1);
+ }
 });
 
 for(const mode of ['office','romance'] as const)test(`${mode}: normal validated conversation path with real playback and crossfades`,async({page})=>{
@@ -92,7 +111,7 @@ for(const mode of ['office','romance'] as const)test(`${mode}: normal validated 
 test('autoplay rejection shows a visible gesture retry and recovers real playback',async({page})=>{
  await page.addInitScript(()=>{
   const original=HTMLMediaElement.prototype.play;let rejected=false;
-  HTMLMediaElement.prototype.play=function(){if(this.src.includes('audio-v2')&&!rejected){rejected=true;return Promise.reject(new DOMException('Gesture required','NotAllowedError'));}return original.call(this);};
+  HTMLMediaElement.prototype.play=function(){if(/\/assets\/(?:audio-v2|office-score)\//.test(this.src)&&!rejected){rejected=true;return Promise.reject(new DOMException('Gesture required','NotAllowedError'));}return original.call(this);};
  });
  const g=start('office');g.narrative=narrative(g);
  await page.route('**/api/**',route=>route.fulfill({json:{game:{...view(g),dialogue:{version:0,reply:'잠깐 이야기합시다.'}},provider:'offline',slots:[null,null,null],collection:[],endings}}));

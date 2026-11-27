@@ -13,7 +13,10 @@ export const stories:Record<Mode,Scene[]> = {
 
 };
 export const endings = {
- office:officeEndings,
+ office:[...officeEndings,...missions.flatMap(m=>[
+  {id:`office-${m.id}-closed`,title:`${m.title} · 대화 마침`,text:'플레이어가 먼저 협상을 마쳤습니다.'},
+  {id:`office-${m.id}-agreed`,title:`${m.title} · 합의로 마무리`,text:'대화 중 정한 조건으로 협상을 마쳤습니다.'},
+ ])],
  romance:romanceEndings
 };
 export type Game = {narrative?:NarrativeState;mode:Mode; step:number; scores:number[]; log:{speaker:string;text:string}[]; ending:string|null; office?:MissionAgreement; officeMatch?:OfficeMatch; romance?:RomanceState};
@@ -33,4 +36,4 @@ export function advance(game:Game, choice:number, text=''):Game {
  if(game.mode==='office')return advanceOffice(game,choice,text);
  return advanceRomance(game,choice,text);
 }
-export function view(game:Game|null){if(!game)return null;return {...game,scores:undefined,battle:battleView(game),...(game.officeMatch&&game.ending?{review:officeReview(game)}:{}),storyGuide:storyGuide(game),scene:game.ending?null:sceneFor(game),end:game.narrative&&game.ending?{id:game.ending,title:endings[game.mode].find(e=>e.id===game.ending)?.title??'이야기의 끝',text:game.log.at(-1)?.text??''}:game.mode==='office'?officeEnd(game):game.ending?endings[game.mode].find(e=>e.id===game.ending):null};}
+export function view(game:Game|null){if(!game)return null;return {...game,scores:undefined,battle:battleView(game),...(game.officeMatch&&game.ending?{review:officeReview(game)}:{}),storyGuide:storyGuide(game),scene:game.ending?null:sceneFor(game),end:game.ending&&(game.narrative||game.log.at(-1)?.speaker==='협상 결과')?{id:game.ending,title:endings[game.mode].find(e=>e.id===game.ending)?.title??'이야기의 끝',text:game.log.at(-1)?.text??''}:game.mode==='office'?officeEnd(game):game.ending?endings[game.mode].find(e=>e.id===game.ending):null};}

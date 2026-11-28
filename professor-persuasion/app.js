@@ -1,4 +1,4 @@
-import { DIFFICULTIES, SCENARIOS, clamp, decayTrust, scoreFor, analyzeExcuse, isDuplicate, evaluate, outcomeScreen, nextScenario } from './logic.js';
+import { DIFFICULTIES, SCENARIOS, ACCEPTANCE_GOAL, clamp, decayTrust, scoreFor, analyzeExcuse, isDuplicate, evaluate, outcomeScreen, nextScenario } from './logic.js';
 
 const root = document.querySelector('#app');
 let game = { screen: 'home' };
@@ -8,7 +8,7 @@ const reset = () => { game = { screen: 'home' }; render(); };
 document.querySelector('#restart').addEventListener('click', reset);
 
 function begin(difficulty) {
-  game = { screen: 'scenario', difficulty, scenario: SCENARIOS[Math.floor(Math.random() * SCENARIOS.length)], trust: 70, risk: null, suspicious: false, pendingExcuse: null, attempts: [], excuses: [], messages: [], attemptNumber: 1, lastResult: null };
+  game = { screen: 'scenario', difficulty, scenario: SCENARIOS[Math.floor(Math.random() * SCENARIOS.length)], trust: 70, acceptedCount: 0, risk: null, suspicious: false, pendingExcuse: null, attempts: [], excuses: [], messages: [], attemptNumber: 1, lastResult: null };
   lastTick = performance.now(); render();
 }
 function say(text) { game.messages.push({ speaker: 'professor', text }); }
@@ -17,11 +17,12 @@ function finish(success, reason) {
   const suspicious = game.suspicious;
   const delta = scoreFor(game.difficulty, game.risk, success, suspicious);
   game.trust = clamp(game.trust + delta);
+  if (success) game.acceptedCount += 1;
   game.attempts.push({ number: game.attemptNumber, risk: game.risk, success, delta });
   if (game.pendingExcuse) game.excuses.push(game.pendingExcuse);
   game.lastResult = { success, delta, reason, suspicious };
   game.pendingExcuse = null; game.suspicious = false;
-  game.screen = outcomeScreen(success, game.trust);
+  game.screen = outcomeScreen(success, game.trust, game.acceptedCount);
   if (game.screen !== 'conversation') game.risk = null;
   render();
   if (game.screen === 'conversation') {
@@ -61,12 +62,12 @@ function submit(event) {
   finish(result.success, result.success ? '설명을 받아들였습니다.' : '설득에 실패했습니다.');
 }
 function trustPanel() {
-  return `<div class="trust-panel"><div class="trust-heading"><span>교수님의 신뢰도</span><strong id="trust-value">${Math.ceil(game.trust)}</strong></div><div class="trust-track"><div id="trust-fill" class="trust-fill" style="width:${game.trust}%"></div></div><div class="trust-detail"><span>${game.suspicious ? '의심 단계 · 감소 2배' : '시간에 따라 계속 감소'}</span><span>${DIFFICULTIES[game.difficulty].decay * (game.suspicious ? 2 : 1)}점/초</span></div></div>`;
+  return `<div class="trust-panel"><div class="trust-heading"><span>교수님의 신뢰도</span><strong id="trust-value">${Math.ceil(game.trust)}</strong></div><div class="trust-track"><div id="trust-fill" class="trust-fill" style="width:${game.trust}%"></div></div><div class="trust-detail"><span>${game.suspicious ? '의심 단계 · 감소 2배' : '시간에 따라 계속 감소'}</span><span>${DIFFICULTIES[game.difficulty].decay * (game.suspicious ? 2 : 1)}점/초</span></div><div class="acceptance-row"><span>교수님 납득</span><strong>${game.acceptedCount} / ${ACCEPTANCE_GOAL}</strong></div></div>`;
 }
 function art() { return `<div class="art" aria-hidden="true"><div class="window"></div><div class="board"><span>OFFICE HOURS</span><i></i><i></i><i></i></div><div class="person"><div class="head"></div><div class="torso"></div></div><div class="desk"></div><div class="lamp"></div></div>`; }
 function layout(left, right) { root.innerHTML = `<section class="stage"><div class="stage-main">${left}</div><aside class="stage-side">${right}</aside></section>`; }
 function renderHome() {
-  root.innerHTML = `<section class="home"><div class="home-copy"><div class="eyebrow">INTERACTIVE CONVERSATION GAME</div><h1>한 문장에<br><em>신뢰가 걸렸다.</em></h1><p>교수님 앞에서 당신의 사정을 설명하세요. 시간이 흐를수록 신뢰도는 줄어듭니다. 0이 되기 전에 100까지 회복하면 승리합니다.</p><div class="home-actions"><button id="play" class="button primary">게임 시작</button><span>브라우저에서 바로 플레이</span></div><div class="notice"><strong>시제품 안내</strong><span>현재 교수님 대사와 판정은 규칙 기반입니다. 실제 AI API는 연결되어 있지 않습니다.</span></div></div>${art()}</section>`;
+  root.innerHTML = `<section class="home"><div class="home-copy"><div class="eyebrow">INTERACTIVE CONVERSATION GAME</div><h1>한 문장에<br><em>신뢰가 걸렸다.</em></h1><p>교수님 앞에서 당신의 사정을 설명하세요. 신뢰도 100을 채우거나 교수님을 ${ACCEPTANCE_GOAL}번 납득시키면 승리합니다. 신뢰도 0에는 패배합니다.</p><div class="home-actions"><button id="play" class="button primary">게임 시작</button><span>브라우저에서 바로 플레이</span></div><div class="notice"><strong>시제품 안내</strong><span>현재 교수님 대사와 판정은 규칙 기반입니다. 실제 AI API는 연결되어 있지 않습니다.</span></div></div>${art()}</section>`;
   document.querySelector('#play').addEventListener('click', () => { game.screen = 'difficulty'; render(); });
 }
 function renderDifficulty() {
@@ -75,7 +76,7 @@ function renderDifficulty() {
   document.querySelector('#back').addEventListener('click', reset);
 }
 function renderScenario() {
-  layout(`<div class="eyebrow">오늘의 상황 · ${html(game.scenario.label)}</div><h1>${html(game.scenario.title)}</h1><p class="lead">${html(game.scenario.context)}</p><div class="quote"><span>교수님</span><p>“${html(game.scenario.question)}”</p></div><button id="continue" class="button primary">교수님께 답하기</button>`, `${trustPanel()}<div class="tip"><span>목표</span><strong>신뢰도 100</strong><p>설득에 성공하면 신뢰도가 오르고, 실패하거나 시간이 지나면 줄어듭니다.</p></div>`);
+  layout(`<div class="eyebrow">오늘의 상황 · ${html(game.scenario.label)}</div><h1>${html(game.scenario.title)}</h1><p class="lead">${html(game.scenario.context)}</p><div class="quote"><span>교수님</span><p>“${html(game.scenario.question)}”</p></div><button id="continue" class="button primary">교수님께 답하기</button>`, `${trustPanel()}<div class="tip"><span>승리 목표</span><strong>신뢰도 100 또는 납득 ${ACCEPTANCE_GOAL}회</strong><p>둘 중 하나를 먼저 달성하면 승리합니다. 신뢰도가 0이 되면 패배합니다.</p></div>`);
   document.querySelector('#continue').addEventListener('click', () => { game.messages.push({ speaker: 'professor', text: game.scenario.question }); game.screen = 'risk'; render(); });
 }
 function renderRisk() {
@@ -97,7 +98,8 @@ function renderResult() {
 }
 function renderEnd() {
   const won = game.screen === 'win';
-  root.innerHTML = `<section class="center ending"><div class="eyebrow">${won ? 'MISSION COMPLETE' : 'GAME OVER'}</div><div class="ending-icon">${won ? '✦' : '⌛'}</div><h1>${won ? '신뢰를 되찾았습니다' : '신뢰를 잃었습니다'}</h1><p class="lead">${won ? '교수님이 당신의 설명을 받아들였습니다.' : '시간이 다해 더 이상 설득할 수 없습니다.'}</p><div class="metrics"><div><span>최종 신뢰도</span><strong>${won ? 100 : 0}</strong></div><div><span>설득 시도</span><strong>${game.attempts.length}회</strong></div><div><span>난이도</span><strong>${DIFFICULTIES[game.difficulty].label}</strong></div></div><button id="again" class="button primary">다시 시작</button></section>`;
+  const winReason = game.trust >= 100 ? '신뢰도 100을 달성했습니다.' : `교수님을 ${ACCEPTANCE_GOAL}번 납득시켰습니다.`;
+  root.innerHTML = `<section class="center ending"><div class="eyebrow">${won ? 'MISSION COMPLETE' : 'GAME OVER'}</div><div class="ending-icon">${won ? '✦' : '⌛'}</div><h1>${won ? '교수님을 설득했습니다' : '신뢰를 잃었습니다'}</h1><p class="lead">${won ? winReason : '시간이 다해 더 이상 설득할 수 없습니다.'}</p><div class="metrics"><div><span>최종 신뢰도</span><strong>${Math.ceil(game.trust)}</strong></div><div><span>납득 횟수</span><strong>${game.acceptedCount} / ${ACCEPTANCE_GOAL}</strong></div><div><span>설득 시도</span><strong>${game.attempts.length}회</strong></div></div><button id="again" class="button primary">다시 시작</button></section>`;
   document.querySelector('#again').addEventListener('click', reset);
 }
 function render() {

@@ -4,6 +4,8 @@
 
 난이도 선택, 상황 제시, LOW/HIGH RISK 선택, 대화, 의심 단계, 시간에 따른 신뢰도 감소, 승패, Run 내 중복 확인을 포함합니다. 교수님 대사와 판정은 현재 규칙 기반입니다. 실제 AI API 및 서버 연결은 추후 작업입니다.
 
+승리 조건: 신뢰도 100 또는 교수님 납득 3회. 실패 조건: 신뢰도 0.
+
 검증: `node --test test.mjs`
 
 실행 중인 공개 시제품: https://professor-persuasion-20261121.team-huhustudio.chatgpt.site

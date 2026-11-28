@@ -8,6 +8,7 @@ export const SCENARIOS = [
   { id: 'late', label: '지각', title: '수업이 이미 시작됐습니다', context: '오늘 수업에 25분 늦게 들어왔습니다. 교수님이 수업 후에 남으라고 하셨습니다.', question: '오늘은 왜 이렇게 늦었나요?' },
   { id: 'absence', label: '결석', title: '중요한 수업에 빠졌습니다', context: '지난 수업의 발표와 토론에 참석하지 못했습니다. 사전 연락도 없었습니다.', question: '지난 시간에 왜 나오지 않았나요?' },
 ];
+export const ACCEPTANCE_GOAL = 3;
 const CATEGORIES = [
   ['health', /아프|병원|진료|열이|몸살|감기|응급실|약을|질병/],
   ['traffic', /버스|지하철|교통|차가|택시|막혀|사고|길이/],
@@ -17,8 +18,8 @@ const CATEGORIES = [
   ['study', /과제|공부|시험|발표|자료|준비/],
 ];
 export const clamp = value => Math.max(0, Math.min(100, value));
-export function outcomeScreen(success, trust) {
-  if (trust >= 100) return 'win';
+export function outcomeScreen(success, trust, acceptedCount = 0) {
+  if (trust >= 100 || acceptedCount >= ACCEPTANCE_GOAL) return 'win';
   if (trust <= 0) return 'lose';
   return success ? 'conversation' : 'result';
 }

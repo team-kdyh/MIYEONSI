@@ -14,6 +14,10 @@
 
 상대 성격·회사 설정과 발언별 리뷰는 ysb028의 [말빨 시뮬레이터](https://github.com/team-kdyh/MIYEONSI/tree/9ef505ed96d94e180b35b27b82ac54df14372be4)에서, 무대·포즈·자유 대화 판정과 저장은 [AFTER HOURS](https://github.com/team-kdyh/MIYEONSI/tree/fd91bd9183ad7f29460685a1ecaad737b38a0498)에서 이어 왔습니다.
 
+## 말빨 시뮬레이터 (선택지·직접 입력 대화 연습)
+
+`public/malbbal/`에 정적 HTML 게임인 말빨 시뮬레이터가 함께 들어 있습니다. 서버를 켠 뒤 **http://127.0.0.1:3001/malbbal/** 에서 열 수 있고, `public/malbbal/index.html`을 더블클릭해도 실행됩니다. 교수님 컨택, 부장님 연차, 대학교 면접, 거래처 단가 협상, 집주인 수리 요청, 알바 사장님 미지급 수당, 화난 손님 응대 7개 상황과 상대 성격 직접 설정, 매 판 랜덤 돌발 상황, 리뷰를 제공합니다. AI 키는 이 게임의 ⚙️ 설정에서 브라우저에만 저장하며 서버 `.env`와 별개입니다. 자세한 내용은 [public/malbbal/README.md](public/malbbal/README.md)를 참고하세요.
+
 ## Windows 실행
 
 Node.js 22 이상을 설치하고 **play.cmd**를 더블클릭하세요. 의존성을 설치하고 빌드한 뒤 브라우저가 열립니다. **stop.cmd**는 이 프로젝트가 시작한 서버만 종료하며 저장을 지우지 않습니다. 기본 주소는 http://127.0.0.1:3001 입니다. 해당 포트가 이미 사용 중이면 PowerShell에서 `$env:AFTERHOURS_PORT='3057'`을 설정한 뒤 `./play.cmd`를 실행할 수 있습니다.

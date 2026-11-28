@@ -21,7 +21,7 @@ export const clamp = value => Math.max(0, Math.min(100, value));
 export function outcomeScreen(success, trust, acceptedCount = 0) {
   if (trust >= 100 || acceptedCount >= ACCEPTANCE_GOAL) return 'win';
   if (trust <= 0) return 'lose';
-  return success ? 'conversation' : 'result';
+  return 'conversation';
 }
 export function nextScenario(currentId) {
   const index = SCENARIOS.findIndex(scenario => scenario.id === currentId);

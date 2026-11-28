@@ -21,11 +21,11 @@ test('높은 위험도만으로 의심 단계에 자동 진입하지 않는다',
   assert.equal(evaluate('어제 병원에 갑자기 갔습니다.', 'low', 'normal').needsSuspicion, true);
 });
 
-test('납득 3회 또는 신뢰도 100 중 하나만 달성해도 승리한다', () => {
+test('성공과 실패 모두 대화 화면에 남고 승패 경계에서만 화면이 바뀐다', () => {
   assert.equal(outcomeScreen(true, 75, 3), 'win');
   assert.equal(outcomeScreen(true, 100, 1), 'win');
   assert.equal(outcomeScreen(true, 75, 2), 'conversation');
-  assert.equal(outcomeScreen(false, 54, 1), 'result');
+  assert.equal(outcomeScreen(false, 54, 1), 'conversation');
   assert.equal(outcomeScreen(false, 0, 2), 'lose');
 });
 

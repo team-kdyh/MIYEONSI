@@ -6,6 +6,8 @@
 
 승리 조건: 신뢰도 100 또는 교수님 납득 3회. 실패 조건: 신뢰도 0.
 
+각 설득 시도의 성공·실패와 다음 상황은 같은 교수님 대화창에서 이어집니다.
+
 검증: `node --test test.mjs`
 
 실행 중인 공개 시제품: https://professor-persuasion-20261121.team-huhustudio.chatgpt.site

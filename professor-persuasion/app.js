@@ -8,38 +8,34 @@ const reset = () => { game = { screen: 'home' }; render(); };
 document.querySelector('#restart').addEventListener('click', reset);
 
 function begin(difficulty) {
-  game = { screen: 'scenario', difficulty, scenario: SCENARIOS[Math.floor(Math.random() * SCENARIOS.length)], trust: 70, acceptedCount: 0, risk: null, suspicious: false, pendingExcuse: null, attempts: [], excuses: [], messages: [], attemptNumber: 1, lastResult: null };
+  game = { screen: 'scenario', difficulty, scenario: SCENARIOS[Math.floor(Math.random() * SCENARIOS.length)], trust: 70, acceptedCount: 0, risk: null, suspicious: false, transitioning: false, pendingExcuse: null, attempts: [], excuses: [], messages: [], attemptNumber: 1 };
   lastTick = performance.now(); render();
 }
 function say(text) { game.messages.push({ speaker: 'professor', text }); }
-function chooseRisk(risk) { game.risk = risk; game.screen = 'conversation'; game.messages.push({ speaker: 'system', text: `${risk === 'high' ? 'HIGH RISK' : 'LOW RISK'} 설득 시도 시작` }); render(); document.querySelector('#player-input')?.focus(); }
-function finish(success, reason) {
+function chooseRisk(risk) { game.risk = risk; render(); document.querySelector('#player-input')?.focus(); }
+function finish(success) {
   const suspicious = game.suspicious;
   const delta = scoreFor(game.difficulty, game.risk, success, suspicious);
   game.trust = clamp(game.trust + delta);
   if (success) game.acceptedCount += 1;
   game.attempts.push({ number: game.attemptNumber, risk: game.risk, success, delta });
   if (game.pendingExcuse) game.excuses.push(game.pendingExcuse);
-  game.lastResult = { success, delta, reason, suspicious };
   game.pendingExcuse = null; game.suspicious = false;
   game.screen = outcomeScreen(success, game.trust, game.acceptedCount);
-  if (game.screen !== 'conversation') game.risk = null;
+  game.risk = null;
+  game.transitioning = game.screen === 'conversation';
   render();
-  if (game.screen === 'conversation') {
+  if (game.transitioning) {
     const currentGame = game;
     const currentScenario = game.scenario.id;
-    document.querySelector('#message-form')?.remove();
-    document.querySelector('.conversation-panel')?.insertAdjacentHTML('beforeend', '<div class="next-up" role="status">교수님이 납득했습니다. 다음 상황으로 넘어갑니다…</div>');
     setTimeout(() => {
-      if (game !== currentGame || game.screen !== 'conversation') return;
+      if (game !== currentGame || game.screen !== 'conversation' || !game.transitioning) return;
       game.scenario = nextScenario(currentScenario);
       game.attemptNumber += 1;
-      game.risk = null;
-      game.messages.push({ speaker: 'system', text: `새 상황 · ${game.scenario.label}` });
-      say(game.scenario.question);
-      game.screen = 'risk';
+      say(`이번에는 ${game.scenario.label} 문제입니다. ${game.scenario.context} ${game.scenario.question}`);
+      game.transitioning = false;
       render();
-    }, 2200);
+    }, 1800);
   }
 }
 function submit(event) {
@@ -50,16 +46,16 @@ function submit(event) {
   game.messages.push({ speaker: 'player', text }); input.value = '';
   if (game.suspicious) {
     const result = evaluate(text, game.risk, game.difficulty, true);
-    say(result.success ? '추가 설명은 들었습니다. 이번에는 납득하겠습니다.' : '설명을 들었지만 아직 납득하기 어렵군요.');
-    finish(result.success, result.success ? '추가 설명을 받아들였습니다.' : '추가 설명이 충분하지 않았습니다.'); return;
+    say(result.success ? '추가 설명은 납득했습니다. 이번 사정은 받아들이겠습니다.' : '추가 설명을 들어도 이번 사정은 받아들이기 어렵습니다.');
+    finish(result.success); return;
   }
   const excuse = analyzeExcuse(text);
   if (isDuplicate(excuse, game.excuses)) { say('그 이유는 앞에서도 들었습니다. 다른 사정을 이야기해 보세요.'); render(); return; }
   game.pendingExcuse = excuse;
   const result = evaluate(text, game.risk, game.difficulty);
   if (result.needsSuspicion) { game.suspicious = true; say('그렇다면 확인할 만한 근거나 더 구체적인 설명이 있나요?'); render(); document.querySelector('#player-input')?.focus(); return; }
-  say(result.success ? '사정은 이해했습니다. 다음부터는 미리 알려주세요.' : '그 설명만으로는 받아들이기 어렵습니다.');
-  finish(result.success, result.success ? '설명을 받아들였습니다.' : '설득에 실패했습니다.');
+  say(result.success ? '이번 설명은 납득했습니다. 다음부터는 미리 알려주세요.' : '이번 설명은 납득하기 어렵습니다.');
+  finish(result.success);
 }
 function trustPanel() {
   return `<div class="trust-panel"><div class="trust-heading"><span>교수님의 신뢰도</span><strong id="trust-value">${Math.ceil(game.trust)}</strong></div><div class="trust-track"><div id="trust-fill" class="trust-fill" style="width:${game.trust}%"></div></div><div class="trust-detail"><span>${game.suspicious ? '의심 단계 · 감소 2배' : '시간에 따라 계속 감소'}</span><span>${DIFFICULTIES[game.difficulty].decay * (game.suspicious ? 2 : 1)}점/초</span></div><div class="acceptance-row"><span>교수님 납득</span><strong>${game.acceptedCount} / ${ACCEPTANCE_GOAL}</strong></div></div>`;
@@ -77,24 +73,24 @@ function renderDifficulty() {
 }
 function renderScenario() {
   layout(`<div class="eyebrow">오늘의 상황 · ${html(game.scenario.label)}</div><h1>${html(game.scenario.title)}</h1><p class="lead">${html(game.scenario.context)}</p><div class="quote"><span>교수님</span><p>“${html(game.scenario.question)}”</p></div><button id="continue" class="button primary">교수님께 답하기</button>`, `${trustPanel()}<div class="tip"><span>승리 목표</span><strong>신뢰도 100 또는 납득 ${ACCEPTANCE_GOAL}회</strong><p>둘 중 하나를 먼저 달성하면 승리합니다. 신뢰도가 0이 되면 패배합니다.</p></div>`);
-  document.querySelector('#continue').addEventListener('click', () => { game.messages.push({ speaker: 'professor', text: game.scenario.question }); game.screen = 'risk'; render(); });
-}
-function renderRisk() {
-  const d = DIFFICULTIES[game.difficulty];
-  layout(`<div class="eyebrow">설득 시도 ${game.attemptNumber}</div><h1>어떤 방식으로<br>설득하시겠습니까?</h1><p class="lead">위험도는 이번 시도에만 적용됩니다.</p><div class="risks"><button class="risk low" data-risk="low"><span>LOW RISK</span><strong>신중하게 설명하기</strong><p>보상과 손실이 작습니다. 사정을 차분히 이야기해 보세요.</p><b>성공 +${d.lowWin} · 실패 ${d.lowLose}</b></button><button class="risk high" data-risk="high"><span>HIGH RISK</span><strong>강하게 주장하기</strong><p>보상이 크지만 실패의 부담도 큽니다. 근거를 요구받을 수 있습니다.</p><b>성공 +${d.highWin} · 실패 ${d.highLose}</b></button></div>`, `${trustPanel()}<div class="tip"><span>현재 상황</span><strong>${html(game.scenario.label)}</strong><p>${html(game.scenario.context)}</p></div>`);
-  document.querySelectorAll('[data-risk]').forEach(button => button.addEventListener('click', () => chooseRisk(button.dataset.risk)));
+  document.querySelector('#continue').addEventListener('click', () => { game.messages.push({ speaker: 'professor', text: game.scenario.question }); game.screen = 'conversation'; render(); });
 }
 function renderConversation() {
   const messages = game.messages.map(m => `<div class="message ${m.speaker}">${m.speaker === 'system' ? `<span>${html(m.text)}</span>` : `<strong>${m.speaker === 'player' ? '나' : '교수님'}</strong><p>${html(m.text)}</p>`}</div>`).join('');
   root.innerHTML = `<section class="conversation"><div class="conversation-scene"><div class="conversation-heading"><div><div class="eyebrow">${html(game.scenario.label)} · 시도 ${game.attemptNumber}</div><h1>${game.suspicious ? '의심 단계' : '교수님과의 대화'}</h1></div><span class="phase ${game.suspicious ? 'danger' : ''}">${game.suspicious ? '감소 속도 2배' : game.risk === 'high' ? 'HIGH RISK' : 'LOW RISK'}</span></div>${art()}<div class="caption">${html([...game.messages].reverse().find(m => m.speaker === 'professor')?.text ?? '')}</div></div><aside class="conversation-panel">${trustPanel()}<div class="log-heading"><strong>대화 기록</strong><small>같은 판의 변명을 기억합니다</small></div><div class="messages" id="messages">${messages}</div><form id="message-form" class="input-form"><label for="player-input">${game.suspicious ? '추가 설명 또는 근거를 입력하세요' : '교수님께 할 말을 입력하세요'}</label><textarea id="player-input" maxlength="500" rows="3" placeholder="상황과 이유를 구체적으로 설명해 보세요."></textarea><div class="input-actions"><small>최대 500자 · Enter 전송</small><button class="button primary" type="submit">전송</button></div></form></aside></section>`;
   const list = document.querySelector('#messages'); list.scrollTop = list.scrollHeight;
+  if (!game.risk) {
+    document.querySelector('.phase').textContent = game.transitioning ? '교수님 답변' : '위험도 선택';
+    document.querySelector('#message-form').remove();
+    if (!game.transitioning) {
+      const d = DIFFICULTIES[game.difficulty];
+      document.querySelector('.conversation-panel').insertAdjacentHTML('beforeend', `<div class="inline-risks"><strong>이번 상황의 위험도를 선택하세요</strong><div><button type="button" data-risk="low"><b>LOW RISK</b><span>성공 +${d.lowWin} · 실패 ${d.lowLose}</span></button><button type="button" data-risk="high"><b>HIGH RISK</b><span>성공 +${d.highWin} · 실패 ${d.highLose}</span></button></div></div>`);
+      document.querySelectorAll('[data-risk]').forEach(button => button.addEventListener('click', () => chooseRisk(button.dataset.risk)));
+    }
+    return;
+  }
   document.querySelector('#message-form').addEventListener('submit', submit);
   document.querySelector('#player-input').addEventListener('keydown', event => { if (event.key === 'Enter' && !event.shiftKey && !event.isComposing) { event.preventDefault(); document.querySelector('#message-form').requestSubmit(); } });
-}
-function renderResult() {
-  const r = game.lastResult;
-  root.innerHTML = `<section class="center result"><div class="eyebrow">설득 시도 ${game.attemptNumber} 결과</div><div class="result-icon ${r.success ? 'success' : 'failure'}">${r.success ? '✓' : '×'}</div><h1>${r.success ? '교수님이 납득했습니다' : '설득에 실패했습니다'}</h1><p class="lead">${html(r.reason)}</p><div class="metrics"><div><span>이번 변화</span><strong class="${r.success ? 'positive' : 'negative'}">${r.delta > 0 ? '+' : ''}${r.delta}</strong></div><div><span>현재 신뢰도</span><strong>${Math.ceil(game.trust)}</strong></div><div><span>의심 단계</span><strong>${r.suspicious ? '진행' : '없음'}</strong></div></div><button id="next" class="button primary">다음 설득 시도</button><p class="tiny">다음 시도에서는 위험도를 다시 고를 수 있습니다.</p></section>`;
-  document.querySelector('#next').addEventListener('click', () => { game.attemptNumber += 1; game.screen = 'risk'; render(); });
 }
 function renderEnd() {
   const won = game.screen === 'win';
@@ -106,14 +102,12 @@ function render() {
   if (game.screen === 'home') return renderHome();
   if (game.screen === 'difficulty') return renderDifficulty();
   if (game.screen === 'scenario') return renderScenario();
-  if (game.screen === 'risk') return renderRisk();
   if (game.screen === 'conversation') return renderConversation();
-  if (game.screen === 'result') return renderResult();
   renderEnd();
 }
 function tick(now) {
   const seconds = Math.max(0, (now - lastTick) / 1000); lastTick = now;
-  if (['scenario', 'risk', 'conversation', 'result'].includes(game.screen)) {
+  if (['scenario', 'conversation'].includes(game.screen)) {
     game.trust = decayTrust(game.trust, seconds, game.difficulty, game.suspicious);
     if (game.trust <= 0) { game.screen = 'lose'; game.suspicious = false; render(); }
     else { const value = document.querySelector('#trust-value'); const fill = document.querySelector('#trust-fill'); if (value) value.textContent = Math.ceil(game.trust); if (fill) fill.style.width = `${game.trust}%`; }

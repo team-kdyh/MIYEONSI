@@ -17,6 +17,15 @@ const CATEGORIES = [
   ['study', /과제|공부|시험|발표|자료|준비/],
 ];
 export const clamp = value => Math.max(0, Math.min(100, value));
+export function outcomeScreen(success, trust) {
+  if (trust >= 100) return 'win';
+  if (trust <= 0) return 'lose';
+  return success ? 'conversation' : 'result';
+}
+export function nextScenario(currentId) {
+  const index = SCENARIOS.findIndex(scenario => scenario.id === currentId);
+  return SCENARIOS[(index + 1) % SCENARIOS.length];
+}
 export function decayTrust(trust, seconds, difficulty, suspicious = false) { return clamp(trust - seconds * DIFFICULTIES[difficulty].decay * (suspicious ? 2 : 1)); }
 export function scoreFor(difficulty, risk, success, suspicious) {
   const d = DIFFICULTIES[difficulty];

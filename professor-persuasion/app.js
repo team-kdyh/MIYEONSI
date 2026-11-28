@@ -1,4 +1,4 @@
-import { DIFFICULTIES, SCENARIOS, clamp, decayTrust, scoreFor, analyzeExcuse, isDuplicate, evaluate } from './logic.js';
+import { DIFFICULTIES, SCENARIOS, clamp, decayTrust, scoreFor, analyzeExcuse, isDuplicate, evaluate, outcomeScreen, nextScenario } from './logic.js';
 
 const root = document.querySelector('#app');
 let game = { screen: 'home' };
@@ -20,8 +20,26 @@ function finish(success, reason) {
   game.attempts.push({ number: game.attemptNumber, risk: game.risk, success, delta });
   if (game.pendingExcuse) game.excuses.push(game.pendingExcuse);
   game.lastResult = { success, delta, reason, suspicious };
-  game.pendingExcuse = null; game.suspicious = false; game.risk = null;
-  game.screen = game.trust >= 100 ? 'win' : game.trust <= 0 ? 'lose' : 'result'; render();
+  game.pendingExcuse = null; game.suspicious = false;
+  game.screen = outcomeScreen(success, game.trust);
+  if (game.screen !== 'conversation') game.risk = null;
+  render();
+  if (game.screen === 'conversation') {
+    const currentGame = game;
+    const currentScenario = game.scenario.id;
+    document.querySelector('#message-form')?.remove();
+    document.querySelector('.conversation-panel')?.insertAdjacentHTML('beforeend', '<div class="next-up" role="status">교수님이 납득했습니다. 다음 상황으로 넘어갑니다…</div>');
+    setTimeout(() => {
+      if (game !== currentGame || game.screen !== 'conversation') return;
+      game.scenario = nextScenario(currentScenario);
+      game.attemptNumber += 1;
+      game.risk = null;
+      game.messages.push({ speaker: 'system', text: `새 상황 · ${game.scenario.label}` });
+      say(game.scenario.question);
+      game.screen = 'risk';
+      render();
+    }, 2200);
+  }
 }
 function submit(event) {
   event.preventDefault();

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { decayTrust, scoreFor, analyzeExcuse, isDuplicate, evaluate } from './logic.js';
+import { decayTrust, scoreFor, analyzeExcuse, isDuplicate, evaluate, outcomeScreen, nextScenario } from './logic.js';
 
 test('시간 감소와 의심 배율이 난이도에 따라 적용된다', () => {
   assert.equal(decayTrust(70, 10, 'normal'), 60);
@@ -19,4 +19,16 @@ test('같은 핵심 표현은 중복이고 다른 사건은 새 시도다', () =
 test('높은 위험도만으로 의심 단계에 자동 진입하지 않는다', () => {
   assert.equal(evaluate('오늘 준비가 부족했습니다. 죄송합니다. 다시 제출하겠습니다.', 'high', 'normal').needsSuspicion, false);
   assert.equal(evaluate('어제 병원에 갑자기 갔습니다.', 'low', 'normal').needsSuspicion, true);
+});
+
+test('설득 성공 후에는 결과 화면 없이 대화가 이어지고 최종 점수에서만 승리한다', () => {
+  assert.equal(outcomeScreen(true, 94), 'conversation');
+  assert.equal(outcomeScreen(true, 100), 'win');
+  assert.equal(outcomeScreen(false, 54), 'result');
+  assert.equal(outcomeScreen(false, 0), 'lose');
+});
+
+test('다음 상황은 현재 상황과 다르고 마지막 상황 뒤에는 처음으로 돌아간다', () => {
+  assert.equal(nextScenario('assignment').id, 'late');
+  assert.equal(nextScenario('absence').id, 'assignment');
 });

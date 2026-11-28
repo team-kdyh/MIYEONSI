@@ -47,9 +47,42 @@ const rand = (lo, hi) => lo + Math.floor(Math.random() * (hi - lo + 1));
 /* {학과} 같은 빈칸을 상황 정보로 채움 */
 function fill(s) {
   if (typeof s !== "string" || !G || !G.vars) return s;
-  return s.replace(/\{([^{}\s]+)\}/g, (m, k) => (k in G.vars ? G.vars[k] : m));
+  return fillVars(s, G.vars);
+}
+
+/* 빈칸 채우기 + 조사 자동 선택: "{요청}이(가)" → "주휴수당이", "{고장}을(를)" → "누수를" */
+const JOSA = { "이(가)": ["이", "가"], "을(를)": ["을", "를"], "은(는)": ["은", "는"], "와(과)": ["과", "와"], "이(라)": ["이라", "라"], "(으)로": ["으로", "로"] };
+function hasBatchim(word) {
+  const ch = String(word).trim().replace(/[)\]’'"」]+$/, "").slice(-1);
+  const code = ch.charCodeAt(0) - 0xac00;
+  if (code >= 0 && code <= 11171) {
+    const jong = code % 28;
+    return jong === 0 ? false : jong === 8 ? "ㄹ" : true; // 8 = ㄹ 받침
+  }
+  if (/[0-9]/.test(ch)) return "013678".includes(ch) ? (ch === "1" || ch === "7" || ch === "8" ? "ㄹ" : true) : false;
+  if (ch === "%") return false; // 퍼센트
+  return null; // 영어 등: 판단 불가
+}
+function fillVars(s, vars) {
+  return s.replace(/\{([^{}\s]+)\}(이\(가\)|을\(를\)|은\(는\)|와\(과\)|이\(라\)|\(으\)로)?/g, (m, k, josa) => {
+    if (!(k in vars)) return m;
+    const v = vars[k];
+    if (!josa) return v;
+    const b = hasBatchim(v);
+    if (b === null) return v + josa;
+    if (josa === "(으)로") return v + (b === true ? "으로" : "로");
+    return v + JOSA[josa][b ? 0 : 1];
+  });
 }
 const T = (v) => fill(pick(v, G.lv)); // 난이도 고르고 + 빈칸 채우기
+
+/* 게임 시작 전(첫 화면)에 쓰는 빈칸 채우기: 저장된 입력값 → 없으면 기본값 */
+function fillPreview(sc, s) {
+  const info = store.json("setup:" + sc.id, {}).info || {};
+  const vars = {};
+  for (const f of sc.setup || []) if (f.var) vars[f.var] = (info[f.key] || "").trim() || f.default;
+  return fillVars(s, vars);
+}
 
 function scaleEffect(eff, lv) {
   const r = LEVEL_RULES[lv];
@@ -164,7 +197,7 @@ function renderHome() {
         <button class="card" data-i="${i}">
           <div class="emoji">${s.emoji}</div>
           <h3>${esc(s.title)}</h3>
-          <p>${esc(s.goal)}</p>
+          <p>${esc(fillPreview(s, s.goal))}</p>
         </button>`).join("")}
       <button class="card dashed" data-custom="1">
         <div class="emoji">✏️</div>
@@ -400,7 +433,7 @@ async function enterNode(id) {
 
 function scriptedCur(node, id) {
   return {
-    narr: node.narr ? (isEventId(id) ? "⚡ " : "") + T(node.narr) : "",
+    narr: node.narr ? (isEventId(id) ? "⚡ 돌발 상황! " : "") + T(node.narr) : "",
     npc: T(node.npc),
     choices: node.choices.map((c, i) => ({ text: T(c.text), ref: i })),
   };
@@ -577,7 +610,11 @@ function applyResult({ said, effect, reply, feedback, mode, next, end, chosen })
   if (end) return finish(end === "success", end);
 
   let nextId;
-  if (isEvent) { nextId = G.resume; G.resume = null; }
+  if (isEvent) {
+    nextId = G.resume; G.resume = null;
+    // 돌발 상황이 끝나면 원래 대화로 돌아간다는 연결 문장
+    G.log.push({ type: "narr", text: "↩️ " + (node.after ? T(node.after) : "돌발 상황이 정리되고, 하던 이야기로 돌아간다.") });
+  }
   else { nextId = next || node.next; G.mainCount++; }
   if (!nextId || nextId === "end") {
     const avg = (G.stats.like + G.stats.trust) / 2;
@@ -674,7 +711,10 @@ ${situationBlock()}
 
 ${personaBlock()}
 
-${isEvent ? "⚡ 이번 장면은 '예상치 못한 돌발 상황'이다. 상황 정보에 맞게 현실적으로 각색하고, narr에 무슨 일이 생겼는지 묘사하라. 이전 대화 흐름과 자연스럽게 이어지게 하라." : ""}
+${isEvent ? `⚡ 이번 장면은 '예상치 못한 돌발 상황'이다. 상황 정보에 맞게 현실적으로 각색하되, 처음 보는 사람도 바로 이해하게 써라.
+- narr: 누가, 무엇을 했고, 그래서 지금 무엇이 문제인지 1~2문장으로 분명하게. 상대가 착각하는 상황이면 "실제로는 어떤지"도 narr에 밝혀라.
+- 지금까지 대화에서 실제로 나온 내용만 전제로 하라 (아직 합의하지 않은 걸 합의했다고 하지 말 것).
+- npc: 플레이어가 무엇에 대답해야 하는지 분명한 질문이나 요구로 끝내라.` : ""}
 ${isFirst ? "첫 장면이다. narr에 장소와 상대의 모습을 1~2문장으로 묘사하라." : ""}
 ${base}
 
@@ -687,7 +727,7 @@ JSON만 출력: {"narr": "장면 묘사 (필요 없으면 빈 문자열)", "npc"
   const j = await callAI(system, convoText() ? "지금까지 대화:\n" + convoText() : "대화 시작.");
   if (!j.npc || !Array.isArray(j.choices) || j.choices.length < 2) throw new Error("응답 형식 오류");
   return {
-    narr: isEvent ? "⚡ " + (String(j.narr || "").trim() || "예상치 못한 일이 생겼다!") : String(j.narr || "").trim(),
+    narr: isEvent ? "⚡ 돌발 상황! " + (String(j.narr || "").trim() || "예상치 못한 일이 생겼다.") : String(j.narr || "").trim(),
     npc: String(j.npc),
     choices: j.choices.slice(0, 3).map(String),
   };

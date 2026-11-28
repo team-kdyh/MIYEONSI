@@ -7,6 +7,53 @@ const setTime=(ms:number)=>writeFileSync(path.join(dir,'clock'),String(ms));
 const calls=()=>readFileSync(path.join(dir,'calls'),'utf8').trim().split('\n').filter(Boolean);
 test.beforeEach(()=>setTime(Date.now()));
 
+for(const size of [{width:1152,height:640},{width:1152,height:406},{width:390,height:560}])test(`delegation reply recovers and stays readable at ${size.width}x${size.height}`,async({page})=>{
+ await page.setViewportSize(size);
+ await page.addInitScript(()=>localStorage.setItem('afterhours-settings',JSON.stringify({mute:true,large:true,reduced:false,speed:20})));
+ await page.goto('/');await page.getByRole('button',{name:/칼퇴의 기술/}).click();
+ await page.locator('#office-mission').selectOption('3');
+ await page.getByRole('combobox',{name:'대화 상대',exact:true}).selectOption('yun');
+ await page.getByRole('button',{name:/이야기 시작/}).click();
+ const input=page.locator('#reply'),choice='네 그럼 부장님께 맡기겠습니다.';
+ await input.fill('휴가 중 고객 문의는 어떻게 나눌까요?');
+ const [proposal]=await Promise.all([page.waitForResponse('**/api/turn'),input.press('Enter')]);
+ const {game:before}=await proposal.json();
+ await expect(input).toHaveValue('');
+ const ids:string[]=[];
+ let release!:()=>void;
+ const hold=new Promise<void>(r=>{release=r;});
+ await page.route('**/api/turn',async route=>{
+  ids.push(route.request().postDataJSON().requestId);
+  if(ids.length>1){await route.continue();return;}
+  await hold;await route.fulfill({status:400,json:{code:'reply_rejected',committed:false,error:'인물의 답장을 준비하지 못했어요. 보내신 말로 답변을 다시 받을 수 있어요.'}});
+ });
+ await input.fill(choice);await input.press('Enter');
+ try{await expect(page.getByText('전송 중',{exact:true})).toBeVisible();}finally{release();}
+ await expect(page.getByRole('alert')).toBeVisible();
+ await expect(page.getByText('전송 중',{exact:true})).toHaveCount(0);
+ await expect(input).toHaveValue(choice);
+ let speech='',actions='';
+ for(let p=0;p<8;p++){
+  const current=await page.locator('.conversation-scroll').evaluate(el=>({line:el.querySelector('.text-reserve')?.textContent??'',action:el.querySelector('.action-beat')?.textContent??''}));
+  speech+=current.line;actions+=current.action;
+  const bottom=await page.locator('.dialogue').evaluate(el=>({form:el.querySelector('form')!.getBoundingClientRect().bottom,panel:el.getBoundingClientRect().bottom,window:innerHeight}));
+  expect(bottom.form).toBeLessThanOrEqual(Math.min(bottom.panel,bottom.window)+1);
+  const next=page.getByRole('button',{name:/계속 읽기/});if(!await next.count()||await next.isDisabled())break;await next.click();
+ }
+ expect(speech).toBe(before.dialogue.reply);expect(actions).toBe(before.dialogue.actionBeats.join(' · '));
+ const priorCalls=calls().length;
+ const [retry]=await Promise.all([page.waitForResponse('**/api/turn'),page.getByRole('button',{name:'답변 다시 받기'}).click()]);
+ expect(retry.ok()).toBe(true);const {game}=await retry.json();
+ expect(ids).toEqual([ids[0],ids[0]]);expect(calls().length-priorCalls).toBe(2);
+ expect(game.officeMatch.exchanges.map((e:any)=>e.player)).toEqual(['휴가 중 고객 문의는 어떻게 나눌까요?',choice]);
+ expect(game.dialogue.reply).toContain('급한 전화는 제 자리로');expect(game.dialogue.version).toBe(before.dialogue.version+1);
+ expect(game.ending).toBeNull();expect(game.battle.boss).toBe(before.battle.boss);expect(game.battle.player).toBe(before.battle.player);
+ expect(game.narrative.events.filter((e:any)=>e.value!=='action')).toEqual(before.narrative.events.filter((e:any)=>e.value!=='action'));
+ const replay=await page.request.post('/api/turn',{data:retry.request().postDataJSON()});
+ expect((await replay.json()).game).toEqual(game);expect(calls().length-priorCalls).toBe(2);
+ await expect(page.getByRole('alert')).toHaveCount(0);await expect(input).toHaveValue('');
+});
+
 for(const width of [390,1366])test(`chat, profile, timeout report and retry on ${width}px`,async({page})=>{
  await page.setViewportSize({width,height:width===390?780:768});
  await page.clock.install();

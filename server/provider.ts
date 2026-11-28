@@ -3,14 +3,14 @@ import {officeMessages,OFFICE_INSTRUCTIONS} from './office-director.ts';
 import {battleInstructions,battleDifficultyInstructions} from './battle-evaluation.ts';
 import {actorPoses} from '../src/visualAssets.ts';
 import {storyDirection} from './story-guide.ts';
-import {ReplyRejectedError} from './reply-error.ts';
+import {ReplyRejectedError,UngroundedOfficeReply} from './reply-error.ts';
 import {conversationSchema,decodeConversation} from './conversation-response.ts';
 import {canonical,HISTORY_LIMIT,type DialogueGame,type Reply} from './dialogue.ts';
 import {narrative,preview} from './narrative.ts';
 import {missions} from './office.ts';
 export type Provider='offline'|'openai';
 export const OUTPUT_LIMIT=1600;
-export type RepairContext={reason:string;draft?:unknown};
+export type RepairContext={reason:string;draft?:unknown;discussionOnly?:boolean};
 export function messages(g:DialogueGame,text:string,repair?:RepairContext){
  return g.mode==='office'?officeMessages(g,text,repair):romanceMessages(g,text,repair);
 }
@@ -42,7 +42,7 @@ resolution: 결말 요청은 player와 근거가 필요하다. 직장은 현재 
 export async function respond(g:DialogueGame,text:string,provider:Provider,signal:AbortSignal,fetcher:typeof fetch=fetch,repair?:RepairContext):Promise<Reply>{
  if(provider==='offline')return preview(g,text);
  if(!process.env.OPENAI_API_KEY)throw Error('서버에 OPENAI_API_KEY가 없습니다. 설정에서 오프라인 연출 체험을 선택할 수 있습니다.');
- const response=await fetcher('https://api.openai.com/v1/responses',{method:'POST',signal,headers:{Authorization:`Bearer ${process.env.OPENAI_API_KEY}`,'Content-Type':'application/json'},body:JSON.stringify({model:process.env.OPENAI_MODEL||'gpt-4.1',store:false,max_output_tokens:OUTPUT_LIMIT,instructions:g.mode==='office'?OFFICE_INSTRUCTIONS:INSTRUCTIONS,input:messages(g,text,repair),text:{format:{type:'json_schema',name:'conversation_turn',strict:true,schema:conversationSchema(g,!!repair)}}})});
+ const response=await fetcher('https://api.openai.com/v1/responses',{method:'POST',signal,headers:{Authorization:`Bearer ${process.env.OPENAI_API_KEY}`,'Content-Type':'application/json'},body:JSON.stringify({model:process.env.OPENAI_MODEL||'gpt-4.1',store:false,max_output_tokens:OUTPUT_LIMIT,instructions:g.mode==='office'?OFFICE_INSTRUCTIONS:INSTRUCTIONS,input:messages(g,text,repair),text:{format:{type:'json_schema',name:'conversation_turn',strict:true,schema:conversationSchema(g,!!repair,repair?.discussionOnly)}}})});
  if(!response.ok)throw Error(`OpenAI 연결 실패 (${response.status}). 다시 시도하거나 설정에서 오프라인 연출 체험을 선택하세요.`);
  let draft:unknown;
  try{
@@ -52,7 +52,11 @@ export async function respond(g:DialogueGame,text:string,provider:Provider,signa
  if(parts.some((p:{type:string})=>p.type==='refusal'))throw new ReplyRejectedError('이 답변을 생성할 수 없습니다.',undefined,false);
  const output=parts.filter((p:{type:string})=>p.type==='output_text').map((p:{text:string})=>p.text).join('');
  draft=JSON.parse(output);const reply=decodeConversation(draft,text);
- if(reply.recall.some(id=>!canonical(g).facts.some(f=>f.id===id)&&!narrative(g).events.some(e=>e.id===id)))throw Error();
+ if(reply.recall.some(id=>!canonical(g).facts.some(f=>f.id===id)&&!narrative(g).events.some(e=>e.id===id))){
+  if(g.mode==='office')throw new UngroundedOfficeReply('이전 발언은 대화 이력에서 읽고, 존재하지 않는 사건을 회상하지 마세요.',reply);
+  throw Error('회상할 사건을 찾을 수 없습니다.');
+ }
+ if(repair?.discussionOnly&&(reply.events.length||reply.recall.length))throw new ReplyRejectedError('대화만 다시 작성할 때는 새 사건이나 회상을 추가하지 않습니다.',reply);
  return reply;
  }catch(e){if(e instanceof ReplyRejectedError)throw e;throw new ReplyRejectedError(e instanceof Error?e.message:'AI 응답 형식 오류',draft);}
 }

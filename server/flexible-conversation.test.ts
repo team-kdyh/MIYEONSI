@@ -44,6 +44,19 @@ test('repair cannot just delete rejected changes and retain the same spoken clai
  const g=start('office'),before=structuredClone(g),bad=wire('옥상에 도착했어요.',invalid);
  await assert.rejects(generate(g,'방법을 알려 주세요.',[bad,wire(bad.utterance.line)]),/다시 작성하지/);assert.deepEqual(g,before);
 });
+test('an unconfirmed office memory can be rewritten as dialogue but cannot be turned into a score or an ending on repair',async()=>{
+ const g=start('office'),input='네 그럼 부장님께 맡기겠습니다.';
+ const bad={...wire('승인 메일이 왔네요.'),utterance:{...utterance('승인 메일이 왔네요.'),recall:['invented-approval']},battle:null};
+ const good=wire('급한 연락을 제 쪽으로 돌리는 방법부터 살펴보죠.');
+ const {result,calls}=await generate(g,input,[bad,good]);
+ assert.deepEqual(calls[1].text.format.schema.properties.battle,{type:'null'});
+ assert.equal(result.game.dialogue!.reply,good.utterance.line);assert.equal(result.game.ending,null);
+ const score={kind:'persuasion',target:'leave',argument:'alternative',repeatOf:'',reason:'부담이 줄었다.',concessionIndex:-1,pressureId:'',premises:[]};
+ for(const unsafe of [wire(bad.utterance.line),wire('이제 퇴근하세요.'),{...good,battle:score}]){
+  await assert.rejects(generate(g,input,[bad,unsafe]),ReplyRejectedError);
+ }
+ assert.equal(canonical(g).version,0);
+});
 test('two invalid drafts stop without mutation; storage errors and network failures are not repair triggers',async()=>{
  const g=start('office'),before=structuredClone(g);let count=0;
  await assert.rejects(generate(g,'방법을 알려 주세요.',[wire('없는 장면',invalid)],{reserve:async()=>{count++;}}),ReplyRejectedError);assert.equal(count,MAX_GENERATION_ATTEMPTS);assert.deepEqual(g,before);

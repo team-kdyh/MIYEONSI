@@ -21,7 +21,8 @@ export function ConversationViewport({resetKey,action,text,speed,reduced}:{reset
    let next:Page[]=[];
    if(height(action,text)<=budget)next=[{action,line:text}];
    else {
-    const limit=Math.max(30,budget-38);let beat=Array.from(action),words=Array.from(text);
+    // Pagination itself needs room, but a page must always fit at least one full typographic line.
+    const limit=Math.max(height('가',''),height('','가'),budget-38);let beat=Array.from(action),words=Array.from(text);
     while(beat.length||words.length){
      const take=(chars:string[],fits:(s:string)=>boolean)=>{let lo=0,hi=chars.length;while(lo<hi){const mid=Math.ceil((lo+hi)/2);if(fits(chars.slice(0,mid).join('')))lo=mid;else hi=mid-1;}if(lo>0&&lo<chars.length){const breakAt=chars.slice(0,lo).lastIndexOf(' ');if(breakAt>lo*.7)lo=breakAt+1;}return lo;};
      const na=beat.length?Math.max(1,take(beat,s=>height(s,'')<=limit)):0,partA=beat.splice(0,na).join('');
@@ -31,8 +32,10 @@ export function ConversationViewport({resetKey,action,text,speed,reduced}:{reset
    }
    setPages(old=>JSON.stringify(old)===JSON.stringify(next)?old:next);
   };
-  measure();const observer=new ResizeObserver(measure);observer.observe(panel);observer.observe(el);
-  const mutations=new MutationObserver(measure);mutations.observe(panel,{childList:true});mutations.observe(panel.closest('.app')!,{attributes:true,attributeFilter:['class']});
+  const observer=new ResizeObserver(measure);
+  const observeSizes=()=>{observer.disconnect();observer.observe(panel);for(const child of panel.children)observer.observe(child);measure();};
+  observeSizes();
+  const mutations=new MutationObserver(observeSizes);mutations.observe(panel,{childList:true});mutations.observe(panel.closest('.app')!,{attributes:true,attributeFilter:['class']});
   window.addEventListener('resize',measure);window.visualViewport?.addEventListener('resize',measure);
   return()=>{observer.disconnect();mutations.disconnect();window.removeEventListener('resize',measure);window.visualViewport?.removeEventListener('resize',measure);};
  },[action,text,speed,reduced]);

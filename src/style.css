@@ -288,6 +288,14 @@ summary{cursor:pointer}
 .office-match .sprite{left:64%;top:12%;height:65%}
 .office-match .dialogue{max-height:calc(var(--game-height,100dvh) * .52);min-height:0;border-radius:13px;background:linear-gradient(115deg,#191722f5,#2c2532eb)}
 .stage-thread{max-height:clamp(42px,9dvh,86px);flex:none;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#907d88 transparent;display:flex;flex-direction:column;gap:5px;margin-bottom:9px;padding-right:4px;font-size:12px;line-height:1.5;overflow-wrap:anywhere}
+.office-match .dialogue:has(.reply-notice){max-height:calc(var(--game-height,100dvh) - 100px)}
+.office-match .dialogue:has(.reply-notice) .stage-thread{display:none}
+@media(max-height:540px){
+ .office-match .dialogue:has(.stage-thread),.office-match .dialogue:has(.reply-notice){max-height:calc(var(--game-height,100dvh) - 82px);padding:9px 12px 8px}
+ .office-match .reply-notice{padding:5px 8px;margin-bottom:4px}
+ .office-match .reply-notice>div{margin-top:3px}
+ .office-match .reply-notice button{padding:4px 8px}
+}
 .thread-npc,.thread-mine{max-width:88%;padding:5px 11px;border:1px solid #dac6d326;background:#39313e;border-radius:2px 10px 10px;align-self:flex-start;white-space:pre-wrap}
 .thread-mine{align-self:flex-end;border-radius:10px 10px 2px 10px;background:#514149}
 .thread-mine b{margin-right:8px;font-size:10px;color:#efcba8}

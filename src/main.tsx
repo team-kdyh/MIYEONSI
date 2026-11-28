@@ -18,7 +18,8 @@ type State={game:(Game&{review?:OfficeReview|null;storyGuide?:StoryGuide;dialogu
 type Panel='settings'|'collection'|'save'|'log'|'report'|'tutorial'|null;
 const modeName=(mode:Mode)=>mode==='office'?'직장 미션':'로맨스 스릴러';
 function App(){
- const [state,setState]=useState<State|null>(null),[playing,setPlaying]=useState(false),[panel,setPanel]=useState<Panel>(null),[busy,setBusy]=useState(false),[error,setError]=useState(''),[draft,setDraft]=useState(''),[pending,setPending]=useState<Mode>('office');
+ const [state,setState]=useState<State|null>(null),[playing,setPlaying]=useState(false),[panel,setPanel]=useState<Panel>(null),[activeAction,setActiveAction]=useState<string|null>(null),[error,setError]=useState(''),[draft,setDraft]=useState(''),[pending,setPending]=useState<Mode>('office');
+ const busy=activeAction!==null;
  const [officeMission,setOfficeMission]=useState(0),[setup,setSetup]=useState<OfficeSetup>(defaultSetup);
  const [clockOffset,setClockOffset]=useState(0);
  const [canReset,setCanReset]=useState(false);
@@ -28,7 +29,7 @@ function App(){
  useEffect(()=>{localStorage.setItem('afterhours-settings',JSON.stringify(settings));},[settings]);
  function clearRetry(){retry.current=null;sessionStorage.removeItem('afterhours-pending');}
  async function api(action='state',body?:object){
-  if(active.current)return false;setBusy(true);setError('');
+  if(active.current)return false;setActiveAction(action);setError('');
   if(body){clearRetry();if(action==='turn'){retry.current={action,body};sessionStorage.setItem('afterhours-pending',JSON.stringify(retry.current));}}
   const controller=new AbortController();active.current=controller;const timer=setTimeout(()=>controller.abort(),32000);
   try{
@@ -51,7 +52,7 @@ function App(){
    if(retry.current){const pending=retry.current.body as {text?:string};if(pending.text)setDraft(pending.text);}
    setError(data.recovery||(retry.current?(retry.current.outcome==='rejected'?'아직 받지 못한 답장이 있어요. 보내신 말은 고치지 않고 그대로 다시 보낼 수 있어요.':'아직 받지 못한 답변이 있어요. 이어받기를 누르면 중복 없이 이어갈 수 있어요.'):''));return true;
   }catch{setErrorKind(retry.current?'recover':'notice');setError(retry.current?'답변을 받는 중 연결이 끊겼어요. 보내던 말은 보관했습니다.':'서버에 연결하지 못했어요. 연결을 확인한 뒤 다시 불러와 주세요.');return false;}
-  finally{clearTimeout(timer);active.current=null;setBusy(false);}
+  finally{clearTimeout(timer);active.current=null;setActiveAction(null);}
  }
  useEffect(()=>{void api();},[]);
  async function begin(){if(await api('new',{mode:pending,mission:pending==='office'?officeMission:0,...(pending==='office'?{setup}:{})})){setPlaying(true);setPanel(null);setDraft('');}}
@@ -60,7 +61,7 @@ function App(){
  const g=state?.game,mode=g?.mode||'office',cue=g?presentation(g):null;
  const match=g?.officeMatch, boss=bosses[match?.setup.boss??'park'];
 
- const outgoing=retry.current?.action==='turn'?(retry.current.body as {text:string}).text:undefined;
+ const outgoing=activeAction==='turn'&&retry.current?.action==='turn'?(retry.current.body as {text:string}).text:undefined;
  const catalogue=state?collectionCatalogue(state.endings,state.collection):null;
  const recoveryNotice=error&&<div className={playing&&g&&!panel?'reply-notice':'error'} role="alert"><p>{error}</p><div>{canReset&&<button disabled={busy} onClick={()=>{if(window.confirm('복구할 수 없는 저장을 초기화할까요? 모든 슬롯과 해금이 지워집니다.'))void api('reset',{});}}>저장 초기화 후 새로 시작</button>}{retry.current&&<button disabled={busy} onClick={()=>{const r=retry.current;if(r)void api(r.action,r.body);}}>{errorKind==='rejected'?'답변 다시 받기':'이어받기'}</button>}{errorKind==='rejected'?<button disabled={busy} onClick={()=>{clearRetry();setError('');setErrorKind('notice');replyInput.current?.focus();}}>입력으로 돌아가기</button>:<button disabled={busy} onClick={()=>void api()}>진행 불러오기</button>}</div></div>;
  useEffect(()=>{if(!panel)return;return()=>menuOpener.current?.focus();},[panel]);
@@ -75,8 +76,8 @@ function App(){
  </section>:<section className={`play ${mode} ${match?'office-match':''} ${mode==='romance'&&g.step>=4?'tense':''}`}>
  <div className="scene-top"><span>{match?(match.setup.style==='rush'?'직장 미션':'직장 미션 · 일반 협상'):modeName(mode)}</span>{match?.deadline&&!g.ending&&<MatchClock deadline={match.deadline} offset={clockOffset} busy={busy} onExpiry={()=>void api()}/>}<button onClick={()=>setPanel('log')}>대화 로그</button></div>
  <div className="stage" data-cue={cue?.id} style={{backgroundImage:`url(${backgroundAsset(cue?.background||"office")})`}}><BackgroundTransition background={cue?.background||"office"}/>{g.storyGuide&&mode!=='office'?<aside className="story-guide" aria-label="현재 이야기"><p className="chapter-label">{g.storyGuide.chapterLabel} · {g.storyGuide.place}</p><h2>{g.ending?g.end?.title:g.storyGuide.title}</h2><p className="stage-situation">{g.storyGuide.situation}</p></aside>:<div className="scene-label"><h2>{g.ending?g.review?.verdict??g.end?.title:g.scene?.title}</h2>{match?.deadline&&!g.ending&&<p>{rushScenes[missions[g.step].id].trigger}</p>}</div>}<CharacterSprite boss={match?.setup.boss} mode={mode} pose={cue?.pose||"neutral"} expression={cue?.expression||0} turn={cue?.id||"arrival"} actionBeats={g.dialogue?.actionBeats}/></div>
- <div className="dialogue">{match&&!g.ending&&<StageThread match={match} outgoing={outgoing}/>} <div className="speaker">{g.review?'협상 결과':g.ending?'EPILOGUE':mode==='office'?boss.name:'서유나'}<span>{g.review?`협상 점수 ${g.review.score.total}점 · ${g.review.turns.length}번의 대화 · ${timeLabel(g.review.elapsedSeconds)}`:g.ending?'당신이 남긴 이야기':match?`${match.setup.workplace} 부장 · ${temperaments[match.setup.temperament].label}`:mode==='office'?'기획팀 부장':'사운드 아키비스트'}</span>{busy&&<span className="thinking" role="status">답장을 기다리는 중…</span>}</div>
- <ConversationViewport resetKey={`${g.step}-${g.dialogue?.version}-${g.ending}`} action={g.review?'':g.dialogue?.actionBeats?.join(' · ')||(match?.setup.boss==='yun'?yunSprite(cue?.pose||"neutral"):spriteCell(mode,cue?.pose||"neutral",cue?.expression)).label} text={match&&outgoing&&busy?'…':g.review?`${g.review.verdict} · ${g.review.reason}`:g.ending?(g.end?.text||g.dialogue?.reply||''):g.dialogue?.reply||(mode==='office'?'잠깐, 퇴근 전에 이 일 이야기 좀 할까요?':'여기 앉아도 돼요? 방금 컵 내려놓는 소리가 참 좋았거든요.')} speed={settings.speed} reduced={settings.reduced}/>
+ <div className="dialogue">{match&&!g.ending&&<StageThread match={match} outgoing={outgoing}/>} <div className="speaker">{g.review?'협상 결과':g.ending?'EPILOGUE':mode==='office'?boss.name:'서유나'}<span>{g.review?`협상 점수 ${g.review.score.total}점 · ${g.review.turns.length}번의 대화 · ${timeLabel(g.review.elapsedSeconds)}`:g.ending?'당신이 남긴 이야기':match?`${match.setup.workplace} 부장 · ${temperaments[match.setup.temperament].label}`:mode==='office'?'기획팀 부장':'사운드 아키비스트'}</span>{activeAction==='turn'&&<span className="thinking" role="status">답장을 기다리는 중…</span>}</div>
+ <ConversationViewport resetKey={`${g.step}-${g.dialogue?.version}-${g.ending}`} action={g.review?'':g.dialogue?.actionBeats?.join(' · ')||(match?.setup.boss==='yun'?yunSprite(cue?.pose||"neutral"):spriteCell(mode,cue?.pose||"neutral",cue?.expression)).label} text={match&&outgoing?'…':g.review?`${g.review.verdict} · ${g.review.reason}`:g.ending?(g.end?.text||g.dialogue?.reply||''):g.dialogue?.reply||(mode==='office'?'잠깐, 퇴근 전에 이 일 이야기 좀 할까요?':'여기 앉아도 돼요? 방금 컵 내려놓는 소리가 참 좋았거든요.')} speed={settings.speed} reduced={settings.reduced||!!error}/>
  {!panel&&recoveryNotice}
  {g.scene?<form onSubmit={e=>{e.preventDefault();void turn();}}><label htmlFor="reply">나의 대사 <span>당신의 말로 이어 가세요</span></label><div className="input-row"><input ref={replyInput} id="reply" autoComplete="off" maxLength={500} value={draft} onChange={e=>setDraft(e.target.value)} onKeyDown={e=>{if(e.key==='Enter'&&e.nativeEvent.isComposing)e.preventDefault();}} placeholder="어떤 말을 건넬까요…" readOnly={busy||!!retry.current}/><button className="primary" disabled={busy||!!retry.current||!draft.trim()}>{busy?'기록 중…':'전송 →'}</button></div><div className="composer-foot"><small>{draft.length} / 500 · 대화는 자동 저장됩니다.</small>{mode==='office'&&<button type="button" className="close-chat" disabled={busy||!!retry.current} onClick={()=>{if(window.confirm('지금까지의 대화로 협상을 마치고 결과를 볼까요?'))void turn('대화를 여기서 마치겠습니다.');}}>대화 마치기</button>}</div></form>:<div className="ending-actions">{g.review&&<button className="report-open" onClick={()=>setPanel('report')}>협상 리포트 보기</button>}<button className="primary" onClick={()=>setPanel('collection')}>컬렉션 보기</button><button onClick={()=>setPlaying(false)}>타이틀로 돌아가기</button>{mode==='office'&&<button disabled={busy} onClick={async()=>{if(await api('new',{mode:'office',mission:g.step,setup:match?.setup??defaultSetup})){setDraft('');}}}>이 미션 다시 도전</button>}{mode==='office'&&<button onClick={()=>{setPending('office');setOfficeMission((g.step+1)%8);setPanel('tutorial');}}>다른 직장 미션</button>}</div>}</div></section>}
  </main><Soundscape cue={playing?cue:null} deadline={playing&&!g?.ending?match?.deadline:null} clockOffset={clockOffset} mute={settings.mute} volume={settings.volume}/><footer><span className="status-dot"/> {state?.provider==='openai'?'OPENAI · 서버 연결 모드':'오프라인 미리보기'} <span>{state?.provider==='openai'?'AI 캐릭터 대화':'원본 시나리오 · 외부 AI 호출 없음'}</span>{busy&&<button onClick={()=>active.current?.abort()}>응답 취소</button>}</footer>

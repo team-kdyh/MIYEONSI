@@ -4,14 +4,14 @@ import {narrativeSchema,validateNarrative,type NarrativeReply} from './narrative
 
 const spokenKeys=['line','actionBeats','emotion','pose','musicMood','recall','conjecture'] as const;
 /** Ordinary dialogue has no transaction to fill out. The existing event engine owns real changes. */
-export function conversationSchema(game:Game,repair=false){
+export function conversationSchema(game:Game,repair=false,discussionOnly=false){
  const source=narrativeSchema(game),entries=Object.entries(source.properties);
  const utterance=Object.fromEntries(entries.filter(([key])=>spokenKeys.includes(key as typeof spokenKeys[number])));
  const changes=game.mode==='office'?{events:{...source.properties.events,items:{anyOf:source.properties.events.items.anyOf.filter(variant=>['detail','concession','complication'].includes(variant.properties.kind.enum[0]))}}}:Object.fromEntries(entries.filter(([key])=>!spokenKeys.includes(key as typeof spokenKeys[number])));
  return {type:'object',additionalProperties:false,required:['utterance','changes',...(game.mode==='office'?['battle']:[])],properties:{
-  utterance:{type:'object',additionalProperties:false,required:Object.keys(utterance),properties:utterance},
+  utterance:{type:'object',additionalProperties:false,required:Object.keys(utterance),properties:discussionOnly?{...utterance,recall:{...source.properties.recall,maxItems:0}}:utterance},
   changes:{anyOf:[{type:'null'},...(game.mode==='office'&&repair?[]:[{type:'object',additionalProperties:false,required:Object.keys(changes),properties:changes}])]},
-  ...(game.mode==='office'?{battle:battleSchema}:{})
+  ...(game.mode==='office'?{battle:discussionOnly?{type:'null'}:battleSchema(game.step,repair)}:{})
  }};
 }
 export function decodeConversation(value:unknown,text?:string):NarrativeReply{

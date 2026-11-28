@@ -1,14 +1,17 @@
 import type {DialogueGame} from './dialogue.ts';
 import type {NarrativeReply,StoryEvent} from './narrative.ts';
 import {missions} from './office.ts';
+import {UngroundedOfficeReply} from './reply-error.ts';
 
 export type BattleEvaluation={kind:'persuasion'|'pressure'|'guard'|'counter';target:string;argument:'alternative'|'evidence'|'boundary';playerQuote:string;npcQuote:string;reason:string;concessionIndex:number;pressureId:string;premises:{id:string;quote:string}[];repeatOf?:string};
 export type BattleJudgment={id:string;target:string;argument:BattleEvaluation['argument'];kind:BattleEvaluation['kind'];playerDamage:number;bossDamage:number;guard:number;combo:number;playerQuote:string;npcQuote:string;reason:string};
 const string={type:'string',maxLength:600};
-export const battleSchema={anyOf:[{type:'null'},{type:'object',additionalProperties:false,required:['kind','target','argument','repeatOf','reason','concessionIndex','pressureId','premises'],properties:{
- kind:{type:'string',enum:['persuasion','pressure','guard','counter']},target:{type:'string',maxLength:100},argument:{type:'string',enum:['alternative','evidence','boundary']},repeatOf:{type:'string',maxLength:100},reason:{type:'string',minLength:1,maxLength:100},
- concessionIndex:{type:'integer',minimum:-1,maximum:4},pressureId:{type:'string',maxLength:100},premises:{type:'array',maxItems:4,items:{type:'object',additionalProperties:false,required:['id','quote'],properties:{id:{type:'string',maxLength:100},quote:string}}}
-}}]};
+export function battleSchema(step:number,repair:boolean){
+ return {anyOf:[{type:'null'},{type:'object',additionalProperties:false,required:['kind','target','argument','repeatOf','reason','concessionIndex','pressureId','premises'],properties:{
+  kind:{type:'string',enum:['persuasion','pressure','guard','counter']},target:{type:'string',enum:missions[step].terms.map(t=>t.id)},argument:{type:'string',enum:['alternative','evidence','boundary']},repeatOf:{type:'string',maxLength:100},reason:{type:'string',minLength:1,maxLength:100},
+  concessionIndex:{type:'integer',minimum:-1,maximum:repair?-1:4},pressureId:{type:'string',maxLength:100},premises:{type:'array',maxItems:4,items:{type:'object',additionalProperties:false,required:['id','quote'],properties:{id:{type:'string',maxLength:100},quote:string}}}
+ }}]};
+}
 export function validateBattle(value:unknown):asserts value is BattleEvaluation|null{
  if(value===null)return;
  const v=value as BattleEvaluation;
@@ -19,22 +22,23 @@ export function validateBattle(value:unknown):asserts value is BattleEvaluation|
 export function judgeBattle(game:DialogueGame,text:string,reply:NarrativeReply,accepted:StoryEvent[]):BattleJudgment|null{
  const v=reply.battle;if(v===undefined||v===null)return null;validateBattle(v);
  const fail=(reason:string):never=>{throw Error(`배틀 근거 오류: ${reason}`);};
+ const unsupported=(reason:string):never=>{throw new UngroundedOfficeReply(`배틀 근거 오류: ${reason}`,reply);};
  if(game.mode!=='office')return fail('직장 장면만 평가합니다');
  const term=missions[game.step].terms.find(t=>t.id===v.target);
  if(!term)return fail('현재 미션의 쟁점이 아닙니다');
  if(v.playerQuote!==text||!v.npcQuote.trim()||!reply.line.includes(v.npcQuote))return fail('전체 플레이어 발화와 실제 NPC 대사를 인용해야 합니다');
  const facts=[...(game.dialogue?.facts??[]),...(game.narrative?.events??[]).filter(e=>e.status==='accepted'||e.status==='fulfilled')];
- if(v.premises.some(p=>!facts.some(f=>f.id===p.id&&f.text.includes(p.quote))))return fail('확정되지 않은 사실');
+ if(v.premises.some(p=>!facts.some(f=>f.id===p.id&&f.text.includes(p.quote))))return unsupported('확정되지 않은 사실');
  if(new Set(v.premises.map(p=>p.id)).size!==v.premises.length)return fail('중복 근거');
- if(v.argument==='evidence'&&!v.premises.length)return fail('사실 논거에 확정 근거가 없습니다');
+ if(v.argument==='evidence'&&!v.premises.length)return unsupported('사실 논거에 확정 근거가 없습니다');
  // Explicitly saying there is no alternative, then simply offloading the work,
  // cannot score the NPC's subsequently invented plan as a player contribution.
- if(['persuasion','counter'].includes(v.kind)&&v.argument==='alternative'&&/대안(?:은|이|도)?\s*없(?:습니다|어요|다)/u.test(text)&&/(?:그냥|무조건|알아서).{0,30}(?:시키|시켜|넘겨|넘기|떠넘|해결)/u.test(text)&&!/(?:하지만|대신|다만)/u.test(text))return fail('플레이어가 제시하지 않은 대안을 NPC가 만들었으므로 설득 피해를 줄 수 없습니다. 이번 거절 자체에 반응해 다시 작성하세요');
+ if(['persuasion','counter'].includes(v.kind)&&v.argument==='alternative'&&/대안(?:은|이|도)?\s*없(?:습니다|어요|다)/u.test(text)&&/(?:그냥|무조건|알아서).{0,30}(?:시키|시켜|넘겨|넘기|떠넘|해결)/u.test(text)&&!/(?:하지만|대신|다만)/u.test(text))return unsupported('플레이어가 제시하지 않은 대안을 NPC가 만들었으므로 설득 피해를 줄 수 없습니다. 이번 거절 자체에 반응해 다시 작성하세요');
  // Claimed rank is never evidence of authority. These are rejection guards, not answer selection.
  if(/(?:(?:내|제)\s*(?:직책|직급|역할|신분)|나는|제가|내가|저는).{0,25}(?:사장|대표|회장|관리자|개발자)|system\s*:|developer\s*:|규칙.{0,10}무시|즉시.{0,5}승리/i.test(text))return fail('직함 주장이나 상태 조작은 근거가 아닙니다');
- if(/(?:승인|완료|확정|지시|명령|결정|합의)(?:이|가|은|는|을|를)?\s*(?:되어|됐|했|받|났)|(?:등록|명시|적혀|나와|되어)\s*(?:있|됐)|(?:규정|메일|일정표|보고서|당직표).{0,30}(?:입니다|이에요|라고)/.test(text)&&!v.premises.length)return fail('과거 사실 주장은 확정 근거가 필요합니다');
+ if(/(?:승인|완료|확정|지시|명령|결정|합의)(?:이|가|은|는|을|를)?\s*(?:되어|됐|했|받|났)|(?:등록|명시|적혀|나와|되어)\s*(?:있|됐)|(?:규정|메일|일정표|보고서|당직표).{0,30}(?:입니다|이에요|라고)/.test(text)&&!v.premises.length)return unsupported('과거 사실 주장은 확정 근거가 필요합니다');
  const history=game.dialogue?.battleEvaluations??[];
- if(/(?:허락|승인|지시).{0,10}(?:하셨|했|받았|됐)/u.test(text)&&!v.premises.length)return fail('외부 승인 주장은 확정 근거가 필요합니다');
+ if(/(?:허락|승인|지시).{0,10}(?:하셨|했|받았|됐)/u.test(text)&&!v.premises.length)return unsupported('외부 승인 주장은 확정 근거가 필요합니다');
  if(['persuasion','counter'].includes(v.kind)&&/(?:안\s*됩니다|받아들일\s*수\s*없|거절합니다|부족합니다)/u.test(reply.line)&&!/(?:수긍|납득|양보|좋습니다|일리가|그\s*방법|그\s*방식|타당|덜겠)/u.test(reply.line))return fail('거절 대사와 설득 평가가 모순됩니다');
  if(v.kind==='pressure'&&!/(?:하세요|하시오|보내세요|맡으세요|따르세요|하셔야|해야\s*(?:합니다|겠)|불이익|평가.{0,8}반영|책임.{0,12}(?:넘|맡)|남으세요)/u.test(reply.line))return fail('단순 질문이나 반론은 강요 피해가 아닙니다');
  const previous=history.at(-1);

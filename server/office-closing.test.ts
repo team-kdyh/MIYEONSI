@@ -4,11 +4,34 @@ import {canonical,commitDialogue} from './dialogue.ts';
 import {conversationTurn} from './conversation-turn.ts';
 import {start,view} from './game.ts';
 import {defaultSetup} from './office-match.ts';
-import {isOfficeFarewell} from './office-closing.ts';
+import {isOfficeFarewell,officeGrantExample,settleSavedOfficeDecision} from './office-closing.ts';
+import {missions} from './office.ts';
 import {narrative,type NarrativeReply} from './narrative.ts';
 
 const npc=(line:string):NarrativeReply=>({line,actionBeats:[],emotion:'차분함',pose:'listen',musicMood:'office-groove',recall:[],conjecture:'',events:[],battle:null});
 const office=(step=0)=>start('office',step,defaultSetup);
+const weekendRelease='주말 잘 쉬고 오세요. 다음 주엔 좋은 소식도 좀 들고 오시고요.';
+test('a weekend release ends on the granting turn; polite acknowledgements in an older save never need another model turn',()=>{
+ const end=commitDialogue(office(2),null,'주말엔 가족과 놀이공원에 가려고 합니다.',npc(weekendRelease));
+ assert.equal(end.ending,'office-weekend-success');assert.equal(view(end)?.scene,null);assert.ok(view(end)?.review?.reason.includes(weekendRelease));
+ const older=structuredClone(end);older.ending=null;older.office!.outcome=null;older.log.pop();
+ const trailing=commitDialogue(older,null,'네',npc('그래요, 다음 주에 뵙죠. 놀이공원에서 기획 아이디어 하나 떠오르면 귀띔만 해주세요!'));
+ const history=structuredClone(trailing.officeMatch!.exchanges);
+ assert.equal(settleSavedOfficeDecision(trailing),true);assert.equal(trailing.ending,end.ending);
+ assert.deepEqual(trailing.officeMatch!.exchanges,history);assert.equal(settleSavedOfficeDecision(trailing),false);
+ const changed=commitDialogue(older,null,'네',npc('아니요. 토요일에도 꼭 출근하세요.'));
+ assert.equal(settleSavedOfficeDecision(changed),false);assert.equal(changed.ending,null);
+});
+test('each mission can conclude on a direct grant independent of pose and gauge; conditions, quotes and unrelated grants stay open',()=>{
+ for(const [i,m] of missions.entries()){
+  const line=officeGrantExample(m.id);
+  assert.equal(commitDialogue(office(i),null,'제 제안은 어떠세요?',npc(line)).ending,`office-${m.id}-success`);
+  for(const pending of [`“${line}”라는 말은 아직 못 합니다.`,`승인이 되면 ${line}`,`${line} 단, 먼저 이 일부터 끝내세요.`]){
+   assert.equal(commitDialogue(office(i),null,'어떻게 될까요?',npc(pending)).ending,null,pending);
+  }
+ }
+ assert.equal(commitDialogue(office(6),null,'주말에 만날까요?',npc(weekendRelease)).ending,null);
+});
 const goodbye=(game:ReturnType<typeof office>)=>conversationTurn(game,'그럼 가보겠습니다.','closing-test','openai',new AbortController().signal,async()=>assert.fail('farewell contacted the provider'));
 
 test('a goodbye closes each mission without fabricated consent, model dialogue or damage',async()=>{

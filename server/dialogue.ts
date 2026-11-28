@@ -1,7 +1,7 @@
 import {finishOfficeReply,finishOfficeConversation} from './office-closing.ts';
 import {finishBattle,validateBattleSpeech} from './battle-rules.ts';
 import {judgeBattle,type BattleJudgment} from './battle-evaluation.ts';
-import {bosses,rushScenes} from './office-match.ts';
+import {bosses,groundedFeedback,rushScenes,type OfficeFeedback} from './office-match.ts';
 import {reconcile,validateNarrative,type NarrativeReply} from './narrative.ts';
 import {allowedIntents,manipulation} from './interpretation.ts';
 import {advanceRomance} from './romance.ts';
@@ -35,7 +35,7 @@ export function repertoire(g:Game){const scene=sceneFor(g);return g.mode==='offi
  '조금 불안하지만, 네 선택을 대신 정할 수는 없겠죠. 어떤 경계가 필요해요?',
  `지금은 「${scene.title}」에 머물러 있어요. 조금 더 이야기해 줄래요?`
  ];}
-export type Reply={line:string;recall:string[];conjecture:string;intent?:string;actionBeats?:string[]} | NarrativeReply;
+export type Reply={line:string;recall:string[];conjecture:string;intent?:string;actionBeats?:string[]} | (NarrativeReply & {feedback?:OfficeFeedback});
 export function schema(g:DialogueGame){return {type:'object',additionalProperties:false,required:['line','recall','conjecture','intent'],properties:{intent:{type:'string',enum:['none',...allowedIntents(g).map(i=>i.id)]},line:{type:'string',minLength:1,maxLength:600},recall:{type:'array',items:{type:'string',enum:canonical(g).facts.map(f=>f.id)},maxItems:2},conjecture:{type:'string',enum:['','아직 당신의 뜻을 다 이해하지 못한 것 같습니다.']}}};}
 export function validateReply(value:unknown,g:DialogueGame):Reply {
  if(value&&typeof value==='object'&&'actionBeats' in value)return validateNarrative(value);
@@ -62,14 +62,16 @@ export function commitDialogue(game:DialogueGame,choice:number|null,text:string,
  if('events' in response){
   validateBattleSpeech(game,response);
   const before=canonical(game),version=before.version+1;
-  const {game:next,accepted}=reconcile(game,text,response,requestId);const g:DialogueGame=next;
+  const {feedback,...authored}=response;
+  const {game:next,accepted}=reconcile(game,text,authored,requestId);const g:DialogueGame=next;
   const judgment=judgeBattle(game,text,response,accepted);
   const d=structuredClone(before);if(judgment)d.battleEvaluations=[...(before.battleEvaluations??[]),judgment];d.version=version;rememberPlayer(d,text,version);d.reply=response.line;d.actionBeats=response.actionBeats;
   d.ledger.push({kind:'user_claim',text,version},{kind:'model_dialogue',text:response.line,version,recallIds:response.recall});
   for(const e of accepted){const fact:Fact={id:e.id,eventId:e.id,version,confirmedAt:new Date().toISOString(),kind:e.kind==='clue'?'clue':e.kind==='relationship'?'relationship':e.kind==='resolution'?'ending':'scene',text:e.text};d.facts.push(fact);d.ledger.push({kind:'verified_event',text:e.text,version,eventId:e.id});}
   d.ledger=d.ledger.slice(-HISTORY_LIMIT*2);g.dialogue=d;
   g.log.push({speaker:'당신',text},{speaker:g.mode==='office'?bosses[g.officeMatch?.setup.boss??'park'].name:'서유나',text:response.line});g.log=g.log.slice(-HISTORY_LIMIT);
-  g.officeMatch?.exchanges.push({version,player:text,reply:response.line});
+  const annotation=groundedFeedback(feedback,text,response.line);
+  g.officeMatch?.exchanges.push({version,player:text,reply:response.line,...(annotation?{feedback:annotation}:{})});
   finishBattle(g);
   finishOfficeReply(g,response,accepted);
   return g;

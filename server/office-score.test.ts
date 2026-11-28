@@ -26,4 +26,10 @@ test('points follow effective exchanges, cap at 100 and survive a save round tri
  const score=view(game)!.review!.score;
  assert.equal(score.total,100);assert.equal(score.effectiveTurns,3);
  assert.deepEqual(view(JSON.parse(JSON.stringify(game)))?.review?.score,score);
+ const review=view(game)!.review!;
+ assert.equal(review.turns.reduce<number>((total,t)=>total+t.points,score.outcome),score.total);
+ assert.equal(review.turns[1].points,0);assert.match(review.turns[1].note,/이미 오간/);
+ assert.ok(review.turns[3].impactPoints>0);
+ assert.deepEqual(review.turns.map(t=>t.varietyPoints),[5,0,5,0]);
+ for(const t of review.turns)assert.equal(t.points,t.impactPoints+t.varietyPoints);
 });

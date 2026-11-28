@@ -44,6 +44,7 @@ function App(){
     setErrorKind(retry.current?'recover':'notice');setError(data.error||'이야기를 불러오지 못했어요. 잠시 뒤 다시 시도해 주세요.');return false;
    }
    setState(data);setCanReset(false);
+   if(playing&&state?.game&&!state.game.ending&&data.game?.review&&(action==='turn'||action==='state'))setPanel('report');
    const serverTime=Date.parse(r.headers.get('date')??'');
    if(Number.isFinite(serverTime)){const skew=serverTime-Date.now();setClockOffset(Math.abs(skew)<1500?0:skew);}
    if(data.game?.ending){clearRetry();setDraft('');}
@@ -88,7 +89,7 @@ function App(){
  {panel==='collection'&&<><p className="eyebrow">THINGS WE LEAVE BEHIND</p><h2>엔딩 컬렉션 <small>{state?.collection.length||0} / {catalogue?Object.values(catalogue).flat().length:0}</small></h2>{state&&catalogue&&Object.entries(catalogue).map(([m,ends])=><div key={m}><h3>{modeName(m as Mode)}</h3>{ends.map(e=><article className="end-card" key={e.id}><strong>{state.collection.includes(e.id)?e.title:'아직 쓰이지 않은 이야기'}</strong><p>{state.collection.includes(e.id)?collectionSummary(e,g):'아직 당신의 말이 닿지 않은 결말입니다.'}</p></article>)}</div>)}</>}
  {panel==='save'&&<><p className="eyebrow">A PLACE TO RETURN</p><h2>저장과 불러오기</h2><p>자동 저장은 항상 최신 진행을 유지합니다. 수동 저장은 덮어쓰기 전까지 남습니다.</p>{state?.slots.map((slot,i)=><div className="save-slot" key={i}><strong>0{i+1}</strong><div>{slot?`${modeName(slot.mode)} · ${slot.ending?'엔딩':`${slot.step+1}장면`}`:'비어 있는 기록'}</div><button disabled={busy||!g} onClick={()=>{if(!slot||window.confirm('이 저장 칸을 현재 진행으로 덮어쓸까요?'))void api('save',{slot:i});}}>저장</button><button disabled={busy||!slot} onClick={async()=>{if(await api('load',{slot:i})){setPlaying(true);setPanel(null);setDraft('');}}}>불러오기</button></div>)}<p className="fine">저장 데이터는 로컬 서버에 보관됩니다. 브라우저 쿠키가 기록을 연결하므로 같은 주소와 브라우저를 사용하세요.</p></>}
  {panel==='log'&&<><p className="eyebrow">OUR CONVERSATION</p><h2>대화 로그</h2>{match?<OfficeTranscript match={match}/>:g?.log.map((entry,i)=><article className="log" key={i}><strong>{entry.speaker}</strong><p>{entry.text}</p></article>)}</>}
- {panel==='report'&&g?.review&&match&&<><ReportDetail review={g.review} mission={g.step}/>{match.exchanges.length>0&&<details className="report-transcript"><summary>대화별 피드백</summary><OfficeTranscript match={match} review={g.review}/></details>}</>}
+ {panel==='report'&&g?.review&&match&&<><ReportDetail review={g.review} mission={g.step}/>{match.exchanges.length>0&&<details open className="report-transcript"><summary>대화별 피드백</summary><OfficeTranscript match={match} review={g.review}/></details>}</>}
  </section></div>}
  </div>;
 }

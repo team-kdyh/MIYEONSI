@@ -51,7 +51,7 @@ export async function respond(g:DialogueGame,text:string,provider:Provider,signa
  const parts=body.output.flatMap((item:{content?:unknown[]})=>item.content??[]);
  if(parts.some((p:{type:string})=>p.type==='refusal'))throw new ReplyRejectedError('이 답변을 생성할 수 없습니다.',undefined,false);
  const output=parts.filter((p:{type:string})=>p.type==='output_text').map((p:{text:string})=>p.text).join('');
- draft=JSON.parse(output);const reply=decodeConversation(draft,text);
+ draft=JSON.parse(output);const reply=decodeConversation(draft,text,g.mode==='office');
  if(reply.recall.some(id=>!canonical(g).facts.some(f=>f.id===id)&&!narrative(g).events.some(e=>e.id===id))){
   if(g.mode==='office')throw new UngroundedOfficeReply('이전 발언은 대화 이력에서 읽고, 존재하지 않는 사건을 회상하지 마세요.',reply);
   throw Error('회상할 사건을 찾을 수 없습니다.');

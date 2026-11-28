@@ -27,7 +27,7 @@ export function OfficeSetupForm({mission,setup,onMission,onSetup}:{mission:numbe
    <label>내 직무<input maxLength={36} value={setup.role} onChange={e=>change('role',e.target.value)}/></label>
    <label>내 성별<select value={setup.gender} onChange={e=>change('gender',e.target.value as OfficeSetup['gender'])}>{['미설정','여성','남성','논바이너리'].map(s=><option key={s}>{s}</option>)}</select></label>
   </div></details>
-  <p className="setup-rules">원하는 조건을 말하고 부장의 반응을 살펴보세요. 이야기를 마칠 때는 인사를 건네거나 ‘대화 마치기’를 누르세요.{setup.style==='rush'&&' 시작부터 실제 시간이 흐릅니다. 종료 전에 보낸 마지막 대사까지 판정합니다.'}</p>
+  <p className="setup-rules">부장이 요청을 받아들여 협상이 끝나면 리포트가 열립니다. 먼저 끝내고 싶을 땐 ‘대화 마치기’를 누르세요.{setup.style==='rush'&&' 시작부터 실제 시간이 흐릅니다. 종료 전에 보낸 마지막 대사까지 판정합니다.'}</p>
  </div>;
 }
 
@@ -48,7 +48,22 @@ export function MatchClock({deadline,offset,busy,onExpiry}:{deadline:number;offs
 }
 export function OfficeTranscript({match,review}:{match:OfficeMatch;review?:OfficeReview|null}){
  const name=bosses[match.setup.boss].name;
- return <div className="chat-history"><div className="chat-post"><strong>{name}</strong><p>{match.opening}</p></div>{match.exchanges.map((t,i)=><div className="chat-pair" key={t.version}><div className="chat-post mine"><strong>나</strong><p>{t.player}</p></div>{t.reply&&<div className="chat-post"><strong>{name}</strong><p>{t.reply}</p></div>}{review&&<small>{i+1}번째 대화 · {review.turns[i]?.note}</small>}</div>)}</div>;
+ return <div className="chat-history"><div className="chat-post"><strong>{name}</strong><p>{match.opening}</p></div>{match.exchanges.map((t,i)=>{
+  const turn=review?.turns[i];
+  return <article className="chat-pair" key={t.version}>
+   {turn&&<div className="turn-grade"><strong>{turn.number}번째 발언 · {turn.label}</strong><b>{turn.points>0?'+':''}{turn.points}점</b></div>}
+   <div className="chat-post mine"><strong>나</strong><p>{highlightQuote(t.player,turn?.feedback?.playerQuote)}</p></div>
+   {t.reply&&<div className="chat-post"><strong>{name}</strong><p>{highlightQuote(t.reply,turn?.feedback?.bossQuote)}</p></div>}
+   {turn&&review&&<div className="turn-feedback"><p>{turn.note}</p><small>{turn.basis}</small>
+    {review.decisionTurn===turn.number&&<strong>이 답변으로 {review.verdict} · 결과 점수 {review.score.outcome}점</strong>}
+   </div>}
+  </article>;
+ })}</div>;
+}
+function highlightQuote(line:string,quote?:string){
+ const at=quote?line.indexOf(quote):-1;
+ if(!quote||at<0)return line;
+ return <>{line.slice(0,at)}<mark>{quote}</mark>{line.slice(at+quote.length)}</>;
 }
 /** Scrollback is optional. The current reply and composer stay outside it. */
 export function StageThread({match,outgoing}:{match:OfficeMatch;outgoing?:string}){
@@ -75,12 +90,13 @@ export function ReportDetail({review,mission}:{review:OfficeReview;mission:numbe
   <div><dt>설득 효과</dt><dd>{score.impact}<small> / 20</small></dd></div>
   <div><dt>논거의 폭</dt><dd>{score.variety}<small> / 10</small></dd></div>
  </dl>
+ <p className="score-equation">결과 {score.outcome}점 + 발언 {score.impact+score.variety}점 = 총 {score.total}점</p>
+ <p>{review.reason}</p><p className="report-meta">{timeLabel(review.elapsedSeconds)} 진행 · {review.turns.length}번의 대화</p>
  <details className="score-rules"><summary>채점 기준 보기</summary>
   <p>설득 성공은 70점, 합의로 마무리하면 55점, 부분 합의는 40점입니다. 그 밖의 결말은 대화에서 얻은 점수로 평가합니다.</p>
-  <p>상대를 설득하거나 압박에 대응한 발언은 {score.effectiveTurns}회입니다. 첫 발언에 12점, 두 번째까지 합해 최대 20점을 받습니다.</p>
-  <p>효과가 있었던 방법은 {score.approaches.length?score.approaches.join(' · '):'0가지'}입니다. 대안 제시, 근거 제시, 경계 설정 중 서로 다른 방법 한 가지당 5점씩 최대 10점을 받습니다.</p>
+  <p>부장의 버티기를 줄이거나 내 여유를 회복한 발언은 {score.effectiveTurns}회입니다. 한 번이면 설득 효과는 12점, 두 번 이상이면 20점입니다. 이 점수를 각 발언이 실제로 바꾼 수치에 비례해 나눕니다. 소수점 나머지가 큰 순서로 1점씩 배분하며 동률이면 앞선 발언이 받습니다.</p>
+  <p>효과가 있었던 방법은 {score.approaches.length?score.approaches.join(' · '):'0가지'}입니다. 서로 다른 방법을 처음 사용해 효과를 낸 발언 두 개까지 각각 5점을 받습니다.</p>
  </details>
- <p>{review.reason}</p><p className="report-meta">{timeLabel(review.elapsedSeconds)} 진행 · {review.turns.length}번의 대화</p>
  {review.best&&<section><h3>흐름을 바꾼 한마디</h3><blockquote>{review.best.player}</blockquote><p>{review.best.note}</p></section>}
  {review.pressured&&<section><h3>가장 거셌던 압박</h3><blockquote>{review.pressured.reply}</blockquote><p>{review.pressured.note}</p></section>}
  {!review.best&&!review.pressured&&<p>{review.turns.length?'주고받은 말은 아래 대화 기록에서 다시 읽을 수 있어요.':'마감 전에 주고받은 대사가 없습니다.'}</p>}

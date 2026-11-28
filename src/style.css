@@ -336,6 +336,13 @@ summary{cursor:pointer}
 .report-detail section{margin:20px 0}.report-detail h3{font-size:14px;color:#e9ccb3}
 .report-detail blockquote{margin:8px 0;padding:8px 15px;border-left:2px solid #d2aa83;background:#8c786421;white-space:pre-wrap;overflow-wrap:anywhere}
 .report-transcript{border-top:1px solid #c2a7c343;padding-top:12px}.report-transcript summary{margin-bottom:12px}
+.score-equation{color:#ffe0b8;font-variant-numeric:tabular-nums;font-weight:650}
+.turn-grade{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-top:1px solid #c2a7c333;padding-top:14px;font-size:13px}
+.turn-grade b{color:#ffe0b8;font-size:17px;font-variant-numeric:tabular-nums}
+.turn-feedback{border-left:2px solid #b09c89;padding:0 10px}
+.turn-feedback p{margin:0 0 5px;font-size:13px}.turn-feedback small{display:block;line-height:1.6}
+.turn-feedback strong{display:block;margin-top:6px;color:#ffe0b8;font-size:12px}
+.chat-post mark{background:#68533c;color:#fff2db;border-radius:2px}
 @media(max-width:700px){
  .office-match .scene-top{top:58px;gap:8px}
  .office-match .scene-top>span{display:none}

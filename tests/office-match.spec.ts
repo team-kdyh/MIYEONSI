@@ -2,10 +2,55 @@ import {test,expect} from '@playwright/test';
 import {readFileSync,writeFileSync} from 'node:fs';
 import path from 'node:path';
 import {defaultSetup} from '../server/office-match';
+import {ProfileStore} from '../server/storage';
+import {commitDialogue} from '../server/dialogue';
 const dir=process.env.AFTERHOURS_MATCH_FIXTURE!;
 const setTime=(ms:number)=>writeFileSync(path.join(dir,'clock'),String(ms));
 const calls=()=>readFileSync(path.join(dir,'calls'),'utf8').trim().split('\n').filter(Boolean);
 test.beforeEach(()=>setTime(Date.now()));
+
+test('the boss grants the weekend and the scored report opens on that same reply',async({page})=>{
+ await page.setViewportSize({width:390,height:780});
+ await page.goto('/');await page.getByRole('button',{name:/칼퇴의 기술/}).click();
+ await page.locator('#office-mission').selectOption('2');await page.getByRole('button',{name:/이야기 시작/}).click();
+ const count=calls().length;
+ await page.locator('#reply').fill('점검을 금요일에 자동으로 돌리면 주말에는 쉬어도 될까요?');
+ const [won]=await Promise.all([page.waitForResponse('**/api/turn'),page.locator('#reply').press('Enter')]);
+ const report=page.getByRole('dialog',{name:'협상 리포트'}),row=report.locator('.chat-pair');
+ await expect(report.getByRole('heading',{name:/설득 성공/})).toBeVisible();
+ await expect(report.locator('.score-equation')).toHaveText('결과 70점 + 발언 17점 = 총 87점');
+ await expect(row.locator('.turn-grade b')).toHaveText('+17점');
+ await expect(row.locator('mark')).toHaveText(['금요일에 자동으로','주말 잘 쉬고 오세요']);
+ await expect(row.locator('.turn-feedback')).toContainText('점검을 금요일에 자동 실행');
+ await expect(row.locator('.turn-feedback')).toContainText('설득 효과 12점');
+ await expect(row.locator('.turn-feedback')).toContainText('결과 점수 70점');
+ await expect(page.locator('#reply')).toHaveCount(0);
+ const state=await won.json(),body=won.request().postDataJSON();
+ expect((await (await page.request.post('/api/turn',{data:body})).json()).game).toEqual(state.game);
+ const after=await page.request.post('/api/turn',{data:{...body,requestId:crypto.randomUUID(),text:'네',version:state.game.dialogue.version}});
+ expect((await after.json()).game).toEqual(state.game);expect(calls().length-count).toBe(1);
+ await page.screenshot({path:test.info().outputPath('weekend-score.png')});
+});
+
+test('a saved weekend approval followed by polite chatter settles on resume and slot load without a model call',async({request})=>{
+ const state=await (await request.post('/api/new',{data:{mode:'office',mission:2,setup:defaultSetup}})).json();
+ const cookie=(await request.storageState()).cookies.find(c=>c.name==='afterhours')!;
+ const store=new ProfileStore(path.join(dir,'profiles')),profile=(await store.load(cookie.value)).profile;
+ const npc=(line:string)=>({line,pose:'listen' as const,musicMood:'office-groove' as const,emotion:'차분',actionBeats:[],recall:[],conjecture:'',events:[],battle:null});
+ const granted=commitDialogue(profile.game!,null,'자동 점검을 걸어 놓겠습니다.',npc('주말 잘 쉬고 오세요. 다음 주엔 좋은 소식도 좀 들고 오시고요.'));
+ granted.ending=null;granted.office!.outcome=null;granted.log.pop();
+ const old=commitDialogue(granted,null,'네',npc('그래요, 다음 주에 뵙죠. 놀이공원에서 기획 아이디어 하나 떠오르면 귀띔만 해주세요!'));
+ profile.game=old;profile.slots[0]=structuredClone(old);profile.epoch=old.dialogue!.version;
+ await store.save(cookie.value,profile);
+ const n=calls().length;
+ for(const r of [await request.get('/api/state'),await request.post('/api/load',{data:{slot:0}}),await request.get('/api/state')]){
+  const saved=await r.json();expect(saved.game.ending).toBe('office-weekend-success');
+  expect(saved.game.review.decisionTurn).toBe(1);expect(saved.game.review.turns.map((t:any)=>t.points)).toEqual([0,0]);
+  expect(saved.game.review.score.total).toBe(70);expect(saved.collection).toEqual(['office-weekend-success']);
+  expect(saved.game.review.turns[1].player).toBe('네');expect(saved.game.scene).toBeNull();
+ }
+ expect(state.game.ending).toBeNull();expect(calls().length).toBe(n);
+});
 
 for(const size of [{width:1152,height:640},{width:1152,height:406},{width:390,height:560}])test(`delegation reply recovers and stays readable at ${size.width}x${size.height}`,async({page})=>{
  await page.setViewportSize(size);
@@ -86,14 +131,13 @@ for(const width of [390,1366])test(`chat, profile, timeout report and retry on $
  await page.clock.fastForward(151000);
  await expect(page.locator('audio[data-track="office-deadline"]')).toHaveAttribute('src','/assets/office-score/last-shuttle.ogg');
  setTime(deadline+1);await page.clock.fastForward(30000);
- await expect(page.getByRole('button',{name:'협상 리포트 보기'})).toBeVisible();
- await page.getByRole('button',{name:'협상 리포트 보기'}).click();
  await expect(page.getByRole('heading',{name:/협상 리포트 · 시간 초과/})).toBeVisible();
  await expect(page.locator('.report-detail')).toContainText('셔틀 문이 닫혔다');
  await expect(page.locator('.report-total strong')).toHaveText('0');
  await page.getByText('채점 기준 보기',{exact:true}).click();
  await expect(page.locator('.score-rules')).toContainText('발언은 0회');
- await page.getByText('대화별 피드백').click();await expect(page.locator('.chat-history')).toContainText('서로의 말을 듣고 상황을 살폈습니다');
+ await expect(page.locator('.turn-grade b')).toHaveText(['0점','0점']);
+ await expect(page.locator('.turn-feedback').first()).toContainText('질문');
  expect(calls().length).toBe(count);
  await page.getByRole('button',{name:'닫기'}).click();
  const [retry]=await Promise.all([page.waitForResponse('**/api/new'),page.getByRole('button',{name:'이 미션 다시 도전'}).click()]);
@@ -161,7 +205,6 @@ test('closing from chat or the stage opens a lasting report and never resends a 
  expect(won.game.review.score.total).toBe(87);
  await expect(page.locator('.text-ink')).toContainText('오늘은 퇴근하세요');
  await expect(page.locator('audio[data-track="office-homebound"]')).toHaveAttribute('src','/assets/office-score/green-light.ogg');
- await page.getByRole('button',{name:'협상 리포트 보기'}).click();
  await expect(page.locator('.report-total strong')).toHaveText('87');
  await page.screenshot({path:test.info().outputPath('scored-report.png')});
  await page.getByRole('button',{name:'닫기'}).click();
@@ -170,7 +213,7 @@ test('closing from chat or the stage opens a lasting report and never resends a 
  page.once('dialog',d=>d.dismiss());await finish.click();
  await expect(page.locator('#reply')).toHaveValue('할 말이 남았어요.');
  page.once('dialog',d=>d.accept());await finish.click();
- await expect(page.getByRole('button',{name:'협상 리포트 보기'})).toBeVisible();
+ await expect(page.getByRole('dialog',{name:'협상 리포트'})).toBeVisible();
 });
 
 test('all eight illustrations follow the selected mission into a saved report',async({page})=>{
@@ -184,7 +227,7 @@ test('all eight illustrations follow the selected mission into a saved report',a
   expect(await art.evaluate(img=>(img as HTMLImageElement).naturalWidth)).toBe(622);
  }
  await page.getByRole('button',{name:/이야기 시작/}).click();await page.locator('#reply').fill('그럼 가보겠습니다.');
- await page.locator('#reply').press('Enter');await page.getByRole('button',{name:'협상 리포트 보기'}).click();
+ await page.locator('#reply').press('Enter');
  await expect(page.locator('.report-cover img')).toHaveAttribute('src','/assets/office/missions/remote.webp');
  await expect(page.locator('.report-total strong')).toHaveText('0');
  await page.screenshot({path:test.info().outputPath('mobile-report.png')});

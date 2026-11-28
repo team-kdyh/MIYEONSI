@@ -26,5 +26,10 @@ globalThis.fetch=async(url,opts)=>{
   }
  }
  if(text.includes('마지막'))writeFileSync(clock,String(Date.now()+2000));
+ if(text==='점검을 금요일에 자동으로 돌리면 주말에는 쉬어도 될까요?'){
+  draft.utterance.line='주말 잘 쉬고 오세요. 다음 주엔 좋은 소식도 좀 들고 오시고요.';
+  draft.battle={kind:'persuasion',target:'rest',argument:'alternative',repeatOf:'',reason:'금요일 자동 점검으로 주말 당번의 일을 앞당겼다.',concessionIndex:-1,pressureId:'',premises:[]};
+  draft.feedback={playerQuote:'금요일에 자동으로',bossQuote:'주말 잘 쉬고 오세요',explanation:'점검을 금요일에 자동 실행한다는 제안 덕분에 부장이 주말 근무 요구를 거뒀습니다.'};
+ }
  return Response.json({status:'completed',output:[{content:[{type:'output_text',text:JSON.stringify(draft)}]}]});
 };

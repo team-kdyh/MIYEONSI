@@ -36,7 +36,16 @@ const openingLines:Record<string,[string,string]> = {
  delegation:['재고표 좀 봐줘요. 이 팀에서 손이 제일 빠르잖아요.','옆 팀 재고표가 왔네요. 오늘 맡을 여력이 있어요?'],
  remote:['수요일마다 빈자리가 생기는 건데, 진행 상황은 어떻게 보죠?','수요일 재택 신청 봤어요. 팀이랑 맞물리는 일은 어떻게 할까요?'],
 };
-export type OfficeExchange={version:number;player:string;reply:string};
+export type OfficeFeedback={playerQuote:string;bossQuote:string;explanation:string};
+export type OfficeExchange={version:number;player:string;reply:string;feedback?:OfficeFeedback};
+export function groundedFeedback(value:unknown,player:string,reply:string):OfficeFeedback|undefined{
+ if(!value||typeof value!=='object')return;
+ const {playerQuote,bossQuote,explanation}=value as OfficeFeedback;
+ if(![playerQuote,bossQuote,explanation].every(s=>typeof s==='string'&&s.trim())||
+  playerQuote.length>80||bossQuote.length>80||explanation.length>180||
+  !player.includes(playerQuote)||!reply.includes(bossQuote))return;
+ return {playerQuote,bossQuote,explanation};
+}
 export type OfficeMatch={setup:OfficeSetup;opening:string;startedAt:number;deadline:number|null;finishedAt:number|null;timedOut:boolean;exchanges:OfficeExchange[]};
 export function readSetup(input:unknown):OfficeSetup{
  if(input===undefined)return {...defaultSetup};
@@ -54,7 +63,7 @@ export function validMatch(m:OfficeMatch){
  try{readSetup(m.setup);}catch{return false;}
  return !!m.setup&&Number.isSafeInteger(m.startedAt)&&m.startedAt>0&&m.deadline===(m.setup.style==='rush'?m.startedAt+RUSH_SECONDS*1000:null)&&
   typeof m.opening==='string'&&typeof m.timedOut==='boolean'&&(m.finishedAt===null||Number.isSafeInteger(m.finishedAt)&&m.finishedAt>=m.startedAt)&&
-  (!m.timedOut||m.deadline!==null&&m.finishedAt===m.deadline)&&Array.isArray(m.exchanges)&&m.exchanges.every((t,i)=>t&&Number.isSafeInteger(t.version)&&t.version>(m.exchanges[i-1]?.version??0)&&typeof t.player==='string'&&typeof t.reply==='string');
+  (!m.timedOut||m.deadline!==null&&m.finishedAt===m.deadline)&&Array.isArray(m.exchanges)&&m.exchanges.every((t,i)=>t&&Number.isSafeInteger(t.version)&&t.version>(m.exchanges[i-1]?.version??0)&&typeof t.player==='string'&&typeof t.reply==='string'&&(t.feedback===undefined||groundedFeedback(t.feedback,t.player,t.reply)));
 }
 /** Resolve elapsed wall time once. A turn admitted before the bell gets its judgment first. */
 export function settleClock(g:DialogueGame|null,now=Date.now()):boolean{

@@ -1,5 +1,6 @@
 import {narrative} from './narrative.ts';
 import {readSetup,settleClock} from './office-match.ts';
+import {settleSavedOfficeDecision} from './office-closing.ts';
 import express from 'express';
 import {randomBytes} from 'node:crypto';
 import {ProfileStore,StorageError,type Profile} from './storage.ts';
@@ -19,7 +20,8 @@ const store=new ProfileStore(process.env.AFTERHOURS_DATA_DIR||path.join(root,'.l
 function selectedProvider(p:Profile):Provider{return p.providerSelectionVersion===2&&p.provider?p.provider:(process.env.OPENAI_API_KEY?'openai':'offline');}
 function payload(p:Profile){const provider=selectedProvider(p);return {game:view(p.game),collection:p.collection,slots:p.slots.map(g=>g?{mode:g.mode,step:g.step,ending:g.ending}:null),endings,provider,model:(provider==='openai'?process.env.OPENAI_MODEL||'gpt-4.1':null)};}
 function settleProfile(p:Profile,now=Date.now()){
- if(!settleClock(p.game,now))return false;
+ const recognised=settleSavedOfficeDecision(p.game);
+ if(!settleClock(p.game,now)&&!recognised)return false;
  if(p.game?.ending&&!p.collection.includes(p.game.ending))p.collection.push(p.game.ending);
  return true;
 }
@@ -70,7 +72,7 @@ app.all('/api/:action',async(req,res)=>{
  const hash=createHash('sha256').update(JSON.stringify({text,choice,version,step:req.body.step})).digest('hex');
  const old=p.committed?.find(t=>t.id===requestId);if(old){if(old.hash!==hash){res.status(409).json({error:'동일 요청의 내용이 다릅니다. 현재 상태를 복구했습니다.',state:payload(p)});return;}if(old.afterVersion!==canonical(p.game).version){res.status(409).json({error:'이미 처리한 대화 이후 이야기가 진행됐습니다. 현재 상태를 복구했습니다. 새 대사를 입력하세요.',state:payload(p)});return;}res.json(payload(p));return;}
  if(++rate.count>300){res.status(429).json({error:'시간당 요청 한도입니다. 잠시 후 다시 시도하세요.'});return;}
- if(p.game.officeMatch?.timedOut&&version===canonical(p.game).version&&req.body.step===p.game.step){res.json(payload(p));return;}
+ if(p.game.ending&&p.game.officeMatch&&version===canonical(p.game).version&&req.body.step===p.game.step){res.json(payload(p));return;}
  if(p.game.ending)throw Error('이미 끝난 이야기입니다.');
  if(version!==canonical(p.game).version||req.body.step!==p.game.step){res.status(409).json({error:'다른 화면에서 이야기가 진행됐습니다. 현재 상태를 복구했습니다. 새 대사를 입력하세요.',state:payload(p)});return;}
  const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),30000);

@@ -51,6 +51,9 @@ test('free text UI cancels and retries one request, earns an office ending, and 
  expect(state.collection).toContain('office-clockout-success');
  await expect(page.locator('.ending-actions')).toBeVisible();
  await expect(page.locator('#reply')).toHaveCount(0);
+ const report=page.getByRole('dialog',{name:'협상 리포트'});
+ await expect(report.locator('.turn-grade')).toHaveCount(5);
+ await report.getByRole('button',{name:'닫기',exact:true}).click();
  await page.getByRole('button',{name:'대화 로그'}).click();
  const transcript=page.getByRole('dialog',{name:'대화 로그'});
  await expect(transcript.getByText(first,{exact:true})).toHaveCount(1);
